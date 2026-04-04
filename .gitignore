@@ -1,0 +1,28 @@
+# Original game files - never commit copyrighted data
+*.000
+*.001
+*.pak
+MONKEY/
+game_files/
+
+# Build artifacts
+tools/scummtr/build/
+tools/flips/build/
+tools/scummvm-tools/build/
+*.o
+*.a
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Intermediate build files
+text          # scummtr intermediate (before injection)
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
