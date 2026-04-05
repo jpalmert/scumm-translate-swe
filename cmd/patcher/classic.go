@@ -84,6 +84,12 @@ func runClassicPatch(gameDir, translationArg string) error {
 		return fmt.Errorf("translation injection failed: %w", err)
 	}
 
+	// --- Patch CHAR blocks (Swedish glyph data) ---
+	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
+	if err := charset.Patch(tmpDir); err != nil {
+		return fmt.Errorf("charset patch: %w", err)
+	}
+
 	// --- Write patched files back ---
 	fmt.Println("\n==> Writing patched files...")
 	patched000, err := os.ReadFile(tmp000)
@@ -97,23 +103,10 @@ func runClassicPatch(gameDir, translationArg string) error {
 	fmt.Printf("    MONKEY1.000: %d bytes (was %d)\n", len(patched000), len(data000))
 	fmt.Printf("    MONKEY1.001: %d bytes (was %d)\n", len(patched001), len(data001))
 
-	// --- Patch charset (CHAR_0001/0003 Swedish glyphs) ---
-	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
-	newData001, err := charset.PatchMonkey1001(patched001)
-	if err != nil {
-		return fmt.Errorf("charset patch (MONKEY1.001): %w", err)
-	}
-	newData000, err := charset.PatchMonkey1000(patched000)
-	if err != nil {
-		return fmt.Errorf("charset patch (MONKEY1.000): %w", err)
-	}
-	fmt.Printf("    MONKEY1.000: %d bytes (was %d)\n", len(newData000), len(patched000))
-	fmt.Printf("    MONKEY1.001: %d bytes (was %d)\n", len(newData001), len(patched001))
-
-	if err := os.WriteFile(path000, newData000, 0644); err != nil {
+	if err := os.WriteFile(path000, patched000, 0644); err != nil {
 		return fmt.Errorf("write %s: %w", path000, err)
 	}
-	if err := os.WriteFile(path001, newData001, 0644); err != nil {
+	if err := os.WriteFile(path001, patched001, 0644); err != nil {
 		return fmt.Errorf("write %s: %w", path001, err)
 	}
 

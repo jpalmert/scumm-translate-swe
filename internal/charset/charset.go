@@ -1,27 +1,17 @@
-// Package charset patches SCUMM v5 CHAR blocks in MONKEY1.001 to add Swedish
-// glyph data. The patched CHAR binaries are embedded at compile time.
+// Package charset patches Swedish glyph data into CHAR_0001 and CHAR_0003
+// inside the MONKEY1.000/001 classic game files using the scummrp tool.
 //
-// MONKEY1.001 is XOR-encoded with key 0x69. This package decodes, patches,
-// and re-encodes the file transparently.
-//
-// Only CHAR_0001 (verb/menu charset) and CHAR_0003 (small text charset) are
-// patched; CHAR_0002 (main dialog charset) already contains Swedish glyphs in
-// the GOG/Steam SE release.
+// scummrp handles all SCUMM block-level housekeeping: XOR encoding, LFLF/LECF
+// size fields, the LOFF room-offset table, and the DCHR charset directory.
 package charset
 
 import (
 	_ "embed"
-	"encoding/binary"
 	"fmt"
-)
-
-const xorKey = 0x69
-
-// Expected sizes for original (unpatched) CHAR blocks. Used to verify that
-// the game file matches the version we patched against.
-const (
-	originalChar0001Size = 2609
-	originalChar0003Size = 2071
+	"os"
+	"os/exec"
+	"path/filepath"
+	"runtime"
 )
 
 //go:embed assets/char_0001_patched.bin
@@ -30,348 +20,76 @@ var patchedChar0001 []byte
 //go:embed assets/char_0003_patched.bin
 var patchedChar0003 []byte
 
-// PatchMonkey1001 adds Swedish glyph data to CHAR_0001 and CHAR_0003 inside
-// the given MONKEY1.001 content.
+//go:embed assets/scummrp-linux-x64
+var scummrpLinux []byte
+
+//go:embed assets/scummrp-darwin-x64
+var scummrpDarwin []byte
+
+//go:embed assets/scummrp-windows-x64.exe
+var scummrpWindows []byte
+
+// Patch replaces CHAR_0001 and CHAR_0003 in the MONKEY1.000/001 files in
+// gameDir with embedded Swedish-glyph versions. scummrp handles all
+// block-level housekeeping: XOR encoding, LFLF/LECF sizes, LOFF table, DCHR.
 //
-// The data may be either XOR-encoded (as stored on disk in the classic game)
-// or plain (as stored inside the SE PAK). This function auto-detects which
-// form it receives by checking whether XOR-decoding yields a leading "LECF"
-// tag. The returned data is in the same encoding as the input.
-//
-// Returns the modified content ready to be written back. If the CHAR blocks
-// cannot be found or do not match the expected original sizes, an error is
-// returned for CHAR_0001 (critical) or a warning is printed for CHAR_0003
-// (non-critical).
-func PatchMonkey1001(input []byte) ([]byte, error) {
-	// Detect encoding: if XOR-decoding the first 4 bytes yields "LECF",
-	// the file is XOR-encoded. Otherwise treat it as already decoded.
-	encoded := isXOREncoded(input)
-
-	var data []byte
-	if encoded {
-		data = xorDecode(input)
-	} else {
-		data = make([]byte, len(input))
-		copy(data, input)
-	}
-
-	if len(data) < 4 || string(data[0:4]) != "LECF" {
-		return nil, fmt.Errorf("MONKEY1.001: does not start with LECF (bad data or unknown format)")
-	}
-
-	// Locate the LFLF that contains the charset CHAR blocks before patching.
-	// Its start offset is stable: inserting bytes inside it does not move it.
-	// We need this to keep the LOFF room-offset table consistent after patching.
-	char1Offset, err := findCharBlock(data, 1)
-	if err != nil {
-		return nil, fmt.Errorf("CHAR_0001: %w", err)
-	}
-	charsetLFLFOffset, err := findContainingLFLF(data, char1Offset)
-	if err != nil {
-		return nil, fmt.Errorf("CHAR_0001 containing LFLF: %w", err)
-	}
-
-	// Apply CHAR_0001 patch (critical — verb/menu text).
-	data, err = patchCharBlock(data, "CHAR_0001", patchedChar0001, originalChar0001Size)
-	if err != nil {
-		return nil, err
-	}
-	delta1 := len(patchedChar0001) - originalChar0001Size
-	if delta1 != 0 {
-		if err := updateLOFF(data, charsetLFLFOffset, delta1); err != nil {
-			return nil, fmt.Errorf("CHAR_0001 LOFF update: %w", err)
-		}
-	}
-
-	// Apply CHAR_0003 patch (best-effort — small text charset).
-	data, err = patchCharBlock(data, "CHAR_0003", patchedChar0003, originalChar0003Size)
-	if err != nil {
-		fmt.Printf("    Warning: CHAR_0003 patch skipped: %v\n", err)
-	} else {
-		delta2 := len(patchedChar0003) - originalChar0003Size
-		if delta2 != 0 {
-			if err := updateLOFF(data, charsetLFLFOffset, delta2); err != nil {
-				return nil, fmt.Errorf("CHAR_0003 LOFF update: %w", err)
-			}
-		}
-	}
-
-	if encoded {
-		return xorDecode(data), nil // XOR is symmetric; decode = encode
-	}
-	return data, nil
-}
-
-// isXOREncoded returns true if XOR-decoding the first 4 bytes of data yields
-// the SCUMM "LECF" block tag, indicating that the data is XOR-encoded with
-// key 0x69.
-func isXOREncoded(data []byte) bool {
-	if len(data) < 4 {
-		return false
-	}
-	return data[0]^xorKey == 'L' &&
-		data[1]^xorKey == 'E' &&
-		data[2]^xorKey == 'C' &&
-		data[3]^xorKey == 'F'
-}
-
-// patchCharBlock finds the n-th occurrence of "CHAR" (1-indexed by blockName)
-// in data, verifies its size matches originalSize, replaces it with newBlock,
-// and updates all ancestor block sizes.
-func patchCharBlock(data []byte, blockName string, newBlock []byte, originalSize int) ([]byte, error) {
-	// blockName is "CHAR_0001" or "CHAR_0003"; the numeric suffix maps to the
-	// 1st and 3rd CHAR block in the file respectively.
-	var targetOrdinal int
-	switch blockName {
-	case "CHAR_0001":
-		targetOrdinal = 1
-	case "CHAR_0003":
-		targetOrdinal = 3
+// gameDir must contain MONKEY1.000 and MONKEY1.001 in uppercase, as required
+// by scummrp's monkeycdalt game ID.
+func Patch(gameDir string) error {
+	var scummrpBin []byte
+	var scummrpName string
+	switch runtime.GOOS {
+	case "linux":
+		scummrpBin = scummrpLinux
+		scummrpName = "scummrp"
+	case "darwin":
+		scummrpBin = scummrpDarwin
+		scummrpName = "scummrp"
+	case "windows":
+		scummrpBin = scummrpWindows
+		scummrpName = "scummrp.exe"
 	default:
-		return data, fmt.Errorf("unknown block name %q", blockName)
+		return fmt.Errorf("unsupported platform: %s", runtime.GOOS)
 	}
 
-	// Find the target CHAR block by ordinal position.
-	offset, err := findCharBlock(data, targetOrdinal)
-	if err != nil {
-		return data, fmt.Errorf("%s: %w", blockName, err)
-	}
-
-	// Verify the original block size.
-	foundSize := int(binary.BigEndian.Uint32(data[offset+4:]))
-	if foundSize != originalSize {
-		return data, fmt.Errorf("%s: expected size %d, got %d (wrong game version?)",
-			blockName, originalSize, foundSize)
-	}
-
-	// Calculate size delta.
-	delta := len(newBlock) - originalSize
-
-	// Splice: replace [offset, offset+originalSize) with newBlock.
-	result := make([]byte, len(data)+delta)
-	copy(result[:offset], data[:offset])
-	copy(result[offset:], newBlock)
-	copy(result[offset+len(newBlock):], data[offset+originalSize:])
-
-	// Update ancestor block sizes (LFLF and LECF) by adding delta to their
-	// size fields. LECF is always at offset 0; LFLF is the innermost container
-	// immediately before the CHAR blocks.
-	if delta != 0 {
-		if err := updateAncestorSizes(result, offset, delta); err != nil {
-			return data, fmt.Errorf("%s: updating sizes: %w", blockName, err)
-		}
-	}
-
-	return result, nil
-}
-
-// findCharBlock returns the byte offset of the n-th "CHAR" block tag (1-based).
-func findCharBlock(data []byte, n int) (int, error) {
-	count := 0
-	for i := 0; i <= len(data)-8; i++ {
-		if data[i] == 'C' && data[i+1] == 'H' && data[i+2] == 'A' && data[i+3] == 'R' {
-			count++
-			if count == n {
-				return i, nil
-			}
-		}
-	}
-	return 0, fmt.Errorf("CHAR block %d not found (only found %d)", n, count)
-}
-
-// updateAncestorSizes adjusts the size fields of the LECF block (at offset 0)
-// and the LFLF block that directly contains the CHAR block at charOffset.
-func updateAncestorSizes(data []byte, charOffset, delta int) error {
-	// Update LECF at offset 0.
-	if len(data) < 8 {
-		return fmt.Errorf("file too small for LECF header")
-	}
-	if string(data[0:4]) != "LECF" {
-		return fmt.Errorf("expected LECF at offset 0, got %q", string(data[0:4]))
-	}
-	addToSize(data, 0, delta)
-
-	// Find the LFLF block whose range contains charOffset.
-	lflf, err := findContainingLFLF(data, charOffset)
+	tmpDir, err := os.MkdirTemp("", "scummrp-*")
 	if err != nil {
 		return err
 	}
-	addToSize(data, lflf, delta)
+	defer os.RemoveAll(tmpDir)
+
+	scummrpPath := filepath.Join(tmpDir, scummrpName)
+	if err := os.WriteFile(scummrpPath, scummrpBin, 0755); err != nil {
+		return err
+	}
+
+	dumpDir := filepath.Join(tmpDir, "dump")
+
+	run := func(args ...string) error {
+		cmd := exec.Command(scummrpPath, args...)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		return cmd.Run()
+	}
+
+	// Export only CHAR blocks to dump directory.
+	if err := run("-g", "monkeycdalt", "-p", gameDir, "-t", "CHAR", "-od", dumpDir); err != nil {
+		return fmt.Errorf("scummrp export: %w", err)
+	}
+
+	// Replace CHAR_0001 and CHAR_0003 with the Swedish-glyph versions.
+	charDir := filepath.Join(dumpDir, "DISK_0001", "LECF", "LFLF_0010")
+	if err := os.WriteFile(filepath.Join(charDir, "CHAR_0001"), patchedChar0001, 0644); err != nil {
+		return fmt.Errorf("write CHAR_0001: %w", err)
+	}
+	if err := os.WriteFile(filepath.Join(charDir, "CHAR_0003"), patchedChar0003, 0644); err != nil {
+		return fmt.Errorf("write CHAR_0003: %w", err)
+	}
+
+	// Import patched CHAR blocks back; scummrp updates all size fields and tables.
+	if err := run("-g", "monkeycdalt", "-p", gameDir, "-t", "CHAR", "-id", dumpDir); err != nil {
+		return fmt.Errorf("scummrp import: %w", err)
+	}
 
 	return nil
-}
-
-// findContainingLFLF walks the LFLF blocks inside LECF and returns the offset
-// of the one whose content includes charOffset.
-func findContainingLFLF(data []byte, charOffset int) (int, error) {
-	// LECF body starts at offset 8.
-	pos := 8
-	for pos+8 <= len(data) {
-		tag := string(data[pos : pos+4])
-		size := int(binary.BigEndian.Uint32(data[pos+4:]))
-		if size < 8 {
-			break
-		}
-		if tag == "LFLF" {
-			blockEnd := pos + size
-			if charOffset >= pos && charOffset < blockEnd {
-				return pos, nil
-			}
-		}
-		pos += size
-	}
-	return 0, fmt.Errorf("no LFLF block contains offset %d", charOffset)
-}
-
-// addToSize adds delta to the big-endian uint32 size field at data[offset+4].
-func addToSize(data []byte, offset, delta int) {
-	current := int(binary.BigEndian.Uint32(data[offset+4:]))
-	binary.BigEndian.PutUint32(data[offset+4:], uint32(current+delta))
-}
-
-// PatchMonkey1000 updates the charset offset table in MONKEY1.000 to reflect
-// the new positions of CHAR blocks after PatchMonkey1001 has been applied.
-//
-// When CHAR_0001 and CHAR_0003 grow, all charset entries after them in the
-// DCHR directory block must have their stored offsets incremented by the
-// respective size deltas. The offsets are stored as little-endian uint32
-// values in the DCHR block body, relative to the containing LFLF body start.
-//
-// The function returns the updated encoded content ready to write back to disk.
-func PatchMonkey1000(input []byte) ([]byte, error) {
-	// Auto-detect XOR encoding: try decoding first, look for "DCHR" in either form.
-	decoded := xorDecode(input)
-	var data []byte
-	wasEncoded := containsDCHR(decoded)
-	if wasEncoded {
-		data = decoded
-	} else if containsDCHR(input) {
-		data = make([]byte, len(input))
-		copy(data, input)
-	} else {
-		return nil, fmt.Errorf("DCHR block not found in MONKEY1.000")
-	}
-
-	// Locate the DCHR directory block.
-	dchrOffset := -1
-	for i := 0; i <= len(data)-8; i++ {
-		if data[i] == 'D' && data[i+1] == 'C' && data[i+2] == 'H' && data[i+3] == 'R' {
-			dchrOffset = i
-			break
-		}
-	}
-	if dchrOffset < 0 {
-		return nil, fmt.Errorf("DCHR block not found in MONKEY1.000")
-	}
-
-	blockSize := int(binary.BigEndian.Uint32(data[dchrOffset+4:]))
-	body := data[dchrOffset+8 : dchrOffset+blockSize]
-
-	// The DCHR body contains a 2-byte LE entry count followed by count×5-byte
-	// entries (1 byte disk-num + 4 bytes LE offset, relative to LFLF body).
-	// We update all offsets that fall after char0001RelOffset (the first modified
-	// block), incrementing by char0001Delta for offsets after CHAR_0001 and by
-	// char0001Delta+char0003Delta for offsets after CHAR_0003.
-	//
-	// Known original LFLF-body-relative offsets (derived from the GOG/Steam
-	// MI1SE release — same classic files in both):
-	//   CHAR_0001: 98401   (1st modified block — offset does not change)
-	//   CHAR_0002: 101010  → +char0001Delta
-	//   CHAR_0003: 105618  → +char0001Delta     (2nd modified block)
-	//   CHAR_0004: 107689  → +char0001Delta+char0003Delta
-	//   CHAR_0006: 112479  → +char0001Delta+char0003Delta
-	const (
-		char0001OrigRel = 98401
-		char0003OrigRel = 105618
-		char0001Delta   = 16 // len(patchedChar0001) - originalChar0001Size
-		char0003Delta   = 66 // len(patchedChar0003) - originalChar0003Size
-	)
-
-	// DCHR body layout: 2-byte LE count, then count disk bytes, then count×4-byte LE offsets.
-	// The disk bytes and offsets are stored in two separate packed arrays, not interleaved.
-	if len(body) < 2 {
-		return nil, fmt.Errorf("DCHR body too short")
-	}
-	count := int(binary.LittleEndian.Uint16(body[0:2]))
-	offsetsStart := 2 + count // disk bytes occupy body[2 : 2+count]
-	for i := 0; i < count; i++ {
-		entryOffset := offsetsStart + i*4
-		if entryOffset+4 > len(body) {
-			break
-		}
-		orig := int(binary.LittleEndian.Uint32(body[entryOffset:]))
-		if orig <= char0001OrigRel {
-			continue // CHAR_0001 itself or earlier — no shift
-		}
-		var delta int
-		if orig > char0003OrigRel+char0001Delta {
-			// Comes after CHAR_0003's (shifted) position
-			delta = char0001Delta + char0003Delta
-		} else {
-			// Between CHAR_0001 and CHAR_0003 (i.e., CHAR_0002 and CHAR_0003 before it grew)
-			delta = char0001Delta
-		}
-		if delta != 0 {
-			binary.LittleEndian.PutUint32(body[entryOffset:], uint32(orig+delta))
-		}
-	}
-
-	if wasEncoded {
-		return xorDecode(data), nil // XOR is symmetric
-	}
-	return data, nil
-}
-
-// updateLOFF adjusts the LOFF room-offset table to account for delta bytes
-// inserted into the LFLF block at lflfOffset.
-//
-// The LOFF block, when present, is the first block in the LECF body (at
-// decoded offset 8). It stores, for each room, the absolute file offset of
-// that room's LFLF body (i.e. LFLF_start + 8). Any entry whose stored offset
-// is greater than lflfOffset+8 points to an LFLF that follows the modified
-// one in the file and must therefore be incremented by delta.
-//
-// If no LOFF block is present (e.g. in test fixtures) the function is a no-op.
-func updateLOFF(data []byte, lflfOffset, delta int) error {
-	if len(data) < 16 || string(data[8:12]) != "LOFF" {
-		return nil // no LOFF block; no-op
-	}
-	loffSize := int(binary.BigEndian.Uint32(data[12:]))
-	if loffSize < 9 || 8+loffSize > len(data) {
-		return fmt.Errorf("LOFF block has invalid size %d", loffSize)
-	}
-	// LOFF body layout: count(1B) + count×[room_id(1B) + offset_LE32(4B)]
-	body := data[16 : 8+loffSize]
-	count := int(body[0])
-	if 1+count*5 > len(body) {
-		return fmt.Errorf("LOFF body too short for %d entries", count)
-	}
-	threshold := lflfOffset + 8 // LFLF body start; entries pointing past this shift
-	for i := 0; i < count; i++ {
-		entryBase := 1 + i*5 // room_id at entryBase, offset LE32 at entryBase+1
-		offset := int(binary.LittleEndian.Uint32(body[entryBase+1:]))
-		if offset > threshold {
-			binary.LittleEndian.PutUint32(body[entryBase+1:], uint32(offset+delta))
-		}
-	}
-	return nil
-}
-
-// containsDCHR returns true if data contains the ASCII sequence "DCHR".
-func containsDCHR(data []byte) bool {
-	for i := 0; i <= len(data)-4; i++ {
-		if data[i] == 'D' && data[i+1] == 'C' && data[i+2] == 'H' && data[i+3] == 'R' {
-			return true
-		}
-	}
-	return false
-}
-
-// xorDecode applies XOR key 0x69 to every byte (symmetric encode/decode).
-func xorDecode(in []byte) []byte {
-	out := make([]byte, len(in))
-	for i, b := range in {
-		out[i] = b ^ xorKey
-	}
-	return out
 }

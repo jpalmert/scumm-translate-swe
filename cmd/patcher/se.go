@@ -101,7 +101,13 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return fmt.Errorf("translation injection failed: %w", err)
 	}
 
-	// --- Step 5: Read patched files back ---
+	// --- Step 5: Patch CHAR blocks (Swedish glyph data) ---
+	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
+	if err := charset.Patch(tmpDir); err != nil {
+		return fmt.Errorf("charset patch: %w", err)
+	}
+
+	// --- Step 6: Read patched files back ---
 	patched000, err := os.ReadFile(path000)
 	if err != nil {
 		return err
@@ -113,23 +119,10 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	fmt.Printf("    MONKEY1.000: %d bytes (was %d)\n", len(patched000), len(entry000.Data))
 	fmt.Printf("    MONKEY1.001: %d bytes (was %d)\n", len(patched001), len(entry001.Data))
 
-	// --- Step 5a: Patch charset (CHAR_0001/0003 Swedish glyphs) ---
-	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
-	newData001, err := charset.PatchMonkey1001(patched001)
-	if err != nil {
-		return fmt.Errorf("charset patch (MONKEY1.001): %w", err)
-	}
-	newData000, err := charset.PatchMonkey1000(patched000)
-	if err != nil {
-		return fmt.Errorf("charset patch (MONKEY1.000): %w", err)
-	}
-	fmt.Printf("    MONKEY1.000: %d bytes (was %d)\n", len(newData000), len(patched000))
-	fmt.Printf("    MONKEY1.001: %d bytes (was %d)\n", len(newData001), len(patched001))
+	entry000.Data = patched000
+	entry001.Data = patched001
 
-	entry000.Data = newData000
-	entry001.Data = newData001
-
-	// --- Step 6: Patch font lookup tables ---
+	// --- Step 7: Patch font lookup tables ---
 	fmt.Println("\n==> Patching font lookup tables...")
 	fontCount, err := remapFontEntries(entries)
 	if err != nil {
@@ -137,7 +130,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
-	// --- Step 7: Repack PAK ---
+	// --- Step 8: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
