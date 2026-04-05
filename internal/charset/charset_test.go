@@ -172,10 +172,8 @@ func TestAddToSize(t *testing.T) {
 	}
 }
 
-// buildFakeMonkey1000 creates a minimal XOR-encoded MONKEY1.000 with a DCHR
-// block containing the given charset offsets (LFLF-body-relative, LE32).
-// Each entry gets disk byte = 1.
-func buildFakeMonkey1000(offsets []uint32) []byte {
+// buildDCHRBody builds a raw (plain) DCHR block with the given charset offsets.
+func buildDCHRBody(offsets []uint32) []byte {
 	count := len(offsets)
 	bodySize := 2 + count*5
 	blockSize := 8 + bodySize
@@ -189,8 +187,13 @@ func buildFakeMonkey1000(offsets []uint32) []byte {
 		buf[pos] = 1 // disk number
 		binary.LittleEndian.PutUint32(buf[pos+1:], off)
 	}
+	return buf
+}
 
-	// XOR-encode.
+// buildFakeMonkey1000 creates a minimal XOR-encoded MONKEY1.000 with a DCHR
+// block containing the given charset offsets (LFLF-body-relative, LE32).
+func buildFakeMonkey1000(offsets []uint32) []byte {
+	buf := buildDCHRBody(offsets)
 	enc := make([]byte, len(buf))
 	for i, b := range buf {
 		enc[i] = b ^ xorKey
@@ -198,12 +201,22 @@ func buildFakeMonkey1000(offsets []uint32) []byte {
 	return enc
 }
 
-// readOffsets decodes a fake MONKEY1.000 and reads back the charset offsets.
+// buildFakePlainMonkey1000 creates an unencoded MONKEY1.000 (as found in SE PAK).
+func buildFakePlainMonkey1000(offsets []uint32) []byte {
+	return buildDCHRBody(offsets)
+}
+
+// readOffsets decodes a XOR-encoded fake MONKEY1.000 and reads back charset offsets.
 func readOffsets(enc []byte) []uint32 {
 	data := make([]byte, len(enc))
 	for i, b := range enc {
 		data[i] = b ^ xorKey
 	}
+	return readPlainOffsets(data)
+}
+
+// readPlainOffsets reads charset offsets from a plain (non-encoded) DCHR block.
+func readPlainOffsets(data []byte) []uint32 {
 	count := int(binary.LittleEndian.Uint16(data[8:]))
 	offsets := make([]uint32, count)
 	for i := range offsets {
@@ -214,11 +227,9 @@ func readOffsets(enc []byte) []uint32 {
 }
 
 func TestPatchMonkey1000NoDCHR(t *testing.T) {
-	enc := make([]byte, 16)
-	for i, b := range enc {
-		enc[i] = b ^ xorKey // encode garbage
-	}
-	_, err := PatchMonkey1000(enc)
+	// Neither XOR-encoded nor plain data contains "DCHR".
+	data := make([]byte, 16) // all zeros — no DCHR in either form
+	_, err := PatchMonkey1000(data)
 	if err == nil {
 		t.Fatal("expected error when DCHR block is missing")
 	}
@@ -232,22 +243,99 @@ func TestPatchMonkey1000OffsetsShifted(t *testing.T) {
 	//   CHAR_0004: 107689 → +106 (28+78)
 	//   CHAR_0006: 112479 → +106
 	input := []uint32{98401, 101010, 105618, 107689, 112479}
-	enc := buildFakeMonkey1000(input)
+	want := []uint32{98401, 101038, 105646, 107795, 112585}
 
+	// Test with XOR-encoded input.
+	enc := buildFakeMonkey1000(input)
 	patched, err := PatchMonkey1000(enc)
 	if err != nil {
-		t.Fatalf("PatchMonkey1000: %v", err)
+		t.Fatalf("PatchMonkey1000 (encoded): %v", err)
 	}
-
 	got := readOffsets(patched)
-	want := []uint32{98401, 101038, 105646, 107795, 112585}
 	if len(got) != len(want) {
-		t.Fatalf("got %d offsets, want %d", len(got), len(want))
+		t.Fatalf("encoded: got %d offsets, want %d", len(got), len(want))
 	}
 	for i, w := range want {
 		if got[i] != w {
-			t.Errorf("offset[%d]: got %d, want %d", i, got[i], w)
+			t.Errorf("encoded: offset[%d]: got %d, want %d", i, got[i], w)
 		}
+	}
+
+	// Test with plain (non-encoded) input — as found in the SE PAK.
+	plain := buildFakePlainMonkey1000(input)
+	patchedPlain, err := PatchMonkey1000(plain)
+	if err != nil {
+		t.Fatalf("PatchMonkey1000 (plain): %v", err)
+	}
+	gotPlain := readPlainOffsets(patchedPlain)
+	if len(gotPlain) != len(want) {
+		t.Fatalf("plain: got %d offsets, want %d", len(gotPlain), len(want))
+	}
+	for i, w := range want {
+		if gotPlain[i] != w {
+			t.Errorf("plain: offset[%d]: got %d, want %d", i, gotPlain[i], w)
+		}
+	}
+}
+
+func TestPatchMonkey1001PlainInput(t *testing.T) {
+	// Verify PatchMonkey1001 handles plain (non-XOR-encoded) input — as found
+	// in the SE PAK. Build a minimal LECF/LFLF/CHAR structure without encoding.
+	orig1 := originalChar0001Size
+	orig3 := originalChar0003Size
+	enc := buildFakeMonkey1001([]int{orig1, 50, orig3})
+	plain := decodeFake(enc) // XOR-decode → plain LECF data
+
+	// Sanity: plain data starts with LECF.
+	if string(plain[0:4]) != "LECF" {
+		t.Fatal("test setup: plain data should start with LECF")
+	}
+
+	patched, err := PatchMonkey1001(plain)
+	if err != nil {
+		t.Fatalf("PatchMonkey1001 (plain): %v", err)
+	}
+
+	// Output should also be plain (not XOR-encoded).
+	if string(patched[0:4]) != "LECF" {
+		t.Errorf("output should start with LECF, got %q", patched[0:4])
+	}
+
+	// CHAR_0001 and CHAR_0003 should have grown.
+	if len(patched) <= len(plain) {
+		t.Errorf("patched size %d should be larger than plain size %d", len(patched), len(plain))
+	}
+}
+
+func TestPatchMonkey1001EncodedInput(t *testing.T) {
+	// Verify PatchMonkey1001 handles XOR-encoded input — as found on disk in
+	// the classic game.
+	orig1 := originalChar0001Size
+	orig3 := originalChar0003Size
+	enc := buildFakeMonkey1001([]int{orig1, 50, orig3})
+
+	// Sanity: encoded data does NOT start with LECF.
+	if string(enc[0:4]) == "LECF" {
+		t.Fatal("test setup: encoded data should not start with LECF")
+	}
+
+	patched, err := PatchMonkey1001(enc)
+	if err != nil {
+		t.Fatalf("PatchMonkey1001 (encoded): %v", err)
+	}
+
+	// Output should also be XOR-encoded (not plain LECF).
+	if string(patched[0:4]) == "LECF" {
+		t.Errorf("output should be XOR-encoded, not plain LECF")
+	}
+
+	// After decoding, should start with LECF and be larger.
+	decoded := decodeFake(patched)
+	if string(decoded[0:4]) != "LECF" {
+		t.Errorf("decoded output should start with LECF, got %q", decoded[0:4])
+	}
+	if len(patched) <= len(enc) {
+		t.Errorf("patched size %d should be larger than encoded size %d", len(patched), len(enc))
 	}
 }
 

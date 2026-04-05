@@ -31,15 +31,33 @@ var patchedChar0001 []byte
 var patchedChar0003 []byte
 
 // PatchMonkey1001 adds Swedish glyph data to CHAR_0001 and CHAR_0003 inside
-// the given MONKEY1.001 content (which must be XOR-encoded as stored on disk).
+// the given MONKEY1.001 content.
 //
-// Returns the modified content ready to be written back to disk. If the CHAR
-// blocks cannot be found or do not match the expected original sizes, an error
-// is returned for CHAR_0001 (critical) or a warning is printed for CHAR_0003
+// The data may be either XOR-encoded (as stored on disk in the classic game)
+// or plain (as stored inside the SE PAK). This function auto-detects which
+// form it receives by checking whether XOR-decoding yields a leading "LECF"
+// tag. The returned data is in the same encoding as the input.
+//
+// Returns the modified content ready to be written back. If the CHAR blocks
+// cannot be found or do not match the expected original sizes, an error is
+// returned for CHAR_0001 (critical) or a warning is printed for CHAR_0003
 // (non-critical).
-func PatchMonkey1001(encoded []byte) ([]byte, error) {
-	// Decode in-place copy.
-	data := xorDecode(encoded)
+func PatchMonkey1001(input []byte) ([]byte, error) {
+	// Detect encoding: if XOR-decoding the first 4 bytes yields "LECF",
+	// the file is XOR-encoded. Otherwise treat it as already decoded.
+	encoded := isXOREncoded(input)
+
+	var data []byte
+	if encoded {
+		data = xorDecode(input)
+	} else {
+		data = make([]byte, len(input))
+		copy(data, input)
+	}
+
+	if len(data) < 4 || string(data[0:4]) != "LECF" {
+		return nil, fmt.Errorf("MONKEY1.001: does not start with LECF (bad data or unknown format)")
+	}
 
 	// Apply CHAR_0001 patch (critical — verb/menu text).
 	var err error
@@ -56,7 +74,23 @@ func PatchMonkey1001(encoded []byte) ([]byte, error) {
 		fmt.Printf("    Warning: CHAR_0003 patch skipped: %v\n", err)
 	}
 
-	return xorDecode(data), nil // XOR is symmetric; decode = encode
+	if encoded {
+		return xorDecode(data), nil // XOR is symmetric; decode = encode
+	}
+	return data, nil
+}
+
+// isXOREncoded returns true if XOR-decoding the first 4 bytes of data yields
+// the SCUMM "LECF" block tag, indicating that the data is XOR-encoded with
+// key 0x69.
+func isXOREncoded(data []byte) bool {
+	if len(data) < 4 {
+		return false
+	}
+	return data[0]^xorKey == 'L' &&
+		data[1]^xorKey == 'E' &&
+		data[2]^xorKey == 'C' &&
+		data[3]^xorKey == 'F'
 }
 
 // patchCharBlock finds the n-th occurrence of "CHAR" (1-indexed by blockName)
@@ -182,8 +216,19 @@ func addToSize(data []byte, offset, delta int) {
 // values in the DCHR block body, relative to the containing LFLF body start.
 //
 // The function returns the updated encoded content ready to write back to disk.
-func PatchMonkey1000(encoded []byte) ([]byte, error) {
-	data := xorDecode(encoded)
+func PatchMonkey1000(input []byte) ([]byte, error) {
+	// Auto-detect XOR encoding: try decoding first, look for "DCHR" in either form.
+	decoded := xorDecode(input)
+	var data []byte
+	wasEncoded := containsDCHR(decoded)
+	if wasEncoded {
+		data = decoded
+	} else if containsDCHR(input) {
+		data = make([]byte, len(input))
+		copy(data, input)
+	} else {
+		return nil, fmt.Errorf("DCHR block not found in MONKEY1.000")
+	}
 
 	// Locate the DCHR directory block.
 	dchrOffset := -1
@@ -246,7 +291,20 @@ func PatchMonkey1000(encoded []byte) ([]byte, error) {
 		}
 	}
 
-	return xorDecode(data), nil // XOR is symmetric
+	if wasEncoded {
+		return xorDecode(data), nil // XOR is symmetric
+	}
+	return data, nil
+}
+
+// containsDCHR returns true if data contains the ASCII sequence "DCHR".
+func containsDCHR(data []byte) bool {
+	for i := 0; i <= len(data)-4; i++ {
+		if data[i] == 'D' && data[i+1] == 'C' && data[i+2] == 'H' && data[i+3] == 'R' {
+			return true
+		}
+	}
+	return false
 }
 
 // xorDecode applies XOR key 0x69 to every byte (symmetric encode/decode).

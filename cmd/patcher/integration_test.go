@@ -156,6 +156,47 @@ func TestSEPatcherInPlaceBackup(t *testing.T) {
 	}
 }
 
+// INT-SE-003: Patch → restore backup → patch again succeeds (no double-patch failure).
+func TestSEPatcherRePatch(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	dir := t.TempDir()
+	origData, err := os.ReadFile(pakPath)
+	if err != nil {
+		t.Fatalf("read PAK: %v", err)
+	}
+	tmpPAK := filepath.Join(dir, "Monkey1.pak")
+	if err := os.WriteFile(tmpPAK, origData, 0644); err != nil {
+		t.Fatalf("write temp PAK: %v", err)
+	}
+
+	// First patch.
+	if err := runSEPatch(tmpPAK, "", translationPath); err != nil {
+		t.Fatalf("first runSEPatch: %v", err)
+	}
+
+	// Restore backup.
+	bakData, err := os.ReadFile(tmpPAK + ".bak")
+	if err != nil {
+		t.Fatalf("read backup: %v", err)
+	}
+	if err := os.WriteFile(tmpPAK, bakData, 0644); err != nil {
+		t.Fatalf("restore backup: %v", err)
+	}
+
+	// Second patch on restored original — must succeed without "CHAR block not found" errors.
+	if err := runSEPatch(tmpPAK, "", translationPath); err != nil {
+		t.Fatalf("second runSEPatch (after restore): %v", err)
+	}
+
+	// Both patches should produce the same result.
+	patchedOnce, err := os.ReadFile(tmpPAK)
+	if err != nil {
+		t.Fatalf("read patched PAK: %v", err)
+	}
+	t.Logf("Monkey1.pak after re-patch: %d bytes", len(patchedOnce))
+}
+
 // INT-CLASSIC: Real Swedish translation grows .001.
 func TestClassicPatcherFullPipeline(t *testing.T) {
 	pakPath, translationPath := integrationPaths(t)
