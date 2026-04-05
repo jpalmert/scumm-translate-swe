@@ -3,15 +3,16 @@
 // Patches MONKEY1.000 and MONKEY1.001 in-place with the Swedish translation.
 // Creates MONKEY1.000.bak and MONKEY1.001.bak before modifying the originals.
 //
-// The translation file (monkey1_swe.txt) is loaded from the same directory as
-// this executable by default. You can also pass its path explicitly.
+// Simple usage — place the patcher and monkey1_swe.txt next to MONKEY1.000 and run:
 //
-// Usage:
+//	classic-patcher-linux
+//
+// Advanced usage:
 //
 //	classic-patcher <game_dir> [translation_file]
 //
 //	game_dir          Directory containing MONKEY1.000 and MONKEY1.001.
-//	                  On Linux, lowercase monkey1.000/001 are also accepted.
+//	                  Uppercase or lowercase filenames both accepted.
 //	translation_file  Path to monkey1_swe.txt (default: next to this executable).
 //
 // After patching, play via ScummVM and set the game language to French.
@@ -28,15 +29,35 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		printUsage()
-		os.Exit(1)
-	}
-
-	gameDir := os.Args[1]
+	gameDir := ""
 	translationArg := ""
+	if len(os.Args) >= 2 {
+		gameDir = os.Args[1]
+	}
 	if len(os.Args) >= 3 {
 		translationArg = os.Args[2]
+	}
+
+	// No game dir specified — look for MONKEY1.000 next to the executable.
+	if gameDir == "" {
+		exe, err := os.Executable()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Error: cannot determine executable path: %v\n", err)
+			os.Exit(1)
+		}
+		exeDir := filepath.Dir(exe)
+		hasGame := false
+		for _, name := range []string{"MONKEY1.000", "monkey1.000"} {
+			if _, err := os.Stat(filepath.Join(exeDir, name)); err == nil {
+				hasGame = true
+				break
+			}
+		}
+		if !hasGame {
+			printUsage()
+			os.Exit(1)
+		}
+		gameDir = exeDir
 	}
 
 	fmt.Printf("Platform: %s/%s\n", runtime.GOOS, runtime.GOARCH)
@@ -54,7 +75,8 @@ func main() {
 func printUsage() {
 	exe := filepath.Base(os.Args[0])
 	fmt.Fprintf(os.Stderr, "MI1 Classic Swedish Translation Patcher\n\n")
-	fmt.Fprintf(os.Stderr, "Usage: %s <game_dir> [translation_file]\n\n", exe)
+	fmt.Fprintf(os.Stderr, "Simple usage: place %s and monkey1_swe.txt next to MONKEY1.000 and run it.\n\n", exe)
+	fmt.Fprintf(os.Stderr, "Advanced usage: %s <game_dir> [translation_file]\n\n", exe)
 	fmt.Fprintf(os.Stderr, "  game_dir          Directory containing MONKEY1.000 and MONKEY1.001\n")
 	fmt.Fprintf(os.Stderr, "  translation_file  Path to monkey1_swe.txt\n")
 	fmt.Fprintf(os.Stderr, "                    (default: monkey1_swe.txt next to this executable)\n\n")

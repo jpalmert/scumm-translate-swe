@@ -2,13 +2,14 @@
 //
 // Patches Monkey1.pak (Monkey Island 1 Special Edition) with the Swedish translation.
 //
-// By default, patches in place: creates Monkey1.pak.bak, then overwrites Monkey1.pak.
-// If an explicit output path is given, writes there instead (no backup needed).
+// Simple usage — place the patcher and monkey1_swe.txt next to Monkey1.pak and run:
 //
-// The translation file (monkey1_swe.txt) is loaded from the same directory as
-// this executable by default. You can also pass its path explicitly.
+//	se-patcher-linux
 //
-// Usage:
+// The patcher will find Monkey1.pak automatically, patch it in-place, and create
+// Monkey1.pak.bak as a backup.
+//
+// Advanced usage:
 //
 //	se-patcher <Monkey1.pak> [output.pak] [translation_file]
 //
@@ -17,8 +18,7 @@
 //	                  and creates Monkey1.pak.bak before overwriting.
 //	translation_file  Path to monkey1_swe.txt (default: next to this executable).
 //
-// After patching, replace Monkey1.pak in your game install (if you used an output
-// path) and set the in-game language to French to see the Swedish text.
+// After patching, set the in-game language to French to see the Swedish text.
 package main
 
 import (
@@ -35,23 +35,34 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		printUsage()
-		os.Exit(1)
-	}
-
-	inputPAK := os.Args[1]
-
-	// Parse remaining optional arguments.
-	// Convention: a .txt extension = translation file; anything else = output path.
+	// Parse arguments.
+	// Convention: a .txt extension = translation file; anything else = PAK/output path.
+	inputPAK := ""
 	outputPAK := ""
 	translationArg := ""
-	for _, arg := range os.Args[2:] {
+	for _, arg := range os.Args[1:] {
 		if strings.HasSuffix(strings.ToLower(arg), ".txt") {
 			translationArg = arg
+		} else if inputPAK == "" {
+			inputPAK = arg
 		} else {
 			outputPAK = arg
 		}
+	}
+
+	// No PAK specified — look for Monkey1.pak next to the executable.
+	if inputPAK == "" {
+		exe, err := os.Executable()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Error: cannot determine executable path: %v\n", err)
+			os.Exit(1)
+		}
+		candidate := filepath.Join(filepath.Dir(exe), "Monkey1.pak")
+		if _, err := os.Stat(candidate); err != nil {
+			printUsage()
+			os.Exit(1)
+		}
+		inputPAK = candidate
 	}
 
 	fmt.Printf("Platform: %s/%s\n", runtime.GOOS, runtime.GOARCH)
@@ -75,7 +86,8 @@ func main() {
 func printUsage() {
 	exe := filepath.Base(os.Args[0])
 	fmt.Fprintf(os.Stderr, "MI1SE Swedish Translation Patcher\n\n")
-	fmt.Fprintf(os.Stderr, "Usage: %s <Monkey1.pak> [output.pak] [translation_file]\n\n", exe)
+	fmt.Fprintf(os.Stderr, "Simple usage: place %s and monkey1_swe.txt next to Monkey1.pak and run it.\n\n", exe)
+	fmt.Fprintf(os.Stderr, "Advanced usage: %s <Monkey1.pak> [output.pak] [translation_file]\n\n", exe)
 	fmt.Fprintf(os.Stderr, "  Monkey1.pak       Path to your original GOG/Steam game file\n")
 	fmt.Fprintf(os.Stderr, "  output.pak        Output path (default: patch Monkey1.pak in-place)\n")
 	fmt.Fprintf(os.Stderr, "  translation_file  Path to monkey1_swe.txt (.txt extension required)\n")

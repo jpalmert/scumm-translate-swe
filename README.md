@@ -18,42 +18,53 @@ Two patchers are provided depending on which version you own.
 
 > **Note:** Only tested with the GOG version. The Steam version should work but has not been verified.
 
-Download: `se-patcher-windows.exe` / `se-patcher-darwin` / `se-patcher-linux`
-and `monkey1_swe.txt` — keep them in the same folder.
+Download `se-patcher-windows.exe` / `se-patcher-darwin` / `se-patcher-linux`
+and `monkey1_swe.txt` into the same folder as `Monkey1.pak`, then run the patcher.
 
+**Windows:**
 ```
-se-patcher-windows.exe  "C:\Games\Monkey Island\Monkey1.pak"
+se-patcher-windows.exe
 ```
 
-This patches `Monkey1.pak` in-place. A backup (`Monkey1.pak.bak`) is created
-automatically before any changes are made.
+**Linux / macOS:**
+```
+./se-patcher-linux
+```
+
+The patcher finds `Monkey1.pak` automatically, patches it in-place, and creates
+`Monkey1.pak.bak` as a backup before making any changes.
 
 After patching, **set the in-game language to French** — the SE engine stores custom
 translations in the French language slot. You must select French to see Swedish text.
 
-You can edit `monkey1_swe.txt` before running the patcher to adjust the translation.
-Place it next to the patcher binary, or pass its path explicitly:
-
+**Advanced:** you can also pass paths explicitly, e.g. to write to a separate output file:
 ```
-se-patcher-linux Monkey1.pak [output.pak] [monkey1_swe.txt]
+se-patcher-linux Monkey1.pak patched.pak [monkey1_swe.txt]
 ```
 
 ### Classic / CD-ROM (ScummVM)
 
-Download: `classic-patcher-windows.exe` / `classic-patcher-darwin` / `classic-patcher-linux`
-and `monkey1_swe.txt` — keep them in the same folder.
+Download `classic-patcher-windows.exe` / `classic-patcher-darwin` / `classic-patcher-linux`
+and `monkey1_swe.txt` into the same folder as `MONKEY1.000` and `MONKEY1.001`, then run
+the patcher.
 
+**Windows:**
 ```
-classic-patcher-linux  /path/to/game/dir
+classic-patcher-windows.exe
 ```
 
-`game/dir` is the folder containing `MONKEY1.000` and `MONKEY1.001` (uppercase or lowercase
-both work). Backups (`MONKEY1.000.bak`, `MONKEY1.001.bak`) are created before patching.
+**Linux / macOS:**
+```
+./classic-patcher-linux
+```
+
+Backups (`MONKEY1.000.bak`, `MONKEY1.001.bak`) are created before patching.
 
 After patching, open ScummVM, select the game, and **set the game language to French**.
 
+**Advanced:** pass the game directory explicitly:
 ```
-classic-patcher-linux game/dir [monkey1_swe.txt]
+classic-patcher-linux /path/to/game/dir [monkey1_swe.txt]
 ```
 
 
