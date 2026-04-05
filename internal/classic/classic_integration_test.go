@@ -166,6 +166,136 @@ func TestIdentityTranslation(t *testing.T) {
 	}
 }
 
+// INT-EXTRACT-PAK: Extracting strings from files sourced from a PAK produces non-empty output.
+//
+// This mirrors the PAK input mode of scripts/se/extract_classic_strings.sh:
+// classic files are pulled from Monkey1.pak, written to a temp directory with
+// uppercase names, then scummtr exports strings from them.
+func TestExtractStringsFromPAK(t *testing.T) {
+	pakPath, scummtrPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var data000, data001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			data000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			data001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if data000 == nil || data001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	scummtrData, _ := os.ReadFile(scummtrPath)
+	scummtrExec := filepath.Join(t.TempDir(), "scummtr")
+	os.WriteFile(scummtrExec, scummtrData, 0755)
+
+	// Write classic files with uppercase names (as the script does).
+	classicDir := t.TempDir()
+	os.WriteFile(filepath.Join(classicDir, "MONKEY1.000"), data000, 0644)
+	os.WriteFile(filepath.Join(classicDir, "MONKEY1.001"), data001, 0644)
+
+	outFile := filepath.Join(t.TempDir(), "strings.txt")
+	cmd := exec.Command(scummtrExec,
+		"-g", "monkeycdalt", "-p", classicDir, "-cwh", "-A", "aov", "-o", "-f", outFile,
+	)
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	if err := cmd.Run(); err != nil {
+		t.Fatalf("scummtr export: %v", err)
+	}
+
+	info, err := os.Stat(outFile)
+	if err != nil || info.Size() == 0 {
+		t.Fatal("scummtr export produced no output")
+	}
+	t.Logf("extracted %d bytes of strings from PAK-sourced files", info.Size())
+}
+
+// INT-EXTRACT-DIR: Extracting strings from a directory of classic files produces non-empty output.
+//
+// This mirrors the directory input mode of scripts/se/extract_classic_strings.sh:
+// the user provides a directory containing MONKEY1.000 + MONKEY1.001 directly,
+// skipping the PAK extraction step. Tests both uppercase and lowercase filenames,
+// since the script normalises them to uppercase before invoking scummtr.
+func TestExtractStringsFromClassicDir(t *testing.T) {
+	pakPath, scummtrPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var data000, data001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			data000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			data001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if data000 == nil || data001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	scummtrData, _ := os.ReadFile(scummtrPath)
+	scummtrExec := filepath.Join(t.TempDir(), "scummtr")
+	os.WriteFile(scummtrExec, scummtrData, 0755)
+
+	for _, tc := range []struct {
+		name    string
+		f000    string
+		f001    string
+	}{
+		{"uppercase", "MONKEY1.000", "MONKEY1.001"},
+		{"lowercase", "monkey1.000", "monkey1.001"},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			// Simulate the user's classic files directory.
+			inputDir := t.TempDir()
+			os.WriteFile(filepath.Join(inputDir, tc.f000), data000, 0644)
+			os.WriteFile(filepath.Join(inputDir, tc.f001), data001, 0644)
+
+			// Simulate what the script does: copy to a work dir with uppercase names.
+			workDir := t.TempDir()
+			os.WriteFile(filepath.Join(workDir, "MONKEY1.000"),
+				mustReadFile(t, filepath.Join(inputDir, tc.f000)), 0644)
+			os.WriteFile(filepath.Join(workDir, "MONKEY1.001"),
+				mustReadFile(t, filepath.Join(inputDir, tc.f001)), 0644)
+
+			outFile := filepath.Join(t.TempDir(), "strings.txt")
+			cmd := exec.Command(scummtrExec,
+				"-g", "monkeycdalt", "-p", workDir, "-cwh", "-A", "aov", "-o", "-f", outFile,
+			)
+			cmd.Stdout = os.Stdout
+			cmd.Stderr = os.Stderr
+			if err := cmd.Run(); err != nil {
+				t.Fatalf("scummtr export: %v", err)
+			}
+
+			info, err := os.Stat(outFile)
+			if err != nil || info.Size() == 0 {
+				t.Fatal("scummtr export produced no output")
+			}
+			t.Logf("extracted %d bytes of strings from %s directory", info.Size(), tc.name)
+		})
+	}
+}
+
+func mustReadFile(t *testing.T, path string) []byte {
+	t.Helper()
+	data, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatalf("read %s: %v", path, err)
+	}
+	return data
+}
+
 // INT-CLASSIC: InjectTranslation with a real translation file produces a larger .001.
 func TestInjectTranslationWithRealFile(t *testing.T) {
 	pakPath, _ := integrationPaths(t)
