@@ -16,6 +16,8 @@ Two patchers are provided depending on which version you own.
 
 ### Special Edition (GOG or Steam)
 
+> **Note:** Only tested with the GOG version. The Steam version should work but has not been verified.
+
 Download: `se-patcher-windows.exe` / `se-patcher-darwin` / `se-patcher-linux`
 and `monkey1_swe.txt` — keep them in the same folder.
 
