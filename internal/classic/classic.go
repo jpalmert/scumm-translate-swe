@@ -100,18 +100,18 @@ func InjectTranslation(gameDir, translationPath string) error {
 	// Flags:
 	//   -g monkeycdalt  game ID for the MONKEY1.000 file variant
 	//   -p              path to directory containing MONKEY1.000 + MONKEY1.001
-	//   -A aov          protect actor/object/verb names from accidental overwrite
 	//   -i              inject mode: import text INTO the game files
 	//   -f              path to the pre-encoded translation file
 	//
 	// Note: -c (Windows-1252 mode) is intentionally omitted — Swedish characters
 	// have already been converted to SCUMM escape codes by encodeForScummtr.
 	// Note: -w (CRLF) is intentionally omitted — the file uses Unix LF line endings.
+	// Note: -A aov is intentionally omitted — we want verb/object/actor strings
+	// injected as well so that menu items (e.g. "Öppna") are translated.
 	cmd := exec.Command(
 		scummtrPath,
 		"-g", "monkeycdalt",
 		"-p", gameDir,
-		"-A", "aov",
 		"-i",
 		"-f", encodedPath,
 	)

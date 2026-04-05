@@ -1,0 +1,270 @@
+package charset
+
+import (
+	"encoding/binary"
+	"testing"
+)
+
+// buildFakeMonkey1001 creates a minimal XOR-encoded MONKEY1.001 containing a
+// LECF block → LFLF block → CHAR blocks with the given sizes. Returns the
+// encoded bytes and the decoded (in-memory) bytes for inspection.
+func buildFakeMonkey1001(charSizes []int) (encoded []byte) {
+	// Build decoded form first, then XOR-encode.
+	charTotal := 0
+	for _, s := range charSizes {
+		charTotal += s
+	}
+
+	lflf := 8 + charTotal // LFLF header + char data
+	lecf := 8 + lflf      // LECF header + lflf
+
+	buf := make([]byte, lecf)
+	copy(buf[0:], "LECF")
+	binary.BigEndian.PutUint32(buf[4:], uint32(lecf))
+
+	copy(buf[8:], "LFLF")
+	binary.BigEndian.PutUint32(buf[12:], uint32(lflf))
+
+	pos := 16
+	for i, s := range charSizes {
+		copy(buf[pos:], "CHAR")
+		binary.BigEndian.PutUint32(buf[pos+4:], uint32(s))
+		// Fill body with ordinal byte so we can identify each block.
+		for j := 8; j < s; j++ {
+			buf[pos+j] = byte(i + 1)
+		}
+		pos += s
+	}
+
+	// XOR-encode.
+	enc := make([]byte, len(buf))
+	for i, b := range buf {
+		enc[i] = b ^ xorKey
+	}
+	return enc
+}
+
+// decodeFake XOR-decodes and returns the raw decoded bytes.
+func decodeFake(enc []byte) []byte {
+	out := make([]byte, len(enc))
+	for i, b := range enc {
+		out[i] = b ^ xorKey
+	}
+	return out
+}
+
+func TestXorDecodeSymmetric(t *testing.T) {
+	data := []byte{0x00, 0xFF, 0x42, xorKey}
+	encoded := xorDecode(data)
+	decoded := xorDecode(encoded)
+	for i := range data {
+		if decoded[i] != data[i] {
+			t.Fatalf("xorDecode not symmetric at index %d: got %d, want %d", i, decoded[i], data[i])
+		}
+	}
+}
+
+func TestFindCharBlock(t *testing.T) {
+	enc := buildFakeMonkey1001([]int{20, 30, 40})
+	data := decodeFake(enc)
+
+	for n, want := range []int{16, 36, 66} { // expected offsets (0-based, 1-indexed n)
+		got, err := findCharBlock(data, n+1)
+		if err != nil {
+			t.Fatalf("findCharBlock(%d): %v", n+1, err)
+		}
+		if got != want {
+			t.Errorf("findCharBlock(%d): got %d, want %d", n+1, got, want)
+		}
+	}
+}
+
+func TestFindCharBlockNotFound(t *testing.T) {
+	enc := buildFakeMonkey1001([]int{20})
+	data := decodeFake(enc)
+	_, err := findCharBlock(data, 2)
+	if err == nil {
+		t.Fatal("expected error for missing second CHAR block")
+	}
+}
+
+func TestFindContainingLFLF(t *testing.T) {
+	enc := buildFakeMonkey1001([]int{20, 30})
+	data := decodeFake(enc)
+
+	charOffset := 16 // first CHAR block
+	lflf, err := findContainingLFLF(data, charOffset)
+	if err != nil {
+		t.Fatalf("findContainingLFLF: %v", err)
+	}
+	if lflf != 8 {
+		t.Errorf("expected LFLF at offset 8, got %d", lflf)
+	}
+}
+
+func TestPatchCharBlockSizeMismatch(t *testing.T) {
+	// Build file with CHAR_0001 of size 100; patch expects originalChar0001Size (2609).
+	enc := buildFakeMonkey1001([]int{100, 200, 300})
+	_, err := patchCharBlock(decodeFake(enc), "CHAR_0001", []byte("replacement"), originalChar0001Size)
+	if err == nil {
+		t.Fatal("expected error for size mismatch")
+	}
+}
+
+func TestPatchCharBlockRoundtrip(t *testing.T) {
+	orig := originalChar0001Size
+	// Build fake data with correct original size.
+	enc := buildFakeMonkey1001([]int{orig, 50})
+
+	newBlock := make([]byte, orig+28)
+	copy(newBlock, "CHAR")
+	binary.BigEndian.PutUint32(newBlock[4:], uint32(len(newBlock)))
+	for i := 8; i < len(newBlock); i++ {
+		newBlock[i] = 0xAB
+	}
+
+	patched, err := patchCharBlock(decodeFake(enc), "CHAR_0001", newBlock, orig)
+	if err != nil {
+		t.Fatalf("patchCharBlock: %v", err)
+	}
+
+	// Verify the new block is at offset 16.
+	if string(patched[16:20]) != "CHAR" {
+		t.Errorf("expected CHAR tag at 16, got %q", patched[16:20])
+	}
+	newSize := int(binary.BigEndian.Uint32(patched[20:]))
+	if newSize != len(newBlock) {
+		t.Errorf("new block size: got %d, want %d", newSize, len(newBlock))
+	}
+
+	// Verify LFLF size updated.
+	lflf := int(binary.BigEndian.Uint32(patched[12:]))
+	wantLFLF := 8 + orig + 50 + 28
+	if lflf != wantLFLF {
+		t.Errorf("LFLF size: got %d, want %d", lflf, wantLFLF)
+	}
+
+	// Verify LECF size updated.
+	lecf := int(binary.BigEndian.Uint32(patched[4:]))
+	wantLECF := 8 + wantLFLF
+	if lecf != wantLECF {
+		t.Errorf("LECF size: got %d, want %d", lecf, wantLECF)
+	}
+
+	// Verify the block after CHAR_0001 (the 50-byte one) is intact.
+	afterOffset := 16 + len(newBlock)
+	if string(patched[afterOffset:afterOffset+4]) != "CHAR" {
+		t.Errorf("second CHAR block not at expected position")
+	}
+	secondSize := int(binary.BigEndian.Uint32(patched[afterOffset+4:]))
+	if secondSize != 50 {
+		t.Errorf("second CHAR block size: got %d, want 50", secondSize)
+	}
+}
+
+func TestAddToSize(t *testing.T) {
+	data := make([]byte, 12)
+	binary.BigEndian.PutUint32(data[4:], 100)
+	addToSize(data, 0, 28)
+	got := int(binary.BigEndian.Uint32(data[4:]))
+	if got != 128 {
+		t.Errorf("addToSize: got %d, want 128", got)
+	}
+}
+
+// buildFakeMonkey1000 creates a minimal XOR-encoded MONKEY1.000 with a DCHR
+// block containing the given charset offsets (LFLF-body-relative, LE32).
+// Each entry gets disk byte = 1.
+func buildFakeMonkey1000(offsets []uint32) []byte {
+	count := len(offsets)
+	bodySize := 2 + count*5
+	blockSize := 8 + bodySize
+
+	buf := make([]byte, blockSize)
+	copy(buf[0:], "DCHR")
+	binary.BigEndian.PutUint32(buf[4:], uint32(blockSize))
+	binary.LittleEndian.PutUint16(buf[8:], uint16(count))
+	for i, off := range offsets {
+		pos := 10 + i*5
+		buf[pos] = 1 // disk number
+		binary.LittleEndian.PutUint32(buf[pos+1:], off)
+	}
+
+	// XOR-encode.
+	enc := make([]byte, len(buf))
+	for i, b := range buf {
+		enc[i] = b ^ xorKey
+	}
+	return enc
+}
+
+// readOffsets decodes a fake MONKEY1.000 and reads back the charset offsets.
+func readOffsets(enc []byte) []uint32 {
+	data := make([]byte, len(enc))
+	for i, b := range enc {
+		data[i] = b ^ xorKey
+	}
+	count := int(binary.LittleEndian.Uint16(data[8:]))
+	offsets := make([]uint32, count)
+	for i := range offsets {
+		pos := 10 + i*5 + 1
+		offsets[i] = binary.LittleEndian.Uint32(data[pos:])
+	}
+	return offsets
+}
+
+func TestPatchMonkey1000NoDCHR(t *testing.T) {
+	enc := make([]byte, 16)
+	for i, b := range enc {
+		enc[i] = b ^ xorKey // encode garbage
+	}
+	_, err := PatchMonkey1000(enc)
+	if err == nil {
+		t.Fatal("expected error when DCHR block is missing")
+	}
+}
+
+func TestPatchMonkey1000OffsetsShifted(t *testing.T) {
+	// Provide offsets matching the known layout:
+	//   CHAR_0001: 98401  → no change (first modified block)
+	//   CHAR_0002: 101010 → +28
+	//   CHAR_0003: 105618 → +28
+	//   CHAR_0004: 107689 → +106 (28+78)
+	//   CHAR_0006: 112479 → +106
+	input := []uint32{98401, 101010, 105618, 107689, 112479}
+	enc := buildFakeMonkey1000(input)
+
+	patched, err := PatchMonkey1000(enc)
+	if err != nil {
+		t.Fatalf("PatchMonkey1000: %v", err)
+	}
+
+	got := readOffsets(patched)
+	want := []uint32{98401, 101038, 105646, 107795, 112585}
+	if len(got) != len(want) {
+		t.Fatalf("got %d offsets, want %d", len(got), len(want))
+	}
+	for i, w := range want {
+		if got[i] != w {
+			t.Errorf("offset[%d]: got %d, want %d", i, got[i], w)
+		}
+	}
+}
+
+func TestPatchMonkey1000EarlyOffsetsUnchanged(t *testing.T) {
+	// Offsets before CHAR_0001 must not be modified.
+	input := []uint32{1000, 50000, 98401}
+	enc := buildFakeMonkey1000(input)
+
+	patched, err := PatchMonkey1000(enc)
+	if err != nil {
+		t.Fatalf("PatchMonkey1000: %v", err)
+	}
+
+	got := readOffsets(patched)
+	for i, w := range []uint32{1000, 50000, 98401} {
+		if got[i] != w {
+			t.Errorf("offset[%d]: got %d, want %d (should be unchanged)", i, got[i], w)
+		}
+	}
+}

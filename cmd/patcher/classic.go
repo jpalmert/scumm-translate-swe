@@ -7,6 +7,7 @@ import (
 	"runtime"
 
 	"scumm-patcher/internal/backup"
+	"scumm-patcher/internal/charset"
 	"scumm-patcher/internal/classic"
 )
 
@@ -88,6 +89,23 @@ func runClassicPatch(gameDir, translationArg string) error {
 	}
 	fmt.Printf("    MONKEY1.000: %d bytes (was %d)\n", len(patched000), len(data000))
 	fmt.Printf("    MONKEY1.001: %d bytes (was %d)\n", len(patched001), len(data001))
+
+	// Update MONKEY1.000 charset offset table.
+	fmt.Println("\n==> Updating charset offset table in MONKEY1.000...")
+	patched000, err = charset.PatchMonkey1000(patched000)
+	if err != nil {
+		return fmt.Errorf("MONKEY1.000 charset offset update failed: %w", err)
+	}
+	fmt.Printf("    MONKEY1.000: %d bytes (after offset update)\n", len(patched000))
+
+	// Patch classic charset (add Swedish glyphs to CHAR_0001/0003).
+	fmt.Println("\n==> Patching classic charset (adding Swedish glyphs)...")
+	charsetPatched001, err := charset.PatchMonkey1001(patched001)
+	if err != nil {
+		return fmt.Errorf("charset patching failed: %w", err)
+	}
+	patched001 = charsetPatched001
+	fmt.Printf("    MONKEY1.001: %d bytes (after charset patch)\n", len(patched001))
 
 	if err := os.WriteFile(path000, patched000, 0644); err != nil {
 		return fmt.Errorf("write %s: %w", path000, err)
