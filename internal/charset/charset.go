@@ -261,7 +261,7 @@ func PatchMonkey1000(input []byte) ([]byte, error) {
 	const (
 		char0001OrigRel = 98401
 		char0003OrigRel = 105618
-		char0001Delta   = 10 // len(patchedChar0001) - originalChar0001Size
+		char0001Delta   = 73 // len(patchedChar0001) - originalChar0001Size
 		char0003Delta   = 66 // len(patchedChar0003) - originalChar0003Size
 	)
 

@@ -238,12 +238,12 @@ func TestPatchMonkey1000NoDCHR(t *testing.T) {
 func TestPatchMonkey1000OffsetsShifted(t *testing.T) {
 	// Provide offsets matching the known layout:
 	//   CHAR_0001: 98401  → no change (first modified block)
-	//   CHAR_0002: 101010 → +10 (char0001Delta)
-	//   CHAR_0003: 105618 → +10 (char0001Delta)
-	//   CHAR_0004: 107689 → +76 (char0001Delta+char0003Delta = 10+66)
-	//   CHAR_0006: 112479 → +76
+	//   CHAR_0002: 101010 → +73 (char0001Delta)
+	//   CHAR_0003: 105618 → +73 (char0001Delta)
+	//   CHAR_0004: 107689 → +139 (char0001Delta+char0003Delta = 73+66)
+	//   CHAR_0006: 112479 → +139
 	input := []uint32{98401, 101010, 105618, 107689, 112479}
-	want := []uint32{98401, 101020, 105628, 107765, 112555}
+	want := []uint32{98401, 101083, 105691, 107828, 112618}
 
 	// Test with XOR-encoded input.
 	enc := buildFakeMonkey1000(input)
