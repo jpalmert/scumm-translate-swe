@@ -158,7 +158,8 @@ cp /path/to/Monkey1.pak game/monkey1/
 
 ### Extract English strings from the PAK
 
-Useful for comparing against the Swedish translation, debugging mismatches, or starting a translation for a new game.
+This is the starting point for translation work. The script extracts all English dialog
+strings from `Monkey1.pak` into a text file that you then translate line by line.
 
 ```bash
 bash scripts/se/extract_classic_strings.sh
@@ -176,6 +177,9 @@ Ahh, I'm finally going to be a pirate!
 [0037:0000#0001]
 I wonder what's out there beyond the horizon.
 ```
+
+Translate each string in place, keeping the `[room:type#id]` headers and the file
+structure intact. The translated file is then passed to the SE patcher pipeline.
 
 The file uses Windows-1252 encoding with CRLF line endings (scummtr's native format).
 It is gitignored and must be regenerated from your own copy of the game.
