@@ -159,9 +159,9 @@ Copy `Monkey1.pak` to a temp dir, run `runSEPatch` with no explicit output. Asse
 These require a working game installation and cannot be automated.
 
 ### MAN-001: SE patcher — basic usage (GOG)
-1. Run `se-patcher-linux /path/to/Monkey1.pak`
+1. Run `mi1-translate-linux /path/to/Monkey1.pak`
 2. Confirm backup `Monkey1.pak.bak` created
-3. Launch game, set language to French, start new game
+3. Launch game, start new game
 4. Assert: dialog appears in Swedish with correct characters (å, ä, ö, Å, Ä, Ö, é)
 
 ### MAN-002: SE patcher — Steam version
@@ -174,9 +174,9 @@ se-patcher-linux Monkey1.pak /tmp/Monkey1_sv.pak
 Assert: output written to specified path, original untouched, no backup created.
 
 ### MAN-004: Classic patcher — ScummVM usage
-1. Run `classic-patcher-linux /path/to/game/dir`
+1. Run `mi1-translate-linux /path/to/game/dir`
 2. Confirm `MONKEY1.000.bak` and `MONKEY1.001.bak` created
-3. Open ScummVM, set language to French, start new game
+3. Open ScummVM, start new game
 4. Assert: dialog appears in Swedish with correct characters
 
 ### MAN-005: Custom translation file
@@ -191,7 +191,7 @@ Pass a non-PAK file as input to `se-patcher`. Assert: error message mentions the
 magic bytes, not a raw panic.
 
 ### MAN-008: Swedish characters render correctly in SE
-Launch the patched SE game, set language to French. Navigate to a scene with å, ä, ö, Å, Ä, Ö.
+Launch the patched SE game, start a new game. Navigate to a scene with å, ä, ö, Å, Ä, Ö.
 Assert: characters render as Swedish letters, not squares or wrong punctuation.
 (This is the critical end-to-end test for the font lookup table patching.)
 

@@ -13,8 +13,7 @@
 //	mi1-patcher <Monkey1.pak> [output.pak] [monkey1.txt]   (SE version)
 //	mi1-patcher <game_dir>    [monkey1.txt]                (Classic version)
 //
-// After patching, set the in-game language to French to see the Swedish text.
-// For the Classic version, use ScummVM.
+// After patching, start a new game. Swedish text replaces the English strings directly.
 package main
 
 import (
@@ -72,7 +71,7 @@ func main() {
 	}
 
 	fmt.Println("\nDone!")
-	fmt.Println("Set the in-game language to French to see Swedish text.")
+	fmt.Println("Start a new game to see Swedish text.")
 }
 
 // autoDetect looks for game files next to the executable and returns the input path.
@@ -130,5 +129,5 @@ func printUsage() {
 	fmt.Fprintf(os.Stderr, "Advanced:\n")
 	fmt.Fprintf(os.Stderr, "  SE:      %s <Monkey1.pak> [output.pak] [monkey1.txt]\n", exe)
 	fmt.Fprintf(os.Stderr, "  Classic: %s <game_dir> [monkey1.txt]\n\n", exe)
-	fmt.Fprintf(os.Stderr, "After patching, set the in-game language to French.\n")
+	fmt.Fprintf(os.Stderr, "After patching, start a new game to see Swedish text.\n")
 }

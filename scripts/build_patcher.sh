@@ -25,7 +25,7 @@
 #
 # Usage of the built patcher (for users):
 #   Place mi1-translate-linux and monkey1.txt next to your game files and run it.
-# After patching, set the in-game language to French.
+# After patching, start a new game to see Swedish text.
 
 set -euo pipefail
 
@@ -161,4 +161,4 @@ echo "Usage:"
 echo "  Place mi1-translate-linux and monkey1.txt next to your game files and run it."
 echo "  Works with both the Special Edition (Monkey1.pak) and Classic CD-ROM (MONKEY1.000)."
 echo ""
-echo "After patching, set the in-game language to French."
+echo "After patching, start a new game to see Swedish text."

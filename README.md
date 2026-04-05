@@ -37,9 +37,7 @@ mi1-translate-windows.exe
 
 A backup of your game files is created automatically before any changes are made.
 
-After patching, **set the in-game language to French** — the translation is stored in
-the French language slot. You must select French to see Swedish text.
-For the Classic version, do this in ScummVM's game settings.
+After patching, start a new game. The Swedish text replaces the English strings directly.
 
 **Advanced:** you can also pass paths explicitly:
 ```
@@ -244,8 +242,7 @@ the SE strings (4437 strings in the same order).
 4. Runs the embedded `scummtr` to inject Swedish strings
 5. Writes the patched files back to their original paths
 
-The SE engine limitation means we must replace the French language slot. This is why
-users need to select French in the game settings.
+The Swedish translation replaces the English strings in place — no language setting change required.
 
 ---
 

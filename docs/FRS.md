@@ -97,9 +97,8 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 ### FR-6: SE Support
 - Shall support MI:SE (game=1) and MI2:SE (game=2)
 - Shall read and repack the `.pak` archive (both GOG `KAPL` and Steam `LPAK` magic)
-- Translated content replaces the French language slot (engine limitation)
-- End user must set game language to French to see the Swedish translation
-- *(This UX issue is noted as a known limitation — see docs/OPEN_QUESTIONS.md)*
+- Translated content replaces the English strings in the embedded classic SCUMM files
+- No language setting change required — Swedish text is active on a new game
 
 ### FR-7: Classic SCUMM Support (secondary)
 - Shall support classic SCUMM games playable via ScummVM
@@ -133,7 +132,7 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 ## 5. Constraints
 
 - Swedish text is on average longer than English — string length budget must be tracked
-- SE engine limitation: only the French language slot can be replaced; game must be set to French
+- Savegames created before patching may be incompatible with patched game files (noted separately above)
 - Savegames created before patching may be incompatible with patched game files
 - GOG and Steam versions may differ in file layout/checksums — primary target is GOG
 

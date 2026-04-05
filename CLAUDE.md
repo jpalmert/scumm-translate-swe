@@ -58,9 +58,8 @@ end-to-end testing before any new translation work is needed.
 - **Self-contained patcher** for distribution — user should not need external tools
 - **GOG MI1SE is P0** test target (Steam is P1)
 - **No GUI** anywhere — Claude does the translation, all tooling is CLI/scriptable
-- **French slot limitation**: SE engine only lets us replace one language; we replace
-  French. Users must set game language to French. This is unavoidable at engine level.
-  Investigate whether we can auto-patch a config file to set language (OQ-4).
+- **English strings replaced directly**: the patcher injects Swedish text into the English
+  classic SCUMM files embedded in the PAK. No language setting change required.
 - **monkeycd_swe text format compatibility**: translations stored in scummtr format
   so existing Swedish test translations can be reused
 

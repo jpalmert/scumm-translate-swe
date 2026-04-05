@@ -52,25 +52,8 @@ the Swedish translation file at compile time using `go:embed`. The resulting bin
 - Handles both GOG (KAPL magic) and Steam (LPAK magic) PAK files
 
 Build with `bash scripts/build_patcher.sh` — produces:
-- `dist/se-patcher-linux`, `dist/se-patcher-darwin`, `dist/se-patcher-windows.exe`
-- `dist/classic-patcher-linux`, `dist/classic-patcher-darwin`, `dist/classic-patcher-windows.exe`
+- `dist/mi1-translate-linux`, `dist/mi1-translate-darwin`, `dist/mi1-translate-windows.exe`
 - `dist/monkey1.txt`
-
----
-
-## OQ-4: French slot UX problem
-**Status:** KNOWN LIMITATION — mitigation needed  
-**Priority:** P1
-
-The SE engine only supports replacing existing language slots. We replace French.
-This means users must set their game language to French to see the Swedish translation.
-
-This is confusing and undesirable for end users.
-
-**Mitigations to investigate:**
-- Can the patcher automatically set the language to French in a game config file?
-- Is there a config file (e.g. `default.cfg`, registry key, `scummvm.ini`) that can be patched?
-- Does the SE have any other mechanism for adding a new language?
 
 ---
 

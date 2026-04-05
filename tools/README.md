@@ -37,10 +37,9 @@ one per glyph, on a transparent or solid background.
 pip install Pillow
 ```
 
-## SE Engine Limitation
-Custom translations always replace the **French language slot**. After applying
-a translated PAK, set the game language to French in the SE settings to see
-the translation. This is an engine limitation, not a tool limitation.
+## SE Text Replacement
+Custom translations replace the English strings in the embedded classic SCUMM files.
+After applying a translated PAK, start a new game — no language setting change required.
 
 ## Supported file formats
 
