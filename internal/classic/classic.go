@@ -10,49 +10,38 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
+	"strings"
 )
 
-// scummCharMap maps Windows-1252 Swedish characters to their SCUMM internal
-// escape codes for Monkey Island 1. scummtr does not reliably auto-convert
-// these via -c for the monkeycdalt game ID, so we pre-encode them in the
-// translation file before injection (matching the monkeycd_swe project approach).
+// scummCharMap maps UTF-8 Swedish characters to their SCUMM internal escape
+// codes for Monkey Island 1. scummtr does not reliably auto-convert these via
+// -c for the monkeycdalt game ID, so we pre-encode them before injection
+// (matching the monkeycd_swe project approach).
 var scummCharMap = []struct {
-	from byte
+	from string
 	to   string
 }{
-	{0xC5, `\091`}, // Å
-	{0xC4, `\092`}, // Ä
-	{0xD6, `\093`}, // Ö
-	{0xE5, `\123`}, // å
-	{0xE4, `\124`}, // ä
-	{0xF6, `\125`}, // ö
-	{0xE9, `\130`}, // é
+	{"Å", `\091`},
+	{"Ä", `\092`},
+	{"Ö", `\093`},
+	{"å", `\123`},
+	{"ä", `\124`},
+	{"ö", `\125`},
+	{"é", `\130`},
 }
 
-// encodeForScummtr reads a Windows-1252 encoded translation file and returns
-// a copy with Swedish characters replaced by their SCUMM escape codes.
+// encodeForScummtr reads a UTF-8 encoded translation file and returns a copy
+// with Swedish characters replaced by their SCUMM escape codes.
 func encodeForScummtr(translationPath string) ([]byte, error) {
 	data, err := os.ReadFile(translationPath)
 	if err != nil {
 		return nil, err
 	}
-	// Replace each special byte with its escape sequence.
-	// Work byte-by-byte to avoid multi-byte string issues with Windows-1252.
-	out := make([]byte, 0, len(data))
-	for _, b := range data {
-		replaced := false
-		for _, m := range scummCharMap {
-			if b == m.from {
-				out = append(out, []byte(m.to)...)
-				replaced = true
-				break
-			}
-		}
-		if !replaced {
-			out = append(out, b)
-		}
+	s := string(data)
+	for _, m := range scummCharMap {
+		s = strings.ReplaceAll(s, m.from, m.to)
 	}
-	return out, nil
+	return []byte(s), nil
 }
 
 // InjectTranslation injects a translation file into the classic SCUMM game files

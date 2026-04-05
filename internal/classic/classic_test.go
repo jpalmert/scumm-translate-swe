@@ -6,33 +6,32 @@ import (
 	"testing"
 )
 
-// ENCODE-001: Swedish Windows-1252 bytes are replaced with SCUMM escape codes.
+// ENCODE-001: Swedish UTF-8 characters are replaced with SCUMM escape codes.
 func TestEncodeForScummtr(t *testing.T) {
-	// Each Swedish char must map to the correct \NNN escape code.
 	cases := []struct {
-		in  byte
+		in  string
 		out string
 	}{
-		{0xC5, `\091`}, // Å
-		{0xC4, `\092`}, // Ä
-		{0xD6, `\093`}, // Ö
-		{0xE5, `\123`}, // å
-		{0xE4, `\124`}, // ä
-		{0xF6, `\125`}, // ö
-		{0xE9, `\130`}, // é
+		{"Å", `\091`},
+		{"Ä", `\092`},
+		{"Ö", `\093`},
+		{"å", `\123`},
+		{"ä", `\124`},
+		{"ö", `\125`},
+		{"é", `\130`},
 	}
 
 	for _, tc := range cases {
 		dir := t.TempDir()
 		p := filepath.Join(dir, "t.txt")
-		os.WriteFile(p, []byte{tc.in}, 0644)
+		os.WriteFile(p, []byte(tc.in), 0644)
 
 		got, err := encodeForScummtr(p)
 		if err != nil {
-			t.Fatalf("0x%02X: %v", tc.in, err)
+			t.Fatalf("%q: %v", tc.in, err)
 		}
 		if string(got) != tc.out {
-			t.Errorf("0x%02X: got %q, want %q", tc.in, got, tc.out)
+			t.Errorf("%q: got %q, want %q", tc.in, got, tc.out)
 		}
 	}
 }
@@ -57,9 +56,7 @@ func TestEncodeForScummtrASCII(t *testing.T) {
 func TestEncodeForScummtrMixed(t *testing.T) {
 	dir := t.TempDir()
 	p := filepath.Join(dir, "t.txt")
-	// "Jag är glad" in Windows-1252 (ä = 0xE4)
-	input := []byte("Jag \xe4r glad")
-	os.WriteFile(p, input, 0644)
+	os.WriteFile(p, []byte("Jag är glad"), 0644) // UTF-8
 
 	got, err := encodeForScummtr(p)
 	if err != nil {
