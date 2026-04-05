@@ -113,25 +113,13 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	fmt.Printf("    MONKEY1.000: %d bytes (was %d)\n", len(patched000), len(entry000.Data))
 	fmt.Printf("    MONKEY1.001: %d bytes (was %d)\n", len(patched001), len(entry001.Data))
 
-	// --- Step 5a: Update MONKEY1.000 charset offset table ---
-	fmt.Println("\n==> Updating charset offset table in MONKEY1.000...")
-	patched000, err = charset.PatchMonkey1000(patched000)
-	if err != nil {
-		return fmt.Errorf("MONKEY1.000 charset offset update failed: %w", err)
-	}
-	fmt.Printf("    MONKEY1.000: %d bytes (after offset update)\n", len(patched000))
-
 	entry000.Data = patched000
 	entry001.Data = patched001
 
-	// --- Step 5b: Patch classic charset (add Swedish glyphs to CHAR_0001/0003) ---
-	fmt.Println("\n==> Patching classic charset (adding Swedish glyphs)...")
-	charsetPatched, err := charset.PatchMonkey1001(entry001.Data)
-	if err != nil {
-		return fmt.Errorf("charset patching failed: %w", err)
-	}
-	entry001.Data = charsetPatched
-	fmt.Printf("    MONKEY1.001: %d bytes (after charset patch)\n", len(entry001.Data))
+	// TODO: classic charset patching (CHAR_0001/0003 Swedish glyphs) is
+	// temporarily disabled while the embedded binary format is verified.
+	// See internal/charset for the implementation.
+	_ = charset.PatchMonkey1000 // suppress unused-import error
 
 	// --- Step 6: Patch font lookup tables ---
 	fmt.Println("\n==> Patching font lookup tables...")
