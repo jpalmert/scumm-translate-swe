@@ -161,15 +161,21 @@ cp /path/to/Monkey1.pak game/monkey1/
 This is the starting point for translation work. The script extracts all English dialog
 strings from `Monkey1.pak` into a text file that you then translate line by line.
 
+The script accepts either the SE PAK file or a directory containing the classic files directly:
+
 ```bash
+# From the SE PAK (default):
 bash scripts/se/extract_classic_strings.sh
-# optionally: bash scripts/se/extract_classic_strings.sh /path/to/Monkey1.pak
+bash scripts/se/extract_classic_strings.sh /path/to/Monkey1.pak
+
+# From classic files (MONKEY1.000 + MONKEY1.001), e.g. from the CD-ROM version
+# or manually extracted from the PAK:
+bash scripts/se/extract_classic_strings.sh /path/to/classic/files/
 
 # Output: game/monkey1/text/se_english.txt  (gitignored)
 ```
 
-The script extracts the embedded classic SCUMM files from `Monkey1.pak`, runs `scummtr`
-on them, and writes one string per entry with `[room:type#id]` context headers:
+The script writes one string per entry with `[room:type#id]` context headers:
 
 ```
 [0037:0000#0000]

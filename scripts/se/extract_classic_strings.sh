@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
-# extract_classic_strings.sh — Extract dialog strings from the SE PAK for translation work
+# extract_classic_strings.sh — Extract dialog strings from MI1SE for translation work
 #
 # What this does:
-#   1. Extracts game/monkey1/Monkey1.pak into a temp directory
-#   2. Copies the embedded classic/en/MONKEY1.000 + MONKEY1.001 files
-#   3. Runs scummtr to dump all dialog strings to a text file
+#   Extracts all English dialog strings and writes them to a text file,
+#   ready for translation. Each string is preceded by a [room:type#id] header.
 #
-# The SE stores game dialog in embedded classic SCUMM files (not SE-specific .info files).
-# This means the same scummtr workflow used for the classic CD version works here too.
-# See docs/OPEN_QUESTIONS.md OQ-2 for the investigation that confirmed this.
+# Two input modes:
+#   1. PAK file (SE version):
+#      The script extracts the embedded classic SCUMM files from Monkey1.pak,
+#      then runs scummtr on them.
+#
+#   2. Classic files directory (classic CD version, or manually extracted SE files):
+#      If you already have MONKEY1.000 and MONKEY1.001 (or monkey1.000/.001),
+#      pass the directory containing them directly — no PAK needed.
 #
 # Output:
 #   game/monkey1/text/se_english.txt — English strings, one per line,
@@ -16,16 +20,16 @@
 #
 # Prerequisites:
 #   - bin/scummtr must exist (run: bash scripts/install_deps.sh)
-#   - game/monkey1/Monkey1.pak must be present (gitignored — user provides)
+#   - game/monkey1/Monkey1.pak OR a directory with MONKEY1.000 + MONKEY1.001
 #
 # Usage:
 #   bash scripts/se/extract_classic_strings.sh
 #   bash scripts/se/extract_classic_strings.sh /path/to/Monkey1.pak
+#   bash scripts/se/extract_classic_strings.sh /path/to/classic/files/
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-PAK="${1:-$REPO_ROOT/game/monkey1/Monkey1.pak}"
 case "$(uname -s)" in
   Darwin) SCUMMTR="$REPO_ROOT/bin/darwin/scummtr" ;;
   *)      SCUMMTR="$REPO_ROOT/bin/linux/scummtr"  ;;
@@ -45,27 +49,43 @@ if [ ! -f "$SCUMMTR" ]; then
     exit 1
 fi
 
-if [ ! -f "$PAK" ]; then
-    echo "ERROR: PAK file not found: $PAK"
-    echo "       Copy Monkey1.pak to game/monkey1/, or pass its path as an argument."
+# --- Determine input mode ---
+
+INPUT="${1:-$REPO_ROOT/game/monkey1/Monkey1.pak}"
+CLASSIC_DIR=""
+
+if [ -d "$INPUT" ]; then
+    # Directory mode: user provided a directory containing MONKEY1.000/.001
+    echo "==> Using classic files directory: $INPUT"
+
+    # Accept upper or lowercase filenames
+    if [ -f "$INPUT/MONKEY1.000" ] || [ -f "$INPUT/monkey1.000" ]; then
+        mkdir -p "$WORK_DIR/classic"
+        for f in MONKEY1.000 MONKEY1.001 monkey1.000 monkey1.001; do
+            [ -f "$INPUT/$f" ] && cp "$INPUT/$f" "$WORK_DIR/classic/${f^^}"
+        done
+        CLASSIC_DIR="$WORK_DIR/classic"
+    else
+        echo "ERROR: Directory does not contain MONKEY1.000 / MONKEY1.001: $INPUT"
+        exit 1
+    fi
+elif [ -f "$INPUT" ]; then
+    # PAK mode: extract embedded classic files from the PAK
+    echo "==> Extracting PAK: $INPUT"
+    python3 "$PAKPY" extract "$INPUT" "$WORK_DIR/pak"
+
+    echo "==> Copying embedded classic data"
+    mkdir -p "$WORK_DIR/classic"
+    cp "$WORK_DIR/pak/classic/en/monkey1.000" "$WORK_DIR/classic/MONKEY1.000"
+    cp "$WORK_DIR/pak/classic/en/monkey1.001" "$WORK_DIR/classic/MONKEY1.001"
+    CLASSIC_DIR="$WORK_DIR/classic"
+else
+    echo "ERROR: Not found: $INPUT"
+    echo "       Pass a Monkey1.pak file or a directory containing MONKEY1.000 + MONKEY1.001"
     exit 1
 fi
 
-# --- Step 1: Extract PAK ---
-
-echo "==> Extracting PAK: $PAK"
-python3 "$PAKPY" extract "$PAK" "$WORK_DIR/pak"
-
-# The SE PAK embeds classic SCUMM data at classic/en/monkey1.000 + monkey1.001
-# scummtr requires the files to be named MONKEY1.000 / MONKEY1.001 (uppercase)
-# Game ID: monkeycdalt (scummtr's name for the MONKEY1.000 file variant)
-
-echo "==> Copying embedded classic data"
-mkdir -p "$WORK_DIR/classic"
-cp "$WORK_DIR/pak/classic/en/monkey1.000" "$WORK_DIR/classic/MONKEY1.000"
-cp "$WORK_DIR/pak/classic/en/monkey1.001" "$WORK_DIR/classic/MONKEY1.001"
-
-# --- Step 2: Extract strings with scummtr ---
+# --- Extract strings with scummtr ---
 #
 # Flags used:
 #   -g monkeycdalt  game ID for MONKEY1.000 file layout
@@ -79,7 +99,7 @@ cp "$WORK_DIR/pak/classic/en/monkey1.001" "$WORK_DIR/classic/MONKEY1.001"
 
 echo "==> Extracting strings with scummtr"
 mkdir -p "$OUT_DIR"
-"$SCUMMTR" -g monkeycdalt -p "$WORK_DIR/classic" -cwh -A aov -o -f "$OUT_FILE"
+"$SCUMMTR" -g monkeycdalt -p "$CLASSIC_DIR" -cwh -A aov -o -f "$OUT_FILE"
 
 LINE_COUNT=$(wc -l < "$OUT_FILE")
 echo ""
