@@ -9,12 +9,9 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 echo "==> Removing dist/ binaries..."
-rm -f "$REPO_ROOT/dist/classic-patcher-linux"
-rm -f "$REPO_ROOT/dist/classic-patcher-darwin"
-rm -f "$REPO_ROOT/dist/classic-patcher-windows.exe"
-rm -f "$REPO_ROOT/dist/se-patcher-linux"
-rm -f "$REPO_ROOT/dist/se-patcher-darwin"
-rm -f "$REPO_ROOT/dist/se-patcher-windows.exe"
+rm -f "$REPO_ROOT/dist/mi1-translate-linux"
+rm -f "$REPO_ROOT/dist/mi1-translate-darwin"
+rm -f "$REPO_ROOT/dist/mi1-translate-windows.exe"
 rm -f "$REPO_ROOT/dist/monkey1.txt"
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/dist" 2>/dev/null || true
 
