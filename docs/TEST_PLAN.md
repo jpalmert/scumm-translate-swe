@@ -55,6 +55,28 @@ Call `Create` on a non-existent file. Assert error.
 #### BAK-004: Backup path is `<original>.bak`
 Assert the returned path equals `<original> + ".bak"`.
 
+### Font package (`internal/font`)
+
+#### FONT-001: Swedish characters remapped to correct glyphs
+Populate Windows-1252 glyph entries (0xC5=Å, 0xC4=Ä, etc.), run `RemapLookup`.
+Assert each SCUMM internal code (91, 92, 93, 123, 124, 125, 130) maps to the same
+glyph as its corresponding Windows-1252 code.
+
+#### FONT-002: Input data is not modified (returns a copy)
+Assert the original slice is byte-identical before and after `RemapLookup`.
+
+#### FONT-003: Error when source unicode code has no glyph (index 0)
+Assert error when a required Windows-1252 glyph position is zero (unmapped).
+
+#### FONT-004: Error when font data is too small for a lookup address
+Assert error when font buffer is smaller than the highest required lookup address.
+
+#### FONT-005: Existing glyph mappings for unrelated characters are preserved
+Assert that entries not in `SwedishRemapping` are unchanged after remap.
+
+#### FONT-006: Applying the same remapping twice is idempotent
+Assert the second `RemapLookup` on already-remapped data produces the same output.
+
 ### Classic patcher (`cmd/classic-patcher`)
 
 #### CLASSIC-001: Missing game directory → error
@@ -80,6 +102,11 @@ created before the injection step is reached.
 #### SE-007: Explicit output path → no backup created for input
 #### SE-008: `findTranslationFile` returns error for missing explicit path
 #### SE-009: `findTranslationFile` accepts a valid explicit path
+#### SE-010: `remapFontEntries` patches `.font` entries and skips others
+Synthetic font data with Swedish glyphs at Windows-1252 positions. Assert SCUMM codes
+(91=Å, 123=å) map to the expected glyph indices. Assert non-font entries unchanged.
+#### SE-011: `remapFontEntries` returns error when a font is missing a required glyph
+#### SE-012: `remapFontEntries` with no `.font` entries returns 0, nil (graceful no-op)
 
 ---
 
@@ -102,13 +129,24 @@ internal structures on first inject, but subsequent injects of the same data are
 Run `classic.InjectTranslation` with the real `monkey1_swe.txt`. Assert `MONKEY1.001`
 is larger after injection (Swedish text is longer than English).
 
+#### INT-EXTRACT-PAK: Extracting strings from PAK-sourced classic files
+Extract `MONKEY1.000/.001` from the real PAK, write to a temp dir with uppercase names,
+run scummtr export. Assert output is non-empty. Mirrors the PAK input mode of
+`scripts/se/extract_classic_strings.sh`.
+
+#### INT-EXTRACT-DIR: Extracting strings from a classic files directory (uppercase and lowercase)
+Two subtests — write classic files as UPPERCASE and as lowercase, copy to work dir
+with normalised uppercase names, run scummtr export. Assert output is non-empty.
+Mirrors the directory input mode of `scripts/se/extract_classic_strings.sh`.
+
 ### SE patcher (`cmd/se-patcher`)
 
-#### INT-SE-001: Full SE pipeline — patched PAK is valid and `.001` grew
+#### INT-SE-001: Full SE pipeline — patched PAK is valid, `.001` grew, fonts patched
 Run `runSEPatch` with the real `Monkey1.pak` and explicit output path. Assert:
 - Output PAK is readable by `pak.Read`
 - Entry count is identical to input
-- `classic/en/monkey1.001` is larger in the output
+- `classic/en/monkey1.001` is larger in the output (Swedish text is longer)
+- At least one `.font` entry has SCUMM code 91 (Å) remapped to a non-zero glyph
 
 #### INT-SE-002: In-place mode creates backup with correct content
 Copy `Monkey1.pak` to a temp dir, run `runSEPatch` with no explicit output. Assert:
@@ -124,7 +162,7 @@ These require a working game installation and cannot be automated.
 1. Run `se-patcher-linux /path/to/Monkey1.pak`
 2. Confirm backup `Monkey1.pak.bak` created
 3. Launch game, set language to French, start new game
-4. Assert: dialog appears in Swedish
+4. Assert: dialog appears in Swedish with correct characters (å, ä, ö, Å, Ä, Ö, é)
 
 ### MAN-002: SE patcher — Steam version
 Same as MAN-001 with Steam version. Assert: patcher accepts `LPAK` magic without error.
@@ -139,7 +177,7 @@ Assert: output written to specified path, original untouched, no backup created.
 1. Run `classic-patcher-linux /path/to/game/dir`
 2. Confirm `MONKEY1.000.bak` and `MONKEY1.001.bak` created
 3. Open ScummVM, set language to French, start new game
-4. Assert: dialog appears in Swedish
+4. Assert: dialog appears in Swedish with correct characters
 
 ### MAN-005: Custom translation file
 Place a modified `monkey1_swe.txt` next to the patcher binary. Run without specifying a
@@ -151,6 +189,11 @@ Pass a non-existent path. Assert: human-readable error, no panic.
 ### MAN-007: Wrong input file → helpful error
 Pass a non-PAK file as input to `se-patcher`. Assert: error message mentions the wrong
 magic bytes, not a raw panic.
+
+### MAN-008: Swedish characters render correctly in SE
+Launch the patched SE game, set language to French. Navigate to a scene with å, ä, ö, Å, Ä, Ö.
+Assert: characters render as Swedish letters, not squares or wrong punctuation.
+(This is the critical end-to-end test for the font lookup table patching.)
 
 ---
 

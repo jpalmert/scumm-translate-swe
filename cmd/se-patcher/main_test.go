@@ -269,6 +269,23 @@ func TestRemapFontEntriesMissingGlyph(t *testing.T) {
 	}
 }
 
+// SE-012: remapFontEntries with no .font entries returns 0, nil (not an error).
+// This covers the case where a PAK has no font files — graceful no-op.
+func TestRemapFontEntriesNoFonts(t *testing.T) {
+	entries := []*pak.Entry{
+		{Name: "classic/en/monkey1.000", Data: []byte("data")},
+		{Name: "classic/en/monkey1.001", Data: []byte("data")},
+		{Name: "other/asset.dat", Data: []byte("asset")},
+	}
+	count, err := remapFontEntries(entries)
+	if err != nil {
+		t.Fatalf("remapFontEntries with no fonts: %v", err)
+	}
+	if count != 0 {
+		t.Errorf("expected 0 fonts patched, got %d", count)
+	}
+}
+
 // SE-008: findTranslationFile returns error for missing explicit path.
 func TestFindTranslationFileMissingExplicit(t *testing.T) {
 	_, err := findTranslationFile("/nonexistent/translation.txt")

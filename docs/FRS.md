@@ -1,9 +1,9 @@
 # Functional Requirements Specification
 ## SCUMM Swedish Fan Translation Toolkit
 
-**Version:** 0.2  
+**Version:** 0.3  
 **Status:** Draft  
-**Last updated:** 2026-04-04
+**Last updated:** 2026-04-05
 
 ---
 
@@ -19,7 +19,7 @@ A toolkit and automated workflow for producing a Swedish fan translation of Luca
 - Text extraction from game resource files
 - AI-assisted translation (Claude) with multi-pass review workflow
 - Re-injection of translated text
-- Font expansion for Swedish characters (Å, Ä, Ö, å, ä, ö, é)
+- Font lookup table patching for Swedish characters (Å, Ä, Ö, å, ä, ö, é)
 - Self-contained patcher executable for end-user distribution
 - Support for Special Edition (SE) release — primary target
 - Support for Classic DOS/CD-ROM release via ScummVM — secondary target
@@ -51,9 +51,10 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 
 ### FR-1: Text Extraction
 - The system shall extract all translatable text from game resource files: dialogue, object names, UI strings, verb labels, hints
-- For SE: extracted from `.info` files inside the `.pak` archive
+- For SE: extracted from the embedded classic SCUMM files (`MONKEY1.000`/`MONKEY1.001`) inside the `.pak` archive, using `scummtr`
 - For Classic: extracted from SCUMM resource files (`.000`/`.001`) via scummtr
 - Text file format shall be compatible with the monkeycd_swe project (scummtr format) to allow reuse of existing Swedish translations for testing
+- Extraction supports both a PAK file and a directory of pre-extracted classic files as input
 
 ### FR-2: Translation Workflow
 - The system shall support a multi-pass translation workflow:
@@ -78,10 +79,12 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 | ö | \125 |
 | é | \130 |
 
-### FR-4: Font Expansion
-- The system shall expand the game font to include Swedish diacritical characters at the slots defined in FR-3
-- SE: via tools/mise/font.py
-- Classic: via scummfont + modified charset BMP
+### FR-4: Font Lookup Table Patching
+- The SE engine renders characters via a glyph lookup table in `.font` files
+- The SE fonts already contain Swedish glyphs at Windows-1252 code positions
+- After text injection (which uses SCUMM internal codes), the lookup table must be patched to point each SCUMM code to the correct existing glyph
+- This is implemented as a pure lookup-table patch in Go (`internal/font`) — no new glyph images are added
+- Classic: no font patching needed (ScummVM handles charset rendering)
 
 ### FR-5: Distribution — Self-Contained Patcher
 - The end-user deliverable shall be a **self-contained executable patcher**
@@ -93,19 +96,21 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 
 ### FR-6: SE Support
 - Shall support MI:SE (game=1) and MI2:SE (game=2)
-- Shall extract/repack the `.pak` archive
+- Shall read and repack the `.pak` archive (both GOG `KAPL` and Steam `LPAK` magic)
 - Translated content replaces the French language slot (engine limitation)
 - End user must set game language to French to see the Swedish translation
 - *(This UX issue is noted as a known limitation — see docs/OPEN_QUESTIONS.md)*
 
 ### FR-7: Classic SCUMM Support (secondary)
 - Shall support classic SCUMM games playable via ScummVM
-- Text extraction and injection via scummtr
-- Distribution via BPS patch files (applied with Floating IPS or equivalent)
+- Text extraction and injection via scummtr (embedded in the patcher binary)
+- Distribution via self-contained Go binary patcher (`cmd/classic-patcher`)
+- Accepts game directory with upper or lowercase filenames
 
 ### FR-8: Developer Tooling
-- A single setup script shall install all development dependencies
+- A single setup script shall install all development dependencies (recovery only — binaries are bundled)
 - The full extraction → translation → injection → packaging pipeline shall be scriptable end-to-end
+- Developer tooling supports Linux and macOS
 
 ---
 
@@ -113,15 +118,15 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 
 ### NFR-1: Legal compliance
 - The patcher shall not include or distribute original copyrighted game data
-- Only translation data (strings, font glyphs) may be distributed
+- Only translation data (strings, font lookup table patches) may be distributed
 
 ### NFR-2: Version safety
 - The patcher shall validate source file checksums before applying changes
 - The patcher shall refuse to patch unknown or already-patched files with a clear error message
 
 ### NFR-3: Platforms
-- Patcher: Windows primary (largest user base for GOG game installs); Linux/macOS secondary
-- Dev tooling: Linux (developer machine)
+- Patcher: Windows, Linux, and macOS (self-contained Go binary for all three)
+- Dev tooling: Linux (primary, tested); macOS (supported, best-effort)
 
 ---
 

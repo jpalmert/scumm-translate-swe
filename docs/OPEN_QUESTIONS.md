@@ -15,7 +15,7 @@ Update status as items are investigated.
 - File is named `Monkey1.pak` in both versions
 - No `.info` files — dialog text lives in the embedded `classic/en/MONKEY1.000`
 
-**Fix applied:** `tools/mise/pak.py` now accepts both `LPAK` and `KAPL` magic.
+**Fix applied:** `internal/pak/pak.go` accepts both `LPAK` and `KAPL` magic.
 
 ---
 
@@ -51,8 +51,10 @@ the Swedish translation file at compile time using `go:embed`. The resulting bin
 - Runs on Linux, macOS, and Windows
 - Handles both GOG (KAPL magic) and Steam (LPAK magic) PAK files
 
-Build with `bash scripts/build_patcher.sh` — produces `dist/patcher-linux`,
-`dist/patcher-darwin`, `dist/patcher-windows.exe`.
+Build with `bash scripts/build_patcher.sh` — produces:
+- `dist/se-patcher-linux`, `dist/se-patcher-darwin`, `dist/se-patcher-windows.exe`
+- `dist/classic-patcher-linux`, `dist/classic-patcher-darwin`, `dist/classic-patcher-windows.exe`
+- `dist/monkey1_swe.txt`
 
 ---
 

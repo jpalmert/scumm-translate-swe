@@ -118,6 +118,27 @@ func TestSEPatcherFullPipeline(t *testing.T) {
 	if len(patchedEntries) != len(origEntries) {
 		t.Errorf("entry count changed: orig=%d, patched=%d", len(origEntries), len(patchedEntries))
 	}
+
+	// Font entries must have been patched: verify SCUMM code 91 (Å) is remapped
+	// in at least one .font file. Before patching, code 91 maps to glyph 0 (unmapped);
+	// after patching it should map to a non-zero glyph matching Windows-1252 0xC5.
+	fontAddr := func(code byte) int { return (int(code)-0x20)*2 + 0x5A }
+	fontPatched := 0
+	for _, e := range patchedEntries {
+		if !strings.HasSuffix(strings.ToLower(e.Name), ".font") {
+			continue
+		}
+		if len(e.Data) <= fontAddr(91) {
+			continue
+		}
+		if e.Data[fontAddr(91)] != 0 {
+			fontPatched++
+		}
+	}
+	if fontPatched == 0 {
+		t.Error("no .font entries have SCUMM code 91 (Å) remapped — font patching may not have run")
+	}
+	t.Logf("%d .font entries have Å remapped", fontPatched)
 }
 
 // INT-SE-002: In-place mode creates a backup of Monkey1.pak.
