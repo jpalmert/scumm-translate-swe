@@ -59,17 +59,41 @@ func PatchMonkey1001(input []byte) ([]byte, error) {
 		return nil, fmt.Errorf("MONKEY1.001: does not start with LECF (bad data or unknown format)")
 	}
 
+	// Locate the LFLF that contains the charset CHAR blocks before patching.
+	// Its start offset is stable: inserting bytes inside it does not move it.
+	// We need this to keep the LOFF room-offset table consistent after patching.
+	char1Offset, err := findCharBlock(data, 1)
+	if err != nil {
+		return nil, fmt.Errorf("CHAR_0001: %w", err)
+	}
+	charsetLFLFOffset, err := findContainingLFLF(data, char1Offset)
+	if err != nil {
+		return nil, fmt.Errorf("CHAR_0001 containing LFLF: %w", err)
+	}
+
 	// Apply CHAR_0001 patch (critical — verb/menu text).
-	var err error
 	data, err = patchCharBlock(data, "CHAR_0001", patchedChar0001, originalChar0001Size)
 	if err != nil {
 		return nil, err
+	}
+	delta1 := len(patchedChar0001) - originalChar0001Size
+	if delta1 != 0 {
+		if err := updateLOFF(data, charsetLFLFOffset, delta1); err != nil {
+			return nil, fmt.Errorf("CHAR_0001 LOFF update: %w", err)
+		}
 	}
 
 	// Apply CHAR_0003 patch (best-effort — small text charset).
 	data, err = patchCharBlock(data, "CHAR_0003", patchedChar0003, originalChar0003Size)
 	if err != nil {
 		fmt.Printf("    Warning: CHAR_0003 patch skipped: %v\n", err)
+	} else {
+		delta2 := len(patchedChar0003) - originalChar0003Size
+		if delta2 != 0 {
+			if err := updateLOFF(data, charsetLFLFOffset, delta2); err != nil {
+				return nil, fmt.Errorf("CHAR_0003 LOFF update: %w", err)
+			}
+		}
 	}
 
 	if encoded {
@@ -296,6 +320,41 @@ func PatchMonkey1000(input []byte) ([]byte, error) {
 		return xorDecode(data), nil // XOR is symmetric
 	}
 	return data, nil
+}
+
+// updateLOFF adjusts the LOFF room-offset table to account for delta bytes
+// inserted into the LFLF block at lflfOffset.
+//
+// The LOFF block, when present, is the first block in the LECF body (at
+// decoded offset 8). It stores, for each room, the absolute file offset of
+// that room's LFLF body (i.e. LFLF_start + 8). Any entry whose stored offset
+// is greater than lflfOffset+8 points to an LFLF that follows the modified
+// one in the file and must therefore be incremented by delta.
+//
+// If no LOFF block is present (e.g. in test fixtures) the function is a no-op.
+func updateLOFF(data []byte, lflfOffset, delta int) error {
+	if len(data) < 16 || string(data[8:12]) != "LOFF" {
+		return nil // no LOFF block; no-op
+	}
+	loffSize := int(binary.BigEndian.Uint32(data[12:]))
+	if loffSize < 9 || 8+loffSize > len(data) {
+		return fmt.Errorf("LOFF block has invalid size %d", loffSize)
+	}
+	// LOFF body layout: count(1B) + count×[room_id(1B) + offset_LE32(4B)]
+	body := data[16 : 8+loffSize]
+	count := int(body[0])
+	if 1+count*5 > len(body) {
+		return fmt.Errorf("LOFF body too short for %d entries", count)
+	}
+	threshold := lflfOffset + 8 // LFLF body start; entries pointing past this shift
+	for i := 0; i < count; i++ {
+		entryBase := 1 + i*5 // room_id at entryBase, offset LE32 at entryBase+1
+		offset := int(binary.LittleEndian.Uint32(body[entryBase+1:]))
+		if offset > threshold {
+			binary.LittleEndian.PutUint32(body[entryBase+1:], uint32(offset+delta))
+		}
+	}
+	return nil
 }
 
 // containsDCHR returns true if data contains the ASCII sequence "DCHR".

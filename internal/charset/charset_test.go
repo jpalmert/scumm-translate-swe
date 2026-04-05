@@ -344,6 +344,69 @@ func TestPatchMonkey1001EncodedInput(t *testing.T) {
 	}
 }
 
+// buildFakeWithLOFF builds a minimal decoded LECF with a LOFF block containing
+// the given room LFLF-body offsets (file-absolute, i.e. LFLF_start+8).
+func buildFakeWithLOFF(lflfBodyOffsets []uint32) []byte {
+	count := len(lflfBodyOffsets)
+	loffBodySize := 1 + count*5
+	loffSize := 8 + loffBodySize
+	total := 8 + loffSize
+
+	buf := make([]byte, total)
+	copy(buf[0:], "LECF")
+	binary.BigEndian.PutUint32(buf[4:], uint32(total))
+	copy(buf[8:], "LOFF")
+	binary.BigEndian.PutUint32(buf[12:], uint32(loffSize))
+	buf[16] = byte(count)
+	for i, off := range lflfBodyOffsets {
+		base := 17 + i*5
+		buf[base] = byte(i + 1) // room_id
+		binary.LittleEndian.PutUint32(buf[base+1:], off)
+	}
+	return buf
+}
+
+func TestUpdateLOFF(t *testing.T) {
+	// 3 rooms: room 1 body at 500 (before charset), room 2 body at 1008
+	// (charset LFLF starts at 1000, body at 1000+8=1008), room 3 body at 2008.
+	data := buildFakeWithLOFF([]uint32{500, 1008, 2008})
+
+	if err := updateLOFF(data, 1000, 28); err != nil {
+		t.Fatalf("updateLOFF: %v", err)
+	}
+
+	readOffset := func(entryIdx int) uint32 {
+		base := 17 + entryIdx*5
+		return binary.LittleEndian.Uint32(data[base+1:])
+	}
+
+	if got := readOffset(0); got != 500 {
+		t.Errorf("entry[0]: got %d, want 500 (before charset LFLF — unchanged)", got)
+	}
+	if got := readOffset(1); got != 1008 {
+		t.Errorf("entry[1]: got %d, want 1008 (charset LFLF itself — unchanged)", got)
+	}
+	if got := readOffset(2); got != 2036 {
+		t.Errorf("entry[2]: got %d, want 2036 (after charset LFLF — shifted by 28)", got)
+	}
+}
+
+func TestUpdateLOFFNoBlock(t *testing.T) {
+	// Test data has no LOFF block — updateLOFF must be a no-op.
+	enc := buildFakeMonkey1001([]int{20, 30})
+	data := decodeFake(enc)
+	original := append([]byte(nil), data...)
+
+	if err := updateLOFF(data, 8, 10); err != nil {
+		t.Fatalf("updateLOFF with no LOFF: %v", err)
+	}
+	for i := range data {
+		if data[i] != original[i] {
+			t.Errorf("data[%d] changed when no LOFF present", i)
+		}
+	}
+}
+
 func TestPatchMonkey1000EarlyOffsetsUnchanged(t *testing.T) {
 	// Offsets before CHAR_0001 must not be modified.
 	input := []uint32{1000, 50000, 98401}
