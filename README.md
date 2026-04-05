@@ -12,59 +12,39 @@ First target: **The Secret of Monkey Island Special Edition (MI1SE)**, GOG versi
 > **Warning:** Existing savegames will not load after patching. Start a new game.
 
 You need your own legal copy of *The Secret of Monkey Island*.
-Two patchers are provided depending on which version you own.
+One patcher works for both the Special Edition and the Classic CD-ROM version.
 
-### Special Edition (GOG or Steam)
+> **Note:** Only tested with the GOG Special Edition. The Steam version should work but has not been verified.
 
-> **Note:** Only tested with the GOG version. The Steam version should work but has not been verified.
+### How to patch
 
-Download `se-patcher-windows.exe` / `se-patcher-darwin` / `se-patcher-linux`
-and `monkey1_swe.txt` into the same folder as `Monkey1.pak`, then run the patcher.
+Download `mi1-translate-windows.exe` / `mi1-translate-darwin` / `mi1-translate-linux`
+and `monkey1_swe.txt` into the same folder as your game files, then run the patcher.
+
+The patcher detects your version automatically:
+- **Special Edition:** place next to `Monkey1.pak`
+- **Classic CD-ROM:** place next to `MONKEY1.000` and `MONKEY1.001`
 
 **Windows:**
 ```
-se-patcher-windows.exe
+mi1-translate-windows.exe
 ```
 
 **Linux / macOS:**
 ```
-./se-patcher-linux
+./mi1-translate-linux
 ```
 
-The patcher finds `Monkey1.pak` automatically, patches it in-place, and creates
-`Monkey1.pak.bak` as a backup before making any changes.
+A backup of your game files is created automatically before any changes are made.
 
-After patching, **set the in-game language to French** — the SE engine stores custom
-translations in the French language slot. You must select French to see Swedish text.
+After patching, **set the in-game language to French** — the translation is stored in
+the French language slot. You must select French to see Swedish text.
+For the Classic version, do this in ScummVM's game settings.
 
-**Advanced:** you can also pass paths explicitly, e.g. to write to a separate output file:
+**Advanced:** you can also pass paths explicitly:
 ```
-se-patcher-linux Monkey1.pak patched.pak [monkey1_swe.txt]
-```
-
-### Classic / CD-ROM (ScummVM)
-
-Download `classic-patcher-windows.exe` / `classic-patcher-darwin` / `classic-patcher-linux`
-and `monkey1_swe.txt` into the same folder as `MONKEY1.000` and `MONKEY1.001`, then run
-the patcher.
-
-**Windows:**
-```
-classic-patcher-windows.exe
-```
-
-**Linux / macOS:**
-```
-./classic-patcher-linux
-```
-
-Backups (`MONKEY1.000.bak`, `MONKEY1.001.bak`) are created before patching.
-
-After patching, open ScummVM, select the game, and **set the game language to French**.
-
-**Advanced:** pass the game directory explicitly:
-```
-classic-patcher-linux /path/to/game/dir [monkey1_swe.txt]
+mi1-translate-linux Monkey1.pak [output.pak] [monkey1_swe.txt]   # SE
+mi1-translate-linux /path/to/game/dir [monkey1_swe.txt]          # Classic
 ```
 
 
@@ -79,13 +59,13 @@ classic-patcher-linux /path/to/game/dir [monkey1_swe.txt]
 ```
 go.mod                      Go module (module scumm-patcher)
 cmd/
-  classic-patcher/          CLI: patches MONKEY1.000/.001 in-place
-    main.go
-    main_test.go
-  se-patcher/               CLI: patches Monkey1.pak (reads → injects → repacks)
-    main.go
-    main_test.go
-    integration_test.go
+  patcher/                  Single CLI: auto-detects SE vs Classic, patches game files
+    main.go                 Entry point, auto-detection, dispatch
+    se.go                   SE pipeline (PAK read/repack, scummtr inject, font remap)
+    classic.go              Classic pipeline (find files, backup, scummtr inject)
+    translation.go          Shared translation file lookup
+    patcher_test.go         Unit tests
+    integration_test.go     Integration tests (requires Monkey1.pak)
 internal/
   pak/                      PAK archive reader/writer
     pak.go
@@ -141,13 +121,10 @@ game/                      User-provided copyrighted game files (never committed
 bin/                       Downloaded tool binaries (never committed)
 
 dist/                      Built patcher binaries (never committed)
-  classic-patcher-linux
-  classic-patcher-darwin
-  classic-patcher-windows.exe
-  se-patcher-linux
-  se-patcher-darwin
-  se-patcher-windows.exe
-  monkey1_swe.txt          ← shipped alongside the binaries
+  mi1-translate-linux
+  mi1-translate-darwin
+  mi1-translate-windows.exe
+  monkey1_swe.txt          ← shipped alongside the binary
 ```
 
 ### External dependencies
@@ -208,15 +185,16 @@ structure intact. The translated file is then passed to the SE patcher pipeline.
 The file uses Windows-1252 encoding with CRLF line endings (scummtr's native format).
 It is gitignored and must be regenerated from your own copy of the game.
 
-### Build the distributable patchers
+### Build the distributable patcher
 
 ```bash
 # Requires: Go 1.21+, curl, unzip
 bash scripts/build_patcher.sh
 
 # Output:
-#   dist/classic-patcher-linux/darwin/windows.exe
-#   dist/se-patcher-linux/darwin/windows.exe
+#   dist/mi1-translate-linux
+#   dist/mi1-translate-darwin
+#   dist/mi1-translate-windows.exe
 #   dist/monkey1_swe.txt
 ```
 

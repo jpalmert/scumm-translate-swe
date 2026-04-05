@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# build_patcher.sh — Build the MI1 Swedish translation patchers
+# build_patcher.sh — Build the MI1 Swedish translation patcher
 #
 # Run from the repo root:
 #   bash scripts/build_patcher.sh
@@ -7,14 +7,11 @@
 # What this does:
 #   1. Downloads scummtr binaries into internal/classic/assets/
 #      (skipped if already present — these are committed to git after first run)
-#   2. Cross-compiles both patchers for Linux, macOS, and Windows
+#   2. Cross-compiles the patcher for Linux, macOS, and Windows
 #   3. Places the output binaries and the loose translation file in dist/:
-#        dist/classic-patcher-linux
-#        dist/classic-patcher-darwin
-#        dist/classic-patcher-windows.exe
-#        dist/se-patcher-linux
-#        dist/se-patcher-darwin
-#        dist/se-patcher-windows.exe
+#        dist/mi1-translate-linux
+#        dist/mi1-translate-darwin
+#        dist/mi1-translate-windows.exe
 #        dist/monkey1_swe.txt     ← ship this alongside the binaries
 #
 # Requirements:
@@ -22,12 +19,12 @@
 #   - curl      (for downloading scummtr if not already in assets/)
 #   - unzip     (for extracting the Windows scummtr zip)
 #
-# The resulting dist/ binaries embed the scummtr tool internally. The only
-# loose file is monkey1_swe.txt — users can edit it before running the patcher.
+# The patcher embeds scummtr internally and auto-detects whether the game files
+# are the Special Edition (Monkey1.pak) or Classic CD-ROM (MONKEY1.000/.001).
+# The only loose file is monkey1_swe.txt — users can edit it before patching.
 #
-# Usage of the built patchers (for users):
-#   classic-patcher-linux  /path/to/game/dir  [monkey1_swe.txt]
-#   se-patcher-linux       /path/to/Monkey1.pak [output.pak] [monkey1_swe.txt]
+# Usage of the built patcher (for users):
+#   Place mi1-translate-linux and monkey1_swe.txt next to your game files and run it.
 # After patching, set the in-game language to French.
 
 set -euo pipefail
@@ -99,7 +96,6 @@ else
     else
         echo "ERROR: Could not find scummtr.exe in Windows zip."
         echo "       Check the release at: ${SCUMMTR_BASE_URL}/"
-        echo "       Then update the extraction path in this script."
         exit 1
     fi
     echo "  Installed: $ASSETS_DIR/scummtr-windows-x64.exe"
@@ -119,7 +115,7 @@ echo "  Copied: $TRANSLATION_SRC"
 echo "        → $DIST_DIR/monkey1_swe.txt"
 
 echo ""
-echo "=== Step 3: Cross-compile patchers ==="
+echo "=== Step 3: Cross-compile patcher ==="
 
 # Verify Go is available (try common install locations)
 GO_BIN=""
@@ -143,22 +139,15 @@ cd "$REPO_ROOT"
 build_binary() {
     local goos="$1"
     local goarch="$2"
-    local cmd="$3"    # cmd/classic-patcher or cmd/se-patcher
-    local out="$4"
+    local out="$3"
     echo "  Building $out..."
-    GOOS="$goos" GOARCH="$goarch" "$GO_BIN" build -o "$DIST_DIR/$out" "./$cmd"
+    GOOS="$goos" GOARCH="$goarch" "$GO_BIN" build -o "$DIST_DIR/$out" ./cmd/patcher
     echo "    → $DIST_DIR/$out ($(du -h "$DIST_DIR/$out" | cut -f1))"
 }
 
-# classic-patcher
-build_binary linux   amd64 cmd/classic-patcher classic-patcher-linux
-build_binary darwin  amd64 cmd/classic-patcher classic-patcher-darwin
-build_binary windows amd64 cmd/classic-patcher classic-patcher-windows.exe
-
-# se-patcher
-build_binary linux   amd64 cmd/se-patcher se-patcher-linux
-build_binary darwin  amd64 cmd/se-patcher se-patcher-darwin
-build_binary windows amd64 cmd/se-patcher se-patcher-windows.exe
+build_binary linux   amd64 mi1-translate-linux
+build_binary darwin  amd64 mi1-translate-darwin
+build_binary windows amd64 mi1-translate-windows.exe
 
 echo ""
 echo "=== Done! ==="
@@ -169,7 +158,7 @@ echo ""
 echo "Distribute all files in dist/ together (binaries + monkey1_swe.txt)."
 echo ""
 echo "Usage:"
-echo "  Classic (ScummVM):  classic-patcher-linux  /path/to/game/dir"
-echo "  SE (GOG/Steam):     se-patcher-linux        /path/to/Monkey1.pak"
+echo "  Place mi1-translate-linux and monkey1_swe.txt next to your game files and run it."
+echo "  Works with both the Special Edition (Monkey1.pak) and Classic CD-ROM (MONKEY1.000)."
 echo ""
 echo "After patching, set the in-game language to French."
