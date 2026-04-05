@@ -18,9 +18,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 )
 
@@ -65,6 +67,7 @@ func main() {
 
 	if runErr != nil {
 		fmt.Fprintf(os.Stderr, "\nError: %v\n", runErr)
+		pauseIfWindows()
 		os.Exit(1)
 	}
 
@@ -109,6 +112,15 @@ func isSEInput(path string) bool {
 		return false
 	}
 	return true // existing file → treat as PAK
+}
+
+// pauseIfWindows prints a prompt and waits for Enter on Windows, so the CMD
+// window opened by a double-click stays visible long enough to read the error.
+func pauseIfWindows() {
+	if runtime.GOOS == "windows" {
+		fmt.Fprintf(os.Stderr, "\nPress Enter to exit...")
+		bufio.NewReader(os.Stdin).ReadString('\n') //nolint:errcheck
+	}
 }
 
 func printUsage() {
