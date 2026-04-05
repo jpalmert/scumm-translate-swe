@@ -1,88 +1,90 @@
 #!/usr/bin/env bash
-# Install all dependencies for the SCUMM translation toolkit.
-# Run once from the repo root: bash scripts/install_deps.sh
+# install_deps.sh — Re-download/rebuild developer tool dependencies
+#
+# NOTE: You do NOT normally need to run this script.
+# The tool binaries (bin/) are committed to the repository and ready to use.
+#
+# Run this only if:
+#   - The committed binaries don't work on your platform (e.g. macOS developer)
+#   - You want to upgrade to a newer version of scummtr
+#   - The bin/ directory is missing or corrupted
+#
+# Run from the repo root:
+#   bash scripts/install_deps.sh
+#
+# What this installs/rebuilds:
+#   bin/scummtr    — text extraction/injection for classic SCUMM games
+#   bin/scummrp    — resource packer/unpacker (companion to scummtr)
+#   bin/scummfont  — font tool (companion to scummtr)
+#   bin/FontXY     — font positioning tool (companion to scummtr)
+#
+# scummtr is downloaded as a prebuilt binary for Linux and macOS (no cmake required).
+# Python tools (tools/pak.py, tools/text.py) use only stdlib — no venv needed.
+#
+# Re-running this script is safe — it skips tools that are already present.
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-TOOLS_DIR="$REPO_ROOT/tools"
+OS="$(uname -s)"
 
-echo "=== Installing system packages ==="
-sudo apt-get update -q
-sudo apt-get install -y \
-    build-essential cmake git \
-    wine wine64 \
-    python3 python3-pip python3-venv \
-    libgtk-3-dev pkg-config    # needed for flips GUI (optional)
+case "$OS" in
+  Darwin) PLATFORM_DIR="$REPO_ROOT/bin/darwin" ;;
+  *)      PLATFORM_DIR="$REPO_ROOT/bin/linux"  ;;
+esac
 
-echo ""
-echo "=== Building scummtr (text extraction/injection tool) ==="
-if [ ! -f "$TOOLS_DIR/bin/scummtr" ]; then
-    cd "$TOOLS_DIR"
-    git clone --depth=1 https://github.com/dwatteau/scummtr scummtr-src
-    cd scummtr-src
-    mkdir -p build && cd build
-    cmake .. -DCMAKE_BUILD_TYPE=Release
-    cmake --build . -- -j"$(nproc)"
-    mkdir -p "$TOOLS_DIR/bin"
-    cp scummtr scummrp scummfont FontXY "$TOOLS_DIR/bin/" 2>/dev/null || true
-    echo "  scummtr built at $TOOLS_DIR/bin/scummtr"
-    cd "$REPO_ROOT"
+mkdir -p "$PLATFORM_DIR"
+
+# --- scummtr (prebuilt binary from GitHub releases) ---
+#
+# Prebuilt binaries for Linux (x64) and macOS from:
+#   https://github.com/dwatteau/scummtr/releases
+#
+# This avoids needing cmake.
+
+SCUMMTR_VERSION="0.5.1"
+SCUMMTR_BASE_URL="https://github.com/dwatteau/scummtr/releases/download/v${SCUMMTR_VERSION}"
+
+echo "=== scummtr ==="
+if [ -f "$PLATFORM_DIR/scummtr" ]; then
+    echo "  Already present: $PLATFORM_DIR/scummtr"
 else
-    echo "  scummtr already present, skipping"
+    echo "  Downloading scummtr v${SCUMMTR_VERSION}..."
+    TMPDIR_SCUMMTR="$(mktemp -d)"
+    trap 'rm -rf "$TMPDIR_SCUMMTR"' EXIT
+
+    if [ "$OS" = "Darwin" ]; then
+        curl -sL "${SCUMMTR_BASE_URL}/scummtr-${SCUMMTR_VERSION}-macos.zip" \
+            -o "$TMPDIR_SCUMMTR/scummtr.zip"
+        unzip -q "$TMPDIR_SCUMMTR/scummtr.zip" -d "$TMPDIR_SCUMMTR"
+        for tool in scummtr scummrp scummfont FontXY; do
+            bin="$(find "$TMPDIR_SCUMMTR" -name "$tool" -not -name "*.zip" | head -1)"
+            if [ -n "$bin" ]; then
+                cp "$bin" "$PLATFORM_DIR/$tool"
+                chmod +x "$PLATFORM_DIR/$tool"
+            fi
+        done
+    else
+        curl -sL "${SCUMMTR_BASE_URL}/scummtr-${SCUMMTR_VERSION}-linux86.tar.gz" \
+            | tar xz -C "$TMPDIR_SCUMMTR"
+        for tool in scummtr scummrp scummfont FontXY; do
+            cp "$TMPDIR_SCUMMTR/scummtr-${SCUMMTR_VERSION}-linux86/linux-x64/$tool" \
+                "$PLATFORM_DIR/$tool"
+            chmod +x "$PLATFORM_DIR/$tool"
+        done
+    fi
+    echo "  Installed: $PLATFORM_DIR/scummtr (and scummrp, scummfont, FontXY)"
 fi
 
-echo ""
-echo "=== Building flips / Floating IPS (BPS patch creator) ==="
-if [ ! -f "$TOOLS_DIR/bin/flips" ]; then
-    cd "$TOOLS_DIR"
-    git clone --depth=1 https://github.com/Alcaro/Flips flips-src
-    cd flips-src
-    # Build CLI-only version (no GTK required)
-    g++ -O3 -DFLIPS_CLI \
-        flips.cpp bps.cpp ips.cpp crc32.cpp \
-        -o "$TOOLS_DIR/bin/flips"
-    echo "  flips built at $TOOLS_DIR/bin/flips"
-    cd "$REPO_ROOT"
-else
-    echo "  flips already present, skipping"
-fi
-
-echo ""
-echo "=== Installing Python dependencies ==="
-cd "$REPO_ROOT"
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip -q
-pip install pillow nutcracker -q
-echo "  Pillow and nutcracker installed in .venv/"
-
-echo ""
-echo "=== Installing scummvm-tools (descumm, etc.) ==="
-if ! command -v descumm &>/dev/null; then
-    sudo apt-get install -y scummvm-tools 2>/dev/null || {
-        echo "  scummvm-tools not in apt; building from source..."
-        cd "$TOOLS_DIR"
-        git clone --depth=1 https://github.com/scummvm/scummvm-tools scummvm-tools-src
-        cd scummvm-tools-src
-        cmake . -DCMAKE_BUILD_TYPE=Release
-        make -j"$(nproc)"
-        mkdir -p "$TOOLS_DIR/bin"
-        cp descumm "$TOOLS_DIR/bin/" 2>/dev/null || true
-        cd "$REPO_ROOT"
-    }
-else
-    echo "  descumm already in PATH, skipping"
-fi
+# --- Summary ---
 
 echo ""
 echo "=== Summary ==="
-echo "Tools available in $TOOLS_DIR/bin/:"
-ls "$TOOLS_DIR/bin/" 2>/dev/null || echo "  (none built yet)"
+echo "Tools in $PLATFORM_DIR/:"
+ls "$PLATFORM_DIR/" | sed 's/^/  /'
 echo ""
-echo "Python venv: source .venv/bin/activate"
-echo ""
-echo "NOTE: extractpak (for SE .pak extraction) must be obtained separately."
-echo "      See tools/mise/README.md for SE workflow — pak.py replaces extractpak."
+echo "Next step:"
+echo "  Copy Monkey1.pak to game/monkey1/ then run:"
+echo "  bash scripts/se/extract_classic_strings.sh"
 echo ""
 echo "All done."

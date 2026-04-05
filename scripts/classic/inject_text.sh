@@ -13,7 +13,7 @@
 #
 # The text file must use the same flags (-cwh -A aov) as extraction.
 # Swedish special characters must be replaced with SCUMM escape codes first.
-# See games/monkey1/references/TRANSLATE_TABLE for the mapping.
+# See translation/monkey1/TRANSLATE_TABLE for the mapping.
 #
 # Examples:
 #   bash scripts/classic/inject_text.sh monkeycd ~/games/monkey1_copy/ games/monkey1/text/translation.txt
@@ -21,7 +21,10 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-SCUMMTR="$REPO_ROOT/tools/bin/scummtr"
+case "$(uname -s)" in
+  Darwin) SCUMMTR="$REPO_ROOT/bin/darwin/scummtr" ;;
+  *)      SCUMMTR="$REPO_ROOT/bin/linux/scummtr"  ;;
+esac
 
 if [ $# -lt 3 ]; then
     echo "Usage: $0 <game_id> <game_dir> <input_file>"
@@ -43,15 +46,13 @@ if [ ! -f "$INPUT_FILE" ]; then
     exit 1
 fi
 
-# Apply Swedish character code substitutions (see games/monkey1/references/TRANSLATE_TABLE)
+# Apply Swedish character code substitutions (see translation/monkey1/TRANSLATE_TABLE)
 TEMP_FILE="$(mktemp)"
+trap 'rm -f "$TEMP_FILE"' EXIT
 iconv -f utf-8 -t iso-8859-1 "$INPUT_FILE" -o "$TEMP_FILE"
-sed -i \
-    's/Å/\\091/g;s/Ä/\\092/g;s/Ö/\\093/g' \
-    "$TEMP_FILE"
-sed -i \
-    's/å/\\123/g;s/ä/\\124/g;s/ö/\\125/g;s/é/\\130/g' \
-    "$TEMP_FILE"
+sed \
+    's/Å/\\091/g;s/Ä/\\092/g;s/Ö/\\093/g;s/å/\\123/g;s/ä/\\124/g;s/ö/\\125/g;s/é/\\130/g' \
+    "$TEMP_FILE" > "${TEMP_FILE}.2" && mv "${TEMP_FILE}.2" "$TEMP_FILE"
 
 echo "Injecting text into '$GAME_ID' at $GAME_DIR ..."
 "$SCUMMTR" -g "$GAME_ID" -cwh -A aov -p "$GAME_DIR" -if "$TEMP_FILE"
@@ -59,4 +60,3 @@ echo "Injecting text into '$GAME_ID' at $GAME_DIR ..."
 rm -f "$TEMP_FILE"
 
 echo "Done. Game files in $GAME_DIR have been modified."
-echo "Next step: run scripts/classic/build_patch.sh to create distributable BPS patches."

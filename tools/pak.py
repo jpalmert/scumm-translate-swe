@@ -37,6 +37,7 @@ import struct
 from pathlib import Path
 
 MAGIC = b'LPAK'
+MAGIC_GOG = b'KAPL'  # GOG version uses reversed magic bytes
 HEADER_SIZE = 0x28
 ENTRY_SIZE = 20
 
@@ -72,7 +73,7 @@ def extract(pak_path, output_dir, game=None):
 
     with open(pak_path, 'rb') as f:
         magic = f.read(4)
-        if magic != MAGIC:
+        if magic not in (MAGIC, MAGIC_GOG):
             raise ValueError(f"Not a PAK file (magic={magic!r})")
 
         version          = _read_u32(f)
@@ -154,7 +155,7 @@ def repack(input_dir, output_pak, reference_pak, game=None):
 
     with open(reference_pak, 'rb') as f:
         magic = f.read(4)
-        if magic != MAGIC:
+        if magic not in (MAGIC, MAGIC_GOG):
             raise ValueError(f"Not a PAK file (magic={magic!r})")
 
         version          = _read_u32(f)
@@ -243,8 +244,8 @@ def repack(input_dir, output_pak, reference_pak, game=None):
 
     # Write output PAK
     with open(output_pak, 'wb') as out:
-        # Header (placeholder sizeOfData, will patch later)
-        out.write(MAGIC)
+        # Header — preserve original magic (LPAK for Steam, KAPL for GOG)
+        out.write(magic)
         _write_u32(out, version)
         _write_u32(out, start_of_index)
         _write_u32(out, start_of_entries)

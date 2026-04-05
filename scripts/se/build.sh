@@ -9,16 +9,12 @@
 #   game             1 for MI:SE, 2 for MI2:SE
 #   original_pak     Path to original Monkey1.pak or Monkey2.pak from SE install
 #   translations_dir Directory containing translated .json files
-#                    (output of tools/mise/text.py extract, with translations filled in)
+#                    (output of tools/text.py extract, with translations filled in)
 #   output_pak       Path to write the modified .pak file
 #
 # The translations_dir should contain JSON files named after the .info files:
 #   speech.json       (from speech.info)
 #   uitext.json       (from uiText.info or fr.uitext.info)
-#
-# Font modifications (optional):
-#   If translations_dir/font_glyphs.png exists, it will be used to expand the font.
-#   Alongside it, translations_dir/font_map.txt must contain the --map argument.
 #
 # IMPORTANT: The translated game requires the SE game language to be set to
 #            French in order to display the custom translation.
@@ -32,7 +28,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-MISE_DIR="$REPO_ROOT/tools/mise"
+MISE_DIR="$REPO_ROOT/tools"
 PYTHON="${REPO_ROOT}/.venv/bin/python3"
 
 if [ $# -lt 4 ]; then
@@ -99,34 +95,7 @@ else
 fi
 
 echo ""
-echo "=== Step 4: Patch fonts (if glyphs provided) ==="
-
-GLYPH_PNG="$TRANSLATIONS_DIR/font_glyphs.png"
-FONT_MAP="$TRANSLATIONS_DIR/font_map.txt"
-
-if [ -f "$GLYPH_PNG" ] && [ -f "$FONT_MAP" ]; then
-    FONT_MAP_STR="$(cat "$FONT_MAP")"
-    FONT_FILE="$(find "$MODIFIED_DIR" -name "*.font" -print -quit)"
-    FONT_PNG="$(find "$MODIFIED_DIR" -name "*.font.png" -o -name "font*.png" | head -1)"
-
-    if [ -n "$FONT_FILE" ] && [ -n "$FONT_PNG" ]; then
-        echo "  expanding font: $FONT_FILE"
-        "$PYTHON" "$MISE_DIR/font.py" add-glyphs \
-            --font "$FONT_FILE" \
-            --png  "$FONT_PNG" \
-            --glyphs "$GLYPH_PNG" \
-            --map    "$FONT_MAP_STR" \
-            --out-font "$FONT_FILE" \
-            --out-png  "$FONT_PNG"
-    else
-        echo "  WARNING: font file or font PNG not found in PAK, skipping font patch"
-    fi
-else
-    echo "  no font glyphs provided ($GLYPH_PNG), skipping font step"
-fi
-
-echo ""
-echo "=== Step 5: Repack PAK ==="
+echo "=== Step 4: Repack PAK ==="
 mkdir -p "$(dirname "$OUTPUT_PAK")"
 "$PYTHON" "$MISE_DIR/pak.py" repack "$MODIFIED_DIR" "$OUTPUT_PAK" "$ORIGINAL_PAK" "$GAME"
 

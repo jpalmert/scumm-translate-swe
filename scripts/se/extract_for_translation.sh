@@ -12,7 +12,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-MISE_DIR="$REPO_ROOT/tools/mise"
+MISE_DIR="$REPO_ROOT/tools"
 PYTHON="${REPO_ROOT}/.venv/bin/python3"
 
 if [ $# -lt 3 ]; then

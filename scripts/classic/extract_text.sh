@@ -6,7 +6,7 @@
 #
 # Arguments:
 #   game_id     scummtr game identifier (e.g. monkeycd, monkey2, indy4, sam)
-#               Run: tools/bin/scummtr -L  to list all supported IDs
+#               Run: bin/scummtr -L  to list all supported IDs
 #   game_dir    Directory containing the game resource files (MONKEY.000 etc.)
 #   output_file Path to write the extracted text (e.g. games/monkey1/text/translation.txt)
 #
@@ -17,11 +17,14 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-SCUMMTR="$REPO_ROOT/tools/bin/scummtr"
+case "$(uname -s)" in
+  Darwin) SCUMMTR="$REPO_ROOT/bin/darwin/scummtr" ;;
+  *)      SCUMMTR="$REPO_ROOT/bin/linux/scummtr"  ;;
+esac
 
 if [ $# -lt 3 ]; then
     echo "Usage: $0 <game_id> <game_dir> <output_file>"
-    echo "       Run '$SCUMMTR -L' to list supported game IDs"
+    echo "       Run: bin/scummtr -L   (to list supported game IDs)"
     exit 1
 fi
 
