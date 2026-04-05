@@ -69,8 +69,6 @@ func PatchMonkey1001(input []byte) ([]byte, error) {
 	// Apply CHAR_0003 patch (best-effort — small text charset).
 	data, err = patchCharBlock(data, "CHAR_0003", patchedChar0003, originalChar0003Size)
 	if err != nil {
-		// Non-critical: log but do not fail. CHAR_0003 is used for minor UI
-		// text; the game is playable without it.
 		fmt.Printf("    Warning: CHAR_0003 patch skipped: %v\n", err)
 	}
 
@@ -261,16 +259,19 @@ func PatchMonkey1000(input []byte) ([]byte, error) {
 	const (
 		char0001OrigRel = 98401
 		char0003OrigRel = 105618
-		char0001Delta   = 73 // len(patchedChar0001) - originalChar0001Size
+		char0001Delta   = 16 // len(patchedChar0001) - originalChar0001Size
 		char0003Delta   = 66 // len(patchedChar0003) - originalChar0003Size
 	)
 
+	// DCHR body layout: 2-byte LE count, then count disk bytes, then count×4-byte LE offsets.
+	// The disk bytes and offsets are stored in two separate packed arrays, not interleaved.
 	if len(body) < 2 {
 		return nil, fmt.Errorf("DCHR body too short")
 	}
 	count := int(binary.LittleEndian.Uint16(body[0:2]))
+	offsetsStart := 2 + count // disk bytes occupy body[2 : 2+count]
 	for i := 0; i < count; i++ {
-		entryOffset := 2 + i*5 + 1 // skip 1-byte disk field, read 4-byte LE offset
+		entryOffset := offsetsStart + i*4
 		if entryOffset+4 > len(body) {
 			break
 		}

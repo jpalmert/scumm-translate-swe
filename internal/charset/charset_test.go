@@ -173,19 +173,24 @@ func TestAddToSize(t *testing.T) {
 }
 
 // buildDCHRBody builds a raw (plain) DCHR block with the given charset offsets.
+// Format: 2-byte count, count disk bytes, count×4-byte LE offsets.
 func buildDCHRBody(offsets []uint32) []byte {
 	count := len(offsets)
-	bodySize := 2 + count*5
+	bodySize := 2 + count + count*4 // count(2) + disk bytes(count) + offsets(count*4)
 	blockSize := 8 + bodySize
 
 	buf := make([]byte, blockSize)
 	copy(buf[0:], "DCHR")
 	binary.BigEndian.PutUint32(buf[4:], uint32(blockSize))
 	binary.LittleEndian.PutUint16(buf[8:], uint16(count))
+	// Disk bytes at buf[10 : 10+count]
+	for i := range offsets {
+		buf[10+i] = 1
+	}
+	// Offsets at buf[10+count : 10+count+count*4]
+	offsetsBase := 10 + count
 	for i, off := range offsets {
-		pos := 10 + i*5
-		buf[pos] = 1 // disk number
-		binary.LittleEndian.PutUint32(buf[pos+1:], off)
+		binary.LittleEndian.PutUint32(buf[offsetsBase+i*4:], off)
 	}
 	return buf
 }
@@ -218,10 +223,10 @@ func readOffsets(enc []byte) []uint32 {
 // readPlainOffsets reads charset offsets from a plain (non-encoded) DCHR block.
 func readPlainOffsets(data []byte) []uint32 {
 	count := int(binary.LittleEndian.Uint16(data[8:]))
+	offsetsBase := 10 + count
 	offsets := make([]uint32, count)
 	for i := range offsets {
-		pos := 10 + i*5 + 1
-		offsets[i] = binary.LittleEndian.Uint32(data[pos:])
+		offsets[i] = binary.LittleEndian.Uint32(data[offsetsBase+i*4:])
 	}
 	return offsets
 }
@@ -238,12 +243,12 @@ func TestPatchMonkey1000NoDCHR(t *testing.T) {
 func TestPatchMonkey1000OffsetsShifted(t *testing.T) {
 	// Provide offsets matching the known layout:
 	//   CHAR_0001: 98401  → no change (first modified block)
-	//   CHAR_0002: 101010 → +73 (char0001Delta)
-	//   CHAR_0003: 105618 → +73 (char0001Delta)
-	//   CHAR_0004: 107689 → +139 (char0001Delta+char0003Delta = 73+66)
-	//   CHAR_0006: 112479 → +139
+	//   CHAR_0002: 101010 → +16 (char0001Delta)
+	//   CHAR_0003: 105618 → +16 (char0001Delta)
+	//   CHAR_0004: 107689 → +82 (char0001Delta+char0003Delta = 16+66)
+	//   CHAR_0006: 112479 → +82
 	input := []uint32{98401, 101010, 105618, 107689, 112479}
-	want := []uint32{98401, 101083, 105691, 107828, 112618}
+	want := []uint32{98401, 101026, 105634, 107771, 112561}
 
 	// Test with XOR-encoded input.
 	enc := buildFakeMonkey1000(input)
