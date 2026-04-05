@@ -15,7 +15,7 @@ rm -f "$REPO_ROOT/dist/classic-patcher-windows.exe"
 rm -f "$REPO_ROOT/dist/se-patcher-linux"
 rm -f "$REPO_ROOT/dist/se-patcher-darwin"
 rm -f "$REPO_ROOT/dist/se-patcher-windows.exe"
-rm -f "$REPO_ROOT/dist/monkey1_swe.txt"
+rm -f "$REPO_ROOT/dist/monkey1.txt"
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/dist" 2>/dev/null || true
 
 echo "==> Removing extracted text files..."

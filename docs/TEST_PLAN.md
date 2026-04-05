@@ -126,7 +126,7 @@ Assert: second round-trip output is byte-identical to the first. (scummtr normal
 internal structures on first inject, but subsequent injects of the same data are stable.)
 
 #### INT-CLASSIC: Real Swedish translation grows `.001`
-Run `classic.InjectTranslation` with the real `monkey1_swe.txt`. Assert `MONKEY1.001`
+Run `classic.InjectTranslation` with the real `monkey1.txt`. Assert `MONKEY1.001`
 is larger after injection (Swedish text is longer than English).
 
 #### INT-EXTRACT-PAK: Extracting strings from PAK-sourced classic files
@@ -180,7 +180,7 @@ Assert: output written to specified path, original untouched, no backup created.
 4. Assert: dialog appears in Swedish with correct characters
 
 ### MAN-005: Custom translation file
-Place a modified `monkey1_swe.txt` next to the patcher binary. Run without specifying a
+Place a modified `monkey1.txt` next to the patcher binary. Run without specifying a
 translation path. Assert: patcher uses the file next to the binary.
 
 ### MAN-006: Missing input → helpful error

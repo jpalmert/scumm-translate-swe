@@ -54,7 +54,7 @@ the Swedish translation file at compile time using `go:embed`. The resulting bin
 Build with `bash scripts/build_patcher.sh` — produces:
 - `dist/se-patcher-linux`, `dist/se-patcher-darwin`, `dist/se-patcher-windows.exe`
 - `dist/classic-patcher-linux`, `dist/classic-patcher-darwin`, `dist/classic-patcher-windows.exe`
-- `dist/monkey1_swe.txt`
+- `dist/monkey1.txt`
 
 ---
 

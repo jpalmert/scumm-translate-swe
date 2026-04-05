@@ -11,7 +11,6 @@ import (
 )
 
 // buildSyntheticPAK creates a minimal, valid PAK file for testing.
-// Duplicated here from pak_test to avoid a test-only cross-package dependency.
 func buildSyntheticPAK(t *testing.T, magic [4]byte, files []struct{ name, data string }) []byte {
 	t.Helper()
 
@@ -51,7 +50,7 @@ func buildSyntheticPAK(t *testing.T, magic [4]byte, files []struct{ name, data s
 	}
 
 	buf.Write(magic[:])
-	w32(1) // version
+	w32(1)
 	w32(startOfIndex)
 	w32(startOfEntries)
 	w32(startOfNames)
@@ -60,9 +59,7 @@ func buildSyntheticPAK(t *testing.T, magic [4]byte, files []struct{ name, data s
 	w32(numFiles * entrySize)
 	w32(uint32(len(namesBlob)))
 	w32(uint32(len(dataBlob)))
-
 	buf.Write(make([]byte, indexSize))
-
 	for i := uint32(0); i < numFiles; i++ {
 		w32(dataPosMap[i])
 		w32(namePosMap[i])
@@ -70,7 +67,6 @@ func buildSyntheticPAK(t *testing.T, magic [4]byte, files []struct{ name, data s
 		w32(dataSizeMap[i])
 		w32(0)
 	}
-
 	buf.Write(namesBlob)
 	buf.Write(dataBlob)
 	return buf.Bytes()
@@ -78,14 +74,15 @@ func buildSyntheticPAK(t *testing.T, magic [4]byte, files []struct{ name, data s
 
 var gogMagic = [4]byte{'K', 'A', 'P', 'L'}
 
+// --- SE tests ---
+
 // SE-001: Non-existent input PAK → clear error.
 func TestRunSEPatchMissingInput(t *testing.T) {
 	dir := t.TempDir()
-	txFile := filepath.Join(dir, "monkey1_swe.txt")
+	txFile := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	err := runSEPatch("/nonexistent/Monkey1.pak", "", txFile)
-	if err == nil {
+	if err := runSEPatch("/nonexistent/Monkey1.pak", "", txFile); err == nil {
 		t.Fatal("expected error for missing input PAK")
 	}
 }
@@ -99,12 +96,10 @@ func TestRunSEPatchInvalidMagic(t *testing.T) {
 	dir := t.TempDir()
 	inPath := filepath.Join(dir, "Monkey1.pak")
 	os.WriteFile(inPath, raw, 0644)
-
-	txFile := filepath.Join(dir, "monkey1_swe.txt")
+	txFile := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	err := runSEPatch(inPath, "", txFile)
-	if err == nil {
+	if err := runSEPatch(inPath, "", txFile); err == nil {
 		t.Fatal("expected error for invalid PAK magic")
 	}
 }
@@ -113,17 +108,14 @@ func TestRunSEPatchInvalidMagic(t *testing.T) {
 func TestRunSEPatchMissing000(t *testing.T) {
 	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
 		{"classic/en/monkey1.001", "data001"},
-		{"other/asset.dat", "asset"},
 	})
 	dir := t.TempDir()
 	inPath := filepath.Join(dir, "Monkey1.pak")
 	os.WriteFile(inPath, raw, 0644)
-
-	txFile := filepath.Join(dir, "monkey1_swe.txt")
+	txFile := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	err := runSEPatch(inPath, "", txFile)
-	if err == nil {
+	if err := runSEPatch(inPath, "", txFile); err == nil {
 		t.Fatal("expected error for missing monkey1.000 entry")
 	}
 }
@@ -132,17 +124,14 @@ func TestRunSEPatchMissing000(t *testing.T) {
 func TestRunSEPatchMissing001(t *testing.T) {
 	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
 		{"classic/en/monkey1.000", "data000"},
-		{"other/asset.dat", "asset"},
 	})
 	dir := t.TempDir()
 	inPath := filepath.Join(dir, "Monkey1.pak")
 	os.WriteFile(inPath, raw, 0644)
-
-	txFile := filepath.Join(dir, "monkey1_swe.txt")
+	txFile := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	err := runSEPatch(inPath, "", txFile)
-	if err == nil {
+	if err := runSEPatch(inPath, "", txFile); err == nil {
 		t.Fatal("expected error for missing monkey1.001 entry")
 	}
 }
@@ -157,15 +146,12 @@ func TestRunSEPatchMissingTranslation(t *testing.T) {
 	inPath := filepath.Join(dir, "Monkey1.pak")
 	os.WriteFile(inPath, raw, 0644)
 
-	err := runSEPatch(inPath, "", "/nonexistent/monkey1_swe.txt")
-	if err == nil {
+	if err := runSEPatch(inPath, "", "/nonexistent/monkey1.txt"); err == nil {
 		t.Fatal("expected error for missing translation file")
 	}
 }
 
-// SE-006: In-place mode creates a .bak file.
-// The injection itself will fail (fake game data), but backup must be created
-// before injection is attempted.
+// SE-006: In-place mode creates a .bak file before injection.
 func TestRunSEPatchInPlaceCreatesBackup(t *testing.T) {
 	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
 		{"classic/en/monkey1.000", "data000"},
@@ -174,17 +160,13 @@ func TestRunSEPatchInPlaceCreatesBackup(t *testing.T) {
 	dir := t.TempDir()
 	inPath := filepath.Join(dir, "Monkey1.pak")
 	os.WriteFile(inPath, raw, 0644)
-
-	txFile := filepath.Join(dir, "monkey1_swe.txt")
+	txFile := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	// We expect runSEPatch to fail (scummtr can't handle fake data), but the
-	// backup should be created before the injection step.
-	runSEPatch(inPath, "", txFile) //nolint:errcheck — failure expected
+	runSEPatch(inPath, "", txFile) //nolint:errcheck — failure expected (fake data)
 
-	bakPath := inPath + ".bak"
-	if _, err := os.Stat(bakPath); err != nil {
-		t.Errorf("backup not created at %s", bakPath)
+	if _, err := os.Stat(inPath + ".bak"); err != nil {
+		t.Errorf("backup not created at %s.bak", inPath)
 	}
 }
 
@@ -197,38 +179,33 @@ func TestRunSEPatchExplicitOutputNoBackup(t *testing.T) {
 	dir := t.TempDir()
 	inPath := filepath.Join(dir, "Monkey1.pak")
 	os.WriteFile(inPath, raw, 0644)
-
-	txFile := filepath.Join(dir, "monkey1_swe.txt")
+	txFile := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(txFile, []byte("translation"), 0644)
-
 	outPath := filepath.Join(dir, "Monkey1_patched.pak")
 
-	runSEPatch(inPath, outPath, txFile) //nolint:errcheck — failure expected
+	runSEPatch(inPath, outPath, txFile) //nolint:errcheck — failure expected (fake data)
 
-	bakPath := inPath + ".bak"
-	if _, err := os.Stat(bakPath); err == nil {
-		t.Error("backup should not be created when an explicit output path is given")
+	if _, err := os.Stat(inPath + ".bak"); err == nil {
+		t.Error("backup should not be created when explicit output path is given")
 	}
 }
 
-// SE-010: remapFontEntries patches .font entries and skips non-font entries.
+// SE-010: remapFontEntries patches .font entries and skips others.
 func TestRemapFontEntries(t *testing.T) {
-	// Build a minimal font buffer with Swedish glyphs at Windows-1252 positions.
 	fontData := make([]byte, 600)
 	setGlyph := func(data []byte, code byte, idx byte) {
 		addr := (int(code)-0x20)*2 + 0x5A
 		data[addr] = idx
 	}
-	setGlyph(fontData, 0xC5, 107) // Å
-	setGlyph(fontData, 0xC4, 106) // Ä
-	setGlyph(fontData, 0xD6, 119) // Ö
-	setGlyph(fontData, 0xE5, 128) // å
-	setGlyph(fontData, 0xE4, 127) // ä
-	setGlyph(fontData, 0xF6, 143) // ö
-	setGlyph(fontData, 0xE9, 132) // é
+	setGlyph(fontData, 0xC5, 107)
+	setGlyph(fontData, 0xC4, 106)
+	setGlyph(fontData, 0xD6, 119)
+	setGlyph(fontData, 0xE5, 128)
+	setGlyph(fontData, 0xE4, 127)
+	setGlyph(fontData, 0xF6, 143)
+	setGlyph(fontData, 0xE9, 132)
 
 	other := []byte("not a font file")
-
 	entries := []*pak.Entry{
 		{Name: "fonts/MinisterT_20.font", Data: append([]byte(nil), fontData...)},
 		{Name: "other/asset.dat", Data: append([]byte(nil), other...)},
@@ -242,16 +219,13 @@ func TestRemapFontEntries(t *testing.T) {
 		t.Errorf("patched %d font files, want 1", count)
 	}
 
-	// Å (SCUMM code 91) should now point to glyph 107.
 	fontAddr := func(code byte) int { return (int(code)-0x20)*2 + 0x5A }
 	if got := entries[0].Data[fontAddr(91)]; got != 107 {
 		t.Errorf("SCUMM code 91 (Å): glyph = %d, want 107", got)
 	}
-	// å (SCUMM code 123) should now point to glyph 128.
 	if got := entries[0].Data[fontAddr(123)]; got != 128 {
 		t.Errorf("SCUMM code 123 (å): glyph = %d, want 128", got)
 	}
-	// Non-font entry must be unchanged.
 	if !bytes.Equal(entries[1].Data, other) {
 		t.Error("non-font entry was modified")
 	}
@@ -259,22 +233,18 @@ func TestRemapFontEntries(t *testing.T) {
 
 // SE-011: remapFontEntries returns error when a font is missing a required glyph.
 func TestRemapFontEntriesMissingGlyph(t *testing.T) {
-	// Font data with no glyphs set — all indices are 0.
 	entries := []*pak.Entry{
 		{Name: "fonts/MinisterT_20.font", Data: make([]byte, 600)},
 	}
-	_, err := remapFontEntries(entries)
-	if err == nil {
+	if _, err := remapFontEntries(entries); err == nil {
 		t.Fatal("expected error for font missing required glyphs")
 	}
 }
 
-// SE-012: remapFontEntries with no .font entries returns 0, nil (not an error).
-// This covers the case where a PAK has no font files — graceful no-op.
+// SE-012: remapFontEntries with no .font entries returns 0, nil.
 func TestRemapFontEntriesNoFonts(t *testing.T) {
 	entries := []*pak.Entry{
 		{Name: "classic/en/monkey1.000", Data: []byte("data")},
-		{Name: "classic/en/monkey1.001", Data: []byte("data")},
 		{Name: "other/asset.dat", Data: []byte("asset")},
 	}
 	count, err := remapFontEntries(entries)
@@ -286,18 +256,96 @@ func TestRemapFontEntriesNoFonts(t *testing.T) {
 	}
 }
 
-// SE-008: findTranslationFile returns error for missing explicit path.
+// --- Classic tests ---
+
+// CLASSIC-001: Non-existent game directory → clear error.
+func TestRunClassicPatchMissingDir(t *testing.T) {
+	if err := runClassicPatch("/nonexistent/game/dir", "/dev/null"); err == nil {
+		t.Fatal("expected error for missing game dir")
+	}
+}
+
+// CLASSIC-002: Directory missing MONKEY1.000 → clear error.
+func TestRunClassicPatchMissing000(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), []byte("data"), 0644)
+
+	if err := runClassicPatch(dir, "/dev/null"); err == nil {
+		t.Fatal("expected error for missing MONKEY1.000")
+	}
+}
+
+// CLASSIC-003: Directory missing MONKEY1.001 → clear error.
+func TestRunClassicPatchMissing001(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), []byte("data"), 0644)
+
+	if err := runClassicPatch(dir, "/dev/null"); err == nil {
+		t.Fatal("expected error for missing MONKEY1.001")
+	}
+}
+
+// CLASSIC-004: Translation file not found → clear error.
+func TestRunClassicPatchMissingTranslation(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), []byte("data"), 0644)
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), []byte("data"), 0644)
+
+	if err := runClassicPatch(dir, "/nonexistent/monkey1.txt"); err == nil {
+		t.Fatal("expected error for missing translation file")
+	}
+}
+
+// CLASSIC-005: Lowercase filenames accepted.
+func TestFindGameFileLowercase(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "monkey1.000"), []byte("lower"), 0644)
+
+	p, err := findGameFile(dir, "MONKEY1.000", "monkey1.000")
+	if err != nil {
+		t.Fatalf("findGameFile: %v", err)
+	}
+	if filepath.Base(p) != "monkey1.000" {
+		t.Errorf("expected lowercase path, got %s", p)
+	}
+}
+
+// CLASSIC-006: Uppercase preferred over lowercase when both exist.
+func TestFindGameFileUppercasePreferred(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), []byte("upper"), 0644)
+	os.WriteFile(filepath.Join(dir, "monkey1.000"), []byte("lower"), 0644)
+
+	p, err := findGameFile(dir, "MONKEY1.000", "monkey1.000")
+	if err != nil {
+		t.Fatalf("findGameFile: %v", err)
+	}
+	if filepath.Base(p) != "MONKEY1.000" {
+		t.Errorf("expected uppercase path, got %s", p)
+	}
+}
+
+// CLASSIC-007: findGameFile returns error when neither name exists.
+func TestFindGameFileMissing(t *testing.T) {
+	dir := t.TempDir()
+	if _, err := findGameFile(dir, "MONKEY1.000", "monkey1.000"); err == nil {
+		t.Fatal("expected error for missing file")
+	}
+}
+
+// --- Shared ---
+
+// SHARED-001: findTranslationFile returns error for missing explicit path.
 func TestFindTranslationFileMissingExplicit(t *testing.T) {
-	_, err := findTranslationFile("/nonexistent/translation.txt")
-	if err == nil {
+	if _, err := findTranslationFile("/nonexistent/translation.txt"); err == nil {
 		t.Fatal("expected error")
 	}
 }
 
-// SE-009: findTranslationFile accepts a valid explicit path.
+// SHARED-002: findTranslationFile accepts a valid explicit path.
 func TestFindTranslationFileExplicit(t *testing.T) {
 	dir := t.TempDir()
-	p := filepath.Join(dir, "monkey1_swe.txt")
+	p := filepath.Join(dir, "monkey1.txt")
 	os.WriteFile(p, []byte("translation data"), 0644)
 
 	got, err := findTranslationFile(p)
@@ -306,5 +354,32 @@ func TestFindTranslationFileExplicit(t *testing.T) {
 	}
 	if got != p {
 		t.Errorf("got %q, want %q", got, p)
+	}
+}
+
+// --- Auto-detection tests ---
+
+// DETECT-001: isSEInput returns true for a .pak file.
+func TestIsSEInputPAKFile(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "Monkey1.pak")
+	os.WriteFile(p, []byte("data"), 0644)
+	if !isSEInput(p) {
+		t.Error("expected true for .pak file")
+	}
+}
+
+// DETECT-002: isSEInput returns false for a directory.
+func TestIsSEInputDirectory(t *testing.T) {
+	dir := t.TempDir()
+	if isSEInput(dir) {
+		t.Error("expected false for directory")
+	}
+}
+
+// DETECT-003: isSEInput returns true for a non-existent .pak path (by extension).
+func TestIsSEInputNonExistentPAK(t *testing.T) {
+	if !isSEInput("/some/path/output.pak") {
+		t.Error("expected true for non-existent .pak path")
 	}
 }

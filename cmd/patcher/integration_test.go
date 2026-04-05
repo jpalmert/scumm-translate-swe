@@ -12,8 +12,7 @@ import (
 	"scumm-patcher/internal/pak"
 )
 
-// repoRoot walks up from the package directory to the repository root
-// (identified as the directory containing go.mod).
+// repoRoot walks up from the package directory to the repository root.
 func repoRoot(t *testing.T) string {
 	t.Helper()
 	dir, _ := os.Getwd()
@@ -29,13 +28,13 @@ func repoRoot(t *testing.T) string {
 	}
 }
 
-// sePaths returns paths to integration test resources, skipping if missing.
-func sePaths(t *testing.T) (pakPath, translationPath string) {
+// integrationPaths returns test resource paths, skipping if any are missing.
+func integrationPaths(t *testing.T) (pakPath, translationPath string) {
 	t.Helper()
 	root := repoRoot(t)
 
 	pakPath = filepath.Join(root, "game", "monkey1", "Monkey1.pak")
-	translationPath = filepath.Join(root, "translation", "monkey1", "monkey1_swe.txt")
+	translationPath = filepath.Join(root, "translation", "monkey1", "monkey1.txt")
 
 	var missing []string
 	for _, p := range []string{pakPath, translationPath} {
@@ -47,7 +46,6 @@ func sePaths(t *testing.T) (pakPath, translationPath string) {
 		t.Skipf("integration files missing:\n  %s", strings.Join(missing, "\n  "))
 	}
 
-	// Check scummtr binary is available for the current platform.
 	scummtrName := map[string]string{
 		"linux":   "scummtr-linux-x64",
 		"darwin":  "scummtr-darwin-x64",
@@ -56,19 +54,16 @@ func sePaths(t *testing.T) (pakPath, translationPath string) {
 	if scummtrName == "" {
 		t.Skipf("integration tests not supported on %s", runtime.GOOS)
 	}
-	scummtrAsset := filepath.Join(root, "internal/classic/assets", scummtrName)
-	if _, err := os.Stat(scummtrAsset); err != nil {
-		t.Skipf("scummtr asset missing: %s", scummtrAsset)
+	if _, err := os.Stat(filepath.Join(root, "internal/classic/assets", scummtrName)); err != nil {
+		t.Skipf("scummtr asset missing: %s", scummtrName)
 	}
-
 	return
 }
 
-// INT-SE-001: Full SE pipeline — patched PAK is valid and classic entries grew.
+// INT-SE-001: Full SE pipeline — patched PAK is valid, .001 grew, fonts patched.
 func TestSEPatcherFullPipeline(t *testing.T) {
-	pakPath, translationPath := sePaths(t)
+	pakPath, translationPath := integrationPaths(t)
 
-	// Read original sizes.
 	_, _, _, origEntries, err := pak.Read(pakPath)
 	if err != nil {
 		t.Fatalf("pak.Read original: %v", err)
@@ -84,7 +79,6 @@ func TestSEPatcherFullPipeline(t *testing.T) {
 		t.Fatal("classic/en/monkey1.001 not found in original PAK")
 	}
 
-	// Run patcher with explicit output (no backup, preserves original).
 	dir := t.TempDir()
 	outPath := filepath.Join(dir, "Monkey1_patched.pak")
 
@@ -92,7 +86,6 @@ func TestSEPatcherFullPipeline(t *testing.T) {
 		t.Fatalf("runSEPatch: %v", err)
 	}
 
-	// Verify output is readable.
 	_, _, _, patchedEntries, err := pak.Read(outPath)
 	if err != nil {
 		t.Fatalf("pak.Read patched: %v", err)
@@ -108,30 +101,22 @@ func TestSEPatcherFullPipeline(t *testing.T) {
 	if patched001Size == 0 {
 		t.Fatal("classic/en/monkey1.001 not found in patched PAK")
 	}
-
 	if patched001Size <= orig001Size {
 		t.Errorf("MONKEY1.001 did not grow: orig=%d, patched=%d", orig001Size, patched001Size)
 	}
 	t.Logf("MONKEY1.001: %d → %d bytes (+%d)", orig001Size, patched001Size, patched001Size-orig001Size)
 
-	// Entry count must be identical — we only modified data, not structure.
 	if len(patchedEntries) != len(origEntries) {
 		t.Errorf("entry count changed: orig=%d, patched=%d", len(origEntries), len(patchedEntries))
 	}
 
-	// Font entries must have been patched: verify SCUMM code 91 (Å) is remapped
-	// in at least one .font file. Before patching, code 91 maps to glyph 0 (unmapped);
-	// after patching it should map to a non-zero glyph matching Windows-1252 0xC5.
 	fontAddr := func(code byte) int { return (int(code)-0x20)*2 + 0x5A }
 	fontPatched := 0
 	for _, e := range patchedEntries {
 		if !strings.HasSuffix(strings.ToLower(e.Name), ".font") {
 			continue
 		}
-		if len(e.Data) <= fontAddr(91) {
-			continue
-		}
-		if e.Data[fontAddr(91)] != 0 {
+		if len(e.Data) > fontAddr(91) && e.Data[fontAddr(91)] != 0 {
 			fontPatched++
 		}
 	}
@@ -141,11 +126,10 @@ func TestSEPatcherFullPipeline(t *testing.T) {
 	t.Logf("%d .font entries have Å remapped", fontPatched)
 }
 
-// INT-SE-002: In-place mode creates a backup of Monkey1.pak.
+// INT-SE-002: In-place mode creates backup with correct content.
 func TestSEPatcherInPlaceBackup(t *testing.T) {
-	pakPath, translationPath := sePaths(t)
+	pakPath, translationPath := integrationPaths(t)
 
-	// Copy PAK to a temp dir so we can patch it in-place without modifying the original.
 	dir := t.TempDir()
 	origData, err := os.ReadFile(pakPath)
 	if err != nil {
@@ -156,22 +140,54 @@ func TestSEPatcherInPlaceBackup(t *testing.T) {
 		t.Fatalf("write temp PAK: %v", err)
 	}
 
-	// Patch in-place (no explicit output path).
 	if err := runSEPatch(tmpPAK, "", translationPath); err != nil {
 		t.Fatalf("runSEPatch in-place: %v", err)
 	}
 
-	bakPath := tmpPAK + ".bak"
-	bakInfo, err := os.Stat(bakPath)
+	bakData, err := os.ReadFile(tmpPAK + ".bak")
 	if err != nil {
-		t.Fatalf("backup not created at %s", bakPath)
+		t.Fatalf("backup not created: %v", err)
 	}
-	if bakInfo.Size() != int64(len(origData)) {
-		t.Errorf("backup size mismatch: got %d, want %d", bakInfo.Size(), len(origData))
+	if len(bakData) != len(origData) {
+		t.Errorf("backup size mismatch: got %d, want %d", len(bakData), len(origData))
 	}
-
-	bakData, _ := os.ReadFile(bakPath)
 	if string(bakData) != string(origData) {
 		t.Error("backup content differs from original")
 	}
+}
+
+// INT-CLASSIC: Real Swedish translation grows .001.
+func TestClassicPatcherFullPipeline(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var data000, data001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			data000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			data001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if data000 == nil || data001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), data000, 0644)
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), data001, 0644)
+
+	if err := runClassicPatch(dir, translationPath); err != nil {
+		t.Fatalf("runClassicPatch: %v", err)
+	}
+
+	patched001, _ := os.ReadFile(filepath.Join(dir, "MONKEY1.001"))
+	if len(patched001) <= len(data001) {
+		t.Errorf("MONKEY1.001 did not grow: orig=%d, patched=%d", len(data001), len(patched001))
+	}
+	t.Logf("MONKEY1.001: %d → %d bytes (+%d)", len(data001), len(patched001), len(patched001)-len(data001))
 }

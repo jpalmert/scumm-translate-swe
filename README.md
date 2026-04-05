@@ -19,7 +19,7 @@ One patcher works for both the Special Edition and the Classic CD-ROM version.
 ### How to patch
 
 Download `mi1-translate-windows.exe` / `mi1-translate-darwin` / `mi1-translate-linux`
-and `monkey1_swe.txt` into the same folder as your game files, then run the patcher.
+and `monkey1.txt` into the same folder as your game files, then run the patcher.
 
 The patcher detects your version automatically:
 - **Special Edition:** place next to `Monkey1.pak`
@@ -43,8 +43,8 @@ For the Classic version, do this in ScummVM's game settings.
 
 **Advanced:** you can also pass paths explicitly:
 ```
-mi1-translate-linux Monkey1.pak [output.pak] [monkey1_swe.txt]   # SE
-mi1-translate-linux /path/to/game/dir [monkey1_swe.txt]          # Classic
+mi1-translate-linux Monkey1.pak [output.pak] [monkey1.txt]   # SE
+mi1-translate-linux /path/to/game/dir [monkey1.txt]          # Classic
 ```
 
 
@@ -104,7 +104,7 @@ scripts/
 
 translation/
   monkey1/
-    monkey1_swe.txt         Swedish translation (scummtr format, 4437 strings)
+    monkey1.txt         Swedish translation (scummtr format, 4437 strings)
     TRANSLATE_TABLE         Swedish character code mappings
 
 docs/
@@ -124,7 +124,7 @@ dist/                      Built patcher binaries (never committed)
   mi1-translate-linux
   mi1-translate-darwin
   mi1-translate-windows.exe
-  monkey1_swe.txt          ← shipped alongside the binary
+  monkey1.txt          ← shipped alongside the binary
 ```
 
 ### External dependencies
@@ -195,7 +195,7 @@ bash scripts/build_patcher.sh
 #   dist/mi1-translate-linux
 #   dist/mi1-translate-darwin
 #   dist/mi1-translate-windows.exe
-#   dist/monkey1_swe.txt
+#   dist/monkey1.txt
 ```
 
 ### Refreshing dependencies
@@ -226,7 +226,7 @@ The GOG and Steam versions of MI1SE store game dialog inside embedded classic SC
 resource files (`classic/en/MONKEY1.000` and `classic/en/MONKEY1.001`) within `Monkey1.pak`.
 These are identical to the CD-ROM classic version that `scummtr` was built for.
 
-The Swedish translation (`translation/monkey1/monkey1_swe.txt`) is sourced from the
+The Swedish translation (`translation/monkey1/monkey1.txt`) is sourced from the
 [monkeycd_swe](https://github.com/dwatteau/monkeycd_swe) project. It aligns 1:1 with
 the SE strings (4437 strings in the same order).
 

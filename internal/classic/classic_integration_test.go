@@ -300,7 +300,7 @@ func mustReadFile(t *testing.T, path string) []byte {
 func TestInjectTranslationWithRealFile(t *testing.T) {
 	pakPath, _ := integrationPaths(t)
 	root := repoRoot(t)
-	translationPath := filepath.Join(root, "translation", "monkey1", "monkey1_swe.txt")
+	translationPath := filepath.Join(root, "translation", "monkey1", "monkey1.txt")
 	if _, err := os.Stat(translationPath); err != nil {
 		t.Skipf("translation file not found: %s", translationPath)
 	}

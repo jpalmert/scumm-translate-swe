@@ -12,7 +12,7 @@
 #        dist/mi1-translate-linux
 #        dist/mi1-translate-darwin
 #        dist/mi1-translate-windows.exe
-#        dist/monkey1_swe.txt     ← ship this alongside the binaries
+#        dist/monkey1.txt     ← ship this alongside the binaries
 #
 # Requirements:
 #   - Go 1.21+  (go build)
@@ -21,10 +21,10 @@
 #
 # The patcher embeds scummtr internally and auto-detects whether the game files
 # are the Special Edition (Monkey1.pak) or Classic CD-ROM (MONKEY1.000/.001).
-# The only loose file is monkey1_swe.txt — users can edit it before patching.
+# The only loose file is monkey1.txt — users can edit it before patching.
 #
 # Usage of the built patcher (for users):
-#   Place mi1-translate-linux and monkey1_swe.txt next to your game files and run it.
+#   Place mi1-translate-linux and monkey1.txt next to your game files and run it.
 # After patching, set the in-game language to French.
 
 set -euo pipefail
@@ -32,7 +32,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ASSETS_DIR="$REPO_ROOT/internal/classic/assets"
 DIST_DIR="$REPO_ROOT/dist"
-TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/monkey1_swe.txt"
+TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/monkey1.txt"
 
 SCUMMTR_VERSION="0.5.1"
 SCUMMTR_BASE_URL="https://github.com/dwatteau/scummtr/releases/download/v${SCUMMTR_VERSION}"
@@ -106,13 +106,13 @@ echo "=== Step 2: Copy Swedish translation to dist/ ==="
 
 if [ ! -f "$TRANSLATION_SRC" ]; then
     echo "ERROR: Translation file not found: $TRANSLATION_SRC"
-    echo "       Copy monkey1_swe.txt from the monkeycd_swe repo to translation/monkey1/"
+    echo "       Copy monkey1.txt from the monkeycd_swe repo to translation/monkey1/"
     exit 1
 fi
 
-cp "$TRANSLATION_SRC" "$DIST_DIR/monkey1_swe.txt"
+cp "$TRANSLATION_SRC" "$DIST_DIR/monkey1.txt"
 echo "  Copied: $TRANSLATION_SRC"
-echo "        → $DIST_DIR/monkey1_swe.txt"
+echo "        → $DIST_DIR/monkey1.txt"
 
 echo ""
 echo "=== Step 3: Cross-compile patcher ==="
@@ -155,10 +155,10 @@ echo ""
 echo "Output in dist/:"
 ls -lh "$DIST_DIR/"
 echo ""
-echo "Distribute all files in dist/ together (binaries + monkey1_swe.txt)."
+echo "Distribute all files in dist/ together (binaries + monkey1.txt)."
 echo ""
 echo "Usage:"
-echo "  Place mi1-translate-linux and monkey1_swe.txt next to your game files and run it."
+echo "  Place mi1-translate-linux and monkey1.txt next to your game files and run it."
 echo "  Works with both the Special Edition (Monkey1.pak) and Classic CD-ROM (MONKEY1.000)."
 echo ""
 echo "After patching, set the in-game language to French."
