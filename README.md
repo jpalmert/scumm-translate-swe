@@ -151,15 +151,20 @@ If you need to rebuild or upgrade the bundled binaries, see [Refreshing dependen
 
 ### One-time setup
 
+Copy your game files into `game/monkey1/`. Either the SE PAK or the classic files work:
+
 ```bash
-# Copy your Monkey1.pak into game/monkey1/
+# Special Edition (GOG or Steam):
 cp /path/to/Monkey1.pak game/monkey1/
+
+# Classic CD-ROM:
+cp /path/to/MONKEY1.000 /path/to/MONKEY1.001 game/monkey1/
 ```
 
-### Extract English strings from the PAK
+### Extract English strings
 
 This is the starting point for translation work. The script extracts all English dialog
-strings from `Monkey1.pak` into a text file that you then translate line by line.
+strings into a text file that you then translate line by line.
 
 The script accepts either the SE PAK file or a directory containing the classic files directly:
 
