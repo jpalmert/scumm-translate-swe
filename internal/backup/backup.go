@@ -2,10 +2,15 @@
 package backup
 
 import (
+	"errors"
 	"fmt"
 	"io"
 	"os"
 )
+
+// ErrBackupExists is returned by Create when a backup file already existed and
+// was left untouched. The returned backup path is still valid.
+var ErrBackupExists = errors.New("backup already existed from a previous run")
 
 // Create copies src to src+".bak".
 //
@@ -18,8 +23,8 @@ func Create(path string) (string, error) {
 	backupPath := path + ".bak"
 
 	if _, err := os.Stat(backupPath); err == nil {
-		// Backup already exists — keep the original untouched.
-		return backupPath, nil
+		// Backup already exists — keep the first backup as the canonical original.
+		return backupPath, ErrBackupExists
 	}
 
 	src, err := os.Open(path)

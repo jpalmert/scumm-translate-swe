@@ -1,6 +1,7 @@
 package backup_test
 
 import (
+	"errors"
 	"os"
 	"path/filepath"
 	"testing"
@@ -51,9 +52,10 @@ func TestCreateNoOverwrite(t *testing.T) {
 	// Modify the source to simulate a patched file
 	os.WriteFile(src, []byte("version 2 (patched)"), 0644)
 
-	// Second backup call — must NOT overwrite the original backup
-	if _, err := backup.Create(src); err != nil {
-		t.Fatalf("second Create: %v", err)
+	// Second backup call — must NOT overwrite the original backup; returns ErrBackupExists.
+	_, err := backup.Create(src)
+	if !errors.Is(err, backup.ErrBackupExists) {
+		t.Fatalf("second Create: want ErrBackupExists, got %v", err)
 	}
 
 	got, _ := os.ReadFile(bak)

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -37,15 +38,21 @@ func runClassicPatch(gameDir, translationArg string) error {
 	// --- Backup originals ---
 	fmt.Println("==> Creating backups...")
 	bak000, err := backup.Create(path000)
-	if err != nil {
+	if errors.Is(err, backup.ErrBackupExists) {
+		fmt.Printf("    WARNING: %s already exists from a previous run — using it as-is.\n", bak000)
+	} else if err != nil {
 		return fmt.Errorf("backup %s: %w", path000, err)
+	} else {
+		fmt.Printf("    %s\n", bak000)
 	}
 	bak001, err := backup.Create(path001)
-	if err != nil {
+	if errors.Is(err, backup.ErrBackupExists) {
+		fmt.Printf("    WARNING: %s already exists from a previous run — using it as-is.\n", bak001)
+	} else if err != nil {
 		return fmt.Errorf("backup %s: %w", path001, err)
+	} else {
+		fmt.Printf("    %s\n", bak001)
 	}
-	fmt.Printf("    %s\n", bak000)
-	fmt.Printf("    %s\n", bak001)
 
 	// --- Copy to temp dir as uppercase (scummtr requires uppercase filenames) ---
 	tmpDir, err := os.MkdirTemp("", "mi1-patcher-classic-*")

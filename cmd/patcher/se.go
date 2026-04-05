@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -68,10 +69,14 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	if inPlace {
 		fmt.Println("\n==> Creating backup...")
 		bakPath, err := backup.Create(inputPAK)
-		if err != nil {
+		if errors.Is(err, backup.ErrBackupExists) {
+			fmt.Printf("    WARNING: %s already exists from a previous run — using it as-is.\n", bakPath)
+			fmt.Printf("    If the game is broken, restore this backup and verify it is the original.\n")
+		} else if err != nil {
 			return fmt.Errorf("backup: %w", err)
+		} else {
+			fmt.Printf("    %s\n", bakPath)
 		}
-		fmt.Printf("    %s\n", bakPath)
 	}
 
 	// --- Step 3: Extract classic files to temp dir ---
