@@ -121,6 +121,12 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return fmt.Errorf("charset patch: %w", err)
 	}
 
+	// --- Step 5b: Patch verb button layout ---
+	fmt.Println("\n==> Patching verb button layout...")
+	if err := charset.PatchVerbLayout(tmpDir); err != nil {
+		return fmt.Errorf("verb layout patch: %w", err)
+	}
+
 	// --- Step 6: Read patched files back ---
 	patched000, err := os.ReadFile(path000)
 	if err != nil {

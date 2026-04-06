@@ -90,7 +90,7 @@ GEN_ROOT="$REPO_ROOT/game/monkey1/gen"
 # --- Dump CHAR blocks ---
 echo ""
 echo "=== Dumping CHAR blocks ==="
-DUMP_DIR="$WORK/dump"
+DUMP_DIR="$WORK/char_dump"
 "$SCUMMRP" -g "$GAME_ID" -p "$GAME_DIR" -t CHAR -od "$DUMP_DIR"
 
 # Locate the directory containing the CHAR blocks — differs between game variants
@@ -137,6 +137,21 @@ STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
 "$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -cwh -A aov -o -f "$STR_OUT/english.txt"
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
+
+# --- Dump and save SCRP_0022 (verb button positions, used by build.sh) ---
+echo ""
+echo "=== Saving SCRP_0022 ==="
+SCRP_DUMP_DIR="$WORK/scrp_dump"
+"$SCUMMRP" -g "$GAME_ID" -p "$GAME_DIR" -t SCRP -od "$SCRP_DUMP_DIR"
+SCRP_0022_SRC="$(find "$SCRP_DUMP_DIR" -name "SCRP_0022" 2>/dev/null | head -1)"
+if [[ -z "$SCRP_0022_SRC" ]]; then
+    echo "  WARNING: SCRP_0022 not found in scummrp dump — verb layout patch will not be available"
+else
+    SCRP_OUT="$GEN_ROOT/scripts"
+    mkdir -p "$SCRP_OUT"
+    cp "$SCRP_0022_SRC" "$SCRP_OUT/SCRP_0022"
+    echo "  SCRP_0022 -> $SCRP_OUT/SCRP_0022"
+fi
 
 echo ""
 echo "Done."

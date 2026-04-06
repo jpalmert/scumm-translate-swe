@@ -13,6 +13,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 echo "==> Removing generated charset files..."
 rm -f "$REPO_ROOT/internal/charset/gen/"char_*_patched.bin
+rm -f "$REPO_ROOT/internal/charset/gen/scrp_0022_patched.bin"
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/internal/charset/gen" 2>/dev/null || true
 
 echo "==> Removing dist/ binaries..."

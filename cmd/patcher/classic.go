@@ -101,6 +101,12 @@ func runClassicPatch(gameDir, translationArg string) error {
 		return fmt.Errorf("charset patch: %w", err)
 	}
 
+	// --- Patch verb button layout ---
+	fmt.Println("\n==> Patching verb button layout...")
+	if err := charset.PatchVerbLayout(tmpDir); err != nil {
+		return fmt.Errorf("verb layout patch: %w", err)
+	}
+
 	// --- Write patched files back ---
 	fmt.Println("\n==> Writing patched files...")
 	patched000, err := os.ReadFile(tmp000)
