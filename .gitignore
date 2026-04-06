@@ -5,7 +5,9 @@ game/
 # Source of truth: internal/charset/bitmaps/*.bmp (Swedish BMPs) + assets/charset/english/ (English CHAR blocks)
 internal/charset/gen/
 
-# Assets extracted from game files — gitignored; regenerate with the extract scripts
+# Assets extracted from game files — gitignored; regenerate with scripts/extract.sh
+assets/charset/english/
+assets/charset/english_bitmaps/
 assets/strings/
 
 # Python

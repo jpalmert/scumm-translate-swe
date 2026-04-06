@@ -23,8 +23,8 @@
 # Requirements:
 #   - Go 1.21+  (go build)
 #   - Tool binaries in git (scummtr, scummrp, scummfont — run install_deps.sh if missing)
-#   - Cached English CHAR blocks in assets/charset/english/
-#     (run: bash scripts/extract_char_bitmaps.sh [Monkey1.pak | game_dir])
+#   - Extracted English CHAR blocks in assets/charset/english/
+#     (run: bash scripts/extract.sh [Monkey1.pak | game_dir])
 #
 # Usage of the built patcher (for users):
 #   Place mi1-translate-linux and monkey1.txt next to your game files and run it.
@@ -85,7 +85,7 @@ if [[ ${#missing_cache[@]} -gt 0 ]]; then
     echo "ERROR: English CHAR block cache is missing files:" >&2
     for n in "${missing_cache[@]}"; do echo "  $CHAR_CACHE/$n" >&2; done
     echo "" >&2
-    echo "Run: bash scripts/extract_char_bitmaps.sh [Monkey1.pak | game_dir]" >&2
+    echo "Run: bash scripts/extract.sh [Monkey1.pak | game_dir]" >&2
     exit 1
 fi
 
