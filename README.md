@@ -89,20 +89,18 @@ tools/                      Python tools for SE translation work (developer use)
   README.md
 
 scripts/
-  install_deps.sh           Recovery only — re-downloads scummtr if bundled binaries don't work
-  build.sh          Build distributable binaries for all platforms
-  clean.sh                  Remove generated dist/ binaries and scummtr assets
-  se/
-    extract_classic_strings.sh   Extract English dialog from SE PAK (developer use)
-    extract_for_translation.sh   Extract SE text files to JSON (future games)
-    build.sh                     Inject JSON translations into SE PAK (future games)
-  classic/
-    extract_text.sh         Extract classic SCUMM text via scummtr
-    inject_text.sh          Inject translated text via scummtr
+  extract.sh                Top-level entry point: detects PAK vs game dir, calls sub-scripts
+  extract_pak.sh            Unpack MONKEY1.000/001 from an SE PAK archive → game/monkey1/
+  extract_assets.sh         Extract CHAR blocks, BMPs and dialog strings from a game dir
+  extract_text.sh           Generic scummtr text extraction (any SCUMM game/game-ID)
+  build.sh                  Generate Swedish charset assets and cross-compile the patcher
+  clean.sh                  Remove build artifacts (gen/ .bin files and dist/ binaries)
+  clean_assets.sh           Remove all assets extracted from the game (undoes extract.sh)
+  install_deps.sh           Re-download tool binaries if the committed copies are damaged
 
 translation/
   monkey1/
-    monkey1.txt         Swedish translation (scummtr format, 4437 strings)
+    monkey1.txt             Swedish translation (scummtr format, 4437 strings)
     TRANSLATE_TABLE         Swedish character code mappings
 
 docs/
@@ -112,17 +110,23 @@ docs/
 
 --- gitignored below this line ---
 
-game/                      User-provided copyrighted game files (never committed)
-  monkey1/Monkey1.pak
-  monkey1/text/se_english.txt   English strings extracted by extract_classic_strings.sh
+game/                       User-provided copyrighted game files (never committed)
+  monkey1/
+    Monkey1.pak             SE PAK file (GOG or Steam) — place here or pass path to extract.sh
+    MONKEY1.000             Classic files — either place here directly or unpacked from PAK
+    MONKEY1.001
+    gen/                    All assets extracted from the game (regenerate with extract.sh)
+      charset/english/      Raw CHAR font blocks (used by build.sh)
+      charset/english_bitmaps/ English reference BMPs (visual aid for editing Swedish glyphs)
+      strings/english.txt   English dialog strings for translation
 
-bin/                       Downloaded tool binaries (never committed)
+bin/                        Downloaded tool binaries (never committed)
 
-dist/                      Built patcher binaries (never committed)
+dist/                       Built patcher binaries (never committed)
   mi1-translate-linux
   mi1-translate-darwin
   mi1-translate-windows.exe
-  monkey1.txt          ← shipped alongside the binary
+  monkey1.txt               ← shipped alongside the binary
 ```
 
 ### External dependencies
@@ -139,36 +143,47 @@ If you need to rebuild or upgrade the bundled binaries, see [Refreshing dependen
 
 ### One-time setup
 
-Copy your game files into `game/monkey1/`. Either the SE PAK or the classic files work:
+Install the bundled tool binaries (scummtr, scummrp, scummfont):
 
 ```bash
-# Special Edition (GOG or Steam):
+bash scripts/install_deps.sh
+```
+
+Then place your game files where the scripts can find them. Either the SE PAK or the
+classic SCUMM files work — the scripts detect which you have:
+
+```bash
+# Special Edition (GOG or Steam) — default location:
 cp /path/to/Monkey1.pak game/monkey1/
 
-# Classic CD-ROM:
+# Classic CD-ROM — place files directly:
 cp /path/to/MONKEY1.000 /path/to/MONKEY1.001 game/monkey1/
+# Also accepted: lowercase names and MONKEY.000/001 (the CD naming convention)
 ```
 
-### Extract English strings
+### Extract assets from the game
 
-This is the starting point for translation work. The script extracts all English dialog
-strings into a text file that you then translate line by line.
-
-The script accepts either the SE PAK file or a directory containing the classic files directly:
+Run this once after placing your game files. It extracts the font data and English dialog
+strings needed for building the patcher and for translation work.
 
 ```bash
-# From the SE PAK (default):
-bash scripts/se/extract_classic_strings.sh
-bash scripts/se/extract_classic_strings.sh /path/to/Monkey1.pak
+# Auto-detects PAK vs classic files (uses game/monkey1/ by default):
+bash scripts/extract.sh
 
-# From classic files (MONKEY1.000 + MONKEY1.001), e.g. from the CD-ROM version
-# or manually extracted from the PAK:
-bash scripts/se/extract_classic_strings.sh /path/to/classic/files/
-
-# Output: game/monkey1/text/se_english.txt  (gitignored)
+# Explicit paths:
+bash scripts/extract.sh /path/to/Monkey1.pak
+bash scripts/extract.sh /path/to/game/dir/
 ```
 
-The script writes one string per entry with `[room:type#id]` context headers:
+This populates `game/monkey1/gen/` (gitignored):
+
+| Output | Purpose |
+|--------|---------|
+| `gen/charset/english/CHAR_NNNN` | Raw CHAR font blocks — templates for `build.sh` |
+| `gen/charset/english_bitmaps/*.bmp` | English glyphs as BMPs — visual reference when editing Swedish glyphs in `internal/charset/bitmaps/` |
+| `gen/strings/english.txt` | English dialog strings for translation |
+
+`gen/strings/english.txt` has one string per entry with `[room:type#id]` context headers:
 
 ```
 [0037:0000#0000]
@@ -178,15 +193,15 @@ I wonder what's out there beyond the horizon.
 ```
 
 Translate each string in place, keeping the `[room:type#id]` headers and the file
-structure intact. The translated file is then passed to the SE patcher pipeline.
-
-The file uses Windows-1252 encoding with CRLF line endings (scummtr's native format).
-It is gitignored and must be regenerated from your own copy of the game.
+structure intact. The file uses Windows-1252 encoding with CRLF line endings (scummtr's
+native format).
 
 ### Build the distributable patcher
 
+Requires `game/monkey1/gen/` to be populated (run `extract.sh` first).
+
 ```bash
-# Requires: Go 1.21+, curl, unzip
+# Requires: Go 1.21+
 bash scripts/build.sh
 
 # Output:
@@ -254,19 +269,19 @@ If you have access to the classic game files only (e.g. `MONKEY1.000` / `MONKEY1
 the classic workflow works standalone — no Special Edition required:
 
 1. Find the scummtr game ID for your game (see table below, or run `bin/linux/scummtr -L`).
-2. Extract the English strings:
+2. Extract English assets (pass the game directory directly to skip PAK unpacking):
    ```
-   bash scripts/classic/extract_text.sh <game_id> /path/to/game/ translation/<game>/text.txt
+   bash scripts/extract.sh /path/to/game/
    ```
-3. Translate `translation/<game>/text.txt`.
-4. Inject the translation back:
+3. For a generic text-only extraction to a custom output file:
    ```
-   bash scripts/classic/inject_text.sh <game_id> /path/to/game_copy/ translation/<game>/text.txt
+   bash scripts/extract_text.sh <game_id> /path/to/game/ translation/<game>/text.txt
    ```
-5. Add a translation directory under `translation/<game>/` and a new patcher command under `cmd/classic-patcher/` (or extend the existing one) following the Monkey Island 1 pattern.
+4. Translate `translation/<game>/text.txt`.
+5. Add a translation directory under `translation/<game>/` and a new patcher command under `cmd/` following the Monkey Island 1 pattern.
 
-The distributable end-user patcher (`cmd/classic-patcher/`) patches the game files in-place
-and works on Windows, macOS, and Linux — no external tools needed by the end user.
+The distributable end-user patcher patches game files in-place and works on Windows,
+macOS, and Linux — no external tools needed by the end user.
 
 ### Special Edition games
 
