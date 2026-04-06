@@ -113,7 +113,7 @@ func InjectTranslation(gameDir, translationPath string) error {
 		scummtrPath,
 		"-g", "monkeycdalt",
 		"-p", gameDir,
-		"-ih",
+		"-irh",
 		"-f", encodedPath,
 	)
 	cmd.Stdout = os.Stdout

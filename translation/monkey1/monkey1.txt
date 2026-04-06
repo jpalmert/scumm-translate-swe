@@ -1,3 +1,5 @@
+;; ScummTR note: every line starting with this prefix is ignored
+;; ScummTR note: file encoding is RAW
 [001:OBNA#0016]djungel
 [001:OBNA#0017]roddbåt och åror
 [001:OBNA#0023]djungel
@@ -63,20 +65,20 @@
 [007:OBNA#0086]bokmärke
 [007:OBNA#0085]pappersbit
 [007:OBNA#0088]kanelstänger
-[007:VERB#0087]Den är redan bäddad!\255\003Skeppet har förmodligen "rekonditionerats" innan försäljning.
+[007:VERB#0087]Den är redan bäddad!\255\003Skeppet har förmodligen `rekonditionerats` innan försäljning.
 [007:VERB#0087]Det kommer finnas tid för sånt senare.
 [007:OBNA#0087]Kaptenens säng
 [007:LSCR#0200]Jag är körd.
-[007:SCRP#0148]Det står:\255\003"Kaptenens logg, 10:e Mars."\255\003"Första styrman Tandröta och jag har letat efter Apön\015 i över en månad utan någon lycka."
-[007:SCRP#0148]"Vägbeskrivningen vi köpte på Gruffotumult visade sig vara ett recept och inte en karta som vi först trodde."
-[007:SCRP#0148]"Kaptenens logg, 12:e Mars."\255\003"Jag önskar att Tandröta kunde ta ett bad."
-[007:SCRP#0148]"Kaptenens logg, 17:e Mars."\255\003"Jag önskar att Tandröta kunde sluta snarka."
-[007:SCRP#0148]"Kaptenens logg, 23:e Mars."\255\003"Tandröta håller verkligen på att gå mig på nerverna. Jag antar att det bara är en tidsfråga innan vi ryker ihop."
-[007:SCRP#0148]"Kaptenens logg, 2:a April."\255\003"Som en gest för att återställa vår vänskap har Tandröta erbjudit sig att fixa middagen ikväll."
-[007:SCRP#0148]"Kaptenens logg, 3:e April."\255\003"Jag vet inte hur vi lyckades, men vi har anlänt till Apön\015."\255\003"Både Tandröta och jag slocknade efter soppan han lagade till igår kväll, och när vi vaknade vilade Apön\015 intill bågen."
-[007:SCRP#0148]"Kaptenens logg, 4:e April."\255\003"Tandröta och jag fyllde roddbåten med proviant och är redo att bege oss mot Apön\015."
-[007:SCRP#0148]"Vi är båda exalterade över tanken om att vara de första civiliserade människorna att ta reda på Apöns Hemlighet\015."
-[007:SCRP#0148]"Kaptenens logg, 4:e April."\255\003"Vi var tvungna att återvända till skeppet. Tandröta glömde bort att gå på toaletten innan vi åkte."\255\003"Vi åker ut imorgon igen."
+[007:SCRP#0148]Det står:\255\003`Kaptenens logg, 10:e Mars.`\255\003`Första styrman Tandröta och jag har letat efter Apön\015 i över en månad utan någon lycka.`
+[007:SCRP#0148]`Vägbeskrivningen vi köpte på Gruffotumult visade sig vara ett recept och inte en karta som vi först trodde.`
+[007:SCRP#0148]`Kaptenens logg, 12:e Mars.`\255\003`Jag önskar att Tandröta kunde ta ett bad.`
+[007:SCRP#0148]`Kaptenens logg, 17:e Mars.`\255\003`Jag önskar att Tandröta kunde sluta snarka.`
+[007:SCRP#0148]`Kaptenens logg, 23:e Mars.`\255\003`Tandröta håller verkligen på att gå mig på nerverna. Jag antar att det bara är en tidsfråga innan vi ryker ihop.`
+[007:SCRP#0148]`Kaptenens logg, 2:a April.`\255\003`Som en gest för att återställa vår vänskap har Tandröta erbjudit sig att fixa middagen ikväll.`
+[007:SCRP#0148]`Kaptenens logg, 3:e April.`\255\003`Jag vet inte hur vi lyckades, men vi har anlänt till Apön\015.`\255\003`Både Tandröta och jag slocknade efter soppan han lagade till igår kväll, och när vi vaknade vilade Apön\015 intill bågen.`
+[007:SCRP#0148]`Kaptenens logg, 4:e April.`\255\003`Tandröta och jag fyllde roddbåten med proviant och är redo att bege oss mot Apön\015.`
+[007:SCRP#0148]`Vi är båda exalterade över tanken om att vara de första civiliserade människorna att ta reda på Apöns Hemlighet\015.`
+[007:SCRP#0148]`Kaptenens logg, 4:e April.`\255\003`Vi var tvungna att återvända till skeppet. Tandröta glömde bort att gå på toaletten innan vi åkte.`\255\003`Vi åker ut imorgon igen.`
 [007:SCRP#0148]Det var det sista inlägget.
 [007:SCRP#0184] 
 [007:SCRP#0184]Jösses, snacka om tungt. Den är säkerligen fylld med guld och juveler.
@@ -251,7 +253,7 @@
 [010:SCRP#0152]Bakgrundsgrafik av\255\001Steve Purcell, Mark Ferrari\255\001och Mike Ebert\255\002
 [010:SCRP#0152] 
 [010:SCRP#0152] 
-[010:SCRP#0152]Animationer av\255\001Steve Purcell, Mike Ebert\255\001och Martin Cameron som "Bucky"\255\002
+[010:SCRP#0152]Animationer av\255\001Steve Purcell, Mike Ebert\255\001och Martin Cameron som `Bucky`\255\002
 [010:SCRP#0152] 
 [010:SCRP#0152] 
 [010:SCRP#0152] 
@@ -287,7 +289,7 @@
 [010:SCRP#0152]IBM CD-ROM-projekt\255\001producerat av\255\001Brenna Kruppa-Holden\255\002
 [010:SCRP#0152] 
 [010:SCRP#0152] 
-[010:SCRP#0152]"SCUMM"-äventyrsmotor av\255\001Ron Gilbert, Aric Wilmunder,\255\001Brad Taylor och Vince Lee\255\002
+[010:SCRP#0152]`SCUMM`-äventyrsmotor av\255\001Ron Gilbert, Aric Wilmunder,\255\001Brad Taylor och Vince Lee\255\002
 [010:SCRP#0152] 
 [010:SCRP#0152] 
 [011:OBNA#0115]stig
@@ -321,7 +323,7 @@
 [012:OBNA#0152]lik
 [012:OBNA#0153]lik
 [012:OBNA#0154]lik
-[012:VERB#0156]"PRIVAT OMRÅDE"\255\003"Tillbedjan är tillåtet, men var god TRÄD EJ IN i Aphuvudet."\255\003"- SP. LeChuck"
+[012:VERB#0156]`PRIVAT OMRÅDE`\255\003`Tillbedjan är tillåtet, men var god TRÄD EJ IN i Aphuvudet.`\255\003`- SP. LeChuck`
 [012:OBNA#0156]skylt
 [012:VERB#0132]Gosse, vad han borde vara trött.
 [012:VERB#0132]Ook\255\003Ook\255\003Eep
@@ -330,8 +332,8 @@
 [012:LSCR#0206]KeJohan Glans
 [012:LSCR#0206]KeLasse Brandeby
 [012:LSCR#0207]Konstnären har ristat in sitt namn på den:
-[012:LSCR#0207]"Skapad av Röda Skallen."
-[012:LSCR#0207]"Skapad av Skarptand."
+[012:LSCR#0207]`Skapad av Röda Skallen.`
+[012:LSCR#0207]`Skapad av Skarptand.`
 [012:LSCR#0209]Herman Tandröta
 [014:VERB#0158]Den är full av skräp. Jag hoppas jag slipper äta det här.
 [014:VERB#0158]Den ser ut som en helt vanlig skeppskastrull.
@@ -534,7 +536,7 @@
 [020:OBNA#0268]hög klippa
 [020:VERB#0261]Djup.\255\003Mörk.\255\003Förbjuden.
 [020:OBNA#0261]djungel
-[020:VERB#0263]Det var konstigt^\255\003Det står "Sjöapan" på den.
+[020:VERB#0263]Det var konstigt^\255\003Det står `Sjöapan` på den.
 [020:OBNA#0263]roddbåt@@@@@@@@@
 [020:VERB#0270]Några bananer ramlade av trädet!
 [020:OBNA#0270]bananer
@@ -564,8 +566,8 @@
 [020:LSCR#0202]Som du vill.
 [020:LSCR#0202]Förresten, du kanske borde släcka den där elden.\255\003Någon kan skada sig.
 [020:LSCR#0202] 
-[020:LSCR#0203]"NOTIS OM OPINIONSMÖTE"\255\003"Det kommer att hållas möte onsdag kväll för diskussion kring spökpiraten LeChucks belägring av Det Heliga Aphuvudet^"
-[020:LSCR#0203]"^samt den påföljande inverkan på miljön och turismen."\255\003"Alla kannibaler på Apön\015 uppmanas att närvara."
+[020:LSCR#0203]`NOTIS OM OPINIONSMÖTE`\255\003`Det kommer att hållas möte onsdag kväll för diskussion kring spökpiraten LeChucks belägring av Det Heliga Aphuvudet^`
+[020:LSCR#0203]`^samt den påföljande inverkan på miljön och turismen.`\255\003`Alla kannibaler på Apön\015 uppmanas att närvara.`
 [020:SCRP#0095] 
 [020:SCRP#0095]Jag blir aldrig trött på den här utsikten.
 [020:SCRP#0095]Även om jag HAR tittat på den i över tjugo år nu.\255\003Och även om det är den ENDA utsikten på ön.
@@ -591,7 +593,7 @@
 [020:SCRP#0095]Ja, det är väldigt imponerande.
 [020:SCRP#0095]Vad?
 [020:SCRP#0095]Jag blev lurad av en kille som heter Sture^
-[020:SCRP#0095]Vad menar du, "modigare än vad jag ser ut"?
+[020:SCRP#0095]Vad menar du, `modigare än vad jag ser ut`?
 [020:SCRP#0095]Lämna mig ifred, okej?
 [020:SCRP#0095]Öh^\255\003Jag är ledsen men jag måste gå nu.\255\003Brådskande affärer, vet du.
 [020:SCRP#0095](Hi, hi)
@@ -686,20 +688,20 @@
 [020:SCRP#0096]Nej tack, jag har mina egna. Dock kastade någon ned dem i en avgrund.
 [020:SCRP#0096]Vad tusan ska jag göra med den där?
 [020:SCRP#0164]Det är tryckt med brevhuvud!
-[020:SCRP#0164]"Till Kannibalerna på Apön\015:"\255\003"Vänligen sluta röra den här."\255\003"Den är väldigt fint balanserad."\255\003"- Herman Tandröta"
-[020:SCRP#0164]"Herr Tandröta:"\255\003"Vänligen ta bort det här farliga föremålet."
-[020:SCRP#0164]"Citronhuvud råkade putta ned en sten på den från klippan ovanför och nästan skadade en person som höll på att sätta upp en gunga på bananträdet på södra stranden."
-[020:SCRP#0164]"Citronhuvud råkade putta ned en sten på den från klippan ovanför och nästan sänkte ett förbipasserande skepp."
-[020:SCRP#0164]"- Kannibalerna"
-[020:SCRP#0164]"Till spökpiraten LeChuck:"\255\003"Vi måste be er återigen att minska på era nattliga aktiviteter på området vid Heliga Aphuvudet."\255\003"Hederligt folk försöker sova!"
-[020:SCRP#0164]"Vänligen håll nere ljudnivån."\255\003"- Kannibalerna på Apön\015"\255\003"P.S.:"\255\003"Vi såg dig bära där kvinnan med skarfen dit ned!"
-[020:SCRP#0164]"Till Kannibalerna på Apön\015:"\255\003"Det gör mig inget att ni tillbedjer framför Heliga Aphuvudet, som agerar både som mitt hem samt hemliga operationsbas^"
-[020:SCRP#0164]"^Men skulle ni vänligen kunna låta bli att lämna stökiga blodsoffer på min farstubro?"\255\003"LÅT ÄVEN VÄNLIGEN BLI ATT GÅ IN I APHUVUDET."\255\003"- SP. LeChuck"
-[020:SCRP#0164]"Till spökpiraten LeChuck:"\255\003"Vi måste protestera mot ditt 'förvärvande' av vår voodoo-antirot."\255\003"Vi förstår att den utgör en fara för dig och din besättning, men detta är stöld!"\255\003"- Kannibalerna på Apön\015"
-[020:SCRP#0164]"Herman-"\255\003"Vänligen återlämna vår nyckel till Aphuvudet."\255\003"- Kannibalerna"
-[020:SCRP#0164]"Kannibaler-"\255\003"Jag tänker inte ge er blodsugare tillbaka nyckeln till Aphuvudet förrän ni har återlämnat min bananplockare."\255\003"- H.T."
-[020:SCRP#0164]"Till Herman Tandröta"\255\003"Från advokatfirma Humma, Harkel och Host"\255\003"Ang. Stämningsansökan mot kannibalstam p.g.a. uppsåtligt kast av åror ned i en avgrund."
-[020:SCRP#0164]"Jag tror vi har ett solklart fall här."\255\003"Vi kan förmodligen mjölka dem för känslomässigt lidande och möjligen även skadestånd."
+[020:SCRP#0164]`Till Kannibalerna på Apön\015:`\255\003`Vänligen sluta röra den här.`\255\003`Den är väldigt fint balanserad.`\255\003`- Herman Tandröta`
+[020:SCRP#0164]`Herr Tandröta:`\255\003`Vänligen ta bort det här farliga föremålet.`
+[020:SCRP#0164]`Citronhuvud råkade putta ned en sten på den från klippan ovanför och nästan skadade en person som höll på att sätta upp en gunga på bananträdet på södra stranden.`
+[020:SCRP#0164]`Citronhuvud råkade putta ned en sten på den från klippan ovanför och nästan sänkte ett förbipasserande skepp.`
+[020:SCRP#0164]`- Kannibalerna`
+[020:SCRP#0164]`Till spökpiraten LeChuck:`\255\003`Vi måste be er återigen att minska på era nattliga aktiviteter på området vid Heliga Aphuvudet.`\255\003`Hederligt folk försöker sova!`
+[020:SCRP#0164]`Vänligen håll nere ljudnivån.`\255\003`- Kannibalerna på Apön\015`\255\003`P.S.:`\255\003`Vi såg dig bära där kvinnan med skarfen dit ned!`
+[020:SCRP#0164]`Till Kannibalerna på Apön\015:`\255\003`Det gör mig inget att ni tillbedjer framför Heliga Aphuvudet, som agerar både som mitt hem samt hemliga operationsbas^`
+[020:SCRP#0164]`^Men skulle ni vänligen kunna låta bli att lämna stökiga blodsoffer på min farstubro?`\255\003`LÅT ÄVEN VÄNLIGEN BLI ATT GÅ IN I APHUVUDET.`\255\003`- SP. LeChuck`
+[020:SCRP#0164]`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärvande' av vår voodoo-antirot.`\255\003`Vi förstår att den utgör en fara för dig och din besättning, men detta är stöld!`\255\003`- Kannibalerna på Apön\015`
+[020:SCRP#0164]`Herman-`\255\003`Vänligen återlämna vår nyckel till Aphuvudet.`\255\003`- Kannibalerna`
+[020:SCRP#0164]`Kannibaler-`\255\003`Jag tänker inte ge er blodsugare tillbaka nyckeln till Aphuvudet förrän ni har återlämnat min bananplockare.`\255\003`- H.T.`
+[020:SCRP#0164]`Till Herman Tandröta`\255\003`Från advokatfirma Humma, Harkel och Host`\255\003`Ang. Stämningsansökan mot kannibalstam p.g.a. uppsåtligt kast av åror ned i en avgrund.`
+[020:SCRP#0164]`Jag tror vi har ett solklart fall här.`\255\003`Vi kan förmodligen mjölka dem för känslomässigt lidande och möjligen även skadestånd.`
 [020:SCRP#0164] 
 [020:SCRP#0166]PM
 [020:SCRP#0166]ett par PM
@@ -887,7 +889,7 @@
 [025:LSCR#0205]CITRONHUVUD!
 [025:LSCR#0205]Kom och kika på den här.
 [025:LSCR#0205]Oooh, den var fin.
-[025:LSCR#0205]Och det står "Gjord av Citronhuvud" på den^\255\003^Precis som en av mina!\255\003Vi borde ta den här till Den Stora Apan.
+[025:LSCR#0205]Och det står `Gjord av Citronhuvud` på den^\255\003^Precis som en av mina!\255\003Vi borde ta den här till Den Stora Apan.
 [025:LSCR#0205]Ja, jag instämmer.
 [025:LSCR#0205]Vi är väldigt tacksamma för denna fina gåva.
 [025:LSCR#0205]Om det någonsin finns något du behöver på Apön\015, kom och hälsa på oss.
@@ -898,7 +900,7 @@
 [025:LSCR#0211]Den här hyddan är VÄLDIGT tom.
 [025:LSCR#0211]Jösses, det här är den mest tomma hydda jag någonsin sett.
 [025:LSCR#0211]Det råder inga tvivel - den här hyddan är tom.
-[025:LSCR#0211]Jag slår vad om att, om jag slår upp ordet "tom" i ordboken, skulle det finnas en bild på den här hyddan!
+[025:LSCR#0211]Jag slår vad om att, om jag slår upp ordet `tom` i ordboken, skulle det finnas en bild på den här hyddan!
 [025:LSCR#0213]Har du återvänt för att låta oss återgälda dig för din fina gåva?
 [025:LSCR#0213]Jo, faktiskt, det finns något^
 [025:LSCR#0213]Nej, tack. Generositet är sin egna belöning. Hejdå.
@@ -1133,7 +1135,7 @@
 [027:VERB#0314]Jag tror inte att jag behöver fler bananer.
 [027:VERB#0314]Den där bananen är redan plockad.
 [027:VERB#0314]Det finns inga bananer att plocka här.
-[027:VERB#0314]Det står "Om upphittad, vänligen återlämna till Herman Tandröta." på den.
+[027:VERB#0314]Det står `Om upphittad, vänligen återlämna till Herman Tandröta.` på den.
 [027:OBNA#0314]bananplockare
 [027:OBNA#0305]PM
 [027:ENCD#0027]hål
@@ -1376,7 +1378,7 @@
 [029:VERB#0375]Nej, tack. Jag kan aldrig somna på konstiga ställen.
 [029:VERB#0375]Nej, tack. Jag vill helst inte ta i någon av dessa kusliga voodoogrejer.
 [029:OBNA#0375]soffa
-[029:VERB#0374]Få se, det finns en burk med fladdermusflottyr^\255\003^En låda som det står "Blandade Fjäll" på^\255\003^En ströare full av apspån^\255\003^Och några kattknogar.
+[029:VERB#0374]Få se, det finns en burk med fladdermusflottyr^\255\003^En låda som det står `Blandade Fjäll` på^\255\003^En ströare full av apspån^\255\003^Och några kattknogar.
 [029:VERB#0374]Kattknogar?!\255\003Så barbariskt!
 [029:VERB#0374] 
 [029:VERB#0374]Nej, tack. Jag vill helst inte ta i någon av dessa kusliga voodoogrejer.
@@ -1478,11 +1480,11 @@
 [029:LSCR#0210]Ingen fara, jag ska akta mig för LeChuck.
 [029:LSCR#0210]Inte för LeChuck^ för dig själv och för vad du kommer att finna.\255\003Vad du kommer att få reda på om dig själv och din värld.
 [029:LSCR#0210]Det kommer att förfära dig.
-[030:VERB#0390]"Greppa tag i dina besparingar med GREPPMASTER\015-handtag."
+[030:VERB#0390]`Greppa tag i dina besparingar med GREPPMASTER\015-handtag.`
 [030:VERB#0390]Hörrudu! Låt bli den där!
 [030:VERB#0390]Fiffla inte med den där!
 [030:OBNA#0390]handtag
-[030:VERB#0389]"Davey Jones\015 Kista:\255\001Det allra bästa inom tjuv-, eld- och groggtåliga förvaringsapparaturer."
+[030:VERB#0389]`Davey Jones\015 Kista:\255\001Det allra bästa inom tjuv-, eld- och groggtåliga förvaringsapparaturer.`
 [030:VERB#0389] 
 [030:VERB#0389]Det här är ett groggtåligt kassaskåp.\255\003Det står så på det.
 [030:VERB#0389]Jag tror inte det kommer att öppna det.
@@ -1490,19 +1492,19 @@
 [030:VERB#0389]Det är redan stängt.
 [030:OBNA#0389]kassaskåp
 [030:OBNA#0399]ringklocka
-[030:VERB#0398]"Ring klockan för service."
+[030:VERB#0398]`Ring klockan för service.`
 [030:VERB#0398]Bäst att inte röra den.\255\003Den där butiksinnehavar-snubben kanske biter av mig huvudet.
 [030:OBNA#0398]skylt
 [030:OBNA#0394]butiksinnehavare
 [030:VERB#0395]ANDEDRÄKTSMASTER\015 - För piraten som bryr sig om första intrycket.
 [030:VERB#0395]Ooooh! Snacka om uppfriskande!
 [030:OBNA#0395]minttabletter
-[030:VERB#0396]"GRÄVMASTER\015 - Den enda spaden för seriösa skattjaktsentusiaster."
+[030:VERB#0396]`GRÄVMASTER\015 - Den enda spaden för seriösa skattjaktsentusiaster.`
 [030:OBNA#0396]spade
 [030:VERB#0397]"Jag, den gode och ärofulla butiksinnehavaren, tar härmed ansvar för de skulder som innehavaren av denna lapp dragit på sig, med värde upp till 5000 åtta-realer."
 [030:OBNA#0397]butiksinnehavarens lapp
 [030:OBNA#0387]dörr
-[030:VERB#0388]"HUGGMASTER\015 - När du vill ha ett svärd lika skarpt som ditt sinne."
+[030:VERB#0388]`HUGGMASTER\015 - När du vill ha ett svärd lika skarpt som ditt sinne.`
 [030:VERB#0388]På de där hjälplösa hundarna?
 [030:VERB#0388]Det vore inhumant!
 [030:OBNA#0388]svärd
@@ -1822,7 +1824,7 @@
 [032:OBNA#0423]affisch
 [032:VERB#0424]Han är avskyvärd, fruktansvärd, gräslig och ska just slå mig igen.
 [032:OBNA#0424]LeChuck
-[032:VERB#0425]"Endast anställda"
+[032:VERB#0425]`Endast anställda`
 [032:OBNA#0425]skylt
 [032:LSCR#0200]Hallå?
 [032:LSCR#0200]Är det någon här?
@@ -1854,7 +1856,7 @@
 [033:VERB#0429]Det är min lilla plunderkanin.
 [033:VERB#0429]Jag förstår hur LeChuck kunde falla för henne så snabbt.
 [033:VERB#0429]Jag förstår hur den där piraten kunde falla för henne så snabbt.
-[033:VERB#0429]Återvälj Guvernör Marley.\255\003"När det finns endast en kandidat, finns det endast ett val."
+[033:VERB#0429]Återvälj Guvernör Marley.\255\003`När det finns endast en kandidat, finns det endast ett val.`
 [033:VERB#0429] 
 [033:OBNA#0429]affisch
 [034:OBNA#0439]dödliga pirayapudlar
@@ -1909,7 +1911,7 @@
 [034:LSCR#0204]Passar det?
 [034:LSCR#0204]Ja, det vore fint.
 [034:LSCR#0204]Nej tack, jag har en båt att hinna med.
-[034:LSCR#0204]Strålande^\255\001Då bokar jag in er under "plundring av Guvernörens herrgård för en, klockan halv tre."
+[034:LSCR#0204]Strålande^\255\001Då bokar jag in er under `plundring av Guvernörens herrgård för en, klockan halv tre.`
 [034:LSCR#0204]Ring in i förväg nästa gång.
 [034:LSCR#0204]Skyll dig själv^
 [035:OBNA#0453]råtta
@@ -1919,7 +1921,7 @@
 [035:VERB#0444]Jag måste till kyrkan!
 [035:OBNA#0444]dörr
 [035:OBNA#0442]karta
-[035:VERB#0443]"Gamla Handelsboden Gummikycklingen-med-en-Remskiva-i-mitten^"\255\003"^Vi har tillfredställt era Gummikyckling-med-en-Remskiva-i-mitten-behov i över 50 år."
+[035:VERB#0443]`Gamla Handelsboden Gummikycklingen-med-en-Remskiva-i-mitten^`\255\003`^Vi har tillfredställt era Gummikyckling-med-en-Remskiva-i-mitten-behov i över 50 år.`
 [035:OBNA#0443]skylt
 [035:OBNA#0445]dörr
 [035:OBNA#0446]dörr
@@ -2126,7 +2128,7 @@
 [036:VERB#0467]Jag tror inte jag tar mig förbi dem.
 [036:VERB#0467]Jag går inte nära dem!
 [036:VERB#0467]Jag vill inte väcka dem.
-[036:VERB#0467]"Låt sovande hundar ligga."
+[036:VERB#0467]`Låt sovande hundar ligga.`
 [036:OBNA#0467]dödliga pirayapudlar@@@@
 [036:ENCD#0036]sovande pirayapudlar
 [036:LSCR#0201]sovande pirayapudlar
@@ -2323,7 +2325,7 @@
 [038:LSCR#0202]Strunt samma.\255\003Vad sa du att ditt namn var, nu igen?
 [038:LSCR#0202]Jag är Kajbrusk Drevskog.
 [038:LSCR#0202]Faktiskt, mitt namn är Kajbrusk Drevskog.
-[038:LSCR#0202]Vad tusan är det för fel på "Kajbrusk Drevskog"?
+[038:LSCR#0202]Vad tusan är det för fel på `Kajbrusk Drevskog`?
 [038:LSCR#0202]Kalla mig Plira.
 [038:LSCR#0202]Jag är här borta.
 [038:LSCR#0202]Vem är DU?
@@ -2332,7 +2334,7 @@
 [038:LSCR#0202]Jag kom till Gruffotumultön\015 eftersom jag vill bli en pirat.
 [038:LSCR#0202]Ja, du valde rätt ställe för det.\255\003Dock kanske fel tidpunkt.
 [038:LSCR#0202]För att inte nämna fel namn.\255\003Du har det fånigaste namnet jag hört på länge.
-[038:LSCR#0202]Det är det enda jag någonsin hört som varit fånigare än "Plira".
+[038:LSCR#0202]Det är det enda jag någonsin hört som varit fånigare än `Plira`.
 [038:LSCR#0202]Okej, Plira.
 [038:LSCR#0202]Du sa just att du hette Majsnusk Drivved, eller nåt sånt.
 [038:LSCR#0202]KAJBRUSK DREVSKOG.
@@ -2343,7 +2345,7 @@
 [038:LSCR#0202]Hon gillar inte oväntade gäster^\255\003Speciellt inte nu.
 [038:LSCR#0202]Säg mig, vem är du förresten?
 [038:LSCR#0202]DREVSKOG.
-[038:LSCR#0202]Vad tusan är det för fel på "Kajbrusk Drevskog"?
+[038:LSCR#0202]Vad tusan är det för fel på `Kajbrusk Drevskog`?
 [038:LSCR#0202]Varför är Guvernören orolig över oväntade besökare?
 [038:LSCR#0202]Hur kom det sig att du blev utsedd till utkiksman när du \254\008  uppenbarligen är blind som en fladdermus?
 [038:LSCR#0202]Jag är här borta.
@@ -2354,7 +2356,7 @@
 [038:LSCR#0202]Just, ja.
 [038:LSCR#0202]Var det inte det jag sa?
 [038:LSCR#0202]Inget, om du vill bli skoförsäljare.\255\003Om du vill bli pirat, pojk, så lyd mitt råd:\255\003Byt ditt namn.
-[038:LSCR#0202]Kanske något i stil med "Hemskskägg" eller "Sexfingrade Petter".
+[038:LSCR#0202]Kanske något i stil med `Hemskskägg` eller `Sexfingrade Petter`.
 [038:LSCR#0202] 
 [038:LSCR#0202]Lycka till.
 [038:LSCR#0203]Hejsan!\255\003Mitt namn är Kajbrusk Drevskog,\255\001och jag vill bli pirat!
@@ -2753,7 +2755,7 @@
 [045:LSCR#0200]Det där hörde jag!
 [045:LSCR#0200]Va?
 [045:LSCR#0200]Jag har tröttnat på dig.
-[045:LSCR#0200]Du kommer aldrig hota hederliga, handfasta pirater igen, din svällande säck av^\255\003^Av^\255\003^Av något som börjar på "s"!
+[045:LSCR#0200]Du kommer aldrig hota hederliga, handfasta pirater igen, din svällande säck av^\255\003^Av^\255\003^Av något som börjar på `s`!
 [045:LSCR#0200]Öh^\255\003Sakta i backarna, kompis^\255\003Jag bara skojade, du vet?\255\003Vi kan klara upp det här som gentlemän^
 [045:LSCR#0200]Åh, nej!\255\003Den har FASTNAT!\255\003Måste vara fickludd.
 [045:LSCR#0200] 
@@ -3123,7 +3125,7 @@
 [058:OBNA#0679]stubbe
 [058:VERB#0682]Det ser ut som en vanlig gammal stubbe med samma röda blommor som växer överallt i skogen.
 [058:OBNA#0682]blommor och stubbe
-[058:VERB#0681]"FARA: Öppen ravin."
+[058:VERB#0681]`FARA: Öppen ravin.`
 [058:OBNA#0681]skylt
 [058:VERB#0685]Jag tänker inte gå in i den här labyrintartade skogen utan en karta eller en guide eller något.
 [058:OBNA#0685]stig
@@ -3140,7 +3142,7 @@
 [059:VERB#0697]Jag borde kanske köpa den här^
 [059:VERB#0697]Det där kallar jag ett fint transportmedel.
 [059:OBNA#0697]båt
-[059:VERB#0731]"Jag har sålt ett skepp! Kan ni fatta det?\255\003Jag sticker iväg på en lång semester och sätter sprätt på en stackars idiots pengar! Arrivederci, baby!"\255\003"-Sture"
+[059:VERB#0731]`Jag har sålt ett skepp! Kan ni fatta det?\255\003Jag sticker iväg på en lång semester och sätter sprätt på en stackars idiots pengar! Arrivederci, baby!`\255\003-Sture
 [059:VERB#0731]"VÄLKOMMEN TILL STURES BEGAGNADE TRANSPORTMEDEL!"\255\003"Jag håller just nu på att resa världen runt i jakt på de finaste begagnade marina transportmedlen."\255\003"Kika runt lite, så är jag strax tillbaka!"\255\003"-Sture"
 [059:VERB#0731] 
 [059:VERB#0731]Bäst jag låter bli.
@@ -3156,7 +3158,7 @@
 [059:VERB#0696]Jag borde kanske köpa den här^
 [059:VERB#0696]Trist, trist, trist.
 [059:OBNA#0696]båt
-[059:VERB#0702]"STURES BEGAGNADE TRANSPORTMEDEL"\255\003"Jag håller inte truten förrän jag gett dig en bra affär!"\255\001      "-Sture"
+[059:VERB#0702]STURES BEGAGNADE TRANSPORTMEDEL\255\003`Jag håller inte truten förrän jag gett dig en bra affär!`\255\001      -Sture
 [059:OBNA#0702]visitkort
 [059:VERB#0694]Den ser inte mycket ut för världen, men den är min.
 [059:VERB#0694]Jag är förvånad att den här flyter fortfarande.
@@ -3174,7 +3176,7 @@
 [059:OBNA#0691]båt
 [059:OBNA#0735]åtta-realer
 [059:OBNA#0736]åtta-realer
-[059:VERB#0732]"När du sätter segel mot bra priser, blåser alla vindarna mot Stures!"\255\003"(VARNING: Innehåller stark magnet som kan störa ut andra navigationsinstrument.)"
+[059:VERB#0732]`När du sätter segel mot bra priser, blåser alla vindarna mot Stures!`\255\003(VARNING: Innehåller stark magnet som kan störa ut andra navigationsinstrument.)
 [059:VERB#0732] 
 [059:VERB#0732]Jag är inte säker, men jag tror den pekar mot Gruffotumultön\015.
 [059:VERB#0732]Den pekar mot Stures.
@@ -3234,7 +3236,7 @@
 [059:SCRP#0056]-Förresten, du råkar inte komma därifrån, va?\255\003Du ser liksom ut att ha en nordisk kvalitet^
 [059:SCRP#0056]Hur som helst, vi snackar riktigt prisvärt här^
 [059:SCRP#0056]Kan inte släppa blicken från henne, va?
-[059:SCRP#0056]Denna här är den berömda "Sjöapan".\255\003- Det enda skeppet som någonsin klarat sig till Apön\015^\255\003^Och som återvänt med någon överlevande ombord.
+[059:SCRP#0056]Denna här är den berömda `Sjöapan`.\255\003- Det enda skeppet som någonsin klarat sig till Apön\015^\255\003^Och som återvänt med någon överlevande ombord.
 [059:SCRP#0056]Eller, NÅGOT, borde jag säga.\255\003Du förstår, de tidigare ägarna av detta skepp var två äventyrliga pirater.\255\003De satte av, liksom många andra, att hitta den legendariska Apöns Hemlighet\015.
 [059:SCRP#0056]Och, liksom många andra, försvann de för alltid.\255\003Deras öde - ett mysterium.\255\003Nästan lika mystiskt som när detta skepp återvände till Gruffotumultön\015 utan en enda människa ombord.
 [059:SCRP#0056]Vissa påstår att den seglades tillbaka av en besättning chimpanser.
@@ -3508,7 +3510,7 @@
 [064:VERB#0747]"Kom ihåg det finns fler pirater på ön,\255\003SÅ TA INTE ALL SKATT."\255\003"Lämna kvar lite till nästa besökare."
 [064:VERB#0747] 
 [064:OBNA#0747]plakat
-[064:VERB#0752]"Jag hittade Skatten på Gruffotumultön\015 och allt jag fick var den här dumma t-shirten!"
+[064:VERB#0752]`Jag hittade Skatten på Gruffotumultön\015 och allt jag fick var den här dumma t-shirten!`
 [064:VERB#0752]Den passar inte.\255\003Så klart.
 [064:OBNA#0752]t-shirt
 [064:VERB#0748]"Här finner du skatter av otänkbara rikedomar^"\255\003"Du får helt enkelt gräva upp den för att tro det."\255\003"(Finansierat av Gruffotumultöns\015 Handelskammare.)"
@@ -3814,7 +3816,7 @@
 [077:VERB#0843]Bäst jag låter honom vara.
 [077:OBNA#0843]avsmullet spöke
 [077:OBNA#0855]grotta
-[077:VERB#0856]Det står: "VERKTYG OCH BRIGG"\255\003"HÅLL ER BORTA"
+[077:VERB#0856]Det står: `VERKTYG OCH BRIGG`\255\003`HÅLL ER BORTA`
 [077:OBNA#0856]skylt
 [077:ENCD#0077]dörr
 [077:ENCD#0077]knarrig dörr
@@ -3953,7 +3955,7 @@
 [081:SCRP#0092]Kan du berätta historien bakom den här LeChuck-snubben?
 [081:SCRP#0092]Vem är den här piraten som besvärar Guvernören?
 [081:SCRP#0092]Varför är inte pirater välkomna vid Guvernörens hus?
-[081:SCRP#0092]Säger namnet "LeChuck" dig något?
+[081:SCRP#0092]Säger namnet `LeChuck` dig något?
 [081:SCRP#0092]Ursäkta mig, jag letar efter pilkastningstavlan.
 [081:SCRP#0092]Var kan jag få tag på en drink?
 [081:SCRP#0092]Vad har hänt med ditt öga?
@@ -4008,11 +4010,11 @@
 [082:SCRP#0093]Bli först att äga det!\255\003Gå ut och köp Loom\015 idag!
 [082:SCRP#0093]Förlåt, jag kan verkligen gå igång på vissa ämnen.
 [082:SCRP#0093]Aye.
-[083:VERB#0901]Den heter "Stå på egna ben i Skattjakt."
+[083:VERB#0901]Den heter `Stå på egna ben i Skattjakt.`
 [083:OBNA#0901]pamflett
-[083:VERB#0902]Den heter "Att kasta sig huvudstupa in i Navigering."
+[083:VERB#0902]Den heter `Att kasta sig huvudstupa in i Navigering.`
 [083:OBNA#0902]flygblad
-[083:VERB#0903]Den heter "Armbåga dig genom en Armada."
+[083:VERB#0903]Den heter `Armbåga dig genom en Armada.`
 [083:OBNA#0903]broschyr
 [083:OBNA#0904]hamn
 [083:OBNA#0905]hamn
@@ -4204,7 +4206,7 @@
 [088:SCRP#0074]Okej, du vinner.
 [088:SCRP#0074]Wow! Du är tillräckligt bra att möta Svärdmästaren.
 [088:SCRP#0074]Jag ger upp! Du vinner!
-[088:SCRP#0079]Jag sa: "\255\007\032\000"
+[088:SCRP#0079]Jag sa: `\255\007\032\000`
 [088:SCRP#0079]Spelare svarar: \255\007\033\000
 [088:SCRP#0080]Spelare förolämpar med \255\004\240\000
 [088:SCRP#0080]Spelare förolämpar: \255\007\032\000

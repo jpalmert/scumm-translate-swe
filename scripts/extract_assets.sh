@@ -135,7 +135,7 @@ echo ""
 echo "=== Extracting strings ==="
 STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
-"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -cwh -A aov -o -f "$STR_OUT/english.txt"
+"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -rh -A aov -o -f "$STR_OUT/english.txt"
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
 
 echo ""
