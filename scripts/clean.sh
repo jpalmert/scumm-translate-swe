@@ -8,6 +8,10 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
+echo "==> Removing generated charset .bin files..."
+rm -f "$REPO_ROOT/internal/charset/gen/"char_*_patched.bin
+rmdir --ignore-fail-on-non-empty "$REPO_ROOT/internal/charset/gen" 2>/dev/null || true
+
 echo "==> Removing dist/ binaries..."
 rm -f "$REPO_ROOT/dist/mi1-translate-linux"
 rm -f "$REPO_ROOT/dist/mi1-translate-darwin"

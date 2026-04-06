@@ -3,7 +3,7 @@ game/
 
 # Generated charset assets (produced by scripts/build_char_assets.sh)
 # Source of truth is internal/charset/bitmaps/*.bmp + assets/charset/english/CHAR_*
-internal/charset/assets/char_*_patched.bin
+internal/charset/gen/
 
 # English charset BMPs (extracted for local reference; not needed to build)
 assets/charset/english_bitmaps/

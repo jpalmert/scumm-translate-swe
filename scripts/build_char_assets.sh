@@ -52,7 +52,8 @@ fi
 
 ENGLISH="$REPO_ROOT/assets/charset/english"
 BITMAPS="$REPO_ROOT/internal/charset/bitmaps"
-ASSETS="$REPO_ROOT/internal/charset/assets"
+ASSETS="$REPO_ROOT/internal/charset/gen"
+mkdir -p "$ASSETS"
 TMPDIR_WORK="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR_WORK"' EXIT
 
