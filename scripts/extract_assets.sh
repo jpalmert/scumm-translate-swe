@@ -8,11 +8,11 @@
 # Both upper and lowercase filenames are accepted.
 #
 # Reads:   game dir containing MONKEY1.000/001 or MONKEY.000/001
-# Writes:  assets/charset/english/CHAR_NNNN       — raw CHAR font blocks
-#          assets/charset/english_bitmaps/*.bmp   — visual reference for editing Swedish glyphs
-#          assets/strings/english.txt             — dialog strings for translation
+# Writes:  game/monkey1/gen/charset/english/CHAR_NNNN  — raw CHAR font blocks
+#          game/monkey1/gen/charset/english_bitmaps/*.bmp — visual reference for editing Swedish glyphs
+#          game/monkey1/gen/strings/english.txt          — dialog strings for translation
 #
-# All outputs are gitignored and regenerated on demand.
+# All outputs live under game/ which is gitignored.
 #
 # Usage (from repo root):
 #   bash scripts/extract_assets.sh [game_dir]
@@ -85,6 +85,8 @@ fi
 
 echo "Detected game variant: $GAME_ID"
 
+GEN_ROOT="$REPO_ROOT/game/monkey1/gen"
+
 # --- Dump CHAR blocks ---
 echo ""
 echo "=== Dumping CHAR blocks ==="
@@ -101,7 +103,7 @@ fi
 # --- Save raw CHAR blocks (used as templates by build_patcher.sh) ---
 echo ""
 echo "=== Saving CHAR blocks ==="
-CHAR_OUT="$REPO_ROOT/assets/charset/english"
+CHAR_OUT="$GEN_ROOT/charset/english"
 mkdir -p "$CHAR_OUT"
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     src="$CHAR_DIR/$n"
@@ -116,7 +118,7 @@ done
 # --- Export BMPs (visual reference for editing Swedish glyph bitmaps) ---
 echo ""
 echo "=== Exporting BMPs ==="
-BMP_OUT="$REPO_ROOT/assets/charset/english_bitmaps"
+BMP_OUT="$GEN_ROOT/charset/english_bitmaps"
 mkdir -p "$BMP_OUT"
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     src="$CHAR_DIR/$n"
@@ -131,7 +133,7 @@ done
 # --- Extract dialog strings ---
 echo ""
 echo "=== Extracting strings ==="
-STR_OUT="$REPO_ROOT/assets/strings"
+STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
 "$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -cwh -A aov -o -f "$STR_OUT/english.txt"
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"

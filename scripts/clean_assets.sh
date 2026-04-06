@@ -5,11 +5,9 @@
 # regenerate everything.
 #
 # Removes:
-#   assets/charset/english/        — raw CHAR font blocks
-#   assets/charset/english_bitmaps/ — English reference BMPs
-#   assets/strings/                — extracted dialog strings
-#   game/monkey1/MONKEY1.000       — classic files unpacked from PAK (if present)
-#   game/monkey1/MONKEY1.001
+#   game/monkey1/gen/              — all extracted assets (CHAR blocks, BMPs, strings)
+#   game/monkey1/MONKEY1.000/001   — only if Monkey1.pak is present (i.e. they were
+#                                    unpacked from the PAK rather than provided directly)
 #
 # Does NOT remove:
 #   internal/charset/bitmaps/      — Swedish glyph BMPs (hand-edited source files)
@@ -19,16 +17,17 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-echo "==> Removing extracted charset assets..."
-rm -rf "$REPO_ROOT/assets/charset/english"
-rm -rf "$REPO_ROOT/assets/charset/english_bitmaps"
+echo "==> Removing extracted assets..."
+rm -rf "$REPO_ROOT/game/monkey1/gen"
 
-echo "==> Removing extracted strings..."
-rm -rf "$REPO_ROOT/assets/strings"
+# Only remove the unpacked classic files if they were extracted from a PAK.
+# If no PAK is present the user placed these files directly — leave them alone.
+if [[ -f "$REPO_ROOT/game/monkey1/Monkey1.pak" ]]; then
+    echo "==> Removing classic files unpacked from PAK..."
+    rm -f "$REPO_ROOT/game/monkey1/MONKEY1.000"
+    rm -f "$REPO_ROOT/game/monkey1/MONKEY1.001"
+fi
 
-echo "==> Removing unpacked classic game files..."
-rm -f "$REPO_ROOT/game/monkey1/MONKEY1.000"
-rm -f "$REPO_ROOT/game/monkey1/MONKEY1.001"
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/game/monkey1" 2>/dev/null || true
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/game" 2>/dev/null || true
 

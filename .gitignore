@@ -2,13 +2,11 @@
 game/
 
 # Generated charset assets (produced by scripts/build_patcher.sh)
-# Source of truth: internal/charset/bitmaps/*.bmp (Swedish BMPs) + assets/charset/english/ (English CHAR blocks)
+# Source of truth: internal/charset/bitmaps/*.bmp (Swedish BMPs) + game/monkey1/gen/ (extracted from game)
 internal/charset/gen/
 
-# Assets extracted from game files — gitignored; regenerate with scripts/extract.sh
-assets/charset/english/
-assets/charset/english_bitmaps/
-assets/strings/
+# game/ is already gitignored above; game/monkey1/gen/ holds all assets extracted
+# from the game (CHAR blocks, BMPs, strings) — regenerate with scripts/extract.sh
 
 # Python
 __pycache__/

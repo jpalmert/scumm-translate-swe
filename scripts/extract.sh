@@ -4,10 +4,10 @@
 # Detects whether you have an SE PAK archive or raw classic game files and
 # calls the appropriate sub-scripts. Run this once after adding your game files.
 #
-# Outputs (all gitignored):
-#   assets/charset/english/       — raw CHAR font blocks (used by build_patcher.sh)
-#   assets/charset/english_bitmaps/ — BMP visual reference for editing Swedish glyphs
-#   assets/strings/english.txt    — English dialog strings for translation
+# Outputs (all under game/monkey1/gen/, which is gitignored):
+#   game/monkey1/gen/charset/english/        — raw CHAR font blocks (used by build_patcher.sh)
+#   game/monkey1/gen/charset/english_bitmaps/ — BMP visual reference for editing Swedish glyphs
+#   game/monkey1/gen/strings/english.txt     — English dialog strings for translation
 #
 # Usage (from repo root):
 #   bash scripts/extract.sh                          # PAK at default location

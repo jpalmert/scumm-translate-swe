@@ -8,7 +8,7 @@
 #   1. Verify tool binaries are present (scummtr, scummfont).
 #      These are committed to git. If missing, run: bash scripts/install_deps.sh
 #   2. Generate Swedish CHAR block assets (internal/charset/gen/):
-#        - Use cached English CHAR blocks from assets/charset/english/
+#        - Use cached English CHAR blocks from game/monkey1/gen/charset/english/
 #          (populate with: bash scripts/extract_char_bitmaps.sh)
 #        - Import Swedish glyph BMPs with scummfont
 #   3. Copy Swedish translation file to dist/
@@ -23,7 +23,7 @@
 # Requirements:
 #   - Go 1.21+  (go build)
 #   - Tool binaries in git (scummtr, scummrp, scummfont — run install_deps.sh if missing)
-#   - Extracted English CHAR blocks in assets/charset/english/
+#   - Extracted English CHAR blocks in game/monkey1/gen/charset/english/
 #     (run: bash scripts/extract.sh [Monkey1.pak | game_dir])
 #
 # Usage of the built patcher (for users):
@@ -76,7 +76,7 @@ echo "=== Step 2: Generate Swedish CHAR block assets ==="
 
 # Use committed English CHAR blocks as templates for scummfont import.
 # Populate by running: bash scripts/extract_char_bitmaps.sh
-CHAR_CACHE="$REPO_ROOT/assets/charset/english"
+CHAR_CACHE="$REPO_ROOT/game/monkey1/gen/charset/english"
 missing_cache=()
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     [[ -f "$CHAR_CACHE/$n" ]] || missing_cache+=("$n")
