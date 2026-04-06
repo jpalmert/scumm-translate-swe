@@ -100,16 +100,8 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return err
 	}
 
-	// --- Step 4: Apply all classic patches (with SE-specific text preprocessing) ---
-	//
-	// The SE text renderer does not understand the same control codes as the classic
-	// ScummVM engine. Strip them from the translation before injection so they don't
-	// render as visible characters or small boxes in SE mode.
-	seTranslationPath, err := writeStrippedTranslation(translationPath, tmpDir)
-	if err != nil {
-		return fmt.Errorf("preprocessing translation for SE: %w", err)
-	}
-	if err := patchClassicFiles(tmpDir, seTranslationPath); err != nil {
+	// --- Step 4: Apply all classic patches ---
+	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
 		return err
 	}
 
@@ -145,74 +137,6 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	fmt.Printf("    Written: %s\n", outputPAK)
 
 	return nil
-}
-
-// writeStrippedTranslation writes a copy of translationPath to dir with SE
-// control codes removed, and returns the path to the new file.
-//
-// The SE text renderer does not handle the same control bytes as the classic
-// ScummVM engine. Codes that must be stripped before injection for SE mode:
-//   - '^': the within-speech newline byte (0x5E); the SE engine renders it as
-//     the '^' glyph instead of a line break. The SE engine auto-wraps text.
-//   - '\NNN' escapes where 1 ≤ NNN ≤ 31 (control codes below 0x20) that are
-//     NOT the argument of a \255 prefix. Examples: \015 (0x0F, formatting
-//     marker after island names), \016 \017 \021 (position/cursor codes in
-//     verb strings). \255\NNN pairs are kept intact — the SE engine handles
-//     the 0xFF-prefixed extended codes (new paragraph, etc.).
-func writeStrippedTranslation(translationPath, dir string) (string, error) {
-	data, err := os.ReadFile(translationPath)
-	if err != nil {
-		return "", err
-	}
-	stripped := stripSEControlCodes(data)
-	out := filepath.Join(dir, "monkey1_se.txt")
-	if err := os.WriteFile(out, stripped, 0644); err != nil {
-		return "", err
-	}
-	return out, nil
-}
-
-// stripSEControlCodes removes control codes from scummtr-format translation text
-// that the SE text renderer cannot handle. See writeStrippedTranslation for details.
-func stripSEControlCodes(data []byte) []byte {
-	result := make([]byte, 0, len(data))
-	keepNext := false // true immediately after \255, to preserve its argument
-	i := 0
-	for i < len(data) {
-		// Strip '^' (within-speech newline; SE renders it as a visible '^').
-		if data[i] == '^' {
-			i++
-			keepNext = false
-			continue
-		}
-
-		// Check for a \NNN decimal escape.
-		if data[i] == '\\' && i+1 < len(data) && data[i+1] >= '0' && data[i+1] <= '9' {
-			j := i + 1
-			for j < len(data) && data[j] >= '0' && data[j] <= '9' {
-				j++
-			}
-			n := 0
-			for _, b := range data[i+1 : j] {
-				n = n*10 + int(b-'0')
-			}
-
-			keep := keepNext || n > 31
-			if keep {
-				result = append(result, data[i:j]...)
-			}
-			// After \255 (n==255) we must keep the next escape regardless of value.
-			// After anything else, reset.
-			keepNext = keep && (n == 255)
-			i = j
-			continue
-		}
-
-		keepNext = false
-		result = append(result, data[i])
-		i++
-	}
-	return result
 }
 
 // remapFontEntries patches the glyph lookup table in every .font entry.
