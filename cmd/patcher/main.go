@@ -35,8 +35,8 @@
 //
 //	internal/backup  — Create .bak safety copies of files before they are overwritten.
 //
-// Build pipeline (scripts/build_patcher.sh):
-//  1. Download scummtr binaries (internal/classic/assets/)         — install_deps.sh / build_patcher.sh
+// Build pipeline (scripts/build.sh):
+//  1. Download scummtr binaries (internal/classic/assets/)         — install_deps.sh / build.sh
 //  2. Generate patched CHAR .bin files (internal/charset/assets/)  — build_char_assets.sh
 //  3. Cross-compile for Linux, macOS, Windows (dist/)
 //

@@ -90,7 +90,7 @@ tools/                      Python tools for SE translation work (developer use)
 
 scripts/
   install_deps.sh           Recovery only — re-downloads scummtr if bundled binaries don't work
-  build_patcher.sh          Build distributable binaries for all platforms
+  build.sh          Build distributable binaries for all platforms
   clean.sh                  Remove generated dist/ binaries and scummtr assets
   se/
     extract_classic_strings.sh   Extract English dialog from SE PAK (developer use)
@@ -187,7 +187,7 @@ It is gitignored and must be regenerated from your own copy of the game.
 
 ```bash
 # Requires: Go 1.21+, curl, unzip
-bash scripts/build_patcher.sh
+bash scripts/build.sh
 
 # Output:
 #   dist/mi1-translate-linux

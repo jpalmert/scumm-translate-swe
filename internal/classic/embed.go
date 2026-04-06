@@ -3,7 +3,7 @@ package classic
 import _ "embed"
 
 // scummtr binaries for each platform, embedded at compile time.
-// These are populated into assets/ by scripts/build_patcher.sh before building.
+// These are populated into assets/ by scripts/build.sh before building.
 // The translation file is NOT embedded — it ships as a loose file next to the
 // patcher binary so users can edit it before applying.
 

@@ -51,7 +51,7 @@ the Swedish translation file at compile time using `go:embed`. The resulting bin
 - Runs on Linux, macOS, and Windows
 - Handles both GOG (KAPL magic) and Steam (LPAK magic) PAK files
 
-Build with `bash scripts/build_patcher.sh` — produces:
+Build with `bash scripts/build.sh` — produces:
 - `dist/mi1-translate-linux`, `dist/mi1-translate-darwin`, `dist/mi1-translate-windows.exe`
 - `dist/monkey1.txt`
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# build_patcher.sh — Build the MI1 Swedish translation patcher
+# build.sh — Build the MI1 Swedish translation patcher
 #
 # Run from the repo root:
-#   bash scripts/build_patcher.sh
+#   bash scripts/build.sh
 #
 # Steps:
 #   1. Verify tool binaries are present (scummtr, scummfont).

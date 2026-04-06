@@ -100,7 +100,7 @@ if [[ -z "$CHAR_DIR" ]]; then
     exit 1
 fi
 
-# --- Save raw CHAR blocks (used as templates by build_patcher.sh) ---
+# --- Save raw CHAR blocks (used as templates by build.sh) ---
 echo ""
 echo "=== Saving CHAR blocks ==="
 CHAR_OUT="$GEN_ROOT/charset/english"
