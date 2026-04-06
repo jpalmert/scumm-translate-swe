@@ -383,3 +383,60 @@ func TestIsSEInputNonExistentPAK(t *testing.T) {
 		t.Error("expected true for non-existent .pak path")
 	}
 }
+
+// --- SE control code stripping ---
+
+// SE-STRIP-001: '^' is removed.
+func TestStripSEControlCodes_Caret(t *testing.T) {
+	got := string(stripSEControlCodes([]byte("Ja^ Jo, herrn^ Du förstår")))
+	want := "Ja Jo, herrn Du förstår"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// SE-STRIP-002: \015 (0x0F) is removed.
+func TestStripSEControlCodes_015(t *testing.T) {
+	got := string(stripSEControlCodes([]byte(`Gruffotumultön\015`)))
+	want := "Gruffotumultön"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// SE-STRIP-003: \255\003 (new-paragraph) pair is kept intact.
+func TestStripSEControlCodes_KeepNewParagraph(t *testing.T) {
+	got := string(stripSEControlCodes([]byte(`Hmm.\255\003Visst.`)))
+	want := `Hmm.\255\003Visst.`
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// SE-STRIP-004: Verb string with position codes and trailing codes stripped.
+func TestStripSEControlCodes_VerbCodes(t *testing.T) {
+	got := string(stripSEControlCodes([]byte(`\021\021\021\021Titta \016\017`)))
+	want := "Titta "
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// SE-STRIP-005: Combined — \255\003 kept, \015 stripped, '^' stripped.
+func TestStripSEControlCodes_Combined(t *testing.T) {
+	in := `Ja^ Jo.\255\003Gruffotumultön\015`
+	got := string(stripSEControlCodes([]byte(in)))
+	want := `Ja Jo.\255\003Gruffotumultön`
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// SE-STRIP-006: \255\001 (wait) pair is kept intact.
+func TestStripSEControlCodes_KeepWait(t *testing.T) {
+	got := string(stripSEControlCodes([]byte(`Text\255\001More`)))
+	want := `Text\255\001More`
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
