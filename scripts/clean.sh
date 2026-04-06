@@ -21,7 +21,7 @@ rm -f "$REPO_ROOT/dist/monkey1.txt"
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/dist" 2>/dev/null || true
 
 echo "==> Removing extracted text files..."
-rm -f "$REPO_ROOT/game/monkey1/text/se_english.txt"
-rmdir --ignore-fail-on-non-empty "$REPO_ROOT/game/monkey1/text" 2>/dev/null || true
+rm -f "$REPO_ROOT/assets/classic/english_strings.txt"
+rmdir --ignore-fail-on-non-empty "$REPO_ROOT/assets/classic" 2>/dev/null || true
 
 echo "Done. Run 'bash scripts/build_patcher.sh' to regenerate everything."

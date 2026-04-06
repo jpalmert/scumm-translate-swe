@@ -74,8 +74,8 @@ echo "  All tool binaries present."
 echo ""
 echo "=== Step 2: Generate Swedish CHAR block assets ==="
 
-# Use cached English CHAR blocks as templates for scummfont import.
-# Populate this cache by running: bash scripts/extract_char_bitmaps.sh
+# Use committed English CHAR blocks as templates for scummfont import.
+# Populate by running: bash scripts/extract_char_bitmaps.sh
 CHAR_CACHE="$REPO_ROOT/assets/charset/english"
 missing_cache=()
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do

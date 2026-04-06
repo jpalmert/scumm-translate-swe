@@ -11,7 +11,7 @@
 #
 # Reads:   game/monkey1/Monkey1.pak  (or pass a custom PAK/game-dir as $1)
 # Writes:  assets/charset/english_bitmaps/CHAR_NNNN.bmp  — commit these to git
-#          assets/charset/english/CHAR_NNNN              — gitignored; used by build_patcher.sh
+#          assets/charset/english/CHAR_NNNN              — commit these to git; used by build_patcher.sh
 #
 # Usage (from repo root):
 #   bash scripts/extract_char_bitmaps.sh

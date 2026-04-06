@@ -1,12 +1,12 @@
 # Game files — never commit copyrighted content
 game/
 
-# Generated charset assets (produced by scripts/build_char_assets.sh)
-# Source of truth is internal/charset/bitmaps/*.bmp + assets/charset/english/CHAR_*
+# Generated charset assets (produced by scripts/build_patcher.sh)
+# Source of truth: internal/charset/bitmaps/*.bmp (Swedish BMPs) + assets/charset/english/ (English CHAR blocks)
 internal/charset/gen/
 
-# English charset CHAR block templates (extracted from game; not committed)
-assets/charset/english/
+# Assets extracted from game files — gitignored; regenerate with the extract scripts
+assets/classic/
 
 # Python
 __pycache__/
