@@ -296,6 +296,117 @@ func mustReadFile(t *testing.T, path string) []byte {
 	return data
 }
 
+// INT-ROUNDTRIP: InjectTranslation round-trip with English text is idempotent.
+//
+// This test verifies that our injection pipeline produces correct, non-corrupted
+// output by using a language-neutral input: we export the original English strings
+// in the exact format InjectTranslation expects (headers, Unix LF, no charset
+// conversion), inject them back, re-export in the same format, and assert the
+// text is identical to what we started with.
+//
+// The test uses InjectTranslation directly (not raw scummtr) to catch any bugs
+// introduced by our flag choices, encodeForScummtr pre-processing, or temp-file
+// handling. Since the English text has no Swedish characters, encodeForScummtr
+// is a no-op and any corruption would be directly attributable to our pipeline.
+//
+// scummtr may normalise the internal string-table structure on first inject, so
+// we accept that the game files may not be byte-identical to the originals.
+// We verify idempotence: a second inject produces identical re-exported text.
+func TestInjectTranslationRoundTrip(t *testing.T) {
+	pakPath, scummtrPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var orig000, orig001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			orig000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			orig001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if orig000 == nil || orig001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	scummtrData, _ := os.ReadFile(scummtrPath)
+	scummtrExec := filepath.Join(t.TempDir(), "scummtr")
+	os.WriteFile(scummtrExec, scummtrData, 0755)
+
+	exportStrings := func(t *testing.T, gameDir, outFile string) {
+		t.Helper()
+		// Export with -h (headers) but no -c or -w: produces Unix LF, ASCII+\NNN
+		// escapes, with [room:TYPE#resnum] prefixes — exactly the format that
+		// InjectTranslation expects on import (-ih).
+		cmd := exec.Command(scummtrExec,
+			"-g", "monkeycdalt", "-p", gameDir, "-h", "-A", "aov", "-o", "-f", outFile,
+		)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		if err := cmd.Run(); err != nil {
+			t.Fatalf("scummtr export: %v", err)
+		}
+	}
+
+	// Step 1: Export original English strings in InjectTranslation-compatible format.
+	workDir := t.TempDir()
+	os.WriteFile(filepath.Join(workDir, "MONKEY1.000"), orig000, 0644)
+	os.WriteFile(filepath.Join(workDir, "MONKEY1.001"), orig001, 0644)
+
+	baseline := filepath.Join(t.TempDir(), "baseline.txt")
+	exportStrings(t, workDir, baseline)
+
+	baselineData, err := os.ReadFile(baseline)
+	if err != nil || len(baselineData) == 0 {
+		t.Fatal("baseline export produced no output")
+	}
+	t.Logf("baseline: %d lines, %d bytes", bytes.Count(baselineData, []byte("\n")), len(baselineData))
+
+	// Step 2: Inject the baseline strings back using our production pipeline.
+	if err := classic.InjectTranslation(workDir, baseline); err != nil {
+		t.Fatalf("InjectTranslation (first): %v", err)
+	}
+
+	// Step 3: Re-export and compare to baseline.
+	roundtrip1 := filepath.Join(t.TempDir(), "roundtrip1.txt")
+	exportStrings(t, workDir, roundtrip1)
+
+	rt1Data, _ := os.ReadFile(roundtrip1)
+	if !bytes.Equal(baselineData, rt1Data) {
+		// Show the first differing line to aid diagnosis.
+		baseLines := bytes.Split(baselineData, []byte("\n"))
+		rt1Lines := bytes.Split(rt1Data, []byte("\n"))
+		for i := 0; i < len(baseLines) && i < len(rt1Lines); i++ {
+			if !bytes.Equal(baseLines[i], rt1Lines[i]) {
+				t.Errorf("first diff at line %d:\n  baseline:  %q\n  roundtrip: %q",
+					i+1, baseLines[i], rt1Lines[i])
+				break
+			}
+		}
+		if len(baseLines) != len(rt1Lines) {
+			t.Errorf("line count: baseline=%d, roundtrip=%d", len(baseLines), len(rt1Lines))
+		}
+		t.Fatalf("roundtrip text differs from baseline")
+	}
+	t.Logf("roundtrip 1: text identical to baseline ✓")
+
+	// Step 4: Second inject+export — must still match (idempotent).
+	if err := classic.InjectTranslation(workDir, roundtrip1); err != nil {
+		t.Fatalf("InjectTranslation (second): %v", err)
+	}
+	roundtrip2 := filepath.Join(t.TempDir(), "roundtrip2.txt")
+	exportStrings(t, workDir, roundtrip2)
+
+	rt2Data, _ := os.ReadFile(roundtrip2)
+	if !bytes.Equal(rt1Data, rt2Data) {
+		t.Fatalf("inject not idempotent: roundtrip2 differs from roundtrip1")
+	}
+	t.Logf("roundtrip 2: idempotent ✓")
+}
+
 // INT-CLASSIC: InjectTranslation with a real translation file produces a larger .001.
 func TestInjectTranslationWithRealFile(t *testing.T) {
 	pakPath, _ := integrationPaths(t)
