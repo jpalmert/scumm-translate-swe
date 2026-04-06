@@ -5,8 +5,8 @@
 #   bash scripts/build_patcher.sh [Monkey1.pak | game_dir]
 #
 # Steps:
-#   1. Prepare scummtr binaries (downloaded once into internal/classic/assets/;
-#      committed to git so subsequent builds skip this step)
+#   1. Verify tool binaries are present (scummtr, scummrp, scummfont).
+#      These are committed to git. If missing, run: bash scripts/install_deps.sh
 #   2. Generate Swedish CHAR block assets (internal/charset/gen/):
 #        - Extract MONKEY1.001 from Monkey1.pak (or use provided game dir)
 #        - Dump CHAR blocks with scummrp
@@ -22,7 +22,7 @@
 #
 # Requirements:
 #   - Go 1.21+  (go build)
-#   - curl, unzip  (for scummtr download if not already cached)
+#   - Tool binaries in git (scummtr, scummrp, scummfont — run install_deps.sh if missing)
 #   - Monkey1.pak or MONKEY1.000/001 (for charset asset generation)
 #     Default location: game/monkey1/Monkey1.pak
 #
@@ -38,9 +38,6 @@ DIST_DIR="$REPO_ROOT/dist"
 TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/monkey1.txt"
 GAME_INPUT="${1:-$REPO_ROOT/game/monkey1/Monkey1.pak}"
 
-SCUMMTR_VERSION="0.5.1"
-SCUMMTR_BASE_URL="https://github.com/dwatteau/scummtr/releases/download/v${SCUMMTR_VERSION}"
-
 SCUMMRP="$REPO_ROOT/bin/linux/scummrp"
 SCUMMFONT="$REPO_ROOT/bin/linux/scummfont"
 if [[ "$(uname)" == "Darwin" ]]; then
@@ -50,61 +47,31 @@ fi
 
 mkdir -p "$ASSETS_DIR" "$DIST_DIR"
 
-if ! command -v unzip &>/dev/null; then
-    echo "ERROR: unzip not found. Install with: sudo apt-get install unzip"
-    exit 1
-fi
-
 TMPDIR_BUILD="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR_BUILD"' EXIT
 
 # ---------------------------------------------------------------------------
-echo "=== Step 1: Prepare scummtr binaries ==="
+echo "=== Step 1: Verify tool binaries ==="
 
-if [ -f "$ASSETS_DIR/scummtr-linux-x64" ]; then
-    echo "  Linux binary already present"
-else
-    echo "  Downloading scummtr v${SCUMMTR_VERSION} for Linux..."
-    curl -sL "${SCUMMTR_BASE_URL}/scummtr-${SCUMMTR_VERSION}-linux86.tar.gz" \
-        | tar xz -C "$TMPDIR_BUILD"
-    cp "$TMPDIR_BUILD/scummtr-${SCUMMTR_VERSION}-linux86/linux-x64/scummtr" \
-        "$ASSETS_DIR/scummtr-linux-x64"
-    chmod +x "$ASSETS_DIR/scummtr-linux-x64"
-    echo "  Installed: $ASSETS_DIR/scummtr-linux-x64"
+missing=()
+for f in \
+    "$ASSETS_DIR/scummtr-linux-x64" \
+    "$ASSETS_DIR/scummtr-darwin-x64" \
+    "$ASSETS_DIR/scummtr-windows-x64.exe" \
+    "$SCUMMRP" "$SCUMMFONT"
+do
+    [[ -f "$f" ]] || missing+=("$f")
+done
+
+if [[ ${#missing[@]} -gt 0 ]]; then
+    echo "ERROR: Missing tool binaries:" >&2
+    for f in "${missing[@]}"; do echo "  $f" >&2; done
+    echo "" >&2
+    echo "Run: bash scripts/install_deps.sh" >&2
+    exit 1
 fi
 
-if [ -f "$ASSETS_DIR/scummtr-darwin-x64" ]; then
-    echo "  macOS binary already present"
-else
-    echo "  Downloading scummtr v${SCUMMTR_VERSION} for macOS..."
-    curl -sL "${SCUMMTR_BASE_URL}/scummtr-${SCUMMTR_VERSION}-macos.zip" \
-        -o "$TMPDIR_BUILD/mac.zip"
-    unzip -q "$TMPDIR_BUILD/mac.zip" -d "$TMPDIR_BUILD/mac"
-    MACOS_BIN="$(find "$TMPDIR_BUILD/mac" -name "scummtr" | head -1)"
-    if [ -z "$MACOS_BIN" ]; then
-        echo "ERROR: Could not find scummtr binary in macOS zip."
-        exit 1
-    fi
-    cp "$MACOS_BIN" "$ASSETS_DIR/scummtr-darwin-x64"
-    chmod +x "$ASSETS_DIR/scummtr-darwin-x64"
-    echo "  Installed: $ASSETS_DIR/scummtr-darwin-x64"
-fi
-
-if [ -f "$ASSETS_DIR/scummtr-windows-x64.exe" ]; then
-    echo "  Windows binary already present"
-else
-    echo "  Downloading scummtr v${SCUMMTR_VERSION} for Windows..."
-    curl -sL "${SCUMMTR_BASE_URL}/scummtr-${SCUMMTR_VERSION}-win32.zip" \
-        -o "$TMPDIR_BUILD/win32.zip"
-    unzip -q "$TMPDIR_BUILD/win32.zip" -d "$TMPDIR_BUILD/win32"
-    if [ ! -f "$TMPDIR_BUILD/win32/scummtr-${SCUMMTR_VERSION}-win32/scummtr.exe" ]; then
-        echo "ERROR: Could not find scummtr.exe in Windows zip."
-        exit 1
-    fi
-    cp "$TMPDIR_BUILD/win32/scummtr-${SCUMMTR_VERSION}-win32/scummtr.exe" \
-        "$ASSETS_DIR/scummtr-windows-x64.exe"
-    echo "  Installed: $ASSETS_DIR/scummtr-windows-x64.exe"
-fi
+echo "  All tool binaries present."
 
 # ---------------------------------------------------------------------------
 echo ""
