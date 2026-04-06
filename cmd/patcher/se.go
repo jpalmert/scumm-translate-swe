@@ -9,27 +9,20 @@ import (
 	"strings"
 
 	"scumm-patcher/internal/backup"
-	"scumm-patcher/internal/charset"
-	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
 )
 
 // runSEPatch is the testable entry point for the Special Edition patching pipeline.
 //
-// The SE (Monkey1.pak) contains the classic MONKEY1.000/001 files embedded under
-// classic/en/ alongside all SE-specific assets (.font files, art, audio). Patching
-// requires modifying both the classic files and the SE font tables:
+// The SE (Monkey1.pak) embeds the classic MONKEY1.000/001 files under classic/en/.
+// Patching requires modifying both the classic files and the SE font tables:
 //
 //  1. Read the PAK and locate the embedded classic/en/monkey1.000 and .001.
-//  2. Extract them to a temp directory (uppercase, as scummtr/scummrp require).
-//  3. Inject Swedish text strings via scummtr (internal/classic).
-//  4. Patch all five CHAR blocks with Swedish glyphs via scummrp (internal/charset).
-//     This fixes classic mode (F1 toggle). CHAR blocks have no effect in SE mode.
-//  5. Patch the glyph lookup table in every .font entry in the PAK (internal/font).
-//     This fixes SE mode rendering. .font files map character codes to glyph atlas
-//     indices; without this patch Swedish codes render as Latin punctuation in SE mode.
-//  6. Repack the PAK with the modified classic files and updated .font entries.
+//  2. Extract them to a temp directory as MONKEY1.000/001 (uppercase).
+//  3. Apply all classic patches (translation, CHAR blocks, verb layout).
+//  4. Patch the glyph lookup table in every .font entry in the PAK.
+//  5. Repack the PAK with the modified classic files and updated .font entries.
 //
 // outputPAK: if empty, patches inputPAK in-place (with backup).
 // translationArg: if empty, monkey1.txt is looked up next to the executable.
@@ -100,39 +93,25 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	defer os.RemoveAll(tmpDir)
 
-	path000 := filepath.Join(tmpDir, "MONKEY1.000")
-	path001 := filepath.Join(tmpDir, "MONKEY1.001")
-	if err := os.WriteFile(path000, entry000.Data, 0644); err != nil {
+	if err := os.WriteFile(filepath.Join(tmpDir, "MONKEY1.000"), entry000.Data, 0644); err != nil {
 		return err
 	}
-	if err := os.WriteFile(path001, entry001.Data, 0644); err != nil {
+	if err := os.WriteFile(filepath.Join(tmpDir, "MONKEY1.001"), entry001.Data, 0644); err != nil {
 		return err
 	}
 
-	// --- Step 4: Inject translation ---
-	fmt.Println("\n==> Injecting Swedish translation...")
-	if err := classic.InjectTranslation(tmpDir, translationPath); err != nil {
-		return fmt.Errorf("translation injection failed: %w", err)
+	// --- Step 4: Apply all classic patches ---
+	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
+		return err
 	}
 
-	// --- Step 5: Patch CHAR blocks (Swedish glyph data) ---
-	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
-	if err := charset.Patch(tmpDir); err != nil {
-		return fmt.Errorf("charset patch: %w", err)
-	}
-
-	// --- Step 5b: Patch verb button layout ---
-	fmt.Println("\n==> Patching verb button layout...")
-	if err := charset.PatchVerbLayout(tmpDir); err != nil {
-		return fmt.Errorf("verb layout patch: %w", err)
-	}
-
-	// --- Step 6: Read patched files back ---
-	patched000, err := os.ReadFile(path000)
+	// --- Step 5: Read patched files back into PAK entries ---
+	fmt.Println("\n==> Reading patched classic files...")
+	patched000, err := os.ReadFile(filepath.Join(tmpDir, "MONKEY1.000"))
 	if err != nil {
 		return err
 	}
-	patched001, err := os.ReadFile(path001)
+	patched001, err := os.ReadFile(filepath.Join(tmpDir, "MONKEY1.001"))
 	if err != nil {
 		return err
 	}
@@ -142,7 +121,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	entry000.Data = patched000
 	entry001.Data = patched001
 
-	// --- Step 7: Patch font lookup tables ---
+	// --- Step 6: Patch font lookup tables ---
 	fmt.Println("\n==> Patching font lookup tables...")
 	fontCount, err := remapFontEntries(entries)
 	if err != nil {
@@ -150,7 +129,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
-	// --- Step 8: Repack PAK ---
+	// --- Step 7: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
