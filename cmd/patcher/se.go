@@ -15,7 +15,21 @@ import (
 	"scumm-patcher/internal/pak"
 )
 
-// runSEPatch is the testable entry point for the SE patching pipeline.
+// runSEPatch is the testable entry point for the Special Edition patching pipeline.
+//
+// The SE (Monkey1.pak) contains the classic MONKEY1.000/001 files embedded under
+// classic/en/ alongside all SE-specific assets (.font files, art, audio). Patching
+// requires modifying both the classic files and the SE font tables:
+//
+//  1. Read the PAK and locate the embedded classic/en/monkey1.000 and .001.
+//  2. Extract them to a temp directory (uppercase, as scummtr/scummrp require).
+//  3. Inject Swedish text strings via scummtr (internal/classic).
+//  4. Patch all five CHAR blocks with Swedish glyphs via scummrp (internal/charset).
+//     This fixes classic mode (F1 toggle). CHAR blocks have no effect in SE mode.
+//  5. Patch the glyph lookup table in every .font entry in the PAK (internal/font).
+//     This fixes SE mode rendering. .font files map character codes to glyph atlas
+//     indices; without this patch Swedish codes render as Latin punctuation in SE mode.
+//  6. Repack the PAK with the modified classic files and updated .font entries.
 //
 // outputPAK: if empty, patches inputPAK in-place (with backup).
 // translationArg: if empty, monkey1.txt is looked up next to the executable.

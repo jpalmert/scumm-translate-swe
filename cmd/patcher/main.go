@@ -4,14 +4,52 @@
 // Works with both the Special Edition (Monkey1.pak) and the Classic CD-ROM version
 // (MONKEY1.000 / MONKEY1.001). The version is detected automatically.
 //
-// Simple usage — place the patcher and monkey1.txt next to your game files and run:
+// # Architecture overview
 //
-//	mi1-patcher-linux
+// The patcher is a single self-contained binary. All tools and glyph data are
+// embedded at compile time via //go:embed so the user only needs the binary and
+// monkey1.txt (the translation file).
 //
-// Advanced usage:
+// Internal packages:
 //
-//	mi1-patcher <Monkey1.pak> [output.pak] [monkey1.txt]   (SE version)
-//	mi1-patcher <game_dir>    [monkey1.txt]                (Classic version)
+//	internal/pak     — Read and write the MI1SE PAK archive format.
+//	                   Used only by the SE pipeline. Handles both Steam (LPAK) and
+//	                   GOG (KAPL) magic bytes.
+//
+//	internal/classic — Inject Swedish text into MONKEY1.000/001 using scummtr.
+//	                   Embeds platform-specific scummtr binaries (Linux/macOS/Windows).
+//	                   Swedish UTF-8 characters are pre-encoded to SCUMM escape codes
+//	                   (e.g. å→\123) because scummtr's -c flag is unreliable for
+//	                   the monkeycdalt game ID.
+//
+//	internal/charset — Patch the five classic CHAR blocks with Swedish glyph bitmaps
+//	                   using scummrp. Covers all on-screen fonts (see charset.go for
+//	                   per-block details). Needed for Classic mode (F1 toggle in SE).
+//	                   Embeds platform-specific scummrp binaries.
+//
+//	internal/font    — Patch the glyph lookup table in SE .font files so that SCUMM
+//	                   internal codes (91–93, 123–125, 130) resolve to the Swedish
+//	                   glyphs already present in the .font glyph atlas. This is a
+//	                   pure lookup-table patch — no new glyph images are added.
+//	                   Needed for SE mode rendering.
+//
+//	internal/backup  — Create .bak safety copies of files before they are overwritten.
+//
+// Build pipeline (scripts/build_patcher.sh):
+//  1. Download scummtr binaries (internal/classic/assets/)         — install_deps.sh / build_patcher.sh
+//  2. Generate patched CHAR .bin files (internal/charset/assets/)  — build_char_assets.sh
+//  3. Cross-compile for Linux, macOS, Windows (dist/)
+//
+// # Simple usage
+//
+// Place the patcher and monkey1.txt next to your game files and run:
+//
+//	mi1-translate-linux
+//
+// # Advanced usage
+//
+//	mi1-translate <Monkey1.pak> [output.pak] [monkey1.txt]   (SE version)
+//	mi1-translate <game_dir>    [monkey1.txt]                (Classic version)
 //
 // After patching, start a new game. Swedish text replaces the English strings directly.
 package main

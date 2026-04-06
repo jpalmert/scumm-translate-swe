@@ -12,7 +12,18 @@ import (
 	"scumm-patcher/internal/classic"
 )
 
-// runClassicPatch is the testable entry point for the classic patching pipeline.
+// runClassicPatch is the testable entry point for the Classic CD-ROM patching pipeline.
+//
+// Classic mode operates directly on the MONKEY1.000 and MONKEY1.001 files used by
+// ScummVM. The pipeline has three stages:
+//  1. Inject Swedish text strings (internal/classic — scummtr, game ID monkeycdalt).
+//  2. Patch CHAR blocks with Swedish glyph bitmaps (internal/charset — scummrp).
+//     The five CHAR blocks cover all on-screen fonts; without this step Swedish
+//     character codes render as ASCII punctuation or nothing.
+//  3. Write the patched files back to gameDir, replacing the originals.
+//
+// The game files are copied to a temp directory with uppercase names before
+// processing because scummtr and scummrp require MONKEY1.000/001 in uppercase.
 func runClassicPatch(gameDir, translationArg string) error {
 	translationPath, err := findTranslationFile(translationArg)
 	if err != nil {

@@ -102,7 +102,15 @@ else
 fi
 
 echo ""
-echo "=== Step 2: Copy Swedish translation to dist/ ==="
+echo "=== Step 2: Generate Swedish CHAR block assets ==="
+
+# Build the patched CHAR .bin files that Go embeds into the patcher binary.
+# Source: assets/charset/english/ (English templates) +
+#         internal/charset/bitmaps/ (Swedish glyph BMPs)
+bash "$REPO_ROOT/scripts/build_char_assets.sh"
+
+echo ""
+echo "=== Step 3: Copy Swedish translation to dist/ ==="
 
 if [ ! -f "$TRANSLATION_SRC" ]; then
     echo "ERROR: Translation file not found: $TRANSLATION_SRC"
@@ -115,7 +123,7 @@ echo "  Copied: $TRANSLATION_SRC"
 echo "        → $DIST_DIR/monkey1.txt"
 
 echo ""
-echo "=== Step 3: Cross-compile patcher ==="
+echo "=== Step 4: Cross-compile patcher ==="
 
 # Verify Go is available (try common install locations)
 GO_BIN=""
