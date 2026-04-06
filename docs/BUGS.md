@@ -10,40 +10,33 @@
 The visible `^` was likely NOT a newline handling bug. More probable cause: the Ö glyph (SCUMM code 93) was rendering as `^` or similar due to a font 
 lookup issue — codes 93 (Ö) and 94 (`^`) are adjacent in the ASCII table and if the font lookup was off-by-one or writing to the wrong address, Ö 
 would render as `^`. This would be a manifestation of the SE font patching being applied to the wrong game version or having a bug in the lookup offset.  
-**Retest needed:** After confirming BUG-002 charset fix and SE font patching correctness, verify whether this bug still occurs.
-
----
-
-### BUG-002: Classic — Swedish characters display as wrong glyphs in dialog
-**Status:** FIXED — charset patch implemented  
-**Affects:** Classic SCUMM mode (ScummVM / SE F10 mode)  
-**Symptom:** Wrong characters appear in dialog (å, ö, Ä show wrong glyphs or nothing).  
-**Root cause:** CHAR_0001 (verb/menu charset) and CHAR_0003 (small text) in `MONKEY1.001` lacked Swedish glyph bitmaps at SCUMM code positions 91(Å), 92(Ä), 93(Ö), 123(å), 124(ä), 125(ö). CHAR_0002 (dialog) already had them in the GOG/Steam SE release.  
-**Fix:** `internal/charset` package embeds pre-computed patched CHAR_0001 (+28 bytes) and CHAR_0003 (+78 bytes) binaries. `PatchMonkey1001()` splices them in and updates LECF/LFLF container sizes. `PatchMonkey1000()` updates the DCHR offset table so MONKEY1.000 points to the correct shifted positions. Both patches are applied in `se.go` (Steps 5a/5b) and `classic.go`.
-
----
-
-### BUG-003: Classic — Menu "Öppna" loses leading Ö (shows "ppna")
-**Status:** ROOT CAUSE IDENTIFIED — two contributing factors  
-**Affects:** Classic SCUMM mode (ScummVM), verb/menu rendering  
-**Symptom:** "Öppna" (Swedish for "Open") shows as "ppna" in the in-game menu.  
-**Root cause:**  
-1. **`-A aov` flag** (FIXED — see BUG-R04): Our scummtr invocation previously used `-A aov` which prevents verb/object/actor string injection entirely. Without this fix, "Öppna" would never be injected at all.  
-2. **Charset not patched** (see BUG-002): Even with verb injection, the Ö glyph (code 93) cannot render until the charset is patched. The Ö is present in the string but has no bitmap → renders as nothing → "ppna".  
-**Fix:** BUG-R04 already removes `-A aov`. Full fix requires charset patching (BUG-002).
-
----
-
-### BUG-004: Classic — Swedish chars show as empty rectangles in verb selection bar
-**Status:** ROOT CAUSE IDENTIFIED — same as BUG-002/003  
-**Affects:** Classic SCUMM mode (ScummVM), verb selection / action text at top of screen  
-**Symptom:** When selecting an action, Swedish characters display as empty rectangles.  
-**Root cause:** Same as BUG-002 and BUG-003 — no charset patch means no bitmaps for codes 91-93/123-125/130, which renders as empty glyphs. Verb injection was also blocked by `-A aov` (fixed in BUG-R04).  
-**Fix:** Charset patching (BUG-002).
+**Retest needed:** After confirming SE font patching correctness, verify whether this bug still occurs.
 
 ---
 
 ## Resolved Bugs
+
+### BUG-002: Classic — Swedish characters display as wrong glyphs in dialog
+**Status:** RESOLVED  
+**Was:** CHAR_0001 (verb/menu charset) and CHAR_0003 (small text) in `MONKEY1.001` lacked Swedish glyph bitmaps at SCUMM code positions 91(Å), 92(Ä), 93(Ö), 123(å), 124(ä), 125(ö).  
+**Fix:** `internal/charset` package embeds pre-computed patched CHAR block binaries. Applied via scummrp at runtime.
+
+### BUG-003: Classic — Menu "Öppna" loses leading Ö (shows "ppna")
+**Status:** RESOLVED  
+**Was:** Two causes: (1) scummtr invoked with `-A aov` which blocks verb/object/actor string injection entirely; (2) Ö glyph (SCUMM code 93) had no bitmap in the charset → rendered as nothing.  
+**Fix:** Removed `-A aov` (BUG-R04); charset patched (BUG-002).
+
+### BUG-004: Classic — Swedish chars show as empty rectangles in verb selection bar
+**Status:** RESOLVED  
+**Was:** Same root cause as BUG-002/003 — missing charset bitmaps and blocked verb injection.  
+**Fix:** Same as BUG-002 and BUG-R04.
+
+### BUG-005: Classic — Verb menu shows English labels after scummtr injection
+**Status:** RESOLVED  
+**Was:** `PatchVerbLayout` embedded a pre-built `scrp_0022_patched.bin` (English labels, patched coordinates) and wrote it verbatim over SCRP_0022 at runtime, discarding the Swedish labels scummtr had just injected.  
+**Fix:** Removed the embedded binary. `PatchVerbLayout` now reads the current SCRP_0022 from the dump (Swedish labels intact), patches only the X/Y coordinate bytes in-memory, and reimports.
+
+---
 
 ### BUG-R01: Windows — "not a valid Win32 application" error
 **Status:** RESOLVED  
