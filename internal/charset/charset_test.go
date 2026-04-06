@@ -33,7 +33,21 @@ func TestPatchedChar0003Asset(t *testing.T) {
 	}
 }
 
-// ASSET-003: Embedded scummrp binaries are non-empty.
+// ASSET-003: Embedded CHAR_0004 asset is a valid CHAR block.
+func TestPatchedChar0004Asset(t *testing.T) {
+	if len(patchedChar0004) < 8 {
+		t.Fatalf("patchedChar0004 too short: %d bytes", len(patchedChar0004))
+	}
+	if string(patchedChar0004[0:4]) != "CHAR" {
+		t.Errorf("patchedChar0004 tag = %q, want CHAR", patchedChar0004[0:4])
+	}
+	size := int(binary.BigEndian.Uint32(patchedChar0004[4:]))
+	if size != len(patchedChar0004) {
+		t.Errorf("patchedChar0004 size field = %d, actual = %d", size, len(patchedChar0004))
+	}
+}
+
+// ASSET-005: Embedded scummrp binaries are non-empty.
 func TestScummrpBinariesEmbedded(t *testing.T) {
 	bins := map[string][]byte{
 		"linux":   scummrpLinux,
