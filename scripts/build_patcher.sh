@@ -2,14 +2,14 @@
 # build_patcher.sh — Build the MI1 Swedish translation patcher
 #
 # Run from the repo root:
-#   bash scripts/build_patcher.sh [Monkey1.pak | game_dir]
+#   bash scripts/build_patcher.sh
 #
 # Steps:
-#   1. Verify tool binaries are present (scummtr, scummrp, scummfont).
+#   1. Verify tool binaries are present (scummtr, scummfont).
 #      These are committed to git. If missing, run: bash scripts/install_deps.sh
 #   2. Generate Swedish CHAR block assets (internal/charset/gen/):
-#        - Extract MONKEY1.001 from Monkey1.pak (or use provided game dir)
-#        - Dump CHAR blocks with scummrp
+#        - Use cached English CHAR blocks from assets/charset/english/
+#          (populate with: bash scripts/extract_char_bitmaps.sh)
 #        - Import Swedish glyph BMPs with scummfont
 #   3. Copy Swedish translation file to dist/
 #   4. Cross-compile patcher for Linux, macOS, and Windows into dist/
@@ -23,8 +23,8 @@
 # Requirements:
 #   - Go 1.21+  (go build)
 #   - Tool binaries in git (scummtr, scummrp, scummfont — run install_deps.sh if missing)
-#   - Monkey1.pak or MONKEY1.000/001 (for charset asset generation)
-#     Default location: game/monkey1/Monkey1.pak
+#   - Cached English CHAR blocks in assets/charset/english/
+#     (run: bash scripts/extract_char_bitmaps.sh [Monkey1.pak | game_dir])
 #
 # Usage of the built patcher (for users):
 #   Place mi1-translate-linux and monkey1.txt next to your game files and run it.
@@ -36,12 +36,9 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ASSETS_DIR="$REPO_ROOT/internal/classic/assets"
 DIST_DIR="$REPO_ROOT/dist"
 TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/monkey1.txt"
-GAME_INPUT="${1:-$REPO_ROOT/game/monkey1/Monkey1.pak}"
 
-SCUMMRP="$REPO_ROOT/bin/linux/scummrp"
 SCUMMFONT="$REPO_ROOT/bin/linux/scummfont"
 if [[ "$(uname)" == "Darwin" ]]; then
-    SCUMMRP="$REPO_ROOT/bin/darwin/scummrp"
     SCUMMFONT="$REPO_ROOT/bin/darwin/scummfont"
 fi
 
@@ -58,7 +55,7 @@ for f in \
     "$ASSETS_DIR/scummtr-linux-x64" \
     "$ASSETS_DIR/scummtr-darwin-x64" \
     "$ASSETS_DIR/scummtr-windows-x64.exe" \
-    "$SCUMMRP" "$SCUMMFONT"
+    "$SCUMMFONT"
 do
     [[ -f "$f" ]] || missing+=("$f")
 done
@@ -77,63 +74,32 @@ echo "  All tool binaries present."
 echo ""
 echo "=== Step 2: Generate Swedish CHAR block assets ==="
 
-for bin in "$SCUMMRP" "$SCUMMFONT"; do
-    if [[ ! -x "$bin" ]]; then
-        echo "ERROR: $bin not found. Run bash scripts/install_deps.sh first." >&2
-        exit 1
-    fi
+# Use cached English CHAR blocks as templates for scummfont import.
+# Populate this cache by running: bash scripts/extract_char_bitmaps.sh
+CHAR_CACHE="$REPO_ROOT/assets/charset/english"
+missing_cache=()
+for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
+    [[ -f "$CHAR_CACHE/$n" ]] || missing_cache+=("$n")
 done
-
-# Extract MONKEY1.000/001 from PAK (or use a provided game directory).
-if [[ -f "$GAME_INPUT" && "${GAME_INPUT,,}" == *.pak ]]; then
-    echo "  Extracting classic files from $GAME_INPUT..."
-    python3 "$REPO_ROOT/tools/pak.py" extract "$GAME_INPUT" "$TMPDIR_BUILD/pak" 2>/dev/null
-    GAME_DIR="$TMPDIR_BUILD/game"
-    mkdir -p "$GAME_DIR"
-    cp "$TMPDIR_BUILD/pak/classic/en/monkey1.000" "$GAME_DIR/MONKEY1.000"
-    cp "$TMPDIR_BUILD/pak/classic/en/monkey1.001" "$GAME_DIR/MONKEY1.001"
-elif [[ -d "$GAME_INPUT" ]]; then
-    GAME_DIR="$TMPDIR_BUILD/game"
-    mkdir -p "$GAME_DIR"
-    for f in 000 001; do
-        for name in "MONKEY1.$f" "monkey1.$f"; do
-            if [[ -f "$GAME_INPUT/$name" ]]; then
-                cp "$GAME_INPUT/$name" "$GAME_DIR/MONKEY1.$f"
-                break
-            fi
-        done
-        if [[ ! -f "$GAME_DIR/MONKEY1.$f" ]]; then
-            echo "ERROR: MONKEY1.$f not found in $GAME_INPUT" >&2
-            exit 1
-        fi
-    done
-else
-    echo "ERROR: game input not found: $GAME_INPUT" >&2
-    echo "  Usage: bash scripts/build_patcher.sh [Monkey1.pak | game_dir]" >&2
-    echo "  Default location: game/monkey1/Monkey1.pak" >&2
+if [[ ${#missing_cache[@]} -gt 0 ]]; then
+    echo "ERROR: English CHAR block cache is missing files:" >&2
+    for n in "${missing_cache[@]}"; do echo "  $CHAR_CACHE/$n" >&2; done
+    echo "" >&2
+    echo "Run: bash scripts/extract_char_bitmaps.sh [Monkey1.pak | game_dir]" >&2
     exit 1
 fi
 
-# Dump CHAR blocks from MONKEY1.001 using scummrp.
-DUMP_DIR="$TMPDIR_BUILD/char_dump"
-"$SCUMMRP" -g monkeycdalt -p "$GAME_DIR" -t CHAR -od "$DUMP_DIR"
-CHAR_DIR="$DUMP_DIR/DISK_0001/LECF/LFLF_0010"
-
-# For each CHAR block: import the Swedish BMP and write the patched .bin.
+# For each CHAR block: import the Swedish BMP into a copy of the English block.
 GEN_DIR="$REPO_ROOT/internal/charset/gen"
 mkdir -p "$GEN_DIR"
 BITMAPS="$REPO_ROOT/internal/charset/bitmaps"
 
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     lower="char_$(echo "${n#CHAR_}")_patched.bin"
-    src="$CHAR_DIR/$n"
+    src="$CHAR_CACHE/$n"
     bmp="$BITMAPS/${n}_swedish.bmp"
     work="$TMPDIR_BUILD/work_$n"
 
-    if [[ ! -f "$src" ]]; then
-        echo "  SKIP $n: not found in game dump"
-        continue
-    fi
     if [[ ! -f "$bmp" ]]; then
         echo "  SKIP $n: Swedish BMP not found"
         continue

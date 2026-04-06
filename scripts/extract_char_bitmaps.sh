@@ -10,7 +10,8 @@
 #   Monkey1.pak  →  MONKEY1.001  →  CHAR_NNNN (scummrp)  →  CHAR_NNNN.bmp (scummfont)
 #
 # Reads:   game/monkey1/Monkey1.pak  (or pass a custom PAK/game-dir as $1)
-# Writes:  assets/charset/english_bitmaps/CHAR_NNNN.bmp   (commit these to git)
+# Writes:  assets/charset/english_bitmaps/CHAR_NNNN.bmp  — commit these to git
+#          assets/charset/english/CHAR_NNNN              — gitignored; used by build_patcher.sh
 #
 # Usage (from repo root):
 #   bash scripts/extract_char_bitmaps.sh
@@ -78,6 +79,20 @@ echo "=== Dumping CHAR blocks ==="
 DUMP_DIR="$TMPDIR_WORK/dump"
 "$SCUMMRP" -g monkeycdalt -p "$GAME_DIR" -t CHAR -od "$DUMP_DIR"
 CHAR_DIR="$DUMP_DIR/DISK_0001/LECF/LFLF_0010"
+
+# --- Cache raw CHAR blocks for use by build_patcher.sh ---
+echo "=== Caching CHAR blocks ==="
+CACHE_DIR="$REPO_ROOT/assets/charset/english"
+mkdir -p "$CACHE_DIR"
+for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
+    src="$CHAR_DIR/$n"
+    if [[ ! -f "$src" ]]; then
+        echo "  SKIP $n: not found in dump"
+        continue
+    fi
+    cp "$src" "$CACHE_DIR/$n"
+    echo "  $n -> $CACHE_DIR/$n"
+done
 
 # --- Export each CHAR block to BMP ---
 echo "=== Exporting to BMP ==="
