@@ -111,15 +111,6 @@ for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     echo "  $n -> $lower ($(wc -c < "$GEN_DIR/$lower" | tr -d ' ') bytes)"
 done
 
-# --- Generate patched verb layout ---
-SCRP_SRC="$REPO_ROOT/game/monkey1/gen/scripts/SCRP_0022"
-if [[ ! -f "$SCRP_SRC" ]]; then
-    echo "ERROR: SCRP_0022 not found: $SCRP_SRC" >&2
-    echo "  Run: bash scripts/extract.sh [Monkey1.pak | game_dir]" >&2
-    exit 1
-fi
-python3 "$REPO_ROOT/tools/patch_verbs.py" "$SCRP_SRC" "$GEN_DIR/scrp_0022_patched.bin"
-
 # ---------------------------------------------------------------------------
 echo ""
 echo "=== Step 3: Copy Swedish translation to dist/ ==="
