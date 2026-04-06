@@ -15,8 +15,8 @@
 #      pass the directory containing them directly — no PAK needed.
 #
 # Output:
-#   assets/classic/english_strings.txt — English strings, one per line,
-#                                        with [room:type#id] context headers (gitignored)
+#   assets/strings/english.txt — English strings, one per line,
+#                                with [room:type#id] context headers (gitignored)
 #
 # Prerequisites:
 #   - bin/scummtr must exist (run: bash scripts/install_deps.sh)
@@ -36,8 +36,8 @@ case "$(uname -s)" in
 esac
 PAKPY="$REPO_ROOT/tools/pak.py"
 WORK_DIR="$(mktemp -d)"
-OUT_DIR="$REPO_ROOT/assets/classic"
-OUT_FILE="$OUT_DIR/english_strings.txt"
+OUT_DIR="$REPO_ROOT/assets/strings"
+OUT_FILE="$OUT_DIR/english.txt"
 
 trap 'rm -rf "$WORK_DIR"' EXIT
 

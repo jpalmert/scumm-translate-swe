@@ -6,7 +6,7 @@ game/
 internal/charset/gen/
 
 # Assets extracted from game files — gitignored; regenerate with the extract scripts
-assets/classic/
+assets/strings/
 
 # Python
 __pycache__/
