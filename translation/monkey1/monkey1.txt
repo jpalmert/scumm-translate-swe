@@ -201,14 +201,14 @@ Köp spelguide
 \254\001\005\006\254\001\003\004
 \255\007\036\000
 Gå till
-Ge
 Öppna
 Stäng
-Ta
+Putta
 \021\021\021\021Titta \016\017
 \021\021\021\021Tala \018\019\020
 \021Använd
-Putta
+Ge
+Ta
 Dra
 Stör
 Stick
