@@ -5,8 +5,8 @@ game/
 # Source of truth is internal/charset/bitmaps/*.bmp + assets/charset/english/CHAR_*
 internal/charset/gen/
 
-# English charset BMPs (extracted for local reference; not needed to build)
-assets/charset/english_bitmaps/
+# English charset CHAR block templates (extracted from game; not committed)
+assets/charset/english/
 
 # Python
 __pycache__/
