@@ -1,4 +1,4 @@
-// Package charset patches Swedish glyph data into CHAR_0001–CHAR_0004
+// Package charset patches Swedish glyph data into CHAR_0001–CHAR_0004 and CHAR_0006
 // inside the MONKEY1.000/001 classic game files using the scummrp tool.
 //
 // scummrp handles all SCUMM block-level housekeeping: XOR encoding, LFLF/LECF
@@ -26,6 +26,9 @@ var patchedChar0003 []byte
 //go:embed assets/char_0004_patched.bin
 var patchedChar0004 []byte
 
+//go:embed assets/char_0006_patched.bin
+var patchedChar0006 []byte
+
 //go:embed assets/scummrp-linux-x64
 var scummrpLinux []byte
 
@@ -35,7 +38,7 @@ var scummrpDarwin []byte
 //go:embed assets/scummrp-windows-x64.exe
 var scummrpWindows []byte
 
-// Patch replaces CHAR_0001–CHAR_0004 in the MONKEY1.000/001 files in gameDir
+// Patch replaces CHAR_0001–CHAR_0004 and CHAR_0006 in the MONKEY1.000/001 files in gameDir
 // with embedded Swedish-glyph versions. scummrp handles all block-level
 // housekeeping: XOR encoding, LFLF/LECF sizes, LOFF table, DCHR.
 //
@@ -83,7 +86,7 @@ func Patch(gameDir string) error {
 		return fmt.Errorf("scummrp export: %w", err)
 	}
 
-	// Replace CHAR_0001 and CHAR_0003 with the Swedish-glyph versions.
+	// Replace CHAR blocks with Swedish-glyph versions.
 	charDir := filepath.Join(dumpDir, "DISK_0001", "LECF", "LFLF_0010")
 	if err := os.WriteFile(filepath.Join(charDir, "CHAR_0001"), patchedChar0001, 0644); err != nil {
 		return fmt.Errorf("write CHAR_0001: %w", err)
@@ -96,6 +99,9 @@ func Patch(gameDir string) error {
 	}
 	if err := os.WriteFile(filepath.Join(charDir, "CHAR_0004"), patchedChar0004, 0644); err != nil {
 		return fmt.Errorf("write CHAR_0004: %w", err)
+	}
+	if err := os.WriteFile(filepath.Join(charDir, "CHAR_0006"), patchedChar0006, 0644); err != nil {
+		return fmt.Errorf("write CHAR_0006: %w", err)
 	}
 
 	// Import patched CHAR blocks back; scummrp updates all size fields and tables.

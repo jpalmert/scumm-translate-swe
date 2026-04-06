@@ -33,7 +33,7 @@ trap 'rm -rf "$TMPDIR_WORK"' EXIT
 
 echo "=== Building charset assets ==="
 
-for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004; do
+for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     lower="$(echo "$n" | tr '[:upper:]' '[:lower:]' | sed 's/char_/char_/' | sed 's/$/_patched.bin/')"
     bmp="$BITMAPS/${n}_swedish.bmp"
     template="$ENGLISH/$n"
