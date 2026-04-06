@@ -19,7 +19,21 @@ func TestPatchedChar0001Asset(t *testing.T) {
 	}
 }
 
-// ASSET-002: Embedded CHAR_0003 asset is a valid CHAR block.
+// ASSET-002: Embedded CHAR_0002 asset is a valid CHAR block.
+func TestPatchedChar0002Asset(t *testing.T) {
+	if len(patchedChar0002) < 8 {
+		t.Fatalf("patchedChar0002 too short: %d bytes", len(patchedChar0002))
+	}
+	if string(patchedChar0002[0:4]) != "CHAR" {
+		t.Errorf("patchedChar0002 tag = %q, want CHAR", patchedChar0002[0:4])
+	}
+	size := int(binary.BigEndian.Uint32(patchedChar0002[4:]))
+	if size != len(patchedChar0002) {
+		t.Errorf("patchedChar0002 size field = %d, actual = %d", size, len(patchedChar0002))
+	}
+}
+
+// ASSET-003: Embedded CHAR_0003 asset is a valid CHAR block.
 func TestPatchedChar0003Asset(t *testing.T) {
 	if len(patchedChar0003) < 8 {
 		t.Fatalf("patchedChar0003 too short: %d bytes", len(patchedChar0003))
