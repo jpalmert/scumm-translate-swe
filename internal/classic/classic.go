@@ -101,6 +101,7 @@ func InjectTranslation(gameDir, translationPath string) error {
 	//   -g monkeycdalt  game ID for the MONKEY1.000 file variant
 	//   -p              path to directory containing MONKEY1.000 + MONKEY1.001
 	//   -i              inject mode: import text INTO the game files
+	//   -h              strip [room:TYPE#resnum] header prefixes from each line
 	//   -f              path to the pre-encoded translation file
 	//
 	// Note: -c (Windows-1252 mode) is intentionally omitted — Swedish characters
@@ -112,7 +113,7 @@ func InjectTranslation(gameDir, translationPath string) error {
 		scummtrPath,
 		"-g", "monkeycdalt",
 		"-p", gameDir,
-		"-i",
+		"-ih",
 		"-f", encodedPath,
 	)
 	cmd.Stdout = os.Stdout
