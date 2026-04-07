@@ -12,12 +12,12 @@ func TestEncodeForScummtr(t *testing.T) {
 		in  string
 		out string
 	}{
-		{"Å", `\197`},
-		{"Ä", `\196`},
-		{"Ö", `\214`},
-		{"å", `\229`},
-		{"ä", `\228`},
-		{"ö", `\246`},
+		{"Å", `\091`},
+		{"Ä", `\092`},
+		{"Ö", `\093`},
+		{"å", `\123`},
+		{"ä", `\124`},
+		{"ö", `\125`},
 		{"é", `\130`},
 	}
 
@@ -52,10 +52,12 @@ func TestEncodeForScummtrASCII(t *testing.T) {
 	}
 }
 
-// ENCODE-004: Lines with [header] but no content are dropped (scummtr forbids empty lines).
-func TestEncodeForScummtrFiltersEmptyContentLines(t *testing.T) {
+// ENCODE-004: Empty-content lines get a space injected so scummtr accepts them
+// while preserving their position (sequential matching within a resource).
+func TestEncodeForScummtrPadsEmptyContentLines(t *testing.T) {
 	dir := t.TempDir()
 	p := filepath.Join(dir, "t.txt")
+	// Two strings in SCRP#0037: empty first, "gam" second. Both must be preserved.
 	input := "[001:OBNA#0016]djungel\n[002:SCRP#0037]\n[002:SCRP#0037]gam\n[002:SCRP#0038]\n"
 	os.WriteFile(p, []byte(input), 0644)
 
@@ -63,14 +65,14 @@ func TestEncodeForScummtrFiltersEmptyContentLines(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	want := "[001:OBNA#0016]djungel\n[002:SCRP#0037]gam\n"
+	want := "[001:OBNA#0016]djungel\n[002:SCRP#0037] \n[002:SCRP#0037]gam\n[002:SCRP#0038] \n"
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
 }
 
-// ENCODE-005: Lines with [header] and only whitespace are also dropped.
-func TestEncodeForScummtrFiltersWhitespaceContentLines(t *testing.T) {
+// ENCODE-005: Whitespace-only content is also padded to a single space.
+func TestEncodeForScummtrPadsWhitespaceContentLines(t *testing.T) {
 	dir := t.TempDir()
 	p := filepath.Join(dir, "t.txt")
 	input := "[001:OBNA#0016]djungel\n[002:SCRP#0035] \n[002:SCRP#0036]strand\n"
@@ -80,7 +82,7 @@ func TestEncodeForScummtrFiltersWhitespaceContentLines(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	want := "[001:OBNA#0016]djungel\n[002:SCRP#0036]strand\n"
+	want := "[001:OBNA#0016]djungel\n[002:SCRP#0035] \n[002:SCRP#0036]strand\n"
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
@@ -96,7 +98,7 @@ func TestEncodeForScummtrMixed(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	want := `Jag \228r glad`
+	want := `Jag \124r glad`
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
 	}

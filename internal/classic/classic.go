@@ -17,16 +17,21 @@ import (
 // codes for Monkey Island 1. scummtr does not reliably auto-convert these via
 // -c for the monkeycdalt game ID, so we pre-encode them before injection
 // (matching the monkeycd_swe project approach).
+//
+// These custom SCUMM codes (91–93, 123–125, 130) replace ASCII punctuation that
+// never appears in game dialog: '[', '\', ']' and '{', '|', '}'. The CHAR blocks
+// are patched to put Swedish glyphs at those positions; the SE .font lookup
+// table is also patched so the SE new-graphics renderer can find them.
 var scummCharMap = []struct {
 	from string
 	to   string
 }{
-	{"Å", `\197`},
-	{"Ä", `\196`},
-	{"Ö", `\214`},
-	{"å", `\229`},
-	{"ä", `\228`},
-	{"ö", `\246`},
+	{"Å", `\091`},
+	{"Ä", `\092`},
+	{"Ö", `\093`},
+	{"å", `\123`},
+	{"ä", `\124`},
+	{"ö", `\125`},
 	{"é", `\130`},
 }
 
@@ -43,19 +48,20 @@ func encodeForScummtr(translationPath string) ([]byte, error) {
 	for _, m := range scummCharMap {
 		s = strings.ReplaceAll(s, m.from, m.to)
 	}
-	trailingNL := strings.HasSuffix(s, "\n")
-	lines := strings.Split(strings.TrimRight(s, "\n"), "\n")
-	filtered := lines[:0]
-	for _, line := range lines {
-		if i := strings.IndexByte(line, ']'); !(i >= 0 && strings.HasPrefix(line, "[") && strings.TrimSpace(line[i+1:]) == "") {
-			filtered = append(filtered, line)
+	// scummtr forbids empty lines, but empty-content entries must be preserved
+	// in order: [room:TYPE#resnum] entries within the same resource are matched
+	// positionally, so dropping one would shift all subsequent strings.
+	// Replace empty/whitespace-only content with a single space so scummtr
+	// accepts the line and injects a harmless space into an otherwise-unused string.
+	lines := strings.Split(s, "\n")
+	for i, line := range lines {
+		if j := strings.IndexByte(line, ']'); j >= 0 && strings.HasPrefix(line, "[") {
+			if strings.TrimSpace(line[j+1:]) == "" {
+				lines[i] = line[:j+1] + " "
+			}
 		}
 	}
-	result := strings.Join(filtered, "\n")
-	if trailingNL {
-		result += "\n"
-	}
-	return []byte(result), nil
+	return []byte(strings.Join(lines, "\n")), nil
 }
 
 // InjectTranslation injects a translation file into the classic SCUMM game files
