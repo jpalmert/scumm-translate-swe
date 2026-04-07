@@ -19,7 +19,7 @@ One patcher works for both the Special Edition and the Classic CD-ROM version.
 ### How to patch
 
 Download `mi1-translate-windows.exe` / `mi1-translate-darwin` / `mi1-translate-linux`
-and `monkey1.txt` into the same folder as your game files, then run the patcher.
+and `swedish.txt` into the same folder as your game files, then run the patcher.
 
 The patcher detects your version automatically:
 - **Special Edition:** place next to `Monkey1.pak`
@@ -41,8 +41,8 @@ After patching, start a new game. The Swedish text replaces the English strings 
 
 **Advanced:** you can also pass paths explicitly:
 ```
-mi1-translate-linux Monkey1.pak [output.pak] [monkey1.txt]   # SE
-mi1-translate-linux /path/to/game/dir [monkey1.txt]          # Classic
+mi1-translate-linux Monkey1.pak [output.pak] [swedish.txt]   # SE
+mi1-translate-linux /path/to/game/dir [swedish.txt]          # Classic
 ```
 
 
@@ -100,12 +100,11 @@ scripts/
 
 translation/
   monkey1/
-    monkey1.txt             Swedish translation (scummtr format, 4437 strings)
+    swedish.txt             Swedish translation (scummtr format, 4437 strings)
     TRANSLATE_TABLE         Swedish character code mappings
 
 docs/
   FRS.md                   Functional Requirements Spec
-  OPEN_QUESTIONS.md        Investigation log
   TEST_PLAN.md             Test plan
 
 --- gitignored below this line ---
@@ -126,7 +125,7 @@ dist/                       Built patcher binaries (never committed)
   mi1-translate-linux
   mi1-translate-darwin
   mi1-translate-windows.exe
-  monkey1.txt               ← shipped alongside the binary
+  swedish.txt               ← shipped alongside the binary
 ```
 
 ### External dependencies
@@ -143,13 +142,7 @@ If you need to rebuild or upgrade the bundled binaries, see [Refreshing dependen
 
 ### One-time setup
 
-Install the bundled tool binaries (scummtr, scummrp, scummfont):
-
-```bash
-bash scripts/install_deps.sh
-```
-
-Then place your game files where the scripts can find them. Either the SE PAK or the
+Place your game files where the scripts can find them. Either the SE PAK or the
 classic SCUMM files work — the scripts detect which you have:
 
 ```bash
@@ -183,18 +176,18 @@ This populates `game/monkey1/gen/` (gitignored):
 | `gen/charset/english_bitmaps/*.bmp` | English glyphs as BMPs — visual reference when editing Swedish glyphs in `internal/charset/bitmaps/` |
 | `gen/strings/english.txt` | English dialog strings for translation |
 
-`gen/strings/english.txt` has one string per entry with `[room:type#id]` context headers:
+`gen/strings/english.txt` is UTF-8, one string per line, with a `[room:TYPE#resnum](opcode)` prefix:
 
 ```
-[0037:0000#0000]
-Ahh, I'm finally going to be a pirate!
-[0037:0000#0001]
-I wonder what's out there beyond the horizon.
+[028:LSCR#0220](D8)Ahh, I'm finally going to be a pirate!
+[028:LSCR#0220](14)What do you want?
+[028:LSCR#0220](54)rusty sword
 ```
 
-Translate each string in place, keeping the `[room:type#id]` headers and the file
-structure intact. The file uses Windows-1252 encoding with CRLF line endings (scummtr's
-native format).
+The opcode indicates who is speaking: `(D8)` = Guybrush, `(14)` = NPC, `(54)` = object name, etc.
+See `docs/TRANSLATION_GUIDE.md` for the full opcode reference and control code documentation.
+
+Translate each string in place, keeping the prefix and all `\255\NNN` control codes unchanged.
 
 ### Build the distributable patcher
 
@@ -208,7 +201,7 @@ bash scripts/build.sh
 #   dist/mi1-translate-linux
 #   dist/mi1-translate-darwin
 #   dist/mi1-translate-windows.exe
-#   dist/monkey1.txt
+#   dist/swedish.txt
 ```
 
 ### Refreshing dependencies
@@ -219,7 +212,7 @@ Both Linux and macOS scummtr binaries are bundled. To upgrade to a newer version
 bash scripts/install_deps.sh
 ```
 
-This re-downloads scummtr (prebuilt for Linux/macOS). Re-running is safe — it skips tools that are already present. Commit the updated binaries afterwards.
+This re-downloads all tool binaries and updates both `bin/` and the embedded assets in `internal/*/assets/`. Commit the updated binaries afterwards.
 
 ### Running tests
 
@@ -239,7 +232,7 @@ The GOG and Steam versions of MI1SE store game dialog inside embedded classic SC
 resource files (`classic/en/MONKEY1.000` and `classic/en/MONKEY1.001`) within `Monkey1.pak`.
 These are identical to the CD-ROM classic version that `scummtr` was built for.
 
-The Swedish translation (`translation/monkey1/monkey1.txt`) is sourced from the
+The Swedish translation (`translation/monkey1/swedish.txt`) is sourced from the
 [monkeycd_swe](https://github.com/dwatteau/monkeycd_swe) project. It aligns 1:1 with
 the SE strings (4437 strings in the same order).
 
@@ -288,7 +281,6 @@ macOS, and Linux — no external tools needed by the end user.
 1. Investigate the PAK structure with `tools/pak.py extract`.
 2. Determine whether the game uses embedded classic SCUMM files (use the scummtr approach)
    or SE-specific `.info` text files (use `tools/text.py` approach).
-3. Check `docs/OPEN_QUESTIONS.md` and `docs/FRS.md` for notes on future game support.
 4. Add a new translation directory under `translation/<game>/`.
 5. Add a new command under `cmd/` following the existing pattern.
 

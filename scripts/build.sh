@@ -9,7 +9,7 @@
 #      These are committed to git. If missing, run: bash scripts/install_deps.sh
 #   2. Generate Swedish CHAR block assets (internal/charset/gen/):
 #        - Use cached English CHAR blocks from game/monkey1/gen/charset/english/
-#          (populate with: bash scripts/extract_char_bitmaps.sh)
+#          (populate with: bash scripts/extract_assets.sh)
 #        - Import Swedish glyph BMPs with scummfont
 #   3. Copy Swedish translation file to dist/
 #   4. Cross-compile patcher for Linux, macOS, and Windows into dist/
@@ -18,7 +18,7 @@
 #   dist/mi1-translate-linux
 #   dist/mi1-translate-darwin
 #   dist/mi1-translate-windows.exe
-#   dist/monkey1.txt     ← ship alongside the binaries
+#   dist/swedish.txt     ← ship alongside the binaries
 #
 # Requirements:
 #   - Go 1.21+  (go build)
@@ -27,7 +27,7 @@
 #     (run: bash scripts/extract.sh [Monkey1.pak | game_dir])
 #
 # Usage of the built patcher (for users):
-#   Place mi1-translate-linux and monkey1.txt next to your game files and run it.
+#   Place mi1-translate-linux and swedish.txt next to your game files and run it.
 #   After patching, start a new game to see Swedish text.
 
 set -euo pipefail
@@ -35,7 +35,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ASSETS_DIR="$REPO_ROOT/internal/classic/assets"
 DIST_DIR="$REPO_ROOT/dist"
-TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/monkey1.txt"
+TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/swedish.txt"
 
 SCUMMFONT="$REPO_ROOT/bin/linux/scummfont"
 if [[ "$(uname)" == "Darwin" ]]; then
@@ -75,7 +75,7 @@ echo ""
 echo "=== Step 2: Generate Swedish CHAR block assets ==="
 
 # Use committed English CHAR blocks as templates for scummfont import.
-# Populate by running: bash scripts/extract_char_bitmaps.sh
+# Populate by running: bash scripts/extract_assets.sh
 CHAR_CACHE="$REPO_ROOT/game/monkey1/gen/charset/english"
 missing_cache=()
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
@@ -119,8 +119,8 @@ if [ ! -f "$TRANSLATION_SRC" ]; then
     echo "ERROR: Translation file not found: $TRANSLATION_SRC"
     exit 1
 fi
-cp "$TRANSLATION_SRC" "$DIST_DIR/monkey1.txt"
-echo "  $TRANSLATION_SRC -> dist/monkey1.txt"
+cp "$TRANSLATION_SRC" "$DIST_DIR/swedish.txt"
+echo "  $TRANSLATION_SRC -> dist/swedish.txt"
 
 # ---------------------------------------------------------------------------
 echo ""
@@ -158,5 +158,5 @@ echo ""
 echo "Output in dist/:"
 ls -lh "$DIST_DIR/"
 echo ""
-echo "Distribute all files in dist/ together (binaries + monkey1.txt)."
+echo "Distribute all files in dist/ together (binaries + swedish.txt)."
 echo "After patching, start a new game to see Swedish text."

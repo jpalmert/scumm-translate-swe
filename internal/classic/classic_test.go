@@ -12,12 +12,12 @@ func TestEncodeForScummtr(t *testing.T) {
 		in  string
 		out string
 	}{
-		{"Å", `\091`},
-		{"Ä", `\092`},
-		{"Ö", `\093`},
-		{"å", `\123`},
-		{"ä", `\124`},
-		{"ö", `\125`},
+		{"Å", `\197`},
+		{"Ä", `\196`},
+		{"Ö", `\214`},
+		{"å", `\229`},
+		{"ä", `\228`},
+		{"ö", `\246`},
 		{"é", `\130`},
 	}
 
@@ -62,7 +62,7 @@ func TestEncodeForScummtrMixed(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	want := `Jag \124r glad`
+	want := `Jag \228r glad`
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
 	}

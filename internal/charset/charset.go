@@ -37,7 +37,7 @@
 // To update a glyph: edit the BMP in internal/charset/bitmaps/, then re-run
 // scripts/build.sh (which regenerates the .bin files as part of Step 2).
 // To see the original English glyphs for reference, run
-// scripts/extract_char_bitmaps.sh — it exports the English CHAR blocks from the
+// scripts/extract_assets.sh — it exports the English CHAR blocks from the
 // game to assets/charset/english_bitmaps/.
 //
 // # Runtime behaviour

@@ -7,7 +7,7 @@ import (
 )
 
 // findTranslationFile resolves the translation file path. If explicit is non-empty
-// it is used directly. Otherwise monkey1.txt is looked up next to the executable.
+// it is used directly. Otherwise swedish.txt is looked up next to the executable.
 func findTranslationFile(explicit string) (string, error) {
 	if explicit != "" {
 		if _, err := os.Stat(explicit); err != nil {
@@ -20,7 +20,7 @@ func findTranslationFile(explicit string) (string, error) {
 	if err != nil {
 		return "", fmt.Errorf("cannot determine executable path: %w", err)
 	}
-	p := filepath.Join(filepath.Dir(exe), "monkey1.txt")
+	p := filepath.Join(filepath.Dir(exe), "swedish.txt")
 	if _, err := os.Stat(p); err == nil {
 		return p, nil
 	}

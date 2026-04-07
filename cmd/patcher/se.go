@@ -25,7 +25,7 @@ import (
 //  5. Repack the PAK with the modified classic files and updated .font entries.
 //
 // outputPAK: if empty, patches inputPAK in-place (with backup).
-// translationArg: if empty, monkey1.txt is looked up next to the executable.
+// translationArg: if empty, swedish.txt is looked up next to the executable.
 func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	translationPath, err := findTranslationFile(translationArg)
 	if err != nil {

@@ -60,7 +60,6 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 - The system shall support a multi-pass translation workflow:
   - Pass 1: Initial translation (Claude)
   - Pass 2: Review pass (Claude reviewing its own output)
-  - *(Further passes TBD — see docs/OPEN_QUESTIONS.md)*
 - Translation shall preserve SCUMM control codes (e.g. `\255\003` for pauses)
 - Translation shall warn when a string exceeds the maximum allowed length (256 chars for SE fixed-stride format)
 - The workflow shall support partial translation: translate in batches, save progress, resume later
@@ -103,7 +102,7 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 ### FR-7: Classic SCUMM Support (secondary)
 - Shall support classic SCUMM games playable via ScummVM
 - Text extraction and injection via scummtr (embedded in the patcher binary)
-- Distribution via self-contained Go binary patcher (`cmd/classic-patcher`)
+- Distribution via self-contained Go binary patcher (`cmd/patcher`)
 - Accepts game directory with upper or lowercase filenames
 
 ### FR-8: Developer Tooling
@@ -133,14 +132,12 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 
 - Swedish text is on average longer than English — string length budget must be tracked
 - Savegames created before patching may be incompatible with patched game files (noted separately above)
-- Savegames created before patching may be incompatible with patched game files
 - GOG and Steam versions may differ in file layout/checksums — primary target is GOG
 
 ---
 
 ## 6. Open Issues
 
-See `docs/OPEN_QUESTIONS.md` for a full list of unresolved questions.
 
 Critical blockers — all resolved as of 2026-04-05:
 - OQ-1: GOG vs Steam file layout differences — RESOLVED

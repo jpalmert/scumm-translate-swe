@@ -135,13 +135,22 @@ echo ""
 echo "=== Extracting strings ==="
 STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
-"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -h -A aov -o -f "$STR_OUT/english.txt"
+"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -hI -A aov -o -f "$STR_OUT/english.txt"
 
-# Post-process extracted strings:
-#   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ... so translators see
-#      the intended punctuation rather than a raw control character.
+# Post-process extracted strings into clean UTF-8 for translators:
+#   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ...
 #   2. Strip trailing @ padding (scummtr pads fixed-width text slots with @).
-sed -i -e 's/\^/.../g' -e 's/@\+$//' "$STR_OUT/english.txt"
+#   3. Convert SCUMM character escape codes to their UTF-8 characters:
+#        \130 = é,  \136 = ê,  \015 = ®,  \250 = non-breaking space
+sed -i \
+    -e '/^;;/d' \
+    -e 's/\^/.../g' \
+    -e 's/@\+$//' \
+    -e 's/\\130/é/g' \
+    -e 's/\\136/ê/g' \
+    -e 's/\\015/®/g' \
+    -e 's/\\250/\xc2\xa0/g' \
+    "$STR_OUT/english.txt"
 
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
 

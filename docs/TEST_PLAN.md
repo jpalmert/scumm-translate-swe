@@ -77,7 +77,7 @@ Assert that entries not in `SwedishRemapping` are unchanged after remap.
 #### FONT-006: Applying the same remapping twice is idempotent
 Assert the second `RemapLookup` on already-remapped data produces the same output.
 
-### Classic patcher (`cmd/classic-patcher`)
+### Classic patcher (`cmd/patcher`)
 
 #### CLASSIC-001: Missing game directory → error
 #### CLASSIC-002: Directory missing `MONKEY1.000` → error
@@ -89,7 +89,7 @@ Assert the second `RemapLookup` on already-remapped data produces the same outpu
 #### CLASSIC-008: `findTranslationFile` returns error for missing explicit path
 #### CLASSIC-009: `findTranslationFile` accepts a valid explicit path
 
-### SE patcher (`cmd/se-patcher`)
+### SE patcher (`cmd/patcher`)
 
 #### SE-001: Non-existent input PAK → error
 #### SE-002: Invalid PAK magic → error
@@ -126,7 +126,7 @@ Assert: second round-trip output is byte-identical to the first. (scummtr normal
 internal structures on first inject, but subsequent injects of the same data are stable.)
 
 #### INT-CLASSIC: Real Swedish translation grows `.001`
-Run `classic.InjectTranslation` with the real `monkey1.txt`. Assert `MONKEY1.001`
+Run `classic.InjectTranslation` with the real `swedish.txt`. Assert `MONKEY1.001`
 is larger after injection (Swedish text is longer than English).
 
 #### INT-EXTRACT-PAK: Extracting strings from PAK-sourced classic files
@@ -139,7 +139,7 @@ Two subtests — write classic files as UPPERCASE and as lowercase, copy to work
 with normalised uppercase names, run scummtr export. Assert output is non-empty.
 Mirrors the directory input mode of `scripts/se/extract_classic_strings.sh`.
 
-### SE patcher (`cmd/se-patcher`)
+### SE patcher (`cmd/patcher`)
 
 #### INT-SE-001: Full SE pipeline — patched PAK is valid, `.001` grew, fonts patched
 Run `runSEPatch` with the real `Monkey1.pak` and explicit output path. Assert:
@@ -169,7 +169,7 @@ Same as MAN-001 with Steam version. Assert: patcher accepts `LPAK` magic without
 
 ### MAN-003: SE patcher — explicit output path
 ```
-se-patcher-linux Monkey1.pak /tmp/Monkey1_sv.pak
+mi1-translate-linux Monkey1.pak /tmp/Monkey1_sv.pak
 ```
 Assert: output written to specified path, original untouched, no backup created.
 
@@ -180,14 +180,14 @@ Assert: output written to specified path, original untouched, no backup created.
 4. Assert: dialog appears in Swedish with correct characters
 
 ### MAN-005: Custom translation file
-Place a modified `monkey1.txt` next to the patcher binary. Run without specifying a
+Place a modified `swedish.txt` next to the patcher binary. Run without specifying a
 translation path. Assert: patcher uses the file next to the binary.
 
 ### MAN-006: Missing input → helpful error
 Pass a non-existent path. Assert: human-readable error, no panic.
 
 ### MAN-007: Wrong input file → helpful error
-Pass a non-PAK file as input to `se-patcher`. Assert: error message mentions the wrong
+Pass a non-PAK file as input to `mi1-translate`. Assert: error message mentions the wrong
 magic bytes, not a raw panic.
 
 ### MAN-008: Swedish characters render correctly in SE

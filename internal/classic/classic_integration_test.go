@@ -411,7 +411,7 @@ func TestInjectTranslationRoundTrip(t *testing.T) {
 func TestInjectTranslationWithRealFile(t *testing.T) {
 	pakPath, _ := integrationPaths(t)
 	root := repoRoot(t)
-	translationPath := filepath.Join(root, "translation", "monkey1", "monkey1.txt")
+	translationPath := filepath.Join(root, "translation", "monkey1", "swedish.txt")
 	if _, err := os.Stat(translationPath); err != nil {
 		t.Skipf("translation file not found: %s", translationPath)
 	}

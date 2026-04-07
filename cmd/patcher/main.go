@@ -8,7 +8,7 @@
 //
 // The patcher is a single self-contained binary. All tools and glyph data are
 // embedded at compile time via //go:embed so the user only needs the binary and
-// monkey1.txt (the translation file).
+// swedish.txt (the translation file).
 //
 // Internal packages:
 //
@@ -42,14 +42,14 @@
 //
 // # Simple usage
 //
-// Place the patcher and monkey1.txt next to your game files and run:
+// Place the patcher and swedish.txt next to your game files and run:
 //
 //	mi1-translate-linux
 //
 // # Advanced usage
 //
-//	mi1-translate <Monkey1.pak> [output.pak] [monkey1.txt]   (SE version)
-//	mi1-translate <game_dir>    [monkey1.txt]                (Classic version)
+//	mi1-translate <Monkey1.pak> [output.pak] [swedish.txt]   (SE version)
+//	mi1-translate <game_dir>    [swedish.txt]                (Classic version)
 //
 // After patching, start a new game. Swedish text replaces the English strings directly.
 package main
@@ -163,9 +163,9 @@ func pauseIfWindows() {
 func printUsage() {
 	exe := filepath.Base(os.Args[0])
 	fmt.Fprintf(os.Stderr, "MI1 Swedish Translation Patcher\n\n")
-	fmt.Fprintf(os.Stderr, "Simple: place %s and monkey1.txt next to your game files and run it.\n\n", exe)
+	fmt.Fprintf(os.Stderr, "Simple: place %s and swedish.txt next to your game files and run it.\n\n", exe)
 	fmt.Fprintf(os.Stderr, "Advanced:\n")
-	fmt.Fprintf(os.Stderr, "  SE:      %s <Monkey1.pak> [output.pak] [monkey1.txt]\n", exe)
-	fmt.Fprintf(os.Stderr, "  Classic: %s <game_dir> [monkey1.txt]\n\n", exe)
+	fmt.Fprintf(os.Stderr, "  SE:      %s <Monkey1.pak> [output.pak] [swedish.txt]\n", exe)
+	fmt.Fprintf(os.Stderr, "  Classic: %s <game_dir> [swedish.txt]\n\n", exe)
 	fmt.Fprintf(os.Stderr, "After patching, start a new game to see Swedish text.\n")
 }

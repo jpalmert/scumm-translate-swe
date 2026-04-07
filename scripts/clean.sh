@@ -19,7 +19,7 @@ echo "==> Removing dist/ binaries..."
 rm -f "$REPO_ROOT/dist/mi1-translate-linux"
 rm -f "$REPO_ROOT/dist/mi1-translate-darwin"
 rm -f "$REPO_ROOT/dist/mi1-translate-windows.exe"
-rm -f "$REPO_ROOT/dist/monkey1.txt"
+rm -f "$REPO_ROOT/dist/swedish.txt"
 rmdir --ignore-fail-on-non-empty "$REPO_ROOT/dist" 2>/dev/null || true
 
 echo "Done. Run 'bash scripts/build.sh' to regenerate everything."

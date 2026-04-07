@@ -9,6 +9,8 @@ import (
 // minFontData returns a zeroed font buffer large enough to hold all lookup
 // addresses needed by SwedishRemapping. The highest address needed is for
 // 0xF6 (ö): (0xF6 - 0x20) * 2 + 0x5A = 518, so we need at least 519 bytes.
+// (The Swedish vowels Å/Ä/Ö/å/ä/ö use their Latin-1 code points as SCUMM codes
+// and therefore need no remapping; only é at scumm code 130 → 0xE9 is remapped.)
 func minFontData() []byte {
 	return make([]byte, 600)
 }
@@ -25,43 +27,21 @@ func getGlyph(data []byte, code byte) byte {
 	return data[addr]
 }
 
-// FONT-001: Swedish characters are remapped to the correct existing glyphs.
+// FONT-001: é is remapped from its SCUMM code (130) to its Windows-1252 glyph (0xE9).
+// Å/Ä/Ö/å/ä/ö use their Latin-1 code points as SCUMM codes and need no remapping.
 func TestRemapLookupSwedish(t *testing.T) {
 	data := minFontData()
-
-	// Populate the Windows-1252 glyph mappings (as they exist in the real SE fonts).
-	setGlyph(data, 0xC5, 107) // Å
-	setGlyph(data, 0xC4, 106) // Ä
-	setGlyph(data, 0xD6, 119) // Ö
-	setGlyph(data, 0xE5, 128) // å
-	setGlyph(data, 0xE4, 127) // ä
-	setGlyph(data, 0xF6, 143) // ö
-	setGlyph(data, 0xE9, 132) // é
+	setGlyph(data, 0xE9, 132) // é at its Windows-1252 position
 
 	out, err := font.RemapLookup(data, font.SwedishRemapping)
 	if err != nil {
 		t.Fatalf("RemapLookup: %v", err)
 	}
 
-	cases := []struct {
-		scummCode   byte
-		unicodeCode byte
-		char        string
-	}{
-		{91, 0xC5, "Å"},
-		{92, 0xC4, "Ä"},
-		{93, 0xD6, "Ö"},
-		{123, 0xE5, "å"},
-		{124, 0xE4, "ä"},
-		{125, 0xF6, "ö"},
-		{130, 0xE9, "é"},
-	}
-	for _, tc := range cases {
-		want := getGlyph(data, tc.unicodeCode)
-		got := getGlyph(out, tc.scummCode)
-		if got != want {
-			t.Errorf("scumm code %d (%s): glyph = %d, want %d", tc.scummCode, tc.char, got, want)
-		}
+	want := getGlyph(data, 0xE9)
+	got := getGlyph(out, 130)
+	if got != want {
+		t.Errorf("scumm code 130 (é): glyph = %d, want %d", got, want)
 	}
 }
 
@@ -87,9 +67,9 @@ func TestRemapLookupDoesNotMutateInput(t *testing.T) {
 // FONT-003: Error when a source unicode code has no glyph (index 0).
 func TestRemapLookupMissingSourceGlyph(t *testing.T) {
 	data := minFontData()
-	// Don't set any glyph for 0xE5 (å) — leaves it as 0.
+	// Don't set any glyph for 0xE9 (é) — leaves it as 0.
 
-	_, err := font.RemapLookup(data, map[byte]byte{123: 0xE5})
+	_, err := font.RemapLookup(data, map[byte]byte{130: 0xE9})
 	if err == nil {
 		t.Fatal("expected error for unmapped source glyph")
 	}
@@ -99,7 +79,7 @@ func TestRemapLookupMissingSourceGlyph(t *testing.T) {
 func TestRemapLookupDataTooSmallSource(t *testing.T) {
 	data := make([]byte, 10) // Way too small.
 
-	_, err := font.RemapLookup(data, map[byte]byte{123: 0xE5})
+	_, err := font.RemapLookup(data, map[byte]byte{130: 0xE9})
 	if err == nil {
 		t.Fatal("expected error for out-of-range source address")
 	}
@@ -108,10 +88,10 @@ func TestRemapLookupDataTooSmallSource(t *testing.T) {
 // FONT-005: Existing glyph mappings for unrelated characters are preserved.
 func TestRemapLookupPreservesOtherEntries(t *testing.T) {
 	data := minFontData()
-	setGlyph(data, 0xC5, 107) // Å — needed for remapping
+	setGlyph(data, 0xE9, 132) // é — needed for remapping
 	setGlyph(data, 'A', 34)   // Regular A — should be untouched
 
-	out, err := font.RemapLookup(data, map[byte]byte{91: 0xC5})
+	out, err := font.RemapLookup(data, map[byte]byte{130: 0xE9})
 	if err != nil {
 		t.Fatalf("RemapLookup: %v", err)
 	}
@@ -124,13 +104,7 @@ func TestRemapLookupPreservesOtherEntries(t *testing.T) {
 // FONT-006: Applying the same remapping twice is idempotent.
 func TestRemapLookupIdempotent(t *testing.T) {
 	data := minFontData()
-	setGlyph(data, 0xC5, 107)
-	setGlyph(data, 0xC4, 106)
-	setGlyph(data, 0xD6, 119)
-	setGlyph(data, 0xE5, 128)
-	setGlyph(data, 0xE4, 127)
-	setGlyph(data, 0xF6, 143)
-	setGlyph(data, 0xE9, 132)
+	setGlyph(data, 0xE9, 132) // é
 
 	first, err := font.RemapLookup(data, font.SwedishRemapping)
 	if err != nil {
