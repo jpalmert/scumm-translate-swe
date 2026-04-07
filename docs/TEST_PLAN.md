@@ -103,8 +103,8 @@ created before the injection step is reached.
 #### SE-008: `findTranslationFile` returns error for missing explicit path
 #### SE-009: `findTranslationFile` accepts a valid explicit path
 #### SE-010: `remapFontEntries` patches `.font` entries and skips others
-Synthetic font data with Swedish glyphs at Windows-1252 positions. Assert SCUMM codes
-(91=Å, 123=å) map to the expected glyph indices. Assert non-font entries unchanged.
+Synthetic font data with Swedish glyphs at Windows-1252 positions. Assert all 7 SCUMM codes
+(91=Å, 92=Ä, 93=Ö, 123=å, 124=ä, 125=ö, 130=é) map to the expected glyph indices. Assert non-font entries unchanged.
 #### SE-011: `remapFontEntries` returns error when a font is missing a required glyph
 #### SE-012: `remapFontEntries` with no `.font` entries returns 0, nil (graceful no-op)
 
