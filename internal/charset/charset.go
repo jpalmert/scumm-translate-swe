@@ -15,9 +15,9 @@
 //	CHAR_0006 — 13 px, drop-shadow menu font (title screen and in-game menu)
 //
 // The English game ships with Latin glyphs only. Swedish characters (Å Ä Ö å ä ö é)
-// are not present. scummtr maps those characters to SCUMM internal byte codes
-// 91–93 and 123–125, 130 (see internal/classic for the mapping). Without patched
-// CHAR blocks the game renders those codes as ASCII punctuation or nothing at all.
+// are not present at the SCUMM codes used by the translation: codes 91–93 (replacing
+// '[', '\', ']'), 123–125 (replacing '{', '|', '}'), and 130. Without patched CHAR
+// blocks the game renders those codes as ASCII punctuation or nothing at all.
 //
 // # What was changed in each block
 //

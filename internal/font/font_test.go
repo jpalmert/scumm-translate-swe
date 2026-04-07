@@ -9,10 +9,20 @@ import (
 // minFontData returns a zeroed font buffer large enough to hold all lookup
 // addresses needed by SwedishRemapping. The highest address needed is for
 // 0xF6 (ö): (0xF6 - 0x20) * 2 + 0x5A = 518, so we need at least 519 bytes.
-// (The Swedish vowels Å/Ä/Ö/å/ä/ö use their Latin-1 code points as SCUMM codes
-// and therefore need no remapping; only é at scumm code 130 → 0xE9 is remapped.)
 func minFontData() []byte {
 	return make([]byte, 600)
+}
+
+// setSwedishSourceGlyphs populates the Windows-1252 source positions used by
+// SwedishRemapping so that RemapLookup does not return an error.
+func setSwedishSourceGlyphs(data []byte) {
+	setGlyph(data, 0xC5, 107) // Å
+	setGlyph(data, 0xC4, 106) // Ä
+	setGlyph(data, 0xD6, 119) // Ö
+	setGlyph(data, 0xE5, 128) // å
+	setGlyph(data, 0xE4, 127) // ä
+	setGlyph(data, 0xF6, 143) // ö
+	setGlyph(data, 0xE9, 132) // é
 }
 
 // setGlyph writes a glyph index into the lookup table at the given character code.
@@ -27,21 +37,37 @@ func getGlyph(data []byte, code byte) byte {
 	return data[addr]
 }
 
-// FONT-001: é is remapped from its SCUMM code (130) to its Windows-1252 glyph (0xE9).
-// Å/Ä/Ö/å/ä/ö use their Latin-1 code points as SCUMM codes and need no remapping.
+// FONT-001: All 7 Swedish characters are remapped from their SCUMM codes to
+// their Windows-1252 glyph positions. Å/Ä/Ö/å/ä/ö use SCUMM codes 91–93 and
+// 123–125; é uses SCUMM code 130.
 func TestRemapLookupSwedish(t *testing.T) {
 	data := minFontData()
-	setGlyph(data, 0xE9, 132) // é at its Windows-1252 position
+	setSwedishSourceGlyphs(data)
 
 	out, err := font.RemapLookup(data, font.SwedishRemapping)
 	if err != nil {
 		t.Fatalf("RemapLookup: %v", err)
 	}
 
-	want := getGlyph(data, 0xE9)
-	got := getGlyph(out, 130)
-	if got != want {
-		t.Errorf("scumm code 130 (é): glyph = %d, want %d", got, want)
+	cases := []struct {
+		scummCode  byte
+		srcCode    byte
+		name       string
+	}{
+		{91, 0xC5, "Å"},
+		{92, 0xC4, "Ä"},
+		{93, 0xD6, "Ö"},
+		{123, 0xE5, "å"},
+		{124, 0xE4, "ä"},
+		{125, 0xF6, "ö"},
+		{130, 0xE9, "é"},
+	}
+	for _, tc := range cases {
+		want := getGlyph(data, tc.srcCode)
+		got := getGlyph(out, tc.scummCode)
+		if got != want {
+			t.Errorf("scumm code %d (%s): glyph = %d, want %d", tc.scummCode, tc.name, got, want)
+		}
 	}
 }
 
@@ -104,7 +130,7 @@ func TestRemapLookupPreservesOtherEntries(t *testing.T) {
 // FONT-006: Applying the same remapping twice is idempotent.
 func TestRemapLookupIdempotent(t *testing.T) {
 	data := minFontData()
-	setGlyph(data, 0xE9, 132) // é
+	setSwedishSourceGlyphs(data)
 
 	first, err := font.RemapLookup(data, font.SwedishRemapping)
 	if err != nil {

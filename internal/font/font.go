@@ -22,13 +22,21 @@ const (
 	lookupStep = 2
 )
 
-// SwedishRemapping maps SCUMM internal codes (as stored by scummtr -c) to the
-// Windows-1252 codes that already have correct glyphs in the SE font files.
-// Swedish characters use their native Latin-1/Windows-1252 code points
-// (Å=197, Ä=196, Ö=214, å=229, ä=228, ö=246), so the SE font already has
-// correct glyphs at those positions — no remapping needed for them.
-// Only é (SCUMM code 130) needs remapping to its Windows-1252 position 0xE9.
+// SwedishRemapping maps SCUMM internal codes to the Windows-1252 positions
+// that already carry the correct glyphs in the SE .font files.
+//
+// The classic SCUMM engine uses custom codes 91–93 and 123–125 for the Swedish
+// capital and lowercase vowels (replacing ASCII punctuation that never appears
+// in dialog). The SE .font files follow Windows-1252, so those glyphs live at
+// their native Latin-1 positions. RemapLookup copies each glyph to the SCUMM
+// code so the SE new-graphics renderer finds them at the expected positions.
 var SwedishRemapping = map[byte]byte{
+	91:  0xC5, // Å
+	92:  0xC4, // Ä
+	93:  0xD6, // Ö
+	123: 0xE5, // å
+	124: 0xE4, // ä
+	125: 0xF6, // ö
 	130: 0xE9, // é
 }
 

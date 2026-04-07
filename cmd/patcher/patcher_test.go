@@ -197,13 +197,14 @@ func TestRemapFontEntries(t *testing.T) {
 		addr := (int(code)-0x20)*2 + 0x5A
 		data[addr] = idx
 	}
-	setGlyph(fontData, 0xC5, 107)
-	setGlyph(fontData, 0xC4, 106)
-	setGlyph(fontData, 0xD6, 119)
-	setGlyph(fontData, 0xE5, 128)
-	setGlyph(fontData, 0xE4, 127)
-	setGlyph(fontData, 0xF6, 143)
-	setGlyph(fontData, 0xE9, 132)
+	// Populate Windows-1252 source positions for all 7 Swedish characters.
+	setGlyph(fontData, 0xC5, 107) // Å
+	setGlyph(fontData, 0xC4, 106) // Ä
+	setGlyph(fontData, 0xD6, 119) // Ö
+	setGlyph(fontData, 0xE5, 128) // å
+	setGlyph(fontData, 0xE4, 127) // ä
+	setGlyph(fontData, 0xF6, 143) // ö
+	setGlyph(fontData, 0xE9, 132) // é
 
 	other := []byte("not a font file")
 	entries := []*pak.Entry{
@@ -220,8 +221,20 @@ func TestRemapFontEntries(t *testing.T) {
 	}
 
 	fontAddr := func(code byte) int { return (int(code)-0x20)*2 + 0x5A }
-	if got := entries[0].Data[fontAddr(130)]; got != 132 {
-		t.Errorf("SCUMM code 130 (é): glyph = %d, want 132", got)
+	// Verify all 7 SCUMM codes are remapped to the correct glyph indices.
+	cases := []struct{ scumm, want byte }{
+		{91, 107},  // Å
+		{92, 106},  // Ä
+		{93, 119},  // Ö
+		{123, 128}, // å
+		{124, 127}, // ä
+		{125, 143}, // ö
+		{130, 132}, // é
+	}
+	for _, tc := range cases {
+		if got := entries[0].Data[fontAddr(tc.scumm)]; got != tc.want {
+			t.Errorf("SCUMM code %d: glyph = %d, want %d", tc.scumm, got, tc.want)
+		}
 	}
 	if !bytes.Equal(entries[1].Data, other) {
 		t.Error("non-font entry was modified")
