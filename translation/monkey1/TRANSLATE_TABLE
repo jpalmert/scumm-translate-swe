@@ -3,13 +3,13 @@
 # These map Swedish characters to unused slots in the SCUMM v5 character set.
 # Used by scripts/classic/inject_text.sh
 
-\091;Å
-\092;Ä
-\093;Ö
-\123;å
-\124;ä
-\125;ö
+\197;Å
+\196;Ä
+\214;Ö
+\229;å
+\228;ä
+\246;ö
 \130;é
 
 # For SE translations (tools/mise/font.py --map argument):
-# "Å:91,Ä:92,Ö:93,å:123,ä:124,ö:125,é:130"
+# "Å:197,Ä:196,Ö:214,å:229,ä:228,ö:246,é:130"

@@ -136,6 +136,13 @@ echo "=== Extracting strings ==="
 STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
 "$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -h -A aov -o -f "$STR_OUT/english.txt"
+
+# Post-process extracted strings:
+#   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ... so translators see
+#      the intended punctuation rather than a raw control character.
+#   2. Strip trailing @ padding (scummtr pads fixed-width text slots with @).
+sed -i -e 's/\^/.../g' -e 's/@\+$//' "$STR_OUT/english.txt"
+
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
 
 echo ""
