@@ -52,6 +52,40 @@ func TestEncodeForScummtrASCII(t *testing.T) {
 	}
 }
 
+// ENCODE-004: Lines with [header] but no content are dropped (scummtr forbids empty lines).
+func TestEncodeForScummtrFiltersEmptyContentLines(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "t.txt")
+	input := "[001:OBNA#0016]djungel\n[002:SCRP#0037]\n[002:SCRP#0037]gam\n[002:SCRP#0038]\n"
+	os.WriteFile(p, []byte(input), 0644)
+
+	got, err := encodeForScummtr(p)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	want := "[001:OBNA#0016]djungel\n[002:SCRP#0037]gam\n"
+	if string(got) != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// ENCODE-005: Lines with [header] and only whitespace are also dropped.
+func TestEncodeForScummtrFiltersWhitespaceContentLines(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "t.txt")
+	input := "[001:OBNA#0016]djungel\n[002:SCRP#0035] \n[002:SCRP#0036]strand\n"
+	os.WriteFile(p, []byte(input), 0644)
+
+	got, err := encodeForScummtr(p)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	want := "[001:OBNA#0016]djungel\n[002:SCRP#0036]strand\n"
+	if string(got) != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
 // ENCODE-003: Mixed content — Swedish chars encoded, rest unchanged.
 func TestEncodeForScummtrMixed(t *testing.T) {
 	dir := t.TempDir()

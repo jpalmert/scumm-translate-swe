@@ -32,6 +32,8 @@ var scummCharMap = []struct {
 
 // encodeForScummtr reads a UTF-8 encoded translation file and returns a copy
 // with Swedish characters replaced by their SCUMM escape codes.
+// Lines whose [room:TYPE#resnum] header has no content after it are dropped —
+// scummtr rejects them with "Empty lines are forbidden".
 func encodeForScummtr(translationPath string) ([]byte, error) {
 	data, err := os.ReadFile(translationPath)
 	if err != nil {
@@ -41,7 +43,19 @@ func encodeForScummtr(translationPath string) ([]byte, error) {
 	for _, m := range scummCharMap {
 		s = strings.ReplaceAll(s, m.from, m.to)
 	}
-	return []byte(s), nil
+	trailingNL := strings.HasSuffix(s, "\n")
+	lines := strings.Split(strings.TrimRight(s, "\n"), "\n")
+	filtered := lines[:0]
+	for _, line := range lines {
+		if i := strings.IndexByte(line, ']'); !(i >= 0 && strings.HasPrefix(line, "[") && strings.TrimSpace(line[i+1:]) == "") {
+			filtered = append(filtered, line)
+		}
+	}
+	result := strings.Join(filtered, "\n")
+	if trailingNL {
+		result += "\n"
+	}
+	return []byte(result), nil
 }
 
 // InjectTranslation injects a translation file into the classic SCUMM game files
