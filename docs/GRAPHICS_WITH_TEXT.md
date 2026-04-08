@@ -20,18 +20,6 @@ Business name (Stan is character name) - keep unchanged
 
 ---
 
-## Why These Stay in English
-
-All text in graphics consists of **proper nouns**:
-- Character names (Stan)
-- Location names (Mêlée Island)  
-- Business/establishment names (SCUMM Bar)
-- Company logos (LucasFilm)
-
-The monkeycd_swe Swedish translation also kept these names in English.
-
----
-
 ## Translation Focus
 
 **Graphics**: No translation needed (proper nouns only)  
