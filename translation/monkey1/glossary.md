@@ -1,40 +1,48 @@
 # Monkey Island 1 Swedish Translation Glossary
 
-## Proper Nouns - Keep in English
+## Translation Philosophy
 
-### Character Names
-- **Guybrush Threepwood** - protagonist, keep full name
-- **Elaine Marley** - Governor of Melee Island
-- **LeChuck** - ghost pirate captain (also "Captain LeChuck", "G.P. LeChuck")
-- **Herman Toothrot** - castaway on Monkey Island
+**General rule**: Translate descriptive names. Keep only non-descriptive proper names in English.
+
+**Exceptions**: Names that appear in hardcoded graphics must stay in English:
+- LUCASFILM GAMES
+- Mêlée Island  
+- SCUMM BAR
+- STAN'S PREVIOUSLY OWNED VESSELS (the sign graphic)
+
+## Character Names - Keep in English
+
+- **Guybrush Threepwood** - protagonist
+- **Elaine Marley** - Governor
+- **LeChuck** - ghost pirate captain
+- **Herman Toothrot** - castaway
 - **Carla** - the Sword Master
-- **Fester Shinetop** - the sheriff
+- **Fester Shinetop** - sheriff
 - **Stan** - used ship salesman
 - **Captain Smirk** - sword fighting trainer
 - **Otis** - prisoner
-- **Meathook** - tough pirate with tattoo
+- **Meathook** - tough pirate with tattoo (descriptive nickname, but established as his name)
 - **Mancomb Seepgood** - pirate in bar
 
 ### Secondary Characters
 - **Fettucini Brothers** → **Fettucini Bröderna** - circus performers (Alfredo and Bill)
 
-### Place Names
-- **Mêlée Island** (with circumflex on first e) - main island
-- **Monkey Island** - legendary island
-- **Scumm Bar** - pirate tavern (note: this is a pun on SCUMM engine, keep in English)
+### Place Names (from graphics - keep English)
+- **Mêlée Island** (with circumflex on first e) - appears in graphics
+- **Monkey Island** - game title, keep as is
+- **Scumm Bar** - appears in graphics (meta-joke about SCUMM engine)
 
-### Business/Location Names - Translate descriptions
-- **Stan's Previously Owned Vessels** → **Stans Begagnade Fartyg** (keep "Stan", translate the rest)
-- **Captain Smirk's Big Body Pirate Gym** → **Kapten Smirks Stora Piratgym** (keep "Captain Smirk", translate the rest)
+### Business/Location Names - Translate Descriptions
+- **Stan's Previously Owned Vessels** → **Stans Begagnade Fartyg** 
+- **Captain Smirk's Big Body Pirate Gym** → **Kapten Smirks Stora Piratgym**
 
-### Ship Names
-- **Sea Monkey** - the ship Guybrush acquires
-- **Ghost Ship** - LeChuck's vessel
+### Ship Names - Translate (Descriptive)
+- **Sea Monkey** → **Havsapan** or **Sjöapan**
+- **Ghost Ship** → **Spökskepp**
 
-### Island Geography (keep English)
-- Lookout Point
-- Governor's Mansion
-- Forest areas (generic descriptions can be translated)
+### Island Geography - Translate (Descriptive)
+- **Lookout Point** → **Utkiksposten**
+- **Governor's Mansion** → **Guvernörens herrgård** or **Guvernörens villa**
 
 ### Brand References (keep English)
 - **Monkey Island®** - registered trademark (preserve \015 code)
@@ -66,24 +74,20 @@
 - **Important-looking pirates** → viktiga pirater / imponerande pirater (pirate leaders in Scumm Bar)
 - **Men of Low Moral Fiber** → Män av Tvivelaktig Moral / Män med Låg Moral (street corner pirates - this is a humorous English idiom, translate the intent)
 
-### Game-specific Terms
+### Game-specific Terms - TRANSLATE
 
-**Keep English:**
-- "pieces of eight" - historic pirate currency, keep in English
-- "Jolly Roger" - pirate flag name
-
-**Translate:**
 - trial/test → prov/prövning
 - quest → uppdrag
 - riddle → gåta
 - clue → ledtråd
+- "pieces of eight" → åttaöring/åttaöringar (pirate currency)
+- "Jolly Roger" → Jolly Roger (historical pirate flag name, can keep or translate as "piratflaggan")
 
-### Object Names - TRANSLATE Unless Listed Below
+### Object Names - TRANSLATE
 
-**Keep English (brand names/specific items):**
-- Idol of Many Hands
-- T-shirt (modern item)
-- rubber chicken with a pulley in the middle (iconic item, but describe in Swedish)
+- **Idol of Many Hands** → **Idolen med Många Händer**
+- **rubber chicken with a pulley in the middle** → **gummikyckling med en trissa i mitten**
+- T-shirt → T-shirt (modern item, international word)
 
 **Translate normally:**
 - sword → svärd
