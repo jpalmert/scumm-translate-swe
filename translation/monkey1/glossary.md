@@ -4,11 +4,11 @@
 
 **General rule**: Translate descriptive names. Keep only non-descriptive proper names in English.
 
-**Exceptions**: Names that appear in hardcoded graphics must stay in English:
-- LUCASFILM GAMES
-- Mêlée Island  
-- SCUMM BAR
-- STAN'S PREVIOUSLY OWNED VESSELS (the sign graphic)
+**Exceptions**: Names that appear in hardcoded graphics stay in English in the graphics, but translate in dialogue/text:
+- LUCASFILM GAMES - keep as-is everywhere
+- Mêlée Island - keep as-is everywhere
+- SCUMM BAR - keep as-is everywhere
+- STAN'S PREVIOUSLY OWNED VESSELS - graphic stays English, but dialogue uses **"Stans Begagnade Fartyg"**
 
 ## Character Names - Keep in English
 

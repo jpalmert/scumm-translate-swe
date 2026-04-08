@@ -1,6 +1,6 @@
 # Graphics with Hardcoded Text
 
-**Decision**: Keep English names as-is (all are proper nouns)
+**Decision**: Graphics images stay in English (hardcoded). Translate text in dialogue/strings where applicable.
 
 ---
 
@@ -16,14 +16,15 @@ Location name - keep unchanged
 Bar name - keep unchanged
 
 ### 4. LFLF_0059 (640×144) - "STAN'S PREVIOUSLY OWNED VESSELS"
-Graphics text stays in English (hardcoded in image). In dialogue/text strings, translate as "Stans Begagnade Fartyg"
+**Graphics**: Image stays in English (hardcoded, cannot be changed)
+**Text strings**: Translate as "Stans Begagnade Fartyg" in all dialogue/descriptions
 
 ---
 
 ## Translation Focus
 
-**Graphics**: No translation needed (proper nouns only)  
-**String resources**: Translate via scummtr (dialogue, verbs, descriptions)  
+**Graphics images**: Cannot be changed (hardcoded pixels)
+**String resources**: Translate all dialogue, verbs, descriptions - including references to locations/businesses shown in graphics
 **Character sets**: Add Swedish diacriticals (Å, Ä, Ö, å, ä, ö, é)
 
 See `docs/TRANSLATION_PLAN.md` for the translation workflow.
