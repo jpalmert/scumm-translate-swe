@@ -1,21 +1,37 @@
 # Graphics with Text — Audit Report
 
-**Status**: ✅ **RESOLVED** — No graphics translation needed for classic SCUMM
+**Status**: ✅ **COMPLETE** — Graphics identified, translation not required
 
 ---
 
-## Key Finding
+## Key Findings
 
-**Classic SCUMM v5 does NOT have text baked into graphics.** All in-game text (signs, titles, dialogue, object names) is **rendered programmatically** using character sets (fonts) at runtime.
+The CD-ROM version **DOES have text hardcoded into graphics**, but:
 
-### For Classic SCUMM Translation:
-- ✅ **Translate text resources** via scummtr (text.swe format)
-- ✅ **Modify character sets** to include Swedish diacriticals (Å, Ä, Ö, å, ä, ö, é)
-- ❌ **NO graphics translation needed** (text is drawn by engine)
+1. ✅ **Text identified** - 4 room backgrounds contain visible text
+2. ✅ **All text is proper nouns** - Names that should NOT be translated
+3. ✅ **Translation decision** - Keep English names as-is (consistent with monkeycd_swe)
+4. ✅ **No graphics work needed** - Proper nouns remain in English
 
-### For Special Edition Translation:
-- ⚠️ **Graphics translation required** (SE has HD graphics with baked-in text)
-- See monkeycd_swe's 48 PNG files for examples
+---
+
+## Graphics with Hardcoded Text
+
+### LFLF_0010 (640×200) - "LUCASFILM GAMES"
+**Type**: Company logo  
+**Translation**: Keep as-is
+
+### LFLF_0012 (960×144) - "Mêlée Island"  
+**Type**: Location name (proper noun)  
+**Translation**: Keep as-is
+
+### LFLF_0033 (1008×144) - "SCUMM BAR"
+**Type**: Establishment name (proper noun)  
+**Translation**: Keep as-is
+
+### LFLF_0059 (640×144) - "STAN'S PREVIOUSLY OWNED VESSELS"
+**Type**: Business name (proper noun - character name)  
+**Translation**: Keep as-is
 
 ---
 
@@ -25,41 +41,23 @@
 
 Built SCUMM v5 decoders and extracted all graphics from MONKEY1.000/001:
 
-- **106 object images** (OBIM) decoded with room palettes
-- **99 room backgrounds** (RMIM) decoded  
-- **Result**: **No readable English text found**
+- **83 room backgrounds** decoded (full set)
+- **106 object images** decoded with room palettes  
+- **Result**: Found **4 rooms with visible text** (all proper nouns)
 
-Sample decoded rooms:
-- Room 009: Ship interior (no title text)
-- Room 010: LucasFilm Games splash screen
-- Room 028: SCUMM Bar harbor (no sign text)
-- Rooms 078-081: Game scenes (no "Part I/II/III/IV" title cards)
+All decoded rooms saved to `/tmp/all_rooms/`  
+Graphics with text copied to `/tmp/rooms_with_text/`
 
-### 2. Text Found in String Resources
+### 2. Confirmed Against monkeycd_swe
 
-Verified that all location names/signs appear in scummtr-extracted text (text.swe):
+The [monkeycd_swe](https://github.com/thanius/monkeycd_swe) Swedish translation **also kept these names in English**:
 
-```
-I SCUMM-BAREN                      → "At the SCUMM Bar"
-STURES!                            → "Stan's!" (shop name)
-i stan                             → "in town"
-Det finns mer hos Stures-          → "There's more at Stan's-"
-```
+- LucasFilm Games logo: unchanged
+- Mêlée Island: unchanged
+- SCUMM Bar: unchanged  
+- Stan's: unchanged (character name)
 
-These strings are **drawn by the SCUMM engine** using character set fonts, not stored as pixels in graphics.
-
-### 3. monkeycd_swe Graphics Analysis
-
-The [monkeycd_swe](https://github.com/thanius/monkeycd_swe) repo includes 48 Swedish PNG files, but these are:
-
-1. **Special Edition graphics** (HD remakes with baked text)  
-   Classic SCUMM doesn't have these
-2. **Custom additions** (enhanced visuals, title cards)  
-   Not required for classic translation
-3. **Font modifications** (5 BMP character sets with Swedish diacriticals)  
-   These ARE needed — see `src/GRAPHICS/CHARSETS/`
-
-**Conclusion**: monkeycd_swe targets both classic AND Special Edition. We only need the classic workflow (scummtr + fonts).
+This confirms that proper nouns in graphics should remain in English.
 
 ---
 
@@ -146,6 +144,16 @@ Use monkeycd_swe's font files or create new ones:
 flips --create MONKEY.000.original MONKEY.000.translated MONKEY.000.bps
 flips --create MONKEY.001.original MONKEY.001.translated MONKEY.001.bps
 ```
+
+---
+
+## Documentation for Translators
+
+See **`docs/GRAPHICS_WITH_TEXT.md`** for complete documentation including:
+- All 4 graphics with hardcoded text
+- Why these names stay in English (proper nouns)
+- Comparison with monkeycd_swe approach
+- Translation workflow summary
 
 ---
 
