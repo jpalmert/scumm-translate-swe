@@ -66,7 +66,9 @@ Steps:
 **Input:** Insult swordfighting strings (flagged in Pass 0), `glossary.md`  
 **Output:** Translated insult/comeback pairs in `translation/monkey1/swedish.txt` (just this section)
 
+Note from user: Keep in mind that in the sword fight with the Sword master different insults are used and the player needs to select from the earlier come backs. I.e. these special swoprd master insults must match one of the existing come backs. If they are too similar to the original insults it becomes too easy, but if the come back doesn't make sense then it becomes too hard. 
 The insult swordfighting system has paired strings: each insult has exactly one correct comeback. Both sides must be funny and the comeback must logically respond to the insult. This requires treating them as a creative writing task, not a translation task. Create Swedish wordplay that works, even if it diverges significantly from the English.
+
 
 ---
 

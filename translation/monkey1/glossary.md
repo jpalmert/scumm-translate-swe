@@ -121,7 +121,7 @@
 - spell → besvärjelse/trollformel
 - magic → magi
 - ghost → spöke (prefer over "ande" which is spirit/soul)
-- curse → förtrollning (magical curse/hex) NOT "förbannelse" (which means verbal cursing/swearing)
+- curse → förbannelse
 
 ## Special Cases
 
@@ -132,8 +132,7 @@ The word "SCUMM" appears in:
 
 ### Humor Preservation
 Certain names are jokes that work in English:
-- **Men of Low Moral Fiber** - translate concept, not literal words → "Pirater med Låg Moral"
-- **Fettucini Brothers** - Italian names, keep
+- **Men of Low Moral Fiber** - translate concept, not literal words → "Män av Tveksam Vandel"
 - **Previously Owned Vessels** - euphemism for "used ships", translate the euphemism
 
 ### Control Codes (NEVER TRANSLATE)
@@ -156,7 +155,7 @@ Certain names are jokes that work in English:
 - Governor → Guvernör
 - Captain → Kapten
 - Master (as in Sword Master) → Mästare
-- Sheriff → Sheriff (keep English, or use "Länsman")
+- Sheriff → Sheriff
 
 ### Time References
 - hours → timmar
