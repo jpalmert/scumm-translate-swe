@@ -44,16 +44,13 @@
 - **Lookout Point** → **Utkiksposten**
 - **Governor's Mansion** → **Guvernörens herrgård** or **Guvernörens villa**
 
-### Brand References
+### Brand References (keep English)
 
-**Real game references (keep English):**
 - **Monkey Island®** - registered trademark (preserve \015 code)
 - **LOOM®** - reference to another LucasArts game
-
-**Fictional in-game brands (translate the joke):**
-- **Davey Jones® Lockers** → **Davy Jones® Skåp** (pun on "Davy Jones' Locker" = bottom of the sea. In Swedish: "Davy Jones' skåp")
-- **GRIPMASTER®** → **GREPPMASTERN®** (fictional brand for handles/grip strengtheners)
-- **BREATHMASTER®** → **ANDEMASTERN®** (fictional brand for breath fresheners, "för piraten som bryr sig om första intrycket")
+- **Davey Jones® Lockers** - keep as-is
+- **GRIPMASTER®** - keep as-is
+- **BREATHMASTER®** - keep as-is
 
 ## Common Recurring Terms
 
