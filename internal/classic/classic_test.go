@@ -90,8 +90,8 @@ func TestEncodeForScummtrPadsWhitespaceContentLines(t *testing.T) {
 
 // SPEECH-001: buildSpeechMapping builds EN→SCUMM_bytes from aligned files.
 func TestBuildSpeechMapping(t *testing.T) {
-	en := []byte("[088:SCRP#0085] \n[088:SCRP#0085]The END for you!\n")
-	sv := []byte("[088:SCRP#0085] \n[088:SCRP#0085]SLUTET för dig!\n")
+	en := []byte("[001:SCRP#0001] \n[001:SCRP#0001]The END for you!\n")
+	sv := []byte("[001:SCRP#0001] \n[001:SCRP#0001]SLUTET för dig!\n")
 
 	m := buildSpeechMapping(en, sv)
 
@@ -109,6 +109,24 @@ func TestBuildSpeechMapping(t *testing.T) {
 	// Empty entries (just space or empty) should not appear as keys.
 	if _, bad := m[" "]; bad {
 		t.Errorf("empty-content entry should not be in mapping")
+	}
+}
+
+// SPEECH-002: sword-fight insults and comebacks are excluded from the mapping.
+func TestBuildSpeechMappingExcludesSwordFight(t *testing.T) {
+	en := []byte("[088:SCRP#0085]You fight like a dairy farmer.\n[088:SCRP#0086]How appropriate.  You fight like a cow.\n[001:OBNA#0001]Hello there.\n")
+	sv := []byte("[088:SCRP#0085]Du slåss som en bonde.\n[088:SCRP#0086]Lämpligt.  Du slåss som en ko.\n[001:OBNA#0001]Hej där.\n")
+
+	m := buildSpeechMapping(en, sv)
+
+	if _, ok := m["You fight like a dairy farmer."]; ok {
+		t.Error("insult should be excluded from mapping")
+	}
+	if _, ok := m["How appropriate.  You fight like a cow."]; ok {
+		t.Error("comeback should be excluded from mapping")
+	}
+	if _, ok := m["Hello there."]; !ok {
+		t.Error("non-sword-fight entry should be included in mapping")
 	}
 }
 

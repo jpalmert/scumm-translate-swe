@@ -129,9 +129,19 @@ func BuildSpeechMapping(gameDir, translationPath string) (map[string][]byte, err
 	return buildSpeechMapping(enData, svData), nil
 }
 
+// swordFightResources lists the resource headers whose strings are sword-fight
+// insults and comebacks. These are intentionally excluded from the speech
+// mapping because the Swedish translation uses non-literal creative rewrites;
+// matching the old English audio to the new Swedish text would be misleading.
+var swordFightResources = map[string]bool{
+	"[088:SCRP#0085]": true, // insults
+	"[088:SCRP#0086]": true, // comebacks
+}
+
 // buildSpeechMapping builds the EN→SCUMM_bytes mapping from raw data slices.
 // Both files use scummtr header format: "[room:TYPE#resnum]text".
 // Entries are matched positionally within each resource.
+// Sword-fight insult/comeback resources are excluded (see swordFightResources).
 func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 	// Build SV groups: resource_header -> []text in order.
 	svGroups := make(map[string][]string)
@@ -154,6 +164,10 @@ func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 		enText := line[j+1:]
 		p := svPos[header]
 		svPos[header]++
+
+		if swordFightResources[header] {
+			continue
+		}
 
 		if svTexts, ok := svGroups[header]; ok && p < len(svTexts) {
 			svText := svTexts[p]
