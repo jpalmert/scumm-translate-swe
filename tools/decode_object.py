@@ -223,6 +223,8 @@ def decode_object(obim_path, out_path):
             next_off = smap_pos + smap_size
 
         strip_data = obim[strip_off:next_off]
+        if len(strip_data) == 0:
+            continue
         codec = strip_data[0]
         codecs_used.add(codec)
 
