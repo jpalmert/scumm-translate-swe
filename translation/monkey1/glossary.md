@@ -16,7 +16,7 @@
 - **Mancomb Seepgood** - pirate in bar
 
 ### Secondary Characters
-- **Fettucini Brothers** - circus performers (Alfredo and Bill)
+- **Fettucini Brothers** → **Fettucini Bröderna** - circus performers (Alfredo and Bill)
 - **Important-looking pirates** - pirate leaders in Scumm Bar
 - **Men of Low Moral Fiber (pirates)** - street corner pirates
 
