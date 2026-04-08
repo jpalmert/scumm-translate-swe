@@ -17,8 +17,6 @@
 
 ### Secondary Characters
 - **Fettucini Brothers** → **Fettucini Bröderna** - circus performers (Alfredo and Bill)
-- **Important-looking pirates** - pirate leaders in Scumm Bar
-- **Men of Low Moral Fiber (pirates)** - street corner pirates
 
 ### Place Names
 - **Mêlée Island** (with circumflex on first e) - main island
@@ -61,6 +59,10 @@
 - swashbuckler → äventyrare
 - scallywag → skurk
 - scurvy dog → skabbiga hund
+
+### Recurring Character Descriptions - TRANSLATE
+- **Important-looking pirates** → viktiga pirater / imponerande pirater (pirate leaders in Scumm Bar)
+- **Men of Low Moral Fiber** → Män av Tvivelaktig Moral / Män med Låg Moral (street corner pirates - this is a humorous English idiom, translate the intent)
 
 ### Game-specific Terms
 
