@@ -27,7 +27,7 @@
 - **Stan** - used ship salesman
 - **Captain Smirk** → **Kapten Smirk** - sword fighting trainer
 - **Otis** - prisoner
-- **Meathook** - tough pirate with tattoo (descriptive nickname, but established as his name)
+- **Meathook** → **Järnkrok** - tough pirate with tattoo (descriptive nickname translated for impact)
 - **Mancomb Seepgood** - pirate in bar
 
 ### Secondary Characters
@@ -43,7 +43,7 @@
 - **Captain Smirk's Big Body Pirate Gym** → **Kapten Smirks Stora Piratgym**
 
 ### Ship Names - Translate (Descriptive)
-- **Sea Monkey** → **Havsapan** or **Sjöapan**
+- **Sea Monkey** → **Havsapan**
 - **Ghost Ship** → **Spökskepp**
 
 ### Island Geography - Translate (Descriptive)
@@ -61,7 +61,7 @@
 ## Common Recurring Terms
 
 ### Pirate/Nautical Terms - TRANSLATE
-- pirate → **sjörövare** (prefer for colorful Swedish) or **pirat** (international term, also valid)
+- pirate → **pirat** (international term)
 - ship → skepp
 - crew → besättning (or **manskap** for archaic flavor)
 - captain → kapten
