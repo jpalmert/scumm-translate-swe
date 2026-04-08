@@ -9,7 +9,7 @@
 - **Herman Toothrot** - castaway on Monkey Island
 - **Carla** - the Sword Master
 - **Fester Shinetop** - the sheriff
-- **Stan** - used ship salesman ("Stan's Previously Owned Vessels")
+- **Stan** - used ship salesman
 - **Captain Smirk** - sword fighting trainer
 - **Otis** - prisoner
 - **Meathook** - tough pirate with tattoo
@@ -21,9 +21,11 @@
 ### Place Names
 - **Mêlée Island** (with circumflex on first e) - main island
 - **Monkey Island** - legendary island
-- **Scumm Bar** - pirate tavern (note: this is a pun on SCUMM engine)
-- **Stan's Previously Owned Vessels** - ship yard
-- **Captain Smirk's Big Body Pirate Gym** - training location
+- **Scumm Bar** - pirate tavern (note: this is a pun on SCUMM engine, keep in English)
+
+### Business/Location Names - Translate descriptions
+- **Stan's Previously Owned Vessels** → **Stans Begagnade Fartyg** (keep "Stan", translate the rest)
+- **Captain Smirk's Big Body Pirate Gym** → **Kapten Smirks Stora Piratgym** (keep "Captain Smirk", translate the rest)
 
 ### Ship Names
 - **Sea Monkey** - the ship Guybrush acquires

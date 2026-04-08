@@ -16,7 +16,7 @@ Location name - keep unchanged
 Bar name - keep unchanged
 
 ### 4. LFLF_0059 (640×144) - "STAN'S PREVIOUSLY OWNED VESSELS"
-Business name (Stan is character name) - keep unchanged
+Graphics text stays in English (hardcoded in image). In dialogue/text strings, translate as "Stans Begagnade Fartyg"
 
 ---
 
