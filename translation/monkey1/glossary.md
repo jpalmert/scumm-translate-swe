@@ -4,7 +4,11 @@
 
 **General rule**: Translate descriptive names. Keep only non-descriptive proper names in English.
 
-**Tone and style**: Aim for flair and playfulness. Monkey Island is a comedy - keep it fun, colorful, and entertaining. Choose vivid, characterful words over generic translations.
+**Tone and style**: 
+- **Prioritize tone over accuracy** - if it works better in Swedish and maintains the feel, use it even if historically inaccurate
+- **Flair and playfulness first** - Monkey Island is a comedy with sarcastic humor. Keep it fun, colorful, entertaining
+- **Evocative over literal** - choose words Swedish gamers will immediately "get" and enjoy
+- **Sarcasm and wit** - preserve Guybrush's sarcastic commentary and the game's self-aware humor
 
 **Exceptions**: Names that appear in hardcoded graphics stay in English in the graphics, but translate in dialogue/text:
 - LUCASFILM GAMES - keep as-is everywhere
@@ -77,7 +81,7 @@
 
 ### Recurring Character Descriptions - TRANSLATE  
 - **Important-looking pirates** → **Imponerande pirater** or **Förnäma pirater** (pirate leaders in Scumm Bar - emphasize appearance/pomposity, not just "viktiga")
-- **Men of Low Moral Fiber** → **Suspekta Individer** or **Herrar av Suspekt Beskaffenhet** (street corner pirates - keep the mock-formal pomposity of the English)
+- **Men of Low Moral Fiber** → **Män av Tveksam Vandel** (street corner pirates - natural Swedish expression for dubious character)
 
 ### Game-specific Terms - TRANSLATE
 
@@ -85,7 +89,7 @@
 - quest → uppdrag
 - riddle → gåta
 - clue → ledtråd
-- "pieces of eight" → **åttaöring/åttaöringar** (verified: follows Swedish historical coin naming - correct translation)
+- "pieces of eight" → **dubloner/dublon** (historically inaccurate but evokes pirates perfectly in Swedish - tone over accuracy)
 - "Jolly Roger" → Jolly Roger (historical pirate flag name, keep in English)
 
 ### Object Names - TRANSLATE
@@ -167,11 +171,11 @@ Keep pirate-era measurements:
 
 ## Style Guidelines
 
-1. **Overall Tone**: Playful, colorful, fun! This is a comedy game - choose vivid words with character over safe/generic translations. "Drummel" beats "skurk", "svärdsvingare" beats "fighter", etc.
+1. **Overall Tone**: Playful, colorful, fun! This is a comedy game - choose vivid words with character over safe/generic translations. "Drummel" beats "skurk", "dubloner" beats "åttaöring", etc. **Entertainment beats accuracy.**
 
-2. **Pirate Speech**: Use slightly archaic/colorful Swedish. Think "djärvt", "förbaskat", "tusan" rather than modern neutral language. Pirates should sound like pirates, not office workers.
+2. **Pirate Speech**: Use slightly archaic/colorful Swedish. Think "djärvt", "förbaskat", "tusan" rather than modern neutral language. Pirates should sound like pirates, not office workers. Make them entertaining characters.
 
-3. **Guybrush's Voice**: Modern, slightly sarcastic, often self-deprecating. He's earnest but also comments on the absurdity around him.
+3. **Guybrush's Voice**: Modern, slightly sarcastic, often self-deprecating. He's earnest but also comments on the absurdity around him. **Preserve his sarcasm and wit** - these are key to the character.
 
 4. **Formality Levels**:
    - Governor Marley: Formal/educated Swedish (but not stuffy)
@@ -179,7 +183,12 @@ Keep pirate-era measurements:
    - Herman Toothrot: Rambling, slightly crazy, tangential
    - Stan: Fast-talking salesman - energetic, persuasive, over-the-top
 
-5. **Humor**: Prioritize funny over literal. If a joke doesn't work, create a NEW Swedish joke. Better a good Swedish joke than a failed translation of an English one.
+5. **Humor and Sarcasm**: 
+   - Prioritize funny over literal
+   - **Preserve sarcastic tone** - key to the game's humor
+   - If a joke doesn't work, create a NEW Swedish joke
+   - Better a good Swedish joke than a failed translation of an English one
+   - Self-aware humor and fourth-wall breaks should stay funny in Swedish
 
 ## Swedish Character Encoding
 The TRANSLATE_TABLE reference file shows these mappings:
