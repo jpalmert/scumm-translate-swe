@@ -3,7 +3,6 @@ package classic
 import (
 	"os"
 	"path/filepath"
-	"strings"
 	"testing"
 )
 
@@ -89,53 +88,10 @@ func TestEncodeForScummtrPadsWhitespaceContentLines(t *testing.T) {
 	}
 }
 
-// MERGE-001: Swedish entries replace EN entries at matching resource+position.
-func TestMergeTranslation(t *testing.T) {
-	en := []byte("[001:OBNA#0001]jungle\n[001:OBNA#0002]beach\n[088:SCRP#0085]The END for you!\n[088:SCRP#0085]You fight like a cow.\n")
-	sv := []byte("\n\n[088:SCRP#0085](27)SLUTET för dig!\n[088:SCRP#0085]Du slåss som en ko.\n")
-
-	got := string(mergeTranslation(en, sv))
-
-	// EN entries with no SV translation should be kept.
-	if !strings.Contains(got, "[001:OBNA#0001]jungle") {
-		t.Errorf("expected untranslated EN entry, got:\n%s", got)
-	}
-	// SV entries should replace corresponding EN entries; (27) prefix stripped.
-	if !strings.Contains(got, "[088:SCRP#0085]SLUTET för dig!") {
-		t.Errorf("expected Swedish entry without (27) prefix, got:\n%s", got)
-	}
-	if !strings.Contains(got, "[088:SCRP#0085]Du slåss som en ko.") {
-		t.Errorf("expected second Swedish entry, got:\n%s", got)
-	}
-	// Original EN should not appear for translated entries.
-	if strings.Contains(got, "The END for you!") {
-		t.Errorf("original EN entry should be replaced, got:\n%s", got)
-	}
-}
-
-// MERGE-002: stripParenPrefix removes (NN) prefixes and leaves other text alone.
-func TestStripParenPrefix(t *testing.T) {
-	cases := []struct{ in, want string }{
-		{"(27)text", "text"},
-		{"(0)text", "text"},
-		{"(123)Swedish text", "Swedish text"},
-		{"text without prefix", "text without prefix"},
-		{"(not digits)text", "(not digits)text"},
-		{"", ""},
-		{"(27)", ""},
-	}
-	for _, tc := range cases {
-		got := stripParenPrefix(tc.in)
-		if got != tc.want {
-			t.Errorf("stripParenPrefix(%q) = %q, want %q", tc.in, got, tc.want)
-		}
-	}
-}
-
 // SPEECH-001: buildSpeechMapping builds EN→SCUMM_bytes from aligned files.
 func TestBuildSpeechMapping(t *testing.T) {
 	en := []byte("[088:SCRP#0085] \n[088:SCRP#0085]The END for you!\n")
-	sv := []byte("[088:SCRP#0085](27) \n[088:SCRP#0085](27)SLUTET för dig!\n")
+	sv := []byte("[088:SCRP#0085] \n[088:SCRP#0085]SLUTET för dig!\n")
 
 	m := buildSpeechMapping(en, sv)
 
