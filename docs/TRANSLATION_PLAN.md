@@ -13,88 +13,33 @@ This document describes the multi-pass workflow Claude uses to produce the Swedi
 
 The approach follows how professional game localizers work today: functional fidelity over literal fidelity, preserving humor and tone, with special attention to language-dependent jokes.
 
----
-
-## Understanding the Source Format
-
-Every line in `game/monkey1/gen/strings/english.txt` has the form:
-
-```
-[room:TYPE#resnum]text content
-```
-
-### Metadata breakdown
-
-| Field | Meaning | Translation relevance |
-|-------|---------|----------------------|
-| `room` | Room number (001–099+) | Groups all strings that appear in the same game room/scene |
-| `TYPE` | Resource type (see below) | Tells you what kind of text this is |
-| `resnum` | Resource number | Use to track the same object/script across multiple string entries |
-
-### Resource types
-
-| Type | Description | Notes |
-|------|-------------|-------|
-| `OBNA` | Object name | Shown in the verb interface when cursor hovers. Always short (1–3 words). Must match how the object is called in nearby `VERB` text. |
-| `VERB` | Verb/action script text | Look-at descriptions, inventory text, action results. The bulk of dialogue. |
-| `LSCR` | Local script (NPC dialogue) | In-room character speech. |
-| `SCRP` | Global script | Cutscene dialogue, narration, readable items (books, signs, logs). |
-| `ENCD` | Room entry script | Text triggered when entering a room. Usually location labels or ambient dialogue. |
-
-### SCUMM control codes (preserve exactly, never translate)
-
-| Code | Meaning |
-|------|---------|
-| `\255\003` | Pause / line break (new speech bubble) |
-| `\255\006\NNN\000` | Variable substitution (e.g. item name) — never touch |
-| `\015` | Registered trademark glyph `®` (used for in-game icons) |
-| `\250` | Non-breaking space |
-| `@` | Padding character (stripped by extraction, never appears in source) |
-
-### Swedish character encoding
-Write Swedish characters as UTF-8 in the translation file. The build pipeline handles the SCUMM escape code conversion automatically:
-
-| Character | SCUMM code |
-|-----------|-----------|
-| Å | `\091` |
-| Ä | `\092` |
-| Ö | `\093` |
-| å | `\123` |
-| ä | `\124` |
-| ö | `\125` |
-| é | `\130` |
+**For technical details on file format, opcodes, and control codes, see `TRANSLATION_GUIDE.md`.**
 
 ---
 
 ## Translation Philosophy
 
-### General approach
-Follow the standard for modern professional game localizations:
+### General Approach
 
 - **Functional equivalence, not word-for-word.** The Swedish text should feel natural and funny to a native Swedish speaker, not like translated English.
 - **Match register and tone.** Guybrush is a young, naive, occasionally sarcastic would-be pirate. NPCs have distinct personalities. Preserve this.
-- **Length awareness.** Swedish is on average 10–20% longer than English. The hard limit per string is **256 characters** (SE fixed-stride format). Keep an eye on verbose strings.
+- **Length awareness.** Swedish is on average 10–20% longer than English. The hard limit per string is **256 characters** (SE fixed-stride format).
 
-### Proper nouns — what to translate
+### Proper Nouns
 
-| Category | Decision | Rationale |
-|----------|----------|-----------|
-| Character names | **Keep** | Guybrush Threepwood, Elaine Marley, LeChuck — these are iconic. Swedish players expect them unchanged. |
-| Place names | **Keep** | Mêlée Island, Monkey Island, Scabb Island. The names are part of the game's identity. |
-| Item names | **Translate** | Swords, ropes, keys, grog mugs — these should be in natural Swedish. |
-| Organization/ship names | **Keep** | "The Scumm Bar", ship names. |
-| Made-up game-world proper nouns | **Case by case** | "Gruffotumult" in the existing translation is a creative Swedish invention for a fictional place. Apply the same creativity. |
-| Grog varieties and fictional items | **Translate playfully** | These are meant to be funny. Swedish equivalents should maintain the absurdity. |
+| Category | Decision |
+|----------|----------|
+| Character names | **Keep** (Guybrush Threepwood, Elaine Marley, LeChuck) |
+| Place names | **Keep** (Mêlée Island, Monkey Island, Scabb Island) |
+| Item names | **Translate** (swords, ropes, keys, grog mugs) |
+| Business names | **Keep** (The Scumm Bar, Stan's Previously Owned Vessels) |
+| Fictional items | **Translate playfully** (maintain absurdity) |
 
-### Humor and tone
-MI1 is a comedy game. The humor comes from:
-- Guybrush's naive optimism vs. obvious danger
-- Absurdist non-sequiturs
-- Pirate tropes being subverted
-- The insult swordfighting system (language-dependent!)
-- Self-aware fourth-wall breaks
+### Humor
 
-**Always prioritize the joke over the literal meaning.** If a joke only works in English, create an equivalent Swedish joke. Note what you changed and why.
+MI1 is a comedy game built on absurdist humor, pirate tropes, insult swordfighting, and fourth-wall breaks.
+
+**Always prioritize the joke over the literal meaning.** If a joke only works in English, create an equivalent Swedish joke.
 
 ---
 
@@ -229,15 +174,14 @@ The `swedish.txt` file is the only file that feeds into the build pipeline. The 
 
 ---
 
-## Key Constraints Checklist
+## Quality Checklist
 
 Before committing any pass:
-- [ ] All SCUMM control codes (`\255\NNN`, `\015`, etc.) preserved exactly
-- [ ] No line has text content exceeding 256 characters
-- [ ] Every `OBNA` entry for a given `resnum` matches how it is referred to in `VERB`/`SCRP` strings in the same room
-- [ ] Glossary has been consulted for all proper nouns
-- [ ] No line has been accidentally left in English (unless it's a proper noun per glossary)
-- [ ] Lines with empty content use a single space ` ` (not truly empty — scummtr rejects empty lines)
+- [ ] Control codes preserved (see `TRANSLATION_GUIDE.md`)
+- [ ] No line exceeds 256 characters
+- [ ] Object names match their references in dialogue
+- [ ] Glossary consulted for all proper nouns
+- [ ] No accidental English (except proper nouns)
 
 ---
 
