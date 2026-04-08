@@ -21,7 +21,7 @@
 - **Carla** - the Sword Master
 - **Fester Shinetop** - sheriff
 - **Stan** - used ship salesman
-- **Captain Smirk** - sword fighting trainer
+- **Captain Smirk** → **Kapten Smirk** - sword fighting trainer
 - **Otis** - prisoner
 - **Meathook** - tough pirate with tattoo (descriptive nickname, but established as his name)
 - **Mancomb Seepgood** - pirate in bar
@@ -43,8 +43,8 @@
 - **Ghost Ship** → **Spökskepp**
 
 ### Island Geography - Translate (Descriptive)
-- **Lookout Point** → **Utkiksposten**
-- **Governor's Mansion** → **Guvernörens herrgård** or **Guvernörens villa**
+- **Lookout Point** → **Utkiksplatsen** (more natural for a location than "utkikspost" which implies a manned post)
+- **Governor's Mansion** → **Guvernörens herrgård** (manor - better than "villa" for grandeur)
 
 ### Brand References (keep English)
 
@@ -57,12 +57,12 @@
 ## Common Recurring Terms
 
 ### Pirate/Nautical Terms - TRANSLATE
-- pirate → pirat
+- pirate → **sjörövare** (prefer for colorful Swedish) or **pirat** (international term, also valid)
 - ship → skepp
-- crew → besättning
+- crew → besättning (or **manskap** for archaic flavor)
 - captain → kapten
 - sail → segla
-- treasure → skatt
+- treasure → skatt (can use **klenod** or **juvel** for variety)
 - sword → svärd
 - island → ö
 - sea → hav/havet
@@ -75,22 +75,22 @@
 - scallywag → slyngel / drummel (playful pirate insult, not "skurk" which is too villainous)
 - scurvy dog → skörbjuggsträk / din skabbiga hund
 
-### Recurring Character Descriptions - TRANSLATE
-- **Important-looking pirates** → viktiga pirater / imponerande pirater (pirate leaders in Scumm Bar)
-- **Men of Low Moral Fiber** → Män av Tvivelaktig Moral / Män med Låg Moral (street corner pirates - this is a humorous English idiom, translate the intent)
+### Recurring Character Descriptions - TRANSLATE  
+- **Important-looking pirates** → **Imponerande pirater** or **Förnäma pirater** (pirate leaders in Scumm Bar - emphasize appearance/pomposity, not just "viktiga")
+- **Men of Low Moral Fiber** → **Suspekta Individer** or **Herrar av Suspekt Beskaffenhet** (street corner pirates - keep the mock-formal pomposity of the English)
 
 ### Game-specific Terms - TRANSLATE
 
-- trial/test → prov/prövning
+- trial/test → **prövning** (prefer for epic Three Trials) or **prov** (for casual tests)
 - quest → uppdrag
 - riddle → gåta
 - clue → ledtråd
-- "pieces of eight" → åttaöring/åttaöringar (pirate currency)
-- "Jolly Roger" → Jolly Roger (historical pirate flag name, can keep or translate as "piratflaggan")
+- "pieces of eight" → **åttaöring/åttaöringar** (verified: follows Swedish historical coin naming - correct translation)
+- "Jolly Roger" → Jolly Roger (historical pirate flag name, keep in English)
 
 ### Object Names - TRANSLATE
 
-- **Idol of Many Hands** → **Idolen med Många Händer**
+- **Idol of Many Hands** → **Den Månghändiga Avguden** (The Many-Handed False God) - "idol" in modern Swedish means celebrity; use "avgud" for religious statue/idol
 - **rubber chicken with a pulley in the middle** → **gummikyckling med en trissa i mitten**
 - T-shirt → T-shirt (modern item, international word)
 
@@ -107,7 +107,7 @@
 
 ### Food/Drink
 - grog → grogg (keep similar)
-- root beer → rotöl
+- root beer → root beer
 - stew → gryta
 - meat → kött
 - fish → fisk
@@ -116,8 +116,8 @@
 - voodoo → voodoo (international term)
 - spell → besvärjelse/trollformel
 - magic → magi
-- ghost → spöke/ande
-- curse → förbannelse
+- ghost → spöke (prefer over "ande" which is spirit/soul)
+- curse → förtrollning (magical curse/hex) NOT "förbannelse" (which means verbal cursing/swearing)
 
 ## Special Cases
 

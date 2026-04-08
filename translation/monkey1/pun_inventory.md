@@ -95,8 +95,8 @@ This system is THE MOST IMPORTANT translation challenge. Requirements:
 
 English: "You fight like a dairy farmer" → "How appropriate. You fight like a cow."
 
-Swedish possibility: "Du slåss som en mjölkbonde" → "Hur passande. Du slåss som en ko."
-(Direct translation works here, but may need creativity for others)
+Swedish: "Du slåss som en mjölkbonde" → "Så passande. Du slåss som en ko."
+(Note: "Så passande" not "Hur passande" - avoid literal translation errors. Direct translation works here, but may need creativity for others)
 
 ---
 
