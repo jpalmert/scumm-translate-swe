@@ -4,6 +4,8 @@
 
 **General rule**: Translate descriptive names. Keep only non-descriptive proper names in English.
 
+**Tone and style**: Aim for flair and playfulness. Monkey Island is a comedy - keep it fun, colorful, and entertaining. Choose vivid, characterful words over generic translations.
+
 **Exceptions**: Names that appear in hardcoded graphics stay in English in the graphics, but translate in dialogue/text:
 - LUCASFILM GAMES - keep as-is everywhere
 - Mêlée Island - keep as-is everywhere
@@ -67,11 +69,11 @@
 - dock → kaj/hamn
 - cabin → hytt
 
-### Pirate Ranks/Types - TRANSLATE
+### Pirate Ranks/Types - TRANSLATE (with flair!)
 - buccaneer → sjörövare
-- swashbuckler → äventyrare
-- scallywag → skurk
-- scurvy dog → skabbiga hund
+- swashbuckler → äventyrare / svärdsvingare
+- scallywag → slyngel / drummel (playful pirate insult, not "skurk" which is too villainous)
+- scurvy dog → skörbjuggsträk / din skabbiga hund
 
 ### Recurring Character Descriptions - TRANSLATE
 - **Important-looking pirates** → viktiga pirater / imponerande pirater (pirate leaders in Scumm Bar)
@@ -165,17 +167,19 @@ Keep pirate-era measurements:
 
 ## Style Guidelines
 
-1. **Pirate Speech**: Swedish doesn't have exact equivalents for pirate dialect, but use slightly archaic/formal Swedish for pirate leaders, more casual for regular pirates
+1. **Overall Tone**: Playful, colorful, fun! This is a comedy game - choose vivid words with character over safe/generic translations. "Drummel" beats "skurk", "svärdsvingare" beats "fighter", etc.
 
-2. **Guybrush's Voice**: Modern, slightly sarcastic, often self-deprecating
+2. **Pirate Speech**: Use slightly archaic/colorful Swedish. Think "djärvt", "förbaskat", "tusan" rather than modern neutral language. Pirates should sound like pirates, not office workers.
 
-3. **Formality Levels**:
-   - Governor Marley: Formal/educated Swedish
-   - Pirates: Casual, some slang
-   - Herman Toothrot: Rambling, slightly crazy
-   - Stan: Fast-talking salesman
+3. **Guybrush's Voice**: Modern, slightly sarcastic, often self-deprecating. He's earnest but also comments on the absurdity around him.
 
-4. **Humor**: Prioritize funny over literal. If a joke doesn't work, find Swedish equivalent.
+4. **Formality Levels**:
+   - Governor Marley: Formal/educated Swedish (but not stuffy)
+   - Pirates: Casual, colorful, slang - they're criminals with personality
+   - Herman Toothrot: Rambling, slightly crazy, tangential
+   - Stan: Fast-talking salesman - energetic, persuasive, over-the-top
+
+5. **Humor**: Prioritize funny over literal. If a joke doesn't work, create a NEW Swedish joke. Better a good Swedish joke than a failed translation of an English one.
 
 ## Swedish Character Encoding
 The TRANSLATE_TABLE reference file shows these mappings:
