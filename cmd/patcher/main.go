@@ -65,13 +65,17 @@ import (
 
 func main() {
 	// Parse arguments.
+	// --list → dump PAK entry names and exit.
 	// .txt extension → translation file; .pak extension → SE input; anything else → output path or game dir.
+	listMode := false
 	inputPath := ""
 	outputPAK := ""
 	translationArg := ""
 	for _, arg := range os.Args[1:] {
 		lower := strings.ToLower(arg)
 		switch {
+		case lower == "--list":
+			listMode = true
 		case strings.HasSuffix(lower, ".txt"):
 			translationArg = arg
 		case inputPath == "":
@@ -90,6 +94,15 @@ func main() {
 			printUsage()
 			os.Exit(1)
 		}
+	}
+
+	// --list: dump all entry names from the PAK and exit.
+	if listMode {
+		if err := runListPAK(inputPath); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			os.Exit(1)
+		}
+		return
 	}
 
 	// Determine mode and run.

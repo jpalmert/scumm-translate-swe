@@ -139,6 +139,19 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	return nil
 }
 
+// runListPAK prints all entry names from a PAK file, one per line.
+func runListPAK(pakPath string) error {
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		return fmt.Errorf("reading PAK: %w", err)
+	}
+	fmt.Printf("%d entries in %s\n\n", len(entries), pakPath)
+	for _, e := range entries {
+		fmt.Printf("%8d  %s\n", len(e.Data), e.Name)
+	}
+	return nil
+}
+
 // remapFontEntries patches the glyph lookup table in every .font entry.
 // Returns the number of font files patched.
 func remapFontEntries(entries []*pak.Entry) (int, error) {
