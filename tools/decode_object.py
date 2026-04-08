@@ -178,8 +178,14 @@ def decode_strip(src, height):
     else:
         raise ValueError(f"Unsupported codec: {codec}")
 
-def decode_object(obim_path, out_path):
-    """Decode OBIM file to PNG"""
+def decode_object(obim_path, out_path, room_dir=None):
+    """Decode OBIM file to PNG
+
+    Args:
+        obim_path: Path to OBIM file
+        out_path: Output PNG path
+        room_dir: Optional path to room directory containing CLUT for palette
+    """
     obim = open(obim_path, 'rb').read()
 
     # OBIM structure: OBIM tag, then IMHD (header), IMAG (image data)
@@ -197,6 +203,16 @@ def decode_object(obim_path, out_path):
     width  = le16(obim, imhd_pos + 16)
     height = le16(obim, imhd_pos + 18)
     num_strips = (width + 7) // 8
+
+    # Load palette from room CLUT if available
+    palette = None
+    if room_dir:
+        import os
+        clut_path = os.path.join(room_dir, 'CLUT')
+        if os.path.exists(clut_path):
+            clut = open(clut_path, 'rb').read()
+            pal_raw = clut[8:]  # Skip CLUT tag + size
+            palette = [(pal_raw[i*3], pal_raw[i*3+1], pal_raw[i*3+2]) for i in range(256)]
 
     # Find image data - usually in IM01
     im01_pos = find_block(obim, imhd_pos, len(obim), 'IM01')
@@ -239,10 +255,22 @@ def decode_object(obim_path, out_path):
         except Exception as e:
             print(f"  Strip {s} error (codec={codec}): {e}", file=sys.stderr)
 
-    # Create grayscale image (palette indices)
-    img = Image.new('L', (width, height))
-    img.putdata(list(pixels))
-    img.save(out_path)
+    # Create image with palette or grayscale
+    try:
+        if palette:
+            # True-color RGB image
+            img = Image.new('RGB', (width, height))
+            rgb_pixels = [palette[p] for p in pixels]
+            img.putdata(rgb_pixels)
+        else:
+            # Grayscale (palette indices)
+            img = Image.new('L', (width, height))
+            img.putdata(list(pixels))
+
+        img.save(out_path)
+    except Exception as e:
+        print(f"  Error saving image: {e}", file=sys.stderr)
+        return
 
     print(f"  Object: {width} x {height}")
     print(f"  Strips: {num_strips}")
@@ -250,8 +278,10 @@ def decode_object(obim_path, out_path):
     print(f"  Saved: {out_path}")
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print(f"Usage: {sys.argv[0]} <obim_file> <output.png>")
+    if len(sys.argv) < 3 or len(sys.argv) > 4:
+        print(f"Usage: {sys.argv[0]} <obim_file> <output.png> [room_dir]")
+        print(f"  room_dir: Optional path to room directory with CLUT for palette")
         sys.exit(1)
 
-    decode_object(sys.argv[1], sys.argv[2])
+    room_dir = sys.argv[3] if len(sys.argv) == 4 else None
+    decode_object(sys.argv[1], sys.argv[2], room_dir)

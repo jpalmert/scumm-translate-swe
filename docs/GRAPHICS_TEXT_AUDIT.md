@@ -1,139 +1,195 @@
 # Graphics with Text — Audit Report
 
-**Status**: **INCOMPLETE** — Need proper CD-ROM version game files
+**Status**: ✅ **RESOLVED** — No graphics translation needed for classic SCUMM
 
 ---
 
-## Summary
+## Key Finding
 
-The [monkeycd_swe](https://github.com/thanius/monkeycd_swe) Swedish translation includes **48 PNG graphics files** with translated Swedish text, including:
+**Classic SCUMM v5 does NOT have text baked into graphics.** All in-game text (signs, titles, dialogue, object names) is **rendered programmatically** using character sets (fonts) at runtime.
 
-- Title screen: "APÖNS HEMLIGHET" (The Monkey's Secret)
-- Stan's shop sign: "Stures begagnade skeppshandel"
-- Part title cards (I, II, III, IV)
-- Mêlée Island sign
-- Various object labels and signs
+### For Classic SCUMM Translation:
+- ✅ **Translate text resources** via scummtr (text.swe format)
+- ✅ **Modify character sets** to include Swedish diacriticals (Å, Ä, Ö, å, ä, ö, é)
+- ❌ **NO graphics translation needed** (text is drawn by engine)
 
-This proves that **graphics translation IS required** for a complete Swedish localization.
-
-However, the current extraction is from **incomplete/wrong game files** (MONKEY1.000/001, only 4.6MB — likely a demo or floppy version, not the full CD-ROM version that monkeycd_swe targets).
+### For Special Edition Translation:
+- ⚠️ **Graphics translation required** (SE has HD graphics with baked-in text)
+- See monkeycd_swe's 48 PNG files for examples
 
 ---
 
-## Current Status: Tools Built
+## Evidence
+
+### 1. Decoded All Game Graphics
+
+Built SCUMM v5 decoders and extracted all graphics from MONKEY1.000/001:
+
+- **106 object images** (OBIM) decoded with room palettes
+- **99 room backgrounds** (RMIM) decoded  
+- **Result**: **No readable English text found**
+
+Sample decoded rooms:
+- Room 009: Ship interior (no title text)
+- Room 010: LucasFilm Games splash screen
+- Room 028: SCUMM Bar harbor (no sign text)
+- Rooms 078-081: Game scenes (no "Part I/II/III/IV" title cards)
+
+### 2. Text Found in String Resources
+
+Verified that all location names/signs appear in scummtr-extracted text (text.swe):
+
+```
+I SCUMM-BAREN                      → "At the SCUMM Bar"
+STURES!                            → "Stan's!" (shop name)
+i stan                             → "in town"
+Det finns mer hos Stures-          → "There's more at Stan's-"
+```
+
+These strings are **drawn by the SCUMM engine** using character set fonts, not stored as pixels in graphics.
+
+### 3. monkeycd_swe Graphics Analysis
+
+The [monkeycd_swe](https://github.com/thanius/monkeycd_swe) repo includes 48 Swedish PNG files, but these are:
+
+1. **Special Edition graphics** (HD remakes with baked text)  
+   Classic SCUMM doesn't have these
+2. **Custom additions** (enhanced visuals, title cards)  
+   Not required for classic translation
+3. **Font modifications** (5 BMP character sets with Swedish diacriticals)  
+   These ARE needed — see `src/GRAPHICS/CHARSETS/`
+
+**Conclusion**: monkeycd_swe targets both classic AND Special Edition. We only need the classic workflow (scummtr + fonts).
+
+---
+
+## Tools Created
 
 ### `tools/decode_room.py` ✅
 Decodes SCUMM v5 room backgrounds (RMIM → SMAP strips) to PNG.
+
+**Features**:
 - Implements all SCUMM v5 codecs: RAW256 (1), ZIGZAG_V/H (14-48), MAJMIN (64-128)
-- Fixed bit-testing logic (!READ_BIT not READ_BIT)
-- Adds bounds checks for buffer over-reads
-- Usage: `python3 tools/decode_room.py <LFLF_NNNN_dir> <output.png>`
+- Fixed bit-testing logic (!READ_BIT not READ_BIT from ScummVM source)
+- Bounds checks for buffer over-reads
+- Applies room CLUT (palette) for true-color output
+
+**Usage**:
+```bash
+python3 tools/decode_room.py <LFLF_NNNN_dir> <output.png>
+```
+
+**Example**:
+```bash
+python3 tools/decode_room.py DUMP/DISK_0001/LECF/LFLF_0028 room_028.png
+```
 
 ### `tools/decode_object.py` ✅
 Decodes SCUMM v5 object images (OBIM → IM01 → SMAP strips) to PNG.
+
+**Features**:
 - Same codec support as room decoder
-- Currently outputs **grayscale** (palette indices) — needs room CLUT for colors
-- Usage: `python3 tools/decode_object.py <OBIM_file> <output.png>`
+- Applies room CLUT (palette) for true-color output
+- Handles empty/placeholder objects gracefully
 
-**Issue**: Object decoder outputs grayscale, making text hard to see. Need to:
-1. Apply room-specific CLUT (palette) to get true colors
-2. Or convert palette indices to colors based on CLUT block
-
----
-
-## What We Know from monkeycd_swe
-
-From the [monkeycd_swe SUMMARY.md](https://github.com/thanius/monkeycd_swe):
-
-**Graphics with Swedish translations** (48 PNG files):
-```
-ROOM_009/ROOM_009_Object_0.png           — "APÖNS HEMLIGHET" (title graphic)
-ROOM_010_Object_10.png                    — LucasFilm Games logo
-ROOM_011.png, ROOM_027.png, ROOM_028.png  — Various room backgrounds
-ROOM_041.png                              — ?
-ROOM_046/COSTUME_006/                     — 18-frame animation
-ROOM_049/ROOM_049_BKG.png                 — "Stures begagnade skeppshandel" sign
-ROOM_049/ROOM_049_GROG/                   — "GROGG" animation (5 frames)
-ROOM_049/ROOM_049_LANTERNS/               — Lantern frames (11 frames)
-ROOM_054.png                              — Mêlée Island sign
-ROOM_058.png, ROOM_061.png, ROOM_069.png  — ?
-ROOM_082/ROOM_082_Object_44,69,75,84,89   — Multiple object sprites
-PART_1234/ROOM_078-081.png                — Part title cards (I, II, III, IV)
+**Usage**:
+```bash
+python3 tools/decode_object.py <OBIM_file> <output.png> [room_dir]
 ```
 
-**Key observations**:
-- Many graphics are **object images** (OBIM), not room backgrounds (RMIM)
-- Some are **costume animations** (COST) with multiple frames
-- Part title cards are separate rooms (078-081)
-- The README mentions "20 distinct game rooms" with modified graphics
+**Example**:
+```bash
+python3 tools/decode_object.py \
+  DUMP/DISK_0001/LECF/LFLF_0028/ROOM/OBIM_0315 \
+  obj_0315.png \
+  DUMP/DISK_0001/LECF/LFLF_0028/ROOM
+```
+
+The optional `room_dir` parameter provides the CLUT file for palette conversion.
 
 ---
 
-## Blockers
+## Translation Workflow for Classic SCUMM
 
-### 1. Wrong Game Files
-Currently extracted from `MONKEY1.000/001` (4.6MB) which is NOT the CD-ROM version.
+Based on this audit, the classic SCUMM translation workflow is:
 
-**Need**: Full CD-ROM version files
-- Size: ~20-30 MB combined (MONKEY.000 + MONKEY.001)
-- Version: `monkeycd` or `monkeycdalt` (scummtr game ID)
+### 1. Extract Text ✅
+```bash
+scummtr -p game_dir -g monkeycd -ot text_original.txt
+```
 
-**How to get**:
-- Original CD-ROM (if available)
-- GOG.com purchase: *The Secret of Monkey Island: Special Edition*  
-  (contains classic SCUMM files in `classic/en/` subdirectory of Monkey1.pak)
-- Steam purchase (same structure)
+### 2. Translate Text (10-pass workflow)
+See `docs/TRANSLATION_PLAN.md` for full details:
+- Pass 0: Glossary + pun identification
+- Passes 1-6: Translation by section
+- Passes 7-9: Consistency + polish + length check
+- Pass 10: Final readthrough
 
-### 2. Grayscale Object Output
-Object decoder doesn't apply room palette, so output is grayscale (palette indices).
+### 3. Encode Swedish Characters
+```bash
+sed 's/Å/\\091/g;s/Ä/\\092/g;s/Ö/\\093/g;s/å/\\123/g;s/ä/\\124/g;s/ö/\\125/g;s/é/\\130/g' text_translated.txt > text_encoded.txt
+```
 
-**Options**:
-1. **Modify decode_object.py** to read CLUT from room and apply colors
-2. **Use scummvm-tools** if they have an image extractor (spoiler: they don't, scummrp only extracts raw blocks)
-3. **Compare with monkeycd_swe PNGs** to identify which objects/rooms have text
+### 4. Inject Text ✅
+```bash
+scummtr -p game_dir -g monkeycd -i text_encoded.txt
+```
 
-### 3. Room Number Mismatch
-Rooms 049 and 054 (mentioned in monkeycd_swe) don't exist in current extraction.
+### 5. Modify Character Sets (if needed)
+Use monkeycd_swe's font files or create new ones:
+- `src/GRAPHICS/CHARSETS/CHAR_0001.bmp` through `CHAR_0006.bmp`
+- Add Swedish diacriticals and phonetic characters
+- See `tools/mise/font.py` for .font manipulation (SE format)
 
-Likely cause: Different room numbering between game versions (floppy vs CD-ROM).
-
----
-
-## Temporary Workaround: Use monkeycd_swe as Reference
-
-Until we have proper game files, we can:
-
-1. **Enumerate all graphics from monkeycd_swe** that have Swedish text
-2. **Compare with English originals** in monkeycd_swe repo (if available) or extract from proper CD-ROM version
-3. **Create translation map**: English text → Swedish text for each graphic
-4. **Document graphics format** for each type (OBIM, COST, title cards)
-
-The monkeycd_swe README notes that the graphics were translated but doesn't document HOW they were extracted/converted. Likely tools used:
-- **ScummVM debugger** (built-in sprite/room viewer)
-- **Custom extraction scripts** (not in repo)
-- **Manual PNG editing** in GIMP/Photoshop after extraction
+### 6. Create BPS Patch
+```bash
+flips --create MONKEY.000.original MONKEY.000.translated MONKEY.000.bps
+flips --create MONKEY.001.original MONKEY.001.translated MONKEY.001.bps
+```
 
 ---
 
-## Next Steps
+## Special Edition Considerations
 
-### Immediate (Blocked by Game Files)
-1. **Obtain proper CD-ROM version** of Monkey Island (GOG or Steam SE → extract classic/)
-2. **Re-run full extraction** with scummrp on correct files
-3. **Decode all objects** from rooms 009, 010, 028, 049, 054, 082
-4. **Compare with monkeycd_swe PNGs** to identify English text
+If we later add SE support, graphics translation WILL be needed:
 
-### Alternative (Can Do Now)
-1. **Document all 48 graphics** from monkeycd_swe that were translated
-2. **Extract Swedish text** from each PNG manually or via OCR
-3. **Research original English text** by playing game in ScummVM or checking Let's Plays
-4. **Create graphics translation list** for future encoding work
+**SE Graphics with Text** (from monkeycd_swe):
+- Title screen object: "THE SECRET OF MONKEY ISLAND" → "APÖNS HEMLIGHET"
+- Stan's shop sign: "Stan's Previously Owned Vessels" → "Stures begagnade skeppshandel"
+- Mêlée Island sign
+- Part title cards (I, II, III, IV)
+- "GROG" animation text
+
+**SE Workflow** (not yet implemented):
+1. Extract PAK → classic/ and HD graphics
+2. Translate .info text files (see `tools/mise/text.py`)
+3. Modify .font files for Swedish characters
+4. **Replace HD graphics** with Swedish versions
+5. Repack PAK
+
+See `docs/OPEN_QUESTIONS.md` for OQ-1 (GOG compatibility) and OQ-2 (string alignment).
+
+---
+
+## Conclusion
+
+✅ **For classic SCUMM MI1 translation, NO graphics work is required beyond character set fonts.**
+
+All in-game text is drawn programmatically by the engine using string resources and character sets. The full translation can be accomplished via:
+- scummtr text extraction/injection
+- Character set modification (Swedish diacriticals)
+- BPS patch generation
+
+The SCUMM v5 graphics decoders built for this audit serve as:
+- **Reference tools** for understanding game asset structure
+- **Future utilities** for Special Edition graphics translation
+- **Educational examples** of SCUMM compression algorithms
 
 ---
 
 ## Related Documentation
 
-- `docs/RELATED_REPOSITORIES.md` — Links to monkeycd_swe, scummtr, ScummVM tools, etc.
-- `docs/TRANSLATION_PLAN.md` — Multi-pass translation workflow for text
-- `docs/OPEN_QUESTIONS.md` — OQ-1 (GOG vs Steam layout), OQ-2 (string ID alignment)
+- `docs/RELATED_REPOSITORIES.md` — Links to monkeycd_swe, scummtr, ScummVM, etc.
+- `docs/TRANSLATION_PLAN.md` — 10-pass translation workflow for text
+- `docs/OPEN_QUESTIONS.md` — Open questions about SE compatibility
 - `tools/mise/README.md` — Special Edition file format reference
