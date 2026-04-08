@@ -1,0 +1,52 @@
+# Monkey Island 1 - Swedish Translation
+# Pass 1: Insult Swordfighting System
+# Translated by Claude (2026-04-08)
+
+# INSULTS (088:SCRP#0085)
+# These are the 16 core insults pirates use in swordfighting
+
+[088:SCRP#0085](27)
+[088:SCRP#0085](27)Det här är SLUTET för dig, ditt rännstenskräk!
+[088:SCRP#0085](27)Snart kommer du bära mitt svärd som en grillspett!
+[088:SCRP#0085](27)Min näsduk kommer torka upp ditt blod!
+[088:SCRP#0085](27)Folk faller vid mina fötter när de ser mig komma.
+[088:SCRP#0085](27)Jag ägde en gång en hund som var smartare än dig.
+[088:SCRP#0085](27)Du får mig att vilja kräkas.
+[088:SCRP#0085](27)Ingen har nånsin dragit blod från mig och ingen kommer nånsin göra det!
+[088:SCRP#0085](27)Du slåss som en mjölkbonde.
+[088:SCRP#0085](27)Jag fick det här ärret i ansiktet under en väldig strid!
+[088:SCRP#0085](27)Har du slutat använda blöjor än?
+[088:SCRP#0085](27)Jag har hört att du är ett föraktligt kryp.
+[088:SCRP#0085](27)Du är ingen match för mitt förstånd, din stackars dåre.
+[088:SCRP#0085](27)Du har manérerna hos en tiggare.
+[088:SCRP#0085](27)Jag tänker inte tåla din oförskämdhet sittande!
+[088:SCRP#0085](27)Det finns inga ord för hur äcklig du är.
+[088:SCRP#0085](27)Jag har talat med apor som är artigare än dig.
+
+# COMEBACKS (088:SCRP#0086)
+# These are the 16 correct responses that match the insults above
+# Order MUST match the insult order for gameplay to work
+
+[088:SCRP#0086](27)
+[088:SCRP#0086](27)Och jag har ett litet TIPS åt dig. Fattar du UDDEN?
+[088:SCRP#0086](27)Först måste du sluta vifta med det som en dammvippa.
+[088:SCRP#0086](27)Så du fick det där jobbet som vaktmästare till slut.
+[088:SCRP#0086](27)Även INNAN de känner lukten av din andedräkt?
+[088:SCRP#0086](27)Han måste ha lärt dig allt du kan.
+[088:SCRP#0086](27)Du får mig att tro att nån redan har gjort det.
+[088:SCRP#0086](27)Springer du SÅ fort?
+[088:SCRP#0086](27)Så passande. Du slåss som en ko.
+[088:SCRP#0086](27)Jag hoppas att du nu lärt dig sluta peta näsan.
+[088:SCRP#0086](27)Varför, ville du låna en?
+[088:SCRP#0086](27)Synd att ingen nånsin hört talas om DIG överhuvudtaget.
+[088:SCRP#0086](27)Då skulle jag vara i rejäla problem om du nånsin använde det.
+[088:SCRP#0086](27)Jag ville vara säker på att du skulle känna dig bekväm med mig.
+[088:SCRP#0086](27)Spelar dina hemorrojder upp igen?
+[088:SCRP#0086](27)Visst finns det. Du har bara aldrig lärt dig dem.
+[088:SCRP#0086](27)Vad roligt att höra att du var på familjeträffen.
+
+# WEAK GENERIC RESPONSES (wrong answers - used when player picks wrong comeback)
+[088:SCRP#0086](27)Jaha?
+[088:SCRP#0086](27)Jag är av gummi, du är av lim.
+[088:SCRP#0086](27)Jag skakar, jag skakar.
+[088:SCRP#0086](27)Öhh... Kan du upprepa det? Jag hörde inte riktigt.
