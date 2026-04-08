@@ -3,6 +3,7 @@ package classic
 import (
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -85,6 +86,104 @@ func TestEncodeForScummtrPadsWhitespaceContentLines(t *testing.T) {
 	want := "[001:OBNA#0016]djungel\n[002:SCRP#0035] \n[002:SCRP#0036]strand\n"
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+// MERGE-001: Swedish entries replace EN entries at matching resource+position.
+func TestMergeTranslation(t *testing.T) {
+	en := []byte("[001:OBNA#0001]jungle\n[001:OBNA#0002]beach\n[088:SCRP#0085]The END for you!\n[088:SCRP#0085]You fight like a cow.\n")
+	sv := []byte("\n\n[088:SCRP#0085](27)SLUTET för dig!\n[088:SCRP#0085]Du slåss som en ko.\n")
+
+	got := string(mergeTranslation(en, sv))
+
+	// EN entries with no SV translation should be kept.
+	if !strings.Contains(got, "[001:OBNA#0001]jungle") {
+		t.Errorf("expected untranslated EN entry, got:\n%s", got)
+	}
+	// SV entries should replace corresponding EN entries; (27) prefix stripped.
+	if !strings.Contains(got, "[088:SCRP#0085]SLUTET för dig!") {
+		t.Errorf("expected Swedish entry without (27) prefix, got:\n%s", got)
+	}
+	if !strings.Contains(got, "[088:SCRP#0085]Du slåss som en ko.") {
+		t.Errorf("expected second Swedish entry, got:\n%s", got)
+	}
+	// Original EN should not appear for translated entries.
+	if strings.Contains(got, "The END for you!") {
+		t.Errorf("original EN entry should be replaced, got:\n%s", got)
+	}
+}
+
+// MERGE-002: stripParenPrefix removes (NN) prefixes and leaves other text alone.
+func TestStripParenPrefix(t *testing.T) {
+	cases := []struct{ in, want string }{
+		{"(27)text", "text"},
+		{"(0)text", "text"},
+		{"(123)Swedish text", "Swedish text"},
+		{"text without prefix", "text without prefix"},
+		{"(not digits)text", "(not digits)text"},
+		{"", ""},
+		{"(27)", ""},
+	}
+	for _, tc := range cases {
+		got := stripParenPrefix(tc.in)
+		if got != tc.want {
+			t.Errorf("stripParenPrefix(%q) = %q, want %q", tc.in, got, tc.want)
+		}
+	}
+}
+
+// SPEECH-001: buildSpeechMapping builds EN→SCUMM_bytes from aligned files.
+func TestBuildSpeechMapping(t *testing.T) {
+	en := []byte("[088:SCRP#0085] \n[088:SCRP#0085]The END for you!\n")
+	sv := []byte("[088:SCRP#0085](27) \n[088:SCRP#0085](27)SLUTET för dig!\n")
+
+	m := buildSpeechMapping(en, sv)
+
+	// The translated entry should appear in the map.
+	sv1, ok := m["The END for you!"]
+	if !ok {
+		t.Fatalf("expected 'The END for you!' in mapping, got keys: %v", mapKeys(m))
+	}
+	// ö → 0x7D, ä would be 0x7C — verify 'ö' in "för" maps correctly.
+	want := ScummBytes("SLUTET för dig!")
+	if string(sv1) != string(want) {
+		t.Errorf("SCUMM bytes: got %v, want %v", sv1, want)
+	}
+
+	// Empty entries (just space or empty) should not appear as keys.
+	if _, bad := m[" "]; bad {
+		t.Errorf("empty-content entry should not be in mapping")
+	}
+}
+
+func mapKeys(m map[string][]byte) []string {
+	keys := make([]string, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	return keys
+}
+
+// SCUMM-BYTES-001: ScummBytes encodes Swedish UTF-8 to SCUMM byte values.
+func TestScummBytes(t *testing.T) {
+	cases := []struct {
+		in   string
+		want []byte
+	}{
+		{"Å", []byte{0x5B}},
+		{"Ä", []byte{0x5C}},
+		{"Ö", []byte{0x5D}},
+		{"å", []byte{0x7B}},
+		{"ä", []byte{0x7C}},
+		{"ö", []byte{0x7D}},
+		{"é", []byte{0x82}},
+		{"Det här", []byte{'D', 'e', 't', ' ', 'h', 0x7C, 'r'}},
+	}
+	for _, tc := range cases {
+		got := ScummBytes(tc.in)
+		if string(got) != string(tc.want) {
+			t.Errorf("ScummBytes(%q) = %v, want %v", tc.in, got, tc.want)
+		}
 	}
 }
 

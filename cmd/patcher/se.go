@@ -9,8 +9,10 @@ import (
 	"strings"
 
 	"scumm-patcher/internal/backup"
+	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
+	"scumm-patcher/internal/speech"
 )
 
 // runSEPatch is the testable entry point for the Special Edition patching pipeline.
@@ -20,9 +22,11 @@ import (
 //
 //  1. Read the PAK and locate the embedded classic/en/monkey1.000 and .001.
 //  2. Extract them to a temp directory as MONKEY1.000/001 (uppercase).
-//  3. Apply all classic patches (translation, CHAR blocks, verb layout).
-//  4. Patch the glyph lookup table in every .font entry in the PAK.
-//  5. Repack the PAK with the modified classic files and updated .font entries.
+//  3. Build the EN→Swedish speech mapping from the original English content.
+//  4. Apply all classic patches (translation, CHAR blocks, verb layout).
+//  5. Patch the glyph lookup table in every .font entry in the PAK.
+//  6. Repack the PAK with the modified classic files and updated .font entries.
+//  7. Patch speech.info EN slots to match the new Swedish strings (audio sync).
 //
 // outputPAK: if empty, patches inputPAK in-place (with backup).
 // translationArg: if empty, swedish.txt is looked up next to the executable.
@@ -100,12 +104,23 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return err
 	}
 
-	// --- Step 4: Apply all classic patches ---
+	// --- Step 4: Build speech mapping from original English content ---
+	// Must happen before patchClassicFiles modifies MONKEY1.001.
+	fmt.Println("\n==> Building speech mapping...")
+	speechMapping, speechMapErr := classic.BuildSpeechMapping(tmpDir, translationPath)
+	if speechMapErr != nil {
+		fmt.Printf("    WARNING: could not build speech mapping: %v\n", speechMapErr)
+		speechMapping = nil
+	} else {
+		fmt.Printf("    %d translated strings mapped\n", len(speechMapping))
+	}
+
+	// --- Step 5: Apply all classic patches ---
 	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
 		return err
 	}
 
-	// --- Step 5: Read patched files back into PAK entries ---
+	// --- Step 6: Read patched files back into PAK entries ---
 	fmt.Println("\n==> Reading patched classic files...")
 	patched000, err := os.ReadFile(filepath.Join(tmpDir, "MONKEY1.000"))
 	if err != nil {
@@ -121,7 +136,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	entry000.Data = patched000
 	entry001.Data = patched001
 
-	// --- Step 6: Patch font lookup tables ---
+	// --- Step 7: Patch font lookup tables ---
 	fmt.Println("\n==> Patching font lookup tables...")
 	fontCount, err := remapFontEntries(entries)
 	if err != nil {
@@ -129,12 +144,30 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
-	// --- Step 7: Repack PAK ---
+	// --- Step 8: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
+
+	// --- Step 9: Patch speech.info EN slots ---
+	// speech.info lives next to Monkey1.pak in the audio/ subdirectory.
+	// Updating the EN slots makes audio cue lookup work after Swedish text
+	// replaces the English strings in MONKEY1.001.
+	if len(speechMapping) > 0 {
+		speechInfoPath := filepath.Join(filepath.Dir(inputPAK), "audio", "speech.info")
+		fmt.Println("\n==> Patching speech.info...")
+		if _, statErr := os.Stat(speechInfoPath); statErr != nil {
+			fmt.Printf("    WARNING: speech.info not found at %s — skipping audio sync\n", speechInfoPath)
+		} else {
+			n, err := speech.Patch(speechInfoPath, speechMapping)
+			if err != nil {
+				return fmt.Errorf("patching speech.info: %w", err)
+			}
+			fmt.Printf("    Updated %d subtitle entries\n", n)
+		}
+	}
 
 	return nil
 }
