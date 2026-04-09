@@ -373,7 +373,7 @@
 [014:VERB#0165](D8)Jag tar bara på mig den här om jag VERKLIGEN måste.
 [014:OBNA#0165](__)gryta
 [014:OBNA#0166](__)stege
-[014:VERB#0167](D8)Oj då!
+[014:VERB#0167](D8)Jösses!
 [014:VERB#0167](D8)Den brinner redan.
 [014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
 [014:OBNA#0167](__)flammande massa
@@ -389,7 +389,7 @@
 [014:LSCR#0202](14)Psspert.
 [014:LSCR#0202](14)Aaak.
 [014:LSCR#0202](14)Blfftp.
-[014:SCRP#0108](D8)Oj då!
+[014:SCRP#0108](D8)Jösses!
 [014:SCRP#0108](D8)Jag tror jag blir yr!
 [014:SCRP#0108](14)Överväldigad av ångorna och stanken förlorar Guybrush snabbt medvetandet.
 [014:SCRP#0108](14)Ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
@@ -436,84 +436,84 @@
 [016:SCRP#0157](D8)Wow, vilken djungel!\255\003Där är det stora bananträdet på stranden till vänster.
 [016:SCRP#0157](D8)Djungeln är ganska tät...\255\003...allt jag kan se är en massa djur som äter varandra!
 [016:SCRP#0157](D8)Hej, jag kan se utkiken på Mêlée Island®!\255\003Han tittar rakt på mig!
-[E][017:VERB#0237](D8)What I wouldn't give for a nice, big, water balloon right now.
-[E][017:OBNA#0237](__)ship deck
-[E][017:VERB#0238](D8)What a fine looking flag.\255\003Shivers me timbers just looking at it.
-[E][017:OBNA#0238](__)Jolly Roger
-[E][018:VERB#0249](D8)Looks sturdy.
-[E][018:OBNA#0249](__)sturdy stump
-[E][018:OBNA#0244](__)jungle
-[E][018:VERB#0248](D8)Looks strong.
-[E][018:OBNA#0248](__)strong branch
-[E][018:VERB#0245](D8)I don't think I can lasso them.
-[E][018:VERB#0245](94)It's a pair of oars.
-[E][018:OBNA#0245](__)oars
-[E][018:VERB#0243](D8)No bananas here.
-[E][018:VERB#0243](D8)The rope's not long enough to reach the canyon floor from the tree.
-[E][018:VERB#0243](D8)I'll try it with that branch.
-[E][018:OBNA#0243](__)tree
-[E][018:VERB#0239](D8)It's spooky, and I'm not going any further.
-[E][018:ENCD#0018](D8)What's that down there in the crack?
-[E][019:OBNA#0253](__)door
-[E][019:OBNA#0254](__)hatch
-[E][019:VERB#0256](D8)There's  no place back here to put the gunpowder.
-[E][019:VERB#0256](D8)That isn't going to work.
-[E][019:VERB#0256](D8)There's no fuse.
-[E][019:OBNA#0256](__)cannon
-[E][019:VERB#0257](D8)Déja vu!
-[E][019:VERB#0257](D8)That isn't going to work.
-[E][019:VERB#0257](D8)I have no desire to blast myself out to sea.
-[E][019:VERB#0257](D8)No way!  I'll crack my head open when I land!
-[E][019:VERB#0257](14)Hey! The cannon didn't go off!
-[E][019:VERB#0257](D8)It's much too dangerous to climb out there for no reason.
-[E][019:OBNA#0257](__)cannon nozzle
-[E][019:VERB#0258](D8)It's tied down.
-[E][019:OBNA#0258](__)rope ladder
-[E][019:VERB#0259](D8)What a buncha lazy pigs.
-[E][019:VERB#0259](14)What was that?
-[E][019:VERB#0259](D8)Nothing.
-[E][019:VERB#0259](D8)Yeah, what I wouldn't give to be able to hang them.
-[E][019:VERB#0259](D8)I don't feel that doing this is going to help the situation.
-[E][019:VERB#0259](D8)I have a feeling they're not the ones being used around here.
-[E][019:VERB#0259](D8)I don't think violence is the answer...\255\003...although it'd make me feel better.
-[E][019:VERB#0259](14)What was that?
-[E][019:VERB#0259](D8)Nothing.
-[E][019:OBNA#0259](__)mutinous crew
-[E][019:VERB#0260](D8)It's too far to walk to, and besides, I can't swim.
-[E][019:VERB#0260](D8)WOW!!!  This was well worth $59.95 + Tax
-[E][019:OBNA#0260](__)Monkey Island®
-[E][019:OBNA#0252](__)fuse
-[E][019:LSCR#0200](14)First of all...
-[E][019:LSCR#0200](14)I'd like to say it's great to be working with such a fine crew.
-[E][019:LSCR#0200](14)The voyage ahead is not going to be easy.\255\003It's going to take skill, endurance, and most of all...\255\003TEAMWORK.
-[E][019:LSCR#0200](14)First I thought we'd assign some duties.
-[E][019:LSCR#0200](14)What is it we were suckered into doing again?
-[E][019:LSCR#0200](14)I made a list.
-[E][019:LSCR#0200](14)'Suckered' is right.
-[E][019:LSCR#0200](14)I don't see what the big deal is with rescuing the Governor.\255\003She can clearly take care of herself.
-[E][019:LSCR#0200](14)The way I look at it...\255\003We've got this GREAT ship...
-[E][019:LSCR#0200](14)...well...\255\003...we've got A ship.\255\003Why don't we kick back, tie a rope to the wheel and cruise for a while.\255\003I could use a little work on my tan.
-[E][019:LSCR#0200](14)Come to think of it, I've been a little stressed out lately.\255\003I could use a rest.
-[E][019:LSCR#0200](14)Then it's decided...\255\003...we cruise the Caribbean.
-[E][019:LSCR#0200](14)--sigh--
-[E][019:LSCR#0204](D8)Hey look...
-[E][019:LSCR#0204](D8)...we've made it to Monkey Island®
-[E][019:LSCR#0204](14)Let us know when you've found the Governor...\255\003...we've got an extra chair she can use.
-[E][019:LSCR#0204](D8)I don't think they are going to be much help.
-[E][019:LSCR#0204](14)You got it.
-[E][019:LSCR#0204](D8)I don't think they're going to be any help.
-[E][019:LSCR#0204](14)What was that?
-[E][019:LSCR#0204](D8)Nothing.
-[E][019:LSCR#0204](FA)Hey guys, what's happening?
-[E][019:LSCR#0204](FA)Is there anything I can do to get you guys to help me?
-[E][019:LSCR#0204](FA)I hear the weather's pretty nice over by Monkey Island®.
-[E][019:LSCR#0204](FA)Hey!  I found a map to Monkey Island®.
-[E][019:LSCR#0204](FA)I'm going to give you mutineers five seconds to \254\008     come to your senses!
-[E][019:LSCR#0204](FA)I think I'll be getting back to tending the ship.
-[E][019:LSCR#0204](14)Beat it, Guybrush.
-[E][019:LSCR#0204](14)Nice try, Guybrush, but no banana.
-[E][019:LSCR#0204](D8)Then I'm going to start kicking some butt!
-[E][019:LSCR#0204](14)Excuse me Guybrush...\255\003...does the word 'keelhaul' mean anything to you?
+[017:VERB#0237](D8)Vad jag inte skulle ge för en stor, härlig vattenballong just nu.
+[017:OBNA#0237](__)skeppsdäck
+[017:VERB#0238](D8)Vilken fin flagga.\255\003Får mig att skaka i brallan bara att titta på den.
+[017:OBNA#0238](__)Jolly Roger
+[018:VERB#0249](D8)Ser stabil ut.
+[018:OBNA#0249](__)stabil stubbe
+[018:OBNA#0244](__)djungel
+[018:VERB#0248](D8)Ser stark ut.
+[018:OBNA#0248](__)stark gren
+[018:VERB#0245](D8)Jag tror inte jag kan lassoa dem.
+[018:VERB#0245](94)Det är ett par åror.
+[018:OBNA#0245](__)åror
+[018:VERB#0243](D8)Inga bananer här.
+[018:VERB#0243](D8)Repet är inte långt nog för att nå ravinens botten från trädet.
+[018:VERB#0243](D8)Jag testar med den grenen.
+[018:OBNA#0243](__)träd
+[018:VERB#0239](D8)Det är läskigt, och jag går inte längre.
+[018:ENCD#0018](D8)Vad är det där nere i sprickan?
+[019:OBNA#0253](__)dörr
+[019:OBNA#0254](__)lucka
+[019:VERB#0256](D8)Det finns ingen plats här bak att lägga krutet.
+[019:VERB#0256](D8)Det kommer inte fungera.
+[019:VERB#0256](D8)Det finns ingen stubin.
+[019:OBNA#0256](__)kanon
+[019:VERB#0257](D8)Déja vu!
+[019:VERB#0257](D8)Det kommer inte fungera.
+[019:VERB#0257](D8)Jag har ingen lust att spränga iväg mig själv till havs.
+[019:VERB#0257](D8)Aldrig i livet! Jag slår i huvudet när jag landar!
+[019:VERB#0257](14)Hej! Kanonen avfyrades inte!
+[019:VERB#0257](D8)Det är alldeles för farligt att klättra ut dit utan anledning.
+[019:OBNA#0257](__)kanonmynning
+[019:VERB#0258](D8)Den är fastbunden.
+[019:OBNA#0258](__)repstege
+[019:VERB#0259](D8)Vilket gäng lata grisar.
+[019:VERB#0259](14)Vad var det?
+[019:VERB#0259](D8)Inget.
+[019:VERB#0259](D8)Ja, vad jag inte skulle ge för att kunna hänga dem.
+[019:VERB#0259](D8)Jag känner inte att det här kommer hjälpa situationen.
+[019:VERB#0259](D8)Jag har en känsla av att det inte är de som blir utnyttjade här.
+[019:VERB#0259](D8)Jag tror inte våld är svaret...\255\003...även om det skulle få mig att må bättre.
+[019:VERB#0259](14)Vad var det?
+[019:VERB#0259](D8)Inget.
+[019:OBNA#0259](__)muterande besättning
+[019:VERB#0260](D8)Det är för långt att gå dit, och dessutom kan jag inte simma.
+[019:VERB#0260](D8)WOW!!! Det här var väl värt $59.95 + Moms
+[019:OBNA#0260](__)Monkey Island®
+[019:OBNA#0252](__)stubin
+[019:LSCR#0200](14)För det första...
+[019:LSCR#0200](14)Jag vill säga att det är underbart att få jobba med en sådan härlig besättning.
+[019:LSCR#0200](14)Resan framför oss kommer inte bli lätt.\255\003Det kommer kräva skicklighet, uthållighet, och framför allt...\255\003LAGARBETE.
+[019:LSCR#0200](14)Först tänkte jag att vi skulle fördela några uppgifter.
+[019:LSCR#0200](14)Vad var det vi blev lurade att göra igen?
+[019:LSCR#0200](14)Jag har gjort en lista.
+[019:LSCR#0200](14)'Lurade' är rätt ord.
+[019:LSCR#0200](14)Jag förstår inte vad grejen är med att rädda Guvernören.\255\003Hon kan uppenbarligen klara sig själv.
+[019:LSCR#0200](14)Som jag ser det...\255\003Vi har det här FANTASTISKA skeppet...
+[019:LSCR#0200](14)...ja...\255\003...vi har ETT skepp.\255\003Varför tar vi inte det lugnt, binder ett rep vid ratten och kryssar ett tag.\255\003Jag skulle kunna behöva jobba lite på solbrännan.
+[019:LSCR#0200](14)Nu när jag tänker efter, jag har varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
+[019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
+[019:LSCR#0200](14)--suck--
+[019:LSCR#0204](D8)Hej titta...
+[019:LSCR#0204](D8)...vi har kommit till Monkey Island®
+[019:LSCR#0204](14)Säg till när du har hittat Guvernören...\255\003...vi har en extra stol hon kan använda.
+[019:LSCR#0204](D8)Jag tror inte de kommer vara till mycket hjälp.
+[019:LSCR#0204](14)Du sa det.
+[019:LSCR#0204](D8)Jag tror inte de kommer vara till någon hjälp.
+[019:LSCR#0204](14)Vad var det?
+[019:LSCR#0204](D8)Inget.
+[019:LSCR#0204](FA)Hej grabbar, vad händer?
+[019:LSCR#0204](FA)Finns det något jag kan göra för att få er att hjälpa mig?
+[019:LSCR#0204](FA)Jag har hört att vädret är riktigt fint vid Monkey Island®.
+[019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island®.
+[019:LSCR#0204](FA)Jag ger er muterister fem sekunder att \254\008     komma till sans!
+[019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
+[019:LSCR#0204](14)Stick, Guybrush.
+[019:LSCR#0204](14)Fint försök, Guybrush, men ingen banan.
+[019:LSCR#0204](D8)Då börjar jag sparka lite arsle!
+[019:LSCR#0204](14)Ursäkta mig Guybrush...\255\003...säger ordet 'kölhala' dig något?
 [E][019:LSCR#0204](FA)I see your point, thanks.
 [E][019:LSCR#0204](FA)Keelhaul /Kê(e)l-hol\254\001   1: to haul under the keel of a ship as punishment\254\001       or torture.
 [E][019:LSCR#0204](14)I see your point, thanks.
