@@ -24,7 +24,7 @@
 - **Guybrush Threepwood** - protagonist
 - **Elaine Marley** - Governor
 - **LeChuck** - ghost pirate captain
-- **Herman Toothrot** - castaway
+- **Herman Toothrot** → **Herman Rötbett** - castaway
 - **Carla** - the Sword Master
 - **Fester Shinetop** - sheriff
 - **Stan** - used ship salesman
@@ -182,7 +182,7 @@ Keep pirate-era measurements:
 4. **Formality Levels**:
    - Governor Marley: Formal/educated Swedish (but not stuffy)
    - Pirates: Casual, colorful, slang - they're criminals with personality
-   - Herman Toothrot: Rambling, slightly crazy, tangential
+   - Herman Rötbett (Herman Toothrot): Rambling, slightly crazy, tangential
    - Stan: Fast-talking salesman - energetic, persuasive, over-the-top
 
 5. **Humor and Sarcasm**: 
