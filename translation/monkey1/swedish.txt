@@ -80,43 +80,43 @@
 [E][007:SCRP#0148](D8)That's the last entry.
 [E][007:SCRP#0184](14) 
 [E][007:SCRP#0184](D8)Man, that's heavy.  Filled, no doubt, with gold and jewels.
-[E][008:OBNA#0089](__)ladder
-[E][008:VERB#0090](D8)WOW! Gunpowder!\255\003I think I'll take some.
-[E][008:VERB#0090](D8)I'll take some more.
-[E][008:VERB#0090](D8)I've got enough gunpowder for now.
-[E][008:VERB#0090](D8)They look like kegs of gunpowder.
-[E][008:OBNA#0090](__)kegs
-[E][008:VERB#0091](D8)It's a \255\006\100\000.
-[E][008:VERB#0091](D4)piece of rope
-[E][008:VERB#0091](D4)small piece of rope
-[E][008:VERB#0091](D4)tiny piece of rope
-[E][008:VERB#0091](D4)dinky little rope
-[E][008:VERB#0091](D4)infinitesimally small rope
-[E][008:OBNA#0091](__)giant piece of rope
-[E][008:VERB#0092](D8)There's some VERY fine wine in here.\255\003I'll grab it.
-[E][008:VERB#0092](D8) 
-[E][008:VERB#0092](D8)It's empty.
-[E][008:VERB#0092](D8)It looks like an old pirate's chest.
-[E][008:OBNA#0092](__)chest
-[E][008:VERB#0093](D8)They're rusted shut.
-[E][008:VERB#0093](D8)They're just old rusty trunks.
-[E][008:OBNA#0093](__)trunks
-[E][008:VERB#0094](D8)They're empty.
-[E][008:VERB#0094](D8)They're just old empty kegs.
-[E][008:OBNA#0094](__)kegs
-[E][008:VERB#0101](D8)Looks explosive.
-[E][008:OBNA#0101](__)gunpowder
-[E][008:VERB#0102](D8)They're all rusted shut.
-[E][008:VERB#0102](D8)They're just old rusty chests.
-[E][008:OBNA#0102](__)chests
-[E][008:VERB#0103](D8)It's rusted shut.
-[E][008:VERB#0103](D8)It's just an old rusty chest.
-[E][008:OBNA#0103](__)black chest
-[E][008:VERB#0104](D8)Ah, nice bouquet.
-[E][008:VERB#0104](D8)I think it needs to breathe at room temperature for a while longer.
-[E][008:VERB#0104](D8)I'm no enologist, but judging from the deep red color...\255\003...this is a very fine wine.
-[E][008:OBNA#0104](__)fine wine
-[E][008:ENCD#0008](D8)Yech!!!\255\003The unmistakable stench of Monkeys!!!\255\003This whole ship smells like hot, sweaty primates.\255\003I knew I should have taken it for a test sail.
+[008:OBNA#0089](__)stege
+[008:VERB#0090](D8)WOW! Krut!\255\003Jag tar lite.
+[008:VERB#0090](D8)Jag tar lite till.
+[008:VERB#0090](D8)Jag har tillräckligt med krut för tillfället.
+[008:VERB#0090](D8)Det ser ut som fat med krut.
+[008:OBNA#0090](__)fat
+[008:VERB#0091](D8)Det är en \255\006\100\000.
+[008:VERB#0091](D4)repbit
+[008:VERB#0091](D4)liten repbit
+[008:VERB#0091](D4)pytteliten repbit
+[008:VERB#0091](D4)miniliten repbit
+[008:VERB#0091](D4)oändligt liten repbit
+[008:OBNA#0091](__)gigantiskt rep
+[008:VERB#0092](D8)Det finns ett RIKTIGT fint vin här.\255\003Jag tar det.
+[008:VERB#0092](D8)
+[008:VERB#0092](D8)Den är tom.
+[008:VERB#0092](D8)Det ser ut som en gammal piratkista.
+[008:OBNA#0092](__)kista
+[008:VERB#0093](D8)De är rostigt igenstängda.
+[008:VERB#0093](D8)Det är bara gamla rostiga kistor.
+[008:OBNA#0093](__)kistor
+[008:VERB#0094](D8)De är tomma.
+[008:VERB#0094](D8)Det är bara gamla tomma fat.
+[008:OBNA#0094](__)fat
+[008:VERB#0101](D8)Ser explosivt ut.
+[008:OBNA#0101](__)krut
+[008:VERB#0102](D8)De är alla rostigt igenstängda.
+[008:VERB#0102](D8)Det är bara gamla rostiga kistor.
+[008:OBNA#0102](__)kistor
+[008:VERB#0103](D8)Den är rostigt igenstängd.
+[008:VERB#0103](D8)Det är bara en gammal rostig kista.
+[008:OBNA#0103](__)svart kista
+[008:VERB#0104](D8)Ah, fin bukett.
+[008:VERB#0104](D8)Jag tror det behöver andas i rumstemperatur ett tag till.
+[008:VERB#0104](D8)Jag är ingen vinexpert, men att döma av den djupröda färgen...\255\003...så är detta ett mycket fint vin.
+[008:OBNA#0104](__)fint vin
+[008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat den.
 [E][009:VERB#0108](D8)I think I'm going to get seasick.
 [E][009:VERB#0108](D8)It's shut tight.
 [E][009:OBNA#0108](__)window
