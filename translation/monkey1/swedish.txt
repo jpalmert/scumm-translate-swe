@@ -20,19 +20,19 @@
 [002:SCRP#0039](93)
 [002:SCRP#0099](27)....................................................................................................
 [002:SCRP#0099](27)....................................................................................................
-[E][003:OBNA#0043](__)beach
-[E][003:OBNA#0044](__)fort
-[E][004:OBNA#0059](__)pond
-[E][004:OBNA#0051](__)river fork
-[E][004:OBNA#0058](__)dry river bed
-[E][004:ENCD#0004](54)river
-[E][005:OBNA#0067](__)pond
-[E][005:OBNA#0066](__)dry river bed
-[E][005:OBNA#0063](__)clearing
-[E][005:OBNA#0060](__)beach
-[E][005:ENCD#0005](54)river
-[E][006:OBNA#0071](__)beach
-[E][006:OBNA#0072](__)village
+[003:OBNA#0043](__)strand
+[003:OBNA#0044](__)fort
+[004:OBNA#0059](__)damm
+[004:OBNA#0051](__)flodförgrening
+[004:OBNA#0058](__)torrfåra
+[004:ENCD#0004](54)flod
+[005:OBNA#0067](__)damm
+[005:OBNA#0066](__)torrfåra
+[005:OBNA#0063](__)glänta
+[005:OBNA#0060](__)strand
+[005:ENCD#0005](54)flod
+[006:OBNA#0071](__)strand
+[006:OBNA#0072](__)by
 [E][007:OBNA#0074](__)dusty book
 [E][007:OBNA#0082](__)ink
 [E][007:VERB#0075](D8)I have nothing important to write.\255\003I never do.
