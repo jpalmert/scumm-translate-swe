@@ -1527,295 +1527,295 @@
 [030:LSCR#0204](14)Okej, hosta upp slantarna.
 [030:LSCR#0204](14)Kanske du vill betala för det där?
 [030:LSCR#0204](14)Kanske du vill betala för de där?
-[E][030:LSCR#0206](14)What about it?
-[E][030:LSCR#0206](FA)I want it.
-[E][030:LSCR#0206](FA)How much is it?
-[E][030:LSCR#0206](FA)I don't want it.
-[E][030:LSCR#0207](14)It never fails!\255\003I step away from the counter for two seconds and some idiot's already ringing that stupid bell!
-[E][030:LSCR#0207](14)I should've known it'd be you again.
-[E][030:LSCR#0207](14)The Sword Master says you can jump in the lake, by the way.
-[E][030:LSCR#0207](14) 
-[E][030:LSCR#0210](14)Sorry, no refunds.
-[E][030:LSCR#0210](14)Sorry, no refunds.
-[E][030:LSCR#0210](14)No thanks.  I like my breath this way.
-[E][030:LSCR#0210](14)What's that for?
-[E][030:LSCR#0210](D8)I'm not that stupid.
-[E][030:LSCR#0210](14)I didn't say you were.\255\003Not out loud, at least.
-[E][030:LSCR#0210](14)We only take cash here.
-[E][030:LSCR#0211](14)Waddya want?
-[E][030:LSCR#0211](FA)About this sword...
-[E][030:LSCR#0211](FA)About this shovel...
-[E][030:LSCR#0211](FA)I'm looking for the Sword Master of Mêlée Island®.
-[E][030:LSCR#0211](FA)Now that I have this sword, who can I test it out on?
-[E][030:LSCR#0211](FA)I'm interested in procuring a note of credit.
-[E][030:LSCR#0211](FA)I could really use a breath mint.
-[E][030:LSCR#0211](FA)I'd like some rat repellent, please.
-[E][030:LSCR#0211](FA)Do you have files?
-[E][030:LSCR#0211](FA)I think I'd just like to browse.
-[E][030:LSCR#0211](D8)I think I'd just like to browse for now.
-[E][030:LSCR#0211](14)I already told you, it's 100 pieces of eight.\255\003Did you bring enough money this time?
-[E][030:LSCR#0211](14)That's 100 pieces of eight.\255\003Take it or leave it.
-[E][030:LSCR#0211](FA)I'll take it.
-[E][030:LSCR#0211](FA)I don't have enough money.
-[E][030:LSCR#0211](FA)I don't want it.
-[E][030:LSCR#0211](14)Great.
-[E][030:LSCR#0211](14)Best 100 pieces of eight you ever spent.
-[E][030:LSCR#0211](14)Figures.
-[E][030:LSCR#0211](14)How else do you want to waste my time?
-[E][030:LSCR#0211](14)Same price as the last time you asked me:\255\00375 pieces of eight.
-[E][030:LSCR#0211](14)Another would-be treasure hunter, eh?\255\003That'll cost you 75 pieces of eight.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](FA)I'll take it.
-[E][030:LSCR#0211](FA)75 pieces of eight?  I don't have that much.
-[E][030:LSCR#0211](FA)I don't want it.
-[E][030:LSCR#0211](14)Great.\255\003It'll pay for itself, believe me.\255\003You'll dig up 75 pieces of eight in no time.\255\003But hey, save some treasure for the rest of us, would ya?\255\003Ha ha ha!
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)Then you'd better go put it back.
-[E][030:LSCR#0211](14)Is there something here maybe that you CAN afford?
-[E][030:LSCR#0211](14)Well if you're looking for a good fight...\255\003We've got the best swordfighter in all the Caribbean right here on Mêlée Island®.\255\003Of course, no one knows where her secret hideout is...
-[E][030:LSCR#0211](14)Look, I told you, she doesn't want to see you.
-[E][030:LSCR#0211](94)Maybe if you asked her again?
-[E][030:LSCR#0211](14)Yeah, like I'm going to fall for that one again!
-[E][030:LSCR#0211](94)Oh, please.\255\003I won't steal anything this time, I promise.
-[E][030:LSCR#0211](14)Be right back.
-[E][030:LSCR#0211](14)Wait a second!
-[E][030:LSCR#0211](14)You sneaky, light-fingered little weasel...
-[E][030:LSCR#0211](94)You don't think I'm stupid enough to try the same trick three times in a row, do you?
-[E][030:LSCR#0211](14)You're really starting to tick me off.
-[E][030:LSCR#0211](14)The Sword Master of Mêlée Island®?\255\003Hmmm...  I don't know...\255\003Nobody knows the whereabouts of her secret hideout...
-[E][030:LSCR#0211](14)...nobody except me.\255\003I'd have to go and ask her if it's okay to show you the way.
-[E][030:LSCR#0211](14)Hmmm...
-[E][030:LSCR#0211](14)I guess I could hike all the way over there...
-[E][030:LSCR#0211](14)...AGAIN.
-[E][030:LSCR#0211](14)...ONCE.
-[E][030:LSCR#0211](14)Be right back.
-[E][030:LSCR#0211](14)AND DON'T TOUCH ANYTHING!
-[E][030:LSCR#0211](14)I've got my eyes on you, weasel-boy!\255\003Don't try anything!
-[E][030:LSCR#0211](14)And none of your old tricks!
-[E][030:LSCR#0211](14)I can't believe I'm doing this again!
-[E][030:LSCR#0211](14)I expect to be back in about five seconds.
-[E][030:LSCR#0211](14)AND DON'T TOUCH--
-[E][030:LSCR#0211](14)Ah, I'm tired of this crap.
-[E][030:LSCR#0211](14)Blah, blah, blah, eyes in the back of my head, blah, blah, blah...\255\003...blah, blah, blah, wring your neck, blah, blah, blah...\255\003...you know the story.
-[E][030:LSCR#0211](14)This is really getting boring.
-[E][030:LSCR#0211](14)You are, are you?\255\003Got a job?
-[E][030:LSCR#0211](14)Got yourself a job finally, eh?
-[E][030:LSCR#0211](FA)Yes, of course I do.
-[E][030:LSCR#0211](FA)To be honest, sir, I am not employed.
-[E][030:LSCR#0211](14)All right.\255\003I'll get one of my notes and we'll fill it out.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)Let's see here...\255\003What did you say your occupation was?
-[E][030:LSCR#0211](FA)I'm a grog-swilling, foul-smelling pirate.
-[E][030:LSCR#0211](FA)I'm waiting tables at the Scumm Bar.
-[E][030:LSCR#0211](FA)I'm an acrobat with a traveling circus.
-[E][030:LSCR#0211](FA)I clean ships over at Stan's used ship yard.
-[E][030:LSCR#0211](FA)To be honest, sir, I'm between jobs.
-[E][030:LSCR#0211](14)Foul-smelling, yes...\255\003Grog-swilling, maybe...\255\003But a pirate?\255\003Don't make me laugh.\255\003Come back when you've got some tattoos or a pegleg or at least an eyepatch, for crying out loud.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)...and I'm the Queen of England.\255\003The cook over there waits all his own tables.
-[E][030:LSCR#0211](14)He likes to spit on all his customers personally.\255\003Not only are you unemployed, you're a liar!
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)You're one of the Fettucini brothers?\255\003Where's your silly accent?\255\003And where're your silly slippers?
-[E][030:LSCR#0211](14)Come back when you've got a job in a credible business.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)I haven't seen a clean ship over there in years.\255\003You're either lying, or you're just a crummy worker.\255\003Either way, I don't trust you.
-[E][030:LSCR#0211](14)I appreciate your honesty.\255\003But I didn't get to be eighty-three by being no jackass.
-[E][030:LSCR#0211](14)No job, no credit.\255\003Come see me when you land a job, and we'll talk.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)Thank you for telling me that.\255\003I respect your honesty.\255\003But I didn't get to be eighty-three by being no jackass.\255\003No job, no credit.
-[E][030:LSCR#0211](14)Come back when you've got one.
-[E][030:LSCR#0211](14)You're telling me!
-[E][030:LSCR#0211](14)Here take one...\255\003...please.\255\003Take a whole roll!\255\003That'll be one piece of eight.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0211](14)I got some, but they ain't free.
-[E][030:LSCR#0211](14)Hah!\255\003I'll bet you would.\255\003But I haven't got any.
-[E][030:LSCR#0211](14)Did you mean hanging files or nail files?
-[E][030:LSCR#0211](FA)Yes.
-[E][030:LSCR#0211](FA)Hanging files.
-[E][030:LSCR#0211](FA)Nail files.
-[E][030:LSCR#0211](FA)No, the metal kind you use to open locks with.
-[E][030:LSCR#0211](14)Ah.\255\003Sorry, we're out of those.
-[E][030:LSCR#0211](14)What else do you want?
-[E][030:LSCR#0211](14)Hey, this ain't no boutique.\255\003Don't take all day.
-[E][030:LSCR#0211](14)Okay, but don't put your lips on anything.
-[E][030:LSCR#0211](14)Whatever.
-[E][030:LSCR#0211](14)Okay.\255\003Wake me up if you need anything.
-[E][030:LSCR#0211](14)Be my guest, fancy pants.
-[E][030:LSCR#0211](14) 
-[E][030:LSCR#0212](14)Got a special on shovels today...
-[E][030:LSCR#0212](14)Could you hurry up?\255\003I was hoping to close early today.
-[E][030:LSCR#0212](14)If you're thinking about stealing something, think again.
-[E][030:LSCR#0212](14)Hurry up!
-[E][030:LSCR#0212](14)Come on!  Just buy something.
-[E][030:LSCR#0212](14)What do you think this is?  A museum?
-[E][030:LSCR#0212](14)I don't have all day.
-[E][030:LSCR#0212](14)Let's go, fancy-pants!
-[E][030:LSCR#0212](14)Don't think, just buy!
-[E][030:LSCR#0212](14)Did you just come in here to get out of the cold, or do you need something?
-[E][030:LSCR#0212](14)Are you waiting for me to fall asleep or something?
-[E][030:LSCR#0212](14)Can I help you?
-[E][030:LSCR#0212](14)Got a good deal on swords right now...
-[E][030:LSCR#0213](D8)Looks mean and ugly.
-[E][030:LSCR#0213](14)Oh yeah?  Well so's your old lady.
-[E][030:SCRP#0067](13)storekeeper
-[E][031:OBNA#0400](__)doorway
-[E][031:OBNA#0403](__)lock
-[E][031:VERB#0405](D8)Talk to death-breath?  No thanks.
-[E][031:VERB#0405](D8)Looks nervous.
-[E][031:OBNA#0405](__)prisoner
-[E][031:OBNA#0404](__)lock
-[E][031:VERB#0401](D8)It's locked.
-[E][031:VERB#0401](D8)I think it's welded shut now.
-[E][031:VERB#0401](D8)I'd better not wear it out before I get the idol.
-[E][031:VERB#0401](D8)I don't think that'll open it.
-[E][031:OBNA#0401](__)cell
-[E][031:VERB#0402](D8)It's locked.
-[E][031:VERB#0402](D8)I think it's welded shut now.
-[E][031:VERB#0402](D8)No need for that now.
-[E][031:OBNA#0402](__)cell
-[E][031:VERB#0420](54)file
-[E][031:VERB#0420](D8)There's a file in it!
-[E][031:VERB#0420](D8)It's heavy.
-[E][031:VERB#0420](D8)It's a raspy metal file.
-[E][031:OBNA#0420](__)cake
-[E][031:LSCR#0201](13)Otis
-[E][031:LSCR#0201](13)prisoner
-[E][031:LSCR#0202](14)So, have you come to release me?
-[E][031:LSCR#0202](14)Come to interrogate the prisoner again, eh?
-[E][031:LSCR#0202](FA)Who are you?
-[E][031:LSCR#0202](FA)What did you do to wind up in there?
-[E][031:LSCR#0202](FA)So, how's the food in there?
-[E][031:LSCR#0202](FA)What was that you said about flowers?
-[E][031:LSCR#0202](FA)So who'd want to frame you?
-[E][031:LSCR#0202](FA)Sheriff Shinetop sure is a jerk, isn't he?
-[E][031:LSCR#0202](FA)Who's the sheriff around here?
-[E][031:LSCR#0202](FA)The Governor's been kidnapped!
-[E][031:LSCR#0202](FA)If I let you out, would you join my crew?
-[E][031:LSCR#0202](FA)Would you happen to have a file?
-[E][031:LSCR#0202](FA)Can I get you anything?
-[E][031:LSCR#0202](FA)Well, keep a stiff upper lip.  I've gotta go.
-[E][031:LSCR#0202](54)Otis
-[E][031:LSCR#0202](14)My name is Otis.\255\003At least, I think it is.\255\003I've been in here so long I can hardly remember.
-[E][031:LSCR#0202](14)You've got to get me out of here before I lose my mind completely!\255\003Can't you see I'm innocent?
-[E][031:LSCR#0202](14) 
-[E][031:LSCR#0202](FA)But why are you in jail, if you're innocent?
-[E][031:LSCR#0202](FA)You don't look innocent to me.
-[E][031:LSCR#0202](14)I was framed!\255\003I didn't touch the stupid flowers!
-[E][031:LSCR#0202](FA)What flowers?
-[E][031:LSCR#0202](FA)Could you tell me the name of those flowers again?
-[E][031:LSCR#0202](FA)Who framed you?
-[E][031:LSCR#0202](FA)How's the food in there?
-[E][031:LSCR#0202](FA)What did you say you ate in there?
-[E][031:LSCR#0202](14)The yellow Caniche Endormi flowers in the forest--\255\003It's against the law to pick them.
-[E][031:LSCR#0202](14)I don't know who exactly...\255\003I think it was a conspiracy.\255\003And if there's one type of piracy I don't like...\255\003...it's CONS-piracy.
-[E][031:LSCR#0202](14) 
-[E][031:LSCR#0202](14)You wouldn't either if you'd been in here as long as I have.
-[E][031:LSCR#0202](14)I didn't do anything.\255\003Especially not to those dumb flowers.
-[E][031:LSCR#0202](14)That's why I'm in here, because of those stupid flowers...
-[E][031:LSCR#0202](14)No kidding.
-[E][031:LSCR#0202](14)You mean you haven't run into the new sheriff yet?\255\003You're a lucky man.\255\003It's best to avoid Fester Shinetop.
-[E][031:LSCR#0202](14) 
-[E][031:LSCR#0202](FA)Fester who?
-[E][031:LSCR#0202](FA)What's so bad about him?
-[E][031:LSCR#0202](FA)You're just saying that because he put you in jail.
-[E][031:LSCR#0202](FA)I'll keep that in mind.  See you later.
-[E][031:LSCR#0202](14)Fester Shinetop is the meanest man on Mêlée Island®.\255\003Luckily, the Governor keeps him in check most of the time.
-[E][031:LSCR#0202](14)We used to have a fair, decent man for a sheriff--\255\003--but he recently died under mysterious circumstances.
-[E][031:LSCR#0202](14)If you ask me, I think the new sheriff had something to do with it.
-[E][031:LSCR#0202](14)I think you've said enough, Otis!
-[E][031:LSCR#0202](14)Whoops.
-[E][031:LSCR#0202](14)No!  Ask anyone...
-[E][031:LSCR#0202](14)Go get me a lawyer!\255\003A cheap one!
-[E][031:LSCR#0202](14)Sure!\255\003Of course!\255\003To my emancipator, I shall be eternally indebted.
-[E][031:LSCR#0202](14)Until then, I pace.
-[E][031:LSCR#0202](14)What?
-[E][031:LSCR#0202](D8)Here, look at this note.
-[E][031:LSCR#0202](14)They've kidnapped the Governor?
-[E][031:LSCR#0202](14)That really makes me mad.\255\003I feel like kicking someone.
-[E][031:LSCR#0202](14)Hmmm...\255\003I wonder if she left her place unlocked...
-[E][031:LSCR#0202](14) 
-[E][031:LSCR#0202](14)Yes...\255\003YOU CAN GET ME OUT OF HERE!
-[E][031:LSCR#0202](14)Actually, something to get rid of these rats would be nice.
-[E][031:LSCR#0202](14)I'd trade you this carrot cake my Aunt Tillie made.\255\003I hate carrot cake.
-[E][031:LSCR#0202](14)You think I'd be in here if I did?\255\003All I have is this carrot cake my Aunt Tillie made me.
-[E][031:LSCR#0202](14)You can have THAT if you bring me something to get rid of these rats.\255\003I can't stand carrot cake.
-[E][031:LSCR#0202](14)Thanks a lot.
-[E][031:LSCR#0202](14)Oh, you know, the usual...\255\003Slop, grog, gruel...\255\003Rats, bugs, and body lice if I can catch them.
-[E][031:LSCR#0202](14)I have a carrot cake my Aunt Tillie made, even though she knows I detest carrot cake.
-[E][031:LSCR#0202](14)Actually, the cook at the bar is an old friend of mine, and sometimes he sneaks me food.\255\003Like pork trimmings--mostly feet and lips--but once in a while...\255\003...he brings this really odd rump roast...
-[E][031:LSCR#0202](14) 
-[E][031:LSCR#0202](FA)That's disgusting.  I don't want to hear any more.
-[E][031:LSCR#0202](FA)What was so odd about the rump roast?
-[E][031:LSCR#0202](14)Hey, man, you asked.
-[E][031:LSCR#0202](14)Well, it's the only rump roast I've ever seen with a prehensile tail.
-[E][031:LSCR#0202](14)Look, I like visitors and everything,\255\003but I don't have much more to say.\255\003Plus, my throat's getting dry from all this talking.
-[E][031:LSCR#0202](14)Why don't you go find someone else to talk to?\255\003It's not like I'm the ONLY pirate left on the island or anything.
-[E][031:LSCR#0202](14)I told you, I don't have much more to say.
-[E][031:LSCR#0202](14)Look, I appreciate you trying to keep me company and everything...\255\003But unless you're a lawyer...
-[E][031:LSCR#0202](14)...or you know some way to magically dissolve this lock...
-[E][031:LSCR#0202](14)...I really don't see any point in continuing this conversation.
-[E][031:LSCR#0202](14)You gotta get me out of here!\255\003I'm a victim of society.
-[E][031:LSCR#0202](D8)Not to mention halitosis.
-[E][031:LSCR#0202](D8)Yuck!
-[E][031:LSCR#0202](14)Hey, it's hard to keep my breath minty-fresh when there's nothing to eat in here but rats.
-[E][031:LSCR#0202](14) 
-[E][031:LSCR#0203](D8)But I need it to get the idol.
-[E][031:LSCR#0203](14)Ooooh!\255\003Grog-O-Mint!\255\003How refreshing!\255\003Thanks.
-[E][031:LSCR#0203](14)Hey, this might work on the rats!\255\003Thanks!
-[E][031:LSCR#0203](14)Here's the cake.
-[E][031:LSCR#0203](14)Here, take this carrot cake in exchange.\255\003My Aunt Tillie made it.
-[E][031:LSCR#0203](14)I told you, I HATE carrot cake!
-[E][031:LSCR#0203](14)I don't need your charity buddy.
-[E][031:LSCR#0203](14)Well, maybe just one piece.
-[E][031:LSCR#0203](14)I don't want anything but my freedom!
-[E][031:LSCR#0203](14)...and maybe a breath mint.
-[E][031:LSCR#0203](14)...and maybe something to get rid of these rats.
-[E][031:LSCR#0203](14) 
-[E][031:LSCR#0203](D8)Man!  Talk about bad breath!
-[E][031:LSCR#0208](14)My name's Otis, by the way.
-[E][031:LSCR#0208](14)If there's anything I can ever do for you--
-[E][031:LSCR#0208](D8)Well, actually, there is something...\255\003I'm looking for brave people to join my crew and sail off to Monkey Island® with me to rescue the Governor.
-[E][031:LSCR#0208](D8)She's been abducted by the fearsome pirate LeChuck, and is being held against her will somewhere in his secret hideout.
-[E][031:LSCR#0208](14)I see...
-[E][031:LSCR#0208](14)Well, yes, hmmm...
-[E][031:LSCR#0208](14)LeChuck, you say?\255\003Well, yes.  Yes, of course.  We must sail to Monkey Island® and--
-[E][031:LSCR#0208](14)HEY!  LOOK BEHIND YOU!  A THREE-HEADED MONKEY!
-[E][031:LSCR#0208](D8)I can't believe I fell for that.
-[E][031:LSCR#0208](D8)Pretty good trick, though.
-[E][031:LSCR#0208](14) 
-[E][031:LSCR#0209](14)I hope you haven't been taking this filthy vagrant too seriously.\255\003He'd say anything to avoid paying his debt to society.
-[E][031:LSCR#0209](14) 
-[E][031:LSCR#0209](FA)He seems innocent to me.  Why don't you let him out?
-[E][031:LSCR#0209](FA)He IS filthy.  And he smells bad too.
-[E][031:LSCR#0209](FA)Do you mind?  We were having a private conversation.
-[E][031:LSCR#0209](FA)Omigosh!  LOOK at the time!  I'd LOVE to stay and chat, but...
-[E][031:LSCR#0209](14)Maybe you should mind your own business, stranger.\255\003I'll decide who's innocent and who's guilty around here.
-[E][031:LSCR#0209](14)Hey, thanks a lot.
-[E][031:LSCR#0209](14)You've got a lot of nerve coming into this town and passing judgement on the locals.\255\003If there's something you don't like about the way we smell, you're welcome to leave anytime.
-[E][031:LSCR#0209](14)Don't take that tone with me, monkey-boy.\255\003Or I'll gladly lock you up in there with Otis...\255\003...then you'd have plenty of time for private conversation.
-[E][031:LSCR#0209](14)I see.\255\003You have the time to consort with criminals, but not with those interested in upholding the law.
-[E][031:LSCR#0209](D8)Sorry.
-[E][031:LSCR#0209](14)Look, I don't know what you're up to...\255\003...but whatever it is, it's probably illegal.\255\003So forget it.
-[E][031:LSCR#0209](14)Wherever you go on Mêlée®, I'll be watching.\255\003And if you try any monkey business, you'll end up in here for good.
-[E][031:LSCR#0209](14)Man, is he a pill or what?\255\003You see what I have to put up with?
-[E][031:LSCR#0209](14)You'd better go before you get us both in trouble.
-[E][031:SCRP#0070](D8)This mug isn't much use anymore.
-[E][031:SCRP#0070](D8)An empty mug isn't much use here.
-[E][031:SCRP#0070](14)Hey, great, a drink!\255\003I'm real thirsty.
-[E][031:SCRP#0070](14)Yiiikes!
-[E][031:SCRP#0070](D8)Whoops.
-[E][031:SCRP#0070](14)Wow.\255\003And to think I used to drink that stuff...
-[E][031:SCRP#0070](14)I'm free!
-[E][031:SCRP#0070](14)Oh yeah, thanks.
-[E][031:SCRP#0070](14)Sucker!!
-[E][031:SCRP#0070](14)HA HA HA!!!
-[E][031:SCRP#0070](D8)But...
-[E][031:SCRP#0070](D8)Do we still have a deal?
-[E][031:SCRP#0070](D8)I'm sure he'll be back...\255\003He gave me his word as a pirate.
-[E][031:SCRP#0070](14)Oh great, just great.\255\003Save the rat and leave me in here to rot.\255\003You're a real humanitarian, buddy.
-[E][031:SCRP#0070](14)I guess my lawyer was right...\255\003I shoulda squealed.
-[E][031:SCRP#0070](14) 
+[030:LSCR#0206](14)Vad är det med den?
+[030:LSCR#0206](FA)Jag vill ha den.
+[030:LSCR#0206](FA)Hur mycket kostar den?
+[030:LSCR#0206](FA)Jag vill inte ha den.
+[030:LSCR#0207](14)Det slår aldrig fel!\255\003Jag lämnar disken i två sekunder och nån idiot ringer redan i den där dumma klockan!
+[030:LSCR#0207](14)Jag borde ha vetat att det var du igen.
+[030:LSCR#0207](14)Svärdmästaren säger att du kan hoppa i sjön, förresten.
+[030:LSCR#0207](14)
+[030:LSCR#0210](14)Tyvärr, inga återköp.
+[030:LSCR#0210](14)Tyvärr, inga återköp.
+[030:LSCR#0210](14)Nej tack. Jag gillar min andedräkt som den är.
+[030:LSCR#0210](14)Vad ska det vara bra för?
+[030:LSCR#0210](D8)Så dum är jag inte.
+[030:LSCR#0210](14)Det sa jag inte.\255\003Inte högt, i alla fall.
+[030:LSCR#0210](14)Vi tar bara kontant här.
+[030:LSCR#0211](14)Vaddå vill du?
+[030:LSCR#0211](FA)Angående det här svärdet...
+[030:LSCR#0211](FA)Angående den här spaden...
+[030:LSCR#0211](FA)Jag letar efter Svärdmästaren på Mêlée Island®.
+[030:LSCR#0211](FA)Nu när jag har det här svärdet, vem kan jag testa det på?
+[030:LSCR#0211](FA)Jag är intresserad av att skaffa ett skuldebrev.
+[030:LSCR#0211](FA)Jag skulle verkligen behöva en mintpastill.
+[030:LSCR#0211](FA)Jag skulle vilja ha lite råttgift, tack.
+[030:LSCR#0211](FA)Har ni filar?
+[030:LSCR#0211](FA)Jag tror jag bara vill titta runt.
+[030:LSCR#0211](D8)Jag tror jag bara vill titta runt så länge.
+[030:LSCR#0211](14)Jag har redan sagt, det kostar 100 åttor.\255\003Hade du med dig tillräckligt den här gången?
+[030:LSCR#0211](14)Det blir 100 åttor.\255\003Ta det eller lämna det.
+[030:LSCR#0211](FA)Jag tar det.
+[030:LSCR#0211](FA)Jag har inte tillräckligt med pengar.
+[030:LSCR#0211](FA)Jag vill inte ha det.
+[030:LSCR#0211](14)Utmärkt.
+[030:LSCR#0211](14)Bästa 100 åttorna du nånsin spenderat.
+[030:LSCR#0211](14)Typiskt.
+[030:LSCR#0211](14)Hur vill du annars slösa bort min tid?
+[030:LSCR#0211](14)Samma pris som förra gången du frågade:\255\00375 åttor.
+[030:LSCR#0211](14)Ännu en blivande skattletare, va?\255\003Det kostar dig 75 åttor.
+[030:LSCR#0211](14)
+[030:LSCR#0211](FA)Jag tar den.
+[030:LSCR#0211](FA)75 åttor? Så mycket har jag inte.
+[030:LSCR#0211](FA)Jag vill inte ha den.
+[030:LSCR#0211](14)Utmärkt.\255\003Den betalar sig själv, tro mig.\255\003Du gräver upp 75 åttor på nolltid.\255\003Men hörru, spara lite skatt åt oss andra, va?\255\003Ha ha ha!
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)Då bör du gå och lägga tillbaka den.
+[030:LSCR#0211](14)Finns det nåt här som du kanske HAR råd med?
+[030:LSCR#0211](14)Nå, om du letar efter en bra strid...\255\003Vi har den bästa svärdskämpen i hela Karibien här på Mêlée Island®.\255\003Fast ingen vet var hennes hemliga gömställe finns...
+[030:LSCR#0211](14)Hör här, jag sa ju, hon vill inte träffa dig.
+[030:LSCR#0211](94)Kanske om du frågade henne igen?
+[030:LSCR#0211](14)Ja visst, som om jag ska gå på den igen!
+[030:LSCR#0211](94)Åh, snälla.\255\003Jag lovar att inte stjäla nåt den här gången.
+[030:LSCR#0211](14)Är strax tillbaka.
+[030:LSCR#0211](14)Vänta lite!
+[030:LSCR#0211](14)Din lömska, långfingriga lilla vessla...
+[030:LSCR#0211](94)Du tror väl inte jag är dum nog att pröva samma trick tre gånger i rad?
+[030:LSCR#0211](14)Du börjar verkligen reta upp mig.
+[030:LSCR#0211](14)Svärdmästaren på Mêlée Island®?\255\003Hmmm... Jag vet inte...\255\003Ingen vet var hennes hemliga gömställe finns...
+[030:LSCR#0211](14)...ingen utom jag.\255\003Jag får gå och fråga henne om det går bra att visa dig vägen.
+[030:LSCR#0211](14)Hmmm...
+[030:LSCR#0211](14)Jag antar att jag kan vandra hela vägen dit...
+[030:LSCR#0211](14)...IGEN.
+[030:LSCR#0211](14)...EN GÅNG.
+[030:LSCR#0211](14)Är strax tillbaka.
+[030:LSCR#0211](14)OCH RÖR INGENTING!
+[030:LSCR#0211](14)Jag har ögonen på dig, vesslegransen!\255\003Försök inte med nåt!
+[030:LSCR#0211](14)Och inga av dina gamla trick!
+[030:LSCR#0211](14)Jag kan inte tro att jag gör det här igen!
+[030:LSCR#0211](14)Jag räknar med att vara tillbaka om ungefär fem sekunder.
+[030:LSCR#0211](14)OCH RÖR INTE--
+[030:LSCR#0211](14)Ah, jag är trött på det här skitsnacket.
+[030:LSCR#0211](14)Bla, bla, bla, ögon i nacken, bla, bla, bla...\255\003...bla, bla, bla, vrider nacken av dig, bla, bla, bla...\255\003...du vet hur det låter.
+[030:LSCR#0211](14)Det här börjar bli riktigt tråkigt.
+[030:LSCR#0211](14)Jaså du?\255\003Har du nåt jobb?
+[030:LSCR#0211](14)Fått dig ett jobb till slut, va?
+[030:LSCR#0211](FA)Ja, självklart.
+[030:LSCR#0211](FA)Ärligt talat, herr'n, jag är arbetslös.
+[030:LSCR#0211](14)Bra.\255\003Jag hämtar ett av mina skuldebrev så fyller vi i det.
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)Låt mig se...\255\003Vad sa du att ditt yrke var?
+[030:LSCR#0211](FA)Jag är en groggslukande, illaluktande pirat.
+[030:LSCR#0211](FA)Jag serverar på Scumm Bar.
+[030:LSCR#0211](FA)Jag är akrobat i en kringresande cirkus.
+[030:LSCR#0211](FA)Jag putsar skepp borta på Stans begagnade skeppsvarv.
+[030:LSCR#0211](FA)Ärligt talat, herr'n, jag är mellan jobb.
+[030:LSCR#0211](14)Illaluktande, javisst...\255\003Groggslukande, kanske...\255\003Men pirat?\255\003Få mig inte att skratta.\255\003Kom tillbaka när du skaffat tatueringar eller ett träben eller åtminstone en ögonlapp, för guds skull.
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)...och jag är drottningen av England.\255\003Kocken där borta serverar alla sina bord själv.
+[030:LSCR#0211](14)Han gillar att spotta på alla sina kunder personligen.\255\003Du är inte bara arbetslös, du ljuger dessutom!
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)Du är en av Fettucini-bröderna?\255\003Var är din fåniga accent?\255\003Och var är dina fåniga tofflor?
+[030:LSCR#0211](14)Kom tillbaka när du har ett jobb i en trovärdig bransch.
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)Jag har inte sett ett rent skepp där borta på åratal.\255\003Antingen ljuger du, eller så är du bara en usel arbetare.\255\003Hur som helst litar jag inte på dig.
+[030:LSCR#0211](14)Jag uppskattar din ärlighet.\255\003Men jag blev inte åttiotre år genom att vara nån dumbom.
+[030:LSCR#0211](14)Inget jobb, ingen kredit.\255\003Kom tillbaka när du fått ett jobb, så pratar vi.
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)Tack för att du berättar det.\255\003Jag respekterar din ärlighet.\255\003Men jag blev inte åttiotre år genom att vara nån dumbom.\255\003Inget jobb, ingen kredit.
+[030:LSCR#0211](14)Kom tillbaka när du skaffat ett.
+[030:LSCR#0211](14)Det kan du ge dig på!
+[030:LSCR#0211](14)Här, ta en...\255\003...snälla.\255\003Ta en hel rulle!\255\003Det blir en åtta.
+[030:LSCR#0211](14)
+[030:LSCR#0211](14)Jag har nåra, men dom är inte gratis.
+[030:LSCR#0211](14)Hah!\255\003Det tror jag gärna.\255\003Men jag har inga.
+[030:LSCR#0211](14)Menade du hängmappar eller nagelfilar?
+[030:LSCR#0211](FA)Ja.
+[030:LSCR#0211](FA)Hängmappar.
+[030:LSCR#0211](FA)Nagelfilar.
+[030:LSCR#0211](FA)Nej, metallsorten man öppnar lås med.
+[030:LSCR#0211](14)Ah.\255\003Tyvärr, slut på dom.
+[030:LSCR#0211](14)Vad mer vill du ha?
+[030:LSCR#0211](14)Hörru, det här är ingen butik.\255\003Ta inte hela dan på dig.
+[030:LSCR#0211](14)Okej, men sätt inte läpparna på nåt.
+[030:LSCR#0211](14)Javisst ja.
+[030:LSCR#0211](14)Okej.\255\003Väck mig om du behöver nåt.
+[030:LSCR#0211](14)Var så god, finbyxor.
+[030:LSCR#0211](14)
+[030:LSCR#0212](14)Specialpris på spadar idag...
+[030:LSCR#0212](14)Kan du skynda dig?\255\003Jag hoppades stänga tidigt idag.
+[030:LSCR#0212](14)Om du funderar på att stjäla nåt, tänk om.
+[030:LSCR#0212](14)Skynda dig!
+[030:LSCR#0212](14)Kom igen! Köp nåt bara.
+[030:LSCR#0212](14)Vad tror du det här är? Ett museum?
+[030:LSCR#0212](14)Jag har inte hela dan.
+[030:LSCR#0212](14)Rör på dig, finbyxor!
+[030:LSCR#0212](14)Tänk inte, köp bara!
+[030:LSCR#0212](14)Kom du bara in för att slippa kylan, eller behöver du nåt?
+[030:LSCR#0212](14)Väntar du på att jag ska somna eller?
+[030:LSCR#0212](14)Kan jag hjälpa dig?
+[030:LSCR#0212](14)Bra pris på svärd just nu...
+[030:LSCR#0213](D8)Ser elak och ful ut.
+[030:LSCR#0213](14)Jaha? Det är din morsa med.
+[030:SCRP#0067](13)butiksägare
+[031:OBNA#0400](__)dörröppning
+[031:OBNA#0403](__)lås
+[031:VERB#0405](D8)Prata med dödsandedräkt? Nej tack.
+[031:VERB#0405](D8)Ser nervös ut.
+[031:OBNA#0405](__)fånge
+[031:OBNA#0404](__)lås
+[031:VERB#0401](D8)Låst.
+[031:VERB#0401](D8)Jag tror det är svetsad nu.
+[031:VERB#0401](D8)Bäst att inte slita ut den innan jag fått idolen.
+[031:VERB#0401](D8)Jag tror inte det öppnar den.
+[031:OBNA#0401](__)cell
+[031:VERB#0402](D8)Låst.
+[031:VERB#0402](D8)Jag tror det är svetsad nu.
+[031:VERB#0402](D8)Ingen anledning till det nu.
+[031:OBNA#0402](__)cell
+[031:VERB#0420](54)fil
+[031:VERB#0420](D8)Det ligger en fil i den!
+[031:VERB#0420](D8)Den är tung.
+[031:VERB#0420](D8)Det är en raspig metallfil.
+[031:OBNA#0420](__)tårta
+[031:LSCR#0201](13)Otis
+[031:LSCR#0201](13)fånge
+[031:LSCR#0202](14)Nå, har du kommit för att släppa mig fri?
+[031:LSCR#0202](14)Kommit för att förhöra fången igen, va?
+[031:LSCR#0202](FA)Vem är du?
+[031:LSCR#0202](FA)Vad gjorde du för att hamna där inne?
+[031:LSCR#0202](FA)Nå, hur är maten där inne?
+[031:LSCR#0202](FA)Vad var det du sa om blommor?
+[031:LSCR#0202](FA)Vem skulle vilja sätta dit dig?
+[031:LSCR#0202](FA)Sheriff Shinetop är verkligen en idiot, eller hur?
+[031:LSCR#0202](FA)Vem är sheriffen här?
+[031:LSCR#0202](FA)Guvernören har blivit kidnappad!
+[031:LSCR#0202](FA)Om jag släpper ut dig, vill du gå med i min besättning?
+[031:LSCR#0202](FA)Du råkar inte ha en fil?
+[031:LSCR#0202](FA)Kan jag hämta nåt åt dig?
+[031:LSCR#0202](FA)Nå, håll hakan uppe. Jag måste gå.
+[031:LSCR#0202](54)Otis
+[031:LSCR#0202](14)Jag heter Otis.\255\003Åtminstone tror jag det.\255\003Jag har suttit här så länge att jag knappt minns.
+[031:LSCR#0202](14)Du måste få ut mig härifrån innan jag tappar förståndet helt!\255\003Ser du inte att jag är oskyldig?
+[031:LSCR#0202](14)
+[031:LSCR#0202](FA)Men varför sitter du i fängelse om du är oskyldig?
+[031:LSCR#0202](FA)Du ser inte oskyldig ut i mina ögon.
+[031:LSCR#0202](14)Jag blev dittsatt!\255\003Jag rörde inte de dumma blommorna!
+[031:LSCR#0202](FA)Vilka blommor?
+[031:LSCR#0202](FA)Kan du säga namnet på blommorna igen?
+[031:LSCR#0202](FA)Vem satte dit dig?
+[031:LSCR#0202](FA)Hur är maten där inne?
+[031:LSCR#0202](FA)Vad sa du att du åt där inne?
+[031:LSCR#0202](14)De gula Caniche Endormi-blommorna i skogen--\255\003Det är olagligt att plocka dem.
+[031:LSCR#0202](14)Jag vet inte exakt vem...\255\003Jag tror det var en konspiration.\255\003Och om det finns en typ av sjöröveri jag inte gillar...\255\003...så är det KONSPIR-ation.
+[031:LSCR#0202](14)
+[031:LSCR#0202](14)Det skulle inte du heller göra om du suttit här lika länge som jag.
+[031:LSCR#0202](14)Jag gjorde ingenting.\255\003Särskilt inte mot de där dumma blommorna.
+[031:LSCR#0202](14)Det är därför jag sitter här, på grund av de där dumma blommorna...
+[031:LSCR#0202](14)Minsann.
+[031:LSCR#0202](14)Menar du att du inte träffat den nye sheriffen än?\255\003Då har du tur.\255\003Bäst att undvika Fester Shinetop.
+[031:LSCR#0202](14)
+[031:LSCR#0202](FA)Fester vem?
+[031:LSCR#0202](FA)Vad är så illa med honom?
+[031:LSCR#0202](FA)Du säger bara det för att han satte dig i fängelse.
+[031:LSCR#0202](FA)Jag ska tänka på det. Vi ses.
+[031:LSCR#0202](14)Fester Shinetop är den elakaste karln på Mêlée Island®.\255\003Lyckligtvis håller Guvernören honom i schack för det mesta.
+[031:LSCR#0202](14)Vi brukade ha en rättvis, hygglig karl som sheriff--\255\003--men han dog nyligen under mystiska omständigheter.
+[031:LSCR#0202](14)Frågar du mig tror jag den nye sheriffen hade nåt med det att göra.
+[031:LSCR#0202](14)Jag tror du har sagt tillräckligt, Otis!
+[031:LSCR#0202](14)Hoppsan.
+[031:LSCR#0202](14)Nej! Fråga vem som helst...
+[031:LSCR#0202](14)Hämta en advokat åt mig!\255\003En billig!
+[031:LSCR#0202](14)Absolut!\255\003Självklart!\255\003Min befriare ska jag stå i evig skuld till.
+[031:LSCR#0202](14)Tills dess vandrar jag av och an.
+[031:LSCR#0202](14)Va?
+[031:LSCR#0202](D8)Här, titta på den här lappen.
+[031:LSCR#0202](14)Dom har kidnappat Guvernören?
+[031:LSCR#0202](14)Det gör mig riktigt arg.\255\003Jag känner för att sparka nån.
+[031:LSCR#0202](14)Hmmm...\255\003Undrar om hon lämnade sitt ställe olåst...
+[031:LSCR#0202](14)
+[031:LSCR#0202](14)Ja...\255\003DU KAN FÅ UT MIG HÄRIFRÅN!
+[031:LSCR#0202](14)Nåt för att bli av med de här råttorna vore trevligt, faktiskt.
+[031:LSCR#0202](14)Jag kan byta mot den här morotstårtan som moster Tillie bakade.\255\003Jag hatar morotstårta.
+[031:LSCR#0202](14)Tror du jag skulle sitta här om jag hade det?\255\003Allt jag har är den här morotstårtan som moster Tillie bakade åt mig.
+[031:LSCR#0202](14)DEN kan du få om du skaffar mig nåt att bli av med råttorna.\255\003Jag tål inte morotstårta.
+[031:LSCR#0202](14)Tack så mycket.
+[031:LSCR#0202](14)Åh, du vet, det vanliga...\255\003Slask, grogg, gröt...\255\003Råttor, kryp och löss om jag lyckas fånga nåra.
+[031:LSCR#0202](14)Jag har en morotstårta som moster Tillie bakade, trots att hon vet att jag avskyr morotstårta.
+[031:LSCR#0202](14)Kocken på baren är faktiskt en gammal vän till mig, och ibland smugglar han mat till mig.\255\003Som fläskavskrap -- mest fötter och läppar -- men ibland...\255\003...tar han med sig en riktigt märklig fransyska...
+[031:LSCR#0202](14)
+[031:LSCR#0202](FA)Det är äckligt. Jag vill inte höra mer.
+[031:LSCR#0202](FA)Vad var det som var så märkligt med fransyskan?
+[031:LSCR#0202](14)Hörru, det var du som frågade.
+[031:LSCR#0202](14)Nå, det är den enda fransyskan jag sett som har en gripsvans.
+[031:LSCR#0202](14)Hör här, jag gillar besök och allt det där,\255\003men jag har inte mycket mer att säga.\255\003Dessutom blir halsen torr av allt det här pratandet.
+[031:LSCR#0202](14)Varför hittar du inte nån annan att prata med?\255\003Det är inte som att jag är den ENDA piraten kvar på ön eller nåt.
+[031:LSCR#0202](14)Jag sa ju, jag har inte mycket mer att säga.
+[031:LSCR#0202](14)Hör här, jag uppskattar att du försöker hålla mig sällskap och allt det där...\255\003Men om du inte är advokat...
+[031:LSCR#0202](14)...eller vet nåt sätt att magiskt lösa upp det här låset...
+[031:LSCR#0202](14)...så ser jag verkligen ingen mening med att fortsätta det här samtalet.
+[031:LSCR#0202](14)Du måste få ut mig härifrån!\255\003Jag är ett offer för samhället.
+[031:LSCR#0202](D8)För att inte tala om munlukt.
+[031:LSCR#0202](D8)Usch!
+[031:LSCR#0202](14)Hörru, det är svårt att hålla andedräkten fräsch när det inte finns nåt att äta här förutom råttor.
+[031:LSCR#0202](14)
+[031:LSCR#0203](D8)Men jag behöver den för att få tag på idolen.
+[031:LSCR#0203](14)Ooooh!\255\003Grogg-O-Mint!\255\003Så uppfriskande!\255\003Tack.
+[031:LSCR#0203](14)Hörru, det kanske funkar mot råttorna!\255\003Tack!
+[031:LSCR#0203](14)Här är tårtan.
+[031:LSCR#0203](14)Här, ta den här morotstårtan i utbyte.\255\003Moster Tillie bakade den.
+[031:LSCR#0203](14)Jag sa ju, jag HATAR morotstårta!
+[031:LSCR#0203](14)Jag behöver inga allmosor, kompis.
+[031:LSCR#0203](14)Nå, kanske bara en bit.
+[031:LSCR#0203](14)Jag vill inte ha nåt annat än min frihet!
+[031:LSCR#0203](14)...och kanske en mintpastill.
+[031:LSCR#0203](14)...och kanske nåt att bli av med råttorna.
+[031:LSCR#0203](14)
+[031:LSCR#0203](D8)Oj! Snacka om dålig andedräkt!
+[031:LSCR#0208](14)Jag heter Otis förresten.
+[031:LSCR#0208](14)Om det finns nåt jag nånsin kan göra för dig--
+[031:LSCR#0208](D8)Nå, faktiskt finns det en sak...\255\003Jag letar efter modiga personer att gå med i min besättning och segla till Monkey Island® med mig för att rädda Guvernören.
+[031:LSCR#0208](D8)Hon har kidnappats av den fruktansvärde piraten LeChuck, och hålls fången nånstans i hans hemliga gömställe.
+[031:LSCR#0208](14)Jaha...
+[031:LSCR#0208](14)Nå, ja, hmmm...
+[031:LSCR#0208](14)LeChuck, säger du?\255\003Nå, ja. Ja, självklart. Vi måste segla till Monkey Island® och--
+[031:LSCR#0208](14)TITTA! BAKOM DIG! EN TREHÖVDAD APA!
+[031:LSCR#0208](D8)Jag kan inte tro att jag gick på det.
+[031:LSCR#0208](D8)Ganska bra trick dock.
+[031:LSCR#0208](14)
+[031:LSCR#0209](14)Jag hoppas du inte tagit den här smutsiga luffare på allvar.\255\003Han säger vad som helst för att slippa betala sin skuld till samhället.
+[031:LSCR#0209](14)
+[031:LSCR#0209](FA)Han verkar oskyldig i mina ögon. Varför släpper du inte ut honom?
+[031:LSCR#0209](FA)Han ÄR smutsig. Och luktar illa dessutom.
+[031:LSCR#0209](FA)Ursäkta? Vi hade ett privat samtal.
+[031:LSCR#0209](FA)Herregud! TITTA vad klockan är! Jag skulle GÄRNA stanna och prata, men...
+[031:LSCR#0209](14)Du borde kanske sköta ditt eget, främling.\255\003Jag bestämmer vem som är oskyldig och vem som är skyldig här.
+[031:LSCR#0209](14)Tack så mycket.
+[031:LSCR#0209](14)Du har mycket fräckheter som kommer till den här stan och dömer lokalbefolkningen.\255\003Om det är nåt du inte gillar med hur vi luktar är du välkommen att sticka när som helst.
+[031:LSCR#0209](14)Ta inte den tonen med mig, apgransen.\255\003Annars låser jag gärna in dig med Otis...\255\003...då får ni gott om tid för privata samtal.
+[031:LSCR#0209](14)Jaha.\255\003Du har tid att umgås med brottslingar, men inte med lagens väktare.
+[031:LSCR#0209](D8)Förlåt.
+[031:LSCR#0209](14)Hör här, jag vet inte vad du har för dig...\255\003...men vad det än är, det är antagligen olagligt.\255\003Så glöm det.
+[031:LSCR#0209](14)Vart du än går på Mêlée® kommer jag att vakta.\255\003Och försöker du med nåt apstreck hamnar du här inne för gott.
+[031:LSCR#0209](14)Herregud, vilken typ, eller hur?\255\003Ser du vad jag får stå ut med?
+[031:LSCR#0209](14)Du borde gå innan du ställer till det för oss båda.
+[031:SCRP#0070](D8)Den här muggen är inte till mycket nytta längre.
+[031:SCRP#0070](D8)En tom mugg är inte till mycket nytta här.
+[031:SCRP#0070](14)Hörru, gött, en drink!\255\003Jag är riktigt törstig.
+[031:SCRP#0070](14)Yiiikes!
+[031:SCRP#0070](D8)Hoppsan.
+[031:SCRP#0070](14)Oj.\255\003Och tänk att jag brukade dricka det där...
+[031:SCRP#0070](14)Jag är fri!
+[031:SCRP#0070](14)Jotack.
+[031:SCRP#0070](14)Haha, godtrogen!!
+[031:SCRP#0070](14)HA HA HA!!!
+[031:SCRP#0070](D8)Men...
+[031:SCRP#0070](D8)Gäller vår överenskommelse fortfarande?
+[031:SCRP#0070](D8)Jag är säker på att han kommer tillbaka...\255\003Han gav mig sitt ord som pirat.
+[031:SCRP#0070](14)Åh toppen, bara toppen.\255\003Rädda råttan och lämna mig här att ruttna.\255\003Du är en riktig humanist, kompis.
+[031:SCRP#0070](14)Jag antar att min advokat hade rätt...\255\003Jag borde ha gollat.
+[031:SCRP#0070](14) 
 [E][032:OBNA#0422](__)street
 [E][032:VERB#0423](D8)Ooooh!  A circus.\255\003I love a circus!
 [E][032:VERB#0423](14) 
