@@ -1,4 +1,7 @@
 # Monkey Island 1 Swedish Translation Glossary
+## Sample Translation Reference
+
+**NOTE: This glossary supports a SAMPLE translation project for educational/demonstration purposes. It provides translation decisions for selected representative passages, not a complete game translation.**
 
 ## Translation Philosophy
 

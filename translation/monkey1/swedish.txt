@@ -73,9 +73,9 @@
 [007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Toothrot kunde sluta snarka.`
 [007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Toothrot börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi drabbar samman.`
 [007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Toothrot att laga middag ikväll.`
-[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Toothrot och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
+[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Toothrot och jag tuppade av av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
 [007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Toothrot och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island®.`
-[007:SCRP#0148](D8)`Vi är båda upphetsade över möjligheten att bli de första civiliserade människorna som lär sig Hemligheten om Monkey Island®.`
+[007:SCRP#0148](D8)`Vi är båda upphetsade över möjligheten att bli de första civiliserade människorna som lär sig Monkey Islands® Hemlighet.`
 [007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Toothrot glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
 [007:SCRP#0148](D8)Det var sista anteckningen.
 [007:SCRP#0184](14)
@@ -98,7 +98,7 @@
 [008:VERB#0092](D8)Den är tom.
 [008:VERB#0092](D8)Det ser ut som en gammal piratkista.
 [008:OBNA#0092](__)kista
-[008:VERB#0093](D8)De är rostigt igenstängda.
+[008:VERB#0093](D8)De är igenrostade.
 [008:VERB#0093](D8)Det är bara gamla rostiga kistor.
 [008:OBNA#0093](__)kistor
 [008:VERB#0094](D8)De är tomma.
@@ -106,10 +106,10 @@
 [008:OBNA#0094](__)fat
 [008:VERB#0101](D8)Ser explosivt ut.
 [008:OBNA#0101](__)krut
-[008:VERB#0102](D8)De är alla rostigt igenstängda.
+[008:VERB#0102](D8)De är alla igenrostade.
 [008:VERB#0102](D8)Det är bara gamla rostiga kistor.
 [008:OBNA#0102](__)kistor
-[008:VERB#0103](D8)Den är rostigt igenstängd.
+[008:VERB#0103](D8)Den är igenrostade.
 [008:VERB#0103](D8)Det är bara en gammal rostig kista.
 [008:OBNA#0103](__)svart kista
 [008:VERB#0104](D8)Ah, fin bukett.
@@ -118,7 +118,7 @@
 [008:OBNA#0104](__)fint vin
 [008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat den.
 [009:VERB#0108](D8)Jag tror jag kommer bli sjösjuk.
-[009:VERB#0108](D8)Det är tätt stängt.
+[009:VERB#0108](D8)Det är ordentligt stängt.
 [009:OBNA#0108](__)fönster
 [009:OBNA#0105](__)stege
 [009:OBNA#0106](__)lucka
@@ -152,18 +152,18 @@
 [010:SCRP#0001](27)Namnge ditt SPARADE spel
 [010:SCRP#0001](27)Välj ett spel att LADDA
 [010:SCRP#0001](13)Guybrush
-[010:SCRP#0001](54)seltzer
-[010:SCRP#0001](54)seltzer
-[010:SCRP#0001](54)seltzer
-[010:SCRP#0002](D8)Det är för mörkt för att se det.
-[010:SCRP#0002](D8)Jag kan inte nå det.
+[010:SCRP#0001](54)sodavatten
+[010:SCRP#0001](54)sodavatten
+[010:SCRP#0001](54)sodavatten
+[010:SCRP#0002](D8)Det är för mörkt för att se.
+[010:SCRP#0002](D8)Jag kan inte nå.
 [010:SCRP#0003](D8)Jag tror jag skulle få bättre resultat med papegojan.
-[010:SCRP#0003](D8)Den verkar inte gå att öppna.
-[010:SCRP#0003](D8)Jag kan inte flytta det.
-[010:SCRP#0003](D8)Jag ser inget speciellt med det.
-[010:SCRP#0003](D8)Jag kan inte ta upp det.
-[010:SCRP#0003](D8)Jag kan inte nå det härifrån.
-[010:SCRP#0003](D8)Det verkar inte fungera.
+[010:SCRP#0003](D8)Verkar inte gå att öppna.
+[010:SCRP#0003](D8)Jag kan inte flytta.
+[010:SCRP#0003](D8)Jag ser inget speciellt.
+[010:SCRP#0003](D8)Jag kan inte ta upp.
+[010:SCRP#0003](D8)Jag kan inte nå härifrån.
+[010:SCRP#0003](D8)Verkar inte fungera.
 [E][010:SCRP#0004](14)Molasses machine.
 [E][010:SCRP#0004](14)Street legal machine.
 [E][010:SCRP#0004](14)Trans-warp drive machine.
@@ -336,7 +336,7 @@
 [014:VERB#0158](D8)Den är full av skit. Jag hoppas jag inte behöver äta det här.
 [014:VERB#0158](D8)Det ser ut som en vanlig skeppsgryta.
 [014:VERB#0158](D8)Jag lägger inte i något mer i den grytan!
-[014:VERB#0158](D8)Jag har inget recept.  Jag skulle inte veta var jag ska börja med att göra soppa.
+[014:VERB#0158](D8)Jag har inget recept. Jag skulle inte veta var jag ska börja med att göra soppa.
 [014:VERB#0158](D8)Bara en droppe.
 [014:VERB#0158](D8)Mmm...Det här kommer bli gott.
 [014:VERB#0158](D8)Det borde räcka.
@@ -357,16 +357,16 @@
 [014:VERB#0161](D8)Varför bränna perfekt bra mat?
 [014:VERB#0161](D8)Ja, som om jag verkligen vill döda mig själv.
 [014:VERB#0161](D8)Jag kanske behöver det här senare.
-[014:VERB#0161](D8)Jag bränner bara allt.
-[014:VERB#0161](D8)Jag tror inte det kommer fatta eld.
+[014:VERB#0161](D8)Jag bränner allt bara.
+[014:VERB#0161](D8)Jag tror inte det kommer brinna.
 [014:VERB#0161](D8)Aj, det är hett!
 [014:OBNA#0161](__)rödglödande eld
-[014:VERB#0164](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det tuggade sönder gommen.
+[014:VERB#0164](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det krunchade mot gommen.
 [014:VERB#0164](14)Krunch
 [014:VERB#0164](D8)FANTASTISKT!\255\003En leksak inuti.
 [014:VERB#0164](D8)Jag är för sjuk för att äta mer.
 [014:OBNA#0164](__)flingor
-[014:VERB#0168](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det tuggade sönder gommen.
+[014:VERB#0168](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det krunchade mot gommen.
 [014:OBNA#0168](__)flingor
 [014:OBNA#0163](__)skåp
 [014:VERB#0165](D8)Den är ungefär lika stor som mitt huvud.
