@@ -2936,120 +2936,120 @@
 [052:VERB#0621](D8)Jag tror det är nåt som händer därinne.
 [052:OBNA#0621](__)cirkustält
 [052:OBNA#0622](__)stig
-[E][053:VERB#0638](D8)I'd better be careful not to cut myself.
-[E][053:OBNA#0638](__)broken window
-[E][053:OBNA#0633](__)door
-[E][053:VERB#0630](D8)A priceless Ming!
-[E][053:OBNA#0630](__)vase
-[E][053:VERB#0631](D8)No time for reading now.
-[E][053:OBNA#0631](__)books
-[E][053:VERB#0635](D8)It's beautiful.
-[E][053:OBNA#0635](__)fabulous idol
-[E][053:VERB#0637](D8)I still don't have a file.
-[E][053:VERB#0637](D8)I'm not going back in there!
-[E][053:OBNA#0637](__)gaping hole
-[E][053:VERB#0634](D8)I locked the sheriff in there!
-[E][053:OBNA#0634](__)door
-[E][053:OBNA#0632](__)door
-[E][053:VERB#0640](D8)It says gophers won't come near you with this stuff on.
-[E][053:OBNA#0640](__)gopher repellent
-[E][053:VERB#0641](D8)I think it's some kind of religious text.
-[E][053:OBNA#0641](__)Manual of Style
-[E][053:VERB#0642](D8)They're yak-sized and covered with slobber.  I'M certainly not going to chew on them.
-[E][053:OBNA#0642](__)wax lips
-[E][053:VERB#0643](D8)No staples to be removed.
-[E][053:VERB#0643](D8)I bet this will come in handy.
-[E][053:OBNA#0643](__)staple remover
-[E][053:VERB#0629](D8)I don't recognize the man, but that looks like the dog in the bar.
-[E][053:VERB#0629](D8)I don't recognize the man, but he has a great hat.
-[E][053:OBNA#0629](__)painting
-[E][053:OBNA#0644](__)heavy chair
-[E][053:OBNA#0645](__)sheriff
-[E][053:OBNA#0646](__)tremendous yak
-[E][053:OBNA#0647](__)red button
-[E][053:OBNA#0648](__)quarrelsome rhinoceros
-[E][053:OBNA#0649](__)gopher
-[E][053:OBNA#0650](__)shredder
-[E][053:OBNA#0651](__)heavily-armed clown
-[E][053:LSCR#0204](D8)I'll need this.
-[E][053:LSCR#0206](D8)Better leave this here.
-[E][053:LSCR#0210](7A)Hypnotize
-[E][053:LSCR#0210](14)No!\255\003Not the red button!
-[E][053:LSCR#0210](14)It's a big, ugly, hairy yak wearing some wax lips.
-[E][053:LSCR#0210](54)tremendous dangerous-looking yak
-[E][053:LSCR#0210](14)I can't move it.
-[E][053:LSCR#0210](14)I can't move it.
-[E][053:LSCR#0210](14)Acck!
-[E][053:LSCR#0210](14)...gophers!
-[E][053:LSCR#0210](54)another gopher
-[E][053:LSCR#0210](54)gopher horde
-[E][053:LSCR#0210](54)funny little man
-[E][053:LSCR#0210](14)It's beautiful!
-[E][053:LSCR#0210](54)lock
-[E][053:LSCR#0210](14)I can't open it.
-[E][053:LSCR#0210](14)Uh, oh!
-[E][053:LSCR#0211](54)shredder
-[E][053:LSCR#0211](54)stylish confetti
-[E][053:LSCR#0211](14)Wheeeeee!!
-[E][053:LSCR#0211](7A)Throw
-[E][053:LSCR#0211](54)fire
-[E][053:LSCR#0211](54)rhinoceros toenails
-[E][053:LSCR#0211](54)lock
-[E][053:LSCR#0212](14)But I'm not done with you yet!
-[E][053:LSCR#0212](D8)Uh-oh.
-[E][053:LSCR#0212](14)Thought you could get out of here with the Idol of Many Hands, did you?
-[E][053:LSCR#0212](D8)Look, I can explain...
-[E][053:LSCR#0212](14)So can I--
-[E][053:LSCR#0212](14)You poisoned the Governor's pet poodles...
-[E][053:LSCR#0212](D8)They're just sleeping!
-[E][053:LSCR#0212](14)...broke into her house...
-[E][053:LSCR#0212](D8)The door was unlocked!
-[E][053:LSCR#0212](14)...and stole one of her most valuable pieces of art!
-[E][053:LSCR#0212](D8)No, you've got it all wrong!
-[E][053:LSCR#0212](14)Oh really?
-[E][053:LSCR#0212](14) 
-[E][053:LSCR#0212](14)Well, let's hear your explanation.
-[E][053:LSCR#0212](FA)She said I could have it!
-[E][053:LSCR#0212](FA)I was just going to borrow it!
-[E][053:LSCR#0212](FA)It belongs in a museum!
-[E][053:LSCR#0212](FA)The pirate leaders told me to do it!
-[E][053:LSCR#0212](FA)I was just taking it out for a walk.
-[E][053:LSCR#0212](14)Ha!
-[E][053:LSCR#0212](14)What's going on here?
-[E][053:LSCR#0212](14)I caught this hoodlum making off with your idol, Governor.
-[E][053:LSCR#0212](14)He says you gave it to him!
-[E][053:LSCR#0212](14)That's right.  I did.
-[E][053:LSCR#0212](14)He says he was just borrowing it!
-[E][053:LSCR#0212](14)That's right.  I loaned it to him.
-[E][053:LSCR#0212](14)He says it belongs in a museum!
-[E][053:LSCR#0212](14)That's right.  It does.
-[E][053:LSCR#0212](14)He says the pirate leaders told him to do it!
-[E][053:LSCR#0212](14)Then he's not the first decent person they've led astray!
-[E][053:LSCR#0212](14)He says he was just taking it out for a walk.
-[E][053:LSCR#0212](14)Well, isn't that nice of him.
-[E][053:LSCR#0212](14)What?
-[E][053:LSCR#0212](14)You heard me, Fester.\255\003The real question is, how did he get in here while you were on guard?
-[E][053:LSCR#0212](14)I... Uh...
-[E][053:LSCR#0212](14)Just go away, Fester.\255\003I can handle this.
-[E][053:LSCR#0212](14)Hmpf!
-[E][053:LSCR#0212](14)I'll deal with you later.
-[E][053:LSCR#0212](14)Sorry about him.\255\003He's new.\255\003I'm Governor Marley...
-[E][053:LSCR#0212](14) 
-[E][053:LSCR#0213](D8)I must be nuts!
-[E][053:LSCR#0213](D8)I've got the file...
-[E][053:LSCR#0214](D8)That should hold him for a while!\255\003If only I had a file I could get the idol!
-[E][053:LSCR#0215](D8)Phew!\255\003That was a close one.\255\003At least I got the idol.
-[E][053:LSCR#0216](14)This looks like a job for Fester Shinetop!
-[E][053:LSCR#0217](14)Where do you think you're going, \255\007\038\000?
-[E][053:LSCR#0217](FA)I'm going to go put this idol in my safe-deposit box.
-[E][053:LSCR#0217](FA)You know, it's not too late for us to make up and be friends.
-[E][053:LSCR#0217](FA)Excuse me, Mr. Shinetop, but you're blocking the doorway.
-[E][053:LSCR#0217](FA)Buzz off, Fester.
-[E][053:LSCR#0217](14)Oh really?\255\003I know a really safe locker you could put it in...\255\003Davey Jones' Locker!!!
-[E][053:LSCR#0217](14)Yeah...\255\003And it's also not too late for me to kill you and still make it to the bar for happy hour.
-[E][053:LSCR#0217](14)I think you need to cool off.
-[E][053:LSCR#0217](14)Hand over your sword.
-[E][053:LSCR#0217](D8)Uh-oh.
+[053:VERB#0638](D8)Jag borde vara försiktig så jag inte skär mig.
+[053:OBNA#0638](__)trasigt fönster
+[053:OBNA#0633](__)dörr
+[053:VERB#0630](D8)En ovärderlig Ming!
+[053:OBNA#0630](__)vas
+[053:VERB#0631](D8)Ingen tid att läsa nu.
+[053:OBNA#0631](__)böcker
+[053:VERB#0635](D8)Den är vacker.
+[053:OBNA#0635](__)fantastisk idol
+[053:VERB#0637](D8)Jag har fortfarande ingen fil.
+[053:VERB#0637](D8)Jag tänker inte gå tillbaka dit!
+[053:OBNA#0637](__)gapande hål
+[053:VERB#0634](D8)Jag låste in sheriffen därinne!
+[053:OBNA#0634](__)dörr
+[053:OBNA#0632](__)dörr
+[053:VERB#0640](D8)Det står att mullvadar inte kommer nära dig med det här på.
+[053:OBNA#0640](__)mullvadsmedel
+[053:VERB#0641](D8)Jag tror det är nån sorts religiös text.
+[053:OBNA#0641](__)stilmanual
+[053:VERB#0642](D8)Dom är jakstora och täckta med dreggel. JAG tänker i alla fall inte tugga på dom.
+[053:OBNA#0642](__)vaxläppar
+[053:VERB#0643](D8)Inga häftklamrar att ta bort.
+[053:VERB#0643](D8)Jag slår vad om att den kommer vara användbar.
+[053:OBNA#0643](__)häftklammerborttagare
+[053:VERB#0629](D8)Jag känner inte igen mannen, men det ser ut som hunden i baren.
+[053:VERB#0629](D8)Jag känner inte igen mannen, men han har en grym hatt.
+[053:OBNA#0629](__)tavla
+[053:OBNA#0644](__)tung stol
+[053:OBNA#0645](__)sheriff
+[053:OBNA#0646](__)enorm jak
+[053:OBNA#0647](__)röd knapp
+[053:OBNA#0648](__)grälsjuk noshörning
+[053:OBNA#0649](__)mullvad
+[053:OBNA#0650](__)dokumentförstörare
+[053:OBNA#0651](__)tungt beväpnad clown
+[053:LSCR#0204](D8)Den här behöver jag.
+[053:LSCR#0206](D8)Bäst att lämna den här.
+[053:LSCR#0210](7A)Hypnotisera
+[053:LSCR#0210](14)Nej!\255\003Inte den röda knappen!
+[053:LSCR#0210](14)Det är en stor, ful, hårig jak med vaxläppar.
+[053:LSCR#0210](54)enorm farligt utseende jak
+[053:LSCR#0210](14)Jag kan inte flytta den.
+[053:LSCR#0210](14)Jag kan inte flytta den.
+[053:LSCR#0210](14)Ack!
+[053:LSCR#0210](14)...mullvadar!
+[053:LSCR#0210](54)ännu en mullvad
+[053:LSCR#0210](54)mullvadshord
+[053:LSCR#0210](54)rolig liten man
+[053:LSCR#0210](14)Den är vacker!
+[053:LSCR#0210](54)lås
+[053:LSCR#0210](14)Jag kan inte öppna det.
+[053:LSCR#0210](14)Åh nej!
+[053:LSCR#0211](54)dokumentförstörare
+[053:LSCR#0211](54)stilfull konfetti
+[053:LSCR#0211](14)Wheeeeee!!
+[053:LSCR#0211](7A)Kasta
+[053:LSCR#0211](54)eld
+[053:LSCR#0211](54)noshörningsnaglar
+[053:LSCR#0211](54)lås
+[053:LSCR#0212](14)Men jag är inte klar med dig än!
+[053:LSCR#0212](D8)Åh nej.
+[053:LSCR#0212](14)Trodde du att du kunde smita härifrån med De Många Händernas Idol, va?
+[053:LSCR#0212](D8)Titta, jag kan förklara...
+[053:LSCR#0212](14)Det kan jag med--
+[053:LSCR#0212](14)Du förgiftade Guvernörens sällskapspudlar...
+[053:LSCR#0212](D8)Dom bara sover!
+[053:LSCR#0212](14)...bröt dig in i hennes hus...
+[053:LSCR#0212](D8)Dörren var olåst!
+[053:LSCR#0212](14)...och stal ett av hennes mest värdefulla konstverk!
+[053:LSCR#0212](D8)Nej, du har fått allt om bakfoten!
+[053:LSCR#0212](14)Jaså?
+[053:LSCR#0212](14)
+[053:LSCR#0212](14)Nå, låt höra din förklaring.
+[053:LSCR#0212](FA)Hon sa att jag fick ta den!
+[053:LSCR#0212](FA)Jag skulle bara låna den!
+[053:LSCR#0212](FA)Den hör hemma på ett museum!
+[053:LSCR#0212](FA)Piratledarna sa åt mig att göra det!
+[053:LSCR#0212](FA)Jag tog bara ut den på promenad.
+[053:LSCR#0212](14)Ha!
+[053:LSCR#0212](14)Vad händer här?
+[053:LSCR#0212](14)Jag tog den här brottslingen när han stack med er idol, Guvernör.
+[053:LSCR#0212](14)Han säger att ni gav den till honom!
+[053:LSCR#0212](14)Det stämmer. Det gjorde jag.
+[053:LSCR#0212](14)Han säger att han bara lånade den!
+[053:LSCR#0212](14)Det stämmer. Jag lånade ut den till honom.
+[053:LSCR#0212](14)Han säger att den hör hemma på ett museum!
+[053:LSCR#0212](14)Det stämmer. Det gör den.
+[053:LSCR#0212](14)Han säger att piratledarna sa åt honom att göra det!
+[053:LSCR#0212](14)Då är han inte den första hederliga personen de har vilselett!
+[053:LSCR#0212](14)Han säger att han bara tog ut den på promenad.
+[053:LSCR#0212](14)Nå, vad snällt av honom.
+[053:LSCR#0212](14)Va?
+[053:LSCR#0212](14)Du hörde mig, Fester.\255\003Den verkliga frågan är, hur kom han in här medan du höll vakt?
+[053:LSCR#0212](14)Jag... Öh...
+[053:LSCR#0212](14)Gå bara härifrån, Fester.\255\003Jag klarar det här.
+[053:LSCR#0212](14)Hmpf!
+[053:LSCR#0212](14)Jag tar itu med dig sen.
+[053:LSCR#0212](14)Förlåt för honom.\255\003Han är ny.\255\003Jag är Guvernör Marley...
+[053:LSCR#0212](14)
+[053:LSCR#0213](D8)Jag måste vara galen!
+[053:LSCR#0213](D8)Jag har filen...
+[053:LSCR#0214](D8)Det borde hålla honom ett tag!\255\003Om jag bara hade en fil kunde jag ta idolen!
+[053:LSCR#0215](D8)Puh!\255\003Det var nära.\255\003I alla fall fick jag idolen.
+[053:LSCR#0216](14)Det här ser ut som ett jobb för Fester Shinetop!
+[053:LSCR#0217](14)Vart tror du att du är på väg, \255\007\038\000?
+[053:LSCR#0217](FA)Jag ska lägga idolen i mitt bankfack.
+[053:LSCR#0217](FA)Du vet, det är inte för sent för oss att bli sams och vara vänner.
+[053:LSCR#0217](FA)Ursäkta, herr Shinetop, men du blockerar dörröppningen.
+[053:LSCR#0217](FA)Stick, Fester.
+[053:LSCR#0217](14)Jaså?\255\003Jag vet ett riktigt säkert skåp du kan lägga den i...\255\003Davey Jones skåp!!!
+[053:LSCR#0217](14)Jadå...\255\003Och det är inte heller för sent för mig att döda dig och ändå hinna till baren för happy hour.
+[053:LSCR#0217](14)Jag tror du behöver svalna.
+[053:LSCR#0217](14)Lämna över ditt svärd.
+[053:LSCR#0217](D8)Åh nej.
 [057:OBNA#0653](__)stig
 [057:OBNA#0654](__)stig
 [057:VERB#0655](14)Ser jag ut som en springpojke?
