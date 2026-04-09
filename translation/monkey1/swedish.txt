@@ -534,7 +534,7 @@
 [020:OBNA#0268](__)högt uppskjutande klippa
 [020:VERB#0261](D8)Djup.\255\003Mörk.\255\003Förbjuden.
 [020:OBNA#0261](__)djungel
-[020:VERB#0263](D8)Det är konstigt...\255\003Det står `Sea Monkey`.
+[020:VERB#0263](D8)Det är konstigt...\255\003Det står `Havsapan`.
 [020:OBNA#0263](__)roddbåt
 [020:VERB#0270](D8)Några bananer föll av trädet!
 [020:OBNA#0270](__)bananer
