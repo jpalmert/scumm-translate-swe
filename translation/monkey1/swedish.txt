@@ -764,7 +764,7 @@
 [025:OBNA#0291](__)bananer
 [025:VERB#0304](D8)Ser lite övermogen ut, förutom de där fina, saftiga bananerna!
 [025:VERB#0304](D8)Inget kvar förutom dålig frukt.
-[025:VERB#0304](D8)Allt jag vill ha är de här bananerna. Den andra frukten ser lite förbi sin bästa tid ut.
+[025:VERB#0304](D8)Allt jag vill ha är de här bananerna. Den andra frukten ser ut att ha sett sina bästa dar.
 [025:VERB#0304](D8)Nej tack. Resten duger inte.
 [025:OBNA#0304](__)fruktkorg
 [025:VERB#0303](D8)Jag tror de väntar på att jag ska ge dem något.
@@ -789,8 +789,8 @@
 [025:VERB#0294](D8)Jag tror jag hellre behåller det.
 [025:VERB#0294](D8)Det vore ingen bra idé att ta av det här.
 [025:VERB#0294](54)halsband på navigator
-[025:VERB#0294](14)Du kan inte få det.\255\003It's mine.
-[025:VERB#0294](D8)Jag behöver det inte här--\255\003No ghosts around.
+[025:VERB#0294](14)Du kan inte få det.\255\003Det är mitt.
+[025:VERB#0294](D8)Jag behöver det inte här--\255\003Inga spöken här.
 [025:VERB#0294](D8)Jag kan inte ta på det nu--jag har huvudet framme.
 [025:OBNA#0294](__)halsband på navigator
 [025:VERB#0281](D8)Han babblar för sig själv.
@@ -1138,218 +1138,218 @@
 [E][027:OBNA#0305](__)memo
 [E][027:ENCD#0027](54)hole
 [E][027:LSCR#0200](D8)I might fit through that hole, but I don't think this banana picker will.
-[E][028:OBNA#0315](__)door
-[E][028:OBNA#0316](__)door
-[E][028:OBNA#0323](__)curtain
-[E][028:VERB#0321](D8)Cozy.
-[E][028:VERB#0321](D8)For what?
-[E][028:VERB#0321](94)I'll just throw them all in.
-[E][028:VERB#0321](94)I could cook it, but I'd never get it out.
-[E][028:VERB#0321](94)I don't want to burn that.
-[E][028:OBNA#0321](__)fireplace
-[E][028:VERB#0362](D8)I don't think it'll hold much now.
-[E][028:VERB#0362](D8)Looks like a fine pewter tankard.
-[E][028:OBNA#0362](__)mug
-[E][028:VERB#0363](D8)I don't think it'll hold much now.
-[E][028:VERB#0363](D8)Looks like a fine pewter tankard.
-[E][028:OBNA#0363](__)mug
-[E][028:VERB#0364](D8)I don't think it'll hold much now.
-[E][028:VERB#0364](D8)Looks like a fine pewter tankard.
-[E][028:OBNA#0364](__)mug
-[E][028:VERB#0365](D8)I don't think it'll hold much now.
-[E][028:VERB#0365](D8)Looks like a fine pewter tankard.
-[E][028:OBNA#0365](__)mug
-[E][028:VERB#0366](D8)I don't think it'll hold much now.
-[E][028:VERB#0366](D8)Looks like a fine pewter tankard.
-[E][028:OBNA#0366](__)mug
-[E][028:VERB#0322](14)Why should we take THAT?
-[E][028:OBNA#0322](__)important-looking pirates
-[E][028:VERB#0330](D8)I don't want to come between a pirate and his grog.
-[E][028:OBNA#0330](__)pirate
-[E][028:VERB#0342](D8)I don't think it's wise to wake a sleeping pirate.
-[E][028:OBNA#0342](__)pirate
-[E][028:VERB#0339](14)Grrrrrr.
-[E][028:VERB#0339](D8)I think he's happy with his bone.
-[E][028:OBNA#0339](__)dog
-[E][028:VERB#0345](D8)I don't want to bother them.\255\003They're busy listening to the guy on the left.
-[E][028:VERB#0345](D8)They're busy listening to the guy on the left.
-[E][028:OBNA#0345](__)pirates
-[E][028:VERB#0333](D8)No thanks.  I can't stand salesmen.
-[E][028:OBNA#0333](__)pirate
-[E][028:VERB#0336](D8)He looks pretty shook up...\255\003I'd better leave him alone.
-[E][028:OBNA#0336](__)pirate
-[E][028:VERB#0354](D8)I think they're busy.
-[E][028:OBNA#0354](__)pirate
-[E][028:VERB#0357](D8)I don't think it's wise to wake a sleeping pirate.
-[E][028:OBNA#0357](__)pirate
-[E][028:ENCD#0028](54)cook
-[E][028:LSCR#0200](54)cook
-[E][028:LSCR#0204](13)important-looking pirates
-[E][028:LSCR#0214](14)Hey!\255\003You can't come back here!
-[E][028:LSCR#0215](14)Hey!\255\003Don't go into the kitchen!
-[E][028:LSCR#0220](14)I see you've heard about the three pirate trials...
-[E][028:LSCR#0220](14)Yes, yes, we've seen that.
-[E][028:LSCR#0220](14)Well, if it isn't the boy who wants to be a pirate.\255\003How do you fare on your quests?
-[E][028:LSCR#0220](14)How do you fare, swordsman?
-[E][028:LSCR#0220](14)How do you fare, thief?
-[E][028:LSCR#0220](14)How do you fare, gold finder?
-[E][028:LSCR#0220](14)Welcome, young friend.
-[E][028:LSCR#0220](14)Have you beaten the Sword Master yet?
-[E][028:LSCR#0220](14)Have you stolen the idol yet?
-[E][028:LSCR#0220](14)Have you found the treasure yet?
-[E][028:LSCR#0220](14)You must have heard about the three pirate trials...
-[E][028:LSCR#0220](14)What be ye wantin', boy?
-[E][028:LSCR#0220](FA)I mean to kill you all!
-[E][028:LSCR#0220](FA)I want to be a pirate.
-[E][028:LSCR#0220](FA)I want to be a fireman.
-[E][028:LSCR#0220](14)So what?
-[E][028:LSCR#0220](14)Why bother us?
-[E][028:LSCR#0220](14)Hey, don't forget we're short on help because  of this whole LeChuck thing.
-[E][028:LSCR#0220](14)So?
-[E][028:LSCR#0220](14)So, no pirates means no swag, and no swag means no grog,  and we're getting dangerously low on grog...
-[E][028:LSCR#0220](14)Hmm...
-[E][028:LSCR#0220](14)Do you have any special skills?
-[E][028:LSCR#0220](94)I can hold my breath for ten minutes!
-[E][028:LSCR#0220](14)Well...\255\003All right, but you don't become a pirate just by ASKING.
-[E][028:LSCR#0220](14)You'll have to go through...
-[E][028:LSCR#0220](14)The three trials!\254\001\255\002
-[E][028:LSCR#0220](14)           The three trials!\254\001\255\002
-[E][028:LSCR#0220](14)     The three trials!
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](D8)Er...\255\003What three trials are those?
-[E][028:LSCR#0220](14)There are three trials every pirate must pass.
-[E][028:LSCR#0220](14)You must master the sword...
-[E][028:LSCR#0220](14)...and the art of thievery...
-[E][028:LSCR#0220](14)...and the quest.
-[E][028:LSCR#0220](14)The what?
-[E][028:LSCR#0220](14)Treasure huntin', ya sea urchin!
-[E][028:LSCR#0220](14)Right.\255\003You must prove yourself in each of these three areas:
-[E][028:LSCR#0220](14)swordplay, thievery, and, er, treasure huntery;\255\003then return with proof that you've done it.
-[E][028:LSCR#0220](14)And then ye must drink grog with us!!
-[E][028:LSCR#0220](14)GROG!!!                  \255\002
-[E][028:LSCR#0220](14)GROG!!!            \255\002
-[E][028:LSCR#0220](14)GROG!!!
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](14)Get lost, boy, you bother us.
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](FA)Tell me more about mastering the sword.
-[E][028:LSCR#0220](FA)Tell me again about mastering the sword.
-[E][028:LSCR#0220](FA)I'm the deadliest scalawag what ever swung a sword!
-[E][028:LSCR#0220](FA)Tell me more about mastering the art of thievery.
-[E][028:LSCR#0220](FA)Tell me again about pilfering the idol.
-[E][028:LSCR#0220](FA)I'm the sneakiest footpad in these isles!
-[E][028:LSCR#0220](FA)Tell me more about treasure hunting.
-[E][028:LSCR#0220](FA)Tell me again about the Lost Treasure.
-[E][028:LSCR#0220](FA)I found your 'legendary Lost Treasure'.
-[E][028:LSCR#0220](FA)You're a bunch of foul-smelling, grog-swilling pigs!
-[E][028:LSCR#0220](FA)What's in that grog stuff, anyway?
-[E][028:LSCR#0220](FA)I'll just be running along now.
-[E][028:LSCR#0220](14)First, get ye a sword.
-[E][028:LSCR#0220](14)You must seek out and defeat the Sword Master.
-[E][028:LSCR#0220](14)Someone in town can probably direct you.
-[E][028:LSCR#0220](14)Oh!\255\003You'll want to find someone to train you first.
-[E][028:LSCR#0220](14)Ha ha.\255\003Imagine trying to take on the Sword Master without any training!
-[E][028:LSCR#0220](14)Har Har Har\255\002
-[E][028:LSCR#0220](14)       Har Har Har\255\002
-[E][028:LSCR#0220](14)       Har Har Har
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](14)And get yourself trained first.
-[E][028:LSCR#0220](14)We want you to procure a small item for us...
-[E][028:LSCR#0220](14)The Idol of Many Hands...
-[E][028:LSCR#0220](14)...in the Governor's mansion!
-[E][028:LSCR#0220](14)The Governor keeps the Idol o' Many Hands  in a display case in the mansion outside of town.
-[E][028:LSCR#0220](14)You'll have to get past the guards, naturally.
-[E][028:LSCR#0220](14)The tricky part will be getting past the dogs outside.
-[E][028:LSCR#0220](14)They're a particularly vicious breed...\255\003...you might be able to drug them or something.
-[E][028:LSCR#0220](14)Legend has it that there's a treasure buried here on the island...
-[E][028:LSCR#0220](14)All you must do is find the Legendary Lost Treasure of Mêlée Island® and bring it back here.
-[E][028:LSCR#0220](D8)Should I have a map or something?
-[E][028:LSCR#0220](14)Ye can hardly expect to find a treasure without a map!
-[E][028:LSCR#0220](14)...and don't forget:\255\003X marks the spot!
-[E][028:LSCR#0220](14)Har Har Har\255\002
-[E][028:LSCR#0220](14)       Har Har Har\255\002
-[E][028:LSCR#0220](14)       Har Har Har
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](14)Well, defeated the Sword Master, did ye?\255\003Ye're a strong fellow!\255\003Ye may keep the stylish T-shirt.  We have enough.
-[E][028:LSCR#0220](14)Ah, the Idol of Many Hands!\255\003Ye're a brave lad!\255\003And thank ye for stealing it for us.
-[E][028:LSCR#0220](14)Discovered the Lost Treasure, eh?\255\003Ye're a clever boy!\255\003Ye may keep the chic T-shirt.  We have plenty.
-[E][028:LSCR#0220](14)To be a pirate ye must also be a  foul-smelling, grog-swilling pig.
-[E][028:LSCR#0220](14)Grog is a secret mixture which contains one or more of the following:
-[E][028:LSCR#0220](14)kerosene
-[E][028:LSCR#0220](14)propylene glycol
-[E][028:LSCR#0220](14)artificial sweeteners
-[E][028:LSCR#0220](14)sulphuric acid
-[E][028:LSCR#0220](14)rum
-[E][028:LSCR#0220](14)acetone
-[E][028:LSCR#0220](14)red dye no.2
-[E][028:LSCR#0220](14)scumm
-[E][028:LSCR#0220](14)axle grease
-[E][028:LSCR#0220](14)battery acid
-[E][028:LSCR#0220](14)and/or pepperoni\255\003As you can probably imagine, it's one of the most  caustic, volatile substances known to man.
-[E][028:LSCR#0220](14)The stuff eats right through these mugs and the cook is losing  a fortune replacing them.
-[E][028:LSCR#0220](14)Har Har Har\255\002
-[E][028:LSCR#0220](14)       Har Har Har\255\002
-[E][028:LSCR#0220](14)       Har Har Har
-[E][028:LSCR#0220](14) 
-[E][028:LSCR#0220](14)Leave us to our grog.
-[E][028:LSCR#0220](14)Come back later and tell us how ye're doing.
-[E][028:LSCR#0222](14)Waroof! Roof.
-[E][028:LSCR#0222](14)Baroof, ruff?
-[E][028:LSCR#0222](14)*sniff*  *sniff*
-[E][028:LSCR#0222](14)Arf-farf...\255\003...woof?
-[E][028:LSCR#0222](14)A-oooooooo!
-[E][028:LSCR#0222](14)Grrrrrrrrr.
-[E][028:LSCR#0222](14)Grrrrr.
-[E][028:LSCR#0222](FA)Woof.
-[E][028:LSCR#0222](FA)Arf.
-[E][028:LSCR#0222](FA)Ruff.
-[E][028:LSCR#0222](FA)Grrrrrr.
-[E][028:LSCR#0222](14)WOOF?\255\003Aruff roof!
-[E][028:LSCR#0222](14)Woof ARF!\255\003...arf?
-[E][028:LSCR#0222](14)Ruff, a-roof arf!
-[E][028:LSCR#0222](14)GRRRRRRRRRR!!!
-[E][028:LSCR#0222](14)Woof-woof arf woof...\255\003...warroof, Mêlée Island®!\255\003...a-roof wuf:\255\003...LeChuck!\255\003Grrrrrrr!
-[E][028:LSCR#0222](14) 
-[E][028:LSCR#0222](FA)Worf.
-[E][028:LSCR#0222](FA)A-ROOF!
-[E][028:LSCR#0222](FA)Wuf, 'LeChuck?'
-[E][028:LSCR#0222](FA)Yip!  Yip!  Yip!
-[E][028:LSCR#0222](14)Worf, worf.
-[E][028:LSCR#0222](14)A-roof?\255\003Ruff.
-[E][028:LSCR#0222](14)Grrrrrrrr!
-[E][028:LSCR#0222](14)Worf woof woof ruff-ruff...\255\003Wor-roof wuf?\255\003Ruff arf-arf, bow-ruff...\255\003...Governor Marley!
-[E][028:LSCR#0222](14)A-OOOOOOO! A-OOOOOOO!\255\003(ruff ruff ruff)\255\003Bow-roo wuf rowwf--\255\003--Arrooof--
-[E][028:LSCR#0222](14)--LeChuck!\255\003GRRRRRRRRR!\255\003Arf, oof-oof, Monkey Island®!\255\003*sniff*  *sniff*
-[E][028:LSCR#0222](14) 
-[E][028:SCRP#0059](FA)What's wrong, old sot?
-[E][028:SCRP#0059](FA)Where are all the pirates?
-[E][028:SCRP#0059](FA)Get me a drink!
-[E][028:SCRP#0059](14)Oh, they're all up looting the Governor's mansion.
-[E][028:SCRP#0059](14)How can you think of drink at a time like this?
-[E][028:SCRP#0059](14)The Governor is gone!
-[E][028:SCRP#0059](14)LeChuck and his spectral crew came and got her!\255\003They put her on the ghost ship and spirited her away!
-[E][028:SCRP#0059](14)She was so good to me...\255\003...always conveniently losing those Health Board reports...\255\003...for a small consideration, of course.
-[E][028:SCRP#0059](14)What will become of my business?\255\001Oh, woe is me.
-[E][028:SCRP#0059](D8)What can I do to save her?
-[E][028:SCRP#0059](14)You must get a ship and go after her!\255\003The ghost pirate's lair is on Monkey Island®, everybody knows that.\255\003(Don't ask me how...)
-[E][028:SCRP#0059](14)All you need to do is find a way there.
-[E][028:SCRP#0059](FA)Why should I do that?
-[E][028:SCRP#0059](FA)Where can I get a ship?
-[E][028:SCRP#0059](FA)Will you join me?
-[E][028:SCRP#0059](FA)Right!  I'm off!
-[E][028:SCRP#0059](FA)Get me a drink!
-[E][028:SCRP#0059](14)Why, for love, my boy!\255\003Don't deny it, it's written all over your face.
-[E][028:SCRP#0059](14)LOVE
-[E][028:SCRP#0059](14)Why, at Smilin' Stan's Used Shipyard,\255\001same as everybody else.\255\003Tell him I sent you, we're old friends.
-[E][028:SCRP#0059](14)Er. . .alas, I cannot go to sea.
-[E][028:SCRP#0059](14)An old war injury.
-[E][028:SCRP#0059](14)I'm sure you understand.
-[E][028:SCRP#0059](14)Good luck!
-[E][028:SCRP#0059](14)Be sure and wear your mittens.\255\003And your galoshes.
-[E][028:SCRP#0059](14)And don't forget to write.\255\003Bye now.
-[E][028:SCRP#0059](14)You've already got a perfectly good one.
-[E][028:SCRP#0059](14)Get your own drink.
+[028:OBNA#0315](__)dörr
+[028:OBNA#0316](__)dörr
+[028:OBNA#0323](__)gardin
+[028:VERB#0321](D8)Mysig.
+[028:VERB#0321](D8)Varför?
+[028:VERB#0321](94)Jag slänger bara in allihopa.
+[028:VERB#0321](94)Jag skulle kunna laga den, men jag skulle aldrig få ut den.
+[028:VERB#0321](94)Jag vill inte bränna det där.
+[028:OBNA#0321](__)öppen spis
+[028:VERB#0362](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0362](D8)Ser ut som ett fint tennstop.
+[028:OBNA#0362](__)stop
+[028:VERB#0363](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0363](D8)Ser ut som ett fint tennstop.
+[028:OBNA#0363](__)stop
+[028:VERB#0364](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0364](D8)Ser ut som ett fint tennstop.
+[028:OBNA#0364](__)stop
+[028:VERB#0365](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0365](D8)Ser ut som ett fint tennstop.
+[028:OBNA#0365](__)stop
+[028:VERB#0366](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0366](D8)Ser ut som ett fint tennstop.
+[028:OBNA#0366](__)stop
+[028:VERB#0322](14)Varför skulle vi ta MED oss DET?
+[028:OBNA#0322](__)viktigt utseende pirater
+[028:VERB#0330](D8)Jag vill inte komma emellan en pirat och hans grogg.
+[028:OBNA#0330](__)pirat
+[028:VERB#0342](D8)Jag tror inte det är klokt att väcka en sovande pirat.
+[028:OBNA#0342](__)pirat
+[028:VERB#0339](14)Grrrrrr.
+[028:VERB#0339](D8)Jag tror han är nöjd med sitt ben.
+[028:OBNA#0339](__)hund
+[028:VERB#0345](D8)Jag vill inte störa dem.\255\003De är upptagna med att lyssna på killen till vänster.
+[028:VERB#0345](D8)De är upptagna med att lyssna på killen till vänster.
+[028:OBNA#0345](__)pirater
+[028:VERB#0333](D8)Nej tack. Jag står inte ut med försäljare.
+[028:OBNA#0333](__)pirat
+[028:VERB#0336](D8)Han ser ganska skakad ut...\255\003Jag lämnar honom bäst ifred.
+[028:OBNA#0336](__)pirat
+[028:VERB#0354](D8)Jag tror de är upptagna.
+[028:OBNA#0354](__)pirat
+[028:VERB#0357](D8)Jag tror inte det är klokt att väcka en sovande pirat.
+[028:OBNA#0357](__)pirat
+[028:ENCD#0028](54)kock
+[028:LSCR#0200](54)kock
+[028:LSCR#0204](13)viktigt utseende pirater
+[028:LSCR#0214](14)Hörru!\255\003Du får inte komma in här!
+[028:LSCR#0215](14)Hörru!\255\003Gå inte in i köket!
+[028:LSCR#0220](14)Jag ser att du hört talas om de tre piratproven...
+[028:LSCR#0220](14)Ja, ja, det har vi sett.
+[028:LSCR#0220](14)Nå, om det inte är grabben som vill bli pirat.\255\003Hur går det för dig i dina uppdrag?
+[028:LSCR#0220](14)Hur går det, svärdsman?
+[028:LSCR#0220](14)Hur går det, tjuv?
+[028:LSCR#0220](14)Hur går det, guldfinnare?
+[028:LSCR#0220](14)Välkommen, unge vän.
+[028:LSCR#0220](14)Har du besegrat Svärdmästaren än?
+[028:LSCR#0220](14)Har du stulit idolen än?
+[028:LSCR#0220](14)Har du hittat skatten än?
+[028:LSCR#0220](14)Du måste ha hört talas om de tre piratproven...
+[028:LSCR#0220](14)Va vill du ha, grabben?
+[028:LSCR#0220](FA)Jag tänker döda er alla!
+[028:LSCR#0220](FA)Jag vill bli pirat.
+[028:LSCR#0220](FA)Jag vill bli brandman.
+[028:LSCR#0220](14)Och?
+[028:LSCR#0220](14)Varför besvära oss?
+[028:LSCR#0220](14)Hörru, glöm inte att vi har brist på folk på grund av hela den där LeChuck-grejen.
+[028:LSCR#0220](14)Och?
+[028:LSCR#0220](14)Så, inga pirater innebär inga rikedomar, och inga rikedomar innebär ingen grogg, och vi håller på att få farligt ont om grogg...
+[028:LSCR#0220](14)Hmm...
+[028:LSCR#0220](14)Har du några speciella talanger?
+[028:LSCR#0220](94)Jag kan hålla andan i tio minuter!
+[028:LSCR#0220](14)Tja...\255\003Okej då, men man blir inte pirat bara genom att FRÅGA.
+[028:LSCR#0220](14)Du måste gå igenom...
+[028:LSCR#0220](14)De tre proven!\254\001\255\002
+[028:LSCR#0220](14)           De tre proven!\254\001\255\002
+[028:LSCR#0220](14)     De tre proven!
+[028:LSCR#0220](14)
+[028:LSCR#0220](D8)Öh...\255\003Vilka tre prov är det?
+[028:LSCR#0220](14)Det finns tre prov som varje pirat måste klara.
+[028:LSCR#0220](14)Du måste bemästra svärdet...
+[028:LSCR#0220](14)...och tjuveriets konst...
+[028:LSCR#0220](14)...och sökandet.
+[028:LSCR#0220](14)Va?
+[028:LSCR#0220](14)Skattjakt, din sjöpung!
+[028:LSCR#0220](14)Precis.\255\003Du måste bevisa dig själv inom alla dessa tre områden:
+[028:LSCR#0220](14)svärdsspel, tjuveri och, öh, skattjakteri;\255\003och sedan återvända med bevis på att du gjort det.
+[028:LSCR#0220](14)Och sen måste du dricka grogg med oss!!
+[028:LSCR#0220](14)GROGG!!!                  \255\002
+[028:LSCR#0220](14)GROGG!!!            \255\002
+[028:LSCR#0220](14)GROGG!!!
+[028:LSCR#0220](14)
+[028:LSCR#0220](14)
+[028:LSCR#0220](14)Försvinn, grabben, du stör oss.
+[028:LSCR#0220](14)
+[028:LSCR#0220](FA)Berätta mer om att bemästra svärdet.
+[028:LSCR#0220](FA)Berätta om att bemästra svärdet igen.
+[028:LSCR#0220](FA)Jag är den dödligaste skurken som svingat ett svärd!
+[028:LSCR#0220](FA)Berätta mer om att bemästra tjuveriets konst.
+[028:LSCR#0220](FA)Berätta om att snatta idolen igen.
+[028:LSCR#0220](FA)Jag är den snikigaste ficktjuven på dessa öar!
+[028:LSCR#0220](FA)Berätta mer om skattjakt.
+[028:LSCR#0220](FA)Berätta om den Försvunna Skatten igen.
+[028:LSCR#0220](FA)Jag hittade er 'legendariska Försvunna Skatt'.
+[028:LSCR#0220](FA)Ni är ett gäng illaluktande, groggsvällande grisar!
+[028:LSCR#0220](FA)Vad finns det i den där groggen egentligen?
+[028:LSCR#0220](FA)Jag ska bara sticka nu.
+[028:LSCR#0220](14)Först, skaffa dig ett svärd.
+[028:LSCR#0220](14)Du måste söka upp och besegra Svärdmästaren.
+[028:LSCR#0220](14)Någon i stan kan nog visa dig vägen.
+[028:LSCR#0220](14)Åh!\255\003Du vill nog hitta någon som kan träna dig först.
+[028:LSCR#0220](14)Ha ha.\255\003Tänk dig att försöka ta dig an Svärdmästaren utan någon träning!
+[028:LSCR#0220](14)Har Har Har\255\002
+[028:LSCR#0220](14)       Har Har Har\255\002
+[028:LSCR#0220](14)       Har Har Har
+[028:LSCR#0220](14)
+[028:LSCR#0220](14)Och låt träna dig först.
+[028:LSCR#0220](14)Vi vill att du skaffar fram en liten grej åt oss...
+[028:LSCR#0220](14)Idolen med de Många Händerna...
+[028:LSCR#0220](14)...i Guvernörens herrgård!
+[028:LSCR#0220](14)Guvernören förvarar Idolen med de Många Händerna i en monter i herrgården utanför stan.
+[028:LSCR#0220](14)Du måste ta dig förbi vakterna, naturligtvis.
+[028:LSCR#0220](14)Det svåra kommer vara att ta sig förbi hundarna utanför.
+[028:LSCR#0220](14)De är en särskilt elak ras...\255\003...du kanske kan droga dem eller nåt.
+[028:LSCR#0220](14)Legenden säger att det finns en skatt begravd här på ön...
+[028:LSCR#0220](14)Allt du behöver göra är att hitta den Legendariska Försvunna Skatten på Mêlée Island® och ta med dig den hit.
+[028:LSCR#0220](D8)Borde jag ha en karta eller nåt?
+[028:LSCR#0220](14)Du kan knappast förvänta dig att hitta en skatt utan en karta!
+[028:LSCR#0220](14)...och glöm inte:\255\003X markerar platsen!
+[028:LSCR#0220](14)Har Har Har\255\002
+[028:LSCR#0220](14)       Har Har Har\255\002
+[028:LSCR#0220](14)       Har Har Har
+[028:LSCR#0220](14)
+[028:LSCR#0220](14)Nå, besegrat Svärdmästaren, vasa?\255\003Du är en stark karl!\255\003Du får behålla den snygga T-shirten. Vi har tillräckligt.
+[028:LSCR#0220](14)Ah, Idolen med de Många Händerna!\255\003Du är en modig grabb!\255\003Och tack för att du stal den åt oss.
+[028:LSCR#0220](14)Upptäckt den Försvunna Skatten, va?\255\003Du är en klipsk grabb!\255\003Du får behålla den chica T-shirten. Vi har massor.
+[028:LSCR#0220](14)För att vara pirat måste du också vara en illaluktande, groggsvällande gris.
+[028:LSCR#0220](14)Grogg är en hemlig blandning som innehåller en eller flera av följande:
+[028:LSCR#0220](14)fotogen
+[028:LSCR#0220](14)propylenglykol
+[028:LSCR#0220](14)konstgjorda sötningsmedel
+[028:LSCR#0220](14)svavelsyra
+[028:LSCR#0220](14)rom
+[028:LSCR#0220](14)aceton
+[028:LSCR#0220](14)röd färgämne nr.2
+[028:LSCR#0220](14)scumm
+[028:LSCR#0220](14)axelfett
+[028:LSCR#0220](14)bilbatterisyra
+[028:LSCR#0220](14)och/eller pepperoni\255\003Som du säkert kan föreställa dig är det en av de mest frätande, flyktiga ämnena kända för mänskligheten.
+[028:LSCR#0220](14)Grejerna äter sig igenom dessa muggar och kocken förlorar en förmögenhet på att ersätta dem.
+[028:LSCR#0220](14)Har Har Har\255\002
+[028:LSCR#0220](14)       Har Har Har\255\002
+[028:LSCR#0220](14)       Har Har Har
+[028:LSCR#0220](14)
+[028:LSCR#0220](14)Lämna oss åt vår grogg.
+[028:LSCR#0220](14)Kom tillbaka sen och berätta hur det går för dig.
+[028:LSCR#0222](14)Varoof! Voff.
+[028:LSCR#0222](14)Baroof, voff?
+[028:LSCR#0222](14)*sniffa*  *sniffa*
+[028:LSCR#0222](14)Arf-farf...\255\003...voff?
+[028:LSCR#0222](14)A-uuuuuuu!
+[028:LSCR#0222](14)Grrrrrrrrr.
+[028:LSCR#0222](14)Grrrrr.
+[028:LSCR#0222](FA)Voff.
+[028:LSCR#0222](FA)Arf.
+[028:LSCR#0222](FA)Voff.
+[028:LSCR#0222](FA)Grrrrrr.
+[028:LSCR#0222](14)VOFF?\255\003Aruff voff!
+[028:LSCR#0222](14)Voff ARF!\255\003...arf?
+[028:LSCR#0222](14)Voff, a-voff arf!
+[028:LSCR#0222](14)GRRRRRRRRRR!!!
+[028:LSCR#0222](14)Voff-voff arf voff...\255\003...varoof, Mêlée Island®!\255\003...a-voff vuf:\255\003...LeChuck!\255\003Grrrrrrr!
+[028:LSCR#0222](14)
+[028:LSCR#0222](FA)Vorf.
+[028:LSCR#0222](FA)A-VOFF!
+[028:LSCR#0222](FA)Vuf, 'LeChuck?'
+[028:LSCR#0222](FA)Yip!  Yip!  Yip!
+[028:LSCR#0222](14)Vorf, vorf.
+[028:LSCR#0222](14)A-voff?\255\003Voff.
+[028:LSCR#0222](14)Grrrrrrrr!
+[028:LSCR#0222](14)Vorf voff voff voff-voff...\255\003Vor-voff vuf?\255\003Voff arf-arf, bow-voff...\255\003...Guvernör Marley!
+[028:LSCR#0222](14)A-UUUUUU! A-UUUUUU!\255\003(voff voff voff)\255\003Bow-roo vuf rowwf--\255\003--Arrooof--
+[028:LSCR#0222](14)--LeChuck!\255\003GRRRRRRRRR!\255\003Arf, oof-oof, Monkey Island®!\255\003*sniffa*  *sniffa*
+[028:LSCR#0222](14)
+[028:SCRP#0059](FA)Vad är det för fel, din gamla fyllebult?
+[028:SCRP#0059](FA)Var är alla pirater?
+[028:SCRP#0059](FA)Ge mig en drink!
+[028:SCRP#0059](14)Åh, de är alla uppe och plundrar Guvernörens herrgård.
+[028:SCRP#0059](14)Hur kan du tänka på dryck i ett läge som detta?
+[028:SCRP#0059](14)Guvernören är borta!
+[028:SCRP#0059](14)LeChuck och hans spöklika besättning kom och tog henne!\255\003De satte henne på spökskeppet och försvann med henne!
+[028:SCRP#0059](14)Hon var så snäll mot mig...\255\003...tappade alltid så bekvämligt bort de där rapporterna från hälsovårdsnämnden...\255\003...mot en liten ersättning, förstås.
+[028:SCRP#0059](14)Vad ska det bli av min verksamhet?\255\001Åh, ve mig.
+[028:SCRP#0059](D8)Vad kan jag göra för att rädda henne?
+[028:SCRP#0059](14)Du måste skaffa ett skepp och följa efter henne!\255\003Spökpiratens lya finns på Monkey Island®, alla vet det.\255\003(Fråga mig inte hur...)
+[028:SCRP#0059](14)Allt du behöver göra är att hitta ett sätt dit.
+[028:SCRP#0059](FA)Varför skulle jag göra det?
+[028:SCRP#0059](FA)Var kan jag få tag på ett skepp?
+[028:SCRP#0059](FA)Vill du följa med mig?
+[028:SCRP#0059](FA)Då så! Jag sticker!
+[028:SCRP#0059](FA)Ge mig en drink!
+[028:SCRP#0059](14)Jo, för kärlekens skull, min gosse!\255\003Förneka det inte, det syns tydligt i ditt ansikte.
+[028:SCRP#0059](14)KÄRLEK
+[028:SCRP#0059](14)Jo, på Leende Stans Begagnade Skeppsvarv,\255\001precis som alla andra.\255\003Säg att jag skickade dig, vi är gamla vänner.
+[028:SCRP#0059](14)Öh... tyvärr kan jag inte ge mig ut till havs.
+[028:SCRP#0059](14)En gammal krigsskada.
+[028:SCRP#0059](14)Jag är säker på att du förstår.
+[028:SCRP#0059](14)Lycka till!
+[028:SCRP#0059](14)Se till att ha på dig dina vantar.\255\003Och dina galoscher.
+[028:SCRP#0059](14)Och glöm inte att skriva.\255\003Hej då nu.
+[028:SCRP#0059](14)Du har redan en fullkomligt bra sådan.
+[028:SCRP#0059](14)Skaffa din egen drink.
 [E][029:OBNA#0367](__)door
 [E][029:VERB#0368](D8)Poor chickens...
 [E][029:VERB#0368](D8)I'd better not.  They're probably being saved for a pagan ritual, and I wouldn't want to spoil it.
