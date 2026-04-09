@@ -333,55 +333,55 @@
 [E][012:LSCR#0207](D8)`Made by Red Skull.`
 [E][012:LSCR#0207](D8)`Made by Sharptooth.`
 [E][012:LSCR#0209](13)Herman Toothrot
-[E][014:VERB#0158](D8)It's full of crap. I hope I don't have to eat this.
-[E][014:VERB#0158](D8)Looks like your run-of-the-mill ship's cooking pot.
-[E][014:VERB#0158](D8)I'm not putting anything else in that pot!
-[E][014:VERB#0158](D8)I don't have a recipe.  I wouldn't know where to begin making soup.
-[E][014:VERB#0158](D8)Just a drop.
-[E][014:VERB#0158](D8)Umm...This is going to be good.
-[E][014:VERB#0158](D8)That should be enough.
-[E][014:VERB#0158](D8)Good thing I've got a million of these.
-[E][014:VERB#0158](D8)I love cinnamon.
-[E][014:VERB#0158](D8)About time I got rid of this worthless artifact.
-[E][014:VERB#0158](D8)I think I have enough fiber; I'll just hold on to this.
-[E][014:VERB#0158](D8)No way!  I worked too hard for this money!
-[E][014:VERB#0158](D8)This cheap plastic compass is too neat to throw away.
-[E][014:VERB#0158](D8)This sea-faring literature could make good reading; I'll keep it.
-[E][014:VERB#0158](D8)It's hot enough as it is.
-[E][014:VERB#0158](D8)I don't want any of this soup.
-[E][014:VERB#0158](D8)I paid good money for this; I'll hold on to it.
-[E][014:OBNA#0158](__)cooking pot
-[E][014:VERB#0161](D8)Nice and hot.
-[E][014:VERB#0161](D8)Ouch, that's hot!
-[E][014:VERB#0161](D8)Come to think of it, they're only dancing lessons.
-[E][014:VERB#0161](D8)Why burn perfectly good food?
-[E][014:VERB#0161](D8)Yeah, like I really want to kill myself.
-[E][014:VERB#0161](D8)I may need this later.
-[E][014:VERB#0161](D8)I'll just burn them all.
-[E][014:VERB#0161](D8)I don't think it's going to catch fire.
-[E][014:VERB#0161](D8)Ouch, that's hot!
-[E][014:OBNA#0161](__)red hot fire
-[E][014:VERB#0164](D8)Hmmmm...\255\003I loved this stuff when I was a kid.\255\003I liked the way it chewed up the roof of your mouth.
-[E][014:VERB#0164](14)Crunch
-[E][014:VERB#0164](D8)GREAT!\255\003A toy prize inside.
-[E][014:VERB#0164](D8)I'm too sick to eat any more.
-[E][014:OBNA#0164](__)cereal
-[E][014:VERB#0168](D8)Hmmmm...\255\003I loved this stuff when I was a kid.\255\003I liked the way it chewed up the roof of your mouth.
-[E][014:OBNA#0168](__)cereal
-[E][014:OBNA#0163](__)cupboard
-[E][014:VERB#0165](D8)It's about the same size as my head.
-[E][014:VERB#0165](D8)I'm only going to put this on if I REALLY have to.
-[E][014:OBNA#0165](__)pot
-[E][014:OBNA#0166](__)ladder
-[E][014:VERB#0167](D8)Yikes!
-[E][014:VERB#0167](D8)It's already burning.
-[E][014:VERB#0167](D8)I wouldn't want to set that on fire.
-[E][014:OBNA#0167](__)flaming mass
-[E][014:VERB#0157](D8)This is no prize!\255\003It's a small key with a finely engraved monkey on it.
-[E][014:VERB#0157](D8)It's a small key with a finely engraved monkey on it.
-[E][014:VERB#0157](54)small key
-[E][014:VERB#0157](D8)This key doesn't seem to fit in there.
-[E][014:OBNA#0157](__)small key
+[014:VERB#0158](D8)Den är full av skit. Jag hoppas jag inte behöver äta det här.
+[014:VERB#0158](D8)Det ser ut som en vanlig skeppsgryta.
+[014:VERB#0158](D8)Jag lägger inte i något mer i den grytan!
+[014:VERB#0158](D8)Jag har inget recept.  Jag skulle inte veta var jag ska börja med att göra soppa.
+[014:VERB#0158](D8)Bara en droppe.
+[014:VERB#0158](D8)Mmm...Det här kommer bli gott.
+[014:VERB#0158](D8)Det borde räcka.
+[014:VERB#0158](D8)Tur att jag har en miljon av dessa.
+[014:VERB#0158](D8)Jag älskar kanel.
+[014:VERB#0158](D8)På tiden att jag blev av med den här värdelösa artefakten.
+[014:VERB#0158](D8)Jag tror jag har tillräckligt med fibrer; jag behåller den här.
+[014:VERB#0158](D8)Aldrig i livet!  Jag har jobbat för hårt för de här pengarna!
+[014:VERB#0158](D8)Den här billiga plastkompassen är för fin för att slänga.
+[014:VERB#0158](D8)Den här sjöfartslitteraturen kan vara bra läsning; jag behåller den.
+[014:VERB#0158](D8)Det är hett nog som det är.
+[014:VERB#0158](D8)Jag vill inte ha något av den här soppan.
+[014:VERB#0158](D8)Jag betalade bra pengar för det här; jag behåller det.
+[014:OBNA#0158](__)gryta
+[014:VERB#0161](D8)Skönt och varmt.
+[014:VERB#0161](D8)Aj, det är hett!
+[014:VERB#0161](D8)Nu när jag tänker på det, det är ju bara danslektioner.
+[014:VERB#0161](D8)Varför bränna perfekt bra mat?
+[014:VERB#0161](D8)Ja, som om jag verkligen vill döda mig själv.
+[014:VERB#0161](D8)Jag kanske behöver det här senare.
+[014:VERB#0161](D8)Jag bränner bara allt.
+[014:VERB#0161](D8)Jag tror inte det kommer fatta eld.
+[014:VERB#0161](D8)Aj, det är hett!
+[014:OBNA#0161](__)rödglödande eld
+[014:VERB#0164](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det tuggade sönder gommen.
+[014:VERB#0164](14)Krunch
+[014:VERB#0164](D8)FANTASTISKT!\255\003En leksak inuti.
+[014:VERB#0164](D8)Jag är för sjuk för att äta mer.
+[014:OBNA#0164](__)flingor
+[014:VERB#0168](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det tuggade sönder gommen.
+[014:OBNA#0168](__)flingor
+[014:OBNA#0163](__)skåp
+[014:VERB#0165](D8)Den är ungefär lika stor som mitt huvud.
+[014:VERB#0165](D8)Jag tar bara på mig den här om jag VERKLIGEN måste.
+[014:OBNA#0165](__)gryta
+[014:OBNA#0166](__)stege
+[014:VERB#0167](D8)Oj då!
+[014:VERB#0167](D8)Den brinner redan.
+[014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
+[014:OBNA#0167](__)flammande massa
+[014:VERB#0157](D8)Det här är ingen leksak!\255\003Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](D8)Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](54)liten nyckel
+[014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
+[014:OBNA#0157](__)liten nyckel
 [E][014:LSCR#0201](14) 
 [E][014:LSCR#0201](D8)I feel awful.
 [E][014:LSCR#0202](14)Fsspt.
