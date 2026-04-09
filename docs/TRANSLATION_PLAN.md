@@ -107,93 +107,11 @@ The insult swordfighting system has paired strings: each insult has exactly one 
 
 **Workflow:** User says "translate the next room" and Claude translates the next uncompleted room from this list.
 
-**Sample Room List:**
-
-- [x] Room 001
-- [ ] Room 002
-- [ ] Room 003
-- [ ] Room 004
-- [ ] Room 005
-- [ ] Room 006
-- [ ] Room 007
-- [ ] Room 008
-- [ ] Room 009
-- [ ] Room 010
-- [ ] Room 011
-- [ ] Room 012
-- [ ] Room 014
-- [ ] Room 015
-- [ ] Room 016
-- [ ] Room 017
-- [ ] Room 018
-- [ ] Room 019
-- [ ] Room 020
-- [ ] Room 021
-- [ ] Room 023
-- [ ] Room 025
-- [ ] Room 027
-- [ ] Room 028
-- [ ] Room 029
-- [ ] Room 030
-- [ ] Room 031
-- [ ] Room 032
-- [ ] Room 033
-- [ ] Room 034
-- [ ] Room 035
-- [ ] Room 036
-- [ ] Room 037
-- [ ] Room 038
-- [ ] Room 039
-- [ ] Room 040
-- [ ] Room 041
-- [ ] Room 042
-- [ ] Room 043
-- [ ] Room 044
-- [ ] Room 045
-- [ ] Room 048
-- [ ] Room 049
-- [ ] Room 051
-- [ ] Room 052
-- [ ] Room 053
-- [ ] Room 057
-- [ ] Room 058
-- [ ] Room 059
-- [ ] Room 060
-- [ ] Room 061
-- [ ] Room 063
-- [ ] Room 064
-- [ ] Room 065
-- [ ] Room 069
-- [ ] Room 070
-- [ ] Room 071
-- [ ] Room 072
-- [ ] Room 073
-- [ ] Room 074
-- [ ] Room 075
-- [ ] Room 077
-- [ ] Room 078
-- [ ] Room 079
-- [ ] Room 080
-- [ ] Room 081
-- [ ] Room 082
-- [ ] Room 083
-- [ ] Room 084
-- [ ] Room 085
-- [ ] Room 086
-- [x] Room 088
-- [ ] Room 089
-- [ ] Room 090
-- [ ] Room 096
-- [ ] Room 097
-
 **Legend:**
 - [E] ready = English text with [E] prefix already added (shows in git diff)
-- [x] = Translation complete
 
 **Purpose:**
 This is a complete reference list for planning translation work. NOT a commitment to translate all content — this is a planning document for future translators to track progress systematically.
-
-**Progress Tracking:** Mark rooms with [x] when translation is complete.
 
 ---
 

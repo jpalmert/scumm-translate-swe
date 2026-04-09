@@ -712,7 +712,7 @@
 [020:SCRP#0167](54)anmärkningsvärd sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
-[020:SCRP#0168](D8)Jag är här för att rädda Guvernören på Mêlée Island®.
+[020:SCRP#0168](D8)Jag är här för att rädda Guvernören av Mêlée Island®.
 [020:SCRP#0168](D8)Jag är en mäktig pirat.
 [020:SCRP#0168](D8)Sett några stora, fula, läskiga, genomskinliga pirater här omkring?
 [020:SCRP#0168](D8)Finns det något gott att äta på den här ön?
@@ -1089,7 +1089,7 @@
 [025:SCRP#0140](FA)Om jag ville kunde jag sparka ner dig i lavan.
 [025:SCRP#0140](FA)Bra. Jag ville inte ha det ändå.
 [025:SCRP#0140](14)Bra, för du får det inte.
-[025:SCRP#0140](14)Jag har dåliga känslor för det här stället.\255\003Jag tror att jag kan behöva det.
+[025:SCRP#0140](14)Jag har dåliga aningar om det här stället.\255\003Jag tror att jag kan behöva det.
 [025:SCRP#0140](14)Hör du, tjata inte, okej?
 [025:SCRP#0140](14)Du kan tigga hur mycket du vill, men du får det inte.
 [025:SCRP#0140](14)Åh, okej då, ditt stora barn.\255\003Du får ha det.
@@ -1099,7 +1099,7 @@
 [025:SCRP#0140](14)Vid närmare eftertanke...
 [025:SCRP#0140](14)Hej, vad ska man med ett halsband till om man inte har axlar?
 [025:SCRP#0141](54)halsband på Guybrush
-[025:SCRP#0141](D8)Jag har en känsla av att det här bara fungerar under jord.
+[025:SCRP#0141](D8)Jag tror det här bara fungerar under jord.
 [025:SCRP#0141](D8)Det här känns konstigt.
 [025:SCRP#0171](14)Efter lite mer frenetisk paddling...
 [025:SCRP#0171](14) 
@@ -1163,7 +1163,7 @@
 [028:VERB#0366](D8)Ser ut som ett fint tennstop.
 [028:OBNA#0366](__)stop
 [028:VERB#0322](14)Varför skulle vi ta MED oss DET?
-[028:OBNA#0322](__)viktigt utseende pirater
+[028:OBNA#0322](__)förnäma pirater
 [028:VERB#0330](D8)Jag vill inte komma emellan en pirat och hans grogg.
 [028:OBNA#0330](__)pirat
 [028:VERB#0342](D8)Jag tror inte det är klokt att väcka en sovande pirat.
@@ -1184,7 +1184,7 @@
 [028:OBNA#0357](__)pirat
 [028:ENCD#0028](54)kock
 [028:LSCR#0200](54)kock
-[028:LSCR#0204](13)viktigt utseende pirater
+[028:LSCR#0204](13)förnäma pirater
 [028:LSCR#0214](14)Hörru!\255\003Du får inte komma in här!
 [028:LSCR#0215](14)Hörru!\255\003Gå inte in i köket!
 [028:LSCR#0220](14)Jag ser att du hört talas om de tre piratproven...
@@ -1235,7 +1235,7 @@
 [028:LSCR#0220](14)
 [028:LSCR#0220](FA)Berätta mer om att bemästra svärdet.
 [028:LSCR#0220](FA)Berätta om att bemästra svärdet igen.
-[028:LSCR#0220](FA)Jag är den dödligaste skurken som svingat ett svärd!
+[028:LSCR#0220](FA)Jag är den dödligaste slyngeln som svingat ett svärd!
 [028:LSCR#0220](FA)Berätta mer om att bemästra tjuveriets konst.
 [028:LSCR#0220](FA)Berätta om att snatta idolen igen.
 [028:LSCR#0220](FA)Jag är den snikigaste ficktjuven på dessa öar!
@@ -1286,8 +1286,8 @@
 [028:LSCR#0220](14)scumm
 [028:LSCR#0220](14)axelfett
 [028:LSCR#0220](14)bilbatterisyra
-[028:LSCR#0220](14)och/eller pepperoni\255\003Som du säkert kan föreställa dig är det en av de mest frätande, flyktiga ämnena kända för mänskligheten.
-[028:LSCR#0220](14)Grejerna äter sig igenom dessa muggar och kocken förlorar en förmögenhet på att ersätta dem.
+[028:LSCR#0220](14)och/eller pepperoni\255\003Som du säkert kan föreställa dig är det en av de mest frätande, flyktiga ämnena som mänskligheten känner till.
+[028:LSCR#0220](14)Grejerna äter sig igenom dessa muggar och det kostar kocken en förmögenhet att ersätta dem.
 [028:LSCR#0220](14)Har Har Har\255\002
 [028:LSCR#0220](14)       Har Har Har\255\002
 [028:LSCR#0220](14)       Har Har Har
@@ -1353,7 +1353,7 @@
 [029:OBNA#0367](__)dörr
 [029:VERB#0368](D8)Stackars höns...
 [029:VERB#0368](D8)Jag ska nog låta bli. De sparas antagligen till en hednisk ritual, och jag vill inte förstöra det.
-[029:VERB#0368](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0368](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0368](__)höns
 [029:VERB#0377](D8)Hmmm...\255\003En gummikyckling med en trissa i mitten...\255\003Vad skulle man kunna ha för nytta av det?
 [029:VERB#0377](54)gummikyckling
@@ -1362,42 +1362,42 @@
 [029:VERB#0377](D8)Det måste säkert finnas en användning för en gummikyckling med en trissa i mitten, men det här är inte den.
 [029:OBNA#0377](__)kyckling
 [029:VERB#0378](D8)Stackars lilla varelse...\255\003Vad det nu var.
-[029:VERB#0378](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0378](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0378](__)ben
 [029:VERB#0379](D8)Nu, DET här är en snickares bägare.
-[029:VERB#0379](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0379](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0379](__)kalk
 [029:VERB#0376](D8)Det finns nog en kropp i den.
-[029:VERB#0376](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0376](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0376](__)kista
 [029:OBNA#0380](__)voodoo kärlekspärlor
 [029:OBNA#0382](__)spåkvinna
 [029:VERB#0375](D8)Ser bekväm ut, på ett kusligt sätt.
 [029:VERB#0375](D8)Nej tack. Jag kan aldrig somna på främmande platser.
-[029:VERB#0375](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0375](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0375](__)soffa
-[029:VERB#0374](D8)Låt se, det finns en burk med fladdermusdroppningar...\255\003...en låda som säger `Blandade Fjäll`...\255\003...en shaker full av apflingor...\255\003...och några kattknogar.
+[029:VERB#0374](D8)Låt se, det finns en burk med fladdermusdroppningar...\255\003...en låda märkt `Blandade Fjäll`...\255\003...en shaker full av apflingor...\255\003...och några kattknogar.
 [029:VERB#0374](D8)Kattknogar?!?\255\003Så barbariskt!
 [029:VERB#0374](14)
-[029:VERB#0374](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0374](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0374](__)voodoo-pryttlar
 [029:VERB#0372](D8)Hmmm... Jag tror jag hör något slingra sig därinne.
 [029:VERB#0372](D8)Nej tack. Något skulle nog hoppa ut och bita mig.
-[029:VERB#0372](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0372](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0372](__)korg
 [029:VERB#0381](D8)Det kan jag inte. Jag är rädd för den.
 [029:OBNA#0381](__)skräckkitteln
 [029:VERB#0373](D8)Gud, jag undrar vad det finns i de här korgarna.
 [029:VERB#0373](D8)Egentligen är jag inte SÅ nyfiken på att ta reda på vad som finns därinne.\255\003Antagligen giftormar.
 [029:VERB#0373](14)
-[029:VERB#0373](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0373](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0373](__)korgar
-[029:VERB#0370](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0370](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0370](__)staty
 [029:VERB#0371](D8)Gud, jag undrar vad det finns i de här korgarna.
 [029:VERB#0371](D8)Egentligen är jag inte SÅ nyfiken på att ta reda på vad som finns därinne.\255\003Antagligen giftormar.
 [029:VERB#0371](14)
-[029:VERB#0371](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:VERB#0371](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
 [029:OBNA#0371](__)korgar
 [029:VERB#0369](D8)Stackars höns...
 [029:VERB#0369](D8)Nej tack. Har du aldrig hört talas om salmonella?
@@ -3234,7 +3234,7 @@
 [059:SCRP#0056](14)--hörru, du råkar inte vara därifrån?\255\003Du verkar ha en sorts nordisk kvalitet över dig...
 [059:SCRP#0056](14)Hur som helst, vi pratar riktigt värde här...
 [059:SCRP#0056](14)Kan inte sluta titta på henne, va?
-[059:SCRP#0056](14)Det här är den berömda `Sjöapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island®...\255\003...och kommit tillbaka med nån ombord vid liv.
+[059:SCRP#0056](14)Det här är den berömda `Havsapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island®...\255\003...och kommit tillbaka med nån ombord vid liv.
 [059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands® hemlighet.
 [059:SCRP#0056](14)Och, som många före dom, försvann dom för alltid.\255\003Deras öde--ett mysterium.\255\003Nästan lika mystiskt som hur det här skeppet återvände till Mêlée Island® utan en enda människa ombord.
 [059:SCRP#0056](14)Vissa påstår att det seglades tillbaka av en besättning av schimpanser.
@@ -3389,7 +3389,7 @@
 [059:SCRP#0056](14)(Godtrogen.)
 [059:SCRP#0056](14)Vi ses vid kajen, och glöm inte din besättning.\255\003Alla tre.
 [059:SCRP#0056](14) 
-[059:SCRP#0056](54)Sjöapan
+[059:SCRP#0056](54)Havsapan
 [060:OBNA#0737](__)dörr
 [060:OBNA#0738](__)låda full med svärd
 [060:OBNA#0739](__)Norbert
