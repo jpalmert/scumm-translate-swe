@@ -3751,111 +3751,111 @@
 [074:OBNA#0810](__)råtta
 [074:OBNA#0811](__)stege
 [074:LSCR#0203](D8)Usch! Jag hatar råttor!
-[E][075:VERB#0816](D8)Gross! Look at them eat!!!
-[E][075:OBNA#0816](__)ghost pigs
-[E][075:VERB#0817](D8)They look like chickens.
-[E][075:OBNA#0817](__)ghost chicken
-[E][075:VERB#0818](D8)They look like chickens.
-[E][075:OBNA#0818](__)ghost chicken
-[E][075:VERB#0819](D8)They look like chickens.
-[E][075:OBNA#0819](__)ghost chicken
-[E][075:VERB#0820](D8)I can't find a ticklish spot on his body.
-[E][075:VERB#0820](D8)It's a feather.
-[E][075:VERB#0820](D8)It's a feather from a ghost chicken.
-[E][075:OBNA#0820](__)ghost feather
-[E][075:VERB#0821](D8)I'll just grab this old root and be on my way.
-[E][075:VERB#0821](D8)It's an empty voodoo antiroot crate.
-[E][075:VERB#0821](D8)I don't see anything special about it.\255\003Except that big glowing voodoo antiroot inside.
-[E][075:VERB#0821](D8)This should do it...
-[E][075:VERB#0821](14) 
-[E][075:VERB#0821](D8)I can't get inside it.\255\003It's nailed, chained, bolted, roped, glued, and welded together.
-[E][075:VERB#0821](D8)It's already open.
-[E][075:OBNA#0821](__)glowing crate
-[E][075:OBNA#0822](__)passage
-[E][075:VERB#0824](D8)There's a keyhole in it.
-[E][075:VERB#0824](D8)It's locked tight, must be something important down there.
-[E][075:VERB#0824](D8)It's locked.
-[E][075:OBNA#0824](__)hatch
-[E][075:VERB#0823](D8)It's twisted and dried up and not very impressive looking.
-[E][075:VERB#0823](D8)It seems to be filled with some carbonated fluid.
-[E][075:VERB#0823](D8)I don't think it's very useful in it's present form.
-[E][075:VERB#0823](D8)Not now.
-[E][075:OBNA#0823](__)voodoo root
-[E][075:LSCR#0200](14)Clank!
-[E][075:LSCR#0200](14)Bang!
-[E][075:LSCR#0200](14)Thud!
-[E][075:LSCR#0200](14)Creak!
-[E][075:LSCR#0200](14)Snap!
-[E][075:LSCR#0204](14)C
-[E][075:LSCR#0204](14)Cl
-[E][075:LSCR#0204](14)Clu
-[E][075:LSCR#0204](14)Cluu
-[E][075:LSCR#0204](14)Cluuu
-[E][075:LSCR#0204](14)Cluuuc
-[E][075:LSCR#0204](14)Cluuuck
-[E][075:LSCR#0204](14) 
-[E][075:LSCR#0204](D8)All I got was a feather.
-[E][077:OBNA#0838](__)door
-[E][077:VERB#0840](14)CRE
-[E][077:VERB#0840](14)CREE
-[E][077:VERB#0840](14)CREEE
-[E][077:VERB#0840](14)CREEEE
-[E][077:VERB#0840](14)CREEEEE
-[E][077:VERB#0840](14)CREEEEEE
-[E][077:VERB#0840](14)CREEEEEEAK
-[E][077:VERB#0840](14)What was that???
-[E][077:VERB#0840](54)squeaky door
-[E][077:OBNA#0840](__)door
-[E][077:OBNA#0841](__)hatch
-[E][077:VERB#0842](D8)Hey! What a cute little ghost dog.
-[E][077:VERB#0842](D8)I'd better leave him alone.
-[E][077:OBNA#0842](__)ghost dog
-[E][077:VERB#0843](D8)What a drunken slob!
-[E][077:VERB#0843](D8)I'd better leave him alone.
-[E][077:OBNA#0843](__)drunk ghost
-[E][077:OBNA#0855](__)cave
-[E][077:VERB#0856](D8)It says: `TOOLS AND BRIG`\255\003`KEEP OUT`
-[E][077:OBNA#0856](__)sign
-[E][077:ENCD#0077](54)door
-[E][077:ENCD#0077](54)squeaky door
-[E][077:ENCD#0077](54)door
-[E][077:LSCR#0207](94)Yikes!
-[E][077:SCRP#0078](94)Uhh...
-[E][077:SCRP#0078](FA)You wouldn't happen to have a root I could borrow?
-[E][077:SCRP#0078](FA)I've come to interrogate the prisoner.
-[E][077:SCRP#0078](FA)Excuse me, but is this the Lido Deck?
-[E][077:SCRP#0078](FA)I think I'll be running along.
-[E][078:OBNA#0857](__)exit
-[E][078:OBNA#0858](__)exit
-[E][078:LSCR#0201](14)...if there be any man with reason that these two...\255\003...er...\255\003...people should not be united in blissful matrimony...\255\003...let him speak now or forever hold his peace.
-[E][078:LSCR#0201](14) 
-[E][078:LSCR#0201](FA)The groom isn't a gentleman!
-[E][078:LSCR#0201](FA)The groom isn't a human!
-[E][078:LSCR#0201](FA)Elaine!
-[E][078:LSCR#0201](FA)STOP THE WEDDING!!
-[E][078:LSCR#0201](14)Hey!! Who's that?
-[E][078:SCRP#0127](14) 
-[E][078:SCRP#0132](14)--urk--
-[E][078:SCRP#0132](14)Gasp!\255\003--choke--
-[E][078:SCRP#0132](14)Aiiieeee!
-[E][078:SCRP#0132](14)Instant Replay
-[E][078:SCRP#0132](14) 
-[E][078:SCRP#0133](14)POW
-[E][078:SCRP#0133](14)BIFF
-[E][078:SCRP#0133](14)Good to see you, son.\255\003How's the ship?
-[E][078:SCRP#0133](14)If you're interested in trading up, I can give you a fair price for it.
-[E][078:SCRP#0133](14)Howdy, pardner.
-[E][078:SCRP#0133](14)You know, just by looking at you, I can tell you're a man of the world.
-[E][078:SCRP#0133](14)A man with an eye for quality.
-[E][078:SCRP#0133](14)A man who knows a good bargain when he
-[E][078:SCRP#0137](14)Blimp-Cam®
-[E][078:SCRP#0137](14) 
-[E][078:SCRP#0137](14)KABOOM
-[E][078:SCRP#0137](14) 
-[E][078:SCRP#0151](14)Hey...
-[E][078:SCRP#0151](D8)Yikes!\255\003Don't sneak up on me like that!
-[E][078:SCRP#0151](14)Sorry.
-[E][078:SCRP#0151](D8)That's OK.
+[075:VERB#0816](D8)Äckligt! Titta på dom äta!!!
+[075:OBNA#0816](__)spökgrisar
+[075:VERB#0817](D8)Dom ser ut som kycklingar.
+[075:OBNA#0817](__)spökkyckling
+[075:VERB#0818](D8)Dom ser ut som kycklingar.
+[075:OBNA#0818](__)spökkyckling
+[075:VERB#0819](D8)Dom ser ut som kycklingar.
+[075:OBNA#0819](__)spökkyckling
+[075:VERB#0820](D8)Jag hittar ingen kittlig punkt på kroppen.
+[075:VERB#0820](D8)Det är en fjäder.
+[075:VERB#0820](D8)Det är en fjäder från en spökkyckling.
+[075:OBNA#0820](__)spökfjäder
+[075:VERB#0821](D8)Jag tar bara den här gamla roten och ger mig iväg.
+[075:VERB#0821](D8)Det är en tom voodoo-antirotlåda.
+[075:VERB#0821](D8)Jag ser inget speciellt med den.\255\003Förutom den stora lysande voodoo-antiroten inuti.
+[075:VERB#0821](D8)Det här borde fungera...
+[075:VERB#0821](14)
+[075:VERB#0821](D8)Jag kan inte komma in i den.\255\003Den är spikad, kedjad, bultad, knuten, limmad och svetsad ihop.
+[075:VERB#0821](D8)Den är redan öppen.
+[075:OBNA#0821](__)lysande låda
+[075:OBNA#0822](__)passage
+[075:VERB#0824](D8)Det finns ett nyckelhål i den.
+[075:VERB#0824](D8)Den är ordentligt låst, det måste finnas nåt viktigt där nere.
+[075:VERB#0824](D8)Den är låst.
+[075:OBNA#0824](__)lucka
+[075:VERB#0823](D8)Den är vriden och uttorkad och ser inte särskilt imponerande ut.
+[075:VERB#0823](D8)Den verkar vara fylld med nån kolsyrad vätska.
+[075:VERB#0823](D8)Jag tror inte den är särskilt användbar i sitt nuvarande skick.
+[075:VERB#0823](D8)Inte nu.
+[075:OBNA#0823](__)voodoo-rot
+[075:LSCR#0200](14)Klonk!
+[075:LSCR#0200](14)Bam!
+[075:LSCR#0200](14)Duns!
+[075:LSCR#0200](14)Knak!
+[075:LSCR#0200](14)Knäck!
+[075:LSCR#0204](14)K
+[075:LSCR#0204](14)Kl
+[075:LSCR#0204](14)Klu
+[075:LSCR#0204](14)Kluu
+[075:LSCR#0204](14)Kluuu
+[075:LSCR#0204](14)Kluuuc
+[075:LSCR#0204](14)Kluuuck
+[075:LSCR#0204](14)
+[075:LSCR#0204](D8)Allt jag fick var en fjäder.
+[077:OBNA#0838](__)dörr
+[077:VERB#0840](14)KNA
+[077:VERB#0840](14)KNAR
+[077:VERB#0840](14)KNARR
+[077:VERB#0840](14)KNARRE
+[077:VERB#0840](14)KNARREE
+[077:VERB#0840](14)KNARREEE
+[077:VERB#0840](14)KNARREEEK
+[077:VERB#0840](14)Vad var det???
+[077:VERB#0840](54)gnisslig dörr
+[077:OBNA#0840](__)dörr
+[077:OBNA#0841](__)lucka
+[077:VERB#0842](D8)Hej! Vilken söt liten spökhund.
+[077:VERB#0842](D8)Jag bör nog låta den vara.
+[077:OBNA#0842](__)spökhund
+[077:VERB#0843](D8)Vilken full slusk!
+[077:VERB#0843](D8)Jag bör nog låta den vara.
+[077:OBNA#0843](__)fullt spöke
+[077:OBNA#0855](__)grotta
+[077:VERB#0856](D8)Det står: `VERKTYG OCH FÅNGCELL`\255\003`OBEHÖRIGA ÄGA EJ TILLTRÄDE`
+[077:OBNA#0856](__)skylt
+[077:ENCD#0077](54)dörr
+[077:ENCD#0077](54)gnisslig dörr
+[077:ENCD#0077](54)dörr
+[077:LSCR#0207](94)Oj!
+[077:SCRP#0078](94)Öhh...
+[077:SCRP#0078](FA)Du råkar inte ha en rot jag kan låna?
+[077:SCRP#0078](FA)Jag har kommit för att förhöra fången.
+[077:SCRP#0078](FA)Ursäkta, men är det här soldäcket?
+[077:SCRP#0078](FA)Jag tror jag springer vidare.
+[078:OBNA#0857](__)utgång
+[078:OBNA#0858](__)utgång
+[078:LSCR#0201](14)...om det finns någon man med skäl att dessa två...\255\003...öh...\255\003...personer inte borde förenas i lyckligt äktenskap...\255\003...låt honom tala nu eller för evigt tiga still.
+[078:LSCR#0201](14)
+[078:LSCR#0201](FA)Brudgummen är ingen gentleman!
+[078:LSCR#0201](FA)Brudgummen är inte mänsklig!
+[078:LSCR#0201](FA)Elaine!
+[078:LSCR#0201](FA)STOPPA BRÖLLOPET!!
+[078:LSCR#0201](14)Hej!! Vem är det?
+[078:SCRP#0127](14)
+[078:SCRP#0132](14)--urk--
+[078:SCRP#0132](14)Flås!\255\003--hack--
+[078:SCRP#0132](14)Aiiieeee!
+[078:SCRP#0132](14)Repris
+[078:SCRP#0132](14)
+[078:SCRP#0133](14)PANG
+[078:SCRP#0133](14)BAFF
+[078:SCRP#0133](14)Kul att se dig, grabben.\255\003Hur mår skeppet?
+[078:SCRP#0133](14)Om du är intresserad av att byta upp dig kan jag ge dig ett bra pris.
+[078:SCRP#0133](14)Tjena, kompansen.
+[078:SCRP#0133](14)Du vet, bara genom att titta på dig kan jag se att du är en världsman.
+[078:SCRP#0133](14)En man med öga för kvalitet.
+[078:SCRP#0133](14)En man som känner igen ett bra fynd när han
+[078:SCRP#0137](14)Blimkameran®
+[078:SCRP#0137](14)
+[078:SCRP#0137](14)KABOOM
+[078:SCRP#0137](14)
+[078:SCRP#0151](14)Hej...
+[078:SCRP#0151](D8)Oj!\255\003Smyg inte upp bakom mig så där!
+[078:SCRP#0151](14)Förlåt.
+[078:SCRP#0151](D8)Det är okej.
 [E][079:SCRP#0091](14)Ahoy there, stranger.\255\003New in town?
 [E][079:SCRP#0091](14)Hey, nice to see you again.
 [E][079:SCRP#0091](14)Uh-oh, it looks like my grog is going flat, so you'll have to excuse me.
@@ -3918,33 +3918,33 @@
 [E][079:SCRP#0091](14)Have fun on Mêlée Island®.
 [E][079:SCRP#0091](14) 
 [E][079:SCRP#0091](14)My grog is going flat, so you'll have to excuse me.
-[E][080:VERB#0883](D8)It's rusty.\255\003I don't think it will work.
-[E][080:OBNA#0883](__)cannon
-[E][080:VERB#0885](D8)There are three holes in it.
-[E][080:OBNA#0885](__)cannon ball
-[E][080:VERB#0887](D8)Black and explosive, just the way I like it.
-[E][080:VERB#0887](D8)I've got enough.
-[E][080:OBNA#0887](__)gunpowder
-[E][080:VERB#0884](D8)Black and explosive, just the way I like it.
-[E][080:OBNA#0884](__)handful of gunpowder
-[E][080:VERB#0881](D8)Good, strong stuff.
-[E][080:OBNA#0881](__)rope
-[E][080:VERB#0882](D8)There's a nifty lens in it.
-[E][080:VERB#0882](54)lens
-[E][080:VERB#0882](94)Nothing to look at here.
-[E][080:VERB#0882](D8)WARNING:
-[E][080:VERB#0882](D8)Objects in spyglass may be farther away than they appear.
-[E][080:VERB#0882](D8)My feet look bigger through this.
-[E][080:OBNA#0882](__)spyglass
-[E][080:OBNA#0886](__)path
-[E][080:ENCD#0080](D8)The trail ends here.
-[E][080:LSCR#0202](13)Herman Toothrot
-[E][080:LSCR#0202](14)Hey, nice spyglass.  Looks just like --
-[E][080:LSCR#0202](14)Say, where IS my spyglass?\255\003Oh, perfect.
-[E][080:LSCR#0202](14)I'm gone five minutes and somebody comes in here  and dumps gunpowder all over the floor.
-[E][080:LSCR#0202](14)Naturally I don't think YOU had anything to do with it.\255\003I'm sure it's just a coincidence that you came in here  to prowl around right after some MYSTERIOUS person dirtied  up my nice clean floor.
-[E][080:LSCR#0202](14)Hi!\255\003I'm not bothered a bit by the fact that you  waltzed right into my home without bothering to knock.
-[E][080:LSCR#0202](14) 
+[080:VERB#0883](D8)Den är rostig.\255\003Jag tror inte den fungerar.
+[080:OBNA#0883](__)kanon
+[080:VERB#0885](D8)Det finns tre hål i den.
+[080:OBNA#0885](__)kanonkula
+[080:VERB#0887](D8)Svart och explosivt, precis som jag gillar det.
+[080:VERB#0887](D8)Jag har fått nog.
+[080:OBNA#0887](__)krut
+[080:VERB#0884](D8)Svart och explosivt, precis som jag gillar det.
+[080:OBNA#0884](__)näve krut
+[080:VERB#0881](D8)Bra, starkt rep.
+[080:OBNA#0881](__)rep
+[080:VERB#0882](D8)Det finns en snygg lins i den.
+[080:VERB#0882](54)lins
+[080:VERB#0882](94)Inget att titta på här.
+[080:VERB#0882](D8)VARNING:
+[080:VERB#0882](D8)Föremål i kikaren kan vara längre bort än de verkar.
+[080:VERB#0882](D8)Mina fötter ser större ut genom den här.
+[080:OBNA#0882](__)kikare
+[080:OBNA#0886](__)stig
+[080:ENCD#0080](D8)Stigen slutar här.
+[080:LSCR#0202](13)Herman Tandröta
+[080:LSCR#0202](14)Hej, fin kikare. Ser ut precis som --
+[080:LSCR#0202](14)Förresten, var ÄR min kikare?\255\003Åh, perfekt.
+[080:LSCR#0202](14)Jag är borta fem minuter och nån kommer in här och häller krut över hela golvet.
+[080:LSCR#0202](14)Naturligtvis tror jag inte att DU hade nåt med det att göra.\255\003Jag är säker på att det bara är en tillfällighet att du kom in här och nosade runt precis efter att nån MYSTISK person smutsade ner mitt fina rena golv.
+[080:LSCR#0202](14)Hej!\255\003Det stör mig inte det minsta att du bara valsade rakt in i mitt hem utan att bry dig om att knacka.
+[080:LSCR#0202](14) 
 [E][081:SCRP#0092](14)What are you looking at me for?
 [E][081:SCRP#0092](14)What now?
 [E][081:SCRP#0092](14)Look, this whole LeChuck thing has me pretty shaken up.\255\003So if you don't mind...
@@ -3993,21 +3993,21 @@
 [E][081:SCRP#0092](14)That's why we're all in here and not out pirating.
 [E][081:SCRP#0092](14) 
 [E][081:SCRP#0092](14)Right.
-[E][082:SCRP#0093](14)Aye.
-[E][082:SCRP#0093](FA)Aye, yourself.
-[E][082:SCRP#0093](FA)Nice hat.
-[E][082:SCRP#0093](FA)So, tell me about LOOM.
-[E][082:SCRP#0093](FA)Geeze, what an obvious sales pitch.
-[E][082:SCRP#0093](FA)Nice talking to you.
-[E][082:SCRP#0093](14)You mean the latest masterpiece of fantasy storytelling from Lucasfilm's® Brian Moriarty®?
-[E][082:SCRP#0093](14)Why it's an extraordinary adventure with an interface of magic...
-[E][082:SCRP#0093](14)...stunning, high-resolution, 3D landscapes...\255\003...sophisticated score and musical effects.
-[E][082:SCRP#0093](14)Not to mention the detailed animation and special effects,\255\003elegant point 'n' click control of characters, objects, and magic spells.
-[E][082:SCRP#0093](14)But wait, there's more!
-[E][082:SCRP#0093](14)Loom® has no burdensome typing, mapping, or inventory management.\255\003And unlike many adventure games today, it's easy for beginners to enjoy.\255\003A leading game magazine says it's, 'Enchanting...complex...captivating.'
-[E][082:SCRP#0093](14)Beat the rush!\255\003Go out and buy Loom® today!
-[E][082:SCRP#0093](14)Sorry, but on some topics I just get carried away.
-[E][082:SCRP#0093](14)Aye.
+[082:SCRP#0093](14)Aja.
+[082:SCRP#0093](FA)Aja, själv.
+[082:SCRP#0093](FA)Fin hatt.
+[082:SCRP#0093](FA)Så, berätta om LOOM.
+[082:SCRP#0093](FA)Herregud, vilken genomskinlig säljpitch.
+[082:SCRP#0093](FA)Trevligt att prata med dig.
+[082:SCRP#0093](14)Du menar det senaste mästerverket inom fantasyberättande från Lucasfilms® Brian Moriarty®?
+[082:SCRP#0093](14)Jo det är ett extraordinärt äventyr med ett magiskt gränssnitt...
+[082:SCRP#0093](14)...fantastiska, högupplösta 3D-landskap...\255\003...sofistikerat soundtrack och musikeffekter.
+[082:SCRP#0093](14)För att inte tala om den detaljerade animationen och specialeffekterna,\255\003elegant peka-och-klicka-styrning av karaktärer, föremål och trollformler.
+[082:SCRP#0093](14)Men vänta, det finns mer!
+[082:SCRP#0093](14)Loom® har inget betungande skrivande, kartritande eller föremålshantering.\255\003Och till skillnad från många äventyrsspel idag är det lätt för nybörjare att njuta av.\255\003En ledande speltidning säger att det är 'Förtrollande...komplext...fängslande.'
+[082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom® idag!
+[082:SCRP#0093](14)Förlåt, men vissa ämnen gör mig bara så upprymd.
+[082:SCRP#0093](14)Aja.
 [E][083:VERB#0901](D8)It's called `How to Get a Leg Up in Treasure Hunting.`
 [E][083:OBNA#0901](__)pamphlet
 [E][083:VERB#0902](D8)It's called `How to Get Ahead in Navigating.`
@@ -4156,77 +4156,77 @@
 [E][083:SCRP#0065](14)So long, Mr. Spicecake, or Droopface, or whatever your name is.
 [E][083:SCRP#0065](14) 
 [E][083:SCRP#0065](14)Hmmm...\255\003This might actually turn out to be a pretty good day.
-[E][084:ENCD#0084](14)DIRECTIONS TO MONKEY ISLAND!!!
-[E][084:ENCD#0084](14) 
-[E][084:ENCD#0084](14)Pre-heat pot to 450 degrees
-[E][084:ENCD#0084](14)Add the following ingredients:
-[E][084:ENCD#0084](14) 
-[E][084:ENCD#0084](14)     1 Cinnamon stick
-[E][084:ENCD#0084](14)     4 Leaves of Mint
-[E][084:ENCD#0084](14)     1 Human Skull (pressed)
-[E][084:ENCD#0084](14)     1 squirt Squid Ink
-[E][084:ENCD#0084](14)     2 pts Monkey Blood
-[E][084:ENCD#0084](14)     1 Live Chicken
-[E][084:ENCD#0084](14)     3 oz. Brimstone
-[E][084:ENCD#0084](14)     1 or more of the following:
-[E][084:ENCD#0084](14)       pyridoxine hydrochloride,
-[E][084:ENCD#0084](14)       zinc oxide, yellow 8,
-[E][084:ENCD#0084](14)       mine mononitrate and BHA.
-[E][084:ENCD#0084](14) 
-[E][084:ENCD#0084](14)Let bubble over low flame until thickened.
-[E][084:ENCD#0084](14)Serves crew of four.
-[E][085:OBNA#0917](__)village
-[E][085:OBNA#0913](__)lookout point
-[E][085:OBNA#0911](__)fork
-[E][085:OBNA#0912](__)clearing
-[E][085:OBNA#0910](__)shore
-[E][085:OBNA#0914](__)bridge
-[E][085:OBNA#0915](__)lights
-[E][085:OBNA#0916](__)house
-[E][085:OBNA#0909](__)island
-[E][085:VERB#0918](14) 
-[E][085:OBNA#0918](__)Sword Master's
-[E][085:ENCD#0085](54)circus
-[E][085:ENCD#0085](54)Used Ship Emporium
-[E][085:LSCR#0202](93)Dirty Rotten Pirate
-[E][085:LSCR#0202](93)Stinking Pirate
-[E][085:LSCR#0202](93)Bloodthirsty Pirate
-[E][085:LSCR#0202](93)Ugly Pirate
+[084:ENCD#0084](14)VÄGBESKRIVNING TILL MONKEY ISLAND!!!
+[084:ENCD#0084](14)
+[084:ENCD#0084](14)Förvärm grytan till 450 grader
+[084:ENCD#0084](14)Tillsätt följande ingredienser:
+[084:ENCD#0084](14)
+[084:ENCD#0084](14)     1 Kanelstång
+[084:ENCD#0084](14)     4 Blad mynta
+[084:ENCD#0084](14)     1 Människoskalle (pressad)
+[084:ENCD#0084](14)     1 skvätt Bläckfiskbläck
+[084:ENCD#0084](14)     2 dl Apblod
+[084:ENCD#0084](14)     1 Levande kyckling
+[084:ENCD#0084](14)     3 msk Svavel
+[084:ENCD#0084](14)     1 eller fler av följande:
+[084:ENCD#0084](14)       pyridoxinhydroklorid,
+[084:ENCD#0084](14)       zinkoxid, gul 8,
+[084:ENCD#0084](14)       mononitrat och BHA.
+[084:ENCD#0084](14)
+[084:ENCD#0084](14)Låt bubbla på svag låga tills det tjocknar.
+[084:ENCD#0084](14)Räcker till en besättning på fyra.
+[085:OBNA#0917](__)by
+[085:OBNA#0913](__)utkiksplats
+[085:OBNA#0911](__)vägskäl
+[085:OBNA#0912](__)glänta
+[085:OBNA#0910](__)strand
+[085:OBNA#0914](__)bro
+[085:OBNA#0915](__)ljus
+[085:OBNA#0916](__)hus
+[085:OBNA#0909](__)ö
+[085:VERB#0918](14)
+[085:OBNA#0918](__)Svärdmästarens
+[085:ENCD#0085](54)cirkus
+[085:ENCD#0085](54)Begagnade skeppshandeln
+[085:LSCR#0202](93)Smutsig Usel Pirat
+[085:LSCR#0202](93)Stinkande Pirat
+[085:LSCR#0202](93)Blodtörstig Pirat
+[085:LSCR#0202](93)Ful Pirat
 [086:LSCR#0204](D8)\255\005\001\064
-[E][088:SCRP#0074](14)Player lost
-[E][088:SCRP#0074](14)Player won
-[E][088:SCRP#0074](94)I give up!  You win!
-[E][088:SCRP#0074](94)I give up!  You win!
-[E][088:SCRP#0074](94)UNCLE! UNCLE!
-[E][088:SCRP#0074](94)Yikes!  Nice move.
-[E][088:SCRP#0074](94)Where did my sword go?
-[E][088:SCRP#0074](94)Look behind you... a three headed monkey!
-[E][088:SCRP#0074](94)OK, you win.
-[E][088:SCRP#0074](94)Wow!  You're good enough to fight the Sword Master.
-[E][088:SCRP#0074](94)I give up!  You win!
-[E][088:SCRP#0079](94)I said: `\255\007\032\000`
-[E][088:SCRP#0079](14)Player replies: \255\007\033\000
-[E][088:SCRP#0080](14)Player insults with \255\004\240\000
-[E][088:SCRP#0080](14)Player insults: \255\007\032\000
-[E][088:SCRP#0082](14)Checking reply for pirate skill \255\004\012\001
-[E][088:SCRP#0082](14)Replying to players default insult
-[E][088:SCRP#0082](94)What an amateur insult!
-[E][088:SCRP#0082](94)HA!  Is that the best you can come up with?
-[E][088:SCRP#0082](94)What's the matter?\255\003Just get out of swordfighting class?
-[E][088:SCRP#0082](94)I'm insulted you'd even try to use that insult on me!
-[E][088:SCRP#0082](14)Used sword masters insult
-[E][088:SCRP#0082](27)That's not fair, you're using the Sword Master's insults, I see.
-[E][088:SCRP#0082](14)random number is \255\004\100\000
-[E][088:SCRP#0082](14)Got a reply
-[E][088:SCRP#0082](14)Using default reply
-[E][088:SCRP#0082](14)Pirate using reply \255\004\241\000 for insult \255\004\240\000
-[E][088:SCRP#0082](94)\255\007\033\000
-[E][088:SCRP#0082](14)Pirate replying: \255\007\033\000
-[E][088:SCRP#0083](14)Looking...
-[E][088:SCRP#0083](14)Re-using insult \255\004\105\000
-[E][088:SCRP#0083](14)Pirate insulting with insult \255\004\240\000
-[E][088:SCRP#0083](94)\255\007\032\000
-[E][088:SCRP#0083](14)Pirate insulting: \255\007\032\000
+[088:SCRP#0074](14)Spelaren förlorade
+[088:SCRP#0074](14)Spelaren vann
+[088:SCRP#0074](94)Jag ger upp! Du vinner!
+[088:SCRP#0074](94)Jag ger upp! Du vinner!
+[088:SCRP#0074](94)NÅÅÅD! NÅÅÅD!
+[088:SCRP#0074](94)Oj! Bra drag.
+[088:SCRP#0074](94)Vart tog mitt svärd vägen?
+[088:SCRP#0074](94)Titta bakom dig... en trehövdad apa!
+[088:SCRP#0074](94)OK, du vinner.
+[088:SCRP#0074](94)Oj! Du är bra nog att slåss mot Svärdmästaren.
+[088:SCRP#0074](94)Jag ger upp! Du vinner!
+[088:SCRP#0079](94)Jag sa: `\255\007\032\000`
+[088:SCRP#0079](14)Spelaren svarar: \255\007\033\000
+[088:SCRP#0080](14)Spelaren förolämpar med \255\004\240\000
+[088:SCRP#0080](14)Spelaren förolämpar: \255\007\032\000
+[088:SCRP#0082](14)Kollar svar för piratskicklighet \255\004\012\001
+[088:SCRP#0082](14)Svarar på spelarens standardförolämpning
+[088:SCRP#0082](94)Vilken amatörförolämpning!
+[088:SCRP#0082](94)HA! Är det det bästa du kan komma med?
+[088:SCRP#0082](94)Vad är det för fel?\255\003Precis klar med svärdsfäktningslektionen?
+[088:SCRP#0082](94)Jag är förolämpad att du ens försöker använda den förolämpningen på mig!
+[088:SCRP#0082](14)Använde svärdmästarens förolämpning
+[088:SCRP#0082](27)Det är inte rättvist, du använder Svärdmästarens förolämpningar, ser jag.
+[088:SCRP#0082](14)slumptal är \255\004\100\000
+[088:SCRP#0082](14)Fick ett svar
+[088:SCRP#0082](14)Använder standardsvar
+[088:SCRP#0082](14)Piraten använder svar \255\004\241\000 på förolämpning \255\004\240\000
+[088:SCRP#0082](94)\255\007\033\000
+[088:SCRP#0082](14)Piraten svarar: \255\007\033\000
+[088:SCRP#0083](14)Letar...
+[088:SCRP#0083](14)Återanvänder förolämpning \255\004\105\000
+[088:SCRP#0083](14)Piraten förolämpar med förolämpning \255\004\240\000
+[088:SCRP#0083](94)\255\007\032\000
+[088:SCRP#0083](14)Piraten förolämpar: \255\007\032\000
 [088:SCRP#0085](27) 
 [088:SCRP#0085](27)Det här är SLUTET för dig, ditt rännstenskräk!
 [088:SCRP#0085](27)Snart sitter du fast på mitt svärd som en grillad råtta!
