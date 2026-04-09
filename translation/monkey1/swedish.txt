@@ -512,7 +512,7 @@
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
 [019:LSCR#0204](14)Stick, Guybrush.
 [019:LSCR#0204](14)Fint försök, Guybrush, men ingen banan.
-[019:LSCR#0204](D8)Då börjar jag sparka lite arsle!
+[019:LSCR#0204](D8)Då blir det stryk!
 [019:LSCR#0204](14)Ursäkta mig Guybrush...\255\003...säger ordet 'kölhala' dig något?
 [E][019:LSCR#0204](FA)I see your point, thanks.
 [E][019:LSCR#0204](FA)Keelhaul /Kê(e)l-hol\254\001   1: to haul under the keel of a ship as punishment\254\001       or torture.
@@ -523,11 +523,11 @@
 [E][019:LSCR#0206](D8)Holy Monkey Bladders!\255\003It's Monkey Island®.
 [E][019:SCRP#0107](14) 
 [E][019:SCRP#0107](14) 
-[020:VERB#0271](D8)Jag lämnar den här hellre.
+[020:VERB#0271](D8)Det är bäst att jag lämnar den här.
 [020:OBNA#0271](__)pappersbit
 [020:VERB#0264](D8)De ser ut som att de nästan är redo att falla\255\001av trädet.
 [020:OBNA#0264](__)läckra, saftiga bananer
-[020:VERB#0262](D8)Mmm. Det där är några läckert utseende bananer!
+[020:VERB#0262](D8)Mmm. Vilka aptitliga bananer!
 [020:OBNA#0262](__)träd
 [020:VERB#0268](D8)Jag slår vad om att man kan se hela ön därifrån.
 [020:VERB#0268](D8)Det är den där platsen med den fina utsikten.
@@ -718,13 +718,13 @@
 [E][020:SCRP#0168](D8)Is there anything good to eat on this island?
 [E][020:SCRP#0168](D8)Take me to your leader.
 [E][020:SCRP#0168](D8)Is it always this hot around here?
-[E][021:OBNA#0273](__)jungle
-[E][021:OBNA#0274](__)jungle
-[E][021:LSCR#0202](94)I don't think he's interested.
-[E][021:LSCR#0204](94)Not until he comes down.
-[E][021:LSCR#0205](D8)He looks very hungry.
-[E][021:LSCR#0205](D8)He still looks kind of hungry.
-[E][021:LSCR#0205](D8)He looks happy.
+[021:OBNA#0273](__)djungel
+[021:OBNA#0274](__)djungel
+[021:LSCR#0202](94)Jag tror inte han är intresserad.
+[021:LSCR#0204](94)Inte förrän han kommer ner.
+[021:LSCR#0205](D8)Han ser väldigt hungrig ut.
+[021:LSCR#0205](D8)Han ser fortfarande lite hungrig ut.
+[021:LSCR#0205](D8)Han ser glad ut.
 [E][023:SCRP#0119](14)Governor Elaine Marley.
 [E][023:SCRP#0119](14)So, I gave you the idol, eh?
 [E][023:SCRP#0119](14)So, you were just going to borrow it, eh?
