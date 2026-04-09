@@ -3050,89 +3050,89 @@
 [E][053:LSCR#0217](14)I think you need to cool off.
 [E][053:LSCR#0217](14)Hand over your sword.
 [E][053:LSCR#0217](D8)Uh-oh.
-[E][057:OBNA#0653](__)path
-[E][057:OBNA#0654](__)path
-[E][057:VERB#0655](14)Do I look like a gopher?
-[E][057:OBNA#0655](__)troll
-[E][057:LSCR#0200](13)troll
-[E][057:LSCR#0203](14)NONE SHALL PASS!!
-[E][057:LSCR#0204](14)Ah!  A red herring!
-[E][057:LSCR#0204](14)Pass.
-[E][057:LSCR#0204](14)You dare offend me with such a paltry amount?
-[E][057:LSCR#0204](14)That will certainly attract attention...\255\003...and it's worthless...\255\003...but it's not what I want.
-[E][057:LSCR#0204](14)That's pretty useless.\255\003But it's not what I want.
-[E][057:LSCR#0204](14)I want something that will divert attention from things that are REALLY important.
-[E][057:LSCR#0204](14)How about something saltier?
-[E][057:LSCR#0204](14)I'm getting hungry waiting for you.\255\003How about something to eat?
-[E][057:SCRP#0055](14)STOP!!
-[E][057:SCRP#0055](14)You must pay a toll!
-[E][057:SCRP#0055](14)You can't pass until you pay the toll!
-[E][057:SCRP#0055](FA)Stand aside, troll, I'm a mighty pirate.
-[E][057:SCRP#0055](FA)Oh, please, can't I pass?
-[E][057:SCRP#0055](FA)How much is the toll?
-[E][057:SCRP#0055](FA)How much did you say the toll was?
-[E][057:SCRP#0055](FA)Shouldn't you have eaten me by now?
-[E][057:SCRP#0055](FA)Look behind you!  A mouse!
-[E][057:SCRP#0055](FA)Oops, sorry.  I'll take the long way around.
-[E][057:SCRP#0055](14)Boy, do you sound like a wimp.\255\003I don't like wimps.
-[E][057:SCRP#0055](14)I'm not falling for that!\255\003Scuttle along, you scurvy sea slug!
-[E][057:SCRP#0055](14)I'm not hungry.
-[E][057:SCRP#0055](14)Hah!
-[E][057:SCRP#0055](14)You're no pirate!\255\003Why, the town drunk could out-insult you on his back!\255\003(...and probably would.)
-[E][057:SCRP#0055](FA)Oh, yeah?
-[E][057:SCRP#0055](FA)I can out-insult anybody, you brainless clay doppelganger!
-[E][057:SCRP#0055](FA)Stick it in your ear, you great green garrulous grub!
-[E][057:SCRP#0055](FA)I'll just go and find out.  Good day.
-[E][057:SCRP#0055](14)Yeah!\255\003You know, you could stand a lesson or two if that's the best you can come up with.
-[E][057:SCRP#0055](14)Not me you can't, you equally brainless silly little puppet!
-[E][057:SCRP#0055](14)I once owned a dog that was smarter than you.\255\003Take THAT and stick it in your repertoire!
-[E][057:SCRP#0055](14)Uh...\255\003...errrr...\255\003Which ear, cudgel-breath?
-[E][057:SCRP#0055](14)...heh...
-[E][057:SCRP#0055](14)What's so good about it?
-[E][057:SCRP#0055](14)Well, what have you got?
-[E][057:SCRP#0055](FA)Some semi-rancid meat?
-[E][057:SCRP#0055](FA)A stew pot?
-[E][057:SCRP#0055](FA)A rubber chicken with a pulley in the middle?
-[E][057:SCRP#0055](FA)Don't mess with me, troll, I'm a mighty pirate!
-[E][057:SCRP#0055](FA)30 pieces of eight?
-[E][057:SCRP#0055](FA)\255\004\195\000 pieces of eight?
-[E][057:SCRP#0055](FA)A piece of eight?
-[E][057:SCRP#0055](FA)Nothing of consequence.
-[E][057:SCRP#0055](FA)Never mind, I have to go now.
-[E][057:SCRP#0055](14)Fine.\255\003Begone.
-[E][057:SCRP#0055](14)I want something that will attract attention, but have no real importance.
-[E][057:SCRP#0055](FA)Construction paper jockey shorts?
-[E][057:SCRP#0055](FA)A monkey leash with three collars?
-[E][057:SCRP#0055](FA)A rubber chicken with a pulley in the middle?
-[E][057:SCRP#0055](FA)My old moss-covered three-handled family credenza?
-[E][057:SCRP#0055](FA)I'll try to find something like that.  Bye.
-[E][057:SCRP#0055](14)Don't be silly.
-[E][057:SCRP#0055](14)You have three chances to give me what I want.  Then...\255\003...I eat ya!
-[E][058:VERB#0675](D8)Looks like an old, abandoned campsite.
-[E][058:OBNA#0675](__)campsite
-[E][058:VERB#0676](D8)What a lovely plant.
-[E][058:OBNA#0676](__)rock and plant
-[E][058:VERB#0677](D8)Creepy.
-[E][058:OBNA#0677](__)bones
-[E][058:VERB#0678](D8)My, what an unusually bright yellow they are.
-[E][058:VERB#0678](D8)Same old red flowers all over the forest.
-[E][058:VERB#0678](D8)I've already got one.
-[E][058:VERB#0678](D8)I don't think strolling through the forest picking flowers is very good practice for being a pirate.
-[E][058:OBNA#0678](__)plants
-[E][058:VERB#0679](D8)Just a regular old stump.
-[E][058:OBNA#0679](__)stump
-[E][058:VERB#0682](D8)Looks like a regular old stump with the same red flowers that grow all over the forest.
-[E][058:OBNA#0682](__)plant and stump
-[E][058:VERB#0681](D8)`DANGER:  Open ravine.`
-[E][058:OBNA#0681](__)sign
-[E][058:VERB#0685](D8)I'm not going into this mazelike forest without a map or a guide or something.
-[E][058:OBNA#0685](__)path
-[E][058:OBNA#0686](__)path
-[E][058:OBNA#0688](__)path
-[E][058:OBNA#0687](__)path
-[E][058:VERB#0689](D8)It's a striking yellow color.
-[E][058:OBNA#0689](__)yellow petal
-[E][058:LSCR#0200](D8)I'm not going into this mazelike forest without a map or a guide or something.
+[057:OBNA#0653](__)stig
+[057:OBNA#0654](__)stig
+[057:VERB#0655](14)Ser jag ut som en springpojke?
+[057:OBNA#0655](__)troll
+[057:LSCR#0200](13)troll
+[057:LSCR#0203](14)INGEN FÅR PASSERA!!
+[057:LSCR#0204](14)Ah! En röd sill!
+[057:LSCR#0204](14)Passera.
+[057:LSCR#0204](14)Vågar du förolämpa mig med en så ynklig summa?
+[057:LSCR#0204](14)Det kommer definitivt att dra uppmärksamhet...\255\003...och det är värdelöst...\255\003...men det är inte vad jag vill ha.
+[057:LSCR#0204](14)Det där är ganska värdelöst.\255\003Men det är inte vad jag vill ha.
+[057:LSCR#0204](14)Jag vill ha nåt som avleder uppmärksamheten från saker som är VERKLIGT viktiga.
+[057:LSCR#0204](14)Nåt saltare kanske?
+[057:LSCR#0204](14)Jag börjar bli hungrig av att vänta på dig.\255\003Nåt att äta kanske?
+[057:SCRP#0055](14)STOPP!!
+[057:SCRP#0055](14)Du måste betala vägtull!
+[057:SCRP#0055](14)Du får inte passera innan du betalar vägtullen!
+[057:SCRP#0055](FA)Stig åt sidan, troll, jag är en mäktig pirat.
+[057:SCRP#0055](FA)Åh, snälla, kan jag inte få passera?
+[057:SCRP#0055](FA)Hur mycket kostar tullen?
+[057:SCRP#0055](FA)Hur mycket sa du att tullen kostade?
+[057:SCRP#0055](FA)Borde du inte ha ätit upp mig vid det här laget?
+[057:SCRP#0055](FA)Titta bakom dig! En mus!
+[057:SCRP#0055](FA)Oj, förlåt. Jag tar den långa vägen runt.
+[057:SCRP#0055](14)Oj vad vekt du låter.\255\003Jag gillar inte veklingar.
+[057:SCRP#0055](14)Jag går inte på det!\255\003Stick härifrån, din skabbiga havssnigel!
+[057:SCRP#0055](14)Jag är inte hungrig.
+[057:SCRP#0055](14)Hah!
+[057:SCRP#0055](14)Du är ingen pirat!\255\003Stadsfylleansen kunde förolämpa dig bättre i sömnen!\255\003(...och skulle antagligen göra det.)
+[057:SCRP#0055](FA)Jaså?
+[057:SCRP#0055](FA)Jag kan förolämpa vem som helst, din hjärnlösa lerdocka!
+[057:SCRP#0055](FA)Stoppa det i örat, din stora gröna pratsamma larv!
+[057:SCRP#0055](FA)Jag går och tar reda på det. Adjö.
+[057:SCRP#0055](14)Jodå!\255\003Du vet, du kunde behöva en lektion eller två om det där är det bästa du kan komma med.
+[057:SCRP#0055](14)Inte mig, din lika hjärnlösa fåniga lilla docka!
+[057:SCRP#0055](14)Jag hade en gång en hund som var smartare än dig.\255\003Ta DET och stoppa det i din repertoar!
+[057:SCRP#0055](14)Öh...\255\003...eeeh...\255\003Vilket öra, påkandedräkt?
+[057:SCRP#0055](14)...heh...
+[057:SCRP#0055](14)Vad är det som är bra med det?
+[057:SCRP#0055](14)Nå, vad har du?
+[057:SCRP#0055](FA)Lite halvunket kött?
+[057:SCRP#0055](FA)En grytkastrull?
+[057:SCRP#0055](FA)En gummikyckling med en talja i mitten?
+[057:SCRP#0055](FA)Bråka inte med mig, troll, jag är en mäktig pirat!
+[057:SCRP#0055](FA)30 åttor?
+[057:SCRP#0055](FA)\255\004\195\000 åttor?
+[057:SCRP#0055](FA)En åtta?
+[057:SCRP#0055](FA)Inget av betydelse.
+[057:SCRP#0055](FA)Strunt samma, jag måste gå nu.
+[057:SCRP#0055](14)Fint.\255\003Försvinn.
+[057:SCRP#0055](14)Jag vill ha nåt som drar uppmärksamhet men inte har nåt verkligt värde.
+[057:SCRP#0055](FA)Kalsonger av konstruktionspapper?
+[057:SCRP#0055](FA)Ett apkoppel med tre halsband?
+[057:SCRP#0055](FA)En gummikyckling med en talja i mitten?
+[057:SCRP#0055](FA)Min gamla mossbelupna trehandtagsfamiljekredensa?
+[057:SCRP#0055](FA)Jag ska försöka hitta nåt sånt. Hejdå.
+[057:SCRP#0055](14)Var inte löjlig.
+[057:SCRP#0055](14)Du har tre chanser att ge mig vad jag vill ha. Sen...\255\003...äter jag upp dej!
+[058:VERB#0675](D8)Ser ut som en gammal, övergiven lägerplats.
+[058:OBNA#0675](__)lägerplats
+[058:VERB#0676](D8)Vilken vacker växt.
+[058:OBNA#0676](__)sten och växt
+[058:VERB#0677](D8)Läskigt.
+[058:OBNA#0677](__)ben
+[058:VERB#0678](D8)Oj, vilken ovanligt klarsgul färg dom har.
+[058:VERB#0678](D8)Samma gamla röda blommor överallt i skogen.
+[058:VERB#0678](D8)Jag har redan en.
+[058:VERB#0678](D8)Jag tror inte att strosa genom skogen och plocka blommor är bra träning för att bli pirat.
+[058:OBNA#0678](__)växter
+[058:VERB#0679](D8)Bara en vanlig gammal stubbe.
+[058:OBNA#0679](__)stubbe
+[058:VERB#0682](D8)Ser ut som en vanlig gammal stubbe med samma röda blommor som växer överallt i skogen.
+[058:OBNA#0682](__)växt och stubbe
+[058:VERB#0681](D8)`FARA: Öppen ravin.`
+[058:OBNA#0681](__)skylt
+[058:VERB#0685](D8)Jag tänker inte ge mig in i den här labyrintlika skogen utan en karta eller guide eller nåt.
+[058:OBNA#0685](__)stig
+[058:OBNA#0686](__)stig
+[058:OBNA#0688](__)stig
+[058:OBNA#0687](__)stig
+[058:VERB#0689](D8)Den har en slående gul färg.
+[058:OBNA#0689](__)gult kronblad
+[058:LSCR#0200](D8)Jag tänker inte ge mig in i den här labyrintlika skogen utan en karta eller guide eller nåt.
 [E][059:VERB#0733](D8)It seems to be filled with some carbonated fluid.
 [E][059:OBNA#0733](__)root beer
 [E][059:VERB#0734](D8)He's big, ugly, mean, and about to hit me again.
@@ -3498,56 +3498,56 @@
 [063:SCRP#0123](D8)Jag behöver inte titta på en karta just nu.
 [063:SCRP#0123](D8)Jag tror jag blivit lurad!\255\003Det här är ingen karta!\255\003Det ser ut som...
 [063:SCRP#0123](D8)...danslektioner!
-[E][064:VERB#0749](D8)Hmmm...\255\003...looks like a big plus sign.\255\003What could that possibly mean?
-[E][064:VERB#0749](14) 
-[E][064:VERB#0749](D8)I'm not stupid enough to do that twice.
-[E][064:VERB#0749](D8)I think an actual shovel might be better.
-[E][064:OBNA#0749](__)X
-[E][064:OBNA#0750](__)forest path
-[E][064:VERB#0747](D8)The Legendary Lost Treasure of Mêlée Island®\255\003This carefully reproduced piece of Mêlée Island® history has delighted thousands of would-be pirates and their families for generations.
-[E][064:VERB#0747](D8)Remember, there are other pirates on this island,\255\003SO GO EASY ON THE TREASURE.\255\003Leave some for the next person.
-[E][064:VERB#0747](14) 
-[E][064:OBNA#0747](__)plaque
-[E][064:VERB#0752](D8)`I found the Treasure of Mêlée Island® and all I got was this stupid T-shirt!`
-[E][064:VERB#0752](D8)It doesn't fit.\255\003Figures.
-[E][064:OBNA#0752](__)T-shirt
-[E][064:VERB#0748](D8)Here lies treasure of such unimaginable wealth...\255\003...well, you'll just have to dig it up to believe it.\255\003(Paid for by the Mêlée Island® Chamber of Commerce.)
-[E][064:VERB#0748](14) 
-[E][064:OBNA#0748](__)marker
-[E][064:LSCR#0200](D8)This shouldn't take too long.
-[E][064:LSCR#0200](14)Hours pass...
-[E][064:LSCR#0200](D8)Hey!  I think I hit something!
-[E][064:LSCR#0200](D8)Oh, boy!
-[E][064:LSCR#0200](D8)It's a T-shirt!
-[E][064:LSCR#0200](D8)Not my size, but a nice one nonetheless.
-[E][064:LSCR#0200](D8)Well, I guess I should put all this dirt back now.
-[E][064:LSCR#0200](14)More hours pass...
-[E][064:LSCR#0200](14) 
+[064:VERB#0749](D8)Hmm...\255\003...ser ut som ett stort plustecken.\255\003Vad kan det betyda?
+[064:VERB#0749](14)
+[064:VERB#0749](D8)Jag är inte dum nog att göra det två gånger.
+[064:VERB#0749](D8)Jag tror en riktig spade vore bättre.
+[064:OBNA#0749](__)X
+[064:OBNA#0750](__)skogsstig
+[064:VERB#0747](D8)Mêlée Islands® legendariska försvunna skatt\255\003Denna omsorgsfullt reproducerade del av Mêlée Islands® historia har glatt tusentals blivande pirater och deras familjer i generationer.
+[064:VERB#0747](D8)Kom ihåg att det finns andra pirater på den här ön,\255\003SÅ TA DET LUGNT MED SKATTEN.\255\003Lämna lite till nästa person.
+[064:VERB#0747](14)
+[064:OBNA#0747](__)plakett
+[064:VERB#0752](D8)`Jag hittade Mêlée Islands® skatt och allt jag fick var den här dumma T-shirten!`
+[064:VERB#0752](D8)Den passar inte.\255\003Typiskt.
+[064:OBNA#0752](__)T-shirt
+[064:VERB#0748](D8)Här vilar en skatt av sådan ofattbar rikedom...\255\003...ja, du får helt enkelt gräva upp den för att tro det.\255\003(Betald av Mêlée Islands® Handelskammare.)
+[064:VERB#0748](14)
+[064:OBNA#0748](__)markör
+[064:LSCR#0200](D8)Det här borde inte ta så lång tid.
+[064:LSCR#0200](14)Timmar går...
+[064:LSCR#0200](D8)Hej! Jag tror jag träffade nåt!
+[064:LSCR#0200](D8)Åh, oj!
+[064:LSCR#0200](D8)Det är en T-shirt!
+[064:LSCR#0200](D8)Inte min storlek, men fin ändå.
+[064:LSCR#0200](D8)Nåväl, jag antar att jag borde lägga tillbaka all den här jorden nu.
+[064:LSCR#0200](14)Fler timmar går...
+[064:LSCR#0200](14) 
 [065:OBNA#0754](__)aphuvud
 [065:OBNA#0755](__)grotta
 [065:LSCR#0203](D8)Jag hade en känsla av att det skulle finnas svampar i helvetet.
 [065:LSCR#0203](14) 
-[E][069:VERB#0767](D8)The second largest ear I've ever seen...\255\003...and also the dirtiest.\255\003Yech.
-[E][069:OBNA#0767](__)gigantic monkey ear
-[E][069:VERB#0765](D8)Definitely the second biggest monkey head I've ever seen!
-[E][069:VERB#0765](D8)There's no place to stick it in.
-[E][069:OBNA#0765](__)gigantic monkey head
-[E][069:OBNA#0758](__)idol
-[E][069:OBNA#0759](__)idol
-[E][069:OBNA#0760](__)idol
-[E][069:VERB#0761](D8)What a cheap piece of mass-produced tourist crap.\255\003On the bottom it says 'made by Lemonhead'.
-[E][069:VERB#0761](D8)I doubt anyone will miss this piece of junk.
-[E][069:VERB#0761](D8)Take that, you cheap piece of garbage.
-[E][069:OBNA#0761](__)wimpy little idol
-[E][069:OBNA#0762](__)idol
-[E][069:OBNA#0763](__)idol
-[E][069:OBNA#0766](__)idol
-[E][069:OBNA#0764](__)idol
-[E][069:OBNA#0757](__)idol
-[E][069:OBNA#0756](__)monkey grounds
-[E][069:LSCR#0200](D8)It looks like a sacred idol of some kind.
-[E][069:LSCR#0201](D8)This is much too heavy to pick up...\255\003let alone carry around this godforsaken island for god knows what reason.
-[E][069:LSCR#0202](D8)These are much too heavy to move.\255\003Besides, why would I be stupid enough to disturb the sacred worshiping grounds of a group of man-eating headhunters.
+[069:VERB#0767](D8)Det näst största örat jag nånsin sett...\255\003...och även det smutsigaste.\255\003Usch.
+[069:OBNA#0767](__)gigantiskt apöra
+[069:VERB#0765](D8)Definitivt det näst största aphuvudet jag nånsin sett!
+[069:VERB#0765](D8)Det finns ingenstans att sticka in det.
+[069:OBNA#0765](__)gigantiskt aphuvud
+[069:OBNA#0758](__)idol
+[069:OBNA#0759](__)idol
+[069:OBNA#0760](__)idol
+[069:VERB#0761](D8)Vilket billigt massproducerat turistskräp.\255\003På undersidan står det 'tillverkad av Lemonhead'.
+[069:VERB#0761](D8)Jag tvivlar på att nån kommer sakna det här skräpet.
+[069:VERB#0761](D8)Ta det där, din billiga soptunna.
+[069:OBNA#0761](__)pytteliten idol
+[069:OBNA#0762](__)idol
+[069:OBNA#0763](__)idol
+[069:OBNA#0766](__)idol
+[069:OBNA#0764](__)idol
+[069:OBNA#0757](__)idol
+[069:OBNA#0756](__)apmark
+[069:LSCR#0200](D8)Det ser ut som nån sorts helig idol.
+[069:LSCR#0201](D8)Den här är alldeles för tung att lyfta...\255\003för att inte tala om att bära runt på den här gudsförgätna ön av gudarna vet vilken anledning.
+[069:LSCR#0202](D8)De här är alldeles för tunga att flytta.\255\003Dessutom, varför skulle jag vara dum nog att störa den heliga tillbedjansplatsen för en grupp människoätande huvudjägare.
 [E][070:OBNA#0768](__)cave
 [E][070:VERB#0769](D8)It's that eerie-looking ghost ship I saw sailing off with the Governor!
 [E][070:OBNA#0769](__)ghost ship
@@ -3662,95 +3662,95 @@
 [E][070:SCRP#0131](D8)I wish those guys hadn't been so excited about getting sunscreen.\255\003Now I'll have to stop the wedding by myself!
 [E][070:SCRP#0170](14)A long walk, a brief row, and a short hike later...
 [E][070:SCRP#0170](14) 
-[E][071:VERB#0787](D8)He's asleep.
-[E][071:VERB#0787](D8)I don't want to wake him up unless I have some of that anti-ghost potion to defend myself with.
-[E][071:OBNA#0787](__)ghost guard
-[E][071:VERB#0786](D8)It's big.  It's locked.
-[E][071:VERB#0786](D8)I can't get to it.  That big ghost's in the way.
-[E][071:OBNA#0786](__)lock
-[E][071:VERB#0785](D8)Hey!  I bet the Governor's in there!
-[E][071:VERB#0785](D8)I can't get to it.  That big ghost's in the way.
-[E][071:OBNA#0785](__)brig
-[E][071:OBNA#0789](__)door
-[E][071:VERB#0788](D8)Oh good, more inventory.
-[E][071:VERB#0788](D8)They're glowing ghost tools.
-[E][071:OBNA#0788](__)ghost tools
-[E][071:LSCR#0202](14) 
-[E][071:LSCR#0202](14)z
-[E][071:LSCR#0202](14)zz
-[E][071:LSCR#0202](14)zzz
-[E][071:LSCR#0202](14)zzzz
-[E][071:LSCR#0202](14)zzzzz
-[E][071:LSCR#0202](14)zzzzzz
-[E][071:LSCR#0202](14)zzzzzzz
-[E][071:LSCR#0202](14)zzzzzzz
-[E][071:LSCR#0202](14)zzzzzzzz
-[E][072:VERB#0799](D8)This key doesn't seem to fit in there.
-[E][072:VERB#0799](D8)It's a big, ghostly-looking key.
-[E][072:OBNA#0799](__)key
-[E][072:OBNA#0794](__)door
-[E][072:VERB#0795](D8)Looks like Monkey Island®.
-[E][072:OBNA#0795](__)map
-[E][072:OBNA#0796](__)chest
-[E][072:OBNA#0797](__)chest
-[E][072:VERB#0798](D8)It's got little wriggling blue hairs in it.
-[E][072:VERB#0798](D8)Yuck.  No thanks.
-[E][072:OBNA#0798](__)Captain's bed
-[E][072:VERB#0793](D8)It looks like that creepy guy I saw on the upper deck.
-[E][072:VERB#0793](D8)I think I'll just stay on this side of the room, where it's safe.
-[E][072:OBNA#0793](__)picture
-[E][072:LSCR#0201](14)Arrr...  What be that noise?
-[E][072:LSCR#0201](14)Who dares to enter the cabin of the Ghost Pirate LeChuck?
-[E][072:LSCR#0201](14)The wind makes not such a creaking!
-[E][072:LSCR#0201](14)Fear for thy life, ye who enters!
-[E][072:LSCR#0201](14)Must be the wind.
-[E][072:LSCR#0201](14)The Ship sounds strange in these waters.
-[E][072:LSCR#0201](14)Strange places -- strange noises.
-[E][072:LSCR#0201](14)You'd better fear.
-[E][073:VERB#0800](D8)It's just an opening, there's no door.
-[E][073:OBNA#0800](__)passage
-[E][073:VERB#0801](D8)It's just an opening, there's no door.
-[E][073:OBNA#0801](__)ladder
-[E][073:VERB#0802](D8)It's already open.
-[E][073:VERB#0802](D8)There's no way to close it.
-[E][073:VERB#0802](D8)It's a bottle of ghost grog.
-[E][073:VERB#0802](D8)I think I'd rather save it.
-[E][073:OBNA#0802](__)jug o'grog
-[E][073:VERB#0805](D8)It looks like a bottle full of grog.
-[E][073:VERB#0805](D8)I can't get it away from him.
-[E][073:OBNA#0805](__)bottle
-[E][073:VERB#0803](D8)He looks sound asleep.
-[E][073:OBNA#0803](__)sleeping ghost crew
-[E][073:VERB#0804](D8)Even ghost feet smell.
-[E][073:OBNA#0804](__)sleeping ghost crew
-[E][074:VERB#0806](D8)It's already open.
-[E][074:VERB#0806](D8)It's a vat of cooking grease.
-[E][074:VERB#0806](D8)Yech, it's all over my hands.
-[E][074:VERB#0806](D8)I've had enough.\255\003I'm trying to cut down on my saturated fats.
-[E][074:OBNA#0806](__)cooking grease
-[E][074:VERB#0815](D8)Yech, it's all over my hands.
-[E][074:VERB#0815](D8)I've put enough grease on it.
-[E][074:VERB#0815](D8)This should stop it from squeaking.
-[E][074:VERB#0815](54)door
-[E][074:VERB#0815](D8)I don't think that's going to let me slip by.
-[E][074:VERB#0815](D8)That would just gunk it up.
-[E][074:OBNA#0815](__)glob of grease
-[E][074:VERB#0807](D8)It's an empty dish.
-[E][074:VERB#0807](D8)I'm not going to pick that up...\255\003...it's covered with rat slobber.
-[E][074:VERB#0807](D8)I think these rats have had enough.
-[E][074:VERB#0807](D8)I don't think that's a good idea.
-[E][074:OBNA#0807](__)dish
-[E][074:VERB#0808](D8)It looks drunk.
-[E][074:OBNA#0808](__)rat
-[E][074:VERB#0809](D8)It looks drunk.
-[E][074:OBNA#0809](__)rat
-[E][074:VERB#0810](D8)That's the biggest ghost rat I've ever seen.
-[E][074:VERB#0810](D8)I'll just pour it in this dish.
-[E][074:VERB#0810](D8)I don't think he wants that.
-[E][074:VERB#0810](D8)I'm not going near that monster rat.
-[E][074:OBNA#0810](__)rat
-[E][074:OBNA#0811](__)ladder
-[E][074:LSCR#0203](D8)Yikes!  I hate rats!
+[071:VERB#0787](D8)Han sover.
+[071:VERB#0787](D8)Jag vill inte väcka honom om jag inte har lite av den där anti-spökdrycken att försvara mig med.
+[071:OBNA#0787](__)spökvakt
+[071:VERB#0786](D8)Det är stort. Det är låst.
+[071:VERB#0786](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
+[071:OBNA#0786](__)lås
+[071:VERB#0785](D8)Hej! Jag slår vad om att Guvernören är därinne!
+[071:VERB#0785](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
+[071:OBNA#0785](__)fångcell
+[071:OBNA#0789](__)dörr
+[071:VERB#0788](D8)Åh bra, mer att bära på.
+[071:VERB#0788](D8)Det är lysande spökverktyg.
+[071:OBNA#0788](__)spökverktyg
+[071:LSCR#0202](14)
+[071:LSCR#0202](14)z
+[071:LSCR#0202](14)zz
+[071:LSCR#0202](14)zzz
+[071:LSCR#0202](14)zzzz
+[071:LSCR#0202](14)zzzzz
+[071:LSCR#0202](14)zzzzzz
+[071:LSCR#0202](14)zzzzzzz
+[071:LSCR#0202](14)zzzzzzz
+[071:LSCR#0202](14)zzzzzzzz
+[072:VERB#0799](D8)Den här nyckeln verkar inte passa där.
+[072:VERB#0799](D8)Det är en stor, spöklik nyckel.
+[072:OBNA#0799](__)nyckel
+[072:OBNA#0794](__)dörr
+[072:VERB#0795](D8)Ser ut som Monkey Island®.
+[072:OBNA#0795](__)karta
+[072:OBNA#0796](__)kista
+[072:OBNA#0797](__)kista
+[072:VERB#0798](D8)Det har små blåa hårstrån som rör sig i den.
+[072:VERB#0798](D8)Usch. Nej tack.
+[072:OBNA#0798](__)kaptenens säng
+[072:VERB#0793](D8)Det ser ut som den där kusliga killen jag såg på överdäck.
+[072:VERB#0793](D8)Jag tror jag stannar på den här sidan av rummet, där det är säkert.
+[072:OBNA#0793](__)tavla
+[072:LSCR#0201](14)Arrr... Vad var det för oljud?
+[072:LSCR#0201](14)Vem vågar sig in i spökpiraten LeChucks kajuta?
+[072:LSCR#0201](14)Vinden låter inte så där!
+[072:LSCR#0201](14)Frukta för ditt liv, du som träder in!
+[072:LSCR#0201](14)Det måste vara vinden.
+[072:LSCR#0201](14)Skeppet låter konstigt i dessa vatten.
+[072:LSCR#0201](14)Konstiga platser -- konstiga ljud.
+[072:LSCR#0201](14)Det är bäst att du bävar.
+[073:VERB#0800](D8)Det är bara en öppning, det finns ingen dörr.
+[073:OBNA#0800](__)passage
+[073:VERB#0801](D8)Det är bara en öppning, det finns ingen dörr.
+[073:OBNA#0801](__)stege
+[073:VERB#0802](D8)Den är redan öppen.
+[073:VERB#0802](D8)Det går inte att stänga den.
+[073:VERB#0802](D8)Det är en flaska spökgrog.
+[073:VERB#0802](D8)Jag tror jag hellre sparar den.
+[073:OBNA#0802](__)kanna grog
+[073:VERB#0805](D8)Det ser ut som en flaska full med grog.
+[073:VERB#0805](D8)Jag kan inte ta den ifrån honom.
+[073:OBNA#0805](__)flaska
+[073:VERB#0803](D8)Han ser ut att sova djupt.
+[073:OBNA#0803](__)sovande spökbesättning
+[073:VERB#0804](D8)Även spökfötter luktar.
+[073:OBNA#0804](__)sovande spökbesättning
+[074:VERB#0806](D8)Den är redan öppen.
+[074:VERB#0806](D8)Det är ett kar med matfett.
+[074:VERB#0806](D8)Usch, jag fick det överallt på händerna.
+[074:VERB#0806](D8)Jag har fått nog.\255\003Jag försöker dra ner på mättat fett.
+[074:OBNA#0806](__)matfett
+[074:VERB#0815](D8)Usch, jag fick det överallt på händerna.
+[074:VERB#0815](D8)Jag har smort på tillräckligt med fett.
+[074:VERB#0815](D8)Det borde hindra den från att gnissla.
+[074:VERB#0815](54)dörr
+[074:VERB#0815](D8)Jag tror inte det låter mig glida förbi.
+[074:VERB#0815](D8)Det skulle bara kladda ner den.
+[074:OBNA#0815](__)klick fett
+[074:VERB#0807](D8)Det är en tom skål.
+[074:VERB#0807](D8)Jag tänker inte plocka upp den...\255\003...den är täckt med rådreggel.
+[074:VERB#0807](D8)Jag tror de här råttorna har fått nog.
+[074:VERB#0807](D8)Jag tror inte det är en bra idé.
+[074:OBNA#0807](__)skål
+[074:VERB#0808](D8)Den ser full ut.
+[074:OBNA#0808](__)råtta
+[074:VERB#0809](D8)Den ser full ut.
+[074:OBNA#0809](__)råtta
+[074:VERB#0810](D8)Det är den största spökråttan jag nånsin sett.
+[074:VERB#0810](D8)Jag häller det bara i den här skålen.
+[074:VERB#0810](D8)Jag tror inte den vill ha det.
+[074:VERB#0810](D8)Jag tänker inte gå nära den där monsterråttan.
+[074:OBNA#0810](__)råtta
+[074:OBNA#0811](__)stege
+[074:LSCR#0203](D8)Usch! Jag hatar råttor!
 [E][075:VERB#0816](D8)Gross! Look at them eat!!!
 [E][075:OBNA#0816](__)ghost pigs
 [E][075:VERB#0817](D8)They look like chickens.
