@@ -640,7 +640,7 @@
 [E][020:SCRP#0095](14)Yes, me too.
 [E][020:SCRP#0095](14)-- hee hee hee --
 [020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® Hemlighet.\255\003Men min vän råkade ut för en förfärlig och tragisk olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
-[020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle få hjälp och komma tillbaka för mig...\255\003...något måste ha hänt.
+[020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle hämta hjälp och komma tillbaka...\255\003...något måste ha hänt.
 [020:SCRP#0095](D8)Varför följde du inte bara med schimpanserna?
 [020:SCRP#0095](14)VECKOR på en båt full med apor.
 [020:SCRP#0095](14)Åh, härligt.
@@ -679,7 +679,7 @@
 [020:SCRP#0096](D8)Okej.\255\003Och oroa dig inte, jag använder den inte eller något.
 [020:SCRP#0096](14)Nej tack, jag har en.\255\003Önskar verkligen jag kunde hitta den, dock.
 [020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
-[020:SCRP#0096](14)Hej, ANDNINGSMYNTOR!
+[020:SCRP#0096](14)Hej, MINTPASTILLER!
 [020:SCRP#0096](14)Det här är vad jag saknar mest med civilisationen.
 [020:SCRP#0096](14)Pengar duger inte till mycket här.
 [020:SCRP#0096](14)Jag har redan läst tillräckligt med memon för att räcka en livstid.
