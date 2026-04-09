@@ -1478,55 +1478,55 @@
 [029:LSCR#0210](D8)Oroa dig inte, jag ska hålla utkik efter LeChuck.
 [029:LSCR#0210](14)Inte för LeChuck... för dig själv och det du kommer hitta.\255\003Det du kommer ta reda på om dig själv och din värld.
 [029:LSCR#0210](14)Det kommer skrämma dig.
-[E][030:VERB#0390](D8)`Get a handle on your savings with GRIPMASTER® handles.`
-[E][030:VERB#0390](14)Hey!  Get away from that!
-[E][030:VERB#0390](14)Don't you be messing with that!
-[E][030:OBNA#0390](__)handle
-[E][030:VERB#0389](D8)`Davey Jones® Lockers:\255\001The last word in theft-, fire-, and grog-resistant storage devices.`
-[E][030:VERB#0389](14) 
-[E][030:VERB#0389](D8)This is a grog-resistant safe.\255\003Says so right on it.
-[E][030:VERB#0389](D8)I don't think that will open it.
-[E][030:VERB#0389](94)It's locked.
-[E][030:VERB#0389](D8)It's already closed.
-[E][030:OBNA#0389](__)safe
-[E][030:OBNA#0399](__)bell
-[E][030:VERB#0398](94)`Ring bell for service.`
-[E][030:VERB#0398](94)I'd better not touch it.\255\003That storekeeper guy might bite my head off.
-[E][030:OBNA#0398](__)sign
-[E][030:OBNA#0394](__)storekeeper
-[E][030:VERB#0395](D8)BREATHMASTER®  -- For the pirate who cares about first impressions.
-[E][030:VERB#0395](94)Oooo!  That's refreshing!
-[E][030:OBNA#0395](__)breath mints
-[E][030:VERB#0396](D8)`DIGMASTER® -- The only shovel for serious treasure- hunting enthusiasts.`
-[E][030:OBNA#0396](__)shovel
-[E][030:VERB#0397](94)I, the good and honorable storekeeper do hereby take liability for the debts of the bearer of this note for any amount up to 5000 pieces of eight.
-[E][030:OBNA#0397](__)storekeeper's note
-[E][030:OBNA#0387](__)door
-[E][030:VERB#0388](94)`SLASHMASTER® -- When you want a sword as sharp as your wit.`
-[E][030:VERB#0388](D8)On those helpless dogs?
-[E][030:VERB#0388](D8)That's inhumane!
-[E][030:OBNA#0388](__)sword
-[E][030:LSCR#0200](14)Hey, where'd you go?\255\003I hike halfway across the island to try and get you a reservation with the Sword Master--\255\003--who, by the way, says you can go jump in the lake--
-[E][030:LSCR#0200](14)--and when I come back, you're gone!
-[E][030:LSCR#0200](14)See if I ever do you a favor again, ungrateful little shoplifter!
-[E][030:LSCR#0200](14)See if I ever do you a favor again!
-[E][030:LSCR#0200](14)I've got my eye on you, boy.\255\003Steal anything and I break your legs.
-[E][030:LSCR#0200](14)Ahoy there, fancy pants.
-[E][030:LSCR#0202](94)Hmmm...\255\003There's nothing in here but this note.
-[E][030:LSCR#0202](94)Hmmm...\255\003It's empty.
-[E][030:LSCR#0204](14)Looking for a Sword Master, are you?\255\003Looking for a little 'five-finger discount' it looks like to me!\255\003See if I ever trust you again, devious little shoplifting weasel-boy!
-[E][030:LSCR#0204](14)I can't believe I almost fell for that again!
-[E][030:LSCR#0204](14)You, young man, are in dire need of a keelhauling!
-[E][030:LSCR#0204](14)It's not that expensive!\255\003Why don't you just buy it, cheapskate?
-[E][030:LSCR#0204](14)You're hoping I'll have a heart attack with all this walking, is that it?\255\003Ha!
-[E][030:LSCR#0204](14)Just keeps getting funnier and funnier, doesn't it?
-[E][030:LSCR#0204](14)Just get over here!
-[E][030:LSCR#0204](14)Ah-ha!
-[E][030:LSCR#0204](14)Caught you, you little thief!
-[E][030:LSCR#0204](14)Caught you again, you little rat!\255\003Don't you ever learn?
-[E][030:LSCR#0204](14)Okay, cough up the dough.
-[E][030:LSCR#0204](14)Maybe you'd like to pay for that?
-[E][030:LSCR#0204](14)Maybe you'd like to pay for those?
+[030:VERB#0390](D8)`Få grepp om dina besparingar med GRIPMASTER®-handtag.`
+[030:VERB#0390](14)Hörru! Håll dig borta från det där!
+[030:VERB#0390](14)Rör inte vid det där!
+[030:OBNA#0390](__)handtag
+[030:VERB#0389](D8)`Davey Jones® Lockers:\255\001Sista ordet i stöld-, brand- och groggsäkra förvaringsanordningar.`
+[030:VERB#0389](14)
+[030:VERB#0389](D8)Det här är ett groggsäkert kassaskåp.\255\003Det står så på det.
+[030:VERB#0389](D8)Jag tror inte det kommer öppna det.
+[030:VERB#0389](94)Det är låst.
+[030:VERB#0389](D8)Det är redan stängt.
+[030:OBNA#0389](__)kassaskåp
+[030:OBNA#0399](__)klocka
+[030:VERB#0398](94)`Ring på klockan för service.`
+[030:VERB#0398](94)Jag rör det nog bäst inte.\255\003Den där butiksägaren kanske biter av huvudet på mig.
+[030:OBNA#0398](__)skylt
+[030:OBNA#0394](__)butiksägare
+[030:VERB#0395](D8)BREATHMASTER® -- För piraten som bryr sig om första intrycket.
+[030:VERB#0395](94)Åhhh! Det är uppfriskande!
+[030:OBNA#0395](__)mintpastiller
+[030:VERB#0396](D8)`DIGMASTER® -- Den enda spaden för seriösa skattjaktsentusiaster.`
+[030:OBNA#0396](__)spade
+[030:VERB#0397](94)Jag, den gode och hedervärde butiksägaren, tar härmed ansvar för innehavarens skulder upp till 5000 åttor.
+[030:OBNA#0397](__)butiksägarens skuldebrev
+[030:OBNA#0387](__)dörr
+[030:VERB#0388](94)`SLASHMASTER® -- När du vill ha ett svärd lika vasst som din kvickhet.`
+[030:VERB#0388](D8)På de där hjälplösa hundarna?
+[030:VERB#0388](D8)Det är omänskligt!
+[030:OBNA#0388](__)svärd
+[030:LSCR#0200](14)Hörru, vart tog du vägen?\255\003Jag vandrar halvvägs över ön för att försöka få dig en tid hos Svärdmästaren--\255\003--som förresten säger att du kan hoppa i sjön--
+[030:LSCR#0200](14)--och när jag kommer tillbaka är du borta!
+[030:LSCR#0200](14)Se om jag nånsin gör dig en tjänst igen, otacksam liten snattare!
+[030:LSCR#0200](14)Se om jag nånsin gör dig en tjänst igen!
+[030:LSCR#0200](14)Jag har ögonen på dig, grabben.\255\003Stjäl nåt så bryter jag benen på dig.
+[030:LSCR#0200](14)Ahoj där, finbyxor.
+[030:LSCR#0202](94)Hmmm...\255\003Det finns inget här förutom den här lappen.
+[030:LSCR#0202](94)Hmmm...\255\003Det är tomt.
+[030:LSCR#0204](14)Letar efter en Svärdmästare, va?\255\003Letar efter lite 'femfingerrabatt' ser det ut som för mig!\255\003Se om jag nånsin litar på dig igen, lömsk liten snattande vessla!
+[030:LSCR#0204](14)Jag kan inte tro att jag nästan gick på det där igen!
+[030:LSCR#0204](14)Du, unge man, är i desperat behov av en kölhålning!
+[030:LSCR#0204](14)Det är inte så dyrt!\255\003Varför köper du det inte bara, snåljåp?
+[030:LSCR#0204](14)Du hoppas att jag ska få en hjärtattack av all den här vandringen, eller hur?\255\003Ha!
+[030:LSCR#0204](14)Blir bara roligare och roligare, eller hur?
+[030:LSCR#0204](14)Kom bara hit!
+[030:LSCR#0204](14)Ah-ha!
+[030:LSCR#0204](14)Tog dig på bar gärning, din lilla tjuv!
+[030:LSCR#0204](14)Tog dig igen, din lilla råtta!\255\003Lär du dig aldrig?
+[030:LSCR#0204](14)Okej, hosta upp slantarna.
+[030:LSCR#0204](14)Kanske du vill betala för det där?
+[030:LSCR#0204](14)Kanske du vill betala för de där?
 [E][030:LSCR#0206](14)What about it?
 [E][030:LSCR#0206](FA)I want it.
 [E][030:LSCR#0206](FA)How much is it?
