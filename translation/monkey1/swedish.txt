@@ -3548,120 +3548,120 @@
 [069:LSCR#0200](D8)Det ser ut som nån sorts helig idol.
 [069:LSCR#0201](D8)Den här är alldeles för tung att lyfta...\255\003för att inte tala om att bära runt på den här gudsförgätna ön av gudarna vet vilken anledning.
 [069:LSCR#0202](D8)De här är alldeles för tunga att flytta.\255\003Dessutom, varför skulle jag vara dum nog att störa den heliga tillbedjansplatsen för en grupp människoätande huvudjägare.
-[E][070:OBNA#0768](__)cave
-[E][070:VERB#0769](D8)It's that eerie-looking ghost ship I saw sailing off with the Governor!
-[E][070:OBNA#0769](__)ghost ship
-[E][070:OBNA#0770](__)ghost ship
-[E][070:OBNA#0771](__)ghost ship
-[E][070:VERB#0784](D8)He's pretty creepy.
-[E][070:OBNA#0784](__)ghost
-[E][070:LSCR#0204](14)EEP!\255\003You scared me half to death!
-[E][070:LSCR#0204](FA)Balmy weather we're having, isn't it?
-[E][070:LSCR#0204](FA)Have a taste of root beer, you evil spirit!
-[E][070:LSCR#0204](FA)What happened to the ship?
-[E][070:LSCR#0204](FA)Would you please stop doing that with your head?
-[E][070:LSCR#0204](14)It's always like that down here.
-[E][070:LSCR#0204](14)Wait!
-[E][070:LSCR#0204](14)If it's ghosts you're after, I can tell you where the others are!
-[E][070:LSCR#0204](14)You'll never find out about the ship...
-[E][070:LSCR#0204](14)Sure.
-[E][070:LSCR#0204](FA)Tell me where the ghost ship is.
-[E][070:LSCR#0204](FA)I think I'll zap you anyway.
-[E][070:LSCR#0204](14)Please! I have a wife and three children!
-[E][070:LSCR#0204](14)Don't you want to know where LeChuck and the other ghosts are?
-[E][070:LSCR#0204](14)What did I ever do to you?
-[E][070:LSCR#0204](14)But I'm a FRIENDLY ghost!\255\003Honest.
-[E][070:LSCR#0204](14)If I tell you, will you promise not to hurt me?
-[E][070:LSCR#0204](FA)OK, I promise.
-[E][070:LSCR#0204](FA)No promises, ghost.
-[E][070:LSCR#0204](FA)I won't not promise to avoid refraining from harming you.
-[E][070:LSCR#0204](14)OK.
-[E][070:LSCR#0204](14)No stories, either.
-[E][070:LSCR#0204](14)What?
-[E][070:LSCR#0204](14)They all left for the wedding.
-[E][070:LSCR#0204](FA)What wedding?
-[E][070:LSCR#0204](FA)Where is the wedding?
-[E][070:LSCR#0204](FA)I've got to go after them!
-[E][070:LSCR#0204](FA)I give up.  I'm tired of chasing them everywhere.
-[E][070:LSCR#0204](FA)Why are YOU still here?
-[E][070:LSCR#0204](14)LeChuck is marrying the Governor of Mêlée Island®.
-[E][070:LSCR#0204](D8)WHAT?\255\003But how will they...
-[E][070:LSCR#0204](14)There's a lovely church on Mêlée Island®.\255\003They're headed there.
-[E][070:LSCR#0204](14)LeChuck is marrying the Governor!
-[E][070:LSCR#0204](D8)Marrying the--
-[E][070:LSCR#0204](94)Mêlée Island®?\255\003Oh, no!
-[E][070:LSCR#0204](14)My head fell into the lava there, and I had to chase after it...\255\003...and when I came back they had gone!
-[E][070:LSCR#0204](14)Shame, too.  I hate to miss the wedding.
-[E][070:LSCR#0204](94)I've got to stop that wedding!!
-[E][070:LSCR#0204](14)What?\255\003You can't give up now!\255\003What kind of a hero are you, anyway?
-[E][070:LSCR#0204](D8)You're right!
-[E][070:LSCR#0204](14)Bye!
-[E][070:LSCR#0204](D8)Wow!
-[E][070:LSCR#0205](13)Herman Toothrot
-[E][070:LSCR#0205](14)Hey, come on, we've got to get going!
-[E][070:LSCR#0205](14)LeChuck is making off with your Governor again!
-[E][070:LSCR#0205](14)Bob!
-[E][070:LSCR#0205](14)What are you doing here?
-[E][070:LSCR#0205](14)Oh, I missed the boat to the wedding.
-[E][070:LSCR#0205](14)Hey!\255\003No problem!\255\003We can take mine!\255\003Let's go!
-[E][070:LSCR#0205](FA)...hey...
-[E][070:LSCR#0205](FA)We'll need to scare up a ship first.
-[E][070:LSCR#0205](FA)How did you get in here without a head?
-[E][070:LSCR#0205](14)What happened to your ship?
-[E][070:LSCR#0205](FA)It's in the shop.
-[E][070:LSCR#0205](FA)I'm not insured to drive it.
-[E][070:LSCR#0205](FA)My crew stole it and sailed to Ipanema in search of a tan.
-[E][070:LSCR#0205](FA)I sort of sank it with a rock a while ago.
-[E][070:LSCR#0205](94)\255\005\100\000
-[E][070:LSCR#0205](14)Oh.
-[E][070:LSCR#0205](14)That's OK.\255\003We can take mine.
-[E][070:LSCR#0205](FA)You have a ship?
-[E][070:LSCR#0205](FA)If you have a ship, why are you waiting to be rescued?
-[E][070:LSCR#0205](FA)Will you take me to Mêlée Island®?
-[E][070:LSCR#0205](FA)How did you get in here without a head?
-[E][070:LSCR#0205](14)Yep.
-[E][070:LSCR#0205](14)Why, heck, if you're stranded, you've GOT to be rescued.
-[E][070:LSCR#0205](14)Says so in the rules.
-[E][070:LSCR#0205](14)I'll lend you my ship, if you promise to rescue me with it.
-[E][070:LSCR#0205](D8)OK.
-[E][070:LSCR#0205](14)I have a head.
-[E][070:LSCR#0205](14)Let's go.
-[E][070:LSCR#0206](14)Oh, there you are!
-[E][070:LSCR#0206](14)We've been looking all over for you.
-[E][070:LSCR#0206](FA)We've got to get back to Mêlée Island®!
-[E][070:LSCR#0206](FA)How did you get in here without using the head?
-[E][070:LSCR#0206](FA)You guys know this shambling see-through shade?
-[E][070:LSCR#0206](14)No kidding.
-[E][070:LSCR#0206](14)Yeah, we're out of sunscreen.
-[E][070:LSCR#0206](14)What?
-[E][070:LSCR#0206](94)Er...\255\003Well, I meant, that is, you don't seem to have a head, and --
-[E][070:LSCR#0206](14)WHAT?
-[E][070:LSCR#0206](94)Heh, uh...\255\003Never mind.
-[E][070:LSCR#0206](94)The one with the slippery grip on his head?
-[E][070:LSCR#0206](14)You've got to get over this obsession with heads, Threepwood.
-[E][070:LSCR#0206](14)Sure, he's an old pirating buddy.\255\003I say we give him a lift.
-[E][070:LSCR#0206](14)Thanks, Otis.
-[E][070:LSCR#0206](14)Come on, let's go.
-[E][070:LSCR#0206](14)See you, Bob.
-[E][070:LSCR#0207](94)...hey...
-[E][070:LSCR#0208](14)Bob!
-[E][070:LSCR#0208](14)Hi, Bob!
-[E][070:LSCR#0208](14)Hi, guys!
-[E][070:LSCR#0208](14)Say, Bob, you're looking a little pale...
-[E][070:LSCR#0208](14)Well, naturally I'm pale.\255\003I am dead, after all.
-[E][070:LSCR#0208](14)Dead?\255\003How did that happen?
-[E][070:LSCR#0208](14)Oh, the usual way,\255\003out for a day's plunder,\255\003ghost ship shows up,\255\003LeChuck kills everybody in the crew,\255\003and then signs us up on HIS ship.\255\003You know.
-[E][070:LSCR#0208](14)Gee, that's too bad.\255\003Maybe you'd like to join us on our quest for the perfect tan?
-[E][070:LSCR#0208](14)Well, that'd be nice, but I'm trying to catch a  ride to a wedding on Mêlée Island.\255\003®.
-[E][070:LSCR#0208](14)We were about to head back there anyway.\255\003You can come along.
-[E][070:LSCR#0208](14)Great!
-[E][070:SCRP#0131](14) 
-[E][070:SCRP#0131](14) 
-[E][070:SCRP#0131](D8)Well, that was certainly easier than the trip TO Monkey Island®.
-[E][070:SCRP#0131](D8)I wonder where Toothrot's gone to NOW?\255\003Now I'll have to stop the wedding by myself!
-[E][070:SCRP#0131](D8)I wish those guys hadn't been so excited about getting sunscreen.\255\003Now I'll have to stop the wedding by myself!
-[E][070:SCRP#0170](14)A long walk, a brief row, and a short hike later...
-[E][070:SCRP#0170](14) 
+[070:OBNA#0768](__)grotta
+[070:VERB#0769](D8)Det är det kusliga spökskeppet jag såg segla iväg med Guvernören!
+[070:OBNA#0769](__)spökskepp
+[070:OBNA#0770](__)spökskepp
+[070:OBNA#0771](__)spökskepp
+[070:VERB#0784](D8)Han är ganska kuslig.
+[070:OBNA#0784](__)spöke
+[070:LSCR#0204](14)IIIP!\255\003Du skrämde mig halvt till döds!
+[070:LSCR#0204](FA)Milt väder vi har, eller hur?
+[070:LSCR#0204](FA)Smaka på lite rotöl, din onda ande!
+[070:LSCR#0204](FA)Vad hände med skeppet?
+[070:LSCR#0204](FA)Kan du vara snäll och sluta göra så där med ditt huvud?
+[070:LSCR#0204](14)Det är alltid så här nere.
+[070:LSCR#0204](14)Vänta!
+[070:LSCR#0204](14)Om det är spöken du är ute efter kan jag berätta var de andra är!
+[070:LSCR#0204](14)Du kommer aldrig få veta om skeppet...
+[070:LSCR#0204](14)Visst.
+[070:LSCR#0204](FA)Berätta var spökskeppet är.
+[070:LSCR#0204](FA)Jag tror jag tar dig ändå.
+[070:LSCR#0204](14)Snälla! Jag har fru och tre barn!
+[070:LSCR#0204](14)Vill du inte veta var LeChuck och de andra spökena är?
+[070:LSCR#0204](14)Vad har jag nånsin gjort dig?
+[070:LSCR#0204](14)Men jag är ett VÄNLIGT spöke!\255\003Ärligt.
+[070:LSCR#0204](14)Om jag berättar, lovar du att inte skada mig?
+[070:LSCR#0204](FA)OK, jag lovar.
+[070:LSCR#0204](FA)Inga löften, spöke.
+[070:LSCR#0204](FA)Jag lovar inte att inte undvika att avstå från att skada dig.
+[070:LSCR#0204](14)OK.
+[070:LSCR#0204](14)Inga historier heller.
+[070:LSCR#0204](14)Va?
+[070:LSCR#0204](14)Alla åkte till bröllopet.
+[070:LSCR#0204](FA)Vilket bröllop?
+[070:LSCR#0204](FA)Var är bröllopet?
+[070:LSCR#0204](FA)Jag måste följa efter dom!
+[070:LSCR#0204](FA)Jag ger upp. Jag är trött på att jaga dom överallt.
+[070:LSCR#0204](FA)Varför är DU fortfarande här?
+[070:LSCR#0204](14)LeChuck gifter sig med Guvernören på Mêlée Island®.
+[070:LSCR#0204](D8)VA?\255\003Men hur ska dom...
+[070:LSCR#0204](14)Det finns en vacker kyrka på Mêlée Island®.\255\003Dom är på väg dit.
+[070:LSCR#0204](14)LeChuck gifter sig med Guvernören!
+[070:LSCR#0204](D8)Gifter sig med--
+[070:LSCR#0204](94)Mêlée Island®?\255\003Åh, nej!
+[070:LSCR#0204](14)Mitt huvud ramlade ner i lavan där, och jag var tvungen att jaga efter det...\255\003...och när jag kom tillbaka hade dom åkt!
+[070:LSCR#0204](14)Synd också. Jag hatar att missa bröllopet.
+[070:LSCR#0204](94)Jag måste stoppa bröllopet!!
+[070:LSCR#0204](14)Va?\255\003Du kan inte ge upp nu!\255\003Vad är du för sorts hjälte egentligen?
+[070:LSCR#0204](D8)Du har rätt!
+[070:LSCR#0204](14)Hejdå!
+[070:LSCR#0204](D8)Oj!
+[070:LSCR#0205](13)Herman Tandröta
+[070:LSCR#0205](14)Hörru, kom igen, vi måste dra!
+[070:LSCR#0205](14)LeChuck tar din Guvernör igen!
+[070:LSCR#0205](14)Bob!
+[070:LSCR#0205](14)Vad gör du här?
+[070:LSCR#0205](14)Jag missade båten till bröllopet.
+[070:LSCR#0205](14)Hej!\255\003Inga problem!\255\003Vi kan ta min!\255\003Vi kör!
+[070:LSCR#0205](FA)...hörru...
+[070:LSCR#0205](FA)Vi behöver skaffa ett skepp först.
+[070:LSCR#0205](FA)Hur kom du in här utan huvud?
+[070:LSCR#0205](14)Vad hände med ditt skepp?
+[070:LSCR#0205](FA)Det är på verkstad.
+[070:LSCR#0205](FA)Jag har inte försäkring på det.
+[070:LSCR#0205](FA)Min besättning stal det och seglade till Ipanema på jakt efter solbränna.
+[070:LSCR#0205](FA)Jag sänkte det liksom med en sten för ett tag sen.
+[070:LSCR#0205](94)\255\005\100\000
+[070:LSCR#0205](14)Åh.
+[070:LSCR#0205](14)Det är okej.\255\003Vi kan ta mitt.
+[070:LSCR#0205](FA)Har du ett skepp?
+[070:LSCR#0205](FA)Om du har ett skepp, varför väntar du på att bli räddad?
+[070:LSCR#0205](FA)Tar du mig till Mêlée Island®?
+[070:LSCR#0205](FA)Hur kom du in här utan huvud?
+[070:LSCR#0205](14)Japp.
+[070:LSCR#0205](14)Tja, om du är strandsatt MÅSTE du bli räddad.
+[070:LSCR#0205](14)Det står i reglerna.
+[070:LSCR#0205](14)Jag lånar dig mitt skepp, om du lovar att rädda mig med det.
+[070:LSCR#0205](D8)OK.
+[070:LSCR#0205](14)Jag har ett huvud.
+[070:LSCR#0205](14)Vi kör.
+[070:LSCR#0206](14)Åh, där är du!
+[070:LSCR#0206](14)Vi har letat efter dig överallt.
+[070:LSCR#0206](FA)Vi måste ta oss tillbaka till Mêlée Island®!
+[070:LSCR#0206](FA)Hur kom du in här utan att använda huvudet?
+[070:LSCR#0206](FA)Ni känner det här slafsiga genomskinliga spöket?
+[070:LSCR#0206](14)Jo tjena.
+[070:LSCR#0206](14)Ja, vi har slut på solkräm.
+[070:LSCR#0206](14)Va?
+[070:LSCR#0206](94)Öh...\255\003Tja, jag menade, det verkar som om du inte har nåt huvud, och --
+[070:LSCR#0206](14)VA?
+[070:LSCR#0206](94)Heh, öh...\255\003Glöm det.
+[070:LSCR#0206](94)Den med det hala greppet om sitt huvud?
+[070:LSCR#0206](14)Du måste komma över den här besattheten med huvuden, Threepwood.
+[070:LSCR#0206](14)Visst, han är en gammal piratkompis.\255\003Jag tycker vi ger honom skjuts.
+[070:LSCR#0206](14)Tack, Otis.
+[070:LSCR#0206](14)Kom igen, vi drar.
+[070:LSCR#0206](14)Vi ses, Bob.
+[070:LSCR#0207](94)...hörru...
+[070:LSCR#0208](14)Bob!
+[070:LSCR#0208](14)Hej, Bob!
+[070:LSCR#0208](14)Hej, grabbar!
+[070:LSCR#0208](14)Säg, Bob, du ser lite blek ut...
+[070:LSCR#0208](14)Tja, naturligtvis är jag blek.\255\003Jag är trots allt död.
+[070:LSCR#0208](14)Död?\255\003Hur hände det?
+[070:LSCR#0208](14)Åh, på vanligt sätt,\255\003ute på en dags plundring,\255\003spökskepp dyker upp,\255\003LeChuck dödar alla i besättningen,\255\003och skriver sen in oss på HANS skepp.\255\003Du vet.
+[070:LSCR#0208](14)Oj, vad tråkigt.\255\003Kanske du vill följa med oss på vår jakt efter den perfekta solbrännan?
+[070:LSCR#0208](14)Tja, det vore trevligt, men jag försöker få skjuts till ett bröllop på Mêlée Island.\255\003®.
+[070:LSCR#0208](14)Vi var ändå på väg tillbaka dit.\255\003Du kan hänga på.
+[070:LSCR#0208](14)Toppen!
+[070:SCRP#0131](14)
+[070:SCRP#0131](14)
+[070:SCRP#0131](D8)Tja, det var definitivt lättare än resan TILL Monkey Island®.
+[070:SCRP#0131](D8)Jag undrar vart Tandröta har tagit vägen NU?\255\003Nu måste jag stoppa bröllopet själv!
+[070:SCRP#0131](D8)Jag önskar att dom inte hade varit så ivriga att köpa solkräm.\255\003Nu måste jag stoppa bröllopet själv!
+[070:SCRP#0170](14)En lång promenad, en kort roddtur och en kort vandring senare...
+[070:SCRP#0170](14) 
 [071:VERB#0787](D8)Han sover.
 [071:VERB#0787](D8)Jag vill inte väcka honom om jag inte har lite av den där anti-spökdrycken att försvara mig med.
 [071:OBNA#0787](__)spökvakt
@@ -3945,54 +3945,54 @@
 [080:LSCR#0202](14)Naturligtvis tror jag inte att DU hade nåt med det att göra.\255\003Jag är säker på att det bara är en tillfällighet att du kom in här och nosade runt precis efter att nån MYSTISK person smutsade ner mitt fina rena golv.
 [080:LSCR#0202](14)Hej!\255\003Det stör mig inte det minsta att du bara valsade rakt in i mitt hem utan att bry dig om att knacka.
 [080:LSCR#0202](14) 
-[E][081:SCRP#0092](14)What are you looking at me for?
-[E][081:SCRP#0092](14)What now?
-[E][081:SCRP#0092](14)Look, this whole LeChuck thing has me pretty shaken up.\255\003So if you don't mind...
-[E][081:SCRP#0092](FA)I'd like to introduce myself... my name's Guybrush.
-[E][081:SCRP#0092](FA)What ever happened with LeChuck and the Governor?
-[E][081:SCRP#0092](FA)Can you tell me the story about this LeChuck guy?
-[E][081:SCRP#0092](FA)Who's this pirate that's bugging the Governor?
-[E][081:SCRP#0092](FA)Why aren't pirates welcome at the Governor's house?
-[E][081:SCRP#0092](FA)Does the name `LeChuck` mean anything to you?
-[E][081:SCRP#0092](FA)Excuse me, but I'm looking for the dart board.
-[E][081:SCRP#0092](FA)Where can I get a drink?
-[E][081:SCRP#0092](FA)What happened to your eye?
-[E][081:SCRP#0092](FA)Sorry to bother you.  Bye.
-[E][081:SCRP#0092](14)Well, I was putting in my contact lens when--\255\003Hey, wait a second!\255\003That's none of your business!
-[E][081:SCRP#0092](14) 
-[E][081:SCRP#0092](14)Dart board?\255\003We don't have one anymore.
-[E][081:SCRP#0092](14)There was a horrible accident.\255\003Drinking and darts don't mix.
-[E][081:SCRP#0092](14) 
-[E][081:SCRP#0092](14)A drink?\255\003You could wait for the cook to notice you...\255\003...but that could take all day.
-[E][081:SCRP#0092](14)Just find a mug and sneak into the kitchen.
-[E][081:SCRP#0092](14)That's what we all do.
-[E][081:SCRP#0092](14) 
-[E][081:SCRP#0092](14)Yeah, so what?
-[E][081:SCRP#0092](14)LeChuck?
-[E][081:SCRP#0092](14)Because of LeChuck, that's why!
-[E][081:SCRP#0092](14)LeChuck?
-[E][081:SCRP#0092](14)He's the guy that went to the Governor's for dinner and never wanted to leave.
-[E][081:SCRP#0092](14)He fell for her in a big way, but she told him to drop dead.
-[E][081:SCRP#0092](14)So he did.\255\003Then things really got ugly.
-[E][081:SCRP#0092](14) 
-[E][081:SCRP#0092](FA)What's so scary about this LeChuck guy?
-[E][081:SCRP#0092](FA)How did things get ugly?
-[E][081:SCRP#0092](FA)How did he die?
-[E][081:SCRP#0092](FA)Sounds spooky.  Well, I must be going.
-[E][081:SCRP#0092](14)LeChuck was a fearsome pirate.
-[E][081:SCRP#0092](14)He tried to impress the Governor by sailing off to find the Secret of Monkey Island®.\255\003But a mysterious storm came up and sank his ship, leaving no survivors.
-[E][081:SCRP#0092](14)We thought that was the end of the fearsome pirate LeChuck.
-[E][081:SCRP#0092](14)We were wrong.
-[E][081:SCRP#0092](14) 
-[E][081:SCRP#0092](FA)What happened then?
-[E][081:SCRP#0092](FA)What IS the Secret of Monkey Island®?
-[E][081:SCRP#0092](FA)I love that story.  Well, see you later.
-[E][081:SCRP#0092](14)Only LeChuck knows.
-[E][081:SCRP#0092](14)But that's not the end--
-[E][081:SCRP#0092](14)He still sails the waters between here and Monkey Island®.\255\003His ghost ship is an unholy terror upon the sea.
-[E][081:SCRP#0092](14)That's why we're all in here and not out pirating.
-[E][081:SCRP#0092](14) 
-[E][081:SCRP#0092](14)Right.
+[081:SCRP#0092](14)Varför tittar du på mig?
+[081:SCRP#0092](14)Vad nu då?
+[081:SCRP#0092](14)Hörru, hela den här LeChuck-grejen har skakat om mig ordentligt.\255\003Så om du ursäktar...
+[081:SCRP#0092](FA)Jag vill presentera mig... jag heter Guybrush.
+[081:SCRP#0092](FA)Vad hände egentligen med LeChuck och Guvernören?
+[081:SCRP#0092](FA)Kan du berätta historien om den där LeChuck?
+[081:SCRP#0092](FA)Vem är den här piraten som plågar Guvernören?
+[081:SCRP#0092](FA)Varför är pirater inte välkomna hos Guvernören?
+[081:SCRP#0092](FA)Betyder namnet `LeChuck` nåt för dig?
+[081:SCRP#0092](FA)Ursäkta, men jag letar efter darttavlan.
+[081:SCRP#0092](FA)Var kan jag få nåt att dricka?
+[081:SCRP#0092](FA)Vad hände med ditt öga?
+[081:SCRP#0092](FA)Förlåt att jag störde. Hejdå.
+[081:SCRP#0092](14)Tja, jag höll på att sätta i min kontaktlins när--\255\003Hörru, vänta lite!\255\003Det angår inte dig!
+[081:SCRP#0092](14)
+[081:SCRP#0092](14)Darttavla?\255\003Vi har ingen längre.
+[081:SCRP#0092](14)Det var en hemsk olycka.\255\003Fylleri och dart hör inte ihop.
+[081:SCRP#0092](14)
+[081:SCRP#0092](14)Nåt att dricka?\255\003Du kan vänta på att kocken upptäcker dig...\255\003...men det kan ta hela dan.
+[081:SCRP#0092](14)Hitta bara en mugg och smyg in i köket.
+[081:SCRP#0092](14)Det är vad vi alla gör.
+[081:SCRP#0092](14)
+[081:SCRP#0092](14)Jo, och?
+[081:SCRP#0092](14)LeChuck?
+[081:SCRP#0092](14)På grund av LeChuck, det är därför!
+[081:SCRP#0092](14)LeChuck?
+[081:SCRP#0092](14)Det är han som gick till Guvernören på middag och aldrig ville gå därifrån.
+[081:SCRP#0092](14)Han föll för henne rejält, men hon sa åt honom att dra åt skogen.
+[081:SCRP#0092](14)Så det gjorde han.\255\003Sen blev det verkligen otäckt.
+[081:SCRP#0092](14)
+[081:SCRP#0092](FA)Vad är det som är så läskigt med den här LeChuck?
+[081:SCRP#0092](FA)Hur blev det otäckt?
+[081:SCRP#0092](FA)Hur dog han?
+[081:SCRP#0092](FA)Låter kusligt. Jag måste nog gå.
+[081:SCRP#0092](14)LeChuck var en fruktansvärd pirat.
+[081:SCRP#0092](14)Han försökte imponera på Guvernören genom att segla iväg för att hitta Monkey Islands® hemlighet.\255\003Men en mystisk storm drog in och sänkte hans skepp utan överlevande.
+[081:SCRP#0092](14)Vi trodde det var slutet för den fruktansvärde piraten LeChuck.
+[081:SCRP#0092](14)Vi hade fel.
+[081:SCRP#0092](14)
+[081:SCRP#0092](FA)Vad hände sen?
+[081:SCRP#0092](FA)Vad ÄR Monkey Islands® hemlighet?
+[081:SCRP#0092](FA)Jag älskar den historien. Vi ses.
+[081:SCRP#0092](14)Bara LeChuck vet.
+[081:SCRP#0092](14)Men det är inte slutet--
+[081:SCRP#0092](14)Han seglar fortfarande på vattnet mellan här och Monkey Island®.\255\003Hans spökskepp är en ohelig skräck på havet.
+[081:SCRP#0092](14)Det är därför vi allihop sitter här istället för att pirata.
+[081:SCRP#0092](14)
+[081:SCRP#0092](14)Just det.
 [082:SCRP#0093](14)Aja.
 [082:SCRP#0093](FA)Aja, själv.
 [082:SCRP#0093](FA)Fin hatt.
