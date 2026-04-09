@@ -1816,310 +1816,310 @@
 [031:SCRP#0070](14)Åh toppen, bara toppen.\255\003Rädda råttan och lämna mig här att ruttna.\255\003Du är en riktig humanist, kompis.
 [031:SCRP#0070](14)Jag antar att min advokat hade rätt...\255\003Jag borde ha gollat.
 [031:SCRP#0070](14) 
-[E][032:OBNA#0422](__)street
-[E][032:VERB#0423](D8)Ooooh!  A circus.\255\003I love a circus!
-[E][032:VERB#0423](14) 
-[E][032:OBNA#0423](__)poster
-[E][032:VERB#0424](D8)He's vile, horrible, awful, and about to hit me again.
-[E][032:OBNA#0424](__)LeChuck
-[E][032:VERB#0425](D8)`Employees Only`
-[E][032:OBNA#0425](__)sign
-[E][032:LSCR#0200](94)Hello?
-[E][032:LSCR#0200](94)Anybody in here?
-[E][032:LSCR#0200](94)HELLO???
-[E][032:LSCR#0200](14)You know, bad things could happen to a person in a dark, deserted alley like this one.
-[E][032:LSCR#0200](14)And at this time of night, nobody would be around to see it.
-[E][032:LSCR#0200](14) 
-[E][032:LSCR#0200](FA)Oh really?  That's interesting.  Well, see ya.
-[E][032:LSCR#0200](FA)Did you hear something back in here too?
-[E][032:LSCR#0200](FA)Yeah, and bad things happen to people who sneak up\254\001     on other people from behind.
-[E][032:LSCR#0200](14)Now, why are you in such a hurry?
-[E][032:LSCR#0200](14)No.
-[E][032:LSCR#0200](14)So, you're going to give me a little attitude, eh?
-[E][032:LSCR#0200](14)I'd better get your name.
-[E][032:LSCR#0200](FA)I'm Guybrush Threepwood, and I'm a mighty pirate.
-[E][032:LSCR#0200](FA)I'm Guybrush Threepwood, and I'm new in town.
-[E][032:LSCR#0200](FA)I'm Guybrush Threepwood, and I was just leaving.
-[E][032:LSCR#0200](14)Listen Peepwood--
-[E][032:LSCR#0200](94)Threepwood!\255\003Guybrush Threepwood!
-[E][032:LSCR#0200](14)Whatever your name is, listen:
-[E][032:LSCR#0200](14)I'm the sheriff around here.\255\003Sheriff Fester Shinetop.
-[E][032:LSCR#0200](14)Take it from me--This is a bad time to be visiting Mêlée Island®.\255\003A very BAD time.\255\003My advice to you is to find somewhere else to take your vacation.
-[E][032:LSCR#0200](14)Somewhere safer.
-[E][032:LSCR#0200](94)Boy, I feel much better knowing there's an officer of the law around.
-[E][033:OBNA#0426](__)cliffside
-[E][033:OBNA#0427](__)archway
-[E][033:OBNA#0428](__)door
-[E][033:VERB#0429](D8)I'll save you Elaine, I promise.
-[E][033:VERB#0429](D8)It's my little plunder bunny.
-[E][033:VERB#0429](D8)I see how LeChuck could fall for her so quickly.
-[E][033:VERB#0429](D8)I see how that pirate could fall for her so quickly.
-[E][033:VERB#0429](D8)Re-elect Governor Marley.\255\003`When there's only one candidate, there's only one choice.`
-[E][033:VERB#0429](14) 
-[E][033:OBNA#0429](__)poster
-[E][034:OBNA#0439](__)deadly piranha poodles
-[E][034:OBNA#0431](__)Governor's mansion
-[E][034:VERB#0432](94)That's not the church.
-[E][034:OBNA#0432](__)alley
-[E][034:VERB#0433](94)That's not the way to the church.
-[E][034:OBNA#0433](__)archway
-[E][034:VERB#0434](94)That's not the church.
-[E][034:OBNA#0434](__)doorway
-[E][034:VERB#0437](94)That's not the church.
-[E][034:OBNA#0437](__)door
-[E][034:OBNA#0435](__)town
-[E][034:VERB#0436](94)That's not the way to the church.
-[E][034:OBNA#0436](__)archway
-[E][034:OBNA#0438](__)door
-[E][034:LSCR#0203](14)Ps
-[E][034:LSCR#0203](14)Pss
-[E][034:LSCR#0203](14)Psss
-[E][034:LSCR#0203](14)Pssss
-[E][034:LSCR#0203](14)Psssst.
-[E][034:LSCR#0203](14)Hey you.
-[E][034:LSCR#0203](14)Come over here.
-[E][034:LSCR#0204](14)Your reservations are for two-thirty, sir.\255\003Come back then.
-[E][034:LSCR#0204](14)Do you have reservations?
-[E][034:LSCR#0204](14)May I help you?
-[E][034:LSCR#0204](FA)I'm here to loot the Governor's mansion.
-[E][034:LSCR#0204](FA)I was just on my way to the Governor's Mansion.
-[E][034:LSCR#0204](FA)I must be in the wrong place, catch ya later.
-[E][034:LSCR#0204](14)Are you here for the looting?
-[E][034:LSCR#0204](FA)Yes.  Looting sounds like fun, now that I'm a pirate and all.
-[E][034:LSCR#0204](FA)Absolutely not!
-[E][034:LSCR#0204](14)That's good...\255\003...because we're booked up solid for the next five hours.
-[E][034:LSCR#0204](14)And do you have reservations, sir?
-[E][034:LSCR#0204](FA)Reservations?!?  For looting?
-[E][034:LSCR#0204](FA)Why, yes I do have reservations.
-[E][034:LSCR#0204](FA)Gee, I don't have reservations.  Should I have called ahead?
-[E][034:LSCR#0204](14)Oh yes, very popular when the Governor's away.\255\003Chaos would ensue if we didn't have a system.
-[E][034:LSCR#0204](14)Now...\255\003...unless you have reservations, you'll have to leave.
-[E][034:LSCR#0204](14)And what name would they be under?
-[E][034:LSCR#0204](FA)Threepwood, Guybrush Threepwood.
-[E][034:LSCR#0204](FA)Ah... I think it's that first one there on the top of the list.
-[E][034:LSCR#0204](FA)It's probably under 'S', for Shinetop.
-[E][034:LSCR#0204](14)I'm sorry...\255\003...I don't see your name here.
-[E][034:LSCR#0204](14)Of course...
-[E][034:LSCR#0204](14)Nice try...\255\003...but...
-[E][034:LSCR#0204](14)Nice try...\255\003...but...
-[E][034:LSCR#0204](14)Of course you should have called ahead.\255\003This is a very popular place.
-[E][034:LSCR#0204](14)Now...
-[E][034:LSCR#0204](14)...we're booked solid for the next five hours.
-[E][034:LSCR#0204](14)But I might be able to squeeze you in...\255\003...around the two o'clock hour.
-[E][034:LSCR#0204](14)Would that be OK?
-[E][034:LSCR#0204](FA)Yes, that would be fine.
-[E][034:LSCR#0204](FA)No thanks, I've got a ship to catch.
-[E][034:LSCR#0204](14)Super...\255\003I'll put you down for `one to loot the Governor's mansion at two-thirty.`
-[E][034:LSCR#0204](14)Next time, call ahead.
-[E][034:LSCR#0204](14)Suit yourself.
-[E][035:OBNA#0453](__)rat
-[E][035:VERB#0452](14)What are YOU looking at?
-[E][035:OBNA#0452](__)Men of Low Moral Fiber (pirates)
-[E][035:OBNA#0451](__)archway
-[E][035:VERB#0444](94)I've got to get to the church!
-[E][035:OBNA#0444](__)door
-[E][035:OBNA#0442](__)map
-[E][035:VERB#0443](D8)`Ye Olde Rubber-Chicken-With-a- Pulley-in-the-Middle Shoppe...`\255\003`...Serving your rubber-chicken-with-a- pulley-in-the-middle needs for over 50 years.`
-[E][035:OBNA#0443](__)sign
-[E][035:OBNA#0445](__)door
-[E][035:OBNA#0446](__)door
-[E][035:OBNA#0447](__)door
-[E][035:OBNA#0448](__)door
-[E][035:OBNA#0449](__)clock
-[E][035:VERB#0441](14)What are YOU looking at?
-[E][035:OBNA#0441](__)Citizen of Mêlée
-[E][035:VERB#0450](94)The church is in the other direction!
-[E][035:OBNA#0450](__)archway
-[E][035:OBNA#0440](__)grim spectre
-[E][035:VERB#0464](D8)There sure are a lot of spelling errors.
-[E][035:VERB#0464](D8)They're SPELLING errors, not grammatical ones.
-[E][035:OBNA#0464](__)minutes
-[E][035:LSCR#0200](13)Citizen of Mêlée
-[E][035:LSCR#0201](14)Braaaak!
-[E][035:LSCR#0210](D8)Ten o'clock.
-[E][035:LSCR#0210](D8)Hmm.  Still ten o'clock.
-[E][035:LSCR#0210](D8)Seems like it's ALWAYS ten o'clock on this island.
-[E][035:LSCR#0210](D8)Creepy!
-[E][035:LSCR#0211](14)Excuse me.
-[E][035:LSCR#0211](14)Do you have an invitation to the wedding?
-[E][035:LSCR#0211](FA)Why yes, I do.
-[E][035:LSCR#0211](FA)No, I'm a gatecrasher.
-[E][035:LSCR#0211](FA)No, but I do have this deadly magic root beer.
-[E][035:LSCR#0211](FA)I must have left it in my other pants.
-[E][035:LSCR#0211](14)May I see it, please?
-[E][035:LSCR#0211](FA)No.
-[E][035:LSCR#0211](FA)Sure, it's right here in this seltzer bottle.
-[E][035:LSCR#0211](FA)Er, I think it must be in my other pants.
-[E][035:LSCR#0211](D8)Bye, now.
-[E][035:LSCR#0211](14)Not so fast, buddy!
-[E][035:LSCR#0211](14)You don't look very ghostlike to me.\255\003You're very pink...
-[E][035:LSCR#0211](FA)It's a sunburn.
-[E][035:LSCR#0211](FA)I suffer from a rare pigmentation efficiency syndrome.
-[E][035:LSCR#0211](FA)Try not to take this root beer too personally.
-[E][035:LSCR#0211](14)You don't SOUND much like a ghost, either.\255\003Could you wail and moan or rattle some chains or something?
-[E][035:LSCR#0211](FA)aaAAOOOOOOoooooo...
-[E][035:LSCR#0211](FA)My chains are at the cleaners being degreased.
-[E][035:LSCR#0211](FA)Try not to take this root beer too personally.
-[E][035:LSCR#0211](14)Say, you sound a lot like my dog.
-[E][035:LSCR#0211](14)Well, OK.
-[E][035:LSCR#0211](14)But where's that dank, musty, beyond-the-grave ghostly smell?
-[E][035:LSCR#0211](FA)It's busy being overpowered by your OWN deathly stench.
-[E][035:LSCR#0211](FA)Oh, that!  Just let me get my boots off...
-[E][035:LSCR#0211](FA)It's a new root beer cologne.  Perhaps you'd like to try it?
-[E][035:LSCR#0211](14)Watch it...
-[E][035:LSCR#0211](14)No, never mind.
-[E][035:LSCR#0211](14)If you're really a ghost, prove it.\255\003Let's see you pop your head off.
-[E][035:LSCR#0211](FA)Er...
-[E][035:LSCR#0211](FA)Um...
-[E][035:LSCR#0211](FA)Well...
-[E][035:LSCR#0211](FA)You mean the head on this root beer?
-[E][035:LSCR#0211](D8)Oh, forget it!
-[E][035:LSCR#0213](D8)This stuff's great!\255\003Watch out, LeChuck!\255\003There's a new sheriff in town, and his name--\255\003--Hey!  I'd better get to the church!
-[E][035:LSCR#0215](14)Hey!!  Don't mess with my rat!
-[E][035:LSCR#0215](14)I said don't pester the rat!
-[E][035:LSCR#0215](14)I'm not going to warn you again!!\255\003Leave the rat alone!!
-[E][035:LSCR#0215](14)Hey, man!!
-[E][035:LSCR#0215](14)Frank, make him quit it!
-[E][035:LSCR#0215](14)Aw, now look what you did!
-[E][035:LSCR#0216](14) 
-[E][035:LSCR#0216](FA)I apologize for what I said about rats.
-[E][035:LSCR#0216](FA)Sorry about the rat...
-[E][035:LSCR#0216](FA)Now that that fearsome beast is gone, we can talk.
-[E][035:LSCR#0216](FA)Hey, nice rat!
-[E][035:LSCR#0216](FA)How can you stand to be near this vermin?
-[E][035:LSCR#0216](FA)Do you guys know the sneaky-looking man on the \254\008     opposite corner?
-[E][035:LSCR#0216](FA)Do you know where I can find a treasure map around here?
-[E][035:LSCR#0216](FA)I'll take those minutes if you pay me two pieces of eight.
-[E][035:LSCR#0216](FA)I'm really interested in this pirating thing.
-[E][035:LSCR#0216](FA)Say, are you guys pirates?
-[E][035:LSCR#0216](FA)Did you know the Governor's been kidnapped?
-[E][035:LSCR#0216](FA)I'll just be running along, now.
-[E][035:LSCR#0216](14)Saw you buying a map from that fellow over there.
-[E][035:LSCR#0216](14)Have you looked at it yet?
-[E][035:LSCR#0216](14)Ha ha ha ha ha ha ha ha ha ha ha ha
-[E][035:LSCR#0216](14)Perhaps you should consider an alternate source...
-[E][035:LSCR#0216](14)Wanna buy a map, eh?
-[E][035:LSCR#0216](14)OUR maps are top quality, not like the birdcage liners you get from that clown across the street.
-[E][035:LSCR#0216](14)No, just kidding.
-[E][035:LSCR#0216](14)These are actually copies of the minutes of the last meeting of the Mêlée Island® PTA.\255\003Can't even GIVE them away.
-[E][035:LSCR#0216](14)Want one?
-[E][035:LSCR#0216](14) 
-[E][035:LSCR#0216](FA)No, thanks.
-[E][035:LSCR#0216](FA)No, I must be on my way.
-[E][035:LSCR#0216](FA)No, but I'll take one if you give me two pieces of eight.
-[E][035:LSCR#0216](14)See?  Told you so.
-[E][035:LSCR#0216](14)OK, that's fair.
-[E][035:LSCR#0216](14)Do you like rats?
-[E][035:LSCR#0216](FA)Yes, I love rats!
-[E][035:LSCR#0216](FA)No, I can't stand them.
-[E][035:LSCR#0216](FA)Yes, especially in a light wine sauce.
-[E][035:LSCR#0216](FA)I can't talk about it right now.  Got to go.
-[E][035:LSCR#0216](14)AIEEE!!!  Get away!!!
-[E][035:LSCR#0216](14)Frank, this bozo scared off my rat!
-[E][035:LSCR#0216](14)Oh, they're not so bad.
-[E][035:LSCR#0216](14)-- squeak --
-[E][035:LSCR#0216](14)Sounds like this guy don't like rats!
-[E][035:LSCR#0216](14)Let's sauté him now!
-[E][035:LSCR#0216](14) 
-[E][035:LSCR#0216](14)They're very intelligent creatures!
-[E][035:LSCR#0216](14)Ha ha ha ha!!
-[E][035:LSCR#0216](14)More intelligent than HIM.
-[E][035:LSCR#0216](14)Why, there's a story around these parts that a bunch of rats  actually crewed a ship here from fabled Monkey Island®.
-[E][035:LSCR#0216](14)No, that's not right.
-[E][035:LSCR#0216](14)It was actually a group of monkeys.
-[E][035:LSCR#0216](FA)That's amazing!
-[E][035:LSCR#0216](FA)That's difficult to believe.
-[E][035:LSCR#0216](FA)No way could a bunch of stupid monkeys crew a ship!
-[E][035:LSCR#0216](FA)Excuse me, I must be going.
-[E][035:LSCR#0216](14)But true.
-[E][035:LSCR#0216](14)Yes, but it's true.
-[E][035:LSCR#0216](14)Actually, they were chimps, and they WEREN'T stupid.
-[E][035:LSCR#0216](14)When they arrived, they sold the ship for a pretty penny.\255\003Only time I've seen anyone get the better of ol' Stan in a deal.
-[E][035:LSCR#0216](14)I thought it was rats...
-[E][035:LSCR#0216](14)No, we're a wandering circus troupe.
-[E][035:LSCR#0216](14)But this rat scared away the elephant.
-[E][035:LSCR#0216](14)But some idiot chased our trained rat away.
-[E][035:LSCR#0216](14)Shut Up!!
-[E][035:LSCR#0216](14)Of course we're pirates!\255\003You can't buy clothes like these off the rack!
-[E][035:LSCR#0216](14)What do you want?
-[E][035:LSCR#0216](FA)What's in the keg?
-[E][035:LSCR#0216](FA)Sorry I verbally abused your rat.
-[E][035:LSCR#0216](FA)Where'd you get that rat?
-[E][035:LSCR#0216](FA)Nothing.  See you later.
-[E][035:LSCR#0216](FA)How come you're on this street corner and not on a ship, \254\008   looting, pillaging, sacking, that sort of thing?
-[E][035:LSCR#0216](14)Rum.\255\002
-[E][035:LSCR#0216](14)    Jam.
-[E][035:LSCR#0216](14)Jam.\255\002
-[E][035:LSCR#0216](14)Rum.
-[E][035:LSCR#0216](14)Er...  rum and jam.\255\003It's an old pirate favorite, everybody knows that.
-[E][035:LSCR#0216](14)Well, pirating hasn't been panning out so well for us...
-[E][035:LSCR#0216](14)There are some UNNATURALLY talented pirates in the area right now...
-[E][035:LSCR#0216](14)...operating out of Monkey Island®.
-[E][035:LSCR#0216](14)So we've been pursuing alternate means of self-support.\255\003We're trying to start up a circus.
-[E][035:LSCR#0216](14)It was working out well, until the rat scared off the elephant.
-[E][035:LSCR#0216](14)...and now some jerk scared off the rat!
-[E][035:LSCR#0216](14)Now you've depressed us.\255\003Go home.
-[E][035:LSCR#0216](14)Er...
-[E][035:LSCR#0216](14)Well, yes, we knew about that.
-[E][035:LSCR#0216](FA)Why are you just standing around instead of doing \254\008     something about it?
-[E][035:LSCR#0216](FA)I'm going after those immaterial authority-figure-nappers.  \254\008     Are you with me?
-[E][035:LSCR#0216](FA)Can I interest you in a dream vacation to Monkey Island®?
-[E][035:LSCR#0216](D8)Because of this sudden change in local government,\255\003I'm prepared to offer you a once-in-a-lifetime price on a cruise to that scenic wonderland...\255\003...Monkey Island®!
-[E][035:LSCR#0216](D8)And the amazing thing about this offer IS the price:\255\003Absolutely free!\255\003All you have to do is help me crew the ship, and island paradise can be yours...\255\003FREE!!
-[E][035:LSCR#0216](D8)(...and we might just rescue the Governor while we're at it.)
-[E][035:LSCR#0216](14)Uh...
-[E][035:LSCR#0216](14)Well...
-[E][035:LSCR#0216](14)The Governor can probably take care of herself...
-[E][035:LSCR#0216](14)...and we are sort of busy here...
-[E][035:LSCR#0216](14)- yeah -
-[E][035:LSCR#0216](14)...and we've got the circus to think of...
-[E][035:LSCR#0216](14)...we've got to find the elephant...
-[E][035:LSCR#0216](14)...find the rat...
-[E][035:LSCR#0216](14)YEAH!
-[E][035:LSCR#0216](14)...and get rid of these minutes...
-[E][035:LSCR#0216](14)I'm sorry, we simply CAN'T go at this time.
-[E][035:LSCR#0216](14)I think you'd best leave, boy.
-[E][035:LSCR#0216](14)Ha ha ha ha ha hoo hoo ha ha ha
-[E][035:LSCR#0217](27)-- aak --
-[E][035:LSCR#0217](14)\255\007\034\000
-[E][035:LSCR#0218](14)Excuse me, but do--\255\003Oh, it's only you again.
-[E][035:LSCR#0218](14)I told you there was only ONE in existence.
-[E][035:LSCR#0218](14)Come back for the map to the Legendary Lost Treasure of Mêlée Island®, eh?
-[E][035:LSCR#0218](14)I hope you brought enough money this time.
-[E][035:LSCR#0218](FA)I just want a map.
-[E][035:LSCR#0218](FA)My cousin Sven sends his regards.
-[E][035:LSCR#0218](FA)Could you tell me that code again?
-[E][035:LSCR#0218](FA)Never mind.  I can get a map somewhere else.
-[E][035:LSCR#0218](FA)Do you have a file?
-[E][035:LSCR#0218](14)I see.
-[E][035:LSCR#0218](14)Wanna bet?
-[E][035:LSCR#0218](14)Shhhhhhh!\255\003Pipe down, will ya?\255\003That ugly sheriff might be around here.\255\003Now, then...
-[E][035:LSCR#0218](14)Excuse me, but do you have a cousin named Sven?
-[E][035:LSCR#0218](FA)What?
-[E][035:LSCR#0218](FA)No, I don't.
-[E][035:LSCR#0218](FA)What is that?  Some sort of code?
-[E][035:LSCR#0218](FA)No, but I once had a barber named Dominique.
-[E][035:LSCR#0218](FA)Do you have a file?
-[E][035:LSCR#0218](14)Of course it's a code, you idiot.
-[E][035:LSCR#0218](14)Close enough.
-[E][035:LSCR#0218](14)Never mind.\255\003Good night.
-[E][035:LSCR#0218](14)Financial files on Stan's Shipyard?\255\003Personnel files for the Sheriff's Department?
-[E][035:LSCR#0218](D8)Actually, I meant the raspy metal kind.
-[E][035:LSCR#0218](14)Oh.
-[E][035:LSCR#0218](14)Let's talk business.
-[E][035:LSCR#0218](14)You want to buy a map to the Legendary Lost\255\001Treasure of Mêlée Island®?
-[E][035:LSCR#0218](14)Only one in existence.
-[E][035:LSCR#0218](14)Rare.
-[E][035:LSCR#0218](14)Very rare.
-[E][035:LSCR#0218](14)Only 100 pieces of eight...
-[E][035:LSCR#0218](14) 
-[E][035:LSCR#0218](FA)No thanks.  I don't have enough money.
-[E][035:LSCR#0218](FA)I'll take it.  It'll make a swell gift.
-[E][035:LSCR#0218](FA)No thanks.  I don't want it.
-[E][035:LSCR#0218](14)Well then, buzz off kid, it's bad for business.
-[E][035:LSCR#0218](14)There ya go.  You've made a wise decision.
-[E][035:LSCR#0218](14)Now get lost.
-[E][035:LSCR#0218](14)Not enough money, eh?\255\003Come back when you're serious about treasure hunting, kid.
+[032:OBNA#0422](__)gata
+[032:VERB#0423](D8)Ooooh! En cirkus.\255\003Jag älskar cirkus!
+[032:VERB#0423](14)
+[032:OBNA#0423](__)affisch
+[032:VERB#0424](D8)Han är vidrig, hemsk, avskyvärd, och på väg att slå mig igen.
+[032:OBNA#0424](__)LeChuck
+[032:VERB#0425](D8)`Endast personal`
+[032:OBNA#0425](__)skylt
+[032:LSCR#0200](94)Hallå?
+[032:LSCR#0200](94)Nån här?
+[032:LSCR#0200](94)HALLÅ???
+[032:LSCR#0200](14)Du vet, dåliga saker kan hända i en mörk, öde gränd som den här.
+[032:LSCR#0200](14)Och vid den här tiden på natten skulle ingen vara i närheten för att se det.
+[032:LSCR#0200](14)
+[032:LSCR#0200](FA)Jaså? Intressant. Nå, hej då.
+[032:LSCR#0200](FA)Hörde du också nåt här inne?
+[032:LSCR#0200](FA)Ja, och dåliga saker händer folk som smyger sig\254\001     på andra bakifrån.
+[032:LSCR#0200](14)Varför har du så bråttom?
+[032:LSCR#0200](14)Nej.
+[032:LSCR#0200](14)Så du tänker ge mig lite attityd, va?
+[032:LSCR#0200](14)Bäst att jag tar ditt namn.
+[032:LSCR#0200](FA)Jag heter Guybrush Threepwood, och jag är en mäktig pirat.
+[032:LSCR#0200](FA)Jag heter Guybrush Threepwood, och jag är ny i stan.
+[032:LSCR#0200](FA)Jag heter Guybrush Threepwood, och jag var just på väg.
+[032:LSCR#0200](14)Hör här Peepwood--
+[032:LSCR#0200](94)Threepwood!\255\003Guybrush Threepwood!
+[032:LSCR#0200](14)Vad du nu heter, lyssna:
+[032:LSCR#0200](14)Jag är sheriffen här.\255\003Sheriff Fester Shinetop.
+[032:LSCR#0200](14)Lita på mig -- Det här är en dålig tid att besöka Mêlée Island®.\255\003En mycket DÅLIG tid.\255\003Mitt råd är att hitta nån annan plats för din semester.
+[032:LSCR#0200](14)Nånstans säkrare.
+[032:LSCR#0200](94)Vad skönt att veta att det finns en ordningsmakt i närheten.
+[033:OBNA#0426](__)klippsida
+[033:OBNA#0427](__)valvbåge
+[033:OBNA#0428](__)dörr
+[033:VERB#0429](D8)Jag ska rädda dig Elaine, det lovar jag.
+[033:VERB#0429](D8)Min lilla plundringsgull.
+[033:VERB#0429](D8)Jag förstår hur LeChuck kunde falla för henne så snabbt.
+[033:VERB#0429](D8)Jag förstår hur den piraten kunde falla för henne så snabbt.
+[033:VERB#0429](D8)Omvälj Guvernör Marley.\255\003`När det bara finns en kandidat finns det bara ett val.`
+[033:VERB#0429](14)
+[033:OBNA#0429](__)affisch
+[034:OBNA#0439](__)dödliga piranjapadlar
+[034:OBNA#0431](__)Guvernörens herrgård
+[034:VERB#0432](94)Det där är inte kyrkan.
+[034:OBNA#0432](__)gränd
+[034:VERB#0433](94)Det är inte vägen till kyrkan.
+[034:OBNA#0433](__)valvbåge
+[034:VERB#0434](94)Det där är inte kyrkan.
+[034:OBNA#0434](__)dörröppning
+[034:VERB#0437](94)Det där är inte kyrkan.
+[034:OBNA#0437](__)dörr
+[034:OBNA#0435](__)stad
+[034:VERB#0436](94)Det är inte vägen till kyrkan.
+[034:OBNA#0436](__)valvbåge
+[034:OBNA#0438](__)dörr
+[034:LSCR#0203](14)Ps
+[034:LSCR#0203](14)Pss
+[034:LSCR#0203](14)Psss
+[034:LSCR#0203](14)Pssss
+[034:LSCR#0203](14)Psssst.
+[034:LSCR#0203](14)Hörru du.
+[034:LSCR#0203](14)Kom hit.
+[034:LSCR#0204](14)Er bokning är klockan halv tre, herr'n.\255\003Kom tillbaka då.
+[034:LSCR#0204](14)Har ni bokat?
+[034:LSCR#0204](14)Kan jag hjälpa?
+[034:LSCR#0204](FA)Jag är här för att plundra Guvernörens herrgård.
+[034:LSCR#0204](FA)Jag var just på väg till Guvernörens herrgård.
+[034:LSCR#0204](FA)Jag måste vara på fel ställe, vi ses.
+[034:LSCR#0204](14)Är ni här för plundringen?
+[034:LSCR#0204](FA)Ja. Plundring låter roligt, nu när jag är pirat och allt.
+[034:LSCR#0204](FA)Absolut inte!
+[034:LSCR#0204](14)Det var bra...\255\003...för vi är fullbokade de närmaste fem timmarna.
+[034:LSCR#0204](14)Och har ni bokat, herr'n?
+[034:LSCR#0204](FA)Bokat?!? För plundring?
+[034:LSCR#0204](FA)Jadå, visst har jag bokat.
+[034:LSCR#0204](FA)Oj, jag har inte bokat. Borde jag ha ringt i förväg?
+[034:LSCR#0204](14)Åh ja, väldigt populärt när Guvernören är borta.\255\003Det skulle bli kaos om vi inte hade ett system.
+[034:LSCR#0204](14)Nå...\255\003...om ni inte har bokat får ni gå.
+[034:LSCR#0204](14)Och under vilket namn skulle bokningen stå?
+[034:LSCR#0204](FA)Threepwood, Guybrush Threepwood.
+[034:LSCR#0204](FA)Äh... Jag tror det är den första där överst på listan.
+[034:LSCR#0204](FA)Det står nog under 'S', för Shinetop.
+[034:LSCR#0204](14)Jag beklagar...\255\003...jag hittar inte ert namn här.
+[034:LSCR#0204](14)Javisst...
+[034:LSCR#0204](14)Bra försök...\255\003...men...
+[034:LSCR#0204](14)Bra försök...\255\003...men...
+[034:LSCR#0204](14)Självklart borde ni ha ringt i förväg.\255\003Det här är ett väldigt populärt ställe.
+[034:LSCR#0204](14)Nå...
+[034:LSCR#0204](14)...vi är fullbokade de närmaste fem timmarna.
+[034:LSCR#0204](14)Men jag kanske kan klämma in er...\255\003...runt tvåtiden.
+[034:LSCR#0204](14)Skulle det gå bra?
+[034:LSCR#0204](FA)Ja, det vore fint.
+[034:LSCR#0204](FA)Nej tack, jag har ett skepp att hinna.
+[034:LSCR#0204](14)Toppen...\255\003Jag sätter upp er för `en plundring av Guvernörens herrgård klockan halv tre.`
+[034:LSCR#0204](14)Ring i förväg nästa gång.
+[034:LSCR#0204](14)Som ni vill.
+[035:OBNA#0453](__)råtta
+[035:VERB#0452](14)Vad stirrar DU på?
+[035:OBNA#0452](__)Män med låg moral (pirater)
+[035:OBNA#0451](__)valvbåge
+[035:VERB#0444](94)Jag måste ta mig till kyrkan!
+[035:OBNA#0444](__)dörr
+[035:OBNA#0442](__)karta
+[035:VERB#0443](D8)`Ye Olde Gummikyckling-Med-En- Taljekrok-I-Mitten Butiken...`\255\003`...Tillgodoser dina gummikyckling-med-en- taljekrok-i-mitten-behov i över 50 år.`
+[035:OBNA#0443](__)skylt
+[035:OBNA#0445](__)dörr
+[035:OBNA#0446](__)dörr
+[035:OBNA#0447](__)dörr
+[035:OBNA#0448](__)dörr
+[035:OBNA#0449](__)klocka
+[035:VERB#0441](14)Vad stirrar DU på?
+[035:OBNA#0441](__)Medborgare av Mêlée
+[035:VERB#0450](94)Kyrkan ligger åt andra hållet!
+[035:OBNA#0450](__)valvbåge
+[035:OBNA#0440](__)grym vålnad
+[035:VERB#0464](D8)Det är verkligen en massa stavfel.
+[035:VERB#0464](D8)Det är STAVfel, inte grammatiska fel.
+[035:OBNA#0464](__)protokoll
+[035:LSCR#0200](13)Medborgare av Mêlée
+[035:LSCR#0201](14)Braaaak!
+[035:LSCR#0210](D8)Klockan tio.
+[035:LSCR#0210](D8)Hmm. Fortfarande klockan tio.
+[035:LSCR#0210](D8)Det verkar som det ALLTID är klockan tio på den här ön.
+[035:LSCR#0210](D8)Kusligt!
+[035:LSCR#0211](14)Ursäkta.
+[035:LSCR#0211](14)Har ni en inbjudan till bröllopet?
+[035:LSCR#0211](FA)Jadå, det har jag.
+[035:LSCR#0211](FA)Nej, jag tränger mig in.
+[035:LSCR#0211](FA)Nej, men jag har den här dödliga magiska rotölen.
+[035:LSCR#0211](FA)Jag måste ha lämnat den i mina andra byxor.
+[035:LSCR#0211](14)Får jag se den, tack?
+[035:LSCR#0211](FA)Nej.
+[035:LSCR#0211](FA)Visst, den är här i den här sodaflaskan.
+[035:LSCR#0211](FA)Öh, jag tror den måste vara i mina andra byxor.
+[035:LSCR#0211](D8)Hej då.
+[035:LSCR#0211](14)Inte så fort, kompansen!
+[035:LSCR#0211](14)Du ser inte särskilt spöklik ut i mina ögon.\255\003Du är väldigt rosa...
+[035:LSCR#0211](FA)Det är solbränt.
+[035:LSCR#0211](FA)Jag lider av ett sällsynt pigmenteringssyndrom.
+[035:LSCR#0211](FA)Försök att inte ta den här rotölen personligt.
+[035:LSCR#0211](14)Du LÅTER inte heller som ett spöke.\255\003Kan du jämra dig och stöna eller skramla lite kedjor eller nåt?
+[035:LSCR#0211](FA)aaÅÅOOOOOOoooooo...
+[035:LSCR#0211](FA)Mina kedjor är på kemtvätten och avfettas.
+[035:LSCR#0211](FA)Försök att inte ta den här rotölen personligt.
+[035:LSCR#0211](14)Hörru, du låter en hel del som min hund.
+[035:LSCR#0211](14)Nå, okej.
+[035:LSCR#0211](14)Men var är den fuktiga, unkna, bortom-graven spökdoften?
+[035:LSCR#0211](FA)Den är upptagen med att överröstas av DIN egna dödliga stank.
+[035:LSCR#0211](FA)Åh, den! Låt mig bara ta av stövlarna...
+[035:LSCR#0211](FA)Det är en ny rotölsparfym. Kanske du vill prova?
+[035:LSCR#0211](14)Akta dig...
+[035:LSCR#0211](14)Nej, glöm det.
+[035:LSCR#0211](14)Om du verkligen är ett spöke, bevisa det.\255\003Låt se dig poppa av huvudet.
+[035:LSCR#0211](FA)Öh...
+[035:LSCR#0211](FA)Um...
+[035:LSCR#0211](FA)Nå...
+[035:LSCR#0211](FA)Menar du skummet på den här rotölen?
+[035:LSCR#0211](D8)Åh, strunt i det!
+[035:LSCR#0213](D8)Det här grejerna är toppen!\255\003Se upp, LeChuck!\255\003Det finns en ny sheriff i stan, och han heter--\255\003--Hörru! Jag måste ta mig till kyrkan!
+[035:LSCR#0215](14)Hörru!! Rör inte min råtta!
+[035:LSCR#0215](14)Jag sa rör inte råttan!
+[035:LSCR#0215](14)Jag tänker inte varna dig igen!!\255\003Lämna råttan ifred!!
+[035:LSCR#0215](14)Hörru, kompis!!
+[035:LSCR#0215](14)Frank, säg åt honom att sluta!
+[035:LSCR#0215](14)Åh, titta vad du ställde till med!
+[035:LSCR#0216](14)
+[035:LSCR#0216](FA)Jag ber om ursäkt för det jag sa om råttor.
+[035:LSCR#0216](FA)Förlåt det där med råttan...
+[035:LSCR#0216](FA)Nu när det fruktansvärda odjuret är borta kan vi prata.
+[035:LSCR#0216](FA)Hörru, fin råtta!
+[035:LSCR#0216](FA)Hur står ni ut med att vara nära det här ohyran?
+[035:LSCR#0216](FA)Känner ni den smygande karln på \254\008     andra sidan gatan?
+[035:LSCR#0216](FA)Vet ni var jag kan hitta en skattkarta här nånstans?
+[035:LSCR#0216](FA)Jag tar dom där protokollen om ni betalar mig två åttor.
+[035:LSCR#0216](FA)Jag är verkligen intresserad av det här med sjöröveri.
+[035:LSCR#0216](FA)Säg, är ni pirater?
+[035:LSCR#0216](FA)Visste ni att Guvernören har kidnappats?
+[035:LSCR#0216](FA)Jag springer vidare nu.
+[035:LSCR#0216](14)Såg att du köpte en karta av den där karln där borta.
+[035:LSCR#0216](14)Har du tittat på den än?
+[035:LSCR#0216](14)Ha ha ha ha ha ha ha ha ha ha ha ha
+[035:LSCR#0216](14)Du kanske borde överväga en annan källa...
+[035:LSCR#0216](14)Vill du köpa en karta, va?
+[035:LSCR#0216](14)VÅRA kartor är förstklassiga, inte som fågelbursinslagen du får av den där clownen på andra sidan gatan.
+[035:LSCR#0216](14)Nej, skojar bara.
+[035:LSCR#0216](14)Det här är faktiskt kopior av protokollet från senaste mötet i Mêlée Island® föräldraföreningen.\255\003Kan inte ens GE bort dom.
+[035:LSCR#0216](14)Vill du ha ett?
+[035:LSCR#0216](14)
+[035:LSCR#0216](FA)Nej tack.
+[035:LSCR#0216](FA)Nej, jag måste vidare.
+[035:LSCR#0216](FA)Nej, men jag tar ett om ni ger mig två åttor.
+[035:LSCR#0216](14)Ser du? Vad sa jag.
+[035:LSCR#0216](14)Okej, det är rimligt.
+[035:LSCR#0216](14)Gillar du råttor?
+[035:LSCR#0216](FA)Ja, jag älskar råttor!
+[035:LSCR#0216](FA)Nej, jag tål inte dom.
+[035:LSCR#0216](FA)Ja, särskilt i en lätt vinsås.
+[035:LSCR#0216](FA)Jag kan inte prata om det just nu. Måste gå.
+[035:LSCR#0216](14)AIEEE!!! Försvinn!!!
+[035:LSCR#0216](14)Frank, den här idioten skrämde bort min råtta!
+[035:LSCR#0216](14)Åh, dom är inte så illa.
+[035:LSCR#0216](14)-- pip --
+[035:LSCR#0216](14)Låter som den här karln inte gillar råttor!
+[035:LSCR#0216](14)Vi steker honom nu!
+[035:LSCR#0216](14)
+[035:LSCR#0216](14)Dom är väldigt intelligenta varelser!
+[035:LSCR#0216](14)Ha ha ha ha!!
+[035:LSCR#0216](14)Intelligentare än HAN.
+[035:LSCR#0216](14)Det finns en historia i dom här trakterna att ett gäng råttor faktiskt bemannade ett skepp hit från sagolika Monkey Island®.
+[035:LSCR#0216](14)Nej, det stämmer inte.
+[035:LSCR#0216](14)Det var faktiskt en grupp apor.
+[035:LSCR#0216](FA)Det är fantastiskt!
+[035:LSCR#0216](FA)Det är svårt att tro.
+[035:LSCR#0216](FA)Inte en chans att ett gäng dumma apor kan bemanna ett skepp!
+[035:LSCR#0216](FA)Ursäkta, jag måste gå.
+[035:LSCR#0216](14)Men sant.
+[035:LSCR#0216](14)Ja, men det är sant.
+[035:LSCR#0216](14)Faktiskt var det schimpanser, och dom var INTE dumma.
+[035:LSCR#0216](14)När dom anlände sålde dom skeppet för en dyrgrip.\255\003Enda gången jag sett nån få övertaget på gamle Stan i en affär.
+[035:LSCR#0216](14)Jag trodde det var råttor...
+[035:LSCR#0216](14)Nej, vi är en kringresande cirkustrupp.
+[035:LSCR#0216](14)Men råttan skrämde iväg elefanten.
+[035:LSCR#0216](14)Men nån idiot jagade iväg vår dresserade råtta.
+[035:LSCR#0216](14)Håll käft!!
+[035:LSCR#0216](14)Klart vi är pirater!\255\003Såna här kläder kan man inte köpa färdiga!
+[035:LSCR#0216](14)Vad vill du?
+[035:LSCR#0216](FA)Vad är i tunnan?
+[035:LSCR#0216](FA)Förlåt att jag kränkte er råtta verbalt.
+[035:LSCR#0216](FA)Var fick ni tag på den råttan?
+[035:LSCR#0216](FA)Inget. Vi ses.
+[035:LSCR#0216](FA)Hur kommer det sig att ni hänger på det här gathörnet istället \254\008   för att vara ute på sjön och plundra, härja och bränna?
+[035:LSCR#0216](14)Rom.\255\002
+[035:LSCR#0216](14)    Sylt.
+[035:LSCR#0216](14)Sylt.\255\002
+[035:LSCR#0216](14)Rom.
+[035:LSCR#0216](14)Öh... rom och sylt.\255\003Det är en gammal piratfavorit, alla vet det.
+[035:LSCR#0216](14)Nå, sjöröveriet har inte gått så bra för oss...
+[035:LSCR#0216](14)Det finns några ONATURLIGT begåvade pirater i området just nu...
+[035:LSCR#0216](14)...som opererar från Monkey Island®.
+[035:LSCR#0216](14)Så vi har ägnat oss åt alternativa försörjningsmetoder.\255\003Vi försöker starta en cirkus.
+[035:LSCR#0216](14)Det gick bra, tills råttan skrämde iväg elefanten.
+[035:LSCR#0216](14)...och nu jagade nån idiot iväg råttan!
+[035:LSCR#0216](14)Nu har du gjort oss deprimerade.\255\003Gå hem.
+[035:LSCR#0216](14)Öh...
+[035:LSCR#0216](14)Nå, ja, vi visste om det.
+[035:LSCR#0216](FA)Varför står ni bara här istället för att göra nåt \254\008     åt saken?
+[035:LSCR#0216](FA)Jag tänker jaga de där immateriella myndighetsrövarna. \254\008     Är ni med?
+[035:LSCR#0216](FA)Kan jag intressera er för en drömresa till Monkey Island®?
+[035:LSCR#0216](D8)På grund av den här plötsliga förändringen i lokalpolitiken,\255\003är jag beredd att erbjuda er ett engångspris på en kryssning till det natursköna underlandet...\255\003...Monkey Island®!
+[035:LSCR#0216](D8)Och det fantastiska med erbjudandet ÄR priset:\255\003Helt gratis!\255\003Allt ni behöver göra är att hjälpa mig bemanna skeppet, och öparadiset kan bli ert...\255\003GRATIS!!
+[035:LSCR#0216](D8)(...och vi kanske räddar Guvernören på köpet.)
+[035:LSCR#0216](14)Öh...
+[035:LSCR#0216](14)Nå...
+[035:LSCR#0216](14)Guvernören kan nog ta hand om sig själv...
+[035:LSCR#0216](14)...och vi har liksom fullt upp här...
+[035:LSCR#0216](14)- jo -
+[035:LSCR#0216](14)...och vi har cirkusen att tänka på...
+[035:LSCR#0216](14)...vi måste hitta elefanten...
+[035:LSCR#0216](14)...hitta råttan...
+[035:LSCR#0216](14)JA!
+[035:LSCR#0216](14)...och bli av med de här protokollen...
+[035:LSCR#0216](14)Tyvärr, vi kan helt enkelt INTE åka just nu.
+[035:LSCR#0216](14)Jag tror det är bäst att du ger dig av, grabben.
+[035:LSCR#0216](14)Ha ha ha ha ha ho ho ha ha ha
+[035:LSCR#0217](27)-- aak --
+[035:LSCR#0217](14)\255\007\034\000
+[035:LSCR#0218](14)Ursäkta, men har--\255\003Åh, det är bara du igen.
+[035:LSCR#0218](14)Jag sa ju att det bara fanns EN.
+[035:LSCR#0218](14)Tillbaka för kartan till den Legendariska Försvunna Skatten på Mêlée Island®, va?
+[035:LSCR#0218](14)Jag hoppas du hade med dig tillräckligt med pengar den här gången.
+[035:LSCR#0218](FA)Jag vill bara ha en karta.
+[035:LSCR#0218](FA)Min kusin Sven hälsar.
+[035:LSCR#0218](FA)Kan du säga koden igen?
+[035:LSCR#0218](FA)Glöm det. Jag kan skaffa en karta nån annanstans.
+[035:LSCR#0218](FA)Har du en fil?
+[035:LSCR#0218](14)Jaha.
+[035:LSCR#0218](14)Vill du slå vad?
+[035:LSCR#0218](14)Shhhhhhh!\255\003Håll tyst, va!\255\003Den där fule sheriffen kan vara i närheten.\255\003Nåväl, alltså...
+[035:LSCR#0218](14)Ursäkta, men har du en kusin som heter Sven?
+[035:LSCR#0218](FA)Va?
+[035:LSCR#0218](FA)Nej, det har jag inte.
+[035:LSCR#0218](FA)Vad är det? Nån sorts kod?
+[035:LSCR#0218](FA)Nej, men jag hade en gång en frisör som hette Dominique.
+[035:LSCR#0218](FA)Har du en fil?
+[035:LSCR#0218](14)Klart det är en kod, din idiot.
+[035:LSCR#0218](14)Nära nog.
+[035:LSCR#0218](14)Glöm det.\255\003God natt.
+[035:LSCR#0218](14)Finansiella handlingar om Stans Skeppsvarv?\255\003Personalakter från sheriffkontoret?
+[035:LSCR#0218](D8)Egentligen menade jag den raspiga metallsorten.
+[035:LSCR#0218](14)Aha.
+[035:LSCR#0218](14)Låt oss prata affärer.
+[035:LSCR#0218](14)Vill du köpa en karta till den Legendariska Försvunna\255\001Skatten på Mêlée Island®?
+[035:LSCR#0218](14)Enda exemplaret.
+[035:LSCR#0218](14)Sällsynt.
+[035:LSCR#0218](14)Mycket sällsynt.
+[035:LSCR#0218](14)Bara 100 åttor...
+[035:LSCR#0218](14)
+[035:LSCR#0218](FA)Nej tack. Jag har inte tillräckligt med pengar.
+[035:LSCR#0218](FA)Jag tar den. Blir en fin present.
+[035:LSCR#0218](FA)Nej tack. Jag vill inte ha den.
+[035:LSCR#0218](14)Nåväl, försvinn grabben, det är dåligt för affärerna.
+[035:LSCR#0218](14)Varsågod. Du har gjort ett klokt val.
+[035:LSCR#0218](14)Stick nu.
+[035:LSCR#0218](14)Inte tillräckligt med pengar, va?\255\003Kom tillbaka när du menar allvar med skattletandet, grabben.
 [E][036:OBNA#0465](__)door
 [E][036:OBNA#0466](__)trail
 [E][036:VERB#0467](94)They're sleeping peacefully.
