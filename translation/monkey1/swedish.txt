@@ -1350,134 +1350,134 @@
 [028:SCRP#0059](14)Och glöm inte att skriva.\255\003Hej då nu.
 [028:SCRP#0059](14)Du har redan en fullkomligt bra sådan.
 [028:SCRP#0059](14)Skaffa din egen drink.
-[E][029:OBNA#0367](__)door
-[E][029:VERB#0368](D8)Poor chickens...
-[E][029:VERB#0368](D8)I'd better not.  They're probably being saved for a pagan ritual, and I wouldn't want to spoil it.
-[E][029:VERB#0368](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0368](__)chickens
-[E][029:VERB#0377](D8)Hmmm...\255\003A rubber chicken with a pulley in the middle...\255\003What possible use could that have?
-[E][029:VERB#0377](54)rubber chicken
-[E][029:VERB#0377](14) 
-[E][029:VERB#0377](D8)Maybe no one will miss just this one thing...
-[E][029:VERB#0377](D8)There surely must be a use for a rubber chicken with a pulley in the middle, but this is not it.
-[E][029:OBNA#0377](__)chicken
-[E][029:VERB#0378](D8)Poor little thing...\255\003Whatever it was.
-[E][029:VERB#0378](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0378](__)bones
-[E][029:VERB#0379](D8)Now, THIS is the cup of a carpenter.
-[E][029:VERB#0379](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0379](__)chalice
-[E][029:VERB#0376](D8)Probably got a body in it.
-[E][029:VERB#0376](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0376](__)trunk
-[E][029:OBNA#0380](__)voodoo love beads
-[E][029:OBNA#0382](__)fortune teller
-[E][029:VERB#0375](D8)Looks comfortable, in a spooky sort of way.
-[E][029:VERB#0375](D8)No thanks.  I can never fall asleep in strange places.
-[E][029:VERB#0375](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0375](__)couch
-[E][029:VERB#0374](D8)Let's see, there's a jar of bat drippings...\255\003...a box that says, `Assorted Scales`...\255\003...a shaker full of monkey flakes...\255\003...and some cat knuckles.
-[E][029:VERB#0374](D8)Cat knuckles?!?\255\003How barbaric!
-[E][029:VERB#0374](14) 
-[E][029:VERB#0374](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0374](__)voodoo knickknacks
-[E][029:VERB#0372](D8)Hmmm... I think I hear slithering inside.
-[E][029:VERB#0372](D8)No thanks.  Something would probably jump out and bite me.
-[E][029:VERB#0372](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0372](__)basket
-[E][029:VERB#0381](D8)I can't.  I'm o'feared of it.
-[E][029:OBNA#0381](__)cauldron o' fear
-[E][029:VERB#0373](D8)Gee, I wonder what's in these baskets.
-[E][029:VERB#0373](D8)Actually, I'm not THAT curious to find out what's inside.\255\003Probably poisonous snakes.
-[E][029:VERB#0373](14) 
-[E][029:VERB#0373](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0373](__)baskets
-[E][029:VERB#0370](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0370](__)statue
-[E][029:VERB#0371](D8)Gee, I wonder what's in these baskets.
-[E][029:VERB#0371](D8)Actually, I'm not THAT curious to find out what's inside.\255\003Probably poisonous snakes.
-[E][029:VERB#0371](14) 
-[E][029:VERB#0371](D8)No thanks.  I'd rather not touch any of this creepy voodoo stuff.
-[E][029:OBNA#0371](__)baskets
-[E][029:VERB#0369](D8)Poor chickens...
-[E][029:VERB#0369](D8)No thanks.  Haven't you ever heard of salmonella?
-[E][029:OBNA#0369](__)chickens
-[E][029:LSCR#0210](14)What may I help you with, son?
-[E][029:LSCR#0210](14)Yes?
-[E][029:LSCR#0210](FA)My name is Guybrush Threepwood and I'm a mighty pirate.
-[E][029:LSCR#0210](FA)How much for this keen-looking chicken?
-[E][029:LSCR#0210](FA)Can you read palms?  Am I going to be rich?
-[E][029:LSCR#0210](FA)I've changed my mind about knowing the future... spill it.
-[E][029:LSCR#0210](FA)Journey?  What can you tell me about my journey?
-[E][029:LSCR#0210](FA)Neat place you got here.  Guess I'll be on my way.
-[E][029:LSCR#0210](14)Wait...\255\003...don't say anything.\255\003I can sense your name is...\255\003...is...\255\003...Guybrush...\255\003...Guybrush Nosehair.\255\003No...
-[E][029:LSCR#0210](14)...Threepwood.\255\003Guybrush Threepwood.\255\003Am I not right?
-[E][029:LSCR#0210](FA)Wow!  That was amazing.  Do you know any other tricks?
-[E][029:LSCR#0210](FA)Lucky guess.
-[E][029:LSCR#0210](14)I do not deal in tricks.\255\003What I know is the truth.
-[E][029:LSCR#0210](D8)Half the people I know are named Guybrush.
-[E][029:LSCR#0210](14)I suggest you open your mind.  It will help you in your coming journey.
-[E][029:LSCR#0210](14)Ahhh...\255\003I sense the guilt of stealing my chicken grows.
-[E][029:LSCR#0210](14)Take it.\255\003It's yours.
-[E][029:LSCR#0210](D8)Why don't you want it?\255\003Is it jinxed with an ancient voodoo curse?
-[E][029:LSCR#0210](14)No...\255\003...the pulley squeaks.
-[E][029:LSCR#0210](14)So...\255\003...my mindreading skills tells me it is your future you are interested in.\255\003Are you certain this is something you really wish to know?
-[E][029:LSCR#0210](FA)Yes!  Tell me everything that's going to happen to me.
-[E][029:LSCR#0210](FA)No!  Don't tell me a thing.  Life should be unexpected \254\008     and exciting.
-[E][029:LSCR#0210](14)Suit yourself.
-[E][029:LSCR#0210](14)I can tell, you grow tired.\255\003Go, please.
-[E][029:LSCR#0210](14)Changed your mind, I see.
-[E][029:LSCR#0210](D8)Journey?  What can you tell me about my journey?
-[E][029:LSCR#0210](14)I thought you didn't want to know your future?
-[E][029:LSCR#0210](14)Changed your mind?
-[E][029:LSCR#0210](14)I am getting a vision...
-[E][029:LSCR#0210](14)...I see you taking a voyage, a long voyage.
-[E][029:LSCR#0210](14)I see you captaining a ship.
-[E][029:LSCR#0210](D8)Yeah!
-[E][029:LSCR#0210](14)I see...
-[E][029:LSCR#0210](D8)What?\255\003See what?
-[E][029:LSCR#0210](14)I see a giant monkey.
-[E][029:LSCR#0210](D8)Yikes!
-[E][029:LSCR#0210](14)I see you inside the giant monkey.
-[E][029:LSCR#0210](D8)Gross.
-[E][029:LSCR#0210](14)Wait...
-[E][029:LSCR#0210](14)...it is all becoming clear.
-[E][029:LSCR#0210](14)Your journey will have many parts.\255\003You will see things better left unseen.\255\003You will hear things better left unheard.
-[E][029:LSCR#0210](14)You will learn things better left unlearned.
-[E][029:LSCR#0210](D8)What kind of things?\255\003I hate surprises.
-[E][029:LSCR#0210](14)NO!\255\003The time is not right to know.
-[E][029:LSCR#0210](14)When you know your purpose, come see me...\255\003...I will let you know then.
-[E][029:LSCR#0210](D8)Yikes!
-[E][029:LSCR#0210](D8)I don't think she's going to be back again.
-[E][029:LSCR#0210](FA)Hello?
-[E][029:LSCR#0210](FA)Hey! I'm back and I'm ready to know more about the future.
-[E][029:LSCR#0210](FA)Guess I'll just be going now.
-[E][029:LSCR#0210](D8)Guess no one's here.
-[E][029:LSCR#0210](14)Yikes!
-[E][029:LSCR#0210](14)So, you have returned to learn future.
-[E][029:LSCR#0210](D8)Yes, I must go after the Governor.\255\003Can you tell me anything that'll help?
-[E][029:LSCR#0210](14)I see you with some others willing to help in your cause.
-[E][029:LSCR#0210](14)You must first find others to help in your cause.
-[E][029:LSCR#0210](D8)I really hate that flashing, it makes me see spots.
-[E][029:LSCR#0210](14)Quiet!
-[E][029:LSCR#0210](14)I am getting another vision.
-[E][029:LSCR#0210](14)You must...
-[E][029:LSCR#0210](D8)Must what?
-[E][029:LSCR#0210](14)You must go to Monkey Island®.
-[E][029:LSCR#0210](14)Once there, you will search for the Ghost Pirate LeChuck.
-[E][029:LSCR#0210](14)He hides deep...\255\003...deep beneath Monkey Island®.
-[E][029:LSCR#0210](14)There is only one thing powerful enough to destroy LeChuck.
-[E][029:LSCR#0210](14)What?
-[E][029:LSCR#0210](14)It's an ancient root.\255\003Once prepared, the root can destroy a ghost with one touch.
-[E][029:LSCR#0210](D8)Yeah!
-[E][029:LSCR#0210](14)I'm getting more...\255\003...more vision.
-[E][029:LSCR#0210](D8)Spill it!
-[E][029:LSCR#0210](14)I see the Cannibals that live on the Island®.\255\003They...\255\003...are helping you...\255\003...or eating you...\255\003...I can't tell, the vision isn't coming in clear anymore.
-[E][029:LSCR#0210](D8)Great.
-[E][029:LSCR#0210](14)Now go and find the one that loves you.\255\003But be warned...
-[E][029:LSCR#0210](D8)Don't worry, I'll watch out for LeChuck.
-[E][029:LSCR#0210](14)Not of LeChuck... of yourself and what you will find.\255\003What you will find out about yourself and your world.
-[E][029:LSCR#0210](14)It will terrify you.
+[029:OBNA#0367](__)dörr
+[029:VERB#0368](D8)Stackars höns...
+[029:VERB#0368](D8)Jag ska nog låta bli. De sparas antagligen till en hednisk ritual, och jag vill inte förstöra det.
+[029:VERB#0368](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0368](__)höns
+[029:VERB#0377](D8)Hmmm...\255\003En gummikyckling med en trissa i mitten...\255\003Vad skulle man kunna ha för nytta av det?
+[029:VERB#0377](54)gummikyckling
+[029:VERB#0377](14)
+[029:VERB#0377](D8)Kanske ingen kommer sakna just den här grejen...
+[029:VERB#0377](D8)Det måste säkert finnas en användning för en gummikyckling med en trissa i mitten, men det här är inte den.
+[029:OBNA#0377](__)kyckling
+[029:VERB#0378](D8)Stackars lilla varelse...\255\003Vad det nu var.
+[029:VERB#0378](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0378](__)ben
+[029:VERB#0379](D8)Nu, DET här är en snickares bägare.
+[029:VERB#0379](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0379](__)kalk
+[029:VERB#0376](D8)Det finns nog en kropp i den.
+[029:VERB#0376](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0376](__)kista
+[029:OBNA#0380](__)voodoo kärlekspärlor
+[029:OBNA#0382](__)spåkvinna
+[029:VERB#0375](D8)Ser bekväm ut, på ett kusligt sätt.
+[029:VERB#0375](D8)Nej tack. Jag kan aldrig somna på främmande platser.
+[029:VERB#0375](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0375](__)soffa
+[029:VERB#0374](D8)Låt se, det finns en burk med fladdermusdroppningar...\255\003...en låda som säger `Blandade Fjäll`...\255\003...en shaker full av apflingor...\255\003...och några kattknogar.
+[029:VERB#0374](D8)Kattknogar?!?\255\003Så barbariskt!
+[029:VERB#0374](14)
+[029:VERB#0374](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0374](__)voodoo-pryttlar
+[029:VERB#0372](D8)Hmmm... Jag tror jag hör något slingra sig därinne.
+[029:VERB#0372](D8)Nej tack. Något skulle nog hoppa ut och bita mig.
+[029:VERB#0372](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0372](__)korg
+[029:VERB#0381](D8)Det kan jag inte. Jag är rädd för den.
+[029:OBNA#0381](__)skräckkitteln
+[029:VERB#0373](D8)Gud, jag undrar vad det finns i de här korgarna.
+[029:VERB#0373](D8)Egentligen är jag inte SÅ nyfiken på att ta reda på vad som finns därinne.\255\003Antagligen giftormar.
+[029:VERB#0373](14)
+[029:VERB#0373](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0373](__)korgar
+[029:VERB#0370](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0370](__)staty
+[029:VERB#0371](D8)Gud, jag undrar vad det finns i de här korgarna.
+[029:VERB#0371](D8)Egentligen är jag inte SÅ nyfiken på att ta reda på vad som finns därinne.\255\003Antagligen giftormar.
+[029:VERB#0371](14)
+[029:VERB#0371](D8)Nej tack. Jag rör hellre inte vid någon av dessa läskiga voodoogrejor.
+[029:OBNA#0371](__)korgar
+[029:VERB#0369](D8)Stackars höns...
+[029:VERB#0369](D8)Nej tack. Har du aldrig hört talas om salmonella?
+[029:OBNA#0369](__)höns
+[029:LSCR#0210](14)Vad kan jag hjälpa dig med, min gosse?
+[029:LSCR#0210](14)Ja?
+[029:LSCR#0210](FA)Mitt namn är Guybrush Threepwood och jag är en mäktig pirat.
+[029:LSCR#0210](FA)Hur mycket kostar den här häftiga kycklingen?
+[029:LSCR#0210](FA)Kan du spå i hand? Kommer jag bli rik?
+[029:LSCR#0210](FA)Jag har ändrat mig om att få veta framtiden... spilla bönorna.
+[029:LSCR#0210](FA)Resa? Vad kan du berätta för mig om min resa?
+[029:LSCR#0210](FA)Häftig plats du har här. Jag antar att jag sticker nu.
+[029:LSCR#0210](14)Vänta...\255\003...säg ingenting.\255\003Jag kan känna att ditt namn är...\255\003...är...\255\003...Guybrush...\255\003...Guybrush Näshår.\255\003Nej...
+[029:LSCR#0210](14)...Threepwood.\255\003Guybrush Threepwood.\255\003Har jag inte rätt?
+[029:LSCR#0210](FA)Wow! Det var fantastiskt. Kan du fler trick?
+[029:LSCR#0210](FA)Tur i gissningen.
+[029:LSCR#0210](14)Jag sysslar inte med trick.\255\003Det jag vet är sanningen.
+[029:LSCR#0210](D8)Hälften av alla jag känner heter Guybrush.
+[029:LSCR#0210](14)Jag föreslår att du öppnar ditt sinne. Det kommer hjälpa dig på din kommande resa.
+[029:LSCR#0210](14)Ahhh...\255\003Jag känner skulden över att ha stulit min kyckling växa.
+[029:LSCR#0210](14)Ta den.\255\003Den är din.
+[029:LSCR#0210](D8)Varför vill du inte ha den?\255\003Är den förbannad med en uråldrig voodoo-förbannelse?
+[029:LSCR#0210](14)Nej...\255\003...trissan knarrar.
+[029:LSCR#0210](14)Så...\255\003...mina tankeläsningsfärdigheter säger mig att det är din framtid du är intresserad av.\255\003Är du säker på att det här är något du verkligen vill veta?
+[029:LSCR#0210](FA)Ja! Berätta allt som kommer hända mig.
+[029:LSCR#0210](FA)Nej! Berätta ingenting. Livet borde vara oförutsägbart och spännande.
+[029:LSCR#0210](14)Som du vill.
+[029:LSCR#0210](14)Jag kan se att du blir trött.\255\003Gå, snälla.
+[029:LSCR#0210](14)Ändrat dig, ser jag.
+[029:LSCR#0210](D8)Resa? Vad kan du berätta för mig om min resa?
+[029:LSCR#0210](14)Jag trodde du inte ville veta din framtid?
+[029:LSCR#0210](14)Ändrat dig?
+[029:LSCR#0210](14)Jag får en vision...
+[029:LSCR#0210](14)...Jag ser dig göra en resa, en lång resa.
+[029:LSCR#0210](14)Jag ser dig föra befälet över ett skepp.
+[029:LSCR#0210](D8)Ja!
+[029:LSCR#0210](14)Jag ser...
+[029:LSCR#0210](D8)Vad?\255\003Ser vad?
+[029:LSCR#0210](14)Jag ser en gigantisk apa.
+[029:LSCR#0210](D8)Oj då!
+[029:LSCR#0210](14)Jag ser dig inuti den gigantiska apan.
+[029:LSCR#0210](D8)Äckligt.
+[029:LSCR#0210](14)Vänta...
+[029:LSCR#0210](14)...allt blir klart.
+[029:LSCR#0210](14)Din resa kommer ha många delar.\255\003Du kommer se saker bättre lämnade osedda.\255\003Du kommer höra saker bättre lämnade ohörda.
+[029:LSCR#0210](14)Du kommer lära dig saker bättre lämnade oinlärda.
+[029:LSCR#0210](D8)Vad för slags saker?\255\003Jag hatar överraskningar.
+[029:LSCR#0210](14)NEJ!\255\003Tiden är inte rätt att veta.
+[029:LSCR#0210](14)När du vet ditt syfte, kom och hälsa på mig...\255\003...Jag kommer berätta för dig då.
+[029:LSCR#0210](D8)Oj då!
+[029:LSCR#0210](D8)Jag tror inte hon kommer tillbaka igen.
+[029:LSCR#0210](FA)Hallå?
+[029:LSCR#0210](FA)Hej! Jag är tillbaka och jag är redo att få veta mer om framtiden.
+[029:LSCR#0210](FA)Jag antar att jag bara sticker nu.
+[029:LSCR#0210](D8)Jag antar att ingen är här.
+[029:LSCR#0210](14)Oj då!
+[029:LSCR#0210](14)Så, du har återvänt för att lära dig om framtiden.
+[029:LSCR#0210](D8)Ja, jag måste gå efter Guvernören.\255\003Kan du berätta något som kan hjälpa?
+[029:LSCR#0210](14)Jag ser dig med några andra villiga att hjälpa till i din sak.
+[029:LSCR#0210](14)Du måste först hitta andra att hjälpa till i din sak.
+[029:LSCR#0210](D8)Jag hatar verkligen det där blinkandet, jag får se prickar.
+[029:LSCR#0210](14)Tyst!
+[029:LSCR#0210](14)Jag får en ny vision.
+[029:LSCR#0210](14)Du måste...
+[029:LSCR#0210](D8)Måste vad?
+[029:LSCR#0210](14)Du måste åka till Monkey Island®.
+[029:LSCR#0210](14)När du är där kommer du söka efter Spökpiraten LeChuck.
+[029:LSCR#0210](14)Han gömmer sig djupt...\255\003...djupt under Monkey Island®.
+[029:LSCR#0210](14)Det finns bara en sak kraftfull nog att förgöra LeChuck.
+[029:LSCR#0210](14)Vad?
+[029:LSCR#0210](14)Det är en uråldrig rot.\255\003När den beretts kan roten förgöra ett spöke med en enda beröring.
+[029:LSCR#0210](D8)Ja!
+[029:LSCR#0210](14)Jag får mer...\255\003...mer vision.
+[029:LSCR#0210](D8)Tala om!
+[029:LSCR#0210](14)Jag ser Kannibalerna som bor på Ön®.\255\003De...\255\003...hjälper dig...\255\003...eller äter dig...\255\003...Jag kan inte säga, visionen kommer inte in tydligt längre.
+[029:LSCR#0210](D8)Härligt.
+[029:LSCR#0210](14)Gå nu och hitta den som älskar dig.\255\003Men var varnad...
+[029:LSCR#0210](D8)Oroa dig inte, jag ska hålla utkik efter LeChuck.
+[029:LSCR#0210](14)Inte för LeChuck... för dig själv och det du kommer hitta.\255\003Det du kommer ta reda på om dig själv och din värld.
+[029:LSCR#0210](14)Det kommer skrämma dig.
 [E][030:VERB#0390](D8)`Get a handle on your savings with GRIPMASTER® handles.`
 [E][030:VERB#0390](14)Hey!  Get away from that!
 [E][030:VERB#0390](14)Don't you be messing with that!
