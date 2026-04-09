@@ -1353,7 +1353,7 @@
 [029:OBNA#0367](__)dörr
 [029:VERB#0368](D8)Stackars höns...
 [029:VERB#0368](D8)Jag ska nog låta bli. De sparas antagligen till en hednisk ritual, och jag vill inte förstöra det.
-[029:VERB#0368](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0368](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0368](__)höns
 [029:VERB#0377](D8)Hmmm...\255\003En gummikyckling med en trissa i mitten...\255\003Vad skulle man kunna ha för nytta av det?
 [029:VERB#0377](54)gummikyckling
@@ -1362,42 +1362,42 @@
 [029:VERB#0377](D8)Det måste säkert finnas en användning för en gummikyckling med en trissa i mitten, men det här är inte den.
 [029:OBNA#0377](__)kyckling
 [029:VERB#0378](D8)Stackars lilla varelse...\255\003Vad det nu var.
-[029:VERB#0378](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0378](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0378](__)ben
 [029:VERB#0379](D8)Nu, DET här är en snickares bägare.
-[029:VERB#0379](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0379](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0379](__)kalk
 [029:VERB#0376](D8)Det finns nog en kropp i den.
-[029:VERB#0376](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0376](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0376](__)kista
 [029:OBNA#0380](__)voodoo kärlekspärlor
 [029:OBNA#0382](__)spåkvinna
 [029:VERB#0375](D8)Ser bekväm ut, på ett kusligt sätt.
 [029:VERB#0375](D8)Nej tack. Jag kan aldrig somna på främmande platser.
-[029:VERB#0375](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0375](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0375](__)soffa
 [029:VERB#0374](D8)Låt se, det finns en burk med fladdermusdroppningar...\255\003...en låda märkt `Blandade Fjäll`...\255\003...en shaker full av apflingor...\255\003...och några kattknogar.
 [029:VERB#0374](D8)Kattknogar?!?\255\003Så barbariskt!
 [029:VERB#0374](14)
-[029:VERB#0374](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0374](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0374](__)voodoo-pryttlar
 [029:VERB#0372](D8)Hmmm... Jag tror jag hör något slingra sig därinne.
 [029:VERB#0372](D8)Nej tack. Något skulle nog hoppa ut och bita mig.
-[029:VERB#0372](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0372](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0372](__)korg
 [029:VERB#0381](D8)Det kan jag inte. Jag är rädd för den.
 [029:OBNA#0381](__)skräckkitteln
 [029:VERB#0373](D8)Gud, jag undrar vad det finns i de här korgarna.
 [029:VERB#0373](D8)Egentligen är jag inte SÅ nyfiken på att ta reda på vad som finns därinne.\255\003Antagligen giftormar.
 [029:VERB#0373](14)
-[029:VERB#0373](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0373](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0373](__)korgar
-[029:VERB#0370](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0370](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0370](__)staty
 [029:VERB#0371](D8)Gud, jag undrar vad det finns i de här korgarna.
 [029:VERB#0371](D8)Egentligen är jag inte SÅ nyfiken på att ta reda på vad som finns därinne.\255\003Antagligen giftormar.
 [029:VERB#0371](14)
-[029:VERB#0371](D8)Nej tack. Jag rör hellre inte vid nåt av de här läskiga voodoogrejorna.
+[029:VERB#0371](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0371](__)korgar
 [029:VERB#0369](D8)Stackars höns...
 [029:VERB#0369](D8)Nej tack. Har du aldrig hört talas om salmonella?
@@ -2742,7 +2742,7 @@
 [045:LSCR#0200](FA)Jag dränker dig med min klibbiga sodaflaska.
 [045:LSCR#0200](FA)Jag erbjuder en muta för din brud.
 [045:LSCR#0200](FA)Jag använder mitt spjut och min magiska hjälm.
-[045:LSCR#0200](FA)Jag måste gå, jag är dubbelförbjuden.
+[045:LSCR#0200](FA)Jag måste gå, jag är dubbelparkerad.
 [045:LSCR#0200](14)Hah!\255\003Byte för mitt snygge, va?
 [045:LSCR#0200](14)Många har försökt och dött för sina ansträngningar.
 [045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
@@ -2777,7 +2777,7 @@
 [048:VERB#0607](D8)Sjaskigt.
 [048:OBNA#0607](__)hus
 [048:LSCR#0203](14)
-[048:LSCR#0203](D8)Oj! Det funkar åt båda hållen.\255\003Det där är en jäkla kycklingg.
+[048:LSCR#0203](D8)Oj! Det funkar åt båda hållen.\255\003Det där är en jäkla kyckling.
 [048:LSCR#0204](14)
 [048:LSCR#0205](14) 
 [049:LSCR#0200](94)Va vill du din skabbiga landlansen?
@@ -2829,7 +2829,7 @@
 [051:LSCR#0205](14)Lämna vår mamma utanför! Kliv i kanonen!
 [051:LSCR#0205](14)Du är en kyckling!
 [051:LSCR#0205](14)Du är en död kyckling!
-[051:LSCR#0205](14)Ja, du är en död kyckling med en talja i mitten!
+[051:LSCR#0205](14)Ja, du är en död kyckling med en trissa i mitten!
 [051:LSCR#0205](14)Va?
 [051:LSCR#0205](14)Kliv bara i kanonen.
 [051:LSCR#0205](14)Nej, DU kliver i kanonen!
@@ -3092,7 +3092,7 @@
 [057:SCRP#0055](14)Nå, vad har du?
 [057:SCRP#0055](FA)Lite halvunket kött?
 [057:SCRP#0055](FA)En grytkastrull?
-[057:SCRP#0055](FA)En gummikyckling med en talja i mitten?
+[057:SCRP#0055](FA)En gummikyckling med en trissa i mitten?
 [057:SCRP#0055](FA)Bråka inte med mig, troll, jag är en mäktig pirat!
 [057:SCRP#0055](FA)30 åttor?
 [057:SCRP#0055](FA)\255\004\195\000 åttor?
@@ -3103,7 +3103,7 @@
 [057:SCRP#0055](14)Jag vill ha nåt som drar uppmärksamhet men inte har nåt verkligt värde.
 [057:SCRP#0055](FA)Kalsonger av konstruktionspapper?
 [057:SCRP#0055](FA)Ett apkoppel med tre halsband?
-[057:SCRP#0055](FA)En gummikyckling med en talja i mitten?
+[057:SCRP#0055](FA)En gummikyckling med en trissa i mitten?
 [057:SCRP#0055](FA)Min gamla mossbelupna trehandtagsfamiljekredensa?
 [057:SCRP#0055](FA)Jag ska försöka hitta nåt sånt. Hejdå.
 [057:SCRP#0055](14)Var inte löjlig.
@@ -3271,7 +3271,7 @@
 [059:SCRP#0056](14)Jag tror inte du har kontanter nog för den här affären heller.\255\003Du har väl NÅN annan betalningsform...\255\003Eller?
 [059:SCRP#0056](14)Jag tvivlar på att du har nog med kontanter för den här affären.
 [059:SCRP#0056](14)Du har inte nån ANNAN finansiering, råkar du?
-[059:SCRP#0056](14)Är det en av de där gummikycklingarna med en talja i mitten?\255\003Jag har redan en sån.
+[059:SCRP#0056](14)Är det en av de där gummikycklingarna med en trissa i mitten?\255\003Jag har redan en sån.
 [059:SCRP#0056](14)Det vill jag gärna.\255\003Det vill jag verkligen.\255\003Det gör jag VANLIGTVIS.\255\003Men inte för summan det här skeppet kommer kosta.
 [059:SCRP#0056](14)Kanske nåt av de andra skeppen passar din prisklass bättre.
 [059:SCRP#0056](14)Hej, klart!\255\003Din kredit är alltid bra hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
