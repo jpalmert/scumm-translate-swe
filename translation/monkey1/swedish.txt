@@ -123,47 +123,47 @@
 [009:OBNA#0105](__)stege
 [009:OBNA#0106](__)lucka
 [009:OBNA#0107](__)dörr
-[E][010:SCRP#0001](27)
-[E][010:SCRP#0001](27)
-[E][010:SCRP#0001](27)The Secret of Monkey Island -- CD-ROM version 2.3b
-[E][010:SCRP#0001](27)Game Paused.  Press SPACE to Continue.
-[E][010:SCRP#0001](27)Insert Disk %c and Press Button to Continue.
-[E][010:SCRP#0001](27)Unable to Find %s, (%c%d) Press Button.
-[E][010:SCRP#0001](27)Error reading disk %c, (%c%d) Press Button.
-[E][010:SCRP#0001](27)Are you sure you want to restart?  (Y/N)Y
-[E][010:SCRP#0001](27)Are you sure you want to quit?  (Y/N)Y
-[E][010:SCRP#0001](27)Restart
-[E][010:SCRP#0001](27)Current Passcode
-[E][010:SCRP#0001](27)Enter Passcode
-[E][010:SCRP#0001](27)Invalid Passcode
-[E][010:SCRP#0001](27)Are you sure?
-[E][010:SCRP#0001](27)Save
-[E][010:SCRP#0001](27)Load
-[E][010:SCRP#0001](27)Play
-[E][010:SCRP#0001](27)Cancel
-[E][010:SCRP#0001](27)Quit
-[E][010:SCRP#0001](27)OK
-[E][010:SCRP#0001](27)Insert save/load game disk
-[E][010:SCRP#0001](27)You must enter a name
-[E][010:SCRP#0001](27)The game was NOT saved
-[E][010:SCRP#0001](27)The game was NOT loaded
-[E][010:SCRP#0001](27)Saving '%s'
-[E][010:SCRP#0001](27)Loading '%s'
-[E][010:SCRP#0001](27)Name your SAVE game
-[E][010:SCRP#0001](27)Select a game to LOAD
-[E][010:SCRP#0001](13)Guybrush
-[E][010:SCRP#0001](54)seltzer
-[E][010:SCRP#0001](54)seltzer
-[E][010:SCRP#0001](54)seltzer
-[E][010:SCRP#0002](D8)It's too dark to see it.
-[E][010:SCRP#0002](D8)I can't reach it.
-[E][010:SCRP#0003](D8)I think I'd get better results with the parrot.
-[E][010:SCRP#0003](D8)It doesn't seem to open.
-[E][010:SCRP#0003](D8)I can't move it.
-[E][010:SCRP#0003](D8)I don't see anything special about it.
-[E][010:SCRP#0003](D8)I can't pick that up.
-[E][010:SCRP#0003](D8)I can't reach that from here.
-[E][010:SCRP#0003](D8)That doesn't seem to work.
+[010:SCRP#0001](27)
+[010:SCRP#0001](27)
+[010:SCRP#0001](27)The Secret of Monkey Island -- CD-ROM version 2.3b
+[010:SCRP#0001](27)Spelet pausat.  Tryck MELLANSLAG för att fortsätta.
+[010:SCRP#0001](27)Sätt i disk %c och tryck på knappen för att fortsätta.
+[010:SCRP#0001](27)Kan inte hitta %s, (%c%d) Tryck på knappen.
+[010:SCRP#0001](27)Fel vid läsning av disk %c, (%c%d) Tryck på knappen.
+[010:SCRP#0001](27)Är du säker på att du vill starta om?  (J/N)J
+[010:SCRP#0001](27)Är du säker på att du vill avsluta?  (J/N)J
+[010:SCRP#0001](27)Starta om
+[010:SCRP#0001](27)Nuvarande lösenord
+[010:SCRP#0001](27)Ange lösenord
+[010:SCRP#0001](27)Ogiltigt lösenord
+[010:SCRP#0001](27)Är du säker?
+[010:SCRP#0001](27)Spara
+[010:SCRP#0001](27)Ladda
+[010:SCRP#0001](27)Spela
+[010:SCRP#0001](27)Avbryt
+[010:SCRP#0001](27)Avsluta
+[010:SCRP#0001](27)OK
+[010:SCRP#0001](27)Sätt i spara/ladda disk
+[010:SCRP#0001](27)Du måste ange ett namn
+[010:SCRP#0001](27)Spelet sparades INTE
+[010:SCRP#0001](27)Spelet laddades INTE
+[010:SCRP#0001](27)Sparar '%s'
+[010:SCRP#0001](27)Laddar '%s'
+[010:SCRP#0001](27)Namnge ditt SPARADE spel
+[010:SCRP#0001](27)Välj ett spel att LADDA
+[010:SCRP#0001](13)Guybrush
+[010:SCRP#0001](54)seltzer
+[010:SCRP#0001](54)seltzer
+[010:SCRP#0001](54)seltzer
+[010:SCRP#0002](D8)Det är för mörkt för att se det.
+[010:SCRP#0002](D8)Jag kan inte nå det.
+[010:SCRP#0003](D8)Jag tror jag skulle få bättre resultat med papegojan.
+[010:SCRP#0003](D8)Den verkar inte gå att öppna.
+[010:SCRP#0003](D8)Jag kan inte flytta det.
+[010:SCRP#0003](D8)Jag ser inget speciellt med det.
+[010:SCRP#0003](D8)Jag kan inte ta upp det.
+[010:SCRP#0003](D8)Jag kan inte nå det härifrån.
+[010:SCRP#0003](D8)Det verkar inte fungera.
 [E][010:SCRP#0004](14)Molasses machine.
 [E][010:SCRP#0004](14)Street legal machine.
 [E][010:SCRP#0004](14)Trans-warp drive machine.
@@ -200,30 +200,30 @@
 [E][010:SCRP#0017](7A)\001\002\254\001\005\006\254\001\007\008
 [E][010:SCRP#0017](7A)\254\001\005\006\254\001\003\004
 [E][010:SCRP#0020](14)\255\007\036\000
-[E][010:SCRP#0022](7A)Walk to
-[E][010:SCRP#0022](7A)Give
-[E][010:SCRP#0022](7A)Open
-[E][010:SCRP#0022](7A)Close
-[E][010:SCRP#0022](7A)Pick up
-[E][010:SCRP#0022](7A)Look at
-[E][010:SCRP#0022](7A)Talk to
-[E][010:SCRP#0022](7A)Use
-[E][010:SCRP#0022](7A)Push
-[E][010:SCRP#0022](7A)Pull
-[E][010:SCRP#0022](7A)Tap
-[E][010:SCRP#0022](7A)Prod
-[E][010:SCRP#0022](7A)Feel
-[E][010:SCRP#0022](7A)Tickle
-[E][010:SCRP#0022](7A)Stroke
-[E][010:SCRP#0022](7A)Bother
-[E][010:SCRP#0022](7A)Jab
-[E][010:SCRP#0022](7A)Poke
-[E][010:SCRP#0022](7A)Tease
-[E][010:SCRP#0022](7A)in
-[E][010:SCRP#0022](7A)with
-[E][010:SCRP#0022](7A)on
-[E][010:SCRP#0022](7A)to
-[E][010:SCRP#0022](7A)<ADVERTISEMENT>
+[010:SCRP#0022](7A)Gå till
+[010:SCRP#0022](7A)Ge
+[010:SCRP#0022](7A)Öppna
+[010:SCRP#0022](7A)Stäng
+[010:SCRP#0022](7A)Plocka upp
+[010:SCRP#0022](7A)Titta på
+[010:SCRP#0022](7A)Prata med
+[010:SCRP#0022](7A)Använd
+[010:SCRP#0022](7A)Tryck
+[010:SCRP#0022](7A)Dra
+[010:SCRP#0022](7A)Knacka
+[010:SCRP#0022](7A)Peta
+[010:SCRP#0022](7A)Känn
+[010:SCRP#0022](7A)Kittla
+[010:SCRP#0022](7A)Stryka
+[010:SCRP#0022](7A)Störa
+[010:SCRP#0022](7A)Stöt
+[010:SCRP#0022](7A)Puffa
+[010:SCRP#0022](7A)Reta
+[010:SCRP#0022](7A)i
+[010:SCRP#0022](7A)med
+[010:SCRP#0022](7A)på
+[010:SCRP#0022](7A)till
+[010:SCRP#0022](7A)<ADVERTISEMENT>
 [E][010:SCRP#0024](14)\255\006\000\064
 [E][010:SCRP#0024](14) 
 [E][010:SCRP#0025](D8)Hmm.  This door appears to be locked.
