@@ -639,20 +639,20 @@
 [E][020:SCRP#0095](FA)Excuse me, I've got pressing business to attend to.
 [E][020:SCRP#0095](14)Yes, me too.
 [E][020:SCRP#0095](14)-- hee hee hee --
-[E][020:SCRP#0095](14)Well, I sailed here with a friend of mine twenty years ago.\255\003We hoped to discover the Secret of Monkey Island®.\255\003But my friend met with a horrifying and tragic accident...\255\003...which claimed his life...\255\003...and I couldn't sail the ship back by myself.
-[E][020:SCRP#0095](14)I trained a bunch of chimps to crew the ship and sail it back to Mêlée Island®.\255\003They were supposed to get help and come back for me...\255\003...something must have happened.
-[E][020:SCRP#0095](D8)How come you didn't just go with the chimps?
-[E][020:SCRP#0095](14)WEEKS on a boat full of monkeys.
-[E][020:SCRP#0095](14)Oh, joy.
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14)I'm the only CIVILIZED person on the island.\255\003There's a native tribe of hunter/gatherers--\255\003--well, HEADhunter/gatherers, actually--
-[E][020:SCRP#0095](14)--but I don't talk to them.\255\003They ARE cannibals, but they're not dangerous...\255\003...unless you lend them something.
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14)Well, here I am.\255\003Glad you came to rescue me--\255\003--though you might have been a bit earlier.\255\003The fine on that overdue library book should be pretty big by now.\255\003Let's go.
-[E][020:SCRP#0095](D8)Er...\255\003That's not exactly what I meant.\255\003I sailed here in pursuit of the Governor of Mêlée Island®, who's been kidnapped by a ghost.
-[E][020:SCRP#0095](14)Oh, fine, DON'T rescue me.\255\003I like it here.
-[E][020:SCRP#0095](14)The rain on my head, the wind at my back...\255\003...the bugs on my plate...
-[E][020:SCRP#0095](D8)Um...\255\003Well, perhaps I could take you back, too...
+[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® Hemlighet.\255\003Men min vän råkade ut för en förfärlig och tragisk olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
+[020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle få hjälp och komma tillbaka för mig...\255\003...något måste ha hänt.
+[020:SCRP#0095](D8)Varför följde du inte bara med schimpanserna?
+[020:SCRP#0095](14)VECKOR på en båt full med apor.
+[020:SCRP#0095](14)Åh, härligt.
+[020:SCRP#0095](14)
+[020:SCRP#0095](14)Jag är den enda CIVILISERADE personen på ön.\255\003Det finns en inhemsk stam av jägare/samlare--\255\003--ja, HUVUDjägare/samlare, faktiskt--
+[020:SCRP#0095](14)--men jag pratar inte med dem.\255\003De ÄR kannibaler, men de är inte farliga...\255\003...såvida du inte lånar ut något till dem.
+[020:SCRP#0095](14)
+[020:SCRP#0095](14)Nå, här är jag.\255\003Glad att du kom för att rädda mig--\255\003--fast du kunde ha kommit lite tidigare.\255\003Böterna på den där försenade biblioteksboken borde vara ganska stora vid det här laget.\255\003Vi går.
+[020:SCRP#0095](D8)Öh...\255\003Det var inte riktigt vad jag menade.\255\003Jag seglade hit i jakten på Guvernören på Mêlée Island®, som har kidnappats av ett spöke.
+[020:SCRP#0095](14)Åh, bra, rädda mig INTE.\255\003Jag gillar det här.
+[020:SCRP#0095](14)Regnet på mitt huvud, vinden i ryggen...\255\003...insekterna på min tallrik...
+[020:SCRP#0095](D8)Öhm...\255\003Ja, jag kanske kan ta med dig tillbaka också...
 [020:SCRP#0095](D8)...men jag måste hitta Guvernören först.
 [020:SCRP#0095](14)Åh, det är inga problem.
 [020:SCRP#0095](14)Jag är säker på att hon är på spökskeppet, i det hemliga underjordiska gömstället.
@@ -672,46 +672,46 @@
 [020:SCRP#0095](14)Jag berättade om att de lånat min bananplockare och aldrig lämnat tillbaka den, eller hur?
 [020:SCRP#0095](14)Vilka byxor?
 [020:SCRP#0095](14)Nej, jag behöver den för att få tillbaka min bananplockare.
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0096](14) 
-[E][020:SCRP#0096](14)Hey, thanks!\255\003I thought I'd never see this again!\255\003Here, you can take this key to the Monkey Head back to the natives.
-[E][020:SCRP#0096](D8)OK.\255\003And don't worry, I won't use it or anything.
-[E][020:SCRP#0096](14)No, thanks, I've got one.\255\003Sure wish I could find it, though.
-[E][020:SCRP#0096](14)What the heck will I do with that?
-[E][020:SCRP#0096](14)Hey, BREATH MINTS!
-[E][020:SCRP#0096](14)This is what I miss most about civilization.
-[E][020:SCRP#0096](14)Money's not much good here.
-[E][020:SCRP#0096](14)I've already read enough memos to last a lifetime.
-[E][020:SCRP#0096](14)No thanks, I have my own, although someone threw them into a chasm.
-[E][020:SCRP#0096](14)What the heck will I do with that?
-[E][020:SCRP#0164](D8)It's printed on letterhead!
-[E][020:SCRP#0164](D8)`To the Monkey Island® Cannibals:`\255\003`Please stop moving this.`\255\003`It is delicately balanced.`\255\003`--Herman Toothrot--`
-[E][020:SCRP#0164](D8)`Mr. Toothrot:`\255\003`Please remove this dangerous object.`
-[E][020:SCRP#0164](D8)`Lemonhead knocked a rock onto it from the cliff above and nearly injured someone who was putting up a swing on the banana tree on the south beach.`
-[E][020:SCRP#0164](D8)`Lemonhead knocked a rock onto it from the cliff above and nearly sank a passing ship.`
-[E][020:SCRP#0164](D8)`--the Cannibals`
-[E][020:SCRP#0164](D8)`To the ghost pirate LeChuck:`\255\003`We must ask you once again to curtail your nightly activities in the Sacred Monkey Head area.`\255\003`Decent people are trying to sleep!`
-[E][020:SCRP#0164](D8)`Kindly keep the noise level down.`\255\003`--The Monkey Island® Cannibals`\255\003`P.S.--`\255\003`We saw you taking that woman with the scarf down there!`
-[E][020:SCRP#0164](D8)`To the Monkey Island® Cannibals:`\255\003`I don't mind you worshipping in front of the Sacred Monkey Idol which doubles as my home and secret base of operations...`
-[E][020:SCRP#0164](D8)`...but could you please refrain from leaving messy sacrifices on my porch.`\255\003`Also, please DO NOT ENTER the Monkey Head.`\255\003`--G.P. LeChuck`
-[E][020:SCRP#0164](D8)`To the ghost pirate LeChuck:`\255\003`We must protest your 'acquisition' of our voodoo antiroot.`\255\003`We realize that it presents a hazard to you and your crew, but this is thievery!`\255\003`--The Monkey Island® Cannibals`
-[E][020:SCRP#0164](D8)`Herman--`\255\003`Please return our key to the Monkey Head.`\255\003`--the Cannibals`
-[E][020:SCRP#0164](D8)`Cannibals--`\255\003`I'm not giving you bloodsuckers your key to the Monkey Head until you return my banana picker.`\255\003`--H.T.`
-[E][020:SCRP#0164](D8)`To Herman Toothrot`\255\003`From Yammer, Hem, and Haw, attorneys at law`\255\003`Re Suit against cannibal tribe over malicious tossing of your oars into a chasm.`
-[E][020:SCRP#0164](D8)`I think we have a case here.`\255\003`We can probably soak them for emotional distress and possibly punitive damages as well.`
-[E][020:SCRP#0164](14) 
-[E][020:SCRP#0166](54)memos
-[E][020:SCRP#0166](54)a few memos
-[E][020:SCRP#0166](54)several memos
-[E][020:SCRP#0166](54)a bunch of memos
-[E][020:SCRP#0166](54)a pile of memos
-[E][020:SCRP#0166](54)a whole lot of memos
-[E][020:SCRP#0166](54)too many memos
-[E][020:SCRP#0167](54)flint
-[E][020:SCRP#0167](54)noteworthy rock
-[E][020:SCRP#0168](D8)Hi!
-[E][020:SCRP#0168](D8)I think I'm going nuts.\255\003I've got to hurry up and rescue the Governor and get off this island!
+[020:SCRP#0095](14)
+[020:SCRP#0095](14)
+[020:SCRP#0096](14)
+[020:SCRP#0096](14)Hej, tack!\255\003Jag trodde jag aldrig skulle se den här igen!\255\003Här, du kan ta tillbaka den här nyckeln till Aphuvudet till de infödda.
+[020:SCRP#0096](D8)Okej.\255\003Och oroa dig inte, jag använder den inte eller något.
+[020:SCRP#0096](14)Nej tack, jag har en.\255\003Önskar verkligen jag kunde hitta den, dock.
+[020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
+[020:SCRP#0096](14)Hej, ANDNINGSMYNTOR!
+[020:SCRP#0096](14)Det här är vad jag saknar mest med civilisationen.
+[020:SCRP#0096](14)Pengar duger inte till mycket här.
+[020:SCRP#0096](14)Jag har redan läst tillräckligt med memon för att räcka en livstid.
+[020:SCRP#0096](14)Nej tack, jag har egna, fast någon kastade dem i en ravin.
+[020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
+[020:SCRP#0164](D8)Det är tryckt på brevpapper!
+[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Var snäll och sluta flytta på den här.`\255\003`Den är känsligt balanserad.`\255\003`--Herman Toothrot--`
+[020:SCRP#0164](D8)`Herr Toothrot:`\255\003`Var snäll och ta bort det här farliga föremålet.`
+[020:SCRP#0164](D8)`Lemonhead knackade en sten på den från klippan ovanför och skadade nästan någon som satte upp en gunga på bananträdet på södra stranden.`
+[020:SCRP#0164](D8)`Lemonhead knackade en sten på den från klippan ovanför och sänkte nästan ett förbipasserande skepp.`
+[020:SCRP#0164](D8)`--Kannibalerna`
+[020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste än en gång be dig dra ner på dina nattliga aktiviteter i området kring det Heliga Aphuvudet.`\255\003`Anständiga människor försöker sova!`
+[020:SCRP#0164](D8)`Var vänlig håll nere ljudnivån.`\255\003`--Monkey Island® Kannibalerna`\255\003`P.S.--`\255\003`Vi såg dig ta med den där kvinnan med halsduken dit ner!`
+[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Jag har inget emot att ni dyrkar framför Den Heliga Apavguden som också är mitt hem och hemliga operationsbas...`
+[020:SCRP#0164](D8)`...men skulle ni kunna låta bli att lämna smutsiga offer på min veranda.`\255\003`Och, var snäll GÅ INTE IN i Aphuvudet.`\255\003`--G.P. LeChuck`
+[020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island® Kannibalerna`
+[020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
+[020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare er nyckel till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
+[020:SCRP#0164](D8)`Till Herman Toothrot`\255\003`Från Yammer, Hem och Haw, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
+[020:SCRP#0164](D8)`Jag tror vi har ett fall här.`\255\003`Vi kan troligtvis mjölka dem på känslomässigt lidande och möjligen straffskadestånd också.`
+[020:SCRP#0164](14)
+[020:SCRP#0166](54)memon
+[020:SCRP#0166](54)ett par memon
+[020:SCRP#0166](54)flera memon
+[020:SCRP#0166](54)ett gäng memon
+[020:SCRP#0166](54)en hög med memon
+[020:SCRP#0166](54)en massa memon
+[020:SCRP#0166](54)för många memon
+[020:SCRP#0167](54)flinta
+[020:SCRP#0167](54)anmärkningsvärd sten
+[020:SCRP#0168](D8)Hej!
+[020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
 [E][020:SCRP#0168](D8)I'm here to rescue the Governor of Mêlée Island®.
 [E][020:SCRP#0168](D8)I'm a mighty pirate.
 [E][020:SCRP#0168](D8)Seen any big, ugly, scary, see-through pirates around here?
