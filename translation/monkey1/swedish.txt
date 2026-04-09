@@ -2800,138 +2800,138 @@
 [049:LSCR#0200](94)Ja lånar inte ut pengar till nån, speciellt inte landlansen som dej.
 [049:LSCR#0200](94)Tiggande klär dej inte. Du borde gå ut och stjäla det som en riktig pirat.
 [049:LSCR#0200](94)Ja gav precis min sista åtta till pirat-wannaben längre ner på vägen.\255\003Han behövde köpa andedroppar.\255\003Illa.
-[E][051:OBNA#0617](__)outside
-[E][051:OBNA#0618](__)outside
-[E][051:OBNA#0619](__)outside
-[E][051:OBNA#0620](__)outside
-[E][051:LSCR#0200](14) 
-[E][051:LSCR#0200](14)Ah, that will work as a helmet!
-[E][051:LSCR#0200](94)That's no helmet.
-[E][051:LSCR#0202](94)ECHO
-[E][051:LSCR#0202](14)echo
-[E][051:LSCR#0204](13)Fettucini Brothers
-[E][051:LSCR#0204](13)Fettucini Brothers
-[E][051:LSCR#0205](14)Weasel!
-[E][051:LSCR#0205](14)Weevil!
-[E][051:LSCR#0205](14)Miscreant!
-[E][051:LSCR#0205](14)Toady!
-[E][051:LSCR#0205](14)Ne'er-do-well!
-[E][051:LSCR#0205](14)Scofflaw!
-[E][051:LSCR#0205](14)Mullet-head!
-[E][051:LSCR#0205](14)Millet-head!
-[E][051:LSCR#0205](14)Pencil-head!
-[E][051:LSCR#0205](14)Half-head!
-[E][051:LSCR#0205](14)Cheese-head!
-[E][051:LSCR#0205](14)Harpy!
-[E][051:LSCR#0205](14)What?
-[E][051:LSCR#0205](14)Just get in the cannon!
-[E][051:LSCR#0205](14)Your mother wears combat slippers!
-[E][051:LSCR#0205](14)Leave our mother out of it!  Get in the cannon!
-[E][051:LSCR#0205](14)You're a chicken!
-[E][051:LSCR#0205](14)You're a dead chicken!
-[E][051:LSCR#0205](14)Well, you're a dead chicken with a pulley in the middle!
-[E][051:LSCR#0205](14)What?
-[E][051:LSCR#0205](14)Just get in the cannon.
-[E][051:LSCR#0205](14)No, YOU get in the cannon!
-[E][051:LSCR#0205](14)No, YOU get in the cannon!
-[E][051:LSCR#0206](14)The basic theory is fine.
-[E][051:LSCR#0206](14)We just need to change the aim a bit.
-[E][051:LSCR#0206](14)I'll try it next!
-[E][051:LSCR#0206](14)No, I'LL do it next!
-[E][051:LSCR#0206](14)No, me!
-[E][051:LSCR#0206](14)No, ME!
-[E][051:LSCR#0206](14)Slacker!
-[E][051:LSCR#0206](14)Loser!
-[E][051:LSCR#0206](14)Ruffian!
-[E][051:LSCR#0206](14)Fop!
-[E][051:LSCR#0207](14)I'd get in the cannon, but the gunpowder makes me sneeze.
-[E][051:LSCR#0207](14)Well, I can't do it, I hurt my hand taming the lions last week.
-[E][051:LSCR#0207](14)I hardly think that little scratch compares to my chronic allergy.  You get in the cannon.
-[E][051:LSCR#0207](14)You don't have any allergies, you faker.  YOU get in the cannon.
-[E][051:LSCR#0207](14)No, YOU get in the cannon!
-[E][051:LSCR#0207](14)No, YOU get in the cannon!
-[E][051:LSCR#0207](14)Slacker!
-[E][051:LSCR#0207](14)Loser!
-[E][051:LSCR#0207](14)Ruffian!
-[E][051:LSCR#0207](14)Fop!
-[E][051:LSCR#0207](FA). . .ahem. . .
-[E][051:LSCR#0207](FA)Does this place have a bathroom?
-[E][051:LSCR#0207](FA)I'm selling these fine jackets.
-[E][051:LSCR#0207](FA)Can I borrow a trampoline?
-[E][051:LSCR#0207](FA)Why are you guys dressed up in those ridiculous outfits?
-[E][051:LSCR#0207](14)Hello again.
-[E][051:LSCR#0207](14)Ready to do the cannon trick?
-[E][051:LSCR#0207](14)Say there, son, how'd you like a chance--
-[E][051:LSCR#0207](14)--A once in a lifetime chance--
-[E][051:LSCR#0207](14)--To perform an amazing feat--
-[E][051:LSCR#0207](14)--A death-defying feat--
-[E][051:LSCR#0207](14)--Well, not so death-defying, really--
-[E][051:LSCR#0207](14)--A dangerous feat--
-[E][051:LSCR#0207](14)--No, not dangerous at all--
-[E][051:LSCR#0207](14)--An easy feat--
-[E][051:LSCR#0207](14)--But exciting!--
-[E][051:LSCR#0207](14)--With the Amazing--
-[E][051:LSCR#0207](14)--Adventurous, Acrobatic--
-[E][051:LSCR#0207](14)--And Exceedingly Well-Known--
-[E][051:LSCR#0207](14)--Fabulous, Flying--
-[E][051:LSCR#0207](14)--Fettucini Brothers!
-[E][051:LSCR#0207](14)That's us.
-[E][051:LSCR#0207](14)My brother Alfredo...
-[E][051:LSCR#0207](14)...and my brother Bill.
-[E][051:LSCR#0207](14)Sound good?
-[E][051:LSCR#0207](14)Good.
-[E][051:LSCR#0207](14)It's very simple, really.
-[E][051:LSCR#0207](14)See that cannon over there?
-[E][051:LSCR#0207](14)All you have to do--
-[E][051:LSCR#0207](14)--Is get in the cannon--
-[E][051:LSCR#0207](14)--And we'll shoot you out of it--
-[E][051:LSCR#0207](14)--Across the room--
-[E][051:LSCR#0207](14)--Quite safe, actually--
-[E][051:LSCR#0207](14)--So, what do you say?
-[E][051:LSCR#0207](14) 
-[E][051:LSCR#0207](FA)OK, I'll do it.
-[E][051:LSCR#0207](FA)How much will you pay me?
-[E][051:LSCR#0207](FA)Forget it!
-[E][051:LSCR#0207](14)We'll pay you \255\004\100\000 pieces of eight.
-[E][051:LSCR#0207](14)How about \255\004\100\000 pieces of eight?
-[E][051:LSCR#0207](FA)OK, sounds good.
-[E][051:LSCR#0207](FA)No way!
-[E][051:LSCR#0207](14)Have you got a helmet?
-[E][051:LSCR#0207](FA)Er... no, I don't have a helmet.  Will I need one?
-[E][051:LSCR#0207](FA)Of course I have a helmet.  What sort of idiot do \254\008     you take me for?
-[E][051:LSCR#0207](14)Well, let's have it.
-[E][051:LSCR#0207](14)We want to be sure--
-[E][051:LSCR#0207](14)--That it's safe--
-[E][051:LSCR#0207](14)--Wouldn't want you hurt--
-[E][051:LSCR#0207](14)--Nosiree!
-[E][051:LSCR#0207](14)No helmet?
-[E][051:LSCR#0207](14)Oh, you've got to have a helmet--
-[E][051:LSCR#0207](14)--Can't do the cannon trick without a helmet--
-[E][051:LSCR#0207](14)--Nosiree!
-[E][051:LSCR#0207](14)Go get a helmet, and then we can do the trick.
-[E][051:LSCR#0207](14) 
-[E][051:LSCR#0207](14)Now we can do the trick.
-[E][051:LSCR#0207](14)Step right over here, son.
-[E][051:LSCR#0207](14)Now, put on your helmet--
-[E][051:LSCR#0207](14)--and get in the cannon--
-[E][051:LSCR#0207](14)--and we'll take care of the rest.
-[E][051:LSCR#0207](14) 
-[E][051:LSCR#0207](14)It works!
-[E][051:LSCR#0207](14)I'm so relieved!
-[E][051:LSCR#0207](14)Hey...
-[E][051:LSCR#0207](14)Are you OK?
-[E][051:LSCR#0207](FA)?rehtom ym uoy erA  .nibboB m'I
-[E][051:LSCR#0207](FA)             ?temleh ym s'erehW
-[E][051:LSCR#0207](D8)I'm Bobbin.  Are you my mother?
-[E][051:LSCR#0207](D8)Where's my helmet?
-[E][051:LSCR#0207](14)He's all right!
-[E][051:LSCR#0207](14)Hooray!  We are spared an embarrassing and financially debilitating lawsuit!
-[E][051:LSCR#0207](14)Here's your money, sir.
-[E][051:LSCR#0207](14)Just recompense for aiding us.
-[E][051:LSCR#0207](14) 
-[E][051:LSCR#0207](14) 
-[E][051:LSCR#0209](D8)\255\005\001\064
-[E][051:LSCR#0210](94)That's no helmet.
+[051:OBNA#0617](__)utanför
+[051:OBNA#0618](__)utanför
+[051:OBNA#0619](__)utanför
+[051:OBNA#0620](__)utanför
+[051:LSCR#0200](14)
+[051:LSCR#0200](14)Ah, den funkar som hjälm!
+[051:LSCR#0200](94)Det där är ingen hjälm.
+[051:LSCR#0202](94)EKO
+[051:LSCR#0202](14)eko
+[051:LSCR#0204](13)Fettucinibröderna
+[051:LSCR#0204](13)Fettucinibröderna
+[051:LSCR#0205](14)Vessla!
+[051:LSCR#0205](14)Mask!
+[051:LSCR#0205](14)Skurk!
+[051:LSCR#0205](14)Fjäsk!
+[051:LSCR#0205](14)Odåga!
+[051:LSCR#0205](14)Buse!
+[051:LSCR#0205](14)Mullhuvud!
+[051:LSCR#0205](14)Hirsehuvud!
+[051:LSCR#0205](14)Pennhuvud!
+[051:LSCR#0205](14)Halvhuvud!
+[051:LSCR#0205](14)Osthuvud!
+[051:LSCR#0205](14)Harpia!
+[051:LSCR#0205](14)Va?
+[051:LSCR#0205](14)Kliv bara i kanonen!
+[051:LSCR#0205](14)Din mamma bär stridstofflor!
+[051:LSCR#0205](14)Lämna vår mamma utanför! Kliv i kanonen!
+[051:LSCR#0205](14)Du är en kyckling!
+[051:LSCR#0205](14)Du är en död kyckling!
+[051:LSCR#0205](14)Ja, du är en död kyckling med en talja i mitten!
+[051:LSCR#0205](14)Va?
+[051:LSCR#0205](14)Kliv bara i kanonen.
+[051:LSCR#0205](14)Nej, DU kliver i kanonen!
+[051:LSCR#0205](14)Nej, DU kliver i kanonen!
+[051:LSCR#0206](14)Grundteorin är bra.
+[051:LSCR#0206](14)Vi behöver bara ändra siktet lite.
+[051:LSCR#0206](14)Jag provar nästa gång!
+[051:LSCR#0206](14)Nej, JAG gör det nästa gång!
+[051:LSCR#0206](14)Nej, jag!
+[051:LSCR#0206](14)Nej, JAG!
+[051:LSCR#0206](14)Slöfock!
+[051:LSCR#0206](14)Förlorare!
+[051:LSCR#0206](14)Bråkstake!
+[051:LSCR#0206](14)Snobb!
+[051:LSCR#0207](14)Jag skulle kliva i kanonen, men krutet får mig att nysa.
+[051:LSCR#0207](14)Jag kan inte göra det, jag skadade handen när jag tämjde lejonen förra veckan.
+[051:LSCR#0207](14)Jag tror knappast att den lilla skråman kan jämföras med min kroniska allergi. Du kliver i kanonen.
+[051:LSCR#0207](14)Du har inga allergier, din bluff. DU kliver i kanonen.
+[051:LSCR#0207](14)Nej, DU kliver i kanonen!
+[051:LSCR#0207](14)Nej, DU kliver i kanonen!
+[051:LSCR#0207](14)Slöfock!
+[051:LSCR#0207](14)Förlorare!
+[051:LSCR#0207](14)Bråkstake!
+[051:LSCR#0207](14)Snobb!
+[051:LSCR#0207](FA). . .ehum. . .
+[051:LSCR#0207](FA)Finns det en toalett här?
+[051:LSCR#0207](FA)Jag säljer dessa fina jackor.
+[051:LSCR#0207](FA)Kan jag låna en studsmatta?
+[051:LSCR#0207](FA)Varför är ni utklädda i de där löjliga kläderna?
+[051:LSCR#0207](14)Hej igen.
+[051:LSCR#0207](14)Redo att göra kanontricket?
+[051:LSCR#0207](14)Hörru grabben, vill du ha en chans--
+[051:LSCR#0207](14)--En chans som bara kommer en gång i livet--
+[051:LSCR#0207](14)--Att utföra en fantastisk bedrift--
+[051:LSCR#0207](14)--En dödsföraktande bedrift--
+[051:LSCR#0207](14)--Ja, inte så dödsföraktande egentligen--
+[051:LSCR#0207](14)--En farlig bedrift--
+[051:LSCR#0207](14)--Nej, inte farligt alls--
+[051:LSCR#0207](14)--En enkel bedrift--
+[051:LSCR#0207](14)--Men spännande!--
+[051:LSCR#0207](14)--Med de Fantastiska--
+[051:LSCR#0207](14)--Äventyrliga, Akrobatiska--
+[051:LSCR#0207](14)--Och Synnerligen Välkända--
+[051:LSCR#0207](14)--Fabulösa, Flygande--
+[051:LSCR#0207](14)--Fettucinibröderna!
+[051:LSCR#0207](14)Det är vi.
+[051:LSCR#0207](14)Min bror Alfredo...
+[051:LSCR#0207](14)...och min bror Bill.
+[051:LSCR#0207](14)Låter det bra?
+[051:LSCR#0207](14)Bra.
+[051:LSCR#0207](14)Det är väldigt enkelt, faktiskt.
+[051:LSCR#0207](14)Ser du kanonen där borta?
+[051:LSCR#0207](14)Allt du behöver göra--
+[051:LSCR#0207](14)--Är att kliva i kanonen--
+[051:LSCR#0207](14)--Så skjuter vi ut dig ur den--
+[051:LSCR#0207](14)--Tvärs över rummet--
+[051:LSCR#0207](14)--Helt säkert, faktiskt--
+[051:LSCR#0207](14)--Så, vad säger du?
+[051:LSCR#0207](14)
+[051:LSCR#0207](FA)OK, jag gör det.
+[051:LSCR#0207](FA)Hur mycket betalar ni mig?
+[051:LSCR#0207](FA)Glöm det!
+[051:LSCR#0207](14)Vi betalar dig \255\004\100\000 åttor.
+[051:LSCR#0207](14)Vad sägs om \255\004\100\000 åttor?
+[051:LSCR#0207](FA)OK, låter bra.
+[051:LSCR#0207](FA)Aldrig i livet!
+[051:LSCR#0207](14)Har du en hjälm?
+[051:LSCR#0207](FA)Öh... nej, jag har ingen hjälm. Behöver jag en?
+[051:LSCR#0207](FA)Klart jag har en hjälm. Vad tar ni mig \254\008     för, en idiot?
+[051:LSCR#0207](14)Nå, låt oss se den.
+[051:LSCR#0207](14)Vi vill vara säkra--
+[051:LSCR#0207](14)--På att det är säkert--
+[051:LSCR#0207](14)--Vill inte att du skadas--
+[051:LSCR#0207](14)--Absolut inte!
+[051:LSCR#0207](14)Ingen hjälm?
+[051:LSCR#0207](14)Åh, du måste ha en hjälm--
+[051:LSCR#0207](14)--Kan inte göra kanontricket utan hjälm--
+[051:LSCR#0207](14)--Absolut inte!
+[051:LSCR#0207](14)Skaffa en hjälm, sen kan vi göra tricket.
+[051:LSCR#0207](14)
+[051:LSCR#0207](14)Nu kan vi göra tricket.
+[051:LSCR#0207](14)Kliv rakt fram hit, grabben.
+[051:LSCR#0207](14)Sätt nu på dig hjälmen--
+[051:LSCR#0207](14)--och kliv i kanonen--
+[051:LSCR#0207](14)--så tar vi hand om resten.
+[051:LSCR#0207](14)
+[051:LSCR#0207](14)Det funkar!
+[051:LSCR#0207](14)Vilken lättnad!
+[051:LSCR#0207](14)Hörru...
+[051:LSCR#0207](14)Är du okej?
+[051:LSCR#0207](FA)?ammam nim ud rÄ .nibboB reteh gaJ
+[051:LSCR#0207](FA)             ?mläjh nim rä raV
+[051:LSCR#0207](D8)Jag heter Bobbin. Är du min mamma?
+[051:LSCR#0207](D8)Var är min hjälm?
+[051:LSCR#0207](14)Han mår bra!
+[051:LSCR#0207](14)Hurra! Vi slipper en pinsam och ekonomiskt förödande rättegång!
+[051:LSCR#0207](14)Här är dina pengar, herrn.
+[051:LSCR#0207](14)Rättvis ersättning för din hjälp.
+[051:LSCR#0207](14)
+[051:LSCR#0207](14)
+[051:LSCR#0209](D8)\255\005\001\064
+[051:LSCR#0210](94)Det där är ingen hjälm.
 [052:VERB#0621](D8)De där galna Spaghettibröderna är fortfarande därinne.
 [052:VERB#0621](D8)Jag tror det är nåt som händer därinne.
 [052:OBNA#0621](__)cirkustält
