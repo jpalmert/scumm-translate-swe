@@ -290,46 +290,46 @@
 [E][010:SCRP#0152](14)`SCUMM` Story system by\255\001Ron Gilbert, Aric Wilmunder,\255\001Brad Taylor and Vince Lee\255\002
 [E][010:SCRP#0152](14) 
 [E][010:SCRP#0152](14) 
-[E][011:OBNA#0115](__)path down
-[E][011:VERB#0116](D8)It's the same rock I put there.
-[E][011:VERB#0116](D8)It looks like someone put this here on purpose.
-[E][011:VERB#0116](D8)It was enough trouble getting it over here.
-[E][011:VERB#0116](D8)I don't think I want it.
-[E][011:OBNA#0116](__)rock
-[E][011:OBNA#0120](__)heap o' rocks
-[E][011:LSCR#0200](D8)Wow!\255\003Looked like it hit the big banana tree on the beach!\255\003I bet the odds against that are incredible!
-[E][011:LSCR#0200](D8)It came close, but I don't think it'll hit it again.\255\003That shot was one in a zillion!
-[E][011:LSCR#0203](D8)I'll just put it here.
-[E][011:LSCR#0203](D8)There's already one there.
-[E][011:LSCR#0203](D8)What would I want with a big rock?
-[E][011:LSCR#0205](D8)Rubber tree!
-[E][011:LSCR#0206](13)Herman Toothrot
-[E][011:LSCR#0207](D8)Whoops...
-[E][012:VERB#0133](D8)Why, that's the second biggest monkey head I've ever seen!
-[E][012:OBNA#0133](__)gigantic monkey head
-[E][012:OBNA#0134](__)jungle
-[E][012:VERB#0136](D8)Yipes.
-[E][012:OBNA#0136](__)skulls
-[E][012:VERB#0137](D8)Eep.
-[E][012:OBNA#0137](__)skulls
-[E][012:VERB#0144](D8)It won't go that way.
-[E][012:VERB#0144](D8)Wow!
-[E][012:VERB#0144](D8)I don't think I could get it to stay on there.
-[E][012:OBNA#0144](__)nose
-[E][012:OBNA#0138](__)totem pole
-[E][012:OBNA#0139](__)totem pole
-[E][012:OBNA#0152](__)corpse
-[E][012:OBNA#0153](__)corpse
-[E][012:OBNA#0154](__)corpse
-[E][012:VERB#0156](D8)`PRIVATE PROPERTY`\255\003`Worshipping is permitted, but please DO NOT ENTER the Monkey Head.`\255\003`-- G.P. LeChuck`
-[E][012:OBNA#0156](__)sign
-[E][012:VERB#0132](D8)Boy, he must be tired.
-[E][012:VERB#0132](14)Ook\255\003Ook\255\003Eep
-[E][012:OBNA#0132](__)monkey
-[E][012:LSCR#0206](D8)Shish keBob
-[E][012:LSCR#0206](D8)Shish keJoe
-[E][012:LSCR#0206](D8)Shish keLarry
-[E][012:LSCR#0207](D8)The artist carved his name on it:
+[011:OBNA#0115](__)stig nedåt
+[011:VERB#0116](D8)Det är samma sten jag lade dit.
+[011:VERB#0116](D8)Det ser ut som om någon lade dit den med flit.
+[011:VERB#0116](D8)Det var nog med besvär att få hit den.
+[011:VERB#0116](D8)Jag tror inte jag vill ha den.
+[011:OBNA#0116](__)sten
+[011:OBNA#0120](__)stenhög
+[011:LSCR#0200](D8)Wow!\255\003Det såg ut som det träffade det stora bananträdet på stranden!\255\003Oddsen måste vara otroliga!
+[011:LSCR#0200](D8)Det var nära, men jag tror inte det träffar igen.\255\003Det skottet var ett på miljonen!
+[011:LSCR#0203](D8)Jag lägger den här.
+[011:LSCR#0203](D8)Det finns redan en där.
+[011:LSCR#0203](D8)Vad skulle jag vilja med en stor sten?
+[011:LSCR#0205](D8)Gummiträd!
+[011:LSCR#0206](13)Herman Toothrot
+[011:LSCR#0207](D8)Hoppsan...
+[012:VERB#0133](D8)Ja, det är det näst största aphuvudet jag sett!
+[012:OBNA#0133](__)gigantiskt aphuvud
+[012:OBNA#0134](__)djungel
+[012:VERB#0136](D8)Jösses.
+[012:OBNA#0136](__)dödskallar
+[012:VERB#0137](D8)Oj.
+[012:OBNA#0137](__)dödskallar
+[012:VERB#0144](D8)Det går inte åt det hållet.
+[012:VERB#0144](D8)Wow!
+[012:VERB#0144](D8)Jag tror inte jag kan få den att sitta kvar där.
+[012:OBNA#0144](__)näsa
+[012:OBNA#0138](__)totempåle
+[012:OBNA#0139](__)totempåle
+[012:OBNA#0152](__)lik
+[012:OBNA#0153](__)lik
+[012:OBNA#0154](__)lik
+[012:VERB#0156](D8)`PRIVAT EGENDOM`\255\003`Tillbedjan är tillåten, men var god GÅ INTE IN i Aphuvudet.`\255\003`-- G.P. LeChuck`
+[012:OBNA#0156](__)skylt
+[012:VERB#0132](D8)Oj, han måste vara trött.
+[012:VERB#0132](14)Ook\255\003Ook\255\003Eep
+[012:OBNA#0132](__)apa
+[012:LSCR#0206](D8)Shish keBob
+[012:LSCR#0206](D8)Shish keJoe
+[012:LSCR#0206](D8)Shish keLarry
+[012:LSCR#0207](D8)Konstnären graverade sitt namn på den:
 [E][012:LSCR#0207](D8)`Made by Red Skull.`
 [E][012:LSCR#0207](D8)`Made by Sharptooth.`
 [E][012:LSCR#0209](13)Herman Toothrot
