@@ -2760,46 +2760,46 @@
 [045:LSCR#0200](D8)Öh...\255\003...hörru du...\255\003...låt oss inte vara förhastade...
 [045:LSCR#0200](14)
 [045:LSCR#0200](14) 
-[E][048:VERB#0601](D8)It's just like the one on the other side.
-[E][048:OBNA#0601](__)pole
-[E][048:VERB#0603](D8)I don't think that will get me anywhere.
-[E][048:VERB#0603](D8)Hmmm...  I think it could support my weight...
-[E][048:OBNA#0603](__)cable
-[E][048:OBNA#0604](__)cable
-[E][048:OBNA#0605](__)cable
-[E][048:OBNA#0606](__)cable
-[E][048:VERB#0600](D8)It's just like the one on the other side.
-[E][048:OBNA#0600](__)pole
-[E][048:OBNA#0598](__)door
-[E][048:OBNA#0599](__)path
-[E][048:VERB#0602](D8)Gaudy, but in a cheerful sort of way.
-[E][048:OBNA#0602](__)sign
-[E][048:VERB#0607](D8)Dingy.
-[E][048:OBNA#0607](__)house
-[E][048:LSCR#0203](14) 
-[E][048:LSCR#0203](D8)Wow!  It works both ways.\255\003That's some chicken.
-[E][048:LSCR#0204](14) 
-[E][048:LSCR#0205](14) 
-[E][049:LSCR#0200](94)What ya be wantin' ya scurvy lubber?
-[E][049:LSCR#0200](94)Stoppin' a pirate can be dangerous to yer health.
-[E][049:LSCR#0200](94)Move outta the way, or I cuts my way through!
-[E][049:LSCR#0200](94)Aye, this better be importan'.
-[E][049:LSCR#0200](FA)Nice night we're having, isn't it?
-[E][049:LSCR#0200](FA)Why do you guys talk so funny?
-[E][049:LSCR#0200](FA)Ever notice how all these roads start to look the same?
-[E][049:LSCR#0200](FA)My name is Guybrush Threepwood.  Prepare to die!
-[E][049:LSCR#0200](FA)You wouldn't happen to have a couple of pieces of eight...
-[E][049:LSCR#0200](FA)Sorry to bother you.  I'll be on my way.
-[E][049:LSCR#0200](94)I sure hopes ya had sumpting more importan' ta stop me for?
-[E][049:LSCR#0200](94)Pirate Lingo!\255\003It's how everybody talked back then.\255\003Come on Guybrush, play along.
-[E][049:LSCR#0200](94)Yeah!  Now that you mention it, they do.\255\003It's probably just that we're tired.
-[E][049:LSCR#0200](14)...I could borrow.
-[E][049:LSCR#0200](14)I need to buy some breath mints.
-[E][049:LSCR#0200](94)You're telling me.
-[E][049:LSCR#0200](94)Get lost, ya beggin' skulk, before I cuts ya to pieces.
-[E][049:LSCR#0200](94)I don't loan me money to no one, 'specially lubbers like yerself.
-[E][049:LSCR#0200](94)Beggin's not becomin'.  Ya oughtta go out and steal it like a real pirate.
-[E][049:LSCR#0200](94)I just gave me last piece-of-eight to the pirate wanna-be down the road.\255\003He needed ta buy some breath mints.\255\003Bad.
+[048:VERB#0601](D8)Den ser likadan ut som den på andra sidan.
+[048:OBNA#0601](__)stolpe
+[048:VERB#0603](D8)Jag tror inte det leder nånstans.
+[048:VERB#0603](D8)Hmm... Jag tror den skulle hålla min vikt...
+[048:OBNA#0603](__)kabel
+[048:OBNA#0604](__)kabel
+[048:OBNA#0605](__)kabel
+[048:OBNA#0606](__)kabel
+[048:VERB#0600](D8)Den ser likadan ut som den på andra sidan.
+[048:OBNA#0600](__)stolpe
+[048:OBNA#0598](__)dörr
+[048:OBNA#0599](__)stig
+[048:VERB#0602](D8)Pråligt, men på ett glatt sätt.
+[048:OBNA#0602](__)skylt
+[048:VERB#0607](D8)Sjaskigt.
+[048:OBNA#0607](__)hus
+[048:LSCR#0203](14)
+[048:LSCR#0203](D8)Oj! Det funkar åt båda hållen.\255\003Det där är en jäkla kycklingg.
+[048:LSCR#0204](14)
+[048:LSCR#0205](14) 
+[049:LSCR#0200](94)Va vill du din skabbiga landlansen?
+[049:LSCR#0200](94)Att stoppa en pirat kan va farligt för din hälsa.
+[049:LSCR#0200](94)Flytta på dej, annars hugger ja mej igenom!
+[049:LSCR#0200](94)Ajja, det här bättre va viktigt.
+[049:LSCR#0200](FA)Fin kväll vi har, eller hur?
+[049:LSCR#0200](FA)Varför pratar ni så konstigt?
+[049:LSCR#0200](FA)Har ni märkt att alla de här vägarna börjar se likadana ut?
+[049:LSCR#0200](FA)Mitt namn är Guybrush Threepwood. Bered er på att dö!
+[049:LSCR#0200](FA)Ni råkar inte ha ett par åttor...
+[049:LSCR#0200](FA)Förlåt att jag störde. Jag går vidare.
+[049:LSCR#0200](94)Ja hoppas du hade nåt viktigare att stoppa mej för?
+[049:LSCR#0200](94)Piratspråk!\255\003Det va så alla pratade på den tiden.\255\003Kom igen Guybrush, häng me.
+[049:LSCR#0200](94)Jo! Nu när du säger det, det gör dom.\255\003Det beror nog bara på att vi är trötta.
+[049:LSCR#0200](14)...som jag kunde låna.
+[049:LSCR#0200](14)Jag behöver köpa andedroppar.
+[049:LSCR#0200](94)Du menar det.
+[049:LSCR#0200](94)Försvinn, din tiggande skurk, innan ja hackar dej i bitar.
+[049:LSCR#0200](94)Ja lånar inte ut pengar till nån, speciellt inte landlansen som dej.
+[049:LSCR#0200](94)Tiggande klär dej inte. Du borde gå ut och stjäla det som en riktig pirat.
+[049:LSCR#0200](94)Ja gav precis min sista åtta till pirat-wannaben längre ner på vägen.\255\003Han behövde köpa andedroppar.\255\003Illa.
 [E][051:OBNA#0617](__)outside
 [E][051:OBNA#0618](__)outside
 [E][051:OBNA#0619](__)outside
@@ -2932,10 +2932,10 @@
 [E][051:LSCR#0207](14) 
 [E][051:LSCR#0209](D8)\255\005\001\064
 [E][051:LSCR#0210](94)That's no helmet.
-[E][052:VERB#0621](D8)Those crazy Spaghetti Brothers are still in there.
-[E][052:VERB#0621](D8)I think there's something going on in there.
-[E][052:OBNA#0621](__)circus tent
-[E][052:OBNA#0622](__)path
+[052:VERB#0621](D8)De där galna Spaghettibröderna är fortfarande därinne.
+[052:VERB#0621](D8)Jag tror det är nåt som händer därinne.
+[052:OBNA#0621](__)cirkustält
+[052:OBNA#0622](__)stig
 [E][053:VERB#0638](D8)I'd better be careful not to cut myself.
 [E][053:OBNA#0638](__)broken window
 [E][053:OBNA#0633](__)door
@@ -3390,12 +3390,12 @@
 [E][059:SCRP#0056](14)See you at the dock, and don't forget your crew.\255\003All three of them.
 [E][059:SCRP#0056](14) 
 [E][059:SCRP#0056](54)The Sea Monkey
-[E][060:OBNA#0737](__)door
-[E][060:OBNA#0738](__)box full o' swords
-[E][060:OBNA#0739](__)Norbert
-[E][060:OBNA#0740](__)Hubert
-[E][060:OBNA#0741](__)sandbag
-[E][060:OBNA#0742](__)punching bag
+[060:OBNA#0737](__)dörr
+[060:OBNA#0738](__)låda full med svärd
+[060:OBNA#0739](__)Norbert
+[060:OBNA#0740](__)Hubert
+[060:OBNA#0741](__)sandsäck
+[060:OBNA#0742](__)boxningssäck
 [E][061:OBNA#0743](__)path
 [E][061:VERB#0744](D8)She looks like she's meditating.
 [E][061:VERB#0744](D8)I don't think that would be wise.
@@ -3480,24 +3480,24 @@
 [E][061:SCRP#0139](14)I'll meet you at the dock.
 [E][061:SCRP#0139](14) 
 [E][061:SCRP#0139](14)I don't\255\001want that.
-[E][063:ENCD#0063](14)   DO THE MONKEY!!!
-[E][063:ENCD#0063](14)Back! Two-three-four!
-[E][063:ENCD#0063](14)Left! Two-three-four!
-[E][063:ENCD#0063](14)Right! Two-three-four!
-[E][063:ENCD#0063](14)Left! Two-three-four!
-[E][063:ENCD#0063](14)Right! Two-three-four!
-[E][063:ENCD#0063](14)Back! Two-three-four!
-[E][063:ENCD#0063](14)Right! Two-three-four!
-[E][063:ENCD#0063](14)Left!   Two-three-four!
-[E][063:ENCD#0063](14)Back!  Cha-cha-cha!
-[E][063:SCRP#0123](D8)I don't need to look at a map right now.
-[E][063:SCRP#0123](D8)I think I can find my way around the\255\001dock without using that.
-[E][063:SCRP#0123](D8)I don't want to whip it out in here...\255\003...someone might steal it.
-[E][063:SCRP#0123](D8)I don't need to look at a map right now.
-[E][063:SCRP#0123](D8)I don't want to get it wet.
-[E][063:SCRP#0123](D8)I don't need to look at a map right now.
-[E][063:SCRP#0123](D8)I think I've been had!\255\003This is no map!\255\003It looks like...
-[E][063:SCRP#0123](D8)...dancing lessons!
+[063:ENCD#0063](14)   GÖR APAN!!!
+[063:ENCD#0063](14)Bak! Två-tre-fyra!
+[063:ENCD#0063](14)Vänster! Två-tre-fyra!
+[063:ENCD#0063](14)Höger! Två-tre-fyra!
+[063:ENCD#0063](14)Vänster! Två-tre-fyra!
+[063:ENCD#0063](14)Höger! Två-tre-fyra!
+[063:ENCD#0063](14)Bak! Två-tre-fyra!
+[063:ENCD#0063](14)Höger! Två-tre-fyra!
+[063:ENCD#0063](14)Vänster!   Två-tre-fyra!
+[063:ENCD#0063](14)Bak!  Cha-cha-cha!
+[063:SCRP#0123](D8)Jag behöver inte titta på en karta just nu.
+[063:SCRP#0123](D8)Jag tror jag hittar runt\255\001kajen utan den.
+[063:SCRP#0123](D8)Jag vill inte plocka fram den här...\255\003...nån kanske stjäl den.
+[063:SCRP#0123](D8)Jag behöver inte titta på en karta just nu.
+[063:SCRP#0123](D8)Jag vill inte att den blir blöt.
+[063:SCRP#0123](D8)Jag behöver inte titta på en karta just nu.
+[063:SCRP#0123](D8)Jag tror jag blivit lurad!\255\003Det här är ingen karta!\255\003Det ser ut som...
+[063:SCRP#0123](D8)...danslektioner!
 [E][064:VERB#0749](D8)Hmmm...\255\003...looks like a big plus sign.\255\003What could that possibly mean?
 [E][064:VERB#0749](14) 
 [E][064:VERB#0749](D8)I'm not stupid enough to do that twice.
@@ -3523,10 +3523,10 @@
 [E][064:LSCR#0200](D8)Well, I guess I should put all this dirt back now.
 [E][064:LSCR#0200](14)More hours pass...
 [E][064:LSCR#0200](14) 
-[E][065:OBNA#0754](__)monkey head
-[E][065:OBNA#0755](__)cave
-[E][065:LSCR#0203](D8)I had a feeling that in hell there would be mushrooms.
-[E][065:LSCR#0203](14) 
+[065:OBNA#0754](__)aphuvud
+[065:OBNA#0755](__)grotta
+[065:LSCR#0203](D8)Jag hade en känsla av att det skulle finnas svampar i helvetet.
+[065:LSCR#0203](14) 
 [E][069:VERB#0767](D8)The second largest ear I've ever seen...\255\003...and also the dirtiest.\255\003Yech.
 [E][069:OBNA#0767](__)gigantic monkey ear
 [E][069:VERB#0765](D8)Definitely the second biggest monkey head I've ever seen!
@@ -4192,7 +4192,7 @@
 [E][085:LSCR#0202](93)Stinking Pirate
 [E][085:LSCR#0202](93)Bloodthirsty Pirate
 [E][085:LSCR#0202](93)Ugly Pirate
-[E][086:LSCR#0204](D8)\255\005\001\064
+[086:LSCR#0204](D8)\255\005\001\064
 [E][088:SCRP#0074](14)Player lost
 [E][088:SCRP#0074](14)Player won
 [E][088:SCRP#0074](94)I give up!  You win!
@@ -4405,7 +4405,7 @@
 [090:SCRP#0154](27)Nånting verkar inte stämma.
 [090:SCRP#0154](27)Oj då! Inte riktigt rätt.
 [090:SCRP#0154](27)Det är inte svaret jag får, tyvärr.
-[E][090:SCRP#0154](27)When was this pirate hanged in \255\007\033\000?
+[090:SCRP#0154](27)När hängdes den här piraten i \255\007\033\000?
 [090:SCRP#0154](27)Antigua
 [090:SCRP#0154](27)Barbados
 [090:SCRP#0154](27)Jamaica
