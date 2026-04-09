@@ -385,57 +385,57 @@
 [E][014:LSCR#0201](14) 
 [E][014:LSCR#0201](D8)I feel awful.
 [E][014:LSCR#0202](14)Fsspt.
-[E][014:LSCR#0202](14)Grrfk.
-[E][014:LSCR#0202](14)Psspert.
-[E][014:LSCR#0202](14)Aaak.
-[E][014:LSCR#0202](14)Blfftp.
-[E][014:SCRP#0108](D8)Yikes!
-[E][014:SCRP#0108](D8)I think I'm getting dizzy!
-[E][014:SCRP#0108](14)Overcome by the fumes and stench, Guybrush quickly loses consciousness.
-[E][014:SCRP#0108](14)Moments later the voodoo spell kicks in, turning the ship to an unknown heading and off on its mysterious voyage.
-[E][014:SCRP#0108](14)Days pass...\255\002
-[E][014:SCRP#0108](14) 
-[E][014:SCRP#0185](54)prize
-[E][015:OBNA#0170](__)footholds
-[E][015:OBNA#0178](__)gunpowder
-[E][015:OBNA#0177](__)dam
-[E][015:VERB#0179](D8)Oh, sure.  Walk to the sun.
-[E][015:VERB#0179](D8)I don't want to blind myself!
-[E][015:OBNA#0179](__)the sun
-[E][015:VERB#0231](D8)I'll take this flint, too.
-[E][015:VERB#0231](D8)I'll take this interesting rock, too.
-[E][015:OBNA#0231](__)note under rock
-[E][015:VERB#0169](D8)I'm no geologist, but judging by these conchoidal fractures...\255\003...I'd say this is a piece of flint!
-[E][015:VERB#0169](54)flint
-[E][015:VERB#0169](D8)As I said, it's flint.
-[E][015:VERB#0169](D8)I'll check out this note while I'm at it.
-[E][015:VERB#0169](D8)Flint works best with things made of steel.
-[E][015:OBNA#0169](__)rock on top of note
-[E][015:OBNA#0171](__)path to jungle
-[E][015:OBNA#0175](__)path to jungle
-[E][015:OBNA#0176](__)dam
-[E][015:ENCD#0015](D8)Boy, it sure is HOT here.
-[E][015:LSCR#0200](D8)It's too shady over here.
-[E][015:SCRP#0044](54)river
-[E][016:OBNA#0232](__)footholds
-[E][016:OBNA#0236](__)note
-[E][016:OBNA#0233](__)path down
-[E][016:VERB#0235](D8)It's either an incisive representation of the futility of man...\255\003...or it's a log and a couple of rocks.
-[E][016:OBNA#0235](__)primitive art
-[E][016:OBNA#0234](__)primitive art
-[E][016:LSCR#0200](D8)It won't go further.
-[E][016:SCRP#0157](D8)The ocean is pretty from here...
-[E][016:SCRP#0157](D8)...there's some debris to the right.
-[E][016:SCRP#0157](D8)...and there's my ship to the right.
-[E][016:SCRP#0157](D8)There's some floating debris where my ship used to be!
-[E][016:SCRP#0157](D8)Hey, I can see my ship from here!\255\003What a hunk of junk!
-[E][016:SCRP#0157](D8)There's some debris to the left...
-[E][016:SCRP#0157](D8)There's my ship to the left...
-[E][016:SCRP#0157](D8)...and the big tree on the beach to the right.
-[E][016:SCRP#0157](D8)I can see that big banana tree on the beach!
-[E][016:SCRP#0157](D8)Wow, what a jungle!\255\003There's the big banana tree on the beach to the left.
-[E][016:SCRP#0157](D8)The jungle's pretty thick...\255\003...all I can see is a bunch of animals eating each other!
-[E][016:SCRP#0157](D8)Hey, I can see the lookout on Mêlée Island®!\255\003He's looking right at me!
+[014:LSCR#0202](14)Grrfk.
+[014:LSCR#0202](14)Psspert.
+[014:LSCR#0202](14)Aaak.
+[014:LSCR#0202](14)Blfftp.
+[014:SCRP#0108](D8)Oj då!
+[014:SCRP#0108](D8)Jag tror jag blir yr!
+[014:SCRP#0108](14)Överväldigad av ångorna och stanken förlorar Guybrush snabbt medvetandet.
+[014:SCRP#0108](14)Ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
+[014:SCRP#0108](14)Dagar går...\255\002
+[014:SCRP#0108](14)
+[014:SCRP#0185](54)pris
+[015:OBNA#0170](__)fotfästen
+[015:OBNA#0178](__)krut
+[015:OBNA#0177](__)damm
+[015:VERB#0179](D8)Javisst. Gå mot solen.
+[015:VERB#0179](D8)Jag vill inte blända mig själv!
+[015:OBNA#0179](__)solen
+[015:VERB#0231](D8)Jag tar den här flintan också.
+[015:VERB#0231](D8)Jag tar den här intressanta stenen också.
+[015:OBNA#0231](__)lapp under sten
+[015:VERB#0169](D8)Jag är ingen geolog, men med tanke på de här konkoida sprickorna...\255\003...så skulle jag säga att det här är en bit flinta!
+[015:VERB#0169](54)flinta
+[015:VERB#0169](D8)Som sagt, det är flinta.
+[015:VERB#0169](D8)Jag kollar lappen medan jag ändå håller på.
+[015:VERB#0169](D8)Flinta fungerar bäst med saker gjorda av stål.
+[015:OBNA#0169](__)sten på lapp
+[015:OBNA#0171](__)stig till djungeln
+[015:OBNA#0175](__)stig till djungeln
+[015:OBNA#0176](__)damm
+[015:ENCD#0015](D8)Oj, vad VARMT det är här.
+[015:LSCR#0200](D8)Det är för skuggigt här.
+[015:SCRP#0044](54)flod
+[016:OBNA#0232](__)fotfästen
+[016:OBNA#0236](__)lapp
+[016:OBNA#0233](__)stig nedåt
+[016:VERB#0235](D8)Det är antingen en skarp skildring av människans meningslöshet...\255\003...eller så är det en stock och ett par stenar.
+[016:OBNA#0235](__)primitiv konst
+[016:OBNA#0234](__)primitiv konst
+[016:LSCR#0200](D8)Den går inte längre.
+[016:SCRP#0157](D8)Havet är vackert härifrån...
+[016:SCRP#0157](D8)...det finns lite vrakdelar till höger.
+[016:SCRP#0157](D8)...och där är mitt skepp till höger.
+[016:SCRP#0157](D8)Det finns flytande vrakdelar där mitt skepp brukade vara!
+[016:SCRP#0157](D8)Hej, jag kan se mitt skepp härifrån!\255\003Vilken skrothög!
+[016:SCRP#0157](D8)Det finns lite vrakdelar till vänster...
+[016:SCRP#0157](D8)Där är mitt skepp till vänster...
+[016:SCRP#0157](D8)...och det stora trädet på stranden till höger.
+[016:SCRP#0157](D8)Jag kan se det stora bananträdet på stranden!
+[016:SCRP#0157](D8)Wow, vilken djungel!\255\003Där är det stora bananträdet på stranden till vänster.
+[016:SCRP#0157](D8)Djungeln är ganska tät...\255\003...allt jag kan se är en massa djur som äter varandra!
+[016:SCRP#0157](D8)Hej, jag kan se utkiken på Mêlée Island®!\255\003Han tittar rakt på mig!
 [E][017:VERB#0237](D8)What I wouldn't give for a nice, big, water balloon right now.
 [E][017:OBNA#0237](__)ship deck
 [E][017:VERB#0238](D8)What a fine looking flag.\255\003Shivers me timbers just looking at it.
