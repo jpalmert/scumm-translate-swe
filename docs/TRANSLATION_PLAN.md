@@ -1,17 +1,23 @@
 # Translation Plan — The Secret of Monkey Island SE
-## Swedish Fan Translation
+## Swedish Translation Samples
 
 **Version:** 1.0  
-**Last updated:** 2026-04-08  
-**Scope:** `translation/monkey1/swedish.txt` — full fresh translation from English
+**Last updated:** 2026-04-09  
+**Scope:** `translation/monkey1/swedish.txt` — **sample translations** for demonstration and learning purposes
 
 ---
 
 ## Overview
 
-This document describes the multi-pass workflow Claude uses to produce the Swedish translation. The previous `monkeycd_swe` Swedish text is retired as source material; we produce a new translation from the extracted English source.
+**IMPORTANT: This is a SAMPLE translation project for educational/demonstration purposes only. We are NOT translating the complete game, only selected representative rooms and passages to demonstrate translation methodology.**
 
-The approach follows how professional game localizers work today: functional fidelity over literal fidelity, preserving humor and tone, with special attention to language-dependent jokes.
+This document describes the multi-pass workflow for producing Swedish translation samples. The approach follows how professional game localizers work today: functional fidelity over literal fidelity, preserving humor and tone, with special attention to language-dependent jokes.
+
+**Sample Selection Strategy:**
+- Representative rooms from different game areas
+- Key dialogue scenes showing character voices
+- Examples of different content types (objects, dialogue, puzzles, humor)
+- Challenging passages requiring creative translation
 
 **For technical details on file format, opcodes, and control codes, see `TRANSLATION_GUIDE.md`.**
 
@@ -40,6 +46,28 @@ The approach follows how professional game localizers work today: functional fid
 MI1 is a comedy game built on absurdist humor, pirate tropes, insult swordfighting, and fourth-wall breaks.
 
 **Always prioritize the joke over the literal meaning.** If a joke only works in English, create an equivalent Swedish joke.
+
+---
+
+## Translation Workflow
+
+**Simple Command-Based Approach:**
+
+1. **To start/continue:** User says "translate the next room" or "continue Pass 2"
+2. **Claude will:**
+   - Check the current pass's room list
+   - Find the first uncompleted room (unmarked checkbox)
+   - Translate all strings for that room
+   - Update the checkbox to [x] in this plan document
+   - Add translations to `swedish.txt` at the correct line numbers
+3. **User reviews** the translation for that room
+4. **User says** "translate the next room" to continue, or provides feedback for revisions
+
+**To specify a room:** "translate room 007" or "do room 010 next"
+
+**To skip ahead:** "start Pass 3" (moves to next pass section)
+
+**Progress tracking:** Each pass has a checklist. Check this file to see what's done.
 
 ---
 
@@ -72,52 +100,104 @@ The insult swordfighting system has paired strings: each insult has exactly one 
 
 ---
 
-### Pass 2 — Initial Translation: Act 1 (The Three Trials, Mêlée Island part 1)
-**Goal:** Translate all strings from rooms 001–025.  
-**Input:** English strings for rooms 001–025, `glossary.md`, `pun_inventory.md`  
-**Output:** Swedish strings appended to `translation/monkey1/swedish.txt`
+### Pass 2 — Sample Translation (Selected Rooms)
+**Goal:** Translate selected representative rooms as samples, one room at a time.  
+**Input:** English strings for each room, `glossary.md`, `pun_inventory.md`  
+**Output:** Swedish translation samples added to `translation/monkey1/swedish.txt`
 
-Covers: Lookout cliff, jungle, SCUMM Bar, shops, jail, Governor's mansion first visit.
+**Workflow:** User says "translate the next room" and Claude translates the next uncompleted room from this list.
+
+**Sample Room List:**
+
+- [x] Room 001
+- [ ] Room 002
+- [ ] Room 003
+- [ ] Room 004
+- [ ] Room 005
+- [ ] Room 006
+- [ ] Room 007
+- [ ] Room 008
+- [ ] Room 009
+- [ ] Room 010
+- [ ] Room 011
+- [ ] Room 012
+- [ ] Room 014
+- [ ] Room 015
+- [ ] Room 016
+- [ ] Room 017
+- [ ] Room 018
+- [ ] Room 019
+- [ ] Room 020
+- [ ] Room 021
+- [ ] Room 023
+- [ ] Room 025
+- [ ] Room 027
+- [ ] Room 028
+- [ ] Room 029
+- [ ] Room 030
+- [ ] Room 031
+- [ ] Room 032
+- [ ] Room 033
+- [ ] Room 034
+- [ ] Room 035
+- [ ] Room 036
+- [ ] Room 037
+- [ ] Room 038
+- [ ] Room 039
+- [ ] Room 040
+- [ ] Room 041
+- [ ] Room 042
+- [ ] Room 043
+- [ ] Room 044
+- [ ] Room 045
+- [ ] Room 048
+- [ ] Room 049
+- [ ] Room 051
+- [ ] Room 052
+- [ ] Room 053
+- [ ] Room 057
+- [ ] Room 058
+- [ ] Room 059
+- [ ] Room 060
+- [ ] Room 061
+- [ ] Room 063
+- [ ] Room 064
+- [ ] Room 065
+- [ ] Room 069
+- [ ] Room 070
+- [ ] Room 071
+- [ ] Room 072
+- [ ] Room 073
+- [ ] Room 074
+- [ ] Room 075
+- [ ] Room 077
+- [ ] Room 078
+- [ ] Room 079
+- [ ] Room 080
+- [ ] Room 081
+- [ ] Room 082
+- [ ] Room 083
+- [ ] Room 084
+- [ ] Room 085
+- [ ] Room 086
+- [x] Room 088
+- [ ] Room 089
+- [ ] Room 090
+- [ ] Room 096
+- [ ] Room 097
+
+**Legend:**
+- [E] ready = English text with [E] prefix already added (shows in git diff)
+- [x] = Translation complete
+
+**Purpose:**
+This is a complete reference list for planning translation work. NOT a commitment to translate all content — this is a planning document for future translators to track progress systematically.
+
+**Progress Tracking:** Mark rooms with [x] when translation is complete.
 
 ---
 
-### Pass 3 — Initial Translation: Act 2 (The Three Trials, Mêlée Island part 2)
-**Goal:** Translate all strings from rooms 026–050.  
-**Input:** English strings for rooms 026–050, `glossary.md`, `pun_inventory.md`  
-**Output:** Swedish strings appended to `translation/monkey1/swedish.txt`
-
-Covers: Sword training, store of phony goods, circus tent, church, Stan's ship lot, Carla/Otis/Meathook recruitment.
-
----
-
-### Pass 4 — Initial Translation: Act 3 (The Journey / Ship)
-**Goal:** Translate all strings from rooms 051–070.  
-**Input:** English strings for rooms 051–070, `glossary.md`, `pun_inventory.md`  
-**Output:** Swedish strings appended to `translation/monkey1/swedish.txt`
-
-Covers: The ship, crew quarters, ocean, arrival at Monkey Island.
-
----
-
-### Pass 5 — Initial Translation: Act 4 (Under Monkey Island)
-**Goal:** Translate all strings from rooms 071–099.  
-**Input:** English strings for rooms 071–099, `glossary.md`, `pun_inventory.md`  
-**Output:** Swedish strings appended to `translation/monkey1/swedish.txt`
-
-Covers: Monkey Island jungle, Stan's ghost ship, cannibal village, Herman Toothrot, underground.
-
----
-
-### Pass 6 — Initial Translation: Act 5 and global scripts
-**Goal:** Translate all remaining strings (rooms 100+, global SCRP resources).  
-**Input:** English strings for rooms 100+, `glossary.md`, `pun_inventory.md`  
-**Output:** Swedish strings appended to `translation/monkey1/swedish.txt`
-
-Covers: LeChuck's fortress, finale, all global cutscene scripts.
-
----
-
-### Pass 7 — Consistency Review
+### Pass 3 — Consistency Review
 **Goal:** Verify every object name, character name, and recurring phrase is used consistently throughout the entire file.  
 **Input:** Complete `translation/monkey1/swedish.txt`, `glossary.md`  
 **Output:** Corrections applied in-place; `glossary.md` updated with any new decisions
@@ -130,7 +210,7 @@ Check specifically:
 
 ---
 
-### Pass 8 — Pun and Wordplay Polish
+### Pass 4 — Pun and Wordplay Polish
 **Goal:** Review all flagged entries from `pun_inventory.md` in context, and improve any translations that feel awkward.  
 **Input:** `pun_inventory.md`, current `translation/monkey1/swedish.txt`  
 **Output:** Corrections applied in-place; `pun_inventory.md` annotated with resolution status
@@ -142,7 +222,7 @@ For each flagged string:
 
 ---
 
-### Pass 9 — Length Validation
+### Pass 5 — Length Validation
 **Goal:** Ensure no string exceeds 256 characters (SE hard limit).  
 **Input:** `translation/monkey1/swedish.txt`  
 **Output:** List of violations; shortened strings applied in-place
@@ -154,7 +234,7 @@ Flag any line where the text portion (after the `]`) exceeds 256 characters incl
 
 ---
 
-### Pass 10 — Final Read-Through
+### Pass 6 — Final Read-Through
 **Goal:** Read the whole translation as a playthrough, room by room. Catch anything that sounds robotic, inconsistent, or unfunny.  
 **Input:** Complete `translation/monkey1/swedish.txt`  
 **Output:** Final corrections applied in-place
