@@ -3133,263 +3133,263 @@
 [058:VERB#0689](D8)Den har en slående gul färg.
 [058:OBNA#0689](__)gult kronblad
 [058:LSCR#0200](D8)Jag tänker inte ge mig in i den här labyrintlika skogen utan en karta eller guide eller nåt.
-[E][059:VERB#0733](D8)It seems to be filled with some carbonated fluid.
-[E][059:OBNA#0733](__)root beer
-[E][059:VERB#0734](D8)He's big, ugly, mean, and about to hit me again.
-[E][059:OBNA#0734](__)LeChuck
-[E][059:VERB#0697](D8)Gee, maybe I should have bought this one...
-[E][059:VERB#0697](D8)Now that's a nice-looking vessel.
-[E][059:OBNA#0697](__)boat
-[E][059:VERB#0731](D8)`I sold a ship!  Can you believe it?\255\003I'm off on a long vacation spending some poor sucker's money!  Arrivederci, baby!`\255\003-Stan
-[E][059:VERB#0731](D8)WELCOME TO STAN'S PREVIOUSLY OWNED VESSELS!\255\003I'm off searching the globe right now for the finest in previously-owned marine transportation.\255\003Have a look around, I'll be right back!\255\003-Stan
-[E][059:VERB#0731](14) 
-[E][059:VERB#0731](D8)I'd better not.
-[E][059:OBNA#0731](__)sign
-[E][059:OBNA#0701](__)door
-[E][059:VERB#0692](D8)Gee, maybe I should have bought this one...
-[E][059:VERB#0692](D8)Cute, but small.
-[E][059:OBNA#0692](__)boat
-[E][059:OBNA#0698](__)path
-[E][059:VERB#0693](D8)Gee, maybe I should have bought this one...
-[E][059:VERB#0693](D8)Looks like one of those well-engineered imports.
-[E][059:OBNA#0693](__)boat
-[E][059:VERB#0696](D8)Gee, maybe I should have bought this one...
-[E][059:VERB#0696](D8)Dull, dull, dull.
-[E][059:OBNA#0696](__)boat
-[E][059:VERB#0702](D8)STAN'S PREVIOUSLY OWNED VESSELS\255\003`I won't shut up until I've made you a deal!`\255\001           -Stan
-[E][059:OBNA#0702](__)business card
-[E][059:VERB#0694](D8)It may not look like much, but it's mine.
-[E][059:VERB#0694](D8)I'm surprised this one is still afloat.
-[E][059:OBNA#0694](__)boat
-[E][059:VERB#0695](D8)Gee, maybe I should have bought this one...\255\003...nah.
-[E][059:VERB#0695](D8)Ah, a fixer-upper.
-[E][059:OBNA#0695](__)boat
-[E][059:VERB#0690](D8)Grog...\255\003Diet Grog...\255\003Cherry Grog...\255\003Grog Classic...\255\003Caffeine Free Grog...\255\003...and Root Beer.
-[E][059:VERB#0690](14) 
-[E][059:VERB#0690](D8)Pieces of eight are the preferred local currency.
-[E][059:VERB#0690](D8)There must be a more honest way to get some spare change.
-[E][059:OBNA#0690](__)grog machine
-[E][059:VERB#0691](D8)Gee, I wish I could have bought this one.
-[E][059:VERB#0691](D8)Spiffy.
-[E][059:OBNA#0691](__)boat
-[E][059:OBNA#0735](__)pieces of eight
-[E][059:OBNA#0736](__)pieces of eight
-[E][059:VERB#0732](D8)`When you set sail for good value, all winds blow towards Stan's!`\255\003(WARNING:  Contains strong magnet which may interfere with other navigational equipment.)
-[E][059:VERB#0732](14) 
-[E][059:VERB#0732](D8)I'm not sure, but I think it's pointing towards Mêlée Island®.
-[E][059:VERB#0732](D8)It's pointing towards Stan's.
-[E][059:OBNA#0732](__)magnetic compass
-[E][059:LSCR#0200](14)Rumble
-[E][059:LSCR#0200](14)Rumble
-[E][059:LSCR#0200](14)Rumble
-[E][059:LSCR#0200](D8)Hmpf.
-[E][059:LSCR#0200](D8)Nothing.
-[E][059:SCRP#0056](14)Howdy!
-[E][059:SCRP#0056](14)I just knew you'd be back!\255\003I knew you wouldn't be able to get that little beauty out of your mind!\255\003Come on.  Let's go take another look at her!
-[E][059:SCRP#0056](14) 
-[E][059:SCRP#0056](14)Great to see you again!\255\003I knew you'd come back!\255\003Everybody does!\255\003You know WHY they come back?
-[E][059:SCRP#0056](14)I'm Stan of Stan's Previously Owned Vessels.\255\003...and I'd stand on my head to make you a deal.
-[E][059:SCRP#0056](14)What sort of craft are you looking for?
-[E][059:SCRP#0056](14)Big?  
-[E][059:SCRP#0056](14)Little?  
-[E][059:SCRP#0056](14)Fast?  
-[E][059:SCRP#0056](14)Slow? 
-[E][059:SCRP#0056](14)You want it, I got it.
-[E][059:SCRP#0056](14)And if I don't got it, I'll get it.
-[E][059:SCRP#0056](14)I want to make you a deal that YOU'RE happy with.
-[E][059:SCRP#0056](14)Because if YOU'RE not happy, I'M not happy.
-[E][059:SCRP#0056](14)But I KNOW you're going to leave here happy today.\255\003How do I know?
-[E][059:SCRP#0056](14)Just look at all these ships!
-[E][059:SCRP#0056](14)I've got something for everyone!
-[E][059:SCRP#0056](14) 
-[E][059:SCRP#0056](14)Come take a look around!
-[E][059:SCRP#0056](14)So what else can I show you?
-[E][059:SCRP#0056](14)So tell me--\255\003What are you interested in looking at today?
-[E][059:SCRP#0056](FA)Let me see the best ship you've got.
-[E][059:SCRP#0056](FA)Uh... could I see that red one again?
-[E][059:SCRP#0056](FA)Something not too expensive, but built to last.
-[E][059:SCRP#0056](FA)Uh... could I see that Viking one again?
-[E][059:SCRP#0056](FA)I really don't have that much to spend.
-[E][059:SCRP#0056](FA)Uh... could I see that cheap one again?
-[E][059:SCRP#0056](FA)That spiffy blue one by your office looks nice.
-[E][059:SCRP#0056](FA)Uh... how much do you want for yours?
-[E][059:SCRP#0056](FA)Actually, I'd like to go think about it some more.
-[E][059:SCRP#0056](14)Hey, it's nice to meet a man who appreciates quality.
-[E][059:SCRP#0056](14)Affordable quality?\255\003Hey, that's my motto!
-[E][059:SCRP#0056](14)Have no fear!\255\003Every ship I sell is a bargain!\255\003But if you're looking for a real steal...
-[E][059:SCRP#0056](14)I've got JUST the boat for you!
-[E][059:SCRP#0056](14)I knew it!  I knew it!\255\003Just can't get her out of your mind, can you?
-[E][059:SCRP#0056](14)Sure, sure.\255\003You're obviously an educated guy who wants to make an educated decision.
-[E][059:SCRP#0056](14)Sure!\255\003No problemo!\255\003After all,\255\003I've got nothing better to do than haul my butt up and down this dock showing guys like you the same ships over and over again all day long!
-[E][059:SCRP#0056](14)Why not?  I got all day!
-[E][059:SCRP#0056](14)Walk this way.
-[E][059:SCRP#0056](14)Now this...
-[E][059:SCRP#0056](14)This is a ship fit for a king!\255\003I mean, we're talking fifteen staterooms--a fireplace in every one.\255\003We're talking two pools--one indoor, one outdoor.
-[E][059:SCRP#0056](14)We're talking rotating ballroom.\255\003We're talking heated crow's nest.\255\003We're talking two hundred feet of ocean-going decadence.\255\003And all for one low price.
-[E][059:SCRP#0056](14)Speaking of price...
-[E][059:SCRP#0056](14)Now here's a ship...
-[E][059:SCRP#0056](14)...that's definitely worth a second look.
-[E][059:SCRP#0056](14)Now, I can see you're a no-frills kind of guy.\255\003But I can also tell that quality means a lot to you.\255\003I mean, just look at the way you dress.
-[E][059:SCRP#0056](14)Rugged.  Like this baby.\255\003She comes from a land far to the North...\255\003...where the sea is as unforgiving as the men are tough and--
-[E][059:SCRP#0056](14)--hey, you wouldn't happen to be from there would you?\255\003You just seem to have a sort of Nordic quality about you...
-[E][059:SCRP#0056](14)Anyway, we're talking about a real value here...
-[E][059:SCRP#0056](14)Can't keep your eyes off her, can you?
-[E][059:SCRP#0056](14)This here is the famous `Sea Monkey.`\255\003--The only ship ever to make it to Monkey Island®...\255\003...and come back with anyone aboard left alive.
-[E][059:SCRP#0056](14)Or, should I say, anyTHING.\255\003You see, the previous owners of this ship were two adventurous pirates.\255\003They set off, like many before, to find the legendary Secret of Monkey Island®.
-[E][059:SCRP#0056](14)And, like many before, they disappeared forever.\255\003Their fate--a mystery.\255\003Almost as mysterious as how this ship returned to Mêlée Island® without a single human aboard.
-[E][059:SCRP#0056](14)Some claim it was sailed back by a crew of chimps.
-[E][059:SCRP#0056](D8)Chimps?  There aren't any chimps in the Caribbean!
-[E][059:SCRP#0056](14)Oh, shut up.  It makes a good story.
-[E][059:SCRP#0056](14)Anyway, this baby's mine now...
-[E][059:SCRP#0056](14)That is, until someone makes me an offer.
-[E][059:SCRP#0056](14)Hard to stay away from a good mystery, isn't it?
-[E][059:SCRP#0056](14)I told you, it's not for sale!\255\003Geeze, you're annoying...\255\003But, hey!\255\003So am I, right?
-[E][059:SCRP#0056](14)Of course it does.\255\003It's mine.\255\003And it's not for sale.
-[E][059:SCRP#0056](14)What ELSE can I show you?
-[E][059:SCRP#0056](14)How much would you like to spend?
-[E][059:SCRP#0056](14)Let's talk about money -- YOUR money.
-[E][059:SCRP#0056](14)Just how much were you looking to spend today?
-[E][059:SCRP#0056](14)What kind of price range were you thinking of?
-[E][059:SCRP#0056](FA)Money is no object!
-[E][059:SCRP#0056](FA)Actually, I was hoping to get one on credit.
-[E][059:SCRP#0056](FA)Oh... no more than \255\004\195\000 pieces of eight.
-[E][059:SCRP#0056](FA)Actually, I don't have any cash.
-[E][059:SCRP#0056](FA)All I have is this rubber chicken.
-[E][059:SCRP#0056](FA)I got credit from the storekeeper.  Will you take it?
-[E][059:SCRP#0056](FA)On second thought, this may not be the ship for me.
-[E][059:SCRP#0056](14)Well, it is with me.  How much you got?
-[E][059:SCRP#0056](14)Sorry, kid.
-[E][059:SCRP#0056](14)Neither a borrower nor a lender be.
-[E][059:SCRP#0056](14)That's just old Stan's philosophy.
-[E][059:SCRP#0056](14)If you've got a job, the storekeeper in town might extend you some credit.
-[E][059:SCRP#0056](14)Then we'd have something to talk about.
-[E][059:SCRP#0056](14)Unless, of course, you've already got some other means of financing...?
-[E][059:SCRP#0056](14)No cash?\255\003No problem!
-[E][059:SCRP#0056](14)I think we must be talking about completely different ships here.\255\003You've obviously been out of the ship market for quite some time.
-[E][059:SCRP#0056](14)I'm glad this ship doesn't have ears, my friend.\255\003Because if she did, she'd slap your face.
-[E][059:SCRP#0056](14)Look...\255\003This is a very reasonably priced ship...\255\003but not that reasonable.
-[E][059:SCRP#0056](14)I don't think you've got the cash for this transaction either.\255\003You do have SOME other means of payment...\255\003Don't you?
-[E][059:SCRP#0056](14)I doubt you're carrying enough cash on you for this transaction.
-[E][059:SCRP#0056](14)You wouldn't happen to have any OTHER means of finance, would you?
-[E][059:SCRP#0056](14)Is it one of those rubber chickens with a pulley in the middle?\255\003I already got one of those.
-[E][059:SCRP#0056](14)I'd love to.\255\003I really would.\255\003I USUALLY do.\255\003But not for the amount this baby's going to run you.
-[E][059:SCRP#0056](14)Maybe one of the other ships would be more in your price range.
-[E][059:SCRP#0056](14)Hey, of course!\255\003Your credit's always good at Stan's...\255\003It doesn't matter if you've had credit problems in the past...
-[E][059:SCRP#0056](14)Divorce...
-[E][059:SCRP#0056](14)Bankruptcy...
-[E][059:SCRP#0056](14)Chronic gambling mishaps...\255\003I mean, who am I to judge, right?
-[E][059:SCRP#0056](14)If the storekeeper trusts you enough to give you a letter of credit...\255\003...then you must be an honest man with a steady income, right?
-[E][059:SCRP#0056](D8)Uh... right.
-[E][059:SCRP#0056](14)Well heck, I can understand that.\255\003Nothing wrong with being indecisive.\255\003Even if it is a waste of my time.
-[E][059:SCRP#0056](14)Okay, but I got five other guys coming to look at this baby today.\255\003Don't count on it being here if you change your mind.
-[E][059:SCRP#0056](14)Of course it isn't!\255\003You're looking for a much bigger boat, I can tell.
-[E][059:SCRP#0056](14)Okay, but I tell you, I got a feeling...\255\003...you're going to leave here today with a new previously-owned vessel!
-[E][059:SCRP#0056](14)Sure, sure.  Think it over.\255\003I don't want you to feel pressured or anything.
-[E][059:SCRP#0056](14)Bye now.
-[E][059:SCRP#0056](14)Did I already give you my card?\255\003Here.\255\003I'd better give you another one just in case.
-[E][059:SCRP#0056](94)No, no, no.  I've got plenty, really.
-[E][059:SCRP#0056](14)Suit yourself.\255\003Just don't forget my name:\255\003STAN!!!
-[E][059:SCRP#0056](D8)Don't worry.  I won't.
-[E][059:SCRP#0056](D8)Thanks.
-[E][059:SCRP#0056](14)I forgot to give you my card.
-[E][059:SCRP#0056](14)...and here's something else to remember me by.
-[E][059:SCRP#0056](D8)A compass?
-[E][059:SCRP#0056](14)An extra strong magnetic compass--
-[E][059:SCRP#0056](D8)With your picture on it...
-[E][059:SCRP#0056](14)That's right!\255\003It always points directly back here, so if you're looking for a good deal, you know where to go!
-[E][059:SCRP#0056](14)I'll be right here when you come back,\255\003But I can't guarantee that any of these ships will!
-[E][059:SCRP#0056](D8)Right.
-[E][059:SCRP#0056](14)They're moving fast today!
-[E][059:SCRP#0056](14)Yessiree...\255\003Can't hardly keep anything in stock.
-[E][059:SCRP#0056](14)He'll be back.
-[E][059:SCRP#0056](14)Let's get down to brass tacks, shall we?
-[E][059:SCRP#0056](14)Pretty soon you're going to have to make me a serious offer, you know.
-[E][059:SCRP#0056](14)I know you want it...\255\003...you know you want it...\255\003...and I know that you know that I want to sell it, so...
-[E][059:SCRP#0056](14)I'm going to be getting a whole new shipment next week, so you got me over a barrel.\255\003I've GOT to sell this baby, even if it means losing my shirt.
-[E][059:SCRP#0056](14)Just tell me, what would it take to get you to sail this ship away...\255\003TODAY?
-[E][059:SCRP#0056](14)You realize, don't you, that they just don't make them like this anymore.
-[E][059:SCRP#0056](14)Buddy, you can tell me the truth.\255\003It's the little woman, isn't it?\255\003You're afraid of what she'll say when you come home with a new ship.\255\003Don't be such a wimp!
-[E][059:SCRP#0056](14)Stand up to her!\255\003She'll respect you for it.\255\003And when she sees this ship...\255\003...she'll LOVE you for it.\255\003Trust me.
-[E][059:SCRP#0056](14)I don't understand.  I THOUGHT you were interested in this ship.
-[E][059:SCRP#0056](14)I'd let you take it for a little spin around the harbor, but our insurance company won't let us.
-[E][059:SCRP#0056](14)I'm on your side, buddy.\255\003It's my boss that's the real miser.
-[E][059:SCRP#0056](14)Maybe you haven't realized the fact that this is the only ship lot on the island.
-[E][059:SCRP#0056](14)I'm just thinking of my kid's education fund, here.
-[E][059:SCRP#0056](FA)Let's talk extras.
-[E][059:SCRP#0056](FA)I'd like to make you an offer.
-[E][059:SCRP#0056](FA)Well, what do you think it's worth?
-[E][059:SCRP#0056](FA)Forget it.  I don't need this boat anyway.
-[E][059:SCRP#0056](14)Extras?\255\003You want to talk extras?\255\003Great!  This baby's LOADED with extras!\255\003For instance...
-[E][059:SCRP#0056](14)Did I tell you about the porthole defoggers?
-[E][059:SCRP#0056](14)Did I tell you about the anti-lock anchor?
-[E][059:SCRP#0056](14)Did I tell you about the rack-and-pinion rudder?
-[E][059:SCRP#0056](14)Did I tell you about the velour sail covers?
-[E][059:SCRP#0056](14)Did I tell you about the tack-o-meter?
-[E][059:SCRP#0056](14)Did I tell you about the elevator made with wood from burgundy wine casks?
-[E][059:SCRP#0056](14)Did I tell you about the simulated wood siding?
-[E][059:SCRP#0056](FA)Gee, Stan, that does sound useful.
-[E][059:SCRP#0056](FA)I think I can live without that particular piece of junk.
-[E][059:SCRP#0056](FA)Enough about extras, already.
-[E][059:SCRP#0056](14)And well worth the money, too.
-[E][059:SCRP#0056](14)That's why it's already included in the price!
-[E][059:SCRP#0056](14)I knew you'd eventually see things my way.
-[E][059:SCRP#0056](14)Okay, but don't blame me if you run into an iceberg or something.
-[E][059:SCRP#0056](14)Sure, throw safety to the wind.
-[E][059:SCRP#0056](14)Well, I guess it'll float without it...\255\003...barely.
-[E][059:SCRP#0056](14)Hey, travel light, I can understand that, sure.\255\003Of course, mutiny is an ugly word...
-[E][059:SCRP#0056](14)Wow, does your wife know you're such a cheapskate?
-[E][059:SCRP#0056](14)Yeah, I guess that IS kind of decadent, isn't it?
-[E][059:SCRP#0056](14)Okay, but I'm telling you:\255\003Barnacles HATE simulated wood.
-[E][059:SCRP#0056](14)Okay, where were we...
-[E][059:SCRP#0056](14)But wait, there's more!
-[E][059:SCRP#0056](14)Great!
-[E][059:SCRP#0056](14)How much?
-[E][059:SCRP#0056](FA)I'd like to pay 2000 pieces of eight.
-[E][059:SCRP#0056](FA)I'd still like to pay 2000.
-[E][059:SCRP#0056](FA)How does 3000 pieces of eight sound?
-[E][059:SCRP#0056](FA)Does 3000 sound any better now?
-[E][059:SCRP#0056](FA)Okay, okay.  4000 pieces of eight.
-[E][059:SCRP#0056](FA)Did I already say 4000 pieces of eight?
-[E][059:SCRP#0056](FA)All right!  5000!  But that's my final offer!
-[E][059:SCRP#0056](FA)5000!   And that's my FINAL final offer.
-[E][059:SCRP#0056](FA)Actually, I'd like you to squirm a little more.
-[E][059:SCRP#0056](14)Sure.  Hey!\255\003That's my job, isn't it?
-[E][059:SCRP#0056](14)That's still not enough money.\255\003Inflation works in the other direction, you know.
-[E][059:SCRP#0056](14)Sure, I guess we can start out at the bottom.\255\003I got all day.
-[E][059:SCRP#0056](14)That's a little bit more like it...\255\003...but not much.
-[E][059:SCRP#0056](14)I think we're working in the wrong direction, here.
-[E][059:SCRP#0056](14)I know you can try harder than that.
-[E][059:SCRP#0056](14)TWO THOUSAND LOUSY PIECES OF EIGHT!?!
-[E][059:SCRP#0056](14)Three thousand pieces of eight!?!
-[E][059:SCRP#0056](14)Four thousand pieces of eight!?!
-[E][059:SCRP#0056](14)Five thousand pieces of eight?!?
-[E][059:SCRP#0056](14)You could sail this puppy away TODAY, for just \255\004\203\000 pieces of eight.\255\003How does that sound to you?
-[E][059:SCRP#0056](14)Fine.\255\003Be that way.\255\003See if I care.
-[E][059:SCRP#0056](14)Now, wait a second!
-[E][059:SCRP#0056](14)Don't go away mad.
-[E][059:SCRP#0056](14)I'm sure we can work something out.
-[E][059:SCRP#0056](FA)Well, maybe you're right...
-[E][059:SCRP#0056](FA)Sorry, Stan.  I'm outta here.
-[E][059:SCRP#0056](14)Of course I am.\255\003Now, where were we?\255\003Oh yeah.
-[E][059:SCRP#0056](14)Okay!  Okay!\255\003It's killing me, but okay!
-[E][059:SCRP#0056](14)And I thought I was going to give my children Christmas presents this year...
-[E][059:SCRP#0056](14)Just take it out of here.
-[E][059:SCRP#0056](14)I'm GLAD to get rid of it.
-[E][059:SCRP#0056](14)Oh yeah, do you have that note from the storekeeper on you?
-[E][059:SCRP#0056](14)Thanks.
-[E][059:SCRP#0056](14)And here's something for you to remember me by.
-[E][059:SCRP#0056](D8)A compass?
-[E][059:SCRP#0056](14)An extra strong magnetic compass--
-[E][059:SCRP#0056](D8)With your picture on it...
-[E][059:SCRP#0056](14)That's right!\255\003It always points directly back here, so if you're looking for a good deal, you know where to go!
-[E][059:SCRP#0056](14)I've got to run these numbers by my boss... ...he'll think I'm nuts, but I'll talk him into it.
-[E][059:SCRP#0056](14)You meet me at the dock with your crew.\255\003I'll bring the ship and the papers.
-[E][059:SCRP#0056](14)I just want to say that I really feel like we got to know each other today.\255\003I mean, I really felt some bonding here.\255\003And I don't just say that to everybody!
-[E][059:SCRP#0056](14)It's been great doing business with you.\255\003Really.
-[E][059:SCRP#0056](14)(Sucker.)
-[E][059:SCRP#0056](14)See you at the dock, and don't forget your crew.\255\003All three of them.
-[E][059:SCRP#0056](14) 
-[E][059:SCRP#0056](54)The Sea Monkey
+[059:VERB#0733](D8)Den verkar vara fylld med nån kolsyrad vätska.
+[059:OBNA#0733](__)rotöl
+[059:VERB#0734](D8)Han är stor, ful, elak, och på väg att slå mig igen.
+[059:OBNA#0734](__)LeChuck
+[059:VERB#0697](D8)Jösses, kanske jag borde ha köpt den här...
+[059:VERB#0697](D8)Det där är ett snyggt fartyg.
+[059:OBNA#0697](__)båt
+[059:VERB#0731](D8)`Jag sålde ett skepp! Kan ni tänka er det?\255\003Jag drar på en lång semester och spenderar nån stackars idiot pengar! Arrivederci, baby!`\255\003-Stan
+[059:VERB#0731](D8)VÄLKOMMEN TILL STANS BEGAGNADE FARTYG!\255\003Jag är ute och söker jordklotet just nu efter de finaste begagnade marina transportmedlen.\255\003Titta runt, jag är strax tillbaka!\255\003-Stan
+[059:VERB#0731](14) 
+[059:VERB#0731](D8)Bättre att låta bli.
+[059:OBNA#0731](__)skylt
+[059:OBNA#0701](__)dörr
+[059:VERB#0692](D8)Jösses, kanske jag borde ha köpt den här...
+[059:VERB#0692](D8)Söt, men liten.
+[059:OBNA#0692](__)båt
+[059:OBNA#0698](__)stig
+[059:VERB#0693](D8)Jösses, kanske jag borde ha köpt den här...
+[059:VERB#0693](D8)Ser ut som en av de där välkonstruerade importerna.
+[059:OBNA#0693](__)båt
+[059:VERB#0696](D8)Jösses, kanske jag borde ha köpt den här...
+[059:VERB#0696](D8)Tråkig, tråkig, tråkig.
+[059:OBNA#0696](__)båt
+[059:VERB#0702](D8)STANS BEGAGNADE FARTYG\255\003`Jag håller inte käften förrän jag gjort en deal!`\255\001           -Stan
+[059:OBNA#0702](__)visitkort
+[059:VERB#0694](D8)Den kanske inte ser ut som mycket, men den är min.
+[059:VERB#0694](D8)Jag är förvånad att den fortfarande flyter.
+[059:OBNA#0694](__)båt
+[059:VERB#0695](D8)Jösses, kanske jag borde ha köpt den här...\255\003...nä.
+[059:VERB#0695](D8)Ah, ett renoveringsobjekt.
+[059:OBNA#0695](__)båt
+[059:VERB#0690](D8)Grog...\255\003Dietgrog...\255\003Körsbärsgrog...\255\003Grog Classic...\255\003Koffeinfri grog...\255\003...och Rotöl.
+[059:VERB#0690](14) 
+[059:VERB#0690](D8)Åttor är den föredragna lokala valutan.
+[059:VERB#0690](D8)Det måste finnas ett mer hederligt sätt att få ihop lite småpengar.
+[059:OBNA#0690](__)grogautomat
+[059:VERB#0691](D8)Jösses, jag önskar att jag kunnat köpa den här.
+[059:VERB#0691](D8)Stilig.
+[059:OBNA#0691](__)båt
+[059:OBNA#0735](__)åttor
+[059:OBNA#0736](__)åttor
+[059:VERB#0732](D8)`När du sätter segel mot bra värde blåser alla vindar mot Stans!`\255\003(VARNING: Innehåller stark magnet som kan störa annan navigationsutrustning.)
+[059:VERB#0732](14) 
+[059:VERB#0732](D8)Jag är inte säker, men jag tror den pekar mot Mêlée Island®.
+[059:VERB#0732](D8)Den pekar mot Stans.
+[059:OBNA#0732](__)magnetisk kompass
+[059:LSCR#0200](14)Dunder
+[059:LSCR#0200](14)Dunder
+[059:LSCR#0200](14)Dunder
+[059:LSCR#0200](D8)Hmpf.
+[059:LSCR#0200](D8)Ingenting.
+[059:SCRP#0056](14)Tjena!
+[059:SCRP#0056](14)Jag visste att du skulle komma tillbaka!\255\003Jag visste att du inte kunde få den lilla skönheten ur tankarna!\255\003Kom igen. Vi tar en titt till!
+[059:SCRP#0056](14) 
+[059:SCRP#0056](14)Kul att se dig igen!\255\003Jag visste att du skulle komma tillbaka!\255\003Alla gör det!\255\003Vet du VARFÖR dom kommer tillbaka?
+[059:SCRP#0056](14)Jag är Stan från Stans Begagnade Fartyg.\255\003...och jag skulle ställa mig på huvudet för att göra en deal med dig.
+[059:SCRP#0056](14)Vilken sorts farkost letar du efter?
+[059:SCRP#0056](14)Stor?  
+[059:SCRP#0056](14)Liten?  
+[059:SCRP#0056](14)Snabb?  
+[059:SCRP#0056](14)Långsam? 
+[059:SCRP#0056](14)Du vill ha det, jag har det.
+[059:SCRP#0056](14)Och om jag inte har det, skaffar jag det.
+[059:SCRP#0056](14)Jag vill ge dig en deal som DU är nöjd med.
+[059:SCRP#0056](14)För om DU inte är nöjd är inte JAG nöjd.
+[059:SCRP#0056](14)Men jag VET att du kommer härifrån glad idag.\255\003Hur vet jag det?
+[059:SCRP#0056](14)Titta bara på alla dessa skepp!
+[059:SCRP#0056](14)Jag har nåt för alla!
+[059:SCRP#0056](14) 
+[059:SCRP#0056](14)Kom och titta runt!
+[059:SCRP#0056](14)Så vad mer kan jag visa dig?
+[059:SCRP#0056](14)Så berätta--\255\003Vad är du intresserad av att titta på idag?
+[059:SCRP#0056](FA)Låt mig se det bästa skeppet du har.
+[059:SCRP#0056](FA)Öh... kan jag se den röda igen?
+[059:SCRP#0056](FA)Nåt som inte är för dyrt, men byggt för att hålla.
+[059:SCRP#0056](FA)Öh... kan jag se den där vikingabåten igen?
+[059:SCRP#0056](FA)Jag har egentligen inte så mycket att spendera.
+[059:SCRP#0056](FA)Öh... kan jag se den billiga igen?
+[059:SCRP#0056](FA)Den snygga blåa vid ditt kontor ser fin ut.
+[059:SCRP#0056](FA)Öh... hur mycket vill du ha för din?
+[059:SCRP#0056](FA)Egentligen vill jag gå och tänka på det lite till.
+[059:SCRP#0056](14)Hej, det är kul att träffa en man som uppskattar kvalitet.
+[059:SCRP#0056](14)Prisvärd kvalitet?\255\003Hej, det är mitt motto!
+[059:SCRP#0056](14)Var inte rädd!\255\003Varje skepp jag säljer är ett fynd!\255\003Men om du letar efter ett riktigt kap...
+[059:SCRP#0056](14)Jag har PRECIS rätt båt åt dig!
+[059:SCRP#0056](14)Jag visste det! Jag visste det!\255\003Kan bara inte sluta tänka på henne, va?
+[059:SCRP#0056](14)Visst, visst.\255\003Du är uppenbarligen en bildad man som vill fatta ett genomtänkt beslut.
+[059:SCRP#0056](14)Visst!\255\003Inga problem!\255\003Trots allt\255\003har jag inget bättre för mig än att släpa rumpan upp och ner på den här kajen och visa killar som dig samma skepp om och om igen hela dan!
+[059:SCRP#0056](14)Varför inte? Jag har hela dan!
+[059:SCRP#0056](14)Kom med här.
+[059:SCRP#0056](14)Nu det här...
+[059:SCRP#0056](14)Det här är ett skepp värdigt en kung!\255\003Vi pratar femton hytter--en öppen spis i varje.\255\003Vi pratar två pooler--en inomhus, en utomhus.
+[059:SCRP#0056](14)Vi pratar roterande balsal.\255\003Vi pratar uppvärmt utkiksnäste.\255\003Vi pratar tvåhundra fot oceansgående dekadens.\255\003Och allt för ett lågt pris.
+[059:SCRP#0056](14)Apropå pris...
+[059:SCRP#0056](14)Nu har vi ett skepp...
+[059:SCRP#0056](14)...som definitivt är värt en andra titt.
+[059:SCRP#0056](14)Jag ser att du är en man utan krusiduller.\255\003Men jag kan också se att kvalitet betyder mycket för dig.\255\003Titta bara på hur du klär dig.
+[059:SCRP#0056](14)Robust. Precis som den här skönheten.\255\003Hon kommer från ett land långt i norr...\255\003...där havet är lika obarmhärtigt som männen är tuffa och--
+[059:SCRP#0056](14)--hörru, du råkar inte vara därifrån?\255\003Du verkar ha en sorts nordisk kvalitet över dig...
+[059:SCRP#0056](14)Hur som helst, vi pratar riktigt värde här...
+[059:SCRP#0056](14)Kan inte sluta titta på henne, va?
+[059:SCRP#0056](14)Det här är den berömda `Sjöapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island®...\255\003...och kommit tillbaka med nån ombord vid liv.
+[059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands® hemlighet.
+[059:SCRP#0056](14)Och, som många före dom, försvann dom för alltid.\255\003Deras öde--ett mysterium.\255\003Nästan lika mystiskt som hur det här skeppet återvände till Mêlée Island® utan en enda människa ombord.
+[059:SCRP#0056](14)Vissa påstår att det seglades tillbaka av en besättning av schimpanser.
+[059:SCRP#0056](D8)Schimpanser? Det finns inga schimpanser i Karibien!
+[059:SCRP#0056](14)Åh, håll käften. Det blir en bra historia.
+[059:SCRP#0056](14)Hur som helst, den här skönheten är min nu...
+[059:SCRP#0056](14)Det vill säga, tills nån ger mig ett bud.
+[059:SCRP#0056](14)Svårt att hålla sig borta från ett bra mysterium, va?
+[059:SCRP#0056](14)Jag sa ju, den är inte till salu!\255\003Herregud, vad du är jobbig...\255\003Men, hej!\255\003Det är jag med, va?
+[059:SCRP#0056](14)Klart den gör.\255\003Den är min.\255\003Och den är inte till salu.
+[059:SCRP#0056](14)Vad MER kan jag visa dig?
+[059:SCRP#0056](14)Hur mycket vill du spendera?
+[059:SCRP#0056](14)Låt oss prata pengar -- DINA pengar.
+[059:SCRP#0056](14)Hur mycket hade du tänkt spendera idag?
+[059:SCRP#0056](14)Vilken prisklass tänkte du dig?
+[059:SCRP#0056](FA)Pengar spelar ingen roll!
+[059:SCRP#0056](FA)Egentligen hoppades jag på att köpa på kredit.
+[059:SCRP#0056](FA)Åh... inte mer än \255\004\195\000 åttor.
+[059:SCRP#0056](FA)Egentligen har jag inga kontanter.
+[059:SCRP#0056](FA)Allt jag har är den här gummikycklingen.
+[059:SCRP#0056](FA)Jag fick kredit från handlaren. Tar du emot det?
+[059:SCRP#0056](FA)Vid närmare eftertanke kanske det här inte är skeppet för mig.
+[059:SCRP#0056](14)Tja, det gör det med mig. Hur mycket har du?
+[059:SCRP#0056](14)Tyvärr, grabben.
+[059:SCRP#0056](14)Varken lånare eller långivare skall du vara.
+[059:SCRP#0056](14)Det är gamla Stans filosofi.
+[059:SCRP#0056](14)Om du har ett jobb kanske handlaren i stan kan ge dig lite kredit.
+[059:SCRP#0056](14)Då har vi nåt att prata om.
+[059:SCRP#0056](14)Om du inte redan har nån annan finansiering förstås...?
+[059:SCRP#0056](14)Inga kontanter?\255\003Inga problem!
+[059:SCRP#0056](14)Jag tror vi pratar om helt olika skepp här.\255\003Du har uppenbarligen varit borta från skeppsmarknaden ett tag.
+[059:SCRP#0056](14)Jag är glad att det här skeppet inte har öron, kompansen.\255\003För om hon hade det skulle hon smälla till dig.
+[059:SCRP#0056](14)Hörru...\255\003Det här är ett väldigt rimligt prissatt skepp...\255\003men inte SÅ rimligt.
+[059:SCRP#0056](14)Jag tror inte du har kontanter nog för den här affären heller.\255\003Du har väl NÅN annan betalningsform...\255\003Eller?
+[059:SCRP#0056](14)Jag tvivlar på att du har nog med kontanter för den här affären.
+[059:SCRP#0056](14)Du har inte nån ANNAN finansiering, råkar du?
+[059:SCRP#0056](14)Är det en av de där gummikycklingarna med en talja i mitten?\255\003Jag har redan en sån.
+[059:SCRP#0056](14)Det vill jag gärna.\255\003Det vill jag verkligen.\255\003Det gör jag VANLIGTVIS.\255\003Men inte för summan det här skeppet kommer kosta.
+[059:SCRP#0056](14)Kanske nåt av de andra skeppen passar din prisklass bättre.
+[059:SCRP#0056](14)Hej, klart!\255\003Din kredit är alltid bra hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
+[059:SCRP#0056](14)Skilsmässa...
+[059:SCRP#0056](14)Konkurs...
+[059:SCRP#0056](14)Kroniska spelförluster...\255\003Jag menar, vem är jag att döma, va?
+[059:SCRP#0056](14)Om handlaren litar på dig nog att ge dig ett kreditbrev...\255\003...då måste du vara en hederlig man med stadig inkomst, va?
+[059:SCRP#0056](D8)Öh... just det.
+[059:SCRP#0056](14)Tja, jag förstår det.\255\003Det är inget fel med att vara obeslutsam.\255\003Även om det är slöseri med min tid.
+[059:SCRP#0056](14)Okej, men jag har fem andra killar som kommer för att titta på den idag.\255\003Räkna inte med att den finns kvar om du ändrar dig.
+[059:SCRP#0056](14)Klart den inte är det!\255\003Du letar efter en mycket större båt, det kan jag se.
+[059:SCRP#0056](14)Okej, men jag säger dig, jag har en känsla...\255\003...du kommer härifrån idag med ett nytt begagnat fartyg!
+[059:SCRP#0056](14)Visst, visst. Tänk på saken.\255\003Jag vill inte att du ska känna dig pressad eller nåt.
+[059:SCRP#0056](14)Hejdå.
+[059:SCRP#0056](14)Har jag redan gett dig mitt kort?\255\003Här.\255\003Jag ger dig ett till för säkerhets skull.
+[059:SCRP#0056](94)Nej, nej, nej. Jag har gott om dem, verkligen.
+[059:SCRP#0056](14)Som du vill.\255\003Glöm bara inte mitt namn:\255\003STAN!!!
+[059:SCRP#0056](D8)Oroa dig inte. Det gör jag inte.
+[059:SCRP#0056](D8)Tack.
+[059:SCRP#0056](14)Jag glömde ge dig mitt kort.
+[059:SCRP#0056](14)...och här är nåt mer att minnas mig med.
+[059:SCRP#0056](D8)En kompass?
+[059:SCRP#0056](14)En extra stark magnetisk kompass--
+[059:SCRP#0056](D8)Med din bild på den...
+[059:SCRP#0056](14)Just det!\255\003Den pekar alltid rakt tillbaka hit, så om du letar efter en bra deal vet du var du ska gå!
+[059:SCRP#0056](14)Jag kommer vara här när du kommer tillbaka,\255\003Men jag kan inte garantera att nåt av dessa skepp kommer vara det!
+[059:SCRP#0056](D8)Just det.
+[059:SCRP#0056](14)Dom säljer snabbt idag!
+[059:SCRP#0056](14)Jovisst...\255\003Kan knappt ha kvar nåt i lager.
+[059:SCRP#0056](14)Han kommer tillbaka.
+[059:SCRP#0056](14)Låt oss komma till saken, va?
+[059:SCRP#0056](14)Snart måste du ge mig ett seriöst bud, vet du.
+[059:SCRP#0056](14)Jag vet att du vill ha det...\255\003...du vet att du vill ha det...\255\003...och jag vet att du vet att jag vill sälja det, så...
+[059:SCRP#0056](14)Jag får en helt ny leverans nästa vecka, så du har mig i ett trångt läge.\255\003Jag MÅSTE sälja den här skönheten, även om det betyder att jag förlorar skjortan.
+[059:SCRP#0056](14)Berätta bara, vad krävs för att få dig att segla iväg med det här skeppet...\255\003IDAG?
+[059:SCRP#0056](14)Du inser väl att dom inte bygger dom så här längre.
+[059:SCRP#0056](14)Kompansen, du kan berätta sanningen.\255\003Det är frugan, va?\255\003Du är rädd för vad hon säger när du kommer hem med ett nytt skepp.\255\003Var inte så vek!
+[059:SCRP#0056](14)Stå på dig!\255\003Hon kommer respektera dig för det.\255\003Och när hon ser det här skeppet...\255\003...kommer hon ÄLSKA dig för det.\255\003Lita på mig.
+[059:SCRP#0056](14)Jag förstår inte. Jag TRODDE du var intresserad av det här skeppet.
+[059:SCRP#0056](14)Jag skulle låta dig ta en liten sväng i hamnen, men vårt försäkringsbolag tillåter det inte.
+[059:SCRP#0056](14)Jag är på din sida, kompansen.\255\003Det är min chef som är den riktiga snåljåpen.
+[059:SCRP#0056](14)Du kanske inte har insett att det här är den enda skeppshandeln på ön.
+[059:SCRP#0056](14)Jag tänker bara på mina barns utbildningsfond, här.
+[059:SCRP#0056](FA)Låt oss prata tillval.
+[059:SCRP#0056](FA)Jag vill ge dig ett bud.
+[059:SCRP#0056](FA)Nå, vad tycker du den är värd?
+[059:SCRP#0056](FA)Glöm det. Jag behöver inte den här båten ändå.
+[059:SCRP#0056](14)Tillval?\255\003Du vill prata tillval?\255\003Toppen! Den här skönheten är FULLPACKAD med tillval!\255\003Till exempel...
+[059:SCRP#0056](14)Berättade jag om avimningen av ventilerna?
+[059:SCRP#0056](14)Berättade jag om ankaret med låsningsfria bromsar?
+[059:SCRP#0056](14)Berättade jag om kuggstångsrodret?
+[059:SCRP#0056](14)Berättade jag om veloursegelskydden?
+[059:SCRP#0056](14)Berättade jag om stagvändningsmätaren?
+[059:SCRP#0056](14)Berättade jag om hissen gjord i trä från burgundiska vinfat?
+[059:SCRP#0056](14)Berättade jag om den imiterade träpanelen?
+[059:SCRP#0056](FA)Jösses, Stan, det låter faktiskt användbart.
+[059:SCRP#0056](FA)Jag tror jag klarar mig utan just det skräpet.
+[059:SCRP#0056](FA)Nog om tillval nu.
+[059:SCRP#0056](14)Och väl värt pengarna också.
+[059:SCRP#0056](14)Därför ingår det redan i priset!
+[059:SCRP#0056](14)Jag visste att du till slut skulle se saker på mitt sätt.
+[059:SCRP#0056](14)Okej, men klandra inte mig om du kör in i ett isberg eller nåt.
+[059:SCRP#0056](14)Visst, kasta säkerheten i sjön.
+[059:SCRP#0056](14)Tja, den flyter väl utan det...\255\003...knappt.
+[059:SCRP#0056](14)Hej, resa lätt, det förstår jag.\255\003Förstås, myteri är ett fult ord...
+[059:SCRP#0056](14)Oj, vet din fru att du är så snål?
+[059:SCRP#0056](14)Ja, det ÄR väl lite dekadent, eller hur?
+[059:SCRP#0056](14)Okej, men jag säger dig:\255\003Havstulpaner HATAR imiterat trä.
+[059:SCRP#0056](14)Okej, var var vi...
+[059:SCRP#0056](14)Men vänta, det finns mer!
+[059:SCRP#0056](14)Toppen!
+[059:SCRP#0056](14)Hur mycket?
+[059:SCRP#0056](FA)Jag vill betala 2000 åttor.
+[059:SCRP#0056](FA)Jag vill fortfarande betala 2000.
+[059:SCRP#0056](FA)Hur låter 3000 åttor?
+[059:SCRP#0056](FA)Låter 3000 bättre nu?
+[059:SCRP#0056](FA)Okej, okej. 4000 åttor.
+[059:SCRP#0056](FA)Sa jag redan 4000 åttor?
+[059:SCRP#0056](FA)Okej! 5000! Men det är mitt sista bud!
+[059:SCRP#0056](FA)5000! Och det är mitt ABSOLUT sista bud.
+[059:SCRP#0056](FA)Egentligen vill jag att du ska lida lite till.
+[059:SCRP#0056](14)Visst. Hej!\255\003Det är mitt jobb, va?
+[059:SCRP#0056](14)Det är fortfarande inte nog med pengar.\255\003Inflationen fungerar åt andra hållet, vet du.
+[059:SCRP#0056](14)Visst, vi kan börja från botten.\255\003Jag har hela dan.
+[059:SCRP#0056](14)Det börjar likna nåt...\255\003...men inte mycket.
+[059:SCRP#0056](14)Jag tror vi jobbar åt fel håll här.
+[059:SCRP#0056](14)Jag vet att du kan anstränga dig mer än så.
+[059:SCRP#0056](14)TVÅ TUSEN USLA ÅTTOR!?!
+[059:SCRP#0056](14)Tre tusen åttor!?!
+[059:SCRP#0056](14)Fyra tusen åttor!?!
+[059:SCRP#0056](14)Fem tusen åttor?!?
+[059:SCRP#0056](14)Du kan segla iväg med den här skönheten IDAG, för bara \255\004\203\000 åttor.\255\003Hur låter det?
+[059:SCRP#0056](14)Fint.\255\003Var så.\255\003Se om jag bryr mig.
+[059:SCRP#0056](14)Vänta lite nu!
+[059:SCRP#0056](14)Gå inte iväg sur.
+[059:SCRP#0056](14)Jag är säker på att vi kan lösa det här.
+[059:SCRP#0056](FA)Tja, du kanske har rätt...
+[059:SCRP#0056](FA)Tyvärr, Stan. Jag sticker.
+[059:SCRP#0056](14)Klart jag har det.\255\003Var var vi nu?\255\003Javisst.
+[059:SCRP#0056](14)Okej! Okej!\255\003Det dödar mig, men okej!
+[059:SCRP#0056](14)Och jag som trodde jag skulle ge mina barn julklappar i år...
+[059:SCRP#0056](14)Ta bara med den härifrån.
+[059:SCRP#0056](14)Jag är GLAD att bli av med den.
+[059:SCRP#0056](14)Javisst, har du det där brevet från handlaren?
+[059:SCRP#0056](14)Tack.
+[059:SCRP#0056](14)Och här är nåt att minnas mig med.
+[059:SCRP#0056](D8)En kompass?
+[059:SCRP#0056](14)En extra stark magnetisk kompass--
+[059:SCRP#0056](D8)Med din bild på den...
+[059:SCRP#0056](14)Just det!\255\003Den pekar alltid rakt tillbaka hit, så om du letar efter en bra deal vet du var du ska gå!
+[059:SCRP#0056](14)Jag måste stämma av siffrorna med min chef... ...han tror jag är galen, men jag övertygar honom.
+[059:SCRP#0056](14)Vi ses vid kajen med din besättning.\255\003Jag tar med skeppet och papperna.
+[059:SCRP#0056](14)Jag vill bara säga att jag verkligen känner att vi lärde känna varandra idag.\255\003Jag menar, jag kände verkligen en samhörighet.\255\003Och det säger jag inte till alla!
+[059:SCRP#0056](14)Det har varit fantastiskt att göra affärer med dig.\255\003Verkligen.
+[059:SCRP#0056](14)(Godtrogen.)
+[059:SCRP#0056](14)Vi ses vid kajen, och glöm inte din besättning.\255\003Alla tre.
+[059:SCRP#0056](14) 
+[059:SCRP#0056](54)Sjöapan
 [060:OBNA#0737](__)dörr
 [060:OBNA#0738](__)låda full med svärd
 [060:OBNA#0739](__)Norbert
