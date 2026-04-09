@@ -1103,41 +1103,41 @@
 [025:SCRP#0141](D8)Det här känns konstigt.
 [025:SCRP#0171](14)Efter lite mer frenetisk paddling...
 [025:SCRP#0171](14) 
-[E][027:VERB#0306](D8)I think that's how I'll end up if I don't get out of here soon.
-[E][027:VERB#0306](D8)And to think I almost ended up like that.
-[E][027:VERB#0306](D8)No thanks.  They've still got some meat on them.
-[E][027:OBNA#0306](__)bowl-o-bones
-[E][027:OBNA#0307](__)door
-[E][027:VERB#0308](D8)I don't think hanging myself is the answer.
-[E][027:OBNA#0308](__)vines
-[E][027:VERB#0309](D8)I can see underneath the hut!
-[E][027:VERB#0309](D8)Looks loose.
-[E][027:VERB#0309](54)hole
-[E][027:VERB#0309](D8)It's already open.
-[E][027:VERB#0309](D8)What?
-[E][027:VERB#0309](D4)loose board
-[E][027:VERB#0309](D8)I think I can use the door now.
-[E][027:OBNA#0309](__)loose board
-[E][027:VERB#0310](D8)What a cute little skull.
-[E][027:VERB#0310](D8)Nothing happened.
-[E][027:OBNA#0310](__)skull
-[E][027:VERB#0311](D8)I don't think hanging myself is the answer.
-[E][027:OBNA#0311](__)vines
-[E][027:VERB#0312](D8)I don't think hanging myself is the answer.
-[E][027:OBNA#0312](__)vines
-[E][027:VERB#0313](D8)I can't get through it.
-[E][027:VERB#0313](D8)It doesn't open.
-[E][027:VERB#0313](D8)It's already closed.
-[E][027:OBNA#0313](__)window
-[E][027:VERB#0314](D8)I don't think I need any more bananas.
-[E][027:VERB#0314](D8)I don't think I need any more bananas.
-[E][027:VERB#0314](D8)That banana is already picked.
-[E][027:VERB#0314](D8)There are no bananas to pick there.
-[E][027:VERB#0314](D8)It says, `If found, please return to Herman Toothrot.`
-[E][027:OBNA#0314](__)banana picker
-[E][027:OBNA#0305](__)memo
-[E][027:ENCD#0027](54)hole
-[E][027:LSCR#0200](D8)I might fit through that hole, but I don't think this banana picker will.
+[027:VERB#0306](D8)Jag tror det är så jag kommer sluta om jag inte tar mig ut härifrån snart.
+[027:VERB#0306](D8)Och att tänka sig att jag nästan hamnade så.
+[027:VERB#0306](D8)Nej tack. Det finns fortfarande lite kött kvar på dem.
+[027:OBNA#0306](__)skål-med-ben
+[027:OBNA#0307](__)dörr
+[027:VERB#0308](D8)Jag tror inte att hänga mig är lösningen.
+[027:OBNA#0308](__)lianer
+[027:VERB#0309](D8)Jag kan se under hyddan!
+[027:VERB#0309](D8)Ser lös ut.
+[027:VERB#0309](54)hål
+[027:VERB#0309](D8)Den är redan öppen.
+[027:VERB#0309](D8)Vad?
+[027:VERB#0309](D4)lös planka
+[027:VERB#0309](D8)Jag tror jag kan använda dörren nu.
+[027:OBNA#0309](__)lös planka
+[027:VERB#0310](D8)Vilken söt liten dödskalle.
+[027:VERB#0310](D8)Ingenting hände.
+[027:OBNA#0310](__)dödskalle
+[027:VERB#0311](D8)Jag tror inte att hänga mig är lösningen.
+[027:OBNA#0311](__)lianer
+[027:VERB#0312](D8)Jag tror inte att hänga mig är lösningen.
+[027:OBNA#0312](__)lianer
+[027:VERB#0313](D8)Jag kan inte ta mig igenom det.
+[027:VERB#0313](D8)Det öppnas inte.
+[027:VERB#0313](D8)Det är redan stängt.
+[027:OBNA#0313](__)fönster
+[027:VERB#0314](D8)Jag tror inte jag behöver fler bananer.
+[027:VERB#0314](D8)Jag tror inte jag behöver fler bananer.
+[027:VERB#0314](D8)Den bananen är redan plockad.
+[027:VERB#0314](D8)Det finns inga bananer att plocka där.
+[027:VERB#0314](D8)Det står: `Om upphittad, vänligen återlämna till Herman Toothrot.`
+[027:OBNA#0314](__)bananplockare
+[027:OBNA#0305](__)memo
+[027:ENCD#0027](54)hål
+[027:LSCR#0200](D8)Jag kanske får plats genom det hålet, men jag tror inte bananplockaren gör det.
 [028:OBNA#0315](__)dörr
 [028:OBNA#0316](__)dörr
 [028:OBNA#0323](__)gardin
