@@ -591,7 +591,7 @@
 [020:SCRP#0095](FA)Ja, det är riktigt imponerande.
 [020:SCRP#0095](FA)Vad?
 [020:SCRP#0095](FA)Jag blev lurad av en kille som heter Stan...
-[020:SCRP#0095](FA)Vad menar du med "modigare än jag ser ut"?
+[020:SCRP#0095](FA)Vad menar du med `modigare än jag ser ut`?
 [020:SCRP#0095](FA)Lämna mig ifred, tack.
 [020:SCRP#0095](14)Öhm...\255\003Jag är rädd att jag måste sticka nu.\255\003Brådskande affärer, du vet.
 [020:SCRP#0095](14)-- hih hih --
@@ -757,352 +757,352 @@
 [023:SCRP#0119](94)--suck--
 [023:SCRP#0119](14)] 
 [023:SCRP#0119](94)Jag önskar verkligen att jag kunde prata med kvinnor.
-[E][025:VERB#0285](D8)In a primitive, yet effective way, it's locked.
-[E][025:VERB#0285](D8)I think I can go in there now.
-[E][025:OBNA#0285](__)door
-[E][025:VERB#0291](D8)Hmmm.  Some nice, juicy bananas!
-[E][025:OBNA#0291](__)bananas
-[E][025:VERB#0304](D8)Looks a little overripe, except for those nice, juicy bananas!
-[E][025:VERB#0304](D8)Nothing left but bad fruit.
-[E][025:VERB#0304](D8)All I want are these bananas.  The other fruit looks a little bit past its prime.
-[E][025:VERB#0304](D8)No thanks.  The rest is no good.
-[E][025:OBNA#0304](__)bowl of fruit
-[E][025:VERB#0303](D8)I think they're waiting for me to give them something.
-[E][025:OBNA#0303](__)cannibals
-[E][025:VERB#0292](D8)I think they're having a serious discussion.
-[E][025:OBNA#0292](__)friendly natives
-[E][025:VERB#0293](D8)I don't think he'd work very well if I did.
-[E][025:VERB#0293](D8)I'd rather pick on someone my own size.
-[E][025:VERB#0293](D8)I think it wants me to go to the left.
-[E][025:VERB#0293](D8)I think it wants me to go to the right.
-[E][025:VERB#0293](D8)I think it wants me to go to the front.
-[E][025:VERB#0293](D8)I think it wants me to go to the back.
-[E][025:VERB#0293](D8)I think it's a little confused.
-[E][025:OBNA#0293](__)head of the navigator
-[E][025:VERB#0294](D8)I don't think it would work very well if I did.
-[E][025:VERB#0294](D8)I don't want to touch it any more than I have to.
-[E][025:VERB#0294](D8)It's slimy and goopy and it's around my neck.
-[E][025:VERB#0294](D8)It's slimy and goopy.
-[E][025:VERB#0294](54)necklace on navigator
-[E][025:VERB#0294](D8)It wouldn't be a good idea to take it off here.
-[E][025:VERB#0294](D8)He already has it on.
-[E][025:VERB#0294](D8)I think I'd better hang on to it.
-[E][025:VERB#0294](D8)It wouldn't be a good idea to take this off here.
-[E][025:VERB#0294](54)necklace on navigator
-[E][025:VERB#0294](14)You can't have it.\255\003It's mine.
-[E][025:VERB#0294](D8)I don't need it here--\255\003No ghosts around.
-[E][025:VERB#0294](D8)I can't put it on now--I've got the head whipped out.
-[E][025:OBNA#0294](__)necklace on navigator
-[E][025:VERB#0281](D8)He's babbling to himself.
-[E][025:VERB#0281](D8)Filthy and without pants, as usual.
-[E][025:VERB#0281](D8)That might not be wise.
-[E][025:OBNA#0281](__)Herman Toothrot
-[E][025:VERB#0295](D8)Why?  It's empty.
-[E][025:OBNA#0295](__)hut
-[E][025:VERB#0296](D8)Why?  It's empty.
-[E][025:OBNA#0296](__)hut
-[E][025:VERB#0297](D8)Why?  It's empty.
-[E][025:OBNA#0297](__)hut
-[E][025:VERB#0298](D8)Why?  It's empty.
-[E][025:OBNA#0298](__)hut
-[E][025:VERB#0299](D8)Why?  It's empty.
-[E][025:OBNA#0299](__)hut
-[E][025:VERB#0300](D8)I can't see inside from here.
-[E][025:VERB#0300](D8)But I'll bet it's empty.
-[E][025:OBNA#0300](__)hut
-[E][025:VERB#0284](D8)It looks big and empty.
-[E][025:VERB#0284](D8)It's already open.
-[E][025:VERB#0284](D8)I don't want to get any closer to that thing.\255\003It might be booby-trapped.
-[E][025:VERB#0284](14) 
-[E][025:OBNA#0284](__)big stone head
-[E][025:OBNA#0290](__)jungle
-[E][025:VERB#0283](D8)It's yellow.
-[E][025:OBNA#0283](__)banana
-[E][025:VERB#0282](D8)It's yellow.
-[E][025:OBNA#0282](__)banana
-[E][025:LSCR#0200](13)native
-[E][025:LSCR#0200](13)native
-[E][025:LSCR#0200](13)native
-[E][025:LSCR#0202](14)Is that a banana in your pocket, or are you just glad to see us?
-[E][025:LSCR#0202](14)You've got a lot of nerve stealing from the notorious Monkey Island® cannibals!
-[E][025:LSCR#0202](D8)You're cannibals?!
-[E][025:LSCR#0202](14)Well, yes.\255\003Although, lately we've been trying to stay away from red meat.
-[E][025:LSCR#0202](14)Only for health reasons.\255\003We're still as vicious as ever.
-[E][025:LSCR#0202](14)Especially with tourists who try to steal our stuff for souvenirs.
-[E][025:LSCR#0202](14)Well, what do you have to say for yourself?
-[E][025:LSCR#0202](14)Ah, the banana thief returns to the scene of the crime.
-[E][025:LSCR#0202](14)Maybe we should just eat him right now.
-[E][025:LSCR#0202](14)Do you have any idea how much cholesterol is in one of these things?
-[E][025:LSCR#0202](14)Now then, how did you break out of our hut and why did you come back?
-[E][025:LSCR#0202](14)Well, well, well.\255\003You're quite the escape artist, aren't you?
-[E][025:LSCR#0202](14)I told you we should eat him.
-[E][025:LSCR#0202](14)How you get out is almost as much of a mystery as why you keep coming back.
-[E][025:LSCR#0202](14)The real mystery is why he's not simmering with carrots right now.
-[E][025:LSCR#0202](14)I don't know if this is getting boring for you, but it sure is for me.
-[E][025:LSCR#0202](14)What now?
-[E][025:LSCR#0202](14) 
-[E][025:LSCR#0202](FA)Don't eat me!  I'm a mighty pirate!
-[E][025:LSCR#0202](FA)Don't eat me!  I'll give you anything!
-[E][025:LSCR#0202](FA)Oh, go ahead and eat me.  See if I care.
-[E][025:LSCR#0202](FA)Look behind you!  A three-headed monkey!
-[E][025:LSCR#0202](14)That means his skin will be leathery and his meat tough and stringy.
-[E][025:LSCR#0202](14)You are of no use to us, nutritionally speaking, but...
-[E][025:LSCR#0202](14)Yeah, yeah.  We know.
-[E][025:LSCR#0202](14)Anything?\255\003Hmmm...
-[E][025:LSCR#0202](14)Okay...
-[E][025:LSCR#0202](14)Hey, whatever you say!
-[E][025:LSCR#0202](14)Ha!\255\003We're not going to fall for that old trick AGAIN.
-[E][025:LSCR#0202](14)Hey!
-[E][025:LSCR#0202](14)Do you really think we're that stupid?
-[E][025:LSCR#0202](14)I wouldn't push it if I were you.
-[E][025:LSCR#0202](14)I guess we'll eat you now.\255\003Unless...
-[E][025:LSCR#0202](14)If you had some sort of offering for us...\255\003...something that we could pass on to the Great Monkey...
-[E][025:LSCR#0202](14) 
-[E][025:LSCR#0202](14)We'll give you one more chance to trade something of yours for your freedom.
-[E][025:LSCR#0202](14) 
-[E][025:LSCR#0202](14)Well?
-[E][025:LSCR#0203](14)Ah, the key to the Great Monkey.\255\003Thank you very much.
-[E][025:LSCR#0203](14)Why don't you hang on to that for now.
-[E][025:LSCR#0203](14)Ah, one of those newfangled magnetic compasses.
-[E][025:LSCR#0203](14)Too high-tech.
-[E][025:LSCR#0203](14)Yeah, give me a good old-fashioned disembodied head any day.
-[E][025:LSCR#0203](14) 
-[E][025:LSCR#0203](14)We couldn't take that.  You've already given us so much.
-[E][025:LSCR#0203](14)We appreciate the natural fibers, but no thanks.
-[E][025:LSCR#0203](14)A rubber chicken with a pulley in the middle?\255\003No thanks.  We already got one of those.
-[E][025:LSCR#0203](14)Sorry, we already have PLENTY of those.
-[E][025:LSCR#0203](14)Ha!\255\003Your currency means nothing to the Great Monkey!
-[E][025:LSCR#0203](14)Do you really think we want that after you've had your grubby paws all over it?
-[E][025:LSCR#0203](14)Thanks, but we already have one of our own.
-[E][025:LSCR#0203](14)I don't think the Great Monkey would like that.
-[E][025:LSCR#0203](14)We already got one of those.
-[E][025:LSCR#0203](14)Yuck.  No thanks.
-[E][025:LSCR#0203](14)Now what would the Great Monkey do with THAT?
-[E][025:LSCR#0203](14)Come on, you can do better than that.
-[E][025:LSCR#0203](14)Do you have anything of a more spiritual value?
-[E][025:LSCR#0203](14)That's hardly an artifact worthy of the Great Monkey.
-[E][025:LSCR#0204](14)Obviously you have nothing for us.
-[E][025:LSCR#0205](14)Hey, wow!
-[E][025:LSCR#0205](14)This is impressive!
-[E][025:LSCR#0205](14)LEMONHEAD!!!
-[E][025:LSCR#0205](14)Take a look at this.
-[E][025:LSCR#0205](14)Oooh, that's nice.
-[E][025:LSCR#0205](14)And it says, `Made by Lemonhead`...\255\003...just like one of mine!\255\003We should take this to the Great Monkey.
-[E][025:LSCR#0205](14)Yes, I agree.
-[E][025:LSCR#0205](14)We are very grateful to you for this fine gift.
-[E][025:LSCR#0205](14)If there's ever anything you need on Monkey Island®, just come see us.
-[E][025:LSCR#0205](14) 
-[E][025:LSCR#0206](14)You ain't going nowhere until you give us something.
-[E][025:LSCR#0211](D8)Yep.  Still empty.
-[E][025:LSCR#0211](D8)It's an empty hut.
-[E][025:LSCR#0211](D8)This hut is VERY empty.
-[E][025:LSCR#0211](D8)Boy, this is the emptiest hut I've ever seen.
-[E][025:LSCR#0211](D8)No two ways about it--this hut's empty.
-[E][025:LSCR#0211](D8)I'll bet if I looked up `empty` in the dictionary, there'd be a picture of this hut!
-[E][025:LSCR#0213](14)Have you come back to let us repay you for your fine gift?
-[E][025:LSCR#0213](FA)Well, actually, there is something...
-[E][025:LSCR#0213](FA)No thanks.  Generosity is it's own reward.  Bye.
-[E][025:LSCR#0213](14)Well, if there's ever anything you need from us, just let us know.
-[E][025:LSCR#0213](D8)Thanks.
-[E][025:LSCR#0213](14)What a guy!
-[E][025:LSCR#0213](14)Tell us.  What is it?
-[E][025:LSCR#0213](FA)I'm looking for somebody.
-[E][025:LSCR#0213](FA)I need a ship.
-[E][025:LSCR#0213](FA)Can you guys crew a ship?
-[E][025:LSCR#0213](FA)Money.  I want money.
-[E][025:LSCR#0213](FA)On second thought, you've already done so much...
-[E][025:LSCR#0213](14)How did you get here if you don't have a ship?
-[E][025:LSCR#0213](D8)Well, this big rock fell out of the sky...
-[E][025:LSCR#0213](14)I see.  Say no more.\255\003Well, I'm sorry, but we don't have a ship.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](14)No, we stay away from sea travel.\255\003It's just too hard to get all the vitamin C you need when you're on a ship for extended periods.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](14)That's not exactly what we had in mind.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](14)Is there anything ELSE we could do for you?
-[E][025:LSCR#0213](14)Here?\255\003On Monkey Island®?
-[E][025:LSCR#0213](14)We're the only people living on Monkey Island®.
-[E][025:LSCR#0213](14)Well, the only civilized people.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](FA)That's okay. The people I'm looking for aren't living.
-[E][025:LSCR#0213](FA)That's okay. The people I'm looking for aren't civilized.
-[E][025:LSCR#0213](FA)Whoops.  Guess I came to the wrong island.  Excuse me.
-[E][025:LSCR#0213](FA)I'm looking for 30 dead guys and one woman.
-[E][025:LSCR#0213](14)I don't think I want to hear any more about it.
-[E][025:LSCR#0213](14)Wait, maybe he's talking about those dead pirates.
-[E][025:LSCR#0213](14)Oh yeah.  THOSE guys.
-[E][025:LSCR#0213](D8)Then you've seen the ghost pirate LeChuck and his cadaverous crew?
-[E][025:LSCR#0213](14)Those jerks have been bugging us for months!
-[E][025:LSCR#0213](14)Zooming around here in that creepy ghost ship of theirs...\255\003...wailing and moaning until all hours of the morning...
-[E][025:LSCR#0213](14)...scaring away all the cruise ship business.
-[E][025:LSCR#0213](14)Normally, when we have problems with the undead,\255\003we just cook up our standard potion of exorcism and be done with it.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](FA)So why don't you do that now?
-[E][025:LSCR#0213](FA)What's in your standard potion of exorcism?
-[E][025:LSCR#0213](FA)Give me the potion!  I'll use it on LeChuck!
-[E][025:LSCR#0213](FA)Where are LeChuck and his crew hiding?
-[E][025:LSCR#0213](14)We can't.
-[E][025:LSCR#0213](D8)Why not?
-[E][025:LSCR#0213](14)Well, the main ingredient of the potion is a very rare root...\255\003...in fact, there's only one in existence.
-[E][025:LSCR#0213](14)We only use a little bit at a time, you see.
-[E][025:LSCR#0213](14)But LeChuck stole the whole thing!
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](FA)Where is he hiding it?
-[E][025:LSCR#0213](FA)How do I get to these catacombs?
-[E][025:LSCR#0213](FA)What's in your standard potion of exorcism?
-[E][025:LSCR#0213](FA)LeChuck came in here and stole your root?  What a cad!
-[E][025:LSCR#0213](FA)I'm off to find LeChuck and get the root!
-[E][025:LSCR#0213](14)Oh, and I suppose stealing bananas is any better?
-[E][025:LSCR#0213](14)The Great Monkey himself is the gateway to the catacombs of the underworld.
-[E][025:LSCR#0213](14)He's in a place beneath this island...\255\003...somewhere in a huge system of catacombs...
-[E][025:LSCR#0213](14)...a hellish place filled with the wailing of tortured souls trapped forever in the rock...\255\003...where the walls bleed and the air is thick with the rancid smell of pure evil.
-[E][025:LSCR#0213](14)Tourists used to line up for hours to see it.
-[E][025:LSCR#0213](FA)What happened?  Health department shut you down?
-[E][025:LSCR#0213](FA)Can't you just go down there and kick him out?
-[E][025:LSCR#0213](FA)And then LeChuck came and ruined everything, right?
-[E][025:LSCR#0213](FA)Sounds neat.  Can I see it?
-[E][025:LSCR#0213](14)No, we lost the key.
-[E][025:LSCR#0213](14)It was stolen!
-[E][025:LSCR#0213](14)Well, we loaned it to a hermit who lives on the island.
-[E][025:LSCR#0213](14)And until that crusty old pantless weirdo brings it back, we're keeping his banana picker.
-[E][025:LSCR#0213](14)Sorry, but it's just not that easy.\255\003Trying to find LeChuck could be very dangerous.
-[E][025:LSCR#0213](14)You'd never find your way through the catacombs without the--
-[E][025:LSCR#0213](14)Hey!\255\003Ixnay on the Eadhay of the Avigatornay!
-[E][025:LSCR#0213](D8)The what?
-[E][025:LSCR#0213](14)Nothing.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](14)Nothing.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](FA)What's the Eadhay of the Avigatornay?
-[E][025:LSCR#0213](FA)Why are you guys talking in pig Latin?
-[E][025:LSCR#0213](FA)Oday ouyay avehay away apmay ofway ethay atacombscay?
-[E][025:LSCR#0213](FA)Oh, come on.  Tell me.  I gave you the idol.
-[E][025:LSCR#0213](14)Orrysay.  Onay.
-[E][025:LSCR#0213](14)It is a very nice idol.
-[E][025:LSCR#0213](14)I see he is baffled by our native dialect.\255\003Good.
-[E][025:LSCR#0213](14)We could at least tell him what the head does.
-[E][025:LSCR#0213](14)Well, it's a navigating tool--
-[E][025:LSCR#0213](14)It's a head.\255\003It was once attached to a navigator.
-[E][025:LSCR#0213](14)We've kept it alive magically so we could take advantage of its innate sense of direction.
-[E][025:LSCR#0213](14)Getting through the catacombs without it is impossible.
-[E][025:LSCR#0213](14)But it's our only one, so you can't have it.
-[E][025:LSCR#0213](14)I guess we have nothing to offer you.
-[E][025:LSCR#0213](14)And after he gave us that nice idol, too...
-[E][025:LSCR#0213](14)Feel free to come to the Great Monkey and visit your idol any time.
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0213](14)So anyway, Lemonhead, what was that you were saying about tropical oils?
-[E][025:LSCR#0213](14)Well...
-[E][025:LSCR#0213](14) 
-[E][025:LSCR#0216](D8)--ahem--
-[E][025:LSCR#0216](14)Excuse us but we're in the middle of a serious discussion.
-[E][025:LSCR#0216](D8)I know, but I really need that navigator head thing.
-[E][025:LSCR#0216](14)I told you, we only have one.\255\003We don't know how to get another one.
-[E][025:LSCR#0216](14)Sorry.
-[E][025:LSCR#0216](14)I told you, you can't have our head.\255\003We don't know how to get another one.
-[E][025:LSCR#0216](14) 
-[E][025:LSCR#0218](13)Herman Toothrot
-[E][025:LSCR#0218](14)All I want is my banana picker back.
-[E][025:LSCR#0218](14)But will they give it to me?
-[E][025:LSCR#0218](14)They want the Monkey Head key back FIRST.
-[E][025:LSCR#0218](14)THAT'LL be the day!
-[E][025:LSCR#0218](14)Don't you think they're being unreasonable?
-[E][025:LSCR#0218](14)It's not as though I'm asking for a lot.
-[E][025:SCRP#0102](14)...and no, I'm not getting squeamish.\255\003I'd LOVE to eat the guy!
-[E][025:SCRP#0102](14)So let's do it!
-[E][025:SCRP#0102](14)But think of your arteries!
-[E][025:SCRP#0102](14)We ARE cannibals, for crying out loud!
-[E][025:SCRP#0102](14)Yeah, but cannibals have to watch their saturated fats just like everyone else.
-[E][025:SCRP#0102](14)If I have to eat any more fruit my head's going to turn into one big citrus!
-[E][025:SCRP#0102](14)No offense, Lemonhead.
-[E][025:SCRP#0104](14)Well, look at this.
-[E][025:SCRP#0104](14)It looks like instructions on how to get a head!
-[E][025:SCRP#0104](14)We could give him our head, and use these instructions to get ourselves a new one!
-[E][025:SCRP#0104](14)Yes, I suppose we can give you this now.
-[E][025:SCRP#0104](D8)Thanks.
-[E][025:SCRP#0104](14)Looks pretty good for a dried up old head, doesn't it?
-[E][025:SCRP#0104](14) 
-[E][025:SCRP#0104](14)We keep it wrapped in this magical necklace that makes it invisible to ghosts.
-[E][025:SCRP#0104](14)Oh, look.
-[E][025:SCRP#0104](14)I think he likes you.
-[E][025:SCRP#0104](14)Just follow his nose, and he'll lead you to LeChuck's hideout in the catacombs.\255\003Then get the root from LeChuck and come back here...
-[E][025:SCRP#0104](14)...and we'll mix up a batch of our special, enzymatic ghost-dissolving solution.
-[E][025:SCRP#0104](14)And you can pour it on LeChuck like salt on a slug!
-[E][025:SCRP#0104](D8)Yeah!
-[E][025:SCRP#0104](14)Good luck.
-[E][025:SCRP#0104](D8)Wait!
-[E][025:SCRP#0104](14)What?
-[E][025:SCRP#0104](D8)I don't even know where the entrance to the catacombs is!
-[E][025:SCRP#0104](14)Oh yeah, it's the big monkey head on the east side.\255\003You can't miss it.\255\003Have fun!
-[E][025:SCRP#0104](14) 
-[E][025:SCRP#0105](14)We might eat you, we might let you go.\255\003We'll have to talk about it with the village nutritionist.
-[E][025:SCRP#0105](14)Come.  Let me show you our guest hut.
-[E][025:SCRP#0105](14)THAT should do it.
-[E][025:SCRP#0106](D8)I did it!\255\003I got the root!
-[E][025:SCRP#0106](14)Wow!
-[E][025:SCRP#0106](14)Look, he's not kidding!\255\003Here it is!
-[E][025:SCRP#0106](14)He's not such a wimp after all!
-[E][025:SCRP#0106](14)Come on, lets go make the brew of the fermented root.
-[E][025:SCRP#0106](14)Wait here.  We'll be right back.
-[E][025:SCRP#0106](FA)Nice monkey.
-[E][025:SCRP#0106](FA)I got the root.
-[E][025:SCRP#0106](FA)I'm not such a wimp after all.
-[E][025:SCRP#0106](FA)I'd love to have you stuffed.  I'd make a fortune.
-[E][025:SCRP#0106](14)There it is.
-[E][025:SCRP#0106](14)One squirt of that stuff and the ectoplasm really hits the fan!
-[E][025:SCRP#0106](14)And, if you have any left over, it's delicious with a little vanilla ice cream.
-[E][025:SCRP#0106](14)Good luck.
-[E][025:SCRP#0106](D8)Thanks.
-[E][025:SCRP#0106](14) 
-[E][025:SCRP#0106](54)magic seltzer bottle
-[E][025:SCRP#0110](D8)I can't whip that out in here.
-[E][025:SCRP#0110](54)necklace on navigator
-[E][025:SCRP#0110](D8)I'd better put the necklace back on the way the natives had it first.
-[E][025:SCRP#0110](94)Hmmm...
-[E][025:SCRP#0110](94)I don't think it's picking up anything.
-[E][025:SCRP#0110](94)Nope.  Nothing.
-[E][025:SCRP#0140](94)Hello, Mr. Navigator.
-[E][025:SCRP#0140](14)Hello.
-[E][025:SCRP#0140](14)You're not going to bug me about my necklace again, are you?
-[E][025:SCRP#0140](14)Okay, we're here.\255\003Now what do you want from me?
-[E][025:SCRP#0140](14)Yes?
-[E][025:SCRP#0140](FA)Hello, head.
-[E][025:SCRP#0140](FA)May I please have that necklace?
-[E][025:SCRP#0140](FA)Thank you for leading me to the ghost ship.
-[E][025:SCRP#0140](FA)Thanks again for leading me to the ghost ship.
-[E][025:SCRP#0140](FA)Well, it's been nice.  I'll just put you back now.
-[E][025:SCRP#0140](14)Hello.
-[E][025:SCRP#0140](14)Is there something I can do for you?
-[E][025:SCRP#0140](14)Hey, no problem.\255\003When you only have one job...\255\003you do it well.  Know what I mean?
-[E][025:SCRP#0140](14)I get the feeling you're about to ask me for a favor.
-[E][025:SCRP#0140](14)Where?
-[E][025:SCRP#0140](D8)None of your business.
-[E][025:SCRP#0140](14)Yes, I understand.
-[E][025:SCRP#0140](14)No, but thanks for asking so politely.
-[E][025:SCRP#0140](FA)Why can't I have it?
-[E][025:SCRP#0140](FA)Oh come on, pleeeeease?
-[E][025:SCRP#0140](FA)Pretty please?
-[E][025:SCRP#0140](FA)Pretty PRETTY please?
-[E][025:SCRP#0140](FA)Pretty please with sugar on top?
-[E][025:SCRP#0140](FA)Maybe I'll just take it...
-[E][025:SCRP#0140](FA)I don't want to have to hurt you...
-[E][025:SCRP#0140](FA)What're you going to do?  Bite me?
-[E][025:SCRP#0140](FA)If I wanted to I could dropkick you into the lava.
-[E][025:SCRP#0140](FA)Fine.  I didn't really want it anyway.
-[E][025:SCRP#0140](14)Good, 'cuz you ain't gonna get it.
-[E][025:SCRP#0140](14)I've got a bad feeling about this place.\255\003I think I might need it.
-[E][025:SCRP#0140](14)Look, don't be a nag, okay?
-[E][025:SCRP#0140](14)You can beg all you want, but you can't have it.
-[E][025:SCRP#0140](14)Oh, all right, you big baby.\255\003You can have it.
-[E][025:SCRP#0140](14)Maybe you'd better not.
-[E][025:SCRP#0140](14)And I don't want to have to make you regret it.
-[E][025:SCRP#0140](14)Remember, you need me to get out of this place.\255\003If I wanted to I could strand you here forever.
-[E][025:SCRP#0140](14)On second thought...
-[E][025:SCRP#0140](14)Hey, what good's a necklace if you don't have shoulders?
-[E][025:SCRP#0141](54)necklace on Guybrush
-[E][025:SCRP#0141](D8)I have a feeling this only works underground.
-[E][025:SCRP#0141](D8)This feels weird.
-[E][025:SCRP#0171](14)After some more furious paddling...
-[E][025:SCRP#0171](14) 
+[025:VERB#0285](D8)På ett primitivt, men ändå effektivt sätt är den låst.
+[025:VERB#0285](D8)Jag tror jag kan gå in där nu.
+[025:OBNA#0285](__)dörr
+[025:VERB#0291](D8)Hmmm. Några fina, saftiga bananer!
+[025:OBNA#0291](__)bananer
+[025:VERB#0304](D8)Ser lite övermogen ut, förutom de där fina, saftiga bananerna!
+[025:VERB#0304](D8)Inget kvar förutom dålig frukt.
+[025:VERB#0304](D8)Allt jag vill ha är de här bananerna. Den andra frukten ser lite förbi sin bästa tid ut.
+[025:VERB#0304](D8)Nej tack. Resten duger inte.
+[025:OBNA#0304](__)fruktkorg
+[025:VERB#0303](D8)Jag tror de väntar på att jag ska ge dem något.
+[025:OBNA#0303](__)kannibaler
+[025:VERB#0292](D8)Jag tror de har en allvarlig diskussion.
+[025:OBNA#0292](__)vänliga infödda
+[025:VERB#0293](D8)Jag tror inte han skulle fungera särskilt bra om jag gjorde det.
+[025:VERB#0293](D8)Jag väljer hellre någon i min egen storlek.
+[025:VERB#0293](D8)Jag tror det vill att jag ska gå åt vänster.
+[025:VERB#0293](D8)Jag tror det vill att jag ska gå åt höger.
+[025:VERB#0293](D8)Jag tror det vill att jag ska gå framåt.
+[025:VERB#0293](D8)Jag tror det vill att jag ska gå bakåt.
+[025:VERB#0293](D8)Jag tror det är lite förvirrat.
+[025:OBNA#0293](__)navigatörshuvud
+[025:VERB#0294](D8)Jag tror inte det skulle fungera särskilt bra om jag gjorde det.
+[025:VERB#0294](D8)Jag vill inte röra vid det mer än jag måste.
+[025:VERB#0294](D8)Den är slemmig och kladdig och sitter runt min hals.
+[025:VERB#0294](D8)Den är slemmig och kladdig.
+[025:VERB#0294](54)halsband på navigator
+[025:VERB#0294](D8)Det vore ingen bra idé att ta av det här.
+[025:VERB#0294](D8)Han har redan på sig det.
+[025:VERB#0294](D8)Jag tror jag hellre behåller det.
+[025:VERB#0294](D8)Det vore ingen bra idé att ta av det här.
+[025:VERB#0294](54)halsband på navigator
+[025:VERB#0294](14)Du kan inte få det.\255\003It's mine.
+[025:VERB#0294](D8)Jag behöver det inte här--\255\003No ghosts around.
+[025:VERB#0294](D8)Jag kan inte ta på det nu--jag har huvudet framme.
+[025:OBNA#0294](__)halsband på navigator
+[025:VERB#0281](D8)Han babblar för sig själv.
+[025:VERB#0281](D8)Smutsig och utan byxor, som vanligt.
+[025:VERB#0281](D8)Det är kanske inte klokt.
+[025:OBNA#0281](__)Herman Toothrot
+[025:VERB#0295](D8)Varför? Den är tom.
+[025:OBNA#0295](__)hydda
+[025:VERB#0296](D8)Varför? Den är tom.
+[025:OBNA#0296](__)hydda
+[025:VERB#0297](D8)Varför? Den är tom.
+[025:OBNA#0297](__)hydda
+[025:VERB#0298](D8)Varför? Den är tom.
+[025:OBNA#0298](__)hydda
+[025:VERB#0299](D8)Varför? Den är tom.
+[025:OBNA#0299](__)hydda
+[025:VERB#0300](D8)Jag kan inte se in därifrån.
+[025:VERB#0300](D8)Men jag slår vad om att den är tom.
+[025:OBNA#0300](__)hydda
+[025:VERB#0284](D8)Den ser stor och tom ut.
+[025:VERB#0284](D8)Den är redan öppen.
+[025:VERB#0284](D8)Jag vill inte komma närmare det där.\255\003It might be booby-trapped.
+[025:VERB#0284](14) 
+[025:OBNA#0284](__)stort stenhuvud
+[025:OBNA#0290](__)djungel
+[025:VERB#0283](D8)Den är gul.
+[025:OBNA#0283](__)banan
+[025:VERB#0282](D8)Den är gul.
+[025:OBNA#0282](__)banan
+[025:LSCR#0200](13)infödd
+[025:LSCR#0200](13)infödd
+[025:LSCR#0200](13)infödd
+[025:LSCR#0202](14)Är det en banan i fickan, eller är du bara glad att se oss?
+[025:LSCR#0202](14)Du har minsann mage att stjäla från de beryktade Monkey Island®-kannibalerna!
+[025:LSCR#0202](D8)Ni är kannibaler?!
+[025:LSCR#0202](14)Jo, visst.\255\003Although, lately we've been trying to stay away from red meat.
+[025:LSCR#0202](14)Bara av hälsoskäl.\255\003We're still as vicious as ever.
+[025:LSCR#0202](14)Speciellt mot turister som försöker stjäla våra saker som souvenirer.
+[025:LSCR#0202](14)Nå, vad har du att säga till ditt försvar?
+[025:LSCR#0202](14)Ah, bantjuven återvänder till brottsplatsen.
+[025:LSCR#0202](14)Kanske borde vi bara äta upp honom på en gång.
+[025:LSCR#0202](14)Har du någon aning om hur mycket kolesterol det är i en sådan här?
+[025:LSCR#0202](14)Nå, hur tog du dig ut ur vår hydda och varför kom du tillbaka?
+[025:LSCR#0202](14)Nå, nå, nå.\255\003You're quite the escape artist, aren't you?
+[025:LSCR#0202](14)Jag sa att vi borde äta upp honom.
+[025:LSCR#0202](14)Hur du tog dig ut är nästan lika mystiskt som varför du fortsätter komma tillbaka.
+[025:LSCR#0202](14)Det verkliga mysteriet är varför han inte putrar tillsammans med morötter just nu.
+[025:LSCR#0202](14)Jag vet inte om det här blir tråkigt för dig, men det är det för mig.
+[025:LSCR#0202](14)Vad nu då?
+[025:LSCR#0202](14) 
+[025:LSCR#0202](FA)Ät inte upp mig! Jag är en mäktig pirat!
+[025:LSCR#0202](FA)Ät inte upp mig! Jag ger er vad som helst!
+[025:LSCR#0202](FA)Åh, varsågod och ät upp mig. Det bryr jag mig inte om.
+[025:LSCR#0202](FA)Titta bakom er! En trehövdad apa!
+[025:LSCR#0202](14)Det betyder att hans hud blir läderaktig och hans kött segt och trådigt.
+[025:LSCR#0202](14)Du är inte till någon nytta för oss, näringsmässigt sett, men...
+[025:LSCR#0202](14)Ja, ja. Vi vet.
+[025:LSCR#0202](14)Något?\255\003Hmmm...
+[025:LSCR#0202](14)Okej...
+[025:LSCR#0202](14)Hej, som du vill!
+[025:LSCR#0202](14)Ha!\255\003We're not going to fall for that old trick AGAIN.
+[025:LSCR#0202](14)Hallå!
+[025:LSCR#0202](14)Tror du verkligen vi är så dumma?
+[025:LSCR#0202](14)Jag skulle inte driva det längre om jag var du.
+[025:LSCR#0202](14)Jag antar att vi äter upp dig nu.\255\003Unless...
+[025:LSCR#0202](14)Om du hade något slags offer till oss...\255\003...something that we could pass on to the Great Monkey...
+[025:LSCR#0202](14) 
+[025:LSCR#0202](14)Vi ger dig en chans till att byta något av dina saker mot din frihet.
+[025:LSCR#0202](14) 
+[025:LSCR#0202](14)Nå?
+[025:LSCR#0203](14)Ah, nyckeln till Den Stora Apan.\255\003Thank you very much.
+[025:LSCR#0203](14)Varför behåller du inte den för tillfället.
+[025:LSCR#0203](14)Ah, en av de där nyfanglerade magnetiska kompasserna.
+[025:LSCR#0203](14)För högteknologisk.
+[025:LSCR#0203](14)Ge mig ett gott gammaldags lösryckta huvud när som helst.
+[025:LSCR#0203](14) 
+[025:LSCR#0203](14)Vi kan inte ta det. Du har redan gett oss så mycket.
+[025:LSCR#0203](14)Vi uppskattar de naturliga fibrerna, men nej tack.
+[025:LSCR#0203](14)En gummikyckling med en trissa i mitten?\255\003No thanks.  We already got one of those.
+[025:LSCR#0203](14)Ledsen, vi har redan MASSOR av såna.
+[025:LSCR#0203](14)Ha!\255\003Your currency means nothing to the Great Monkey!
+[025:LSCR#0203](14)Tror du verkligen vi vill ha det efter att du har haft dina smutsiga tassar över allt?
+[025:LSCR#0203](14)Tack, men vi har redan en egen.
+[025:LSCR#0203](14)Jag tror inte Den Stora Apan skulle gilla det.
+[025:LSCR#0203](14)Vi har redan en sådan.
+[025:LSCR#0203](14)Usch. Nej tack.
+[025:LSCR#0203](14)Vad skulle Den Stora Apan göra med DET?
+[025:LSCR#0203](14)Kom igen, du kan bättre än så.
+[025:LSCR#0203](14)Har du något av mer andligt värde?
+[025:LSCR#0203](14)Det är knappast en artefakt värdig Den Stora Apan.
+[025:LSCR#0204](14)Uppenbarligen har du inget till oss.
+[025:LSCR#0205](14)Hej, wow!
+[025:LSCR#0205](14)Det här är imponerande!
+[025:LSCR#0205](14)LEMONHEAD!!!
+[025:LSCR#0205](14)Titta på det här.
+[025:LSCR#0205](14)Ååå, det är fint.
+[025:LSCR#0205](14)Och det står `Tillverkad av Lemonhead`...\255\003...just like one of mine!\255\003We should take this to the Great Monkey.
+[025:LSCR#0205](14)Ja, jag håller med.
+[025:LSCR#0205](14)Vi är mycket tacksamma för denna fina gåva.
+[025:LSCR#0205](14)Om det någonsin är något du behöver på Monkey Island®, kom bara och hälsa på oss.
+[025:LSCR#0205](14) 
+[025:LSCR#0206](14)Du går ingenstans förrän du ger oss något.
+[025:LSCR#0211](D8)Japp. Fortfarande tom.
+[025:LSCR#0211](D8)Det är en tom hydda.
+[025:LSCR#0211](D8)Den här hyddan är MYCKET tom.
+[025:LSCR#0211](D8)Herregud, det här är den tomaste hydda jag sett.
+[025:LSCR#0211](D8)Det råder inget tvivel--den här hyddan är tom.
+[025:LSCR#0211](D8)Jag slår vad om att om jag slog upp `tom` i ordboken skulle det finnas en bild på den här hyddan!
+[025:LSCR#0213](14)Har du kommit tillbaka för att låta oss återgälda din fina gåva?
+[025:LSCR#0213](FA)Jo, faktiskt så finns det något...
+[025:LSCR#0213](FA)Nej tack. Generositet är sin egen belöning. Hejdå.
+[025:LSCR#0213](14)Om det någonsin är något du behöver från oss, säg bara till.
+[025:LSCR#0213](D8)Tack.
+[025:LSCR#0213](14)Vilken kille!
+[025:LSCR#0213](14)Berätta för oss. Vad är det?
+[025:LSCR#0213](FA)Jag letar efter någon.
+[025:LSCR#0213](FA)Jag behöver ett skepp.
+[025:LSCR#0213](FA)Kan ni bemanna ett skepp?
+[025:LSCR#0213](FA)Pengar. Jag vill ha pengar.
+[025:LSCR#0213](FA)Vid närmare eftertanke har ni redan gjort så mycket...
+[025:LSCR#0213](14)Hur kom du hit om du inte har ett skepp?
+[025:LSCR#0213](D8)Jo, en stor sten föll från himlen...
+[025:LSCR#0213](14)Jag förstår. Säg inte mer.\255\003Well, I'm sorry, but we don't have a ship.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](14)Nej, vi håller oss borta från sjöresor.\255\003It's just too hard to get all the vitamin C you need when you're on a ship for extended periods.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](14)Det är inte riktigt vad vi tänkte oss.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](14)Är det något ANNAT vi kan göra för dig?
+[025:LSCR#0213](14)Här?\255\003On Monkey Island®?
+[025:LSCR#0213](14)Vi är de enda människorna som bor på Monkey Island®.
+[025:LSCR#0213](14)Alltså, de enda civiliserade människorna.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](FA)Det är okej. De jag letar efter lever inte.
+[025:LSCR#0213](FA)Det är okej. De jag letar efter är inte civiliserade.
+[025:LSCR#0213](FA)Hoppsan. Jag kom nog till fel ö. Ursäkta.
+[025:LSCR#0213](FA)Jag letar efter 30 döda killar och en kvinna.
+[025:LSCR#0213](14)Jag tror inte jag vill höra mer om det.
+[025:LSCR#0213](14)Vänta, kanske pratar han om de där döda piraterna.
+[025:LSCR#0213](14)Åh ja. DE killarna.
+[025:LSCR#0213](D8)Då har ni sett spökpiraten LeChuck och hans likartade besättning?
+[025:LSCR#0213](14)De där idioterna har tjatat på oss i månader!
+[025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...wailing and moaning until all hours of the morning...
+[025:LSCR#0213](14)...skrämmer bort alla kryssningsfartyg.
+[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003we just cook up our standard potion of exorcism and be done with it.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](FA)Så varför gör ni inte det nu?
+[025:LSCR#0213](FA)Vad finns i er standarddryck för exorcism?
+[025:LSCR#0213](FA)Ge mig drycken! Jag ska använda den på LeChuck!
+[025:LSCR#0213](FA)Var gömmer sig LeChuck och hans besättning?
+[025:LSCR#0213](14)Det kan vi inte.
+[025:LSCR#0213](D8)Varför inte?
+[025:LSCR#0213](14)Jo, huvudingrediensen i drycken är en mycket sällsynt rot...\255\003...in fact, there's only one in existence.
+[025:LSCR#0213](14)Vi använder bara lite i taget, förstår du.
+[025:LSCR#0213](14)Men LeChuck stal alltihop!
+[025:LSCR#0213](14) 
+[025:LSCR#0213](FA)Var gömmer han den?
+[025:LSCR#0213](FA)Hur tar jag mig till de här katakomberna?
+[025:LSCR#0213](FA)Vad finns i er standarddryck för exorcism?
+[025:LSCR#0213](FA)LeChuck kom hit och stal er rot? Vilken skurk!
+[025:LSCR#0213](FA)Jag ger mig av för att hitta LeChuck och få roten!
+[025:LSCR#0213](14)Åh, och jag antar att stjäla bananer är bättre?
+[025:LSCR#0213](14)Den Stora Apan själv är porten till underjordens katakomber.
+[025:LSCR#0213](14)Han är på en plats under den här ön...\255\003...somewhere in a huge system of catacombs...
+[025:LSCR#0213](14)...en helvetesplats fylld med tjutande av torterade själar fångade för alltid i berget...\255\003...where the walls bleed and the air is thick with the rancid smell of pure evil.
+[025:LSCR#0213](14)Turister brukade stå i kö i timmar för att se det.
+[025:LSCR#0213](FA)Vad hände? Hälsomyndigheten stängde er?
+[025:LSCR#0213](FA)Kan ni inte bara gå ner dit och kasta ut honom?
+[025:LSCR#0213](FA)Och sen kom LeChuck och förstörde allt, eller hur?
+[025:LSCR#0213](FA)Låter häftigt. Får jag se det?
+[025:LSCR#0213](14)Nej, vi tappade bort nyckeln.
+[025:LSCR#0213](14)Den blev stulen!
+[025:LSCR#0213](14)Vi lånade ut den till en eremit som bor på ön.
+[025:LSCR#0213](14)Och tills den där grinige gamla byxlöse konstigheten lämnar tillbaka den, behåller vi hans bananplockare.
+[025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Trying to find LeChuck could be very dangerous.
+[025:LSCR#0213](14)Du skulle aldrig hitta genom katakomberna utan--
+[025:LSCR#0213](14)Hej!\255\003Ixnay on the Eadhay of the Avigatornay!
+[025:LSCR#0213](D8)Va?
+[025:LSCR#0213](14)Ingenting.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](14)Ingenting.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](FA)Vad är Uvudethay av Avigatörenay?
+[025:LSCR#0213](FA)Varför pratar ni rövarspråk?
+[025:LSCR#0213](FA)Arhar ier artay enon artakay övoveror atakombernanay?
+[025:LSCR#0213](FA)Åh, kom igen. Berätta för mig. Jag gav er avguden.
+[025:LSCR#0213](14)Edsenay. Ejnay.
+[025:LSCR#0213](14)Det är en mycket fin avgud.
+[025:LSCR#0213](14)Jag ser att han är förbryllad av vår infödda dialekt.\255\003Good.
+[025:LSCR#0213](14)Vi kan åtminstone berätta vad huvudet gör.
+[025:LSCR#0213](14)Jo, det är ett navigeringsverktyg--
+[025:LSCR#0213](14)Det är ett huvud.\255\003It was once attached to a navigator.
+[025:LSCR#0213](14)Vi har hållit det vid liv magiskt så vi kan dra nytta av dess medfödda riktningskänsla.
+[025:LSCR#0213](14)Att ta sig igenom katakomberna utan det är omöjligt.
+[025:LSCR#0213](14)Men det är vårt enda, så du kan inte få det.
+[025:LSCR#0213](14)Jag antar att vi inte har något att erbjuda dig.
+[025:LSCR#0213](14)Och efter att han gav oss den där fina avguden också...
+[025:LSCR#0213](14)Känn dig fri att komma till Den Stora Apan och besöka din avgud när som helst.
+[025:LSCR#0213](14) 
+[025:LSCR#0213](14)Men i alla fall, Lemonhead, vad var det du sa om tropiska oljor?
+[025:LSCR#0213](14)Jo...
+[025:LSCR#0213](14) 
+[025:LSCR#0216](D8)--hrrm--
+[025:LSCR#0216](14)Ursäkta oss men vi är mitt i en allvarlig diskussion.
+[025:LSCR#0216](D8)Jag vet, men jag behöver verkligen det där navigatörshuvudet.
+[025:LSCR#0216](14)Jag sa, vi har bara ett.\255\003We don't know how to get another one.
+[025:LSCR#0216](14)Ledsen.
+[025:LSCR#0216](14)Jag sa, du kan inte få vårt huvud.\255\003We don't know how to get another one.
+[025:LSCR#0216](14) 
+[025:LSCR#0218](13)Herman Toothrot
+[025:LSCR#0218](14)Allt jag vill ha är min bananplockare tillbaka.
+[025:LSCR#0218](14)Men kommer de ge den till mig?
+[025:LSCR#0218](14)De vill ha Aphuvudnyckeln tillbaka FÖRST.
+[025:LSCR#0218](14)DET ska bli den dagen!
+[025:LSCR#0218](14)Tycker du inte de är orimliga?
+[025:LSCR#0218](14)Det är inte som att jag ber om mycket.
+[025:SCRP#0102](14)...och nej, jag blir inte kräsen.\255\003I'd LOVE to eat the guy!
+[025:SCRP#0102](14)Så låt oss göra det!
+[025:SCRP#0102](14)Men tänk på dina artärer!
+[025:SCRP#0102](14)Vi ÄR kannibaler, för tusan!
+[025:SCRP#0102](14)Ja, men kannibaler måste hålla koll på mättat fett precis som alla andra.
+[025:SCRP#0102](14)Om jag måste äta mer frukt kommer mitt huvud att förvandlas till en stor citrusfrukt!
+[025:SCRP#0102](14)Inget illa ment, Lemonhead.
+[025:SCRP#0104](14)Titta på det här.
+[025:SCRP#0104](14)Det ser ut som instruktioner om hur man får tag på ett huvud!
+[025:SCRP#0104](14)Vi kan ge honom vårt huvud och använda de här instruktionerna för att skaffa oss ett nytt!
+[025:SCRP#0104](14)Ja, jag antar att vi kan ge dig det här nu.
+[025:SCRP#0104](D8)Tack.
+[025:SCRP#0104](14)Ser ganska bra ut för ett torkat gammalt huvud, eller hur?
+[025:SCRP#0104](14) 
+[025:SCRP#0104](14)Vi håller det inlindat i det här magiska halsbandet som gör det osynligt för spöken.
+[025:SCRP#0104](14)Åh, titta.
+[025:SCRP#0104](14)Jag tror han gillar dig.
+[025:SCRP#0104](14)Följ bara hans näsa så leder han dig till LeChucks gömställe i katakomberna.\255\003Then get the root from LeChuck and come back here...
+[025:SCRP#0104](14)...och vi blandar en sats av vår speciella, enzymatiska spöklösande lösning.
+[025:SCRP#0104](14)Och du kan hälla den på LeChuck som salt på en snigel!
+[025:SCRP#0104](D8)Ja!
+[025:SCRP#0104](14)Lycka till.
+[025:SCRP#0104](D8)Vänta!
+[025:SCRP#0104](14)Vad?
+[025:SCRP#0104](D8)Jag vet inte ens var ingången till katakomberna är!
+[025:SCRP#0104](14)Åh ja, det är det stora aphuvudet på östra sidan.\255\003You can't miss it.\255\003Have fun!
+[025:SCRP#0104](14) 
+[025:SCRP#0105](14)Vi kanske äter upp dig, vi kanske släpper dig.\255\003We'll have to talk about it with the village nutritionist.
+[025:SCRP#0105](14)Kom. Låt mig visa dig vår gästhydda.
+[025:SCRP#0105](14)DET borde räcka.
+[025:SCRP#0106](D8)Jag gjorde det!\255\003I got the root!
+[025:SCRP#0106](14)Wow!
+[025:SCRP#0106](14)Titta, han skojar inte!\255\003Here it is!
+[025:SCRP#0106](14)Han är inte en sådan mes ändå!
+[025:SCRP#0106](14)Kom igen, låt oss göra brygden av den fermenterade roten.
+[025:SCRP#0106](14)Vänta här. Vi är strax tillbaka.
+[025:SCRP#0106](FA)Fin apa.
+[025:SCRP#0106](FA)Jag fick roten.
+[025:SCRP#0106](FA)Jag är inte en sådan mes ändå.
+[025:SCRP#0106](FA)Jag skulle älska att få dig uppstoppad. Jag skulle tjäna en förmögenhet.
+[025:SCRP#0106](14)Där är den.
+[025:SCRP#0106](14)Ett sprutt av det där och ektoplasman verkligen träffar fläkten!
+[025:SCRP#0106](14)Och om du har något över är det utsökt med lite vaniljglass.
+[025:SCRP#0106](14)Lycka till.
+[025:SCRP#0106](D8)Tack.
+[025:SCRP#0106](14) 
+[025:SCRP#0106](54)magisk sodavattenflaska
+[025:SCRP#0110](D8)Jag kan inte plocka fram det här inne.
+[025:SCRP#0110](54)halsband på navigator
+[025:SCRP#0110](D8)Jag sätter nog bäst tillbaka halsbandet på samma sätt som de infödda hade det först.
+[025:SCRP#0110](94)Hmmm...
+[025:SCRP#0110](94)Jag tror inte det plockar upp något.
+[025:SCRP#0110](94)Nä. Inget.
+[025:SCRP#0140](94)Hallå, herr Navigatör.
+[025:SCRP#0140](14)Hallå.
+[025:SCRP#0140](14)Du tänker väl inte tjata om mitt halsband igen, eller hur?
+[025:SCRP#0140](14)Okej, vi är här.\255\003Now what do you want from me?
+[025:SCRP#0140](14)Ja?
+[025:SCRP#0140](FA)Hallå, huvud.
+[025:SCRP#0140](FA)Får jag snälla ha det halsbandet?
+[025:SCRP#0140](FA)Tack för att du ledde mig till spökskeppet.
+[025:SCRP#0140](FA)Tack igen för att du ledde mig till spökskeppet.
+[025:SCRP#0140](FA)Jo, det har varit trevligt. Jag sätter tillbaka dig nu.
+[025:SCRP#0140](14)Hallå.
+[025:SCRP#0140](14)Är det något jag kan göra för dig?
+[025:SCRP#0140](14)Hej, inga problem.\255\003When you only have one job...\255\003you do it well.  Know what I mean?
+[025:SCRP#0140](14)Jag får känslan av att du ska be mig om en tjänst.
+[025:SCRP#0140](14)Var?
+[025:SCRP#0140](D8)Inget som angår dig.
+[025:SCRP#0140](14)Ja, jag förstår.
+[025:SCRP#0140](14)Nej, men tack för att du frågar så artigt.
+[025:SCRP#0140](FA)Varför kan jag inte få det?
+[025:SCRP#0140](FA)Åh kom igen, snällllla?
+[025:SCRP#0140](FA)Snälla raring?
+[025:SCRP#0140](FA)Snälla SNÄLLA raring?
+[025:SCRP#0140](FA)Snälla raring med socker på?
+[025:SCRP#0140](FA)Kanske bara tar jag det...
+[025:SCRP#0140](FA)Jag vill inte behöva göra dig illa...
+[025:SCRP#0140](FA)Vad ska du göra? Bita mig?
+[025:SCRP#0140](FA)Om jag ville kunde jag sparka ner dig i lavan.
+[025:SCRP#0140](FA)Bra. Jag ville inte ha det ändå.
+[025:SCRP#0140](14)Bra, för du får det inte.
+[025:SCRP#0140](14)Jag har dåliga känslor för det här stället.\255\003I think I might need it.
+[025:SCRP#0140](14)Hör du, tjata inte, okej?
+[025:SCRP#0140](14)Du kan tigga hur mycket du vill, men du får det inte.
+[025:SCRP#0140](14)Åh, okej då, ditt stora barn.\255\003You can have it.
+[025:SCRP#0140](14)Kanske borde du inte.
+[025:SCRP#0140](14)Och jag vill inte behöva få dig att ångra det.
+[025:SCRP#0140](14)Kom ihåg, du behöver mig för att ta dig ut härifrån.\255\003If I wanted to I could strand you here forever.
+[025:SCRP#0140](14)Vid närmare eftertanke...
+[025:SCRP#0140](14)Hej, vad ska man med ett halsband till om man inte har axlar?
+[025:SCRP#0141](54)halsband på Guybrush
+[025:SCRP#0141](D8)Jag har en känsla av att det här bara fungerar under jord.
+[025:SCRP#0141](D8)Det här känns konstigt.
+[025:SCRP#0171](14)Efter lite mer frenetisk paddling...
+[025:SCRP#0171](14) 
 [E][027:VERB#0306](D8)I think that's how I'll end up if I don't get out of here soon.
 [E][027:VERB#0306](D8)And to think I almost ended up like that.
 [E][027:VERB#0306](D8)No thanks.  They've still got some meat on them.
