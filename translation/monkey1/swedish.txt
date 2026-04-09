@@ -523,46 +523,46 @@
 [E][019:LSCR#0206](D8)Holy Monkey Bladders!\255\003It's Monkey Island®.
 [E][019:SCRP#0107](14) 
 [E][019:SCRP#0107](14) 
-[E][020:VERB#0271](D8)I'd better leave it here.
-[E][020:OBNA#0271](__)piece of paper
-[E][020:VERB#0264](D8)They look like they're almost ready to fall\255\001off the tree.
-[E][020:OBNA#0264](__)luscious, juicy bananas
-[E][020:VERB#0262](D8)Mmm.  Those are some luscious-looking bananas!
-[E][020:OBNA#0262](__)tree
-[E][020:VERB#0268](D8)I bet you can see the whole island from there.
-[E][020:VERB#0268](D8)That's that place with the great view.
-[E][020:OBNA#0268](__)towering rock
-[E][020:VERB#0261](D8)Deep.\255\003Dark.\255\003Forbidding.
-[E][020:OBNA#0261](__)jungle
-[E][020:VERB#0263](D8)That's strange...\255\003It says `Sea Monkey`.
-[E][020:OBNA#0263](__)rowboat
-[E][020:VERB#0270](D8)Some bananas fell off the tree!
-[E][020:OBNA#0270](__)bananas
-[E][020:VERB#0265](D8)It's yellow.
-[E][020:OBNA#0265](__)banana
-[E][020:VERB#0267](D8)It's yellow.
-[E][020:OBNA#0267](__)banana
-[E][020:VERB#0269](D8)Looks like a giant cotton swab.
-[E][020:OBNA#0269](__)monkey head key
-[E][020:VERB#0266](D8)It's yellow.
-[E][020:OBNA#0266](__)banana
-[E][020:OBNA#0272](__)memo
-[E][020:ENCD#0020](54)rowboat and oars
-[E][020:LSCR#0200](54)rowboat and oars
-[E][020:LSCR#0200](D8)I can paddle it with these oars.
-[E][020:LSCR#0200](D8)I don't have anything to paddle with.
-[E][020:LSCR#0202](13)monkey
-[E][020:LSCR#0202](14)ook
-[E][020:LSCR#0202](14)ook
-[E][020:LSCR#0202](14)ook
-[E][020:LSCR#0202](14)eep
-[E][020:LSCR#0202](14)eep
-[E][020:LSCR#0202](14) 
-[E][020:LSCR#0202](14) 
-[E][020:LSCR#0202](14)Hi!\255\003I'm Herman Toothrot!
-[E][020:LSCR#0202](14)Don't bother to say hello.\255\003I've only been waiting twenty years to talk to somebody civilized, I don't mind.
-[E][020:LSCR#0202](14)Fine.
-[E][020:LSCR#0202](14)By the way, you might want to think about putting out that fire.\255\003Someone could be hurt.
+[020:VERB#0271](D8)Jag lämnar den här hellre.
+[020:OBNA#0271](__)pappersbit
+[020:VERB#0264](D8)De ser ut som att de nästan är redo att falla\255\001av trädet.
+[020:OBNA#0264](__)läckra, saftiga bananer
+[020:VERB#0262](D8)Mmm. Det där är några läckert utseende bananer!
+[020:OBNA#0262](__)träd
+[020:VERB#0268](D8)Jag slår vad om att man kan se hela ön därifrån.
+[020:VERB#0268](D8)Det är den där platsen med den fina utsikten.
+[020:OBNA#0268](__)högt uppskjutande klippa
+[020:VERB#0261](D8)Djup.\255\003Mörk.\255\003Förbjuden.
+[020:OBNA#0261](__)djungel
+[020:VERB#0263](D8)Det är konstigt...\255\003Det står `Sea Monkey`.
+[020:OBNA#0263](__)roddbåt
+[020:VERB#0270](D8)Några bananer föll av trädet!
+[020:OBNA#0270](__)bananer
+[020:VERB#0265](D8)Den är gul.
+[020:OBNA#0265](__)banan
+[020:VERB#0267](D8)Den är gul.
+[020:OBNA#0267](__)banan
+[020:VERB#0269](D8)Ser ut som en gigantisk bomullspinne.
+[020:OBNA#0269](__)aphuvudsnyckel
+[020:VERB#0266](D8)Den är gul.
+[020:OBNA#0266](__)banan
+[020:OBNA#0272](__)memo
+[020:ENCD#0020](54)roddbåt och åror
+[020:LSCR#0200](54)roddbåt och åror
+[020:LSCR#0200](D8)Jag kan paddla den med de här årorna.
+[020:LSCR#0200](D8)Jag har inget att paddla med.
+[020:LSCR#0202](13)apa
+[020:LSCR#0202](14)ook
+[020:LSCR#0202](14)ook
+[020:LSCR#0202](14)ook
+[020:LSCR#0202](14)eep
+[020:LSCR#0202](14)eep
+[020:LSCR#0202](14)
+[020:LSCR#0202](14)
+[020:LSCR#0202](14)Hej!\255\003Jag är Herman Toothrot!
+[020:LSCR#0202](14)Bry dig inte om att säga hej.\255\003Jag har bara väntat i tjugo år på att få prata med någon civiliserad, jag har inget emot det.
+[020:LSCR#0202](14)Bra.
+[020:LSCR#0202](14)Förresten, du kanske vill tänka på att släcka den där elden.\255\003Någon skulle kunna bli skadad.
 [E][020:LSCR#0202](14) 
 [E][020:LSCR#0203](D8)`NOTICE OF PUBLIC MEETING`\255\003`There will be a meeting Wednesday evening to discuss the recent occupation of the Sacred Monkey Head by the ghost pirate LeChuck...`
 [E][020:LSCR#0203](D8)`...and the subsequent impact on the environment and the tourist trade.`\255\003`All Monkey Island® cannibals are encouraged to attend.`
@@ -593,36 +593,36 @@
 [E][020:SCRP#0095](FA)I got taken by a guy named Stan...
 [E][020:SCRP#0095](FA)What do you mean, `braver than I look`?
 [E][020:SCRP#0095](FA)Leave me alone, would you?
-[E][020:SCRP#0095](14)Um...\255\003I'm afraid I must be going now.\255\003Pressing business, you know.
-[E][020:SCRP#0095](14)-- hee hee --
-[E][020:SCRP#0095](14)Don't be a jerk.
-[E][020:SCRP#0095](14)Oh, nasty accident.\255\003He was trying to put up a swing.
-[E][020:SCRP#0095](14)It'd be a great tourist attraction, if anybody could ever find the island.
-[E][020:SCRP#0095](14)Well, that's OK.\255\003Next time be more careful.
-[E][020:SCRP#0095](14)Stan of Stan's Used Ships?\255\003On Mêlée Island®?
-[E][020:SCRP#0095](14)Heh heh heh heh
-[E][020:SCRP#0095](14)Hey, don't knock it.
-[E][020:SCRP#0095](14)It's the only one I've got.
-[E][020:SCRP#0095](14)You never saw him when he was still alive!
-[E][020:SCRP#0095](14)You don't fool me, sonny.
-[E][020:SCRP#0095](14)Oh, nothing.
-[E][020:SCRP#0095](14)Never mind.
-[E][020:SCRP#0095](D8)Are you some kind of a castaway?
-[E][020:SCRP#0095](14)What do I look like, the caretaker?
-[E][020:SCRP#0095](14)Listen to this guy:\255\003Am I some kind of a castaway?\255\003Heh.
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](FA)I thought this island was uninhabited.
-[E][020:SCRP#0095](FA)Who are you?
-[E][020:SCRP#0095](FA)Who are you talking to?
-[E][020:SCRP#0095](FA)I think I'd better go now.
-[E][020:SCRP#0095](14)Well, you thought wrong.
-[E][020:SCRP#0095](14)Me?
-[E][020:SCRP#0095](14)Why, the people watching, of course.
-[E][020:SCRP#0095](D8)Um... sure.
-[E][020:SCRP#0095](14)My name's Toothrot.  Herman Toothrot.\255\003I live here.
-[E][020:SCRP#0095](14)Well, not RIGHT here.
-[E][020:SCRP#0095](14)In the fort on the volcano.
-[E][020:SCRP#0095](D8)Were you stranded?
+[020:SCRP#0095](14)Öhm...\255\003Jag är rädd att jag måste sticka nu.\255\003Brådskande affärer, du vet.
+[020:SCRP#0095](14)-- hih hih --
+[020:SCRP#0095](14)Var inte en idiot.
+[020:SCRP#0095](14)Åh, otäck olycka.\255\003Han försökte sätta upp en gunga.
+[020:SCRP#0095](14)Det skulle vara en fantastisk turistattraktion, om någon någonsin kunde hitta ön.
+[020:SCRP#0095](14)Nå, det är okej.\255\003Nästa gång, var mer försiktig.
+[020:SCRP#0095](14)Stan från Stans Begagnade Fartyg?\255\003På Mêlée Island®?
+[020:SCRP#0095](14)Heh heh heh heh
+[020:SCRP#0095](14)Hej, kasta inte sten.
+[020:SCRP#0095](14)Det är den enda jag har.
+[020:SCRP#0095](14)Du såg honom aldrig när han fortfarande levde!
+[020:SCRP#0095](14)Du lurar inte mig, pojkvasker.
+[020:SCRP#0095](14)Åh, ingenting.
+[020:SCRP#0095](14)Glöm det.
+[020:SCRP#0095](D8)Är du någon slags strandsatt?
+[020:SCRP#0095](14)Vad ser jag ut som, vaktmästaren?
+[020:SCRP#0095](14)Lyssna på den här killen:\255\003Är jag någon slags strandsatt?\255\003Heh.
+[020:SCRP#0095](14)
+[020:SCRP#0095](FA)Jag trodde den här ön var obebodd.
+[020:SCRP#0095](FA)Vem är du?
+[020:SCRP#0095](FA)Vem pratar du med?
+[020:SCRP#0095](FA)Jag tror jag borde gå nu.
+[020:SCRP#0095](14)Tja, då trodde du fel.
+[020:SCRP#0095](14)Jag?
+[020:SCRP#0095](14)Varför, de som tittar, förstås.
+[020:SCRP#0095](D8)Öhm... jaha.
+[020:SCRP#0095](14)Mitt namn är Toothrot. Herman Toothrot.\255\003Jag bor här.
+[020:SCRP#0095](14)Tja, inte PRECIS här.
+[020:SCRP#0095](14)I fortet på vulkanen.
+[020:SCRP#0095](D8)Blev du strandsatt?
 [E][020:SCRP#0095](14)You think I stay here for my health?
 [E][020:SCRP#0095](14)Hoo, boy.
 [E][020:SCRP#0095](14) 
@@ -653,25 +653,25 @@
 [E][020:SCRP#0095](14)Oh, fine, DON'T rescue me.\255\003I like it here.
 [E][020:SCRP#0095](14)The rain on my head, the wind at my back...\255\003...the bugs on my plate...
 [E][020:SCRP#0095](D8)Um...\255\003Well, perhaps I could take you back, too...
-[E][020:SCRP#0095](D8)...but I'll need to find the Governor, first.
-[E][020:SCRP#0095](14)Oh, that's no problem.
-[E][020:SCRP#0095](14)I'm sure she's on the ghost ship, in the secret underground hideaway.
-[E][020:SCRP#0095](D8)Really?\255\003How do you know this?\255\003How can I get there?
-[E][020:SCRP#0095](14)Easiest way in is through the big monkey head idol.
-[E][020:SCRP#0095](14)I went in there myself, years ago.\255\003You'll need a key to open the thing up.
-[E][020:SCRP#0095](14)I got one from some of the locals.
-[E][020:SCRP#0095](D8)...but I've got to rescue the governor, first.\255\003I think she's on that ghost-ship underground.
-[E][020:SCRP#0095](14)Oh, OK.
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14)I lent my banana picker to them, and they never gave it back.
-[E][020:SCRP#0095](14)As collateral they gave me this enormous cotton swab.
-[E][020:SCRP#0095](14)It opens the Monkey Head, see?
-[E][020:SCRP#0095](14)It opens the big monkey head idol they worship.
-[E][020:SCRP#0095](14)Not like I ever need to go into the Monkey Head...\255\003...but if they want it back, I've got to have my picker first.\255\003It's a matter of pride, you know?
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14)I told you about them borrowing my banana picker and never returning it, right?
-[E][020:SCRP#0095](14)What pants?
-[E][020:SCRP#0095](14)No, I need it to get back my banana picker.
+[020:SCRP#0095](D8)...men jag måste hitta Guvernören först.
+[020:SCRP#0095](14)Åh, det är inga problem.
+[020:SCRP#0095](14)Jag är säker på att hon är på spökskeppet, i det hemliga underjordiska gömstället.
+[020:SCRP#0095](D8)Verkligen?\255\003Hur vet du det?\255\003Hur kan jag ta mig dit?
+[020:SCRP#0095](14)Enklaste vägen in är genom den stora aphuvudsavguden.
+[020:SCRP#0095](14)Jag gick in där själv, för flera år sen.\255\003Du behöver en nyckel för att öppna den.
+[020:SCRP#0095](14)Jag fick en från några av de lokala.
+[020:SCRP#0095](D8)...men jag måste rädda guvernören först.\255\003Jag tror hon är på det där spökskeppet under marken.
+[020:SCRP#0095](14)Åh, okej.
+[020:SCRP#0095](14)
+[020:SCRP#0095](14)Jag lånade ut min bananplockare till dem, och de gav aldrig tillbaka den.
+[020:SCRP#0095](14)Som säkerhet gav de mig den här enorma bomullspinnen.
+[020:SCRP#0095](14)Den öppnar Aphuvudet, fattar du?
+[020:SCRP#0095](14)Den öppnar den stora aphuvudsavguden de dyrkar.
+[020:SCRP#0095](14)Inte som att jag någonsin behöver gå in i Aphuvudet...\255\003...men om de vill ha tillbaka den, måste jag ha min plockare först.\255\003Det är en fråga om stolthet, vet du?
+[020:SCRP#0095](14)
+[020:SCRP#0095](14)Jag berättade om att de lånat min bananplockare och aldrig lämnat tillbaka den, eller hur?
+[020:SCRP#0095](14)Vilka byxor?
+[020:SCRP#0095](14)Nej, jag behöver den för att få tillbaka min bananplockare.
 [E][020:SCRP#0095](14) 
 [E][020:SCRP#0095](14) 
 [E][020:SCRP#0096](14) 
