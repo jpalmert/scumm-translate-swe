@@ -4008,154 +4008,154 @@
 [082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom® idag!
 [082:SCRP#0093](14)Förlåt, men vissa ämnen gör mig bara så upprymd.
 [082:SCRP#0093](14)Aja.
-[E][083:VERB#0901](D8)It's called `How to Get a Leg Up in Treasure Hunting.`
-[E][083:OBNA#0901](__)pamphlet
-[E][083:VERB#0902](D8)It's called `How to Get Ahead in Navigating.`
-[E][083:OBNA#0902](__)leaflet
-[E][083:VERB#0903](D8)It's called `How to Arm Yourself in Sea Battle.`
-[E][083:OBNA#0903](__)brochure
-[E][083:OBNA#0904](__)dock
-[E][083:OBNA#0905](__)dock
-[E][083:VERB#0906](D8)He's cruel and nasty and about to hit me again.
-[E][083:OBNA#0906](__)LeChuck
-[E][083:VERB#0907](D8)Attention, pirates of Mêlée:\255\003Your governor is alive and well and by my side as she was always meant to be.
-[E][083:VERB#0907](D8)If you try to find us you will only meet with horrifying disaster.
-[E][083:VERB#0907](D8)Yours truly, Captain LeChuck.
-[E][083:VERB#0907](14) 
-[E][083:OBNA#0907](__)note
-[E][083:LSCR#0200](14)Hey!  It's a good thing you showed up.
-[E][083:LSCR#0200](14)Ten people have offered to buy this baby off me while I've been standing here waiting for you.
-[E][083:LSCR#0200](14)But I said, 'NO WAY.'\255\003'I know a guy who's in love with this ship, and it would break his heart to lose it.'\255\003Am I right?
-[E][083:LSCR#0200](14)Of course I am!
-[E][083:LSCR#0200](14)I mean, just look at her!
-[E][083:LSCR#0200](14)Sleek...\255\003...aerodynamic...
-[E][083:LSCR#0200](14)...a buoyant, barnacle-covered beauty.
-[E][083:LSCR#0200](14)I think we're having a real moment here.
-[E][083:LSCR#0200](14)I've changed my mind.
-[E][083:LSCR#0200](14)I can't give her up.
-[E][083:LSCR#0200](14)You can have your money back.
-[E][083:LSCR#0200](14)How could I sell something so dear?
-[E][083:LSCR#0200](14)Then again, a deal's a deal, right?
-[E][083:LSCR#0200](14)Right.
-[E][083:LSCR#0200](14)Catch you later.
-[E][083:LSCR#0200](14)Good luck.
-[E][083:LSCR#0200](14)Enjoy.
-[E][083:LSCR#0200](14)I'm outta here.
-[E][083:LSCR#0200](14)Whoops!  I almost forgot to give you this free seafaring literature.
-[E][083:LSCR#0200](14)My gift to you.  Just remember where you got it.
-[E][083:LSCR#0200](14)STAN'S!!!
-[E][083:LSCR#0200](D8)Maybe I should have gotten that extended warranty after all.
-[E][083:LSCR#0200](14)Hey, long time no see.
-[E][083:LSCR#0200](14) 
-[E][083:LSCR#0200](FA)Otis!  I thought I'd never see you again!
-[E][083:LSCR#0200](FA)You little two-faced cretin!  You tricked me.
-[E][083:LSCR#0200](FA)Have you come to be on my crew?
-[E][083:LSCR#0200](FA)Your Aunt Tillie makes lousy carrot cake.
-[E][083:LSCR#0200](14)Oh, come on.  Don't be bitter.
-[E][083:LSCR#0200](14)I'm here to help.  Not just for the money.
-[E][083:LSCR#0200](14)Hey, I could never pass up a chance to make some easy money.
-[E][083:LSCR#0200](D8)Money?
-[E][083:LSCR#0200](14)Yeah, we are getting paid for this, right?
-[E][083:LSCR#0200](FA)Boy, talk about a crummy attitude.
-[E][083:LSCR#0200](FA)Glad you could make it, Carla.
-[E][083:LSCR#0200](FA)Is it true what I heard about you and the storekeeper?
-[E][083:LSCR#0200](FA)How appropriate.  You fight like a cow.
-[E][083:LSCR#0200](14)You never did know when to use that one.
-[E][083:LSCR#0200](14)Look, don't start with me, okay?
-[E][083:LSCR#0200](14)So what's that waterlogged wreck doing out there?
-[E][083:LSCR#0200](14)How are we going to get our ship in here with that pile of scrap in the way?
-[E][083:LSCR#0200](14)Where's the cabin boy?
-[E][083:LSCR#0200](14)I need him to go back to my place and pick up my bags.
-[E][083:LSCR#0200](14)What's going on here?
-[E][083:LSCR#0200](14)Where's our ship?
-[E][083:LSCR#0200](14)Where's our crew?
-[E][083:LSCR#0200](D8)This isn't going to be as easy as I thought.
-[E][083:LSCR#0201](D8)Well, that wasn't so hard.
-[E][083:LSCR#0201](D8)Now, all I have to do is get these fish out of my pants.
-[E][083:LSCR#0201](D8)Now, all I have to do is show this stupid idol to the pirate leaders and--
-[E][083:LSCR#0201](14)You're alive!
-[E][083:LSCR#0201](D8)Governor!
-[E][083:LSCR#0201](14)Hey, you can talk!\255\003Who'd have known?
-[E][083:LSCR#0201](D8)What are YOU doing here?\255\003Come to finish the job?
-[E][083:LSCR#0201](14)No, I came down here to save your life.\255\003Fester wasn't acting on MY orders when he threw you in there.
-[E][083:LSCR#0201](D8)You came down here to rescue me?
-[E][083:LSCR#0201](D8)I didn't even think you liked me.
-[E][083:LSCR#0201](14)Well, our first meeting was a little awkward...\255\003You seemed to have trouble forming complete sentences.\255\003But, then again, so do most of my citizens.
-[E][083:LSCR#0201](D8)But I'm not one of your citizens...
-[E][083:LSCR#0201](D8)...I'm just a drifter, a nobody, a would-be pirate.
-[E][083:LSCR#0201](D8)Who would have known, or even cared, if you'd let me drown?
-[E][083:LSCR#0201](14)I would have, Guybrush.
-[E][083:LSCR#0201](D8)Oh, Governor...
-[E][083:LSCR#0201](14)Oh, Threepwood...
-[E][083:LSCR#0201](D8)Oh, Elaine!
-[E][083:LSCR#0201](14)Oh, Guybrush!
-[E][083:LSCR#0201](D8)Love muffin!
-[E][083:LSCR#0201](14)Sugar boots!
-[E][083:LSCR#0201](D8)Honey pumpkin!
-[E][083:LSCR#0201](14)Plunder bunny!
-[E][083:LSCR#0201](D8)Kiss me!
-[E][083:LSCR#0201](14)No!  We mustn't!
-[E][083:LSCR#0201](D8)What?
-[E][083:LSCR#0201](14)Not here, where everyone can see us.
-[E][083:LSCR#0201](D8)Why?  Are you ashamed of me?
-[E][083:LSCR#0201](14)No, no, it's not that at all...\255\003It's just that many of these pirates have made advances toward me.
-[E][083:LSCR#0201](14)And to avoid hurting their feelings, I've always told them that my father made me promise never to fall in love with a pirate.
-[E][083:LSCR#0201](14)If they see us together, they'll know I was lying.
-[E][083:LSCR#0201](D8)Okay then, let's go to your place.
-[E][083:LSCR#0201](14)Okay.
-[E][083:LSCR#0201](14)But finish your trials first.\255\003I don't want you to be...\255\003...preoccupied.
-[E][083:LSCR#0201](D8)But...
-[E][083:LSCR#0201](D8)I feel this sudden urge to complete the trials...\255\003...quickly.
-[E][083:LSCR#0201](14) 
-[E][083:LSCR#0203](13)lookout
-[E][083:LSCR#0203](D8)What was that?
-[E][083:LSCR#0203](D8)I'm so confused.
-[E][083:LSCR#0203](14)Hey!  What are you doing just standing around?
-[E][083:LSCR#0203](14)The Governor's been kidnapped!
-[E][083:LSCR#0203](D8)What?  By whom?
-[E][083:LSCR#0203](14)LeChuck's got her on that ship that just sailed off.
-[E][083:LSCR#0203](14)He caught her alone when she came down here to rescue you.
-[E][083:LSCR#0203](14)I'm afraid we've seen the last of her.
-[E][083:LSCR#0203](14) 
-[E][083:LSCR#0203](FA)So where were you this whole time?  Sleeping?
-[E][083:LSCR#0203](FA)Where did they go?
-[E][083:LSCR#0203](FA)Why don't you think we'll see her again?
-[E][083:LSCR#0203](FA)I'll go get a crew and a ship and go rescue her!
-[E][083:LSCR#0203](14)Hey, I'm a lookout, not a bodyguard.
-[E][083:LSCR#0203](14)That's not going to be easy, you know.
-[E][083:LSCR#0203](14)LeChuck's taken the Governor back to his hideout on Monkey Island®.\255\003I'm afraid that no pirate on this island is brave enough to follow him there.
-[E][083:LSCR#0203](14)But, hey, good luck.
-[E][083:LSCR#0203](14)Oh yeah, I almost forgot...
-[E][083:LSCR#0203](14)They left this note.
-[E][083:LSCR#0203](14)You can have it, but I don't think you'll like what it says.
-[E][083:LSCR#0203](D8)Oh, Governor...\255\003Why did you have to risk your life for me?
-[E][083:LSCR#0203](D8)Maybe you cared for me more than I thought...
-[E][083:LSCR#0203](D8)...Just as I now realize how much I care for you.
-[E][083:LSCR#0203](D8)It's my fault the Governor's in this mess, and I swear I'll get her out of it...\255\003Even if I have to sail to Monkey Island® myself to get her!
-[E][083:LSCR#0203](14) 
-[E][083:LSCR#0204](D8)Yikes!
-[E][083:LSCR#0204](14)Hey!
-[E][083:LSCR#0204](14) 
-[E][083:LSCR#0204](14)Wait a second!
-[E][083:LSCR#0204](14) 
-[E][083:LSCR#0204](FA)Could I interest you in some root beer, sir?
-[E][083:LSCR#0204](FA)I'm selling this fine mouthwash.
-[E][083:LSCR#0204](FA)Want to see a neat trick?
-[E][083:LSCR#0204](FA)Swill THIS, creepy-crawly!
-[E][083:LSCR#0204](14)Root beer?\255\003Oh, boy!\255\003I LOVE root beer!
-[E][083:LSCR#0204](14)Is it mint-flavored?\255\003I only like the minty kind.
-[E][083:LSCR#0204](14)Gosh, yes!\255\003I LOVE magic tricks!\255\003Is there a dove?
-[E][083:LSCR#0204](14)Foul-smelling grog to swill?\255\003Swell!
-[E][083:LSCR#0204](14) 
-[E][083:LSCR#0204](D8)Cool!
-[E][083:LSCR#0205](D8)The church is the other way!
-[E][083:SCRP#0065](14)This is the end of the road, my little pantalooned pal.
-[E][083:SCRP#0065](14)Your troublemaking days on Mêlée Island® are over.
-[E][083:SCRP#0065](14)My plans for the Governor are far too important...\255\003...and much too near completion...
-[E][083:SCRP#0065](14)...to risk letting a would-be pirate like you get in the way.
-[E][083:SCRP#0065](14)So long, Mr. Spicecake, or Droopface, or whatever your name is.
-[E][083:SCRP#0065](14) 
-[E][083:SCRP#0065](14)Hmmm...\255\003This might actually turn out to be a pretty good day.
+[083:VERB#0901](D8)Den heter "Hur du får ett ben upp i skattletandet."
+[083:OBNA#0901](__)broschyr
+[083:VERB#0902](D8)Den heter "Hur du kommer framåt inom navigering."
+[083:OBNA#0902](__)broschyr
+[083:VERB#0903](D8)Den heter "Hur du beväpnar dej i sjöstrid."
+[083:OBNA#0903](__)broschyr
+[083:OBNA#0904](__)brygga
+[083:OBNA#0905](__)brygga
+[083:VERB#0906](D8)Han är grym och elak och på väg att slå mej igen.
+[083:OBNA#0906](__)LeChuck
+[083:VERB#0907](D8)Hör upp, pirater på Mêlée:\255\003Er guvernör lever och mår bra och är vid min sida, som det alltid var menat att vara.
+[083:VERB#0907](D8)Om ni försöker hitta oss kommer ni bara att möta fruktansvärd olycka.
+[083:VERB#0907](D8)Er tillgivne, Kapten LeChuck.
+[083:VERB#0907](14) 
+[083:OBNA#0907](__)lapp
+[083:LSCR#0200](14)Hallå!  Tur att du dök upp.
+[083:LSCR#0200](14)Tio personer har erbjudit sig att köpa den här skönheten medan ja stått här och väntat på dej.
+[083:LSCR#0200](14)Men ja sa, 'INTE EN CHANS.'\255\003'Ja känner en kille som är förälskad i det här skeppet, och det skulle krossa hans hjärta att förlora det.'\255\003Har ja rätt?
+[083:LSCR#0200](14)Klart ja har!
+[083:LSCR#0200](14)Titta bara på henne!
+[083:LSCR#0200](14)Slank...\255\003...aerodynamisk...
+[083:LSCR#0200](14)...en flytande, havstulpanstäckt skönhet.
+[083:LSCR#0200](14)Ja tror vi har ett riktigt ögonblick här.
+[083:LSCR#0200](14)Ja har ändrat mej.
+[083:LSCR#0200](14)Ja kan inte ge upp henne.
+[083:LSCR#0200](14)Du kan få tillbaka dina pengar.
+[083:LSCR#0200](14)Hur kan ja sälja nåt så dyrbart?
+[083:LSCR#0200](14)Men å andra sidan, en affär är en affär, eller hur?
+[083:LSCR#0200](14)Just det.
+[083:LSCR#0200](14)Vi ses sen.
+[083:LSCR#0200](14)Lycka till.
+[083:LSCR#0200](14)Ha det så kul.
+[083:LSCR#0200](14)Ja sticker.
+[083:LSCR#0200](14)Hoppsan!  Ja glömde nästan att ge dej den här gratis sjöfartslitteraturen.
+[083:LSCR#0200](14)Min gåva till dej.  Kom bara ihåg var du fick den.
+[083:LSCR#0200](14)STANS!!!
+[083:LSCR#0200](D8)Kanske borde ja ha skaffat den utökade garantin trots allt.
+[083:LSCR#0200](14)Hallå, länge sen sist.
+[083:LSCR#0200](14) 
+[083:LSCR#0200](FA)Otis!  Ja trodde ja aldrig skulle se dej igen!
+[083:LSCR#0200](FA)Din lilla dubbelspelande kräk!  Du lurade mej.
+[083:LSCR#0200](FA)Har du kommit för att vara i min besättning?
+[083:LSCR#0200](FA)Din tant Tillie bakar usel morotskaka.
+[083:LSCR#0200](14)Äh, kom igen.  Var inte bitter.
+[083:LSCR#0200](14)Ja är här för att hjälpa.  Inte bara för pengarna.
+[083:LSCR#0200](14)Hallå, ja kan aldrig tacka nej till en chans att tjäna lite lätta pengar.
+[083:LSCR#0200](D8)Pengar?
+[083:LSCR#0200](14)Ja, vi får betalt för det här, va?
+[083:LSCR#0200](FA)Snacka om dålig attityd.
+[083:LSCR#0200](FA)Kul att du kunde komma, Carla.
+[083:LSCR#0200](FA)Stämmer det ja hörde om dej och handlaren?
+[083:LSCR#0200](FA)Hur passande.  Du slåss som en ko.
+[083:LSCR#0200](14)Du har aldrig vetat när man ska använda den.
+[083:LSCR#0200](14)Hörru, börja inte med mej, okej?
+[083:LSCR#0200](14)Så vad gör det där vattendränkta vraket där ute?
+[083:LSCR#0200](14)Hur ska vi få in vårt skepp här med den där skrothögen i vägen?
+[083:LSCR#0200](14)Var är skeppspojken?
+[083:LSCR#0200](14)Ja behöver honom för att hämta mina väskor hemma hos mej.
+[083:LSCR#0200](14)Vad är det som pågår här?
+[083:LSCR#0200](14)Var är vårt skepp?
+[083:LSCR#0200](14)Var är vår besättning?
+[083:LSCR#0200](D8)Det här blir inte lika lätt som ja trodde.
+[083:LSCR#0201](D8)Nå, det var inte så svårt.
+[083:LSCR#0201](D8)Nu behöver ja bara få ut dom här fiskarna ur mina byxor.
+[083:LSCR#0201](D8)Nu behöver ja bara visa den här dumma idolen för piratledarna och--
+[083:LSCR#0201](14)Du lever!
+[083:LSCR#0201](D8)Guvernören!
+[083:LSCR#0201](14)Hallå, du kan prata!\255\003Vem hade kunnat ana?
+[083:LSCR#0201](D8)Vad gör DU här?\255\003Kommit för att avsluta jobbet?
+[083:LSCR#0201](14)Nej, ja kom ner hit för att rädda ditt liv.\255\003Fester handlade inte på MINA order när han kastade in dej där.
+[083:LSCR#0201](D8)Du kom ner hit för att rädda mej?
+[083:LSCR#0201](D8)Ja trodde inte ens att du tyckte om mej.
+[083:LSCR#0201](14)Tja, vårt första möte var lite pinsamt...\255\003Du verkade ha problem med att bilda fullständiga meningar.\255\003Men å andra sidan, det har dom flesta av mina medborgare också.
+[083:LSCR#0201](D8)Men ja är inte en av dina medborgare...
+[083:LSCR#0201](D8)...ja är bara en dagdrivare, en ingen, en blivande pirat.
+[083:LSCR#0201](D8)Vem hade vetat, eller ens brytt sej, om du låtit mej drunkna?
+[083:LSCR#0201](14)Det hade ja, Guybrush.
+[083:LSCR#0201](D8)Åh, Guvernören...
+[083:LSCR#0201](14)Åh, Threepwood...
+[083:LSCR#0201](D8)Åh, Elaine!
+[083:LSCR#0201](14)Åh, Guybrush!
+[083:LSCR#0201](D8)Sötnos!
+[083:LSCR#0201](14)Sockerull!
+[083:LSCR#0201](D8)Honungspansen!
+[083:LSCR#0201](14)Plundringsansen!
+[083:LSCR#0201](D8)Kyss mej!
+[083:LSCR#0201](14)Nej!  Det får vi inte!
+[083:LSCR#0201](D8)Va?
+[083:LSCR#0201](14)Inte här, där alla kan se oss.
+[083:LSCR#0201](D8)Varför?  Skäms du för mej?
+[083:LSCR#0201](14)Nej, nej, det är inte alls det...\255\003Det är bara att många av dom här piraterna har gjort närmanden mot mej.
+[083:LSCR#0201](14)Och för att inte såra dom har ja alltid sagt att min far fick mej att lova att aldrig bli kär i en pirat.
+[083:LSCR#0201](14)Om dom ser oss tillsammans förstår dom att ja ljög.
+[083:LSCR#0201](D8)Okej, då går vi hem till dej.
+[083:LSCR#0201](14)Okej.
+[083:LSCR#0201](14)Men avsluta dina prövningar först.\255\003Ja vill inte att du ska vara...\255\003...distraherad.
+[083:LSCR#0201](D8)Men...
+[083:LSCR#0201](D8)Ja känner en plötslig lust att avsluta prövningarna...\255\003...snabbt.
+[083:LSCR#0201](14) 
+[083:LSCR#0203](13)utkiken
+[083:LSCR#0203](D8)Vad var det?
+[083:LSCR#0203](D8)Ja är så förvirrad.
+[083:LSCR#0203](14)Hallå!  Vad gör du som bara står här?
+[083:LSCR#0203](14)Guvernören har blivit kidnappad!
+[083:LSCR#0203](D8)Va?  Av vem?
+[083:LSCR#0203](14)LeChuck har henne på det skepp som just seglade iväg.
+[083:LSCR#0203](14)Han fångade henne ensam när hon kom ner hit för att rädda dej.
+[083:LSCR#0203](14)Ja är rädd att vi har sett henne för sista gången.
+[083:LSCR#0203](14) 
+[083:LSCR#0203](FA)Var var du hela tiden?  Sov du?
+[083:LSCR#0203](FA)Vart tog dom vägen?
+[083:LSCR#0203](FA)Varför tror du inte vi ser henne igen?
+[083:LSCR#0203](FA)Ja skaffar en besättning och ett skepp och räddar henne!
+[083:LSCR#0203](14)Hallå, ja är en utkik, inte en livvakt.
+[083:LSCR#0203](14)Det blir inte lätt, vet du.
+[083:LSCR#0203](14)LeChuck har tagit Guvernören tillbaka till sitt gömställe på Monkey Island®.\255\003Ja är rädd att ingen pirat på den här ön är modig nog att följa efter honom dit.
+[083:LSCR#0203](14)Men, hallå, lycka till.
+[083:LSCR#0203](14)Åh ja, ja glömde nästan...
+[083:LSCR#0203](14)Dom lämnade den här lappen.
+[083:LSCR#0203](14)Du kan få den, men ja tror inte du kommer att gilla det som står.
+[083:LSCR#0203](D8)Åh, Guvernören...\255\003Varför var du tvungen att riskera ditt liv för mej?
+[083:LSCR#0203](D8)Kanske brydde du dej om mej mer än ja trodde...
+[083:LSCR#0203](D8)...Precis som ja nu inser hur mycket ja bryr mej om dej.
+[083:LSCR#0203](D8)Det är mitt fel att Guvernören är i den här knipan, och ja svär att ja ska rädda henne...\255\003Även om ja måste segla till Monkey Island® själv för att hämta henne!
+[083:LSCR#0203](14) 
+[083:LSCR#0204](D8)Jösses!
+[083:LSCR#0204](14)Hallå!
+[083:LSCR#0204](14) 
+[083:LSCR#0204](14)Vänta lite!
+[083:LSCR#0204](14) 
+[083:LSCR#0204](FA)Kan ja intressera er för lite rotöl, herrn?
+[083:LSCR#0204](FA)Ja säljer det här fina munvattnet.
+[083:LSCR#0204](FA)Vill du se ett coolt trick?
+[083:LSCR#0204](FA)Svälj DET HÄR, kryp!
+[083:LSCR#0204](14)Rotöl?\255\003Åh, gosse!\255\003Ja ÄLSKAR rotöl!
+[083:LSCR#0204](14)Är det mintsmak?\255\003Ja gillar bara det mintiga.
+[083:LSCR#0204](14)Oj, ja!\255\003Ja ÄLSKAR trolleritrick!\255\003Är det med en duva?
+[083:LSCR#0204](14)Illaluktande grogg att svepa?\255\003Toppen!
+[083:LSCR#0204](14) 
+[083:LSCR#0204](D8)Coolt!
+[083:LSCR#0205](D8)Kyrkan är åt andra hållet!
+[083:SCRP#0065](14)Det här är vägens slut, min lille byxklädde kompis.
+[083:SCRP#0065](14)Dina dagar som bråkstake på Mêlée Island® är över.
+[083:SCRP#0065](14)Mina planer för Guvernören är alldeles för viktiga...\255\003...och alldeles för nära fullbordan...
+[083:SCRP#0065](14)...för att riskera att en blivande pirat som du ställer till det.
+[083:SCRP#0065](14)Hej då, herr Kryddkansen, eller Hängansen, eller vad du nu heter.
+[083:SCRP#0065](14) 
+[083:SCRP#0065](14)Hmmm...\255\003Det här kanske faktiskt blir en riktigt bra dag.
 [084:ENCD#0084](14)VÄGBESKRIVNING TILL MONKEY ISLAND!!!
 [084:ENCD#0084](14)
 [084:ENCD#0084](14)Förvärm grytan till 450 grader
