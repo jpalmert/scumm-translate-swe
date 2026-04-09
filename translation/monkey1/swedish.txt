@@ -54,7 +54,7 @@
 [007:VERB#0079](D8)Det verkar vara låst ordentligt.
 [007:VERB#0079](D8)Det är Kaptenens fina ekskåp.
 [007:OBNA#0079](__)skåp
-[007:VERB#0083](D8)Det finns en gammal, dammig bok inuti.\255\003Låt oss se vad det är.
+[007:VERB#0083](D8)Det finns en gammal, dammig bok inuti.\255\003Vi får se vad det är.
 [007:VERB#0083](D8)Den är tom.
 [007:VERB#0083](D8)Det ser ut som Kaptenens låda.
 [007:OBNA#0083](__)låda
@@ -66,14 +66,14 @@
 [007:VERB#0087](D8)Den är bäddad!\255\003Måste vara `återförsäljarpreppat.`
 [007:VERB#0087](D8)Det finns tid för det senare.
 [007:OBNA#0087](__)Kaptenens säng
-[007:LSCR#0200](D8)Jag är förlorad.
+[007:LSCR#0200](D8)Jag är körd.
 [007:SCRP#0148](D8)Det står:\255\003`Kaptenens logg, 10 mars.`\255\003`Styrman Toothrot och jag har letat efter Monkey Island® i över en månad utan framgång.`
 [007:SCRP#0148](D8)`Vägbeskrivningen vi köpte på Mêlée visade sig vara ett recept, inte en karta som vi trott.`
 [007:SCRP#0148](D8)`Kaptenens logg, 12 mars.`\255\003`Jag önskar att Toothrot kunde ta ett bad.`
 [007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Toothrot kunde sluta snarka.`
 [007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Toothrot börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi drabbar samman.`
 [007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Toothrot att laga middag ikväll.`
-[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Toothrot och jag tuppade av av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
+[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Toothrot och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
 [007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Toothrot och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island®.`
 [007:SCRP#0148](D8)`Vi är båda upphetsade över möjligheten att bli de första civiliserade människorna som lär sig Monkey Islands® Hemlighet.`
 [007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Toothrot glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
@@ -114,7 +114,7 @@
 [008:OBNA#0103](__)svart kista
 [008:VERB#0104](D8)Ah, fin bukett.
 [008:VERB#0104](D8)Jag tror det behöver andas i rumstemperatur ett tag till.
-[008:VERB#0104](D8)Jag är ingen vinexpert, men att döma av den djupröda färgen...\255\003...så är detta ett mycket fint vin.
+[008:VERB#0104](D8)Jag är ingen vinexpert, men att döma av den djupröda färgen...\255\003...så är det här ett riktigt fint vin.
 [008:OBNA#0104](__)fint vin
 [008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat den.
 [009:VERB#0108](D8)Jag tror jag kommer bli sjösjuk.
@@ -1650,7 +1650,7 @@
 [030:LSCR#0212](14)Kom igen! Köp nåt bara.
 [030:LSCR#0212](14)Vad tror du det här är? Ett museum?
 [030:LSCR#0212](14)Jag har inte hela dan.
-[030:LSCR#0212](14)Rör på dig, finbyxor!
+[030:LSCR#0212](14)Rör på dig, finbyxan!
 [030:LSCR#0212](14)Tänk inte, köp bara!
 [030:LSCR#0212](14)Kom du bara in för att slippa kylan, eller behöver du nåt?
 [030:LSCR#0212](14)Väntar du på att jag ska somna eller?
