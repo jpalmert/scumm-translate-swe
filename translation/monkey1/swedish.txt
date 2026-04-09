@@ -1499,7 +1499,7 @@
 [030:OBNA#0395](__)mintpastiller
 [030:VERB#0396](D8)`DIGMASTER® -- Den enda spaden för seriösa skattjaktsentusiaster.`
 [030:OBNA#0396](__)spade
-[030:VERB#0397](94)Jag, den gode och hedervärde butiksägaren, tar härmed ansvar för innehavarens skulder upp till 5000 åttor.
+[030:VERB#0397](94)Jag, den gode och hedervärde butiksägaren, tar härmed ansvar för innehavarens skulder upp till 5000 dubloner.
 [030:OBNA#0397](__)butiksägarens skuldebrev
 [030:OBNA#0387](__)dörr
 [030:VERB#0388](94)`SLASHMASTER® -- När du vill ha ett svärd lika vasst som din kvickhet.`
@@ -1553,22 +1553,22 @@
 [030:LSCR#0211](FA)Har ni filar?
 [030:LSCR#0211](FA)Jag tror jag bara vill titta runt.
 [030:LSCR#0211](D8)Jag tror jag bara vill titta runt så länge.
-[030:LSCR#0211](14)Jag har redan sagt, det kostar 100 åttor.\255\003Hade du med dig tillräckligt den här gången?
-[030:LSCR#0211](14)Det blir 100 åttor.\255\003Ta det eller lämna det.
+[030:LSCR#0211](14)Jag har redan sagt, det kostar 100 dubloner.\255\003Hade du med dig tillräckligt den här gången?
+[030:LSCR#0211](14)Det blir 100 dubloner.\255\003Ta det eller lämna det.
 [030:LSCR#0211](FA)Jag tar det.
 [030:LSCR#0211](FA)Jag har inte tillräckligt med pengar.
 [030:LSCR#0211](FA)Jag vill inte ha det.
 [030:LSCR#0211](14)Utmärkt.
-[030:LSCR#0211](14)Bästa 100 åttorna du nånsin spenderat.
+[030:LSCR#0211](14)Bästa 100 dublonerna du nånsin spenderat.
 [030:LSCR#0211](14)Typiskt.
 [030:LSCR#0211](14)Hur vill du annars slösa bort min tid?
-[030:LSCR#0211](14)Samma pris som förra gången du frågade:\255\00375 åttor.
-[030:LSCR#0211](14)Ännu en blivande skattletare, va?\255\003Det kostar dig 75 åttor.
+[030:LSCR#0211](14)Samma pris som förra gången du frågade:\255\00375 dubloner.
+[030:LSCR#0211](14)Ännu en blivande skattletare, va?\255\003Det kostar dig 75 dubloner.
 [030:LSCR#0211](14)
 [030:LSCR#0211](FA)Jag tar den.
-[030:LSCR#0211](FA)75 åttor? Så mycket har jag inte.
+[030:LSCR#0211](FA)75 dubloner? Så mycket har jag inte.
 [030:LSCR#0211](FA)Jag vill inte ha den.
-[030:LSCR#0211](14)Utmärkt.\255\003Den betalar sig själv, tro mig.\255\003Du gräver upp 75 åttor på nolltid.\255\003Men hörru, spara lite skatt åt oss andra, va?\255\003Ha ha ha!
+[030:LSCR#0211](14)Utmärkt.\255\003Den betalar sig själv, tro mig.\255\003Du gräver upp 75 dubloner på nolltid.\255\003Men hörru, spara lite skatt åt oss andra, va?\255\003Ha ha ha!
 [030:LSCR#0211](14)
 [030:LSCR#0211](14)Då bör du gå och lägga tillbaka den.
 [030:LSCR#0211](14)Finns det nåt här som du kanske HAR råd med?
@@ -1919,7 +1919,7 @@
 [035:VERB#0444](94)Jag måste ta mig till kyrkan!
 [035:OBNA#0444](__)dörr
 [035:OBNA#0442](__)karta
-[035:VERB#0443](D8)`Ye Olde Gummikyckling-Med-En- Trissa-I-Mitten Butiken...`\255\003`...Tillgodoser dina gummikyckling-med-en- trissa-i-mitten-behov i över 50 år.`
+[035:VERB#0443](D8)`Den Ärevördiga Gummikyckling-Med- Trissa-I-Mitten-Boden...`\255\003`...Vi har löst dina gummikyckling- med-trissa-i-mitten-problem i över 50 år.`
 [035:OBNA#0443](__)skylt
 [035:OBNA#0445](__)dörr
 [035:OBNA#0446](__)dörr
@@ -1989,7 +1989,7 @@
 [035:LSCR#0216](FA)Hur står ni ut med att vara nära det här ohyran?
 [035:LSCR#0216](FA)Känner ni den smygande karln på \254\008     andra sidan gatan?
 [035:LSCR#0216](FA)Vet ni var jag kan hitta en skattkarta här nånstans?
-[035:LSCR#0216](FA)Jag tar dom där protokollen om ni betalar mig två åttor.
+[035:LSCR#0216](FA)Jag tar dom där protokollen om ni betalar mig två dubloner.
 [035:LSCR#0216](FA)Jag är verkligen intresserad av det här med sjöröveri.
 [035:LSCR#0216](FA)Säg, är ni pirater?
 [035:LSCR#0216](FA)Visste ni att Guvernören har kidnappats?
@@ -2006,7 +2006,7 @@
 [035:LSCR#0216](14)
 [035:LSCR#0216](FA)Nej tack.
 [035:LSCR#0216](FA)Nej, jag måste vidare.
-[035:LSCR#0216](FA)Nej, men jag tar ett om ni ger mig två åttor.
+[035:LSCR#0216](FA)Nej, men jag tar ett om ni ger mig två dubloner.
 [035:LSCR#0216](14)Ser du? Vad sa jag.
 [035:LSCR#0216](14)Okej, det är rimligt.
 [035:LSCR#0216](14)Gillar du råttor?
@@ -2111,7 +2111,7 @@
 [035:LSCR#0218](14)Enda exemplaret.
 [035:LSCR#0218](14)Sällsynt.
 [035:LSCR#0218](14)Mycket sällsynt.
-[035:LSCR#0218](14)Bara 100 åttor...
+[035:LSCR#0218](14)Bara 100 dubloner...
 [035:LSCR#0218](14)
 [035:LSCR#0218](FA)Nej tack. Jag har inte tillräckligt med pengar.
 [035:LSCR#0218](FA)Jag tar den. Blir en fin present.
@@ -2301,10 +2301,10 @@
 [038:OBNA#0486](__)trappa
 [038:OBNA#0487](__)stig
 [038:VERB#0488](D8)Jag har 1 åtta.
-[038:VERB#0488](D8)Jag har \255\004\195\000 åttor.
+[038:VERB#0488](D8)Jag har \255\004\195\000 dubloner.
 [038:VERB#0488](54)1 åtta
-[038:VERB#0488](54)\255\004\195\000 åttor
-[038:OBNA#0488](__)@@@@@ åttor
+[038:VERB#0488](54)\255\004\195\000 dubloner
+[038:OBNA#0488](__)@@@@@ dubloner
 [038:VERB#0489](D8)Jag är inte säker, men jag tror han kanske sover.
 [038:OBNA#0489](__)utkik
 [038:LSCR#0200](13)utkik
@@ -2571,7 +2571,7 @@
 [043:OBNA#0591](__)dörr
 [043:OBNA#0592](__)stig
 [043:OBNA#0594](__)stig
-[043:VERB#0593](D8)Kapten Smirks Stora Piratgym\255\003Priser:\255\003Svärdträning 30 åttor\255\003Kanonavfyrning 160 åttor (kulor extra)\255\003Änterhake 130 åttor (krok extra)
+[043:VERB#0593](D8)Kapten Smirks Stora Piratgym\255\003Priser:\255\003Svärdträning 30 dubloner\255\003Kanonavfyrning 160 dubloner (kulor extra)\255\003Änterhake 130 dubloner (krok extra)
 [043:VERB#0593](14)
 [043:OBNA#0593](__)skylt
 [043:VERB#0595](D8)Han är hemsk och okänslig och på väg att slå mig igen.
@@ -2612,10 +2612,10 @@
 [043:SCRP#0057](14)Nej det har du inte!
 [043:SCRP#0057](14)Vad jag verkligen borde göra är att tvinga dig att äta den här cigarrfimpen.
 [043:SCRP#0057](14)Jag gillar din anda. Jag ska göra vad jag kan.\255\003Förstås...\255\003...kostar det.
-[043:SCRP#0057](14)Såg du min skylt?\255\003Jag brukar ta 30 åttor för ett STORT jobb som det här.
+[043:SCRP#0057](14)Såg du min skylt?\255\003Jag brukar ta 30 dubloner för ett STORT jobb som det här.
 [043:SCRP#0057](14)Vad har du?
 [043:SCRP#0057](14)Vad MER har du?
-[043:SCRP#0057](FA)Jag har 30 åttor.
+[043:SCRP#0057](FA)Jag har 30 dubloner.
 [043:SCRP#0057](FA)Jag antog att du skulle göra det gratis.
 [043:SCRP#0057](FA)Jag tror jag väntar. Tack ändå.
 [043:SCRP#0057](FA)Allt jag har är den här döda kycklingen.
@@ -2788,7 +2788,7 @@
 [049:LSCR#0200](FA)Varför pratar ni så konstigt?
 [049:LSCR#0200](FA)Har ni märkt att alla de här vägarna börjar se likadana ut?
 [049:LSCR#0200](FA)Mitt namn är Guybrush Threepwood. Bered er på att dö!
-[049:LSCR#0200](FA)Ni råkar inte ha ett par åttor...
+[049:LSCR#0200](FA)Ni råkar inte ha ett par dubloner...
 [049:LSCR#0200](FA)Förlåt att jag störde. Jag går vidare.
 [049:LSCR#0200](94)Ja hoppas du hade nåt viktigare att stoppa mej för?
 [049:LSCR#0200](94)Piratspråk!\255\003Det va så alla pratade på den tiden.\255\003Kom igen Guybrush, häng me.
@@ -2892,8 +2892,8 @@
 [051:LSCR#0207](FA)OK, jag gör det.
 [051:LSCR#0207](FA)Hur mycket betalar ni mig?
 [051:LSCR#0207](FA)Glöm det!
-[051:LSCR#0207](14)Vi betalar dig \255\004\100\000 åttor.
-[051:LSCR#0207](14)Vad sägs om \255\004\100\000 åttor?
+[051:LSCR#0207](14)Vi betalar dig \255\004\100\000 dubloner.
+[051:LSCR#0207](14)Vad sägs om \255\004\100\000 dubloner?
 [051:LSCR#0207](FA)OK, låter bra.
 [051:LSCR#0207](FA)Aldrig i livet!
 [051:LSCR#0207](14)Har du en hjälm?
@@ -3094,8 +3094,8 @@
 [057:SCRP#0055](FA)En grytkastrull?
 [057:SCRP#0055](FA)En gummikyckling med en trissa i mitten?
 [057:SCRP#0055](FA)Bråka inte med mig, troll, jag är en mäktig pirat!
-[057:SCRP#0055](FA)30 åttor?
-[057:SCRP#0055](FA)\255\004\195\000 åttor?
+[057:SCRP#0055](FA)30 dubloner?
+[057:SCRP#0055](FA)\255\004\195\000 dubloner?
 [057:SCRP#0055](FA)En åtta?
 [057:SCRP#0055](FA)Inget av betydelse.
 [057:SCRP#0055](FA)Strunt samma, jag måste gå nu.
@@ -3166,14 +3166,14 @@
 [059:OBNA#0695](__)båt
 [059:VERB#0690](D8)Grog...\255\003Dietgrog...\255\003Körsbärsgrog...\255\003Grog Classic...\255\003Koffeinfri grog...\255\003...och Rotöl.
 [059:VERB#0690](14) 
-[059:VERB#0690](D8)Åttor är den föredragna lokala valutan.
+[059:VERB#0690](D8)Dubloner är den föredragna lokala valutan.
 [059:VERB#0690](D8)Det måste finnas ett mer hederligt sätt att få ihop lite småpengar.
 [059:OBNA#0690](__)grogautomat
 [059:VERB#0691](D8)Jösses, jag önskar att jag kunnat köpa den här.
 [059:VERB#0691](D8)Stilig.
 [059:OBNA#0691](__)båt
-[059:OBNA#0735](__)åttor
-[059:OBNA#0736](__)åttor
+[059:OBNA#0735](__)dubloner
+[059:OBNA#0736](__)dubloner
 [059:VERB#0732](D8)`När du sätter segel mot bra värde blåser alla vindar mot Stans!`\255\003(VARNING: Innehåller stark magnet som kan störa annan navigationsutrustning.)
 [059:VERB#0732](14) 
 [059:VERB#0732](D8)Jag är inte säker, men jag tror den pekar mot Mêlée Island®.
@@ -3252,7 +3252,7 @@
 [059:SCRP#0056](14)Vilken prisklass tänkte du dig?
 [059:SCRP#0056](FA)Pengar spelar ingen roll!
 [059:SCRP#0056](FA)Egentligen hoppades jag på att köpa på kredit.
-[059:SCRP#0056](FA)Åh... inte mer än \255\004\195\000 åttor.
+[059:SCRP#0056](FA)Åh... inte mer än \255\004\195\000 dubloner.
 [059:SCRP#0056](FA)Egentligen har jag inga kontanter.
 [059:SCRP#0056](FA)Allt jag har är den här gummikycklingen.
 [059:SCRP#0056](FA)Jag fick kredit från handlaren. Tar du emot det?
@@ -3344,12 +3344,12 @@
 [059:SCRP#0056](14)Men vänta, det finns mer!
 [059:SCRP#0056](14)Toppen!
 [059:SCRP#0056](14)Hur mycket?
-[059:SCRP#0056](FA)Jag vill betala 2000 åttor.
+[059:SCRP#0056](FA)Jag vill betala 2000 dubloner.
 [059:SCRP#0056](FA)Jag vill fortfarande betala 2000.
-[059:SCRP#0056](FA)Hur låter 3000 åttor?
+[059:SCRP#0056](FA)Hur låter 3000 dubloner?
 [059:SCRP#0056](FA)Låter 3000 bättre nu?
-[059:SCRP#0056](FA)Okej, okej. 4000 åttor.
-[059:SCRP#0056](FA)Sa jag redan 4000 åttor?
+[059:SCRP#0056](FA)Okej, okej. 4000 dubloner.
+[059:SCRP#0056](FA)Sa jag redan 4000 dubloner?
 [059:SCRP#0056](FA)Okej! 5000! Men det är mitt sista bud!
 [059:SCRP#0056](FA)5000! Och det är mitt ABSOLUT sista bud.
 [059:SCRP#0056](FA)Egentligen vill jag att du ska lida lite till.
@@ -3359,11 +3359,11 @@
 [059:SCRP#0056](14)Det börjar likna nåt...\255\003...men inte mycket.
 [059:SCRP#0056](14)Jag tror vi jobbar åt fel håll här.
 [059:SCRP#0056](14)Jag vet att du kan anstränga dig mer än så.
-[059:SCRP#0056](14)TVÅ TUSEN USLA ÅTTOR!?!
-[059:SCRP#0056](14)Tre tusen åttor!?!
-[059:SCRP#0056](14)Fyra tusen åttor!?!
-[059:SCRP#0056](14)Fem tusen åttor?!?
-[059:SCRP#0056](14)Du kan segla iväg med den här skönheten IDAG, för bara \255\004\203\000 åttor.\255\003Hur låter det?
+[059:SCRP#0056](14)TVÅ TUSEN USLA DUBLONER!?!
+[059:SCRP#0056](14)Tre tusen dubloner!?!
+[059:SCRP#0056](14)Fyra tusen dubloner!?!
+[059:SCRP#0056](14)Fem tusen dubloner?!?
+[059:SCRP#0056](14)Du kan segla iväg med den här skönheten IDAG, för bara \255\004\203\000 dubloner.\255\003Hur låter det?
 [059:SCRP#0056](14)Fint.\255\003Var så.\255\003Se om jag bryr mig.
 [059:SCRP#0056](14)Vänta lite nu!
 [059:SCRP#0056](14)Gå inte iväg sur.

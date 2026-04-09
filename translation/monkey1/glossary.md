@@ -97,7 +97,7 @@
 
 ### Object Names - TRANSLATE
 
-- **Idol of Many Hands** → **Den Månghändiga Avguden** (The Many-Handed False God) - "idol" in modern Swedish means celebrity; use "avgud" for religious statue/idol
+- **Idol of Many Hands** → **Den Månghändiga Idolen** - "idol" is correct Swedish for a worshipped statue (SAOL lists this meaning); context in a pirate/cannibal game disambiguates from the celebrity meaning. "Avgud" (false god) carries theological judgment unsuitable for the comedy tone.
 - **rubber chicken with a pulley in the middle** → **gummikyckling med en trissa i mitten**
 - T-shirt → T-shirt (modern item, international word)
 
