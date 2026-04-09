@@ -173,33 +173,33 @@
 [010:SCRP#0004](14)Pratfärg \255\004\139\001
 [010:SCRP#0004](14)Maskinbetyg är \255\004\103\001 hastighet \255\004\006\000
 [010:SCRP#0004](14)Är du säker på att du vill vinna? (J/N)
-[E][010:SCRP#0012](7A) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](27) 
-[E][010:SCRP#0012](7A)\255\005\107\000\255\007\049\000\255\006\108\000 \255\005\110\000 \255\006\109\000
-[E][010:SCRP#0012](7A)\255\005\107\000\255\007\049\000\255\005\110\000 \255\006\109\000
-[E][010:SCRP#0014](D8)\255\005\001\064
-[E][010:SCRP#0014](D8)Just give me the goddamned ship.
-[E][010:SCRP#0017](7A)Bloat
-[E][010:SCRP#0017](7A)Float
-[E][010:SCRP#0017](7A) 
-[E][010:SCRP#0017](7A)Stare
-[E][010:SCRP#0017](7A) 
-[E][010:SCRP#0017](7A)Order hint book
-[E][010:SCRP#0017](7A)Bob
-[E][010:SCRP#0017](7A)Rot
-[E][010:SCRP#0017](7A) 
-[E][010:SCRP#0017](7A)\001\002\254\001\005\006\254\001\007\008
-[E][010:SCRP#0017](7A)\254\001\005\006\254\001\003\004
-[E][010:SCRP#0020](14)\255\007\036\000
+[010:SCRP#0012](7A) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](27) 
+[010:SCRP#0012](7A)\255\005\107\000\255\007\049\000\255\006\108\000 \255\005\110\000 \255\006\109\000
+[010:SCRP#0012](7A)\255\005\107\000\255\007\049\000\255\005\110\000 \255\006\109\000
+[010:SCRP#0014](D8)\255\005\001\064
+[010:SCRP#0014](D8)Ge mig bara det förbannade skeppet.
+[010:SCRP#0017](7A)Svälla
+[010:SCRP#0017](7A)Flyta
+[010:SCRP#0017](7A) 
+[010:SCRP#0017](7A)Stirra
+[010:SCRP#0017](7A) 
+[010:SCRP#0017](7A)Beställ ledtrådsbok
+[010:SCRP#0017](7A)Vicka
+[010:SCRP#0017](7A)Ruttna
+[010:SCRP#0017](7A) 
+[010:SCRP#0017](7A)\001\002\254\001\005\006\254\001\007\008
+[010:SCRP#0017](7A)\254\001\005\006\254\001\003\004
+[010:SCRP#0020](14)\255\007\036\000
 [010:SCRP#0022](7A)Gå till
 [010:SCRP#0022](7A)Ge
 [010:SCRP#0022](7A)Öppna
@@ -224,72 +224,72 @@
 [010:SCRP#0022](7A)på
 [010:SCRP#0022](7A)till
 [010:SCRP#0022](7A)<ADVERTISEMENT>
-[E][010:SCRP#0024](14)\255\006\000\064
-[E][010:SCRP#0024](14) 
-[E][010:SCRP#0025](D8)Hmm.  This door appears to be locked.
-[E][010:SCRP#0071](14)Tried to complete trial \255\004\000\064 twice.  THIS IS BAD!
-[E][010:SCRP#0071](14)Tried to complete invalid trial:\255\004\000\064.  THIS IS BAD!
-[E][010:SCRP#0144](27)Threepwood
-[E][010:SCRP#0152](14)Deep in the Caribbean\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)The Island of Mêlée\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)TM & (c) 1990 LucasArts Entertainment Company.\255\001All Rights Reserved.
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Created and Designed by\255\001Ron Gilbert\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Written and Programmed by\255\001Dave Grossman, Tim Schafer\255\001and Ron Gilbert\255\002
-[E][010:SCRP#0152](14)Written and Programmed by\255\001Tim Schafer, Ron Gilbert\255\001and Dave Grossman\255\002
-[E][010:SCRP#0152](14)Written and Programmed by\255\001Ron Gilbert, Dave Grossman\255\001and Tim Schafer\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)CD-ROM Conversion by\255\001Aric Wilmunder, Wallace Poulter,\255\001and Sean Clark
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Background Art by\255\001Steve Purcell, Mark Ferrari and Mike Ebert\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Animation by\255\001Steve Purcell, Mike Ebert\255\001and Martin Cameron as `Bucky`\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Additional Art By Tami Borowick, James Dollar, Bill Eaken, Avril Harrison, Iain McCaig, Jim McLeod, Michael Stemmle, Sean Turner and Special Thanks to Brad Taylor, Peter Chan and Ron Lussier\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Original Music by\255\001Michael Land...\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)...Barney Jones and Andy Newell\255\001of earwax productions...\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)...and\255\001Patrick Mundy\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)IBM Sounds by\255\001Michael Land, Peter McConnell,\255\001and J. Anthony White\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Lead testing by\255\001Judith Lucero and Kirk Roulston\255\001 \255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)CD-ROM Lead Testing by\255\001Chip Hinnenberg\255\001\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Testers\255\001Bret Barrett, Mark Cartwright, Wayne Cline, Jim Current, Dave Dahle, Justin Graham, Carla Green, James Hampton, 
-[E][010:SCRP#0152](14) \255\001Mike Kerry, Kirk Lesser, Bret Mogilefsky, Aaron Muszalski, Liz Nagy, Ezra Palmer-Persen, Barry Gysbers, Jo Ashburn, Jon Van, and J 'Fretless' Anthony White
-[E][010:SCRP#0152](14)IBM CD-ROM Project Lead by\255\001Aric Wilmunder\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)IBM CD-ROM System by\255\001Aric Wilmunder\255\001 \255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)Produced by\255\001Greg Hammond\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)IBM CD-ROM Project Produced by\255\001Brenna Kruppa-Holden\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14)`SCUMM` Story system by\255\001Ron Gilbert, Aric Wilmunder,\255\001Brad Taylor and Vince Lee\255\002
-[E][010:SCRP#0152](14) 
-[E][010:SCRP#0152](14) 
+[010:SCRP#0024](14)\255\006\000\064
+[010:SCRP#0024](14) 
+[010:SCRP#0025](D8)Hmm. Den här dörren verkar vara låst.
+[010:SCRP#0071](14)Försökte slutföra prövning \255\004\000\064 två gånger. DET HÄR ÄR DÅLIGT!
+[010:SCRP#0071](14)Försökte slutföra ogiltig prövning:\255\004\000\064.  THIS IS BAD!
+[010:SCRP#0144](27)Threepwood
+[010:SCRP#0152](14)Djupt inne i Karibien\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Ön Mêlée\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)TM & (c) 1990 LucasArts Entertainment Company.\255\001Alla rättigheter förbehållna.
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Skapad och designad av\255\001Ron Gilbert\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Skriven och programmerad av\255\001Dave Grossman, Tim Schafer\255\001och Ron Gilbert\255\002
+[010:SCRP#0152](14)Skriven och programmerad av\255\001Tim Schafer, Ron Gilbert\255\001och Dave Grossman\255\002
+[010:SCRP#0152](14)Skriven och programmerad av\255\001Ron Gilbert, Dave Grossman\255\001och Tim Schafer\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)CD-ROM-konvertering av\255\001Aric Wilmunder, Wallace Poulter\255\001och Sean Clark
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Bakgrundskonst av\255\001Steve Purcell, Mark Ferrari och Mike Ebert\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Animation av\255\001Steve Purcell, Mike Ebert\255\001och Martin Cameron som `Bucky`\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Ytterligare konst av Tami Borowick, James Dollar, Bill Eaken, Avril Harrison, Iain McCaig, Jim McLeod, Michael Stemmle, Sean Turner och särskilt tack till Brad Taylor, Peter Chan and Ron Lussier\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Originalmusik av\255\001Michael Land...\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)...Barney Jones och Andy Newell\255\001från earwax productions...\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)...och\255\001Patrick Mundy\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)IBM-ljud av\255\001Michael Land, Peter McConnell\255\001och J. Anthony White\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Testsansvariga\255\001Judith Lucero och Kirk Roulston\255\001 \255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)CD-ROM-testansvarig\255\001Chip Hinnenberg\255\001\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Testare\255\001Bret Barrett, Mark Cartwright, Wayne Cline, Jim Current, Dave Dahle, Justin Graham, Carla Green, James Hampton, 
+[010:SCRP#0152](14) \255\001Mike Kerry, Kirk Lesser, Bret Mogilefsky, Aaron Muszalski, Liz Nagy, Ezra Palmer-Persen, Barry Gysbers, Jo Ashburn, Jon Van, och J 'Fretless' Anthony White
+[010:SCRP#0152](14)IBM CD-ROM-projektledare\255\001Aric Wilmunder\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)IBM CD-ROM-system av\255\001Aric Wilmunder\255\001 \255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)Producerad av\255\001Greg Hammond\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)IBM CD-ROM-projekt producerat av\255\001Brenna Kruppa-Holden\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14)`SCUMM`-berättarsystem av\255\001Ron Gilbert, Aric Wilmunder,\255\001Brad Taylor och Vince Lee\255\002
+[010:SCRP#0152](14) 
+[010:SCRP#0152](14) 
 [011:OBNA#0115](__)stig nedåt
 [011:VERB#0116](D8)Det är samma sten jag lade dit.
 [011:VERB#0116](D8)Det ser ut som om någon lade dit den med flit.
@@ -330,9 +330,9 @@
 [012:LSCR#0206](D8)Shish keJoe
 [012:LSCR#0206](D8)Shish keLarry
 [012:LSCR#0207](D8)Konstnären graverade sitt namn på den:
-[E][012:LSCR#0207](D8)`Made by Red Skull.`
-[E][012:LSCR#0207](D8)`Made by Sharptooth.`
-[E][012:LSCR#0209](13)Herman Toothrot
+[012:LSCR#0207](D8)`Tillverkad av Red Skull.`
+[012:LSCR#0207](D8)`Tillverkad av Sharptooth.`
+[012:LSCR#0209](13)Herman Toothrot
 [014:VERB#0158](D8)Den är full av skit. Jag hoppas jag inte behöver äta det här.
 [014:VERB#0158](D8)Det ser ut som en vanlig skeppsgryta.
 [014:VERB#0158](D8)Jag lägger inte i något mer i den grytan!
@@ -382,9 +382,9 @@
 [014:VERB#0157](54)liten nyckel
 [014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
 [014:OBNA#0157](__)liten nyckel
-[E][014:LSCR#0201](14) 
-[E][014:LSCR#0201](D8)I feel awful.
-[E][014:LSCR#0202](14)Fsspt.
+[014:LSCR#0201](14) 
+[014:LSCR#0201](D8)Jag mår hemskt.
+[014:LSCR#0202](14)Fsspt.
 [014:LSCR#0202](14)Grrfk.
 [014:LSCR#0202](14)Psspert.
 [014:LSCR#0202](14)Aaak.
@@ -514,15 +514,15 @@
 [019:LSCR#0204](14)Fint försök, Guybrush, men ingen banan.
 [019:LSCR#0204](D8)Då blir det stryk!
 [019:LSCR#0204](14)Ursäkta mig Guybrush...\255\003...säger ordet 'kölhala' dig något?
-[E][019:LSCR#0204](FA)I see your point, thanks.
-[E][019:LSCR#0204](FA)Keelhaul /Kê(e)l-hol\254\001   1: to haul under the keel of a ship as punishment\254\001       or torture.
-[E][019:LSCR#0204](14)I see your point, thanks.
-[E][019:LSCR#0204](14)Er, excuse me Guybrush...\255\003...you're blocking the sun.
-[E][019:LSCR#0204](14)So?
-[E][019:LSCR#0204](14)Yeah!\255\003So?
-[E][019:LSCR#0206](D8)Holy Monkey Bladders!\255\003It's Monkey Island®.
-[E][019:SCRP#0107](14) 
-[E][019:SCRP#0107](14) 
+[019:LSCR#0204](FA)Jag förstår din poäng, tack.
+[019:LSCR#0204](FA)Kölhala /kö:l-ha:la\254\001   1: att dra under kölen på ett skepp som straff\254\001       eller tortyr.
+[019:LSCR#0204](14)Jag förstår din poäng, tack.
+[019:LSCR#0204](14)Öh, ursäkta Guybrush...\255\003...du skymmer solen.
+[019:LSCR#0204](14)Och?
+[019:LSCR#0204](14)Ja!\255\003Och?
+[019:LSCR#0206](D8)Heliga apblåsor!\255\003Det är Monkey Island®.
+[019:SCRP#0107](14)] 
+[019:SCRP#0107](14)] 
 [020:VERB#0271](D8)Det är bäst att jag lämnar den här.
 [020:OBNA#0271](__)pappersbit
 [020:VERB#0264](D8)De ser ut som att de nästan är redo att falla\255\001av trädet.
@@ -563,36 +563,36 @@
 [020:LSCR#0202](14)Bry dig inte om att säga hej.\255\003Jag har bara väntat i tjugo år på att få prata med någon civiliserad, jag har inget emot det.
 [020:LSCR#0202](14)Bra.
 [020:LSCR#0202](14)Förresten, du kanske vill tänka på att släcka den där elden.\255\003Någon skulle kunna bli skadad.
-[E][020:LSCR#0202](14) 
-[E][020:LSCR#0203](D8)`NOTICE OF PUBLIC MEETING`\255\003`There will be a meeting Wednesday evening to discuss the recent occupation of the Sacred Monkey Head by the ghost pirate LeChuck...`
-[E][020:LSCR#0203](D8)`...and the subsequent impact on the environment and the tourist trade.`\255\003`All Monkey Island® cannibals are encouraged to attend.`
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14)I never get tired of this view.
-[E][020:SCRP#0095](14)Even if I HAVE been looking at it for twenty years now.\255\003Even if it is the ONLY view on the island.
-[E][020:SCRP#0095](14)This is an old friend of mine, the one I sailed here with.
-[E][020:SCRP#0095](14)He's lost weight.\255\003Never looked better.
-[E][020:SCRP#0095](14)That Monkey Head's some piece of work, eh?
-[E][020:SCRP#0095](14)Nasty case of yellow waxy buildup, though.
-[E][020:SCRP#0095](14)Oh, hi!\255\003I was just looking for the natives, to get them to return my banana picker...
-[E][020:SCRP#0095](14)...but I can't seem to find them.
-[E][020:SCRP#0095](14)Look at that fabulous ship out there!
-[E][020:SCRP#0095](14)Did you come in that?
-[E][020:SCRP#0095](14)Did you come in the ship I saw out there?
-[E][020:SCRP#0095](14)You're braver than you look.\255\003Actually, it looks a lot like a ship I used to own...
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](FA)Yes, it IS a nice view.
-[E][020:SCRP#0095](FA)I don't care for it myself.
-[E][020:SCRP#0095](FA)What happened to him?
-[E][020:SCRP#0095](FA)He looks pretty bad...
-[E][020:SCRP#0095](FA)I saw a monkey leaving here.  He must have done it.
-[E][020:SCRP#0095](FA)Er, sorry.
-[E][020:SCRP#0095](FA)I would have knocked, but I couldn't find a door.
-[E][020:SCRP#0095](FA)I knocked.  You must not have heard.
-[E][020:SCRP#0095](FA)Yes, it's quite impressive.
-[E][020:SCRP#0095](FA)What?
-[E][020:SCRP#0095](FA)I got taken by a guy named Stan...
-[E][020:SCRP#0095](FA)What do you mean, `braver than I look`?
-[E][020:SCRP#0095](FA)Leave me alone, would you?
+[020:LSCR#0202](14) 
+[020:LSCR#0203](D8)`MEDDELANDE OM OFFENTLIGT MÖTE`\255\003`Det kommer hållas ett möte onsdagskväll för att diskutera den senaste ockupationen av det Heliga Aphuvudet av spökpiraten LeChuck...`
+[020:LSCR#0203](D8)`...och den efterföljande påverkan på miljön och turistnäringen.`\255\003`Alla Monkey Island®s kannibaler uppmanas att närvara.`
+[020:SCRP#0095](14) 
+[020:SCRP#0095](14)Jag blir aldrig trött på den här utsikten.
+[020:SCRP#0095](14)Även om jag HAR tittat på den i tjugo år nu.\255\003Även om det är den ENDA utsikten på ön.
+[020:SCRP#0095](14)Det här är en gammal vän till mig, den jag seglade hit med.
+[020:SCRP#0095](14)Han har gått ner i vikt.\255\003Har aldrig sett bättre ut.
+[020:SCRP#0095](14)Det där aphuvudet är verkligen något, va?
+[020:SCRP#0095](14)Otäckt fall av gula vaxavlagringar, dock.
+[020:SCRP#0095](14)Åh, hallå!\255\003Jag letade precis efter de infödda, för att få dem att återlämna min bananplockare...
+[020:SCRP#0095](14)...men jag verkar inte kunna hitta dem.
+[020:SCRP#0095](14)Titta på det där fantastiska skeppet där ute!
+[020:SCRP#0095](14)Kom du i det?
+[020:SCRP#0095](14)Kom du i skeppet jag såg där ute?
+[020:SCRP#0095](14)Du är modigare än du ser ut.\255\003Faktiskt så ser det väldigt likt ett skepp jag brukade äga...
+[020:SCRP#0095](14) 
+[020:SCRP#0095](FA)Ja, det ÄR en fin utsikt.
+[020:SCRP#0095](FA)Jag tycker inte om den själv.
+[020:SCRP#0095](FA)Vad hände med honom?
+[020:SCRP#0095](FA)Han ser ganska illa ut...
+[020:SCRP#0095](FA)Jag såg en apa lämna här. Han måste ha gjort det.
+[020:SCRP#0095](FA)Öh, förlåt.
+[020:SCRP#0095](FA)Jag skulle ha knackat, men jag kunde inte hitta en dörr.
+[020:SCRP#0095](FA)Jag knackade. Du måste ha misshört.
+[020:SCRP#0095](FA)Ja, det är riktigt imponerande.
+[020:SCRP#0095](FA)Vad?
+[020:SCRP#0095](FA)Jag blev lurad av en kille som heter Stan...
+[020:SCRP#0095](FA)Vad menar du med "modigare än jag ser ut"?
+[020:SCRP#0095](FA)Lämna mig ifred, tack.
 [020:SCRP#0095](14)Öhm...\255\003Jag är rädd att jag måste sticka nu.\255\003Brådskande affärer, du vet.
 [020:SCRP#0095](14)-- hih hih --
 [020:SCRP#0095](14)Var inte en idiot.
@@ -623,22 +623,22 @@
 [020:SCRP#0095](14)Tja, inte PRECIS här.
 [020:SCRP#0095](14)I fortet på vulkanen.
 [020:SCRP#0095](D8)Blev du strandsatt?
-[E][020:SCRP#0095](14)You think I stay here for my health?
-[E][020:SCRP#0095](14)Hoo, boy.
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](14) 
-[E][020:SCRP#0095](FA)How did you get stranded here?
-[E][020:SCRP#0095](FA)So you're not the only one on the island?
-[E][020:SCRP#0095](FA)You're the only one on the island?
-[E][020:SCRP#0095](FA)Did you lend something to the cannibals?
-[E][020:SCRP#0095](FA)I'm Guybrush.  I'm here to rescue someone.
-[E][020:SCRP#0095](FA)You say you got a key from the locals?
-[E][020:SCRP#0095](FA)I have your banana picker.
-[E][020:SCRP#0095](FA)Why don't you just give me the key to the Monkey Head?
-[E][020:SCRP#0095](FA)What happened to your pants?
-[E][020:SCRP#0095](FA)Excuse me, I've got pressing business to attend to.
-[E][020:SCRP#0095](14)Yes, me too.
-[E][020:SCRP#0095](14)-- hee hee hee --
+[020:SCRP#0095](14)Tror du jag stannar här för min hälsas skull?
+[020:SCRP#0095](14)Ojojoj.
+[020:SCRP#0095](14) 
+[020:SCRP#0095](14) 
+[020:SCRP#0095](FA)Hur blev du strandsatt här?
+[020:SCRP#0095](FA)Så du är inte den enda på ön?
+[020:SCRP#0095](FA)Du är den enda på ön?
+[020:SCRP#0095](FA)Lånade du ut något till kannibalerna?
+[020:SCRP#0095](FA)Jag är Guybrush. Jag är här för att rädda någon.
+[020:SCRP#0095](FA)Du säger att du fick en nyckel från de infödda?
+[020:SCRP#0095](FA)Jag har din bananplockare.
+[020:SCRP#0095](FA)Varför ger du mig inte bara nyckeln till Aphuvudet?
+[020:SCRP#0095](FA)Vad hände med dina byxor?
+[020:SCRP#0095](FA)Ursäkta mig, jag har brådskande ärenden att sköta.
+[020:SCRP#0095](14)Ja, jag också.
+[020:SCRP#0095](14)-- hehe hehe --
 [020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® Hemlighet.\255\003Men min vän råkade ut för en förfärlig och tragisk olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
 [020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle hämta hjälp och komma tillbaka...\255\003...något måste ha hänt.
 [020:SCRP#0095](D8)Varför följde du inte bara med schimpanserna?
@@ -712,12 +712,12 @@
 [020:SCRP#0167](54)anmärkningsvärd sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
-[E][020:SCRP#0168](D8)I'm here to rescue the Governor of Mêlée Island®.
-[E][020:SCRP#0168](D8)I'm a mighty pirate.
-[E][020:SCRP#0168](D8)Seen any big, ugly, scary, see-through pirates around here?
-[E][020:SCRP#0168](D8)Is there anything good to eat on this island?
-[E][020:SCRP#0168](D8)Take me to your leader.
-[E][020:SCRP#0168](D8)Is it always this hot around here?
+[020:SCRP#0168](D8)Jag är här för att rädda Guvernören av Mêlée Island®.
+[020:SCRP#0168](D8)Jag är en mäktig pirat.
+[020:SCRP#0168](D8)Sett några stora, fula, läskiga, genomskinliga pirater här omkring?
+[020:SCRP#0168](D8)Finns det något gott att äta på den här ön?
+[020:SCRP#0168](D8)Ta mig till er ledare.
+[020:SCRP#0168](D8)Är det alltid så här varmt här?
 [021:OBNA#0273](__)djungel
 [021:OBNA#0274](__)djungel
 [021:LSCR#0202](94)Jag tror inte han är intresserad.
@@ -725,38 +725,38 @@
 [021:LSCR#0205](D8)Han ser väldigt hungrig ut.
 [021:LSCR#0205](D8)Han ser fortfarande lite hungrig ut.
 [021:LSCR#0205](D8)Han ser glad ut.
-[E][023:SCRP#0119](14)Governor Elaine Marley.
-[E][023:SCRP#0119](14)So, I gave you the idol, eh?
-[E][023:SCRP#0119](14)So, you were just going to borrow it, eh?
-[E][023:SCRP#0119](14)So, my idol belongs in a museum, eh?
-[E][023:SCRP#0119](14)So, the pirate leaders made you do it, eh?
-[E][023:SCRP#0119](14)Taking my idol out for a little breather, were you?
-[E][023:SCRP#0119](FA)Uh...
-[E][023:SCRP#0119](FA)Gee...
-[E][023:SCRP#0119](FA)Well...
-[E][023:SCRP#0119](FA)Gosh...
-[E][023:SCRP#0119](14)Relax, Mr. Threepwood.\255\003I know why you're here.
-[E][023:SCRP#0119](14)Believe me, you're not the first who's tried.\255\003Although, I have to admit, not many get as far as you have.
-[E][023:SCRP#0119](FA)Er...
-[E][023:SCRP#0119](FA)Um...
-[E][023:SCRP#0119](FA)Golly...
-[E][023:SCRP#0119](FA)Jeepers...
-[E][023:SCRP#0119](14)My lookout told me of your arrival.\255\003I've wanted to meet you ever since I heard your fascinating name.
-[E][023:SCRP#0119](14)Tell me, Guybrush, why do you want to be a pirate?\255\003You don't look like one.
-[E][023:SCRP#0119](14)Your face is too...
-[E][023:SCRP#0119](14)...sweet.
-[E][023:SCRP#0119](FA)Blfft...
-[E][023:SCRP#0119](FA)Grlpyt...
-[E][023:SCRP#0119](FA)Hrdrl...
-[E][023:SCRP#0119](FA)Rldft...
-[E][023:SCRP#0119](14)I see...\255\003Well, you're obviously not in the mood for idle chitchat, are you?
-[E][023:SCRP#0119](14)I suppose you've got many more exciting things to do.\255\003I won't take up any more of your time, Mr. Threepwood.
-[E][023:SCRP#0119](94)Bgglw!
-[E][023:SCRP#0119](94)Mfrnkf?
-[E][023:SCRP#0119](94)Dmnkly...
-[E][023:SCRP#0119](94)--sigh--
-[E][023:SCRP#0119](14) 
-[E][023:SCRP#0119](94)I really wish I knew how to talk to women.
+[023:SCRP#0119](14)Guvernör Elaine Marley.
+[023:SCRP#0119](14)Så jag gav dig avguden, va?
+[023:SCRP#0119](14)Så du skulle bara låna den, va?
+[023:SCRP#0119](14)Så min avgud hör hemma i ett museum, va?
+[023:SCRP#0119](14)Så piratledarna tvingade dig att göra det, va?
+[023:SCRP#0119](14)Skulle ta ut min avgud på en liten promenad, eller hur?
+[023:SCRP#0119](FA)Öh...
+[023:SCRP#0119](FA)Oj...
+[023:SCRP#0119](FA)Ja...
+[023:SCRP#0119](FA)Herregud...
+[023:SCRP#0119](14)Slappna av, herr Threepwood.\255\003Jag vet varför du är här.
+[023:SCRP#0119](14)Tro mig, du är inte den förste som försökt.\255\003Fast jag måste erkänna att inte många kommer så här långt som du.
+[023:SCRP#0119](FA)Öhm...
+[023:SCRP#0119](FA)Ehm...
+[023:SCRP#0119](FA)Jösses...
+[023:SCRP#0119](FA)Javisst...
+[023:SCRP#0119](14)Min utkik berättade om din ankomst.\255\003Jag har velat träffa dig ända sedan jag hörde ditt fascinerande namn.
+[023:SCRP#0119](14)Berätta för mig, Guybrush, varför vill du bli pirat?\255\003Du ser inte ut som en sådan.
+[023:SCRP#0119](14)Ditt ansikte är för...
+[023:SCRP#0119](14)...söt.
+[023:SCRP#0119](FA)Blfft...
+[023:SCRP#0119](FA)Grlpyt...
+[023:SCRP#0119](FA)Hrdrl...
+[023:SCRP#0119](FA)Rldft...
+[023:SCRP#0119](14)Jag förstår...\255\003Tja, du är uppenbarligen inte på humör för småprat, eller hur?
+[023:SCRP#0119](14)Jag antar att du har mycket mer spännande saker att göra.\255\003Jag tar inte mer av din tid, herr Threepwood.
+[023:SCRP#0119](94)Bgglw!
+[023:SCRP#0119](94)Mfrnkf?
+[023:SCRP#0119](94)Dmnkly...
+[023:SCRP#0119](94)--suck--
+[023:SCRP#0119](14)] 
+[023:SCRP#0119](94)Jag önskar verkligen att jag kunde prata med kvinnor.
 [E][025:VERB#0285](D8)In a primitive, yet effective way, it's locked.
 [E][025:VERB#0285](D8)I think I can go in there now.
 [E][025:OBNA#0285](__)door
