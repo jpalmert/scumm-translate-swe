@@ -2178,10 +2178,10 @@
 [037:LSCR#0205](14)Jag tror det inte.
 [037:LSCR#0205](14)Du är en modig man trots allt.\255\003Du mötte odjuret jag fruktat alla dessa år.\255\003Du hade stake att göra det jag aldrig kunde.
 [037:LSCR#0205](14)Jag känner mig som en sådan fegis.\255\003Jag är inte bra nog att vara med i din besättning.\255\003Jag är inte ens bra nog att skura ditt däck.
-[037:LSCR#0205](D8)Äh, kom igen, Meathook.
+[037:LSCR#0205](D8)Äh, kom igen, Järnkrok.
 [037:LSCR#0205](D8)Äh, kom igen, herr...
-[037:LSCR#0205](14)Meathook.
-[037:LSCR#0205](D8)...herr Meathook.
+[037:LSCR#0205](14)Järnkrok.
+[037:LSCR#0205](D8)...herr Järnkrok.
 [037:LSCR#0205](D8)Du är en stor, stark, snygg kille med en talande tatuering.
 [037:LSCR#0205](D8)Du är en stor, stark, snygg kille med en grym tatuering--
 [037:LSCR#0205](14)Jag kan få den att prata. Vill du se?
@@ -2262,7 +2262,7 @@
 [037:SCRP#0060](14)Kom den här vägen.
 [037:SCRP#0060](14)Nå...\255\003Okej, men bara en gång till.
 [037:SCRP#0060](14)Hör här, jag sa åt dig att inte kalla mig det.
-[037:SCRP#0060](14)Jag heter Meathook...
+[037:SCRP#0060](14)Jag heter Järnkrok...
 [037:SCRP#0060](14)...och du har fortfarande ett litet attitydproblem.
 [037:SCRP#0060](14)...och jag tycker du har ett litet attitydproblem.
 [037:SCRP#0060](FA)Och du har fortfarande ett litet hårproblem.
@@ -3597,7 +3597,7 @@
 [070:LSCR#0204](D8)Du har rätt!
 [070:LSCR#0204](14)Hejdå!
 [070:LSCR#0204](D8)Oj!
-[070:LSCR#0205](13)Herman Tandröta
+[070:LSCR#0205](13)Herman Toothrot
 [070:LSCR#0205](14)Hörru, kom igen, vi måste dra!
 [070:LSCR#0205](14)LeChuck tar din Guvernör igen!
 [070:LSCR#0205](14)Bob!
@@ -3938,7 +3938,7 @@
 [080:OBNA#0882](__)kikare
 [080:OBNA#0886](__)stig
 [080:ENCD#0080](D8)Stigen slutar här.
-[080:LSCR#0202](13)Herman Tandröta
+[080:LSCR#0202](13)Herman Toothrot
 [080:LSCR#0202](14)Hej, fin kikare. Ser ut precis som --
 [080:LSCR#0202](14)Förresten, var ÄR min kikare?\255\003Åh, perfekt.
 [080:LSCR#0202](14)Jag är borta fem minuter och nån kommer in här och häller krut över hela golvet.
