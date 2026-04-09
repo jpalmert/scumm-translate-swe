@@ -1554,7 +1554,7 @@
 [030:LSCR#0211](FA)Jag tror jag bara vill titta runt.
 [030:LSCR#0211](D8)Jag tror jag bara vill titta runt så länge.
 [030:LSCR#0211](14)Jag har redan sagt, det kostar 100 dubloner.\255\003Hade du med dig tillräckligt den här gången?
-[030:LSCR#0211](14)Det blir 100 dubloner.\255\003Ta det eller lämna det.
+[030:LSCR#0211](14)Det kostar 100 dubloner.\255\003Köp eller gå.
 [030:LSCR#0211](FA)Jag tar det.
 [030:LSCR#0211](FA)Jag har inte tillräckligt med pengar.
 [030:LSCR#0211](FA)Jag vill inte ha det.
@@ -2384,7 +2384,7 @@
 [038:SCRP#0120](14)Glad att höra det.\255\003Nå, vad var det du störde mig för?
 [038:SCRP#0120](14)Ah...ja herr'n...nå, ni förstår, vi kan ha ett problem på Mêlée Island®.
 [038:SCRP#0120](14)PROBLEM?!?\255\003Vad för problem kan det vara!?\255\003Jag har gjort de där mesiga piraterna så rädda för havet att dom inte vågar ta ett bad!
-[038:SCRP#0120](14)Nå...\255\003Det verkar finnas en ny pirat i stan.\255\003Fast han är väl snarare en pirat på prov.
+[038:SCRP#0120](14)Nå...\255\003Det verkar finnas en ny pirat i stan.\255\003Fast han är mer en piratposör.
 [038:SCRP#0120](14)Ung.\255\003Oerfaren.\255\003Antagligen inget att oroa sig för.\255\003Vet inte varför jag besvärade er med det.\255\003Jag tar hand om det själv.
 [038:SCRP#0120](14)Vänta!\255\003Jag sköter det här personligen.
 [038:SCRP#0120](14)Mina planer är för viktiga för att sabbas av amatörer.
