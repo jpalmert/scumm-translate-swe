@@ -33,53 +33,53 @@
 [005:ENCD#0005](54)flod
 [006:OBNA#0071](__)strand
 [006:OBNA#0072](__)by
-[E][007:OBNA#0074](__)dusty book
-[E][007:OBNA#0082](__)ink
-[E][007:VERB#0075](D8)I have nothing important to write.\255\003I never do.
-[E][007:VERB#0075](D8)It looks like a ballpoint feather pen.
-[E][007:OBNA#0075](__)feather pen
-[E][007:VERB#0076](D8)It looks like an empty chest.
-[E][007:VERB#0076](D8)It looks like an old treasure chest.
-[E][007:OBNA#0076](__)chest
-[E][007:VERB#0077](D8)It's too heavy to carry anywhere else.
-[E][007:VERB#0077](D8)Hey look!  A piece of paper.
-[E][007:VERB#0077](D8)And some cinnamon sticks.
-[E][007:VERB#0077](D8)The chest is empty.
-[E][007:VERB#0077](D8)It's that heavy metal chest I carried over here.
-[E][007:OBNA#0077](__)chest
-[E][007:OBNA#0078](__)chest
-[E][007:VERB#0081](D8)It looks like a very heavy metal chest.
-[E][007:OBNA#0081](__)chest
-[E][007:VERB#0079](D8)The cabinet's already open.
-[E][007:VERB#0079](D8)It seems to be locked up tight.
-[E][007:VERB#0079](D8)It's the Captain's fine oak cabinet.
-[E][007:OBNA#0079](__)cabinet
-[E][007:VERB#0083](D8)There is an old, dusty book inside.\255\003Let's see what it is.
-[E][007:VERB#0083](D8)It's empty.
-[E][007:VERB#0083](D8)Looks like that Captain's drawer.
-[E][007:OBNA#0083](__)drawer
-[E][007:OBNA#0084](__)door
-[E][007:VERB#0086](D8)It's the top of a cereal box, used as a bookmark.
-[E][007:OBNA#0086](__)bookmark
-[E][007:OBNA#0085](__)piece of paper
-[E][007:OBNA#0088](__)cinnamon sticks
-[E][007:VERB#0087](D8)It's made!\255\003Must be `dealer-prep.`
-[E][007:VERB#0087](D8)There'll be time for that later.
-[E][007:OBNA#0087](__)Captain's bed
-[E][007:LSCR#0200](D8)I'm doomed.
-[E][007:SCRP#0148](D8)It says:\255\003`Captain's log, March 10th.`\255\003`First mate Toothrot and I have been searching for Monkey Island® for over a month with no success.`
-[E][007:SCRP#0148](D8)`The directions we purchased on Mêlée proved to be a recipe, not a map as we had believed.`
-[E][007:SCRP#0148](D8)`Captain's log, March 12th.`\255\003`I wish Toothrot would take a bath.`
-[E][007:SCRP#0148](D8)`Captain's log, March 17th.`\255\003`I wish Toothrot would stop snoring.`
-[E][007:SCRP#0148](D8)`Captain's log, March 23rd.`\255\003`Toothrot is really starting to get on my nerves. I figure it's only a matter of time before we come to blows.`
-[E][007:SCRP#0148](D8)`Captain's log, April 2nd.`\255\003`As a gesture to restore our friendship, Toothrot offered to fix dinner tonight.`
-[E][007:SCRP#0148](D8)`Captain's log, April 3rd.`\255\003`I don't know how we did it, but we've arrived at Monkey Island®.`\255\003`Both Toothrot and I passed out from the soup he fixed last night, when we awoke, Monkey Island® was sitting off the bow.`
-[E][007:SCRP#0148](D8)`Captain's log, April 4th.`\255\003`Toothrot and I and filled the rowboat with supplies and are ready to set out to Monkey Island®.`
-[E][007:SCRP#0148](D8)`We are both excited at the prospect of being the first civilized people to learn the Secret of Monkey Island®.`
-[E][007:SCRP#0148](D8)`Captain's log, April 5th.`\255\003`We had to turn around and return to the ship.  Toothrot forgot to go to the bathroom before we left.`\255\003`We'll set out again tomorrow.`
-[E][007:SCRP#0148](D8)That's the last entry.
-[E][007:SCRP#0184](14) 
-[E][007:SCRP#0184](D8)Man, that's heavy.  Filled, no doubt, with gold and jewels.
+[007:OBNA#0074](__)dammig bok
+[007:OBNA#0082](__)bläck
+[007:VERB#0075](D8)Jag har inget viktigt att skriva.\255\003Det har jag aldrig.
+[007:VERB#0075](D8)Det ser ut som en kulspetsfjäderpenna.
+[007:OBNA#0075](__)fjäderpenna
+[007:VERB#0076](D8)Det ser ut som en tom kista.
+[007:VERB#0076](D8)Det ser ut som en gammal skattkista.
+[007:OBNA#0076](__)kista
+[007:VERB#0077](D8)Den är för tung att bära någon annanstans.
+[007:VERB#0077](D8)Hej titta!  En pappersbit.
+[007:VERB#0077](D8)Och några kanelstänger.
+[007:VERB#0077](D8)Kistan är tom.
+[007:VERB#0077](D8)Det är den där tunga metallkistan jag bar hit.
+[007:OBNA#0077](__)kista
+[007:OBNA#0078](__)kista
+[007:VERB#0081](D8)Det ser ut som en mycket tung metallkista.
+[007:OBNA#0081](__)kista
+[007:VERB#0079](D8)Skåpet är redan öppet.
+[007:VERB#0079](D8)Det verkar vara låst ordentligt.
+[007:VERB#0079](D8)Det är Kaptenens fina ekskåp.
+[007:OBNA#0079](__)skåp
+[007:VERB#0083](D8)Det finns en gammal, dammig bok inuti.\255\003Låt oss se vad det är.
+[007:VERB#0083](D8)Den är tom.
+[007:VERB#0083](D8)Det ser ut som Kaptenens låda.
+[007:OBNA#0083](__)låda
+[007:OBNA#0084](__)dörr
+[007:VERB#0086](D8)Det är toppen på en flingförpackning, använd som bokmärke.
+[007:OBNA#0086](__)bokmärke
+[007:OBNA#0085](__)pappersbit
+[007:OBNA#0088](__)kanelstänger
+[007:VERB#0087](D8)Den är bäddad!\255\003Måste vara `återförsäljarpreppat.`
+[007:VERB#0087](D8)Det finns tid för det senare.
+[007:OBNA#0087](__)Kaptenens säng
+[007:LSCR#0200](D8)Jag är förlorad.
+[007:SCRP#0148](D8)Det står:\255\003`Kaptenens logg, 10 mars.`\255\003`Styrman Toothrot och jag har letat efter Monkey Island® i över en månad utan framgång.`
+[007:SCRP#0148](D8)`Vägbeskrivningen vi köpte på Mêlée visade sig vara ett recept, inte en karta som vi trott.`
+[007:SCRP#0148](D8)`Kaptenens logg, 12 mars.`\255\003`Jag önskar att Toothrot kunde ta ett bad.`
+[007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Toothrot kunde sluta snarka.`
+[007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Toothrot börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi drabbar samman.`
+[007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Toothrot att laga middag ikväll.`
+[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Toothrot och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
+[007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Toothrot och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island®.`
+[007:SCRP#0148](D8)`Vi är båda upphetsade över möjligheten att bli de första civiliserade människorna som lär sig Hemligheten om Monkey Island®.`
+[007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Toothrot glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
+[007:SCRP#0148](D8)Det var sista anteckningen.
+[007:SCRP#0184](14)
+[007:SCRP#0184](D8)Oj, den är tung.  Fylld, utan tvekan, med guld och juveler.
 [008:OBNA#0089](__)stege
 [008:VERB#0090](D8)WOW! Krut!\255\003Jag tar lite.
 [008:VERB#0090](D8)Jag tar lite till.
@@ -117,12 +117,12 @@
 [008:VERB#0104](D8)Jag är ingen vinexpert, men att döma av den djupröda färgen...\255\003...så är detta ett mycket fint vin.
 [008:OBNA#0104](__)fint vin
 [008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat den.
-[E][009:VERB#0108](D8)I think I'm going to get seasick.
-[E][009:VERB#0108](D8)It's shut tight.
-[E][009:OBNA#0108](__)window
-[E][009:OBNA#0105](__)ladder
-[E][009:OBNA#0106](__)hatch
-[E][009:OBNA#0107](__)door
+[009:VERB#0108](D8)Jag tror jag kommer bli sjösjuk.
+[009:VERB#0108](D8)Det är tätt stängt.
+[009:OBNA#0108](__)fönster
+[009:OBNA#0105](__)stege
+[009:OBNA#0106](__)lucka
+[009:OBNA#0107](__)dörr
 [E][010:SCRP#0001](27)
 [E][010:SCRP#0001](27)
 [E][010:SCRP#0001](27)The Secret of Monkey Island -- CD-ROM version 2.3b
