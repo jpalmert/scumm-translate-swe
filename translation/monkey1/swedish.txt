@@ -2491,275 +2491,275 @@
 [040:OBNA#0563](__)sjuklig man
 [040:OBNA#0551](__)hängande lik
 [040:LSCR#0202](13)Herman Toothrot
-[E][041:VERB#0569](D8)I think it's full of that foul stuff pirates drink.
-[E][041:VERB#0569](D8)I think I have enough already.
-[E][041:VERB#0569](D8)I don't want THAT much.
-[E][041:OBNA#0569](__)barrel
-[E][041:OBNA#0570](__)door
-[E][041:OBNA#0565](__)table
-[E][041:VERB#0566](D8)It's some sort of meat or meatlike substance...
-[E][041:OBNA#0566](__)hunk of meat
-[E][041:VERB#0567](D8)Someone cooked a headcheese in this.
-[E][041:OBNA#0567](__)pot
-[E][041:VERB#0568](D8)I think that bird will peck my hand off...
-[E][041:VERB#0568](54)fish with condiment
-[E][041:VERB#0568](D8)I think it's a herring.
-[E][041:OBNA#0568](__)fish
-[E][041:OBNA#0564](__)door
-[E][041:VERB#0574](D8)It's boiling hot.
-[E][041:VERB#0574](D8)Hmm.  Stewed meat.
-[E][041:VERB#0574](D8)Hmm.  Stewed fish.
-[E][041:OBNA#0574](__)pot o' stew
-[E][041:LSCR#0202](D8)The plank's stuck.
-[E][041:LSCR#0213](D8)It's not a bay leaf, but every cook makes substitutions.
-[E][041:LSCR#0213](54)spicy stew
-[E][041:LSCR#0213](D8)I don't think it needs meat AND fish.
-[E][041:LSCR#0213](54)meat in stew
-[E][041:LSCR#0213](54)fish in stew
-[E][041:LSCR#0213](D8)I don't want to put that in.
-[E][041:LSCR#0214](54)stewed meat
-[E][041:LSCR#0214](54)stewed fish
-[E][041:LSCR#0214](54)spicy stew
-[E][041:LSCR#0214](54)pot o' stew
-[E][041:LSCR#0214](D8)Ouch!\255\003Got it!
-[E][041:LSCR#0215](D8)Wow!\255\003It ate the thing right up!
-[E][041:LSCR#0215](D4)mug o' grog
-[E][041:SCRP#0068](D8)This stuff is eating right through the mug!
-[E][041:SCRP#0068](D4)melting mug
-[E][041:SCRP#0068](D4)mug near death
-[E][041:SCRP#0068](D4)pewter wad
-[E][041:SCRP#0069](D8)They're both empty.
-[E][041:SCRP#0069](D8)I can't get anything out of that mug.\255\003It's not really much of a mug anymore.
-[E][041:SCRP#0069](D8)I can't put anything in that mug!
-[E][041:SCRP#0069](D4)mug o' grog
-[E][041:SCRP#0069](D4)pewter wad
-[E][041:SCRP#0069](D8)That wouldn't hold this stuff!
-[E][041:SCRP#0069](D8)That wouldn't hold this stuff!
-[E][041:SCRP#0182](54)meat with condiment
-[E][042:VERB#0586](94)Litterbugs.  Sharp, though.
-[E][042:OBNA#0586](__)broken bottle
-[E][042:OBNA#0577](__)ladder
-[E][042:VERB#0584](94)Looks sharp.
-[E][042:OBNA#0584](__)hacksaw
-[E][042:VERB#0585](94)Rusty, but sharp.
-[E][042:OBNA#0585](__)rusty knife
-[E][042:VERB#0578](D8)Actually, it's more like a fabulous doorstop.
-[E][042:OBNA#0578](__)fabulous idol
-[E][042:VERB#0587](94)VERY sharp.
-[E][042:OBNA#0587](__)razor-sharp scissors
-[E][042:VERB#0588](94)Sharp and dangerous.
-[E][042:OBNA#0588](__)deadly meat cleaver
-[E][042:VERB#0589](94)Heavy and sharp.
-[E][042:OBNA#0589](__)axe
-[E][042:VERB#0590](94)It's sharp.  I'd better be careful.
-[E][042:OBNA#0590](__)sword
-[E][042:LSCR#0200](D8)I can't reach it-- I'm tied to this stupid idol!
-[E][042:LSCR#0203](94)I guess I'll be needing a sword.\255\003This one will do.
-[E][042:LSCR#0205](D8)Gee, I don't know how much longer I can hold my breath.
-[E][042:LSCR#0208](14)Hey, Nick, I just committed a felony!
-[E][042:LSCR#0208](14)Did it involve that big knife you've got there?
-[E][042:LSCR#0208](14)Yeah!\255\003What should I do with it?
-[E][042:LSCR#0208](14)Get rid of it!
-[E][042:LSCR#0208](14)I'll throw it in the water!
-[E][042:LSCR#0208](14)No, don't do that!
-[E][042:LSCR#0208](14)Why not?  I need to ditch it!
-[E][042:LSCR#0208](14)It might wash up somewhere!
-[E][042:LSCR#0208](14)What do I care?\255\003MY prints won't be on it!\255\003I'm throwing it in!
-[E][042:LSCR#0208](14)...naaaah.  I might need it.
-[E][042:LSCR#0210](14)See you.
-[E][042:LSCR#0210](14)See you.
-[E][043:OBNA#0591](__)door
-[E][043:OBNA#0592](__)path
-[E][043:OBNA#0594](__)path
-[E][043:VERB#0593](D8)Captain Smirk's Big Body Pirate Gym\255\003Prices:\255\003Sword Training 30 Pieces o' eight\255\003Cannon Firing 160 Pieces o' eight (balls extra)\255\003Grappling Hook 130 Pieces o' eight (hook extra)
-[E][043:VERB#0593](14) 
-[E][043:OBNA#0593](__)sign
-[E][043:VERB#0595](D8)He's terrible and insensitive and about to hit me again.
-[E][043:OBNA#0595](__)LeChuck
-[E][043:SCRP#0057](D8)I think I'll knock.\255\003It'd only be polite.
-[E][043:SCRP#0057](D8)There's no answer.
-[E][043:SCRP#0057](14)What do you want, you wimpy little\255\001spineless maggot?
-[E][043:SCRP#0057](14)What do you want?
-[E][043:SCRP#0057](14)Oh, it's you.
-[E][043:SCRP#0057](FA)Could you train me to be better than the Sword Master?
-[E][043:SCRP#0057](FA)Could you make me the best swordfighter on Mêlée®?
-[E][043:SCRP#0057](FA)Can we step inside?  It's a little chilly out here.
-[E][043:SCRP#0057](FA)Do you know where the Sword Master lives?
-[E][043:SCRP#0057](FA)Um...  Could you please put out that cigar?
-[E][043:SCRP#0057](14)What did you say?
-[E][043:SCRP#0057](D8)I said it's a little chilly out here!
-[E][043:SCRP#0057](14)Hmmm...\255\003You're right.  I could catch a cold.
-[E][043:SCRP#0057](14)Forget it, kid.\255\003She'd cut your head clean off.\255\003Unless, of course, you got some training first...
-[E][043:SCRP#0057](D8)It's not good for your health, and it smells terrible.
-[E][043:SCRP#0057](14)Sure, I'd love to put it out...
-[E][043:SCRP#0057](14)...in your face!
-[E][043:SCRP#0057](D8)Uh...\255\003...maybe I'll just leave instead.
-[E][043:SCRP#0057](14)Good idea.
-[E][043:SCRP#0057](14)You mean, not counting the Sword Master?
-[E][043:SCRP#0057](D8)Counting everybody.  I want to be the BEST.
-[E][043:SCRP#0057](14)Better than the Sword Master?
-[E][043:SCRP#0057](14)You?
-[E][043:SCRP#0057](14)Ha ha ha!\255\003You could never be HALF the sword fighter Carla is.\255\003Even with hours of hard work and sweatin' blood.
-[E][043:SCRP#0057](14)I remember fighting side-by-side with Carla at Port Royal...
-[E][043:SCRP#0057](14)...the local constabulary had us cornered!
-[E][043:SCRP#0057](14)It looked like we were done for, but then she said--
-[E][043:SCRP#0057](14)--but I digress...
-[E][043:SCRP#0057](14)You just don't have what it takes.
-[E][043:SCRP#0057](FA)I do so have what it takes!
-[E][043:SCRP#0057](FA)I do so!
-[E][043:SCRP#0057](FA)I guess you're right.
-[E][043:SCRP#0057](FA)You know, you really should quit smoking.
-[E][043:SCRP#0057](14)You do not!
-[E][043:SCRP#0057](14)What I really should do is make you eat this stogie.
-[E][043:SCRP#0057](14)I like your spirit.  I'll do what I can.\255\003Of course...\255\003...it'll cost you.
-[E][043:SCRP#0057](14)Did you see my sign?\255\003I usually charge 30 pieces of eight for a BIG job like this one.
-[E][043:SCRP#0057](14)What have you got?
-[E][043:SCRP#0057](14)What ELSE have you got?
-[E][043:SCRP#0057](FA)I've got 30 pieces of eight.
-[E][043:SCRP#0057](FA)I figured you'd do it for free.
-[E][043:SCRP#0057](FA)I think I'll wait.  Thanks anyway.
-[E][043:SCRP#0057](FA)All I have is this dead chicken.
-[E][043:SCRP#0057](14)Say no more, say no more.
-[E][043:SCRP#0057](14)Well, you figured wrong.
-[E][043:SCRP#0057](14)Fine, stay a spineless speck of spider spit.
-[E][043:SCRP#0057](14)That isn't one of those rubber chickens\255\001with a pulley in the middle is it?\255\003I've already got one.
-[E][043:SCRP#0057](14)Let's see your sword.
-[E][043:SCRP#0057](FA)OK, check it out.
-[E][043:SCRP#0057](FA)I guess I forgot to buy one.
-[E][043:SCRP#0057](FA)I don't want to show it to you.
-[E][043:SCRP#0057](FA)I do have this deadly-looking chicken.
-[E][043:SCRP#0057](14)Yes, this is a nice one.
-[E][043:SCRP#0057](14)Let's get to it.
-[E][043:SCRP#0057](14)I suggest you get your sorry butt down\255\001to the store and buy one.\255\003I'm not in the habit of loaning swords\255\001to students.
-[E][043:SCRP#0057](14)Yes, swinging a rubber chicken with\255\001big metal pulley in it can be quite\255\001dangerous...\255\003...BUT IT'S NOT A SWORD!!!
-[E][043:SCRP#0057](14)Suit yourself.
-[E][043:SCRP#0057](14)I think you'd better.
-[E][043:SCRP#0057](14)OK, ya maggot...\255\003...why don't you whip that sword out and let's see what you can do with it.
-[E][043:SCRP#0057](14)Boy!\255\003You fight like a dairy farmer!
-[E][043:SCRP#0057](14)I usually don't waste my time with vermin like yourself.\255\003But seeing as this LeChuck thing has put a cramp on business, I've got no choice...\255\003...I need the money.
-[E][043:SCRP#0057](14)Yes...\255\003...I can see this is going to take some special measures.
-[E][043:SCRP#0057](14)Just want you to know...\255\003...I don't do this with everyone.\255\003It's only because I feel that special...\255\003...student/mentor/pieces-of-eight bonding...\255\003...that I'm going to these lengths.
-[E][043:SCRP#0057](14)I'm going to put you up against...
-[E][043:SCRP#0057](14)...THE MACHINE.\255\002
-[E][043:SCRP#0057](14) 
-[E][043:SCRP#0057](14) 
-[E][043:SCRP#0057](14)Machine?\255\003Is this going to hurt?
-[E][043:SCRP#0057](14)Yikes!
-[E][043:SCRP#0057](14)Come at me.  Don't be afraid, you won't hurt me.
-[E][043:SCRP#0057](14)Hours later...
-[E][043:SCRP#0057](14)You're starting to get the hang of it.
-[E][043:SCRP#0057](14)More hours later...
-[E][043:SCRP#0057](14)Not bad.  You've got good form.
-[E][043:SCRP#0057](14)Now I'm gonna let you in on the true secret of sword fighting.
-[E][043:SCRP#0057](14)Sword fighting is kinda like making love.\255\003It's not always what you do, but what you say.
-[E][043:SCRP#0057](14)Any fool pirate can swing a sharp piece of metal around and hope to cut something...\255\003...but the pros...
-[E][043:SCRP#0057](14)...they know just when to cut their opponent with an insult...\255\003...one that catches 'em off guard.
-[E][043:SCRP#0057](14)You see, kid, your wit's got to be twice as sharp as your sword.
-[E][043:SCRP#0057](14)Let's try a couple of insults out, shall we?
-[E][043:SCRP#0057](14)Okay...\255\003...imagine this:\255\003We're fighting up a storm...\255\003...just like Carla and I were doing at Port Royal.\255\003There's a sudden break in the fighting and I say to you...
-[E][043:SCRP#0057](14)...'You fight like a dairy farmer.'\255\003You respond with?
-[E][043:SCRP#0057](FA)Oh yeah!?
-[E][043:SCRP#0057](FA)So's your mother.
-[E][043:SCRP#0057](FA)I am rubber, you are glue...
-[E][043:SCRP#0057](FA)You must be thinking of someone else, I am not a farmer.
-[E][043:SCRP#0057](14)I can see we've got a lot of work to do here.
-[E][043:SCRP#0057](14)You should have responded with something like...\255\003...'How appropriate.  You fight like a cow.'
-[E][043:SCRP#0057](14)You see...\255\003It's razor-sharp wit like that that wins fights.
-[E][043:SCRP#0057](14)Let's try another.
-[E][043:SCRP#0057](14)Imagine this:\255\003You're trapped up against a wall...\255\003...my sword just slashed two cuts into your face.\255\003I say...
-[E][043:SCRP#0057](14)...'Soon you'll be wearing my sword like a shish-kabob!'
-[E][043:SCRP#0057](14)You respond with?
-[E][043:SCRP#0057](FA)Oh yeah!?
-[E][043:SCRP#0057](FA)So's your mother.
-[E][043:SCRP#0057](FA)I am rubber, you are glue...
-[E][043:SCRP#0057](FA)How appropriate.  You fight like a cow.
-[E][043:SCRP#0057](14)I can see we're in deep trouble here.
-[E][043:SCRP#0057](14)No! No! No!\255\003That was the response from the last insult.\255\003Doesn't even make sense when used here!
-[E][043:SCRP#0057](14)<sigh>
-[E][043:SCRP#0057](14)A correct response to...\255\003...'Soon you'll be wearing my sword like a shish-kabob!'...\255\003...would have been something like...
-[E][043:SCRP#0057](14)...'First you'd better stop waving it around like a feather-duster.'
-[E][043:SCRP#0057](14)See...\255\003...razor-sharp!
-[E][043:SCRP#0057](14)Now I suggest you go out there and learn some insults.
-[E][043:SCRP#0057](14)I can't help but feel like I've been ripped off.\255\003I'm sure you're feeling something similar.
-[E][043:SCRP#0142](14)Advance, Thrust, Recover, Parry, Riposte.
-[E][043:SCRP#0142](14)Watch your footwork.
-[E][043:SCRP#0142](14)No!  Beat first, then lunge.
-[E][043:SCRP#0142](14)Use your forte against the foible.
-[E][043:SCRP#0142](14)Distance, distance!
-[E][044:VERB#0596](D8)It says 'I beat the Sword Master'
-[E][044:VERB#0596](D8)I think I'll keep it in mint condition.\255\003It might be worth something someday.
-[E][044:OBNA#0596](__)100% Cotton T-shirt
-[E][045:LSCR#0200](14)You!
-[E][045:LSCR#0200](FA)I've come to stop you from marrying Governor Marley.
-[E][045:LSCR#0200](FA)Please don't kill me.
-[E][045:LSCR#0200](FA)Take THIS, you vaporous voodoo vermin!
-[E][045:LSCR#0200](FA)I've just remembered an appointment at the dentist's.
-[E][045:LSCR#0200](14)How do ye plan to do that?
-[E][045:LSCR#0200](14)Give me one good reason why I shouldn't kill ye.
-[E][045:LSCR#0200](14)Take WHAT?  Are ye trying to bribe me?
-[E][045:LSCR#0200](14)Ye'll need one when I'm through with ye!
-[E][045:LSCR#0200](94)Governor!
-[E][045:LSCR#0200](14)Governor!
-[E][045:LSCR#0200](14)Governor?
-[E][045:LSCR#0200](14)What's going on?
-[E][045:LSCR#0200](14)Oh, Guybrush, you mad fool!\255\003I'm impressed that you came to rescue me, but it really wasn't necessary.\255\003I had everything well in hand.
-[E][045:LSCR#0200](14)Unfortunately, your arrival has made it necessary for me to tip my hand early.
-[E][045:LSCR#0200](14) 
-[E][045:LSCR#0200](FA)How did you manage to escape?
-[E][045:LSCR#0200](FA)I thought LeChuck was going to marry you.
-[E][045:LSCR#0200](FA)If you're here, then who's that in the dress?
-[E][045:LSCR#0200](14)...how...\255\003...who...\255\003...but...\255\003...what...\255\003...I...\255\003...um...
-[E][045:LSCR#0200](14)Oh, that was easy.\255\003LeChuck is a bozo,
-[E][045:LSCR#0200](14)Hey!
-[E][045:LSCR#0200](14)and lots of his crew members were friends of mine, when they were alive.
-[E][045:LSCR#0200](14)Yes, so did I!
-[E][045:LSCR#0200](14)Yes, so did he!\255\003But I arranged for a little surprise when it came time to kiss the bride.
-[E][045:LSCR#0200](94)What?
-[E][045:LSCR#0200](14)Don't scare them!\255\003They have my ghost-zapping root beer bottle!
-[E][045:LSCR#0200](D8)Oh, I'll get it!
-[E][045:LSCR#0200](94)...oops...
-[E][045:LSCR#0200](14)Nice going, Guybrush.\255\003Now I've got to chase them down to get my voodoo root beer back.
-[E][045:LSCR#0200](94)...but...\255\003...I...\255\003...er...\255\003...hey...
-[E][045:LSCR#0200](14) 
-[E][045:LSCR#0200](14)You dared to come here and confront me!\255\003I can't believe your audacity!
-[E][045:LSCR#0200](FA)Well, I can't believe your stupidity.
-[E][045:LSCR#0200](FA)I had to stop you from marrying Governor Marley.
-[E][045:LSCR#0200](FA)Please don't kill me.
-[E][045:LSCR#0200](FA)Take THIS, you vaporous voodoo vermin!
-[E][045:LSCR#0200](FA)I've just remembered an appointment at the dentist's.
-[E][045:LSCR#0200](14)Yeah?
-[E][045:LSCR#0200](14)Well, I can't believe your frivolity.
-[E][045:LSCR#0200](14)Well, I can't believe your mobility.
-[E][045:LSCR#0200](14)Well, I can't believe your fragility.
-[E][045:LSCR#0200](FA)Well, I can't believe your enormity.
-[E][045:LSCR#0200](FA)Well, I can't believe your atrocity.
-[E][045:LSCR#0200](FA)Well, I can't believe your alacrity.
-[E][045:LSCR#0200](FA)Well, I can't believe your virility.
-[E][045:LSCR#0200](FA)Well, I can't believe your felicity.
-[E][045:LSCR#0200](FA)Well, I can't believe your validity.
-[E][045:LSCR#0200](14)I'll marry her yet!\255\003How do YOU plan to stop me?
-[E][045:LSCR#0200](FA)I'll whack you with a rubber chicken.
-[E][045:LSCR#0200](FA)I'll douse you with my sticky seltzer bottle.
-[E][045:LSCR#0200](FA)I'll offer a bribe for your bride.
-[E][045:LSCR#0200](FA)I'll use my spear and magic helmet.
-[E][045:LSCR#0200](FA)I must be going, I'm double-parked.
-[E][045:LSCR#0200](14)Hah!\255\003Booty for my beauty, eh?
-[E][045:LSCR#0200](14)Many have tried that and died for their effort.
-[E][045:LSCR#0200](14)Give me one good reason why I shouldn't kill ye.
-[E][045:LSCR#0200](FA)It wouldn't be nice.
-[E][045:LSCR#0200](FA)I'm wired to explode if anyone tries to kill me.
-[E][045:LSCR#0200](FA)I have a wife and three children.
-[E][045:LSCR#0200](FA)How's THIS for a reason, eh?
-[E][045:LSCR#0200](14)I heard that!
-[E][045:LSCR#0200](14)Huh?
-[E][045:LSCR#0200](14)I grow tired of you.
-[E][045:LSCR#0200](94)You'll never menace decent, tangible pirates again,  you billowing bag of...\255\003...of...\255\003...of something that begins with `b`!
-[E][045:LSCR#0200](14)Uh...\255\003...now hold on a minute, there, friend...\255\003...I was only kidding, you know?\255\003...we can settle this like gentlemen...
-[E][045:LSCR#0200](D8)Oh, no!\255\003It's JAMMED!\255\003Must be pocket lint.
-[E][045:LSCR#0200](14) 
-[E][045:LSCR#0200](D8)Er...\255\003...say, now...\255\003...let's not be hasty...
-[E][045:LSCR#0200](14) 
-[E][045:LSCR#0200](14) 
+[041:VERB#0569](D8)Jag tror den är full av det där vidriga som pirater dricker.
+[041:VERB#0569](D8)Jag tror jag har tillräckligt redan.
+[041:VERB#0569](D8)Jag vill inte ha SÅ mycket.
+[041:OBNA#0569](__)tunna
+[041:OBNA#0570](__)dörr
+[041:OBNA#0565](__)bord
+[041:VERB#0566](D8)Det är nån sorts kött eller köttliknande substans...
+[041:OBNA#0566](__)köttbit
+[041:VERB#0567](D8)Nån lagade en syltingtallrik i den här.
+[041:OBNA#0567](__)gryta
+[041:VERB#0568](D8)Jag tror den fågeln hackar av handen på mig...
+[041:VERB#0568](54)fisk med krydda
+[041:VERB#0568](D8)Jag tror det är en sill.
+[041:OBNA#0568](__)fisk
+[041:OBNA#0564](__)dörr
+[041:VERB#0574](D8)Den är kokhet.
+[041:VERB#0574](D8)Hmm. Köttgryta.
+[041:VERB#0574](D8)Hmm. Fiskgryta.
+[041:OBNA#0574](__)gryta med stuvning
+[041:LSCR#0202](D8)Plankan sitter fast.
+[041:LSCR#0213](D8)Det är inget lagerblad, men alla kockar gör utbyten.
+[041:LSCR#0213](54)kryddad stuvning
+[041:LSCR#0213](D8)Jag tror inte den behöver kött OCH fisk.
+[041:LSCR#0213](54)kött i stuvning
+[041:LSCR#0213](54)fisk i stuvning
+[041:LSCR#0213](D8)Jag vill inte lägga i det.
+[041:LSCR#0214](54)stuvat kött
+[041:LSCR#0214](54)stuvad fisk
+[041:LSCR#0214](54)kryddad stuvning
+[041:LSCR#0214](54)gryta med stuvning
+[041:LSCR#0214](D8)Aj!\255\003Har den!
+[041:LSCR#0215](D8)Oj!\255\003Den åt upp alltihop!
+[041:LSCR#0215](D4)mugg grogg
+[041:SCRP#0068](D8)Det här grejerna äter sig rakt igenom muggen!
+[041:SCRP#0068](D4)smältande mugg
+[041:SCRP#0068](D4)mugg nära döden
+[041:SCRP#0068](D4)tennklump
+[041:SCRP#0069](D8)Båda är tomma.
+[041:SCRP#0069](D8)Jag kan inte få ut nåt ur den muggen.\255\003Den är inte direkt en mugg längre.
+[041:SCRP#0069](D8)Jag kan inte lägga nåt i den muggen!
+[041:SCRP#0069](D4)mugg grogg
+[041:SCRP#0069](D4)tennklump
+[041:SCRP#0069](D8)Det där rymmer inte det här!
+[041:SCRP#0069](D8)Det där rymmer inte det här!
+[041:SCRP#0182](54)kött med krydda
+[042:VERB#0586](94)Nedskräpare. Men vass.
+[042:OBNA#0586](__)trasig flaska
+[042:OBNA#0577](__)stege
+[042:VERB#0584](94)Ser vass ut.
+[042:OBNA#0584](__)bågfil
+[042:VERB#0585](94)Rostig, men vass.
+[042:OBNA#0585](__)rostig kniv
+[042:VERB#0578](D8)Egentligen är det mer som en fabulös dörrstopp.
+[042:OBNA#0578](__)fabulös idol
+[042:VERB#0587](94)MYCKET vass.
+[042:OBNA#0587](__)rakbladsvass sax
+[042:VERB#0588](94)Vass och farlig.
+[042:OBNA#0588](__)dödlig köttyxa
+[042:VERB#0589](94)Tung och vass.
+[042:OBNA#0589](__)yxa
+[042:VERB#0590](94)Vasst. Bäst att vara försiktig.
+[042:OBNA#0590](__)svärd
+[042:LSCR#0200](D8)Jag kan inte nå den-- jag är fastbunden vid den här dumma idolen!
+[042:LSCR#0203](94)Jag lär behöva ett svärd.\255\003Det här duger.
+[042:LSCR#0205](D8)Oj, jag vet inte hur mycket längre jag kan hålla andan.
+[042:LSCR#0208](14)Hörru, Nick, jag begick just ett grovt brott!
+[042:LSCR#0208](14)Hade det med den stora kniven att göra?
+[042:LSCR#0208](14)Ja!\255\003Vad ska jag göra med den?
+[042:LSCR#0208](14)Gör dig av med den!
+[042:LSCR#0208](14)Jag kastar den i vattnet!
+[042:LSCR#0208](14)Nej, gör inte det!
+[042:LSCR#0208](14)Varför inte? Jag måste dumpa den!
+[042:LSCR#0208](14)Den kan flyta iland nånstans!
+[042:LSCR#0208](14)Vad bryr jag mig?\255\003MINA fingeravtryck finns inte på den!\255\003Jag kastar den!
+[042:LSCR#0208](14)...nääää. Jag kanske behöver den.
+[042:LSCR#0210](14)Vi ses.
+[042:LSCR#0210](14)Vi ses.
+[043:OBNA#0591](__)dörr
+[043:OBNA#0592](__)stig
+[043:OBNA#0594](__)stig
+[043:VERB#0593](D8)Kapten Smirks Stora Piratgym\255\003Priser:\255\003Svärdträning 30 åttor\255\003Kanonavfyrning 160 åttor (kulor extra)\255\003Änterhake 130 åttor (krok extra)
+[043:VERB#0593](14)
+[043:OBNA#0593](__)skylt
+[043:VERB#0595](D8)Han är hemsk och okänslig och på väg att slå mig igen.
+[043:OBNA#0595](__)LeChuck
+[043:SCRP#0057](D8)Jag tror jag knackar.\255\003Det vore bara artigt.
+[043:SCRP#0057](D8)Inget svar.
+[043:SCRP#0057](14)Vad vill du, din klenmodiga lilla\255\001ryggradslösa larv?
+[043:SCRP#0057](14)Vad vill du?
+[043:SCRP#0057](14)Jaha, det är du.
+[043:SCRP#0057](FA)Kan du träna mig att bli bättre än Svärdmästaren?
+[043:SCRP#0057](FA)Kan du göra mig till den bästa svärdskämpen på Mêlée®?
+[043:SCRP#0057](FA)Kan vi gå in? Det är lite kyligt här ute.
+[043:SCRP#0057](FA)Vet du var Svärdmästaren bor?
+[043:SCRP#0057](FA)Öh... Kan du snälla släcka den där cigarren?
+[043:SCRP#0057](14)Vad sa du?
+[043:SCRP#0057](D8)Jag sa att det är lite kyligt här ute!
+[043:SCRP#0057](14)Hmmm...\255\003Du har rätt. Jag kan bli förkyld.
+[043:SCRP#0057](14)Glöm det, grabben.\255\003Hon skulle hugga huvudet av dig.\255\003Såvida du inte fick lite träning först förstås...
+[043:SCRP#0057](D8)Det är inte bra för hälsan, och den luktar fruktansvärt.
+[043:SCRP#0057](14)Visst, jag släcker den gärna...
+[043:SCRP#0057](14)...i ditt ansikte!
+[043:SCRP#0057](D8)Öh...\255\003...kanske jag bara går istället.
+[043:SCRP#0057](14)Bra idé.
+[043:SCRP#0057](14)Du menar, bortsett från Svärdmästaren?
+[043:SCRP#0057](D8)Alla räknade. Jag vill vara BÄST.
+[043:SCRP#0057](14)Bättre än Svärdmästaren?
+[043:SCRP#0057](14)Du?
+[043:SCRP#0057](14)Ha ha ha!\255\003Du kan aldrig bli HÄLFTEN av den svärdskämpe Carla är.\255\003Inte ens med timmars hårt arbete och blodssvett.
+[043:SCRP#0057](14)Jag minns hur Carla och jag slogs sida vid sida i Port Royal...
+[043:SCRP#0057](14)...det lokala ordningsvakterna hade oss i ett hörn!
+[043:SCRP#0057](14)Det såg ut som om vi var körda, men sen sa hon--
+[043:SCRP#0057](14)--men jag svävar ut...
+[043:SCRP#0057](14)Du har helt enkelt inte det som krävs.
+[043:SCRP#0057](FA)Jo, det har jag visst!
+[043:SCRP#0057](FA)Jo visst!
+[043:SCRP#0057](FA)Du har nog rätt.
+[043:SCRP#0057](FA)Du borde verkligen sluta röka, vet du.
+[043:SCRP#0057](14)Nej det har du inte!
+[043:SCRP#0057](14)Vad jag verkligen borde göra är att tvinga dig att äta den här cigarrfimpen.
+[043:SCRP#0057](14)Jag gillar din anda. Jag ska göra vad jag kan.\255\003Förstås...\255\003...kostar det.
+[043:SCRP#0057](14)Såg du min skylt?\255\003Jag brukar ta 30 åttor för ett STORT jobb som det här.
+[043:SCRP#0057](14)Vad har du?
+[043:SCRP#0057](14)Vad MER har du?
+[043:SCRP#0057](FA)Jag har 30 åttor.
+[043:SCRP#0057](FA)Jag antog att du skulle göra det gratis.
+[043:SCRP#0057](FA)Jag tror jag väntar. Tack ändå.
+[043:SCRP#0057](FA)Allt jag har är den här döda kycklingen.
+[043:SCRP#0057](14)Säg inget mer, säg inget mer.
+[043:SCRP#0057](14)Nå, du antog fel.
+[043:SCRP#0057](14)Fint, förbli en ryggradslös spottloska.
+[043:SCRP#0057](14)Det där är väl inte en sån gummikyckling\255\001med en taljekrok i mitten?\255\003Jag har redan en.
+[043:SCRP#0057](14)Låt se ditt svärd.
+[043:SCRP#0057](FA)Okej, kolla.
+[043:SCRP#0057](FA)Jag glömde visst köpa ett.
+[043:SCRP#0057](FA)Jag vill inte visa dig det.
+[043:SCRP#0057](FA)Jag har den här dödligt utseende kycklingen.
+[043:SCRP#0057](14)Ja, det här är ett fint.
+[043:SCRP#0057](14)Då kör vi.
+[043:SCRP#0057](14)Jag föreslår att du tar din ynkliga bak\255\001till butiken och köper ett.\255\003Jag brukar inte låna ut svärd\255\001till elever.
+[043:SCRP#0057](14)Ja, att svinga en gummikyckling med\255\001en stor metalltaljekrok i kan vara ganska\255\001farligt...\255\003...MEN DET ÄR INGET SVÄRD!!!
+[043:SCRP#0057](14)Som du vill.
+[043:SCRP#0057](14)Det tror jag nog du borde.
+[043:SCRP#0057](14)Okej, din larv...\255\003...dra fram svärdet och visa vad du kan.
+[043:SCRP#0057](14)Grabben!\255\003Du slåss som en mjölkbonde!
+[043:SCRP#0057](14)Jag brukar inte slösa min tid på ohyra som dig.\255\003Men med tanke på att det här LeChuck-tramset har satt käppar i hjulet för affärerna har jag inget val...\255\003...jag behöver pengarna.
+[043:SCRP#0057](14)Ja...\255\003...jag kan se att det här kräver speciella åtgärder.
+[043:SCRP#0057](14)Vill bara att du ska veta...\255\003...jag gör inte det här med alla.\255\003Det är bara för att jag känner den där speciella...\255\003...elev/mentor/åtta-bandet...\255\003...som jag går till de här längderna.
+[043:SCRP#0057](14)Jag tänker ställa dig mot...
+[043:SCRP#0057](14)...MASKINEN.\255\002
+[043:SCRP#0057](14)
+[043:SCRP#0057](14)
+[043:SCRP#0057](14)Maskin?\255\003Kommer det här att göra ont?
+[043:SCRP#0057](14)Ojdå!
+[043:SCRP#0057](14)Kom mot mig. Var inte rädd, du skadar mig inte.
+[043:SCRP#0057](14)Timmar senare...
+[043:SCRP#0057](14)Du börjar få kläm på det.
+[043:SCRP#0057](14)Fler timmar senare...
+[043:SCRP#0057](14)Inte illa. Du har bra form.
+[043:SCRP#0057](14)Nu ska jag avslöja den sanna hemligheten med svärdstrid.
+[043:SCRP#0057](14)Svärdstrid är lite som att älska.\255\003Det handlar inte alltid om vad du gör, utan vad du säger.
+[043:SCRP#0057](14)Vilken idiotpirat som helst kan svinga en vass metallbit och hoppas träffa nåt...\255\003...men proffsen...
+[043:SCRP#0057](14)...dom vet precis när de ska skära ner sin motståndare med en förolämpning...\255\003...en som tar dom på sängen.
+[043:SCRP#0057](14)Du förstår grabben, din kvickhet måste vara dubbelt så vass som ditt svärd.
+[043:SCRP#0057](14)Låt oss testa ett par förolämpningar, ska vi?
+[043:SCRP#0057](14)Okej...\255\003...tänk dig det här:\255\003Vi slåss för fullt...\255\003...precis som Carla och jag i Port Royal.\255\003Det blir ett plötsligt uppehåll i striden och jag säger...
+[043:SCRP#0057](14)...'Du slåss som en mjölkbonde.'\255\003Du svarar med?
+[043:SCRP#0057](FA)Jaså du!?
+[043:SCRP#0057](FA)Din morsa med.
+[043:SCRP#0057](FA)Jag är gummi, du är lim...
+[043:SCRP#0057](FA)Du måste tänka på nån annan, jag är ingen bonde.
+[043:SCRP#0057](14)Jag ser att vi har en hel del jobb kvar.
+[043:SCRP#0057](14)Du borde ha svarat med nåt som...\255\003...'Hur passande. Du slåss som en ko.'
+[043:SCRP#0057](14)Förstår du...\255\003Det är rakbladsvasst skämt som det som vinner strider.
+[043:SCRP#0057](14)Låt oss pröva en till.
+[043:SCRP#0057](14)Tänk dig det här:\255\003Du är trängd mot en vägg...\255\003...mitt svärd har precis gjort två jack i ditt ansikte.\255\003Jag säger...
+[043:SCRP#0057](14)...'Snart har du mitt svärd som grillspett!'
+[043:SCRP#0057](14)Du svarar med?
+[043:SCRP#0057](FA)Jaså du!?
+[043:SCRP#0057](FA)Din morsa med.
+[043:SCRP#0057](FA)Jag är gummi, du är lim...
+[043:SCRP#0057](FA)Hur passande. Du slåss som en ko.
+[043:SCRP#0057](14)Jag ser att vi är illa ute.
+[043:SCRP#0057](14)Nej! Nej! Nej!\255\003Det var svaret på förra förolämpningen.\255\003Det funkar inte alls här!
+[043:SCRP#0057](14)<suck>
+[043:SCRP#0057](14)Ett korrekt svar på...\255\003...'Snart har du mitt svärd som grillspett!'...\255\003...hade varit nåt som...
+[043:SCRP#0057](14)...'Då bör du sluta vifta med det som en dammvippa.'
+[043:SCRP#0057](14)Ser du...\255\003...rakbladsvass!
+[043:SCRP#0057](14)Nu föreslår jag att du ger dig ut och lär dig nåra förolämpningar.
+[043:SCRP#0057](14)Jag kan inte slå bort känslan av att ha blivit lurad.\255\003Jag är säker på att du känner nåt liknande.
+[043:SCRP#0142](14)Framåt, stöt, tillbaka, parera, ripost.
+[043:SCRP#0142](14)Se upp med fotarbetet.
+[043:SCRP#0142](14)Nej! Slå först, sen utfall.
+[043:SCRP#0142](14)Använd din forte mot foiblen.
+[043:SCRP#0142](14)Avstånd, avstånd!
+[044:VERB#0596](D8)Det står 'Jag besegrade Svärdmästaren'
+[044:VERB#0596](D8)Jag tror jag behåller den i nyskick.\255\003Den kanske blir värd nåt nån dag.
+[044:OBNA#0596](__)100% bomulls-T-shirt
+[045:LSCR#0200](14)DU!
+[045:LSCR#0200](FA)Jag har kommit för att stoppa dig från att gifta dig med Guvernör Marley.
+[045:LSCR#0200](FA)Snälla döda mig inte.
+[045:LSCR#0200](FA)Ta DET HÄR, din dimmiga voodoo-ohyra!
+[045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
+[045:LSCR#0200](14)Hur tänker ni göra det?
+[045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
+[045:LSCR#0200](14)Ta VAD? Försöker ni muta mig?
+[045:LSCR#0200](14)Ni kommer behöva en när jag är klar med er!
+[045:LSCR#0200](94)Guvernören!
+[045:LSCR#0200](14)Guvernören!
+[045:LSCR#0200](14)Guvernören?
+[045:LSCR#0200](14)Vad händer?
+[045:LSCR#0200](14)Åh, Guybrush, din galna dåre!\255\003Jag är imponerad att du kom för att rädda mig, men det var verkligen inte nödvändigt.\255\003Jag hade allt under kontroll.
+[045:LSCR#0200](14)Tyvärr har din ankomst gjort det nödvändigt att avslöja mina kort i förtid.
+[045:LSCR#0200](14)
+[045:LSCR#0200](FA)Hur lyckades du fly?
+[045:LSCR#0200](FA)Jag trodde LeChuck skulle gifta sig med dig.
+[045:LSCR#0200](FA)Om du är här, vem är det där i klänningen?
+[045:LSCR#0200](14)...hur...\255\003...vem...\255\003...men...\255\003...vad...\255\003...jag...\255\003...öh...
+[045:LSCR#0200](14)Åh, det var lätt.\255\003LeChuck är en idiot,
+[045:LSCR#0200](14)Hörru!
+[045:LSCR#0200](14)och många av hans besättningsmedlemmar var vänner till mig, när dom levde.
+[045:LSCR#0200](14)Ja, det trodde jag med!
+[045:LSCR#0200](14)Ja, det trodde han med!\255\003Men jag ordnade en liten överraskning till kyssen.
+[045:LSCR#0200](94)Va?
+[045:LSCR#0200](14)Skräm dom inte!\255\003Dom har min spökknäckande rotölsflaska!
+[045:LSCR#0200](D8)Åh, jag tar den!
+[045:LSCR#0200](94)...hoppsan...
+[045:LSCR#0200](14)Bra jobbat, Guybrush.\255\003Nu måste jag jaga efter dom för att få tillbaka min voodoo-rotöl.
+[045:LSCR#0200](94)...men...\255\003...jag...\255\003...öh...\255\003...hörru...
+[045:LSCR#0200](14)
+[045:LSCR#0200](14)Du vågade komma hit och konfrontera mig!\255\003Jag kan inte tro din djärvhet!
+[045:LSCR#0200](FA)Nå, jag kan inte tro din dumhet.
+[045:LSCR#0200](FA)Jag var tvungen att stoppa dig från att gifta dig med Guvernör Marley.
+[045:LSCR#0200](FA)Snälla döda mig inte.
+[045:LSCR#0200](FA)Ta DET HÄR, din dimmiga voodoo-ohyra!
+[045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
+[045:LSCR#0200](14)Jaså?
+[045:LSCR#0200](14)Nå, jag kan inte tro din lättsinnighet.
+[045:LSCR#0200](14)Nå, jag kan inte tro din rörlighet.
+[045:LSCR#0200](14)Nå, jag kan inte tro din skörhet.
+[045:LSCR#0200](FA)Nå, jag kan inte tro din enormitet.
+[045:LSCR#0200](FA)Nå, jag kan inte tro din grymhet.
+[045:LSCR#0200](FA)Nå, jag kan inte tro din raskhet.
+[045:LSCR#0200](FA)Nå, jag kan inte tro din manlighet.
+[045:LSCR#0200](FA)Nå, jag kan inte tro din lycklighet.
+[045:LSCR#0200](FA)Nå, jag kan inte tro din giltighet.
+[045:LSCR#0200](14)Jag ska gifta mig med henne ändå!\255\003Hur tänker DU stoppa mig?
+[045:LSCR#0200](FA)Jag slår dig med en gummikyckling.
+[045:LSCR#0200](FA)Jag dränker dig med min klibbiga sodaflaska.
+[045:LSCR#0200](FA)Jag erbjuder en muta för din brud.
+[045:LSCR#0200](FA)Jag använder mitt spjut och min magiska hjälm.
+[045:LSCR#0200](FA)Jag måste gå, jag är dubbelförbjuden.
+[045:LSCR#0200](14)Hah!\255\003Byte för mitt snygge, va?
+[045:LSCR#0200](14)Många har försökt och dött för sina ansträngningar.
+[045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
+[045:LSCR#0200](FA)Det vore inte snällt.
+[045:LSCR#0200](FA)Jag är kopplad att explodera om nån försöker döda mig.
+[045:LSCR#0200](FA)Jag har fru och tre barn.
+[045:LSCR#0200](FA)Vad sägs om DET HÄR som anledning, va?
+[045:LSCR#0200](14)Det hörde jag!
+[045:LSCR#0200](14)Va?
+[045:LSCR#0200](14)Jag tröttnar på dig.
+[045:LSCR#0200](94)Du ska aldrig mer hota hederliga, gripbara pirater, din svällande säck med...\255\003...med...\255\003...med nåt som börjar på 's'!
+[045:LSCR#0200](14)Öh...\255\003...vänta lite nu, kompansen...\255\003...jag bara skojade, fattar ni?\255\003...vi kan lösa det här som gentlemän...
+[045:LSCR#0200](D8)Åh nej!\255\003Den KLÄMMER!\255\003Måste vara fickludd.
+[045:LSCR#0200](14)
+[045:LSCR#0200](D8)Öh...\255\003...hörru du...\255\003...låt oss inte vara förhastade...
+[045:LSCR#0200](14)
+[045:LSCR#0200](14) 
 [E][048:VERB#0601](D8)It's just like the one on the other side.
 [E][048:OBNA#0601](__)pole
 [E][048:VERB#0603](D8)I don't think that will get me anywhere.
