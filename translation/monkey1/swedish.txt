@@ -305,7 +305,7 @@
 [011:LSCR#0205](D8)Gummiträd!
 [011:LSCR#0206](13)Herman Toothrot
 [011:LSCR#0207](D8)Hoppsan...
-[012:VERB#0133](D8)Ja, det är det näst största aphuvudet jag sett!
+[012:VERB#0133](D8)Ja, det är det näst största aphuvudet jag nånsin sett!
 [012:OBNA#0133](__)gigantiskt aphuvud
 [012:OBNA#0134](__)djungel
 [012:VERB#0136](D8)Jösses.
@@ -473,8 +473,8 @@
 [019:VERB#0259](14)Vad var det?
 [019:VERB#0259](D8)Inget.
 [019:VERB#0259](D8)Ja, vad jag inte skulle ge för att kunna hänga dem.
-[019:VERB#0259](D8)Jag känner inte att det här kommer hjälpa situationen.
-[019:VERB#0259](D8)Jag har en känsla av att det inte är de som blir utnyttjade här.
+[019:VERB#0259](D8)Jag tror inte det här kommer hjälpa situationen.
+[019:VERB#0259](D8)Jag har på känn att det inte är de som blir utnyttjade här.
 [019:VERB#0259](D8)Jag tror inte våld är svaret...\255\003...även om det skulle få mig att må bättre.
 [019:VERB#0259](14)Vad var det?
 [019:VERB#0259](D8)Inget.
@@ -532,7 +532,7 @@
 [020:VERB#0268](D8)Jag slår vad om att man kan se hela ön därifrån.
 [020:VERB#0268](D8)Det är den där platsen med den fina utsikten.
 [020:OBNA#0268](__)högt uppskjutande klippa
-[020:VERB#0261](D8)Djup.\255\003Mörk.\255\003Förbjuden.
+[020:VERB#0261](D8)Djup.\255\003Mörk.\255\003Hotfull.
 [020:OBNA#0261](__)djungel
 [020:VERB#0263](D8)Det är konstigt...\255\003Det står `Havsapan`.
 [020:OBNA#0263](__)roddbåt
@@ -712,7 +712,7 @@
 [020:SCRP#0167](54)anmärkningsvärd sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
-[020:SCRP#0168](D8)Jag är här för att rädda Guvernören av Mêlée Island®.
+[020:SCRP#0168](D8)Jag är här för att rädda Guvernören på Mêlée Island®.
 [020:SCRP#0168](D8)Jag är en mäktig pirat.
 [020:SCRP#0168](D8)Sett några stora, fula, läskiga, genomskinliga pirater här omkring?
 [020:SCRP#0168](D8)Finns det något gott att äta på den här ön?
@@ -812,7 +812,7 @@
 [025:OBNA#0300](__)hydda
 [025:VERB#0284](D8)Den ser stor och tom ut.
 [025:VERB#0284](D8)Den är redan öppen.
-[025:VERB#0284](D8)Jag vill inte komma närmare det där.\255\003Det kan vara fällfångat.
+[025:VERB#0284](D8)Jag vill inte komma närmare det där.\255\003Det kan vara försett med fällor.
 [025:VERB#0284](14) 
 [025:OBNA#0284](__)stort stenhuvud
 [025:OBNA#0290](__)djungel
@@ -920,7 +920,7 @@
 [025:LSCR#0213](14)Det är inte riktigt vad vi tänkte oss.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](14)Är det något ANNAT vi kan göra för dig?
-[025:LSCR#0213](14)Här?\255\003On Monkey Island®?
+[025:LSCR#0213](14)Här?\255\003På Monkey Island®?
 [025:LSCR#0213](14)Vi är de enda människorna som bor på Monkey Island®.
 [025:LSCR#0213](14)Alltså, de enda civiliserade människorna.
 [025:LSCR#0213](14) 
@@ -931,7 +931,7 @@
 [025:LSCR#0213](14)Jag tror inte jag vill höra mer om det.
 [025:LSCR#0213](14)Vänta, kanske pratar han om de där döda piraterna.
 [025:LSCR#0213](14)Åh ja. DE killarna.
-[025:LSCR#0213](D8)Då har ni sett spökpiraten LeChuck och hans likartade besättning?
+[025:LSCR#0213](D8)Då har ni sett spökpiraten LeChuck och hans likbleka besättning?
 [025:LSCR#0213](14)De där idioterna har tjatat på oss i månader!
 [025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...jämrar och stönar till alla tider på morgonen...
 [025:LSCR#0213](14)...skrämmer bort alla kryssningsfartyg.
@@ -955,7 +955,7 @@
 [025:LSCR#0213](14)Åh, och jag antar att stjäla bananer är bättre?
 [025:LSCR#0213](14)Den Stora Apan själv är porten till underjordens katakomber.
 [025:LSCR#0213](14)Han är på en plats under den här ön...\255\003...någonstans i ett enormt system av katakomber...
-[025:LSCR#0213](14)...en helvetesplats fylld med tjutande av torterade själar fångade för alltid i berget...\255\003...där väggarna blöder och luften är tung av den härsket stanken av rent ondska.
+[025:LSCR#0213](14)...en helvetesplats fylld med tjutande av torterade själar fångade för alltid i berget...\255\003...där väggarna blöder och luften är tung av den härskna stanken av ren ondska.
 [025:LSCR#0213](14)Turister brukade stå i kö i timmar för att se det.
 [025:LSCR#0213](FA)Vad hände? Hälsomyndigheten stängde er?
 [025:LSCR#0213](FA)Kan ni inte bara gå ner dit och kasta ut honom?
@@ -988,7 +988,7 @@
 [025:LSCR#0213](14)Men det är vårt enda, så du kan inte få det.
 [025:LSCR#0213](14)Jag antar att vi inte har något att erbjuda dig.
 [025:LSCR#0213](14)Och efter att han gav oss den där fina avguden också...
-[025:LSCR#0213](14)Känn dig fri att komma till Den Stora Apan och besöka din avgud när som helst.
+[025:LSCR#0213](14)Du är välkommen att komma till Den Stora Apan och besöka din avgud när som helst.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](14)Men i alla fall, Lemonhead, vad var det du sa om tropiska oljor?
 [025:LSCR#0213](14)Jo...
