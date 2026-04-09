@@ -164,15 +164,15 @@
 [010:SCRP#0003](D8)Jag kan inte ta upp.
 [010:SCRP#0003](D8)Jag kan inte nå härifrån.
 [010:SCRP#0003](D8)Verkar inte fungera.
-[E][010:SCRP#0004](14)Molasses machine.
-[E][010:SCRP#0004](14)Street legal machine.
-[E][010:SCRP#0004](14)Trans-warp drive machine.
-[E][010:SCRP#0004](14)Floppies
-[E][010:SCRP#0004](14)Hard disk
-[E][010:SCRP#0004](14)Selected actor is \255\004\001\000
-[E][010:SCRP#0004](14)Talk color \255\004\139\001
-[E][010:SCRP#0004](14)Machine rating is \255\004\103\001 speed \255\004\006\000
-[E][010:SCRP#0004](14)Are you sure you want to win? (Y/N)
+[010:SCRP#0004](14)Sirapsdragen maskin.
+[010:SCRP#0004](14)Gatulaglig maskin.
+[010:SCRP#0004](14)Trans-warp-drivenhet.
+[010:SCRP#0004](14)Disketter
+[010:SCRP#0004](14)Hårddisk
+[010:SCRP#0004](14)Vald aktör är \255\004\001\000
+[010:SCRP#0004](14)Pratstämsfärg \255\004\139\001
+[010:SCRP#0004](14)Maskinbetyg är \255\004\103\001 hastighet \255\004\006\000
+[010:SCRP#0004](14)Är du säker på att du vill vinna? (J/N)
 [E][010:SCRP#0012](7A) 
 [E][010:SCRP#0012](27) 
 [E][010:SCRP#0012](27) 
@@ -686,10 +686,10 @@
 [020:SCRP#0096](14)Nej tack, jag har egna, fast någon kastade dem i en ravin.
 [020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
 [020:SCRP#0164](D8)Det är tryckt på brevpapper!
-[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Var snäll och sluta flytta på den här.`\255\003`Den är känsligt balanserad.`\255\003`--Herman Toothrot--`
+[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Var snäll och sluta flytta på den här.`\255\003`Den är noggrant kalibrerad.`\255\003`--Herman Toothrot--`
 [020:SCRP#0164](D8)`Herr Toothrot:`\255\003`Var snäll och ta bort det här farliga föremålet.`
-[020:SCRP#0164](D8)`Lemonhead knackade en sten på den från klippan ovanför och skadade nästan någon som satte upp en gunga på bananträdet på södra stranden.`
-[020:SCRP#0164](D8)`Lemonhead knackade en sten på den från klippan ovanför och sänkte nästan ett förbipasserande skepp.`
+[020:SCRP#0164](D8)`Lemonhead sparkade en sten på den från klippan ovanför och skadade nästan någon som satte upp en gunga på bananträdet på södra stranden.`
+[020:SCRP#0164](D8)`Lemonhead sparkade en sten på den från klippan ovanför och sänkte nästan ett förbipasserande skepp.`
 [020:SCRP#0164](D8)`--Kannibalerna`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste än en gång be dig dra ner på dina nattliga aktiviteter i området kring det Heliga Aphuvudet.`\255\003`Anständiga människor försöker sova!`
 [020:SCRP#0164](D8)`Var vänlig håll nere ljudnivån.`\255\003`--Monkey Island® Kannibalerna`\255\003`P.S.--`\255\003`Vi såg dig ta med den där kvinnan med halsduken dit ner!`
@@ -699,7 +699,7 @@
 [020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
 [020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare er nyckel till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
 [020:SCRP#0164](D8)`Till Herman Toothrot`\255\003`Från Yammer, Hem och Haw, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
-[020:SCRP#0164](D8)`Jag tror vi har ett fall här.`\255\003`Vi kan troligtvis mjölka dem på känslomässigt lidande och möjligen straffskadestånd också.`
+[020:SCRP#0164](D8)`Jag tror vi har en möjlighet här.`\255\003`Vi kan troligtvis dra in stora belopp för sveda och värk och möjligen även straffskadestånd.`
 [020:SCRP#0164](14)
 [020:SCRP#0166](54)memon
 [020:SCRP#0166](54)ett par memon
@@ -4244,27 +4244,27 @@
 [088:SCRP#0085](27)Jag tänker inte tåla din oförskämdhet sittande!
 [088:SCRP#0085](27)Det finns inga ord för hur äcklig du är.
 [088:SCRP#0085](27)Jag har talat med apor som är artigare än dig.
-[E][088:SCRP#0085](27)I've got a long, sharp lesson for you to learn today.
-[E][088:SCRP#0085](27)My tongue is sharper than any sword.
-[E][088:SCRP#0085](27)My name is feared in every dirty corner of this island!
-[E][088:SCRP#0085](27)My wisest enemies run away at the first sight of me!
-[E][088:SCRP#0085](27)Only once have I met such a coward!
-[E][088:SCRP#0085](27)If your brother's like you, better to marry a pig.
-[E][088:SCRP#0085](27)No one will ever catch ME fighting as badly as you do.
-[E][088:SCRP#0085](27)I will milk every drop of blood from your body!
-[E][088:SCRP#0085](27)My last fight ended with my hands covered with blood.
-[E][088:SCRP#0085](27)I hope you have a boat ready for a quick escape.
-[E][088:SCRP#0085](27)My sword is famous all over the Caribbean!
-[E][088:SCRP#0085](27)I've got the courage and skill of a master swordsman!
-[E][088:SCRP#0085](27)Every word you say to me is stupid.
-[E][088:SCRP#0085](27)You are a pain in the backside, sir!
-[E][088:SCRP#0085](27)There are no clever moves that can help you now.
-[E][088:SCRP#0085](27)Now I know what filth and stupidity really are.
-[E][088:SCRP#0085](27)I usually see people like you passed-out on tavern floors.
-[E][088:SCRP#0085](27)Boy are you ugly!
-[E][088:SCRP#0085](27)What an idiot!
-[E][088:SCRP#0085](27)You call yourself a pirate!
-[E][088:SCRP#0085](27)I give up, you win!
+[088:SCRP#0085](27)Jag har en lång, vass lärdom åt dig att lära i dag.
+[088:SCRP#0085](27)Min tunga är vassare än något svärd.
+[088:SCRP#0085](27)Mitt namn fruktas i varje smutsigt hörn av denna ö!
+[088:SCRP#0085](27)Mina klokaste fiender flyr vid första anblicken av mig!
+[088:SCRP#0085](27)Bara en gång har jag träffat en sådan fegis!
+[088:SCRP#0085](27)Om din bror är som du, bättre att gifta sig med en gris.
+[088:SCRP#0085](27)Ingen kommer nånsin se MIG slåss så uselt som du gör.
+[088:SCRP#0085](27)Jag ska mjölka varje droppe blod ur din kropp!
+[088:SCRP#0085](27)Min senaste strid slutade med händerna täckta av blod.
+[088:SCRP#0085](27)Jag hoppas du har en båt redo för en snabb flykt.
+[088:SCRP#0085](27)Mitt svärd är känt över hela Karibien!
+[088:SCRP#0085](27)Jag har modet och skickligheten hos en mästarfäktare!
+[088:SCRP#0085](27)Varje ord du säger till mig är dumt.
+[088:SCRP#0085](27)Du är en plåga i baken, sir!
+[088:SCRP#0085](27)Det finns inga smarta drag som kan hjälpa dig nu.
+[088:SCRP#0085](27)Nu vet jag vad skit och dumhet verkligen är.
+[088:SCRP#0085](27)Jag brukar se folk som du medvetslösa på krogars golv.
+[088:SCRP#0085](27)Herregud vad ful du är!
+[088:SCRP#0085](27)Vilket fähuvud!
+[088:SCRP#0085](27)Du kallar dig själv pirat!
+[088:SCRP#0085](27)Jag ger upp, du vinner!
 [088:SCRP#0086](27) 
 [088:SCRP#0086](27)Synd att bara din tunga är vass.
 [088:SCRP#0086](27)Först måste du sluta vifta med det som en dammvippa.
@@ -4286,152 +4286,152 @@
 [088:SCRP#0086](27)Jag är av gummi, du är av lim.
 [088:SCRP#0086](27)Jag skakar, jag skakar.
 [088:SCRP#0086](27)Öhh... Kan du upprepa det? Jag hörde inte riktigt.
-[E][088:SCRP#0086](27)I give up, you win!
-[E][088:SCRP#0089](14)in set-replies
-[E][088:SCRP#0090](14)--------------------------
-[E][088:SCRP#0101](14)sword lost
-[E][088:SCRP#0113](14)Pirate id \255\004\000\064 is invalid
-[E][088:SCRP#0160](14)insult \255\004\000\064 known
-[E][088:SCRP#0160](14)number of insults in list is \255\004\052\001
-[E][088:SCRP#0161](14)reply \255\004\000\064 known
-[E][088:SCRP#0161](14)number of replies in list is \255\004\053\001
-[E][089:SCRP#0130](14)You Win!
-[E][089:SCRP#0130](14)You scored 800 out of 800 points.
-[E][089:SCRP#0130](14)The Secret of Monkey Island
-[E][089:SCRP#0130](14)Featuring Spiffy as the dog in the bar
-[E][089:SCRP#0130](14)Additional Design
-[E][089:SCRP#0130](14)Noah Falstein
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Additional additional Design
-[E][089:SCRP#0130](14)Everyone else at Lucasfilm Games
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Sword Fighting Insults
-[E][089:SCRP#0130](14)Orson Scott Card
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Last Minute Assistance
-[E][089:SCRP#0130](14)Tami Borowick and Ron Baldwin
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Additional Art
-[E][089:SCRP#0130](14)Avril Harrison, Jim McLeod
-[E][089:SCRP#0130](14)and Gary Winnick
-[E][089:SCRP#0130](14)Special Guest Film Director
-[E][089:SCRP#0130](14)Hal Barwood
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Bulletproofing
-[E][089:SCRP#0130](14)Kerner Complex
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Chocolate Supply Supervision
-[E][089:SCRP#0130](14)Andrea Siegel and Alexa Eurich
-[E][089:SCRP#0130](14)Lucasfilm Games General Manager
-[E][089:SCRP#0130](14)Steve Arnold
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Managing Director
-[E][089:SCRP#0130](14)Doug Glen
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Director of Operations
-[E][089:SCRP#0130](14)David Fox
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Marketing Manager
-[E][089:SCRP#0130](14)Stacey Lamiero
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Public Relations
-[E][089:SCRP#0130](14)Betsy Irion
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Art Department Supervisor
-[E][089:SCRP#0130](14)Gary Winnick
-[E][089:SCRP#0130](14)Associate Marketing Director
-[E][089:SCRP#0130](14)Kelly Flock
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Manufacturing Coordinator
-[E][089:SCRP#0130](14)Meredith Cahill
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Product Support
-[E][089:SCRP#0130](14)Brandy Wilson (supervisor)
-[E][089:SCRP#0130](14)Liz Nagy and Carla Green
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Production Assistants
-[E][089:SCRP#0130](14)James Wood and Carol Traylor
-[E][089:SCRP#0130](14)  
-[E][089:SCRP#0130](14)Administrative Support
-[E][089:SCRP#0130](14)Wendy Bertram, Alexa Eurich, Paula Hendricksen,
-[E][089:SCRP#0130](14)Debbie Ratto, Andrea Siegel and Lisa Star
-[E][089:SCRP#0130](14)Additional Testing
-[E][089:SCRP#0130](14)Lisa Star, Tami Borowick, Michael Stemmle,
-[E][089:SCRP#0130](14)Tony Hsieh, Wallace Poulter, Ron Baldwin,
-[E][089:SCRP#0130](14)Wendy Clark, Sam Chan, Frank Toriello,
-[E][089:SCRP#0130](14)and John Sinclair
-[E][089:SCRP#0130](14)Sam and Max appear courtesy of Steve Purcell
-[E][089:SCRP#0130](14)Cobb® and Seagull® appear courtesy of LOOM®
-[E][089:SCRP#0130](14)Soundtrack not available on Cassette or LP
-[E][089:SCRP#0130](14)Book also not available
-[E][089:SCRP#0130](14)The Secret of Monkey Island
-[E][089:SCRP#0130](14)A Lucasfilm Games Production
-[E][089:SCRP#0130](14)TM & (c) 1990 LucasArts Entertainment Company.
-[E][089:SCRP#0130](14)All Rights Reserved.
-[E][089:SCRP#0130](14)Turn your computer off and go to sleep!
-[E][089:SCRP#0138](14)You know, LeChuck was a deviant, obnoxious, slithery,  creepy-crawly sort of a guy, but I'll say one thing for him...
-[E][089:SCRP#0138](14)What's that?
-[E][089:SCRP#0138](14)He sure looks nice exploding against the night sky.
-[E][089:SCRP#0138](14)Yes, it's very romantic.
-[E][089:SCRP#0138](14)Can I buy you a root beer?
-[E][089:SCRP#0138](FA)Sure.
-[E][089:SCRP#0138](FA)Actually, I'm a bit sick of root beer.
-[E][089:SCRP#0138](14)There's more at Stan's--
-[E][089:SCRP#0138](14)While I was in the machine over at Stan's--
-[E][089:SCRP#0138](14)Gosh, I hope Stan's OK...
-[E][089:SCRP#0138](14)I wish my crew could have seen this...
-[E][089:SCRP#0138](14)You know, I completely forgot about Herman Toothrot!
-[E][089:SCRP#0138](14)At least I learned something from all of this...
-[E][089:SCRP#0138](14)What's that?
-[E][089:SCRP#0138](FA)How to deal with frustration, disappointment, \254\008   and irritating cynicism.
-[E][089:SCRP#0138](7A)How to deal with frustration, disappointment, \254\008   and irritating cynicism.
-[E][089:SCRP#0138](FA)It's not the size of the ship...
-[E][089:SCRP#0138](FA)Never pay more than 20 bucks for a computer game.
-[E][089:SCRP#0138](14)That sounds like something my husband would say.
-[E][089:SCRP#0138](14)Yikes!
-[E][089:SCRP#0138](14)Yes, I've heard that one.
-[E][089:SCRP#0138](14)A what?
-[E][089:SCRP#0138](14)I don't know, I'm not sure why I said that.
-[E][089:SCRP#0146](14)You know, I can't shake the feeling that Guybrush was somehow  responsible for that big rock sinking the ship...
-[E][089:SCRP#0146](14)Yeah.\255\003As soon as we find a way off this island we're going to  have ourselves a little chat with Mr. Threepwood...
-[E][089:SCRP#0146](14)Let's get out of this hut, first.
-[E][089:SCRP#0146](14)Now, I wonder where my pirate friend has got to.
-[E][089:SCRP#0146](14)I certainly hope he didn't leave without me...
-[E][089:SCRP#0149](14)\255\005\001\064
-[E][090:SCRP#0154](14)WAIT!
-[E][090:SCRP#0154](14)Before we begin...
-[E][090:SCRP#0154](14)...let's have a quick history quiz.
-[E][090:SCRP#0154](14)Press ENTER to continue...\255\002
-[E][090:SCRP#0154](27)Somehow that doesn't seem right.
-[E][090:SCRP#0154](27)Yikes!  Not quite right.
-[E][090:SCRP#0154](27)That's not the answer I get, sorry.
+[088:SCRP#0086](27)Jag ger upp, du vinner!
+[088:SCRP#0089](14)in set-replies
+[088:SCRP#0090](14)--------------------------
+[088:SCRP#0101](14)sword lost
+[088:SCRP#0113](14)Pirate id \255\004\000\064 is invalid
+[088:SCRP#0160](14)insult \255\004\000\064 known
+[088:SCRP#0160](14)number of insults in list is \255\004\052\001
+[088:SCRP#0161](14)reply \255\004\000\064 known
+[088:SCRP#0161](14)number of replies in list is \255\004\053\001
+[089:SCRP#0130](14)Du vinner!
+[089:SCRP#0130](14)Du fick 800 av 800 möjliga poäng.
+[089:SCRP#0130](14)Monkey Islands® hemlighet
+[089:SCRP#0130](14)Med Spiffy i rollen som hunden i baren
+[089:SCRP#0130](14)Extra design
+[089:SCRP#0130](14)Noah Falstein
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Ännu mer design
+[089:SCRP#0130](14)Alla andra på Lucasfilm Games
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Svärdsfäktningsskällsord
+[089:SCRP#0130](14)Orson Scott Card
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Hjälp i sista minuten
+[089:SCRP#0130](14)Tami Borowick och Ron Baldwin
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Extra grafik
+[089:SCRP#0130](14)Avril Harrison, Jim McLeod
+[089:SCRP#0130](14)och Gary Winnick
+[089:SCRP#0130](14)Speciell gästregissör
+[089:SCRP#0130](14)Hal Barwood
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Säkerhetstestning
+[089:SCRP#0130](14)Kerner Complex
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Ansvarig för chokladtillförsel
+[089:SCRP#0130](14)Andrea Siegel och Alexa Eurich
+[089:SCRP#0130](14)Chef för Lucasfilm Games
+[089:SCRP#0130](14)Steve Arnold
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Verkställande direktör
+[089:SCRP#0130](14)Doug Glen
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Driftchef
+[089:SCRP#0130](14)David Fox
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Marknadschef
+[089:SCRP#0130](14)Stacey Lamiero
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)PR-ansvarig
+[089:SCRP#0130](14)Betsy Irion
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Grafisk chef
+[089:SCRP#0130](14)Gary Winnick
+[089:SCRP#0130](14)Biträdande marknadschef
+[089:SCRP#0130](14)Kelly Flock
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Produktionssamordnare
+[089:SCRP#0130](14)Meredith Cahill
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Produktsupport
+[089:SCRP#0130](14)Brandy Wilson (ansvarig)
+[089:SCRP#0130](14)Liz Nagy och Carla Green
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Produktionsassistenter
+[089:SCRP#0130](14)James Wood och Carol Traylor
+[089:SCRP#0130](14)
+[089:SCRP#0130](14)Administrativt stöd
+[089:SCRP#0130](14)Wendy Bertram, Alexa Eurich, Paula Hendricksen,
+[089:SCRP#0130](14)Debbie Ratto, Andrea Siegel och Lisa Star
+[089:SCRP#0130](14)Utökad testning
+[089:SCRP#0130](14)Lisa Star, Tami Borowick, Michael Stemmle,
+[089:SCRP#0130](14)Tony Hsieh, Wallace Poulter, Ron Baldwin,
+[089:SCRP#0130](14)Wendy Clark, Sam Chan, Frank Toriello,
+[089:SCRP#0130](14)och John Sinclair
+[089:SCRP#0130](14)Sam och Max medverkar genom tillstånd av Steve Purcell
+[089:SCRP#0130](14)Cobb® och Seagull® medverkar genom tillstånd av LOOM®
+[089:SCRP#0130](14)Soundtracket finns ej på kassett eller LP
+[089:SCRP#0130](14)Boken finns heller inte
+[089:SCRP#0130](14)Monkey Islands® hemlighet
+[089:SCRP#0130](14)En produktion av Lucasfilm Games
+[089:SCRP#0130](14)TM & (c) 1990 LucasArts Entertainment Company.
+[089:SCRP#0130](14)Alla rättigheter reserverade.
+[089:SCRP#0130](14)Stäng av datorn och gå och lägg dig!
+[089:SCRP#0138](14)Du vet, LeChuck var en pervers, vidrig, hal, krypande sorts kille, men en sak måste jag säga om honom...
+[089:SCRP#0138](14)Vad då?
+[089:SCRP#0138](14)Han ser verkligen fin ut när han exploderar mot natthimlen.
+[089:SCRP#0138](14)Ja, det är väldigt romantiskt.
+[089:SCRP#0138](14)Kan jag bjuda dig på en rotöl?
+[089:SCRP#0138](FA)Javisst.
+[089:SCRP#0138](FA)Faktiskt är jag lite trött på rotöl.
+[089:SCRP#0138](14)Det finns mer hos Stan's--
+[089:SCRP#0138](14)När jag var i maskinen hos Stan's--
+[089:SCRP#0138](14)Jösses, jag hoppas Stan mår bra...
+[089:SCRP#0138](14)Jag önskar att min besättning hade sett det här...
+[089:SCRP#0138](14)Du vet, jag glömde helt bort Herman Toothrot!
+[089:SCRP#0138](14)Åtminstone lärde jag mig nåt av allt det här...
+[089:SCRP#0138](14)Vad då?
+[089:SCRP#0138](FA)Hur man hanterar frustration, besvikelse, \254\008   och irriterande cynism.
+[089:SCRP#0138](7A)Hur man hanterar frustration, besvikelse, \254\008   och irriterande cynism.
+[089:SCRP#0138](FA)Det är inte storleken på skeppet...
+[089:SCRP#0138](FA)Betala aldrig mer än 20 spänn för ett datorspel.
+[089:SCRP#0138](14)Det låter som nåt min man skulle säga.
+[089:SCRP#0138](14)Oj då!
+[089:SCRP#0138](14)Ja, den har jag hört förut.
+[089:SCRP#0138](14)En vad?
+[089:SCRP#0138](14)Jag vet inte, jag är inte säker på varför jag sa det.
+[089:SCRP#0146](14)Du vet, jag kan inte skaka av mig känslan att Guybrush på nåt sätt var ansvarig för att den där stora klippan sänkte skeppet...
+[089:SCRP#0146](14)Japp.\255\003Så fort vi hittar ett sätt av den här ön ska vi ta ett allvarligt snack med herr Threepwood...
+[089:SCRP#0146](14)Låt oss ta oss ut ur den här kojan först.
+[089:SCRP#0146](14)Nu undrar jag var min piratvän har tagit vägen.
+[089:SCRP#0146](14)Jag hoppas verkligen att han inte åkte utan mig...
+[089:SCRP#0149](14)\255\005\001\064
+[090:SCRP#0154](14)VÄNTA!
+[090:SCRP#0154](14)Innan vi börjar...
+[090:SCRP#0154](14)...ska vi ha ett snabbt historietest.
+[090:SCRP#0154](14)Tryck ENTER för att fortsätta...\255\002
+[090:SCRP#0154](27)Nånting verkar inte stämma.
+[090:SCRP#0154](27)Oj då! Inte riktigt rätt.
+[090:SCRP#0154](27)Det är inte svaret jag får, tyvärr.
 [E][090:SCRP#0154](27)When was this pirate hanged in \255\007\033\000?
-[E][090:SCRP#0154](27)Antigua
-[E][090:SCRP#0154](27)Barbados
-[E][090:SCRP#0154](27)Jamaica
-[E][090:SCRP#0154](27)Montserrat
-[E][090:SCRP#0154](27)Nebraska
-[E][090:SCRP#0154](27)St. Kitts
-[E][090:SCRP#0154](27)Tortuga
-[E][090:SCRP#0154](27)Type in your answer: XXXX
-[E][090:SCRP#0155](14) 
-[E][090:SCRP#0155](14) 
-[E][090:SCRP#0155](14)\255\007\048\000\255\002
-[E][090:SCRP#0155](14)\255\007\047\000
-[E][090:SCRP#0155](14)\255\007\047\000
-[E][090:SCRP#0155](14) 
-[E][090:SCRP#0155](14)\255\007\046\000
-[E][090:SCRP#0155](14) 
-[E][090:SCRP#0176](14)track-b-size = \255\004\074\000
-[E][090:SCRP#0176](14)track-b-size = \255\004\074\000
-[E][090:SCRP#0176](14)passed copy protection 2
-[E][090:SCRP#0176](14)Game Requires Monkey Island CD in Drive!
-[E][096:LSCR#0200](14) 
-[E][096:LSCR#0200](14) 
-[E][097:SCRP#0122](14) 
-[E][097:SCRP#0122](14) 
-[E][097:SCRP#0122](14) 
-[E][097:SCRP#0122](14) 
-[E][097:SCRP#0122](14)Through the courageous leadership of Captain Freep -er- Threepwood, the Sea Monkey is finally underway.
-[E][097:SCRP#0122](14)Undaunted by their lack of navigational equipment or expertise, the crew begins to plan their voyage.\255\002
-[E][097:SCRP#0122](14) 
+[090:SCRP#0154](27)Antigua
+[090:SCRP#0154](27)Barbados
+[090:SCRP#0154](27)Jamaica
+[090:SCRP#0154](27)Montserrat
+[090:SCRP#0154](27)Nebraska
+[090:SCRP#0154](27)St. Kitts
+[090:SCRP#0154](27)Tortuga
+[090:SCRP#0154](27)Skriv in ditt svar: XXXX
+[090:SCRP#0155](14)
+[090:SCRP#0155](14)
+[090:SCRP#0155](14)\255\007\048\000\255\002
+[090:SCRP#0155](14)\255\007\047\000
+[090:SCRP#0155](14)\255\007\047\000
+[090:SCRP#0155](14)
+[090:SCRP#0155](14)\255\007\046\000
+[090:SCRP#0155](14)
+[090:SCRP#0176](14)track-b-size = \255\004\074\000
+[090:SCRP#0176](14)track-b-size = \255\004\074\000
+[090:SCRP#0176](14)passed copy protection 2
+[090:SCRP#0176](14)Spelet kräver Monkey Island-CD:n i enheten!
+[096:LSCR#0200](14)
+[096:LSCR#0200](14)
+[097:SCRP#0122](14)
+[097:SCRP#0122](14)
+[097:SCRP#0122](14)
+[097:SCRP#0122](14)
+[097:SCRP#0122](14)Genom det modiga ledarskapet hos Kapten Freep -eh- Threepwood är Havsapan äntligen på väg.
+[097:SCRP#0122](14)Oförskräckta av sin brist på navigationsutrustning eller kunskap börjar besättningen planera sin resa.\255\002
+[097:SCRP#0122](14)
