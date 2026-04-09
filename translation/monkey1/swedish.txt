@@ -3396,90 +3396,90 @@
 [060:OBNA#0740](__)Hubert
 [060:OBNA#0741](__)sandsäck
 [060:OBNA#0742](__)boxningssäck
-[E][061:OBNA#0743](__)path
-[E][061:VERB#0744](D8)She looks like she's meditating.
-[E][061:VERB#0744](D8)I don't think that would be wise.
-[E][061:OBNA#0744](__)Sword Master
-[E][061:SCRP#0058](14)How dare you approach the Sword Master without permission...
-[E][061:SCRP#0058](14)Which I surely didn't give you.
-[E][061:SCRP#0058](14)How dare you approach the Sword Master with--
-[E][061:SCRP#0058](14)Oh, it's you again.
-[E][061:SCRP#0058](14) 
-[E][061:SCRP#0058](FA)I beg your pardon, I must talk to you.
-[E][061:SCRP#0058](FA)My name is Guybrush Threepwood.  I've come to kill you.
-[E][061:SCRP#0058](FA)Hi, I'm selling these fine leather jackets.
-[E][061:SCRP#0058](94)I'm back, and boy are you in trouble this time.
-[E][061:SCRP#0058](94)OK, I think I got it this time.
-[E][061:SCRP#0058](94)I return, fresh from a kill!
-[E][061:SCRP#0058](94)Hi, remember me?
-[E][061:SCRP#0058](14)I doubt that.\255\003Everyone who comes here is prepared to fight.
-[E][061:SCRP#0058](14)Let's be honest: you're here to prove yourself to the Pirate Leaders, in hopes of one day being as immoral as they are.
-[E][061:SCRP#0058](D8)Yep, nailed it right on the head... gee, you're smart.
-[E][061:SCRP#0058](14) 
-[E][061:SCRP#0058](14)But, as you have no sword...\255\003...I doubt you're really serious.
-[E][061:SCRP#0058](14)I can tell by the sarcastic expression on your face that you've been fully trained by Captain Smirk.
-[E][061:SCRP#0058](14)I can also tell from the Mêlée Times' sports page that you haven't won a single fight.
-[E][061:SCRP#0058](14)This would be nothing more then a waste of my time.
-[E][061:SCRP#0058](14)I can also tell from the Mêlée Times' sports page that you've won only one fight.
-[E][061:SCRP#0058](14)Not nearly enough to waste my time.
-[E][061:SCRP#0058](14)I can also tell from the Mêlée Times' sports page that you've won only \255\004\026\001 fights.
-[E][061:SCRP#0058](14)Not nearly enough to waste my time.
-[E][061:SCRP#0058](14)Let's get this over with.
-[E][061:SCRP#0058](14)What was your final grade in Captain Smirk's sword fighting class?
-[E][061:SCRP#0058](D8)Uh...\255\003Grade?\255\003Class?
-[E][061:SCRP#0058](14)You mean you came here to take on the Sword Master of Mêlée Island®...\255\003...possibly the greatest sword fighter in the entire Caribbean...\255\003...without a single lesson in the art of fencing?
-[E][061:SCRP#0058](D8)Yep.
-[E][061:SCRP#0058](14)How did you expect to defend yourself?
-[E][061:SCRP#0058](D8)Gee...\255\003I dunno.
-[E][061:SCRP#0058](14)I see...\255\003...obviously not with your razor-sharp wit.\255\003I'd advise you to seek out Captain Smirk's and get some real training.
-[E][061:SCRP#0058](14)It would hardly be ethical, sporting, or even interesting to fight someone as unskilled as yourself.\255\003So beat it.
-[E][061:SCRP#0058](14)I told you, I'm not going to fight you until you get some training.
-[E][061:SCRP#0058](14)Nothing like being honest.
-[E][061:SCRP#0058](14)Do you have one in size 3?
-[E][061:SCRP#0058](14)Of course you don't!\255\003Because you're not really a jacket salesman!
-[E][061:SCRP#0064](14)You've already got the T-shirt...
-[E][061:SCRP#0064](14)What do you want now?
-[E][061:SCRP#0064](D8)Maybe I'd better just leave you alone.
-[E][061:SCRP#0064](14)Good idea.
-[E][061:SCRP#0064](FA)I want to embarrass you at swordfighting again.
-[E][061:SCRP#0064](FA)I want us to make up and be friends.
-[E][061:SCRP#0064](FA)The Governor's been KIDNAPPED!
-[E][061:SCRP#0064](FA)Maybe I'd better just leave you alone.
-[E][061:SCRP#0064](14)Ha!\255\003I only let you win because I was sick of you coming around.\255\003I thought you'd stay away, but I guess I was wrong.
-[E][061:SCRP#0064](14) 
-[E][061:SCRP#0064](14)I want you to go away and leave me alone.
-[E][061:SCRP#0064](14)What?  That's ridiculous.
-[E][061:SCRP#0064](14)What's this?
-[E][061:SCRP#0064](14)Oh, no.
-[E][061:SCRP#0064](14)This looks bad.  Very bad.
-[E][061:SCRP#0064](94)I'm getting a ship and a crew together to go rescue her.
-[E][061:SCRP#0064](14)Hmmm...\255\003I have a feeling I'm going to regret this, but count me in.
-[E][061:SCRP#0064](14)I'll meet you at the dock.
-[E][061:SCRP#0064](14) 
-[E][061:SCRP#0064](14)Good idea.
-[E][061:SCRP#0116](14)Well...I hope you're happy.\255\003You can go back and brag to all your friends about how you beat the Sword Master.
-[E][061:SCRP#0116](14)You'll need proof...\255\003Here, this should convince them.
-[E][061:SCRP#0116](14)I hope this teaches you a lesson.\255\003Now SCRAM!
-[E][061:SCRP#0124](94)I better just stay back here and eavesdrop.
-[E][061:SCRP#0124](14)Hello again, Carla.
-[E][061:SCRP#0124](14)I thought I told you to get lost.
-[E][061:SCRP#0124](14)Actually, I'm here on business.\255\003This kid came into my store, see...
-[E][061:SCRP#0124](14)Face it, you crusty old letch...\255\003...you'd make any excuse just to come out here and bother me.
-[E][061:SCRP#0124](14)Yeah, I guess so.
-[E][061:SCRP#0124](14)Well, cut it out.  I'm sick of it.\255\003Take a hike and don't come out here again.\255\003Someone might follow you, and then I'd become another Mêlée Island® tourist attraction.
-[E][061:SCRP#0124](14)Hey, it's your loss, baby.
-[E][061:SCRP#0124](14)That kid keeps asking about you, Carla...
-[E][061:SCRP#0124](14)Look...\255\003...if you come out here one more time I'm going to cut off your head and spit down your neck...\255\003...get it?
-[E][061:SCRP#0124](14)I love it when you talk that way.
-[E][061:SCRP#0124](14)Yeah, right.\255\003Now SCRAM.
-[E][061:SCRP#0139](14)What's this?
-[E][061:SCRP#0139](14)Oh no.
-[E][061:SCRP#0139](14)This looks bad.  Very bad.
-[E][061:SCRP#0139](94)I'm getting a ship and a crew together to go rescue her.
-[E][061:SCRP#0139](14)Hmmm...\255\003I have a feeling I'm going to regret this, but count me in.
-[E][061:SCRP#0139](14)I'll meet you at the dock.
-[E][061:SCRP#0139](14) 
-[E][061:SCRP#0139](14)I don't\255\001want that.
+[061:OBNA#0743](__)stig
+[061:VERB#0744](D8)Det ser ut som om hon mediterar.
+[061:VERB#0744](D8)Jag tror inte det vore klokt.
+[061:OBNA#0744](__)Svärdmästaren
+[061:SCRP#0058](14)Hur vågar du närma dig Svärdmästaren utan tillåtelse...
+[061:SCRP#0058](14)Vilket jag definitivt inte gav dig.
+[061:SCRP#0058](14)Hur vågar du närma dig Svärdmästaren med--
+[061:SCRP#0058](14)Åh, det är du igen.
+[061:SCRP#0058](14)
+[061:SCRP#0058](FA)Jag ber om ursäkt, jag måste prata med er.
+[061:SCRP#0058](FA)Mitt namn är Guybrush Threepwood. Jag har kommit för att döda dig.
+[061:SCRP#0058](FA)Hej, jag säljer dessa fina skinnjackor.
+[061:SCRP#0058](94)Jag är tillbaka, och oj vad du är i trubbel den här gången.
+[061:SCRP#0058](94)OK, jag tror jag har kläm på det nu.
+[061:SCRP#0058](94)Jag återvänder, nyss från en strid!
+[061:SCRP#0058](94)Hej, minns du mig?
+[061:SCRP#0058](14)Det tvivlar jag på.\255\003Alla som kommer hit är beredda att slåss.
+[061:SCRP#0058](14)Låt oss vara ärliga: du är här för att bevisa dig för Piratledarna, i hopp om att en dag vara lika omoralisk som dom.
+[061:SCRP#0058](D8)Japp, mitt i prick... oj vad smart du är.
+[061:SCRP#0058](14)
+[061:SCRP#0058](14)Men, eftersom du inte har nåt svärd...\255\003...tvivlar jag på att du menar allvar.
+[061:SCRP#0058](14)Jag kan se på det sarkastiska uttrycket i ditt ansikte att du blivit fullt utbildad av Kapten Smirk.
+[061:SCRP#0058](14)Jag kan också se i Mêlée Times sportsektion att du inte vunnit en enda strid.
+[061:SCRP#0058](14)Det här vore inget annat än slöseri med min tid.
+[061:SCRP#0058](14)Jag kan också se i Mêlée Times sportsektion att du bara vunnit en enda strid.
+[061:SCRP#0058](14)Inte alls nog för att slösa min tid.
+[061:SCRP#0058](14)Jag kan också se i Mêlée Times sportsektion att du bara vunnit \255\004\026\001 strider.
+[061:SCRP#0058](14)Inte alls nog för att slösa min tid.
+[061:SCRP#0058](14)Låt oss få det här överstökat.
+[061:SCRP#0058](14)Vad fick du för slutbetyg i Kapten Smirks svärdsfäktningskurs?
+[061:SCRP#0058](D8)Öh...\255\003Betyg?\255\003Kurs?
+[061:SCRP#0058](14)Du menar att du kom hit för att utmana Svärdmästaren på Mêlée Island®...\255\003...möjligen den största svärdsfäktaren i hela Karibien...\255\003...utan en enda lektion i fäktningskonsten?
+[061:SCRP#0058](D8)Japp.
+[061:SCRP#0058](14)Hur tänkte du försvara dig?
+[061:SCRP#0058](D8)Jösses...\255\003Ingen aning.
+[061:SCRP#0058](14)Jag förstår...\255\003...uppenbarligen inte med ditt vasssa intellekt.\255\003Jag råder dig att söka upp Kapten Smirk och skaffa riktig träning.
+[061:SCRP#0058](14)Det vore knappast etiskt, sportsligt eller ens intressant att slåss mot nån så oskicklig som dig.\255\003Så stick.
+[061:SCRP#0058](14)Jag sa ju, jag tänker inte slåss mot dig förrän du fått träning.
+[061:SCRP#0058](14)Ärlighet varar längst.
+[061:SCRP#0058](14)Har du en i storlek 3?
+[061:SCRP#0058](14)Det har du förstås inte!\255\003För du är ingen riktig jacksäljare!
+[061:SCRP#0064](14)Du har redan fått T-shirten...
+[061:SCRP#0064](14)Vad vill du nu?
+[061:SCRP#0064](D8)Jag borde nog bara lämna dig ifred.
+[061:SCRP#0064](14)Bra idé.
+[061:SCRP#0064](FA)Jag vill förnedra dig i svärdsfäktning igen.
+[061:SCRP#0064](FA)Jag vill att vi ska bli sams och vara vänner.
+[061:SCRP#0064](FA)Guvernören har blivit KIDNAPPAD!
+[061:SCRP#0064](FA)Jag borde nog bara lämna dig ifred.
+[061:SCRP#0064](14)Ha!\255\003Jag lät dig bara vinna för att jag var trött på att du kom hit hela tiden.\255\003Jag trodde du skulle hålla dig borta, men jag hade tydligen fel.
+[061:SCRP#0064](14)
+[061:SCRP#0064](14)Jag vill att du försvinner och lämnar mig ifred.
+[061:SCRP#0064](14)Va? Det är löjligt.
+[061:SCRP#0064](14)Vad är det här?
+[061:SCRP#0064](14)Åh, nej.
+[061:SCRP#0064](14)Det här ser illa ut. Väldigt illa.
+[061:SCRP#0064](94)Jag fixar ett skepp och en besättning för att rädda henne.
+[061:SCRP#0064](14)Hmm...\255\003Jag har en känsla av att jag kommer ångra det här, men räkna med mig.
+[061:SCRP#0064](14)Vi ses vid kajen.
+[061:SCRP#0064](14)
+[061:SCRP#0064](14)Bra idé.
+[061:SCRP#0116](14)Nåväl...jag hoppas du är nöjd.\255\003Du kan gå tillbaka och skryta för alla dina vänner om hur du besegrade Svärdmästaren.
+[061:SCRP#0116](14)Du kommer behöva bevis...\255\003Här, det borde övertyga dom.
+[061:SCRP#0116](14)Jag hoppas det här lär dig en läxa.\255\003Stick nu!
+[061:SCRP#0124](94)Jag borde nog bara stanna här bak och tjuvlyssna.
+[061:SCRP#0124](14)Hej igen, Carla.
+[061:SCRP#0124](14)Jag trodde jag sa åt dig att försvinna.
+[061:SCRP#0124](14)Egentligen är jag här i affärer.\255\003Den här grabben kom in i min butik, förstår du...
+[061:SCRP#0124](14)Inse det, din skabbiga gamla gubbe...\255\003...du hittar vilken ursäkt som helst för att komma hit och besvära mig.
+[061:SCRP#0124](14)Ja, du har nog rätt.
+[061:SCRP#0124](14)Nå, sluta med det. Jag är trött på det.\255\003Ge dig iväg och kom inte hit igen.\255\003Nån kanske följer efter dig, och då blir jag ännu en turistattraktion på Mêlée Island®.
+[061:SCRP#0124](14)Hej, det är din förlust, gullet.
+[061:SCRP#0124](14)Den där grabben frågar om dig hela tiden, Carla...
+[061:SCRP#0124](14)Hörru...\255\003...om du kommer hit en gång till tänker jag hugga av ditt huvud och spotta ner i din hals...\255\003...fattar du?
+[061:SCRP#0124](14)Jag älskar när du pratar så.
+[061:SCRP#0124](14)Jodå.\255\003Stick nu.
+[061:SCRP#0139](14)Vad är det här?
+[061:SCRP#0139](14)Åh nej.
+[061:SCRP#0139](14)Det här ser illa ut. Väldigt illa.
+[061:SCRP#0139](94)Jag fixar ett skepp och en besättning för att rädda henne.
+[061:SCRP#0139](14)Hmm...\255\003Jag har en känsla av att jag kommer ångra det här, men räkna med mig.
+[061:SCRP#0139](14)Vi ses vid kajen.
+[061:SCRP#0139](14)
+[061:SCRP#0139](14)Jag vill\255\001inte ha det.
 [063:ENCD#0063](14)   GÖR APAN!!!
 [063:ENCD#0063](14)Bak! Två-tre-fyra!
 [063:ENCD#0063](14)Vänster! Två-tre-fyra!
@@ -3856,68 +3856,68 @@
 [078:SCRP#0151](D8)Oj!\255\003Smyg inte upp bakom mig så där!
 [078:SCRP#0151](14)Förlåt.
 [078:SCRP#0151](D8)Det är okej.
-[E][079:SCRP#0091](14)Ahoy there, stranger.\255\003New in town?
-[E][079:SCRP#0091](14)Hey, nice to see you again.
-[E][079:SCRP#0091](14)Uh-oh, it looks like my grog is going flat, so you'll have to excuse me.
-[E][079:SCRP#0091](FA)So what was your name, anyway?
-[E][079:SCRP#0091](FA)My name's Guybrush Threepwood.  I'm new in town.
-[E][079:SCRP#0091](FA)Are you a pirate?  Can I be on your crew?
-[E][079:SCRP#0091](FA)Who's in charge here?
-[E][079:SCRP#0091](FA)I want to talk to the leaders of the pirates.
-[E][079:SCRP#0091](FA)Where can I find the Governor?
-[E][079:SCRP#0091](FA)Nice talking to you.
-[E][079:SCRP#0091](14)Well, I am a pirate.\255\003But, alas, I'm not a captain.
-[E][079:SCRP#0091](14)Well, this island has a governor...\255\003...but we pirates have our own leaders.
-[E][079:SCRP#0091](FA)I want to talk to the leaders of the pirates.
-[E][079:SCRP#0091](FA)Where can I find the Governor of the island?
-[E][079:SCRP#0091](FA)That's nice.  Goodbye.
-[E][079:SCRP#0091](14)Sorry.
-[E][079:SCRP#0091](14)Guybrush Threepwood?
-[E][079:SCRP#0091](14)Ha ha ha!!!\255\003That's the stupidest name I've ever heard!
-[E][079:SCRP#0091](FA)I don't know... I kind of like 'Guybrush.'
-[E][079:SCRP#0091](FA)Well, what's YOUR name?
-[E][079:SCRP#0091](FA)Yeah, it is pretty dumb, isn't it?
-[E][079:SCRP#0091](FA)I'm insulted.  Goodbye.
-[E][079:SCRP#0091](14)But it's not even a name!
-[E][079:SCRP#0091](14)My name is Mancomb Seepgood.
-[E][079:SCRP#0091](14)That's okay.\255\003Mine is Mancomb Seepgood.
-[E][079:SCRP#0091](14)Sorry to see you go away mad.
-[E][079:SCRP#0091](14)Don't be a stranger.
-[E][079:SCRP#0091](14)You should go talk to the important-looking pirates in the next room.\255\003They're pretty much in charge around here.
-[E][079:SCRP#0091](14)They can tell you where to go and what to do.
-[E][079:SCRP#0091](14) 
-[E][079:SCRP#0091](14)Governor Marley?\255\003Her mansion is on the other side of town.
-[E][079:SCRP#0091](14)But pirates aren't as welcome around her place as they used to be.
-[E][079:SCRP#0091](14) 
-[E][079:SCRP#0091](FA)Why not?
-[E][079:SCRP#0091](FA)I'm welcome everywhere I go.
-[E][079:SCRP#0091](FA)I think I'll go there right now.  Bye.
-[E][079:SCRP#0091](14)Whatever you say.
-[E][079:SCRP#0091](14)Just watch out for those guard dogs!
-[E][079:SCRP#0091](14)Okay, but watch out for those guard dogs!
-[E][079:SCRP#0091](14)Well, the last time she had a pirate over for dinner, he fell in love with her.\255\003It's made things rather uncomfortable for everybody.
-[E][079:SCRP#0091](14) 
-[E][079:SCRP#0091](FA)How's that?
-[E][079:SCRP#0091](FA)Who is this pirate?
-[E][079:SCRP#0091](FA)That's too bad.  Well, see you later.
-[E][079:SCRP#0091](14)It was none other than the fearsome pirate LeChuck.
-[E][079:SCRP#0091](14)Well, there's a whole big story about what happened next...\255\003But I don't believe a word of it.
-[E][079:SCRP#0091](14)Estevan over there at the other table might tell you about it.\255\003He takes the whole thing seriously.
-[E][079:SCRP#0091](14)VERY seriously.
-[E][079:SCRP#0091](14) 
-[E][079:SCRP#0091](14)So what brings you to Mêlée Island® anyway?
-[E][079:SCRP#0091](FA)I want to be a pirate!
-[E][079:SCRP#0091](FA)I've come seeking my fortune.
-[E][079:SCRP#0091](FA)I really don't know.
-[E][079:SCRP#0091](FA)None of your business.  Goodbye.
-[E][079:SCRP#0091](14)Oh, really?
-[E][079:SCRP#0091](14)Oh, you have, have you?
-[E][079:SCRP#0091](14)Well, it sure wasn't for the sunshine.\255\003I think you need some guidance.
-[E][079:SCRP#0091](14)Well, excuse me Mr. Secretive.
-[E][079:SCRP#0091](14)Nice talking to you.
-[E][079:SCRP#0091](14)Have fun on Mêlée Island®.
-[E][079:SCRP#0091](14) 
-[E][079:SCRP#0091](14)My grog is going flat, so you'll have to excuse me.
+[079:SCRP#0091](14)Ohoj, främling.\255\003Ny i stan?
+[079:SCRP#0091](14)Hej, kul att se dig igen.
+[079:SCRP#0091](14)Oj då, det ser ut som min grog håller på att bli platt, så du får ursäkta mig.
+[079:SCRP#0091](FA)Så vad var ditt namn egentligen?
+[079:SCRP#0091](FA)Jag heter Guybrush Threepwood. Jag är ny i stan.
+[079:SCRP#0091](FA)Är du pirat? Kan jag vara med i din besättning?
+[079:SCRP#0091](FA)Vem bestämmer här?
+[079:SCRP#0091](FA)Jag vill prata med piratledarna.
+[079:SCRP#0091](FA)Var kan jag hitta Guvernören?
+[079:SCRP#0091](FA)Trevligt att prata med dig.
+[079:SCRP#0091](14)Tja, jag är pirat.\255\003Men, tyvärr, jag är inte kapten.
+[079:SCRP#0091](14)Tja, den här ön har en guvernör...\255\003...men vi pirater har våra egna ledare.
+[079:SCRP#0091](FA)Jag vill prata med piratledarna.
+[079:SCRP#0091](FA)Var hittar jag öns guvernör?
+[079:SCRP#0091](FA)Vad trevligt. Hejdå.
+[079:SCRP#0091](14)Förlåt.
+[079:SCRP#0091](14)Guybrush Threepwood?
+[079:SCRP#0091](14)Ha ha ha!!!\255\003Det är det dummaste namnet jag nånsin hört!
+[079:SCRP#0091](FA)Jag vet inte... jag gillar 'Guybrush' ganska bra.
+[079:SCRP#0091](FA)Nå, vad heter DU då?
+[079:SCRP#0091](FA)Ja, det är ganska dumt, eller hur?
+[079:SCRP#0091](FA)Jag är förolämpad. Hejdå.
+[079:SCRP#0091](14)Men det är inte ens ett namn!
+[079:SCRP#0091](14)Jag heter Mancomb Seepgood.
+[079:SCRP#0091](14)Det är okej.\255\003Mitt namn är Mancomb Seepgood.
+[079:SCRP#0091](14)Tråkigt att se dig gå iväg sur.
+[079:SCRP#0091](14)Var inte en främling.
+[079:SCRP#0091](14)Du borde gå och prata med de viktigutseende piraterna i nästa rum.\255\003Det är dom som bestämmer här.
+[079:SCRP#0091](14)Dom kan berätta var du ska gå och vad du ska göra.
+[079:SCRP#0091](14)
+[079:SCRP#0091](14)Guvernör Marley?\255\003Hennes herrgård ligger på andra sidan stan.
+[079:SCRP#0091](14)Men pirater är inte lika välkomna hos henne som förr.
+[079:SCRP#0091](14)
+[079:SCRP#0091](FA)Varför inte?
+[079:SCRP#0091](FA)Jag är välkommen överallt jag går.
+[079:SCRP#0091](FA)Jag tror jag går dit nu. Hejdå.
+[079:SCRP#0091](14)Om du säger det.
+[079:SCRP#0091](14)Akta dig bara för vakthundarna!
+[079:SCRP#0091](14)Okej, men akta dig för vakthundarna!
+[079:SCRP#0091](14)Tja, förra gången hon hade en pirat på middag blev han förälskad i henne.\255\003Det har gjort det ganska obekvämt för alla.
+[079:SCRP#0091](14)
+[079:SCRP#0091](FA)Hur då?
+[079:SCRP#0091](FA)Vem är den här piraten?
+[079:SCRP#0091](FA)Vad tråkigt. Nå, vi ses.
+[079:SCRP#0091](14)Det var ingen mindre än den fruktansvärde piraten LeChuck.
+[079:SCRP#0091](14)Tja, det är en lång historia om vad som hände sen...\255\003Men jag tror inte ett ord av det.
+[079:SCRP#0091](14)Estevan där borta vid andra bordet kanske berättar om det.\255\003Han tar hela grejen på allvar.
+[079:SCRP#0091](14)VÄLDIGT allvarligt.
+[079:SCRP#0091](14)
+[079:SCRP#0091](14)Så vad får dig till Mêlée Island® egentligen?
+[079:SCRP#0091](FA)Jag vill bli pirat!
+[079:SCRP#0091](FA)Jag har kommit för att söka min lycka.
+[079:SCRP#0091](FA)Jag vet faktiskt inte.
+[079:SCRP#0091](FA)Det angår inte dig. Hejdå.
+[079:SCRP#0091](14)Jaha, verkligen?
+[079:SCRP#0091](14)Jaha, det har du?
+[079:SCRP#0091](14)Det var nog inte för solskenet.\255\003Jag tror du behöver lite vägledning.
+[079:SCRP#0091](14)Nå, ursäkta herr Hemlighetsfull.
+[079:SCRP#0091](14)Trevligt att prata med dig.
+[079:SCRP#0091](14)Ha det kul på Mêlée Island®.
+[079:SCRP#0091](14)
+[079:SCRP#0091](14)Min grog håller på att bli platt, så du får ursäkta mig.
 [080:VERB#0883](D8)Den är rostig.\255\003Jag tror inte den fungerar.
 [080:OBNA#0883](__)kanon
 [080:VERB#0885](D8)Det finns tre hål i den.
