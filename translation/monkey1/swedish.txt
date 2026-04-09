@@ -1701,7 +1701,7 @@
 [031:LSCR#0202](14)
 [031:LSCR#0202](FA)Men varför sitter du i fängelse om du är oskyldig?
 [031:LSCR#0202](FA)Du ser inte oskyldig ut i mina ögon.
-[031:LSCR#0202](14)Jag blev dittsatt!\255\003Jag rörde inte de dumma blommorna!
+[031:LSCR#0202](14)Jag blev ditsatt!\255\003Jag rörde inte de dumma blommorna!
 [031:LSCR#0202](FA)Vilka blommor?
 [031:LSCR#0202](FA)Kan du säga namnet på blommorna igen?
 [031:LSCR#0202](FA)Vem satte dit dig?
@@ -1792,7 +1792,7 @@
 [031:LSCR#0209](FA)Herregud! TITTA vad klockan är! Jag skulle GÄRNA stanna och prata, men...
 [031:LSCR#0209](14)Du borde kanske sköta ditt eget, främling.\255\003Jag bestämmer vem som är oskyldig och vem som är skyldig här.
 [031:LSCR#0209](14)Tack så mycket.
-[031:LSCR#0209](14)Du har mycket fräckheter som kommer till den här stan och dömer lokalbefolkningen.\255\003Om det är nåt du inte gillar med hur vi luktar är du välkommen att sticka när som helst.
+[031:LSCR#0209](14)Du har mage att komma till den här stan och döma lokalbefolkningen.\255\003Om det är nåt du inte gillar med hur vi luktar är du välkommen att sticka när som helst.
 [031:LSCR#0209](14)Ta inte den tonen med mig, apgransen.\255\003Annars låser jag gärna in dig med Otis...\255\003...då får ni gott om tid för privata samtal.
 [031:LSCR#0209](14)Jaha.\255\003Du har tid att umgås med brottslingar, men inte med lagens väktare.
 [031:LSCR#0209](D8)Förlåt.
@@ -1814,7 +1814,7 @@
 [031:SCRP#0070](D8)Gäller vår överenskommelse fortfarande?
 [031:SCRP#0070](D8)Jag är säker på att han kommer tillbaka...\255\003Han gav mig sitt ord som pirat.
 [031:SCRP#0070](14)Åh toppen, bara toppen.\255\003Rädda råttan och lämna mig här att ruttna.\255\003Du är en riktig humanist, kompis.
-[031:SCRP#0070](14)Jag antar att min advokat hade rätt...\255\003Jag borde ha gollat.
+[031:SCRP#0070](14)Jag antar att min advokat hade rätt...\255\003Jag borde ha golat.
 [031:SCRP#0070](14) 
 [032:OBNA#0422](__)gata
 [032:VERB#0423](D8)Ooooh! En cirkus.\255\003Jag älskar cirkus!
@@ -1914,12 +1914,12 @@
 [034:LSCR#0204](14)Som ni vill.
 [035:OBNA#0453](__)råtta
 [035:VERB#0452](14)Vad stirrar DU på?
-[035:OBNA#0452](__)Män med låg moral (pirater)
+[035:OBNA#0452](__)Män av Tveksam Vandel (pirater)
 [035:OBNA#0451](__)valvbåge
 [035:VERB#0444](94)Jag måste ta mig till kyrkan!
 [035:OBNA#0444](__)dörr
 [035:OBNA#0442](__)karta
-[035:VERB#0443](D8)`Ye Olde Gummikyckling-Med-En- Taljekrok-I-Mitten Butiken...`\255\003`...Tillgodoser dina gummikyckling-med-en- taljekrok-i-mitten-behov i över 50 år.`
+[035:VERB#0443](D8)`Ye Olde Gummikyckling-Med-En- Trissa-I-Mitten Butiken...`\255\003`...Tillgodoser dina gummikyckling-med-en- trissa-i-mitten-behov i över 50 år.`
 [035:OBNA#0443](__)skylt
 [035:OBNA#0445](__)dörr
 [035:OBNA#0446](__)dörr
@@ -2311,7 +2311,7 @@
 [038:LSCR#0202](D8)Nåt tecken på Guvernören?
 [038:LSCR#0202](14)Inga.\255\003Som sagt, jag fruktar att vi sett det sista av henne.
 [038:LSCR#0202](14)Hör här, jag sa ju--\255\003Jag har inte sett nåt.\255\003Oroar du dig för henne, gå ut och hämta henne.
-[038:LSCR#0202](14)Lyssna, jag har lite upptaget just nu.\255\003Jag pratar med dig sen.
+[038:LSCR#0202](14)Lyssna, jag har lite att göra just nu.\255\003Jag pratar med dig sen.
 [038:LSCR#0202](FA)Jag hörde att det skulle bli korvgrillning här.
 [038:LSCR#0202](FA)Jag letar efter nåt kul. Sett nåt?
 [038:LSCR#0202](FA)Vad är grönt och hårigt och har tusen ben?
@@ -2384,7 +2384,7 @@
 [038:SCRP#0120](14)Glad att höra det.\255\003Nå, vad var det du störde mig för?
 [038:SCRP#0120](14)Ah...ja herr'n...nå, ni förstår, vi kan ha ett problem på Mêlée Island®.
 [038:SCRP#0120](14)PROBLEM?!?\255\003Vad för problem kan det vara!?\255\003Jag har gjort de där mesiga piraterna så rädda för havet att dom inte vågar ta ett bad!
-[038:SCRP#0120](14)Nå...\255\003Det verkar finnas en ny pirat i stan.\255\003Egentligen är det en piratasprirant.
+[038:SCRP#0120](14)Nå...\255\003Det verkar finnas en ny pirat i stan.\255\003Egentligen är det en pirataspirant.
 [038:SCRP#0120](14)Ung.\255\003Oerfaren.\255\003Antagligen inget att oroa sig för.\255\003Vet inte varför jag besvärade er med det.\255\003Jag tar hand om det själv.
 [038:SCRP#0120](14)Vänta!\255\003Jag sköter det här personligen.
 [038:SCRP#0120](14)Mina planer är för viktiga för att sabbas av amatörer.
@@ -2471,7 +2471,7 @@
 [039:LSCR#0210](D8)Det här är hemskt.
 [039:LSCR#0210](D8)Avskyvärt.
 [039:LSCR#0210](D8)Fruktansvärt.
-[039:LSCR#0210](D8)Onödigt och morbitt.
+[039:LSCR#0210](D8)Onödigt och morbid.
 [039:LSCR#0210](D8)Det här ger mig riktigt krypningar.
 [039:LSCR#0210](D8)Extremt obehagligt.
 [039:LSCR#0210](D8)Frånstötande, men ändå känner jag mig attraherad.
@@ -2499,7 +2499,7 @@
 [041:OBNA#0565](__)bord
 [041:VERB#0566](D8)Det är nån sorts kött eller köttliknande substans...
 [041:OBNA#0566](__)köttbit
-[041:VERB#0567](D8)Nån lagade en syltingtallrik i den här.
+[041:VERB#0567](D8)Nån lagade en sylta i den här.
 [041:OBNA#0567](__)gryta
 [041:VERB#0568](D8)Jag tror den fågeln hackar av handen på mig...
 [041:VERB#0568](54)fisk med krydda
@@ -2622,7 +2622,7 @@
 [043:SCRP#0057](14)Säg inget mer, säg inget mer.
 [043:SCRP#0057](14)Nå, du antog fel.
 [043:SCRP#0057](14)Fint, förbli en ryggradslös spottloska.
-[043:SCRP#0057](14)Det där är väl inte en sån gummikyckling\255\001med en taljekrok i mitten?\255\003Jag har redan en.
+[043:SCRP#0057](14)Det där är väl inte en sån gummikyckling\255\001med en trissa i mitten?\255\003Jag har redan en.
 [043:SCRP#0057](14)Låt se ditt svärd.
 [043:SCRP#0057](FA)Okej, kolla.
 [043:SCRP#0057](FA)Jag glömde visst köpa ett.
@@ -2631,7 +2631,7 @@
 [043:SCRP#0057](14)Ja, det här är ett fint.
 [043:SCRP#0057](14)Då kör vi.
 [043:SCRP#0057](14)Jag föreslår att du tar din ynkliga bak\255\001till butiken och köper ett.\255\003Jag brukar inte låna ut svärd\255\001till elever.
-[043:SCRP#0057](14)Ja, att svinga en gummikyckling med\255\001en stor metalltaljekrok i kan vara ganska\255\001farligt...\255\003...MEN DET ÄR INGET SVÄRD!!!
+[043:SCRP#0057](14)Ja, att svinga en gummikyckling med\255\001en stor metalltrissa i kan vara ganska\255\001farligt...\255\003...MEN DET ÄR INGET SVÄRD!!!
 [043:SCRP#0057](14)Som du vill.
 [043:SCRP#0057](14)Det tror jag nog du borde.
 [043:SCRP#0057](14)Okej, din larv...\255\003...dra fram svärdet och visa vad du kan.
