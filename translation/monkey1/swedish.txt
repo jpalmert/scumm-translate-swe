@@ -812,7 +812,7 @@
 [025:OBNA#0300](__)hydda
 [025:VERB#0284](D8)Den ser stor och tom ut.
 [025:VERB#0284](D8)Den är redan öppen.
-[025:VERB#0284](D8)Jag vill inte komma närmare det där.\255\003It might be booby-trapped.
+[025:VERB#0284](D8)Jag vill inte komma närmare det där.\255\003Det kan vara fällfångat.
 [025:VERB#0284](14) 
 [025:OBNA#0284](__)stort stenhuvud
 [025:OBNA#0290](__)djungel
@@ -826,15 +826,15 @@
 [025:LSCR#0202](14)Är det en banan i fickan, eller är du bara glad att se oss?
 [025:LSCR#0202](14)Du har minsann mage att stjäla från de beryktade Monkey Island®-kannibalerna!
 [025:LSCR#0202](D8)Ni är kannibaler?!
-[025:LSCR#0202](14)Jo, visst.\255\003Although, lately we've been trying to stay away from red meat.
-[025:LSCR#0202](14)Bara av hälsoskäl.\255\003We're still as vicious as ever.
+[025:LSCR#0202](14)Jo, visst.\255\003Men, på sistone har vi försökt att undvika rött kött.
+[025:LSCR#0202](14)Bara av hälsoskäl.\255\003Vi är fortfarande lika grymma som alltid.
 [025:LSCR#0202](14)Speciellt mot turister som försöker stjäla våra saker som souvenirer.
 [025:LSCR#0202](14)Nå, vad har du att säga till ditt försvar?
 [025:LSCR#0202](14)Ah, bantjuven återvänder till brottsplatsen.
 [025:LSCR#0202](14)Kanske borde vi bara äta upp honom på en gång.
 [025:LSCR#0202](14)Har du någon aning om hur mycket kolesterol det är i en sådan här?
 [025:LSCR#0202](14)Nå, hur tog du dig ut ur vår hydda och varför kom du tillbaka?
-[025:LSCR#0202](14)Nå, nå, nå.\255\003You're quite the escape artist, aren't you?
+[025:LSCR#0202](14)Nå, nå, nå.\255\003Du är allt en riktig flyktartist, eller hur?
 [025:LSCR#0202](14)Jag sa att vi borde äta upp honom.
 [025:LSCR#0202](14)Hur du tog dig ut är nästan lika mystiskt som varför du fortsätter komma tillbaka.
 [025:LSCR#0202](14)Det verkliga mysteriet är varför han inte putrar tillsammans med morötter just nu.
@@ -851,17 +851,17 @@
 [025:LSCR#0202](14)Något?\255\003Hmmm...
 [025:LSCR#0202](14)Okej...
 [025:LSCR#0202](14)Hej, som du vill!
-[025:LSCR#0202](14)Ha!\255\003We're not going to fall for that old trick AGAIN.
+[025:LSCR#0202](14)Ha!\255\003Vi går inte på det där gamla tricket IGEN.
 [025:LSCR#0202](14)Hallå!
 [025:LSCR#0202](14)Tror du verkligen vi är så dumma?
 [025:LSCR#0202](14)Jag skulle inte driva det längre om jag var du.
-[025:LSCR#0202](14)Jag antar att vi äter upp dig nu.\255\003Unless...
-[025:LSCR#0202](14)Om du hade något slags offer till oss...\255\003...something that we could pass on to the Great Monkey...
+[025:LSCR#0202](14)Jag antar att vi äter upp dig nu.\255\003Såvida inte...
+[025:LSCR#0202](14)Om du hade något slags offer till oss...\255\003...något som vi kunde ge vidare till Den Stora Apan...
 [025:LSCR#0202](14) 
 [025:LSCR#0202](14)Vi ger dig en chans till att byta något av dina saker mot din frihet.
 [025:LSCR#0202](14) 
 [025:LSCR#0202](14)Nå?
-[025:LSCR#0203](14)Ah, nyckeln till Den Stora Apan.\255\003Thank you very much.
+[025:LSCR#0203](14)Ah, nyckeln till Den Stora Apan.\255\003Tack så mycket.
 [025:LSCR#0203](14)Varför behåller du inte den för tillfället.
 [025:LSCR#0203](14)Ah, en av de där nyfanglerade magnetiska kompasserna.
 [025:LSCR#0203](14)För högteknologisk.
@@ -869,9 +869,9 @@
 [025:LSCR#0203](14) 
 [025:LSCR#0203](14)Vi kan inte ta det. Du har redan gett oss så mycket.
 [025:LSCR#0203](14)Vi uppskattar de naturliga fibrerna, men nej tack.
-[025:LSCR#0203](14)En gummikyckling med en trissa i mitten?\255\003No thanks.  We already got one of those.
+[025:LSCR#0203](14)En gummikyckling med en trissa i mitten?\255\003Nej tack. Vi har redan en sådan.
 [025:LSCR#0203](14)Ledsen, vi har redan MASSOR av såna.
-[025:LSCR#0203](14)Ha!\255\003Your currency means nothing to the Great Monkey!
+[025:LSCR#0203](14)Ha!\255\003Din valuta betyder ingenting för Den Stora Apan!
 [025:LSCR#0203](14)Tror du verkligen vi vill ha det efter att du har haft dina smutsiga tassar över allt?
 [025:LSCR#0203](14)Tack, men vi har redan en egen.
 [025:LSCR#0203](14)Jag tror inte Den Stora Apan skulle gilla det.
@@ -887,7 +887,7 @@
 [025:LSCR#0205](14)LEMONHEAD!!!
 [025:LSCR#0205](14)Titta på det här.
 [025:LSCR#0205](14)Ååå, det är fint.
-[025:LSCR#0205](14)Och det står `Tillverkad av Lemonhead`...\255\003...just like one of mine!\255\003We should take this to the Great Monkey.
+[025:LSCR#0205](14)Och det står `Tillverkad av Lemonhead`...\255\003...precis som en av mina!\255\003Vi borde ta med det här till Den Stora Apan.
 [025:LSCR#0205](14)Ja, jag håller med.
 [025:LSCR#0205](14)Vi är mycket tacksamma för denna fina gåva.
 [025:LSCR#0205](14)Om det någonsin är något du behöver på Monkey Island®, kom bara och hälsa på oss.
@@ -913,9 +913,9 @@
 [025:LSCR#0213](FA)Vid närmare eftertanke har ni redan gjort så mycket...
 [025:LSCR#0213](14)Hur kom du hit om du inte har ett skepp?
 [025:LSCR#0213](D8)Jo, en stor sten föll från himlen...
-[025:LSCR#0213](14)Jag förstår. Säg inte mer.\255\003Well, I'm sorry, but we don't have a ship.
+[025:LSCR#0213](14)Jag förstår. Säg inte mer.\255\003Tja, jag beklagar, men vi har inget skepp.
 [025:LSCR#0213](14) 
-[025:LSCR#0213](14)Nej, vi håller oss borta från sjöresor.\255\003It's just too hard to get all the vitamin C you need when you're on a ship for extended periods.
+[025:LSCR#0213](14)Nej, vi håller oss borta från sjöresor.\255\003Det är helt enkelt för svårt att få i sig allt C-vitamin man behöver när man är på ett skepp under längre perioder.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](14)Det är inte riktigt vad vi tänkte oss.
 [025:LSCR#0213](14) 
@@ -933,9 +933,9 @@
 [025:LSCR#0213](14)Åh ja. DE killarna.
 [025:LSCR#0213](D8)Då har ni sett spökpiraten LeChuck och hans likartade besättning?
 [025:LSCR#0213](14)De där idioterna har tjatat på oss i månader!
-[025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...wailing and moaning until all hours of the morning...
+[025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...jämrar och stönar till alla tider på morgonen...
 [025:LSCR#0213](14)...skrämmer bort alla kryssningsfartyg.
-[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003we just cook up our standard potion of exorcism and be done with it.
+[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003brygger vi bara vår standarddryck för exorcism och är klara med det.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](FA)Så varför gör ni inte det nu?
 [025:LSCR#0213](FA)Vad finns i er standarddryck för exorcism?
@@ -943,7 +943,7 @@
 [025:LSCR#0213](FA)Var gömmer sig LeChuck och hans besättning?
 [025:LSCR#0213](14)Det kan vi inte.
 [025:LSCR#0213](D8)Varför inte?
-[025:LSCR#0213](14)Jo, huvudingrediensen i drycken är en mycket sällsynt rot...\255\003...in fact, there's only one in existence.
+[025:LSCR#0213](14)Jo, huvudingrediensen i drycken är en mycket sällsynt rot...\255\003...faktiskt finns det bara en enda i hela världen.
 [025:LSCR#0213](14)Vi använder bara lite i taget, förstår du.
 [025:LSCR#0213](14)Men LeChuck stal alltihop!
 [025:LSCR#0213](14) 
@@ -954,8 +954,8 @@
 [025:LSCR#0213](FA)Jag ger mig av för att hitta LeChuck och få roten!
 [025:LSCR#0213](14)Åh, och jag antar att stjäla bananer är bättre?
 [025:LSCR#0213](14)Den Stora Apan själv är porten till underjordens katakomber.
-[025:LSCR#0213](14)Han är på en plats under den här ön...\255\003...somewhere in a huge system of catacombs...
-[025:LSCR#0213](14)...en helvetesplats fylld med tjutande av torterade själar fångade för alltid i berget...\255\003...where the walls bleed and the air is thick with the rancid smell of pure evil.
+[025:LSCR#0213](14)Han är på en plats under den här ön...\255\003...någonstans i ett enormt system av katakomber...
+[025:LSCR#0213](14)...en helvetesplats fylld med tjutande av torterade själar fångade för alltid i berget...\255\003...där väggarna blöder och luften är tung av den härsket stanken av rent ondska.
 [025:LSCR#0213](14)Turister brukade stå i kö i timmar för att se det.
 [025:LSCR#0213](FA)Vad hände? Hälsomyndigheten stängde er?
 [025:LSCR#0213](FA)Kan ni inte bara gå ner dit och kasta ut honom?
@@ -965,9 +965,9 @@
 [025:LSCR#0213](14)Den blev stulen!
 [025:LSCR#0213](14)Vi lånade ut den till en eremit som bor på ön.
 [025:LSCR#0213](14)Och tills den där grinige gamla byxlöse konstigheten lämnar tillbaka den, behåller vi hans bananplockare.
-[025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Trying to find LeChuck could be very dangerous.
+[025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Att försöka hitta LeChuck kan vara mycket farligt.
 [025:LSCR#0213](14)Du skulle aldrig hitta genom katakomberna utan--
-[025:LSCR#0213](14)Hej!\255\003Ixnay on the Eadhay of the Avigatornay!
+[025:LSCR#0213](14)Hej!\255\003Ixnay på Uvudethay av Avigatörenay!
 [025:LSCR#0213](D8)Va?
 [025:LSCR#0213](14)Ingenting.
 [025:LSCR#0213](14) 
@@ -979,10 +979,10 @@
 [025:LSCR#0213](FA)Åh, kom igen. Berätta för mig. Jag gav er avguden.
 [025:LSCR#0213](14)Edsenay. Ejnay.
 [025:LSCR#0213](14)Det är en mycket fin avgud.
-[025:LSCR#0213](14)Jag ser att han är förbryllad av vår infödda dialekt.\255\003Good.
+[025:LSCR#0213](14)Jag ser att han är förbryllad av vår infödda dialekt.\255\003Bra.
 [025:LSCR#0213](14)Vi kan åtminstone berätta vad huvudet gör.
 [025:LSCR#0213](14)Jo, det är ett navigeringsverktyg--
-[025:LSCR#0213](14)Det är ett huvud.\255\003It was once attached to a navigator.
+[025:LSCR#0213](14)Det är ett huvud.\255\003Det var en gång fastsatt på en navigatör.
 [025:LSCR#0213](14)Vi har hållit det vid liv magiskt så vi kan dra nytta av dess medfödda riktningskänsla.
 [025:LSCR#0213](14)Att ta sig igenom katakomberna utan det är omöjligt.
 [025:LSCR#0213](14)Men det är vårt enda, så du kan inte få det.
@@ -996,9 +996,9 @@
 [025:LSCR#0216](D8)--hrrm--
 [025:LSCR#0216](14)Ursäkta oss men vi är mitt i en allvarlig diskussion.
 [025:LSCR#0216](D8)Jag vet, men jag behöver verkligen det där navigatörshuvudet.
-[025:LSCR#0216](14)Jag sa, vi har bara ett.\255\003We don't know how to get another one.
+[025:LSCR#0216](14)Jag sa, vi har bara ett.\255\003Vi vet inte hur vi ska få tag på ett nytt.
 [025:LSCR#0216](14)Ledsen.
-[025:LSCR#0216](14)Jag sa, du kan inte få vårt huvud.\255\003We don't know how to get another one.
+[025:LSCR#0216](14)Jag sa, du kan inte få vårt huvud.\255\003Vi vet inte hur vi ska få tag på ett nytt.
 [025:LSCR#0216](14) 
 [025:LSCR#0218](13)Herman Toothrot
 [025:LSCR#0218](14)Allt jag vill ha är min bananplockare tillbaka.
@@ -1007,7 +1007,7 @@
 [025:LSCR#0218](14)DET ska bli den dagen!
 [025:LSCR#0218](14)Tycker du inte de är orimliga?
 [025:LSCR#0218](14)Det är inte som att jag ber om mycket.
-[025:SCRP#0102](14)...och nej, jag blir inte kräsen.\255\003I'd LOVE to eat the guy!
+[025:SCRP#0102](14)...och nej, jag blir inte kräsen.\255\003Jag skulle ÄLSKA att äta upp grabben!
 [025:SCRP#0102](14)Så låt oss göra det!
 [025:SCRP#0102](14)Men tänk på dina artärer!
 [025:SCRP#0102](14)Vi ÄR kannibaler, för tusan!
@@ -1024,7 +1024,7 @@
 [025:SCRP#0104](14)Vi håller det inlindat i det här magiska halsbandet som gör det osynligt för spöken.
 [025:SCRP#0104](14)Åh, titta.
 [025:SCRP#0104](14)Jag tror han gillar dig.
-[025:SCRP#0104](14)Följ bara hans näsa så leder han dig till LeChucks gömställe i katakomberna.\255\003Then get the root from LeChuck and come back here...
+[025:SCRP#0104](14)Följ bara hans näsa så leder han dig till LeChucks gömställe i katakomberna.\255\003Hämta sedan roten från LeChuck och kom tillbaka hit...
 [025:SCRP#0104](14)...och vi blandar en sats av vår speciella, enzymatiska spöklösande lösning.
 [025:SCRP#0104](14)Och du kan hälla den på LeChuck som salt på en snigel!
 [025:SCRP#0104](D8)Ja!
@@ -1032,14 +1032,14 @@
 [025:SCRP#0104](D8)Vänta!
 [025:SCRP#0104](14)Vad?
 [025:SCRP#0104](D8)Jag vet inte ens var ingången till katakomberna är!
-[025:SCRP#0104](14)Åh ja, det är det stora aphuvudet på östra sidan.\255\003You can't miss it.\255\003Have fun!
+[025:SCRP#0104](14)Åh ja, det är det stora aphuvudet på östra sidan.\255\003Du kan inte missa det.\255\003Ha det så kul!
 [025:SCRP#0104](14) 
-[025:SCRP#0105](14)Vi kanske äter upp dig, vi kanske släpper dig.\255\003We'll have to talk about it with the village nutritionist.
+[025:SCRP#0105](14)Vi kanske äter upp dig, vi kanske släpper dig.\255\003Vi måste prata om det med byns nutritionist.
 [025:SCRP#0105](14)Kom. Låt mig visa dig vår gästhydda.
 [025:SCRP#0105](14)DET borde räcka.
-[025:SCRP#0106](D8)Jag gjorde det!\255\003I got the root!
+[025:SCRP#0106](D8)Jag gjorde det!\255\003Jag fick roten!
 [025:SCRP#0106](14)Wow!
-[025:SCRP#0106](14)Titta, han skojar inte!\255\003Here it is!
+[025:SCRP#0106](14)Titta, han skojar inte!\255\003Här är den!
 [025:SCRP#0106](14)Han är inte en sådan mes ändå!
 [025:SCRP#0106](14)Kom igen, låt oss göra brygden av den fermenterade roten.
 [025:SCRP#0106](14)Vänta här. Vi är strax tillbaka.
@@ -1063,7 +1063,7 @@
 [025:SCRP#0140](94)Hallå, herr Navigatör.
 [025:SCRP#0140](14)Hallå.
 [025:SCRP#0140](14)Du tänker väl inte tjata om mitt halsband igen, eller hur?
-[025:SCRP#0140](14)Okej, vi är här.\255\003Now what do you want from me?
+[025:SCRP#0140](14)Okej, vi är här.\255\003Vad vill du ha av mig nu då?
 [025:SCRP#0140](14)Ja?
 [025:SCRP#0140](FA)Hallå, huvud.
 [025:SCRP#0140](FA)Får jag snälla ha det halsbandet?
@@ -1072,7 +1072,7 @@
 [025:SCRP#0140](FA)Jo, det har varit trevligt. Jag sätter tillbaka dig nu.
 [025:SCRP#0140](14)Hallå.
 [025:SCRP#0140](14)Är det något jag kan göra för dig?
-[025:SCRP#0140](14)Hej, inga problem.\255\003When you only have one job...\255\003you do it well.  Know what I mean?
+[025:SCRP#0140](14)Hej, inga problem.\255\003När man bara har ett jobb...\255\003gör man det bra. Förstår du vad jag menar?
 [025:SCRP#0140](14)Jag får känslan av att du ska be mig om en tjänst.
 [025:SCRP#0140](14)Var?
 [025:SCRP#0140](D8)Inget som angår dig.
@@ -1089,13 +1089,13 @@
 [025:SCRP#0140](FA)Om jag ville kunde jag sparka ner dig i lavan.
 [025:SCRP#0140](FA)Bra. Jag ville inte ha det ändå.
 [025:SCRP#0140](14)Bra, för du får det inte.
-[025:SCRP#0140](14)Jag har dåliga känslor för det här stället.\255\003I think I might need it.
+[025:SCRP#0140](14)Jag har dåliga känslor för det här stället.\255\003Jag tror att jag kan behöva det.
 [025:SCRP#0140](14)Hör du, tjata inte, okej?
 [025:SCRP#0140](14)Du kan tigga hur mycket du vill, men du får det inte.
-[025:SCRP#0140](14)Åh, okej då, ditt stora barn.\255\003You can have it.
+[025:SCRP#0140](14)Åh, okej då, ditt stora barn.\255\003Du får ha det.
 [025:SCRP#0140](14)Kanske borde du inte.
 [025:SCRP#0140](14)Och jag vill inte behöva få dig att ångra det.
-[025:SCRP#0140](14)Kom ihåg, du behöver mig för att ta dig ut härifrån.\255\003If I wanted to I could strand you here forever.
+[025:SCRP#0140](14)Kom ihåg, du behöver mig för att ta dig ut härifrån.\255\003Om jag ville kunde jag hålla dig strandsatt här för alltid.
 [025:SCRP#0140](14)Vid närmare eftertanke...
 [025:SCRP#0140](14)Hej, vad ska man med ett halsband till om man inte har axlar?
 [025:SCRP#0141](54)halsband på Guybrush
