@@ -190,17 +190,16 @@ else
         [[ -d "$lflf_dir" ]] || continue
         room_num="${lflf_dir##*_}"
         room_obj_dir="$OBJECTS_OUT/room_$room_num"
-        # Find all OBIM files in this room's OI directories
+        # OBIM files are named OBIM_XXXX and live inside the ROOM/ subdirectory
         while IFS= read -r -d '' obim_file; do
-            obj_dir="$(dirname "$obim_file")"
-            obj_num="$(basename "$obj_dir")"
-            out_png="$room_obj_dir/${obj_num}.png"
+            obj_num="${obim_file##*OBIM_}"
+            out_png="$room_obj_dir/obj_${obj_num}.png"
             mkdir -p "$room_obj_dir"
             [[ -f "$out_png" ]] && continue  # skip if already decoded
             if python3 "$REPO_ROOT/tools/decode_object.py" "$obim_file" "$out_png" 2>/dev/null; then
                 count=$((count + 1))
             fi
-        done < <(find "$lflf_dir" -name "OBIM" -print0 2>/dev/null)
+        done < <(find "$lflf_dir/ROOM" -name "OBIM_*" -print0 2>/dev/null)
     done
     echo "  $count object images -> $OBJECTS_OUT"
 fi
