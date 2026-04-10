@@ -196,7 +196,7 @@ else
             out_png="$room_obj_dir/obj_${obj_num}.png"
             mkdir -p "$room_obj_dir"
             [[ -f "$out_png" ]] && continue  # skip if already decoded
-            if python3 "$REPO_ROOT/tools/decode_object.py" "$obim_file" "$out_png" 2>/dev/null; then
+            if python3 "$REPO_ROOT/tools/decode_object.py" "$obim_file" "$out_png" "$lflf_dir/ROOM" 2>/dev/null; then
                 count=$((count + 1))
             fi
         done < <(find "$lflf_dir/ROOM" -name "OBIM_*" -print0 2>/dev/null)
