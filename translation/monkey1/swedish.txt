@@ -712,7 +712,7 @@
 [020:SCRP#0167](54)anmärkningsvärd sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
-[020:SCRP#0168](D8)Jag är här för att rädda Guvernören på Mêlée Island®.
+[020:SCRP#0168](D8)Jag är här för att rädda Mêlée Islands® guvernör.
 [020:SCRP#0168](D8)Jag är en mäktig pirat.
 [020:SCRP#0168](D8)Sett några stora, fula, läskiga, genomskinliga pirater här omkring?
 [020:SCRP#0168](D8)Finns det något gott att äta på den här ön?
@@ -1637,7 +1637,7 @@
 [030:LSCR#0211](FA)Nej, metallsorten man öppnar lås med.
 [030:LSCR#0211](14)Ah.\255\003Tyvärr, slut på dom.
 [030:LSCR#0211](14)Vad mer vill du ha?
-[030:LSCR#0211](14)Hörru, det här är ingen butik.\255\003Ta inte hela dan på dig.
+[030:LSCR#0211](14)Hörru, det här är ingen boutique.\255\003Ta inte hela dan på dig.
 [030:LSCR#0211](14)Okej, men sätt inte läpparna på nåt.
 [030:LSCR#0211](14)Javisst ja.
 [030:LSCR#0211](14)Okej.\255\003Väck mig om du behöver nåt.
@@ -1854,10 +1854,10 @@
 [033:VERB#0429](D8)Min lilla plundringsgull.
 [033:VERB#0429](D8)Jag förstår hur LeChuck kunde falla för henne så snabbt.
 [033:VERB#0429](D8)Jag förstår hur den piraten kunde falla för henne så snabbt.
-[033:VERB#0429](D8)Omvälj Guvernör Marley.\255\003`När det bara finns en kandidat finns det bara ett val.`
+[033:VERB#0429](D8)Återvälj Guvernör Marley.\255\003`När det bara finns en kandidat finns det bara ett val.`
 [033:VERB#0429](14)
 [033:OBNA#0429](__)affisch
-[034:OBNA#0439](__)dödliga piranjapadlar
+[034:OBNA#0439](__)dödliga piranhapudlar
 [034:OBNA#0431](__)Guvernörens herrgård
 [034:VERB#0432](94)Det där är inte kyrkan.
 [034:OBNA#0432](__)gränd
@@ -2127,9 +2127,9 @@
 [036:VERB#0467](94)Jag tänker inte gå nära dom!
 [036:VERB#0467](D8)Jag vill inte väcka dom.
 [036:VERB#0467](D8)`Låt sovande hundar ligga.`
-[036:OBNA#0467](__)dödliga piranjapadlar
-[036:ENCD#0036](54)sovande piranjapadlar
-[036:LSCR#0201](54)sovande piranjapadlar
+[036:OBNA#0467](__)dödliga piranhapudlar
+[036:ENCD#0036](54)sovande piranhapudlar
+[036:LSCR#0201](54)sovande piranhapudlar
 [036:LSCR#0201](14)VIKTIGT MEDDELANDE
 [036:LSCR#0201](14)Dessa hundar är inte
 [036:LSCR#0201](14)döda, de bara
@@ -2141,7 +2141,7 @@
 [036:LSCR#0201](94)Piranjapadlar äter inte fisk.
 [036:LSCR#0201](D8)Jag tror inte de här hundarna är vegetarianer.
 [036:LSCR#0201](D8)Jag tvivlar på att hundarna vill ha det här.
-[036:LSCR#0202](54)dödliga piranjapadlar
+[036:LSCR#0202](54)dödliga piranhapudlar
 [036:LSCR#0204](D8)Voff.
 [036:LSCR#0204](14)Bjäbb!
 [036:LSCR#0204](14) 
