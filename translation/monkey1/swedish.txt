@@ -2663,21 +2663,21 @@
 [043:SCRP#0057](FA)Jag är gummi, du är lim...
 [043:SCRP#0057](FA)Du måste tänka på nån annan, jag är ingen bonde.
 [043:SCRP#0057](14)Jag ser att vi har en hel del jobb kvar.
-[043:SCRP#0057](14)Du borde ha svarat med nåt som...\255\003...'Hur passande. Du slåss som en ko.'
+[043:SCRP#0057](14)Du borde ha svarat med nåt som...\255\003...'Så passande. Du slåss som en ko.'
 [043:SCRP#0057](14)Förstår du...\255\003Det är rakbladsvasst skämt som det som vinner strider.
 [043:SCRP#0057](14)Låt oss pröva en till.
 [043:SCRP#0057](14)Tänk dig det här:\255\003Du är trängd mot en vägg...\255\003...mitt svärd har precis gjort två jack i ditt ansikte.\255\003Jag säger...
-[043:SCRP#0057](14)...'Snart har du mitt svärd som grillspett!'
+[043:SCRP#0057](14)...'Snart sitter du fast på mitt svärd som en grillad råtta!'
 [043:SCRP#0057](14)Du svarar med?
 [043:SCRP#0057](FA)Jaså du!?
 [043:SCRP#0057](FA)Din morsa med.
 [043:SCRP#0057](FA)Jag är gummi, du är lim...
-[043:SCRP#0057](FA)Hur passande. Du slåss som en ko.
+[043:SCRP#0057](FA)Så passande. Du slåss som en ko.
 [043:SCRP#0057](14)Jag ser att vi är illa ute.
 [043:SCRP#0057](14)Nej! Nej! Nej!\255\003Det var svaret på förra förolämpningen.\255\003Det funkar inte alls här!
 [043:SCRP#0057](14)<suck>
-[043:SCRP#0057](14)Ett korrekt svar på...\255\003...'Snart har du mitt svärd som grillspett!'...\255\003...hade varit nåt som...
-[043:SCRP#0057](14)...'Då bör du sluta vifta med det som en dammvippa.'
+[043:SCRP#0057](14)Ett korrekt svar på...\255\003...'Snart sitter du fast på mitt svärd som en grillad råtta!'...\255\003...hade varit nåt som...
+[043:SCRP#0057](14)...'Först måste du sluta vifta med det som en dammvippa.'
 [043:SCRP#0057](14)Ser du...\255\003...rakbladsvass!
 [043:SCRP#0057](14)Nu föreslår jag att du ger dig ut och lär dig nåra förolämpningar.
 [043:SCRP#0057](14)Jag kan inte slå bort känslan av att ha blivit lurad.\255\003Jag är säker på att du känner nåt liknande.
