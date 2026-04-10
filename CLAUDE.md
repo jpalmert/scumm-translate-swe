@@ -59,6 +59,7 @@ tools/                          Python utilities for PAK inspection (not part of
   patch_verbs.py                Verb button coordinate patcher (standalone inspection)
 
 scripts/
+  init_translation.sh           Init swedish.txt with [E]-prefixed English strings (first-time setup)
   extract.sh                    Entry point: detect PAK/dir, call sub-scripts
   extract_pak.sh                Unpack MONKEY1.000/001 from SE PAK → game/monkey1/
   extract_assets.sh             Extract CHAR blocks, BMPs, dialog strings from game dir
@@ -115,6 +116,41 @@ This populates `game/monkey1/gen/` with CHAR blocks, BMPs, and English dialog st
 bash scripts/build.sh
 # Output: dist/mi1-translate-linux, dist/mi1-translate-darwin, dist/mi1-translate-windows.exe, dist/swedish.txt
 ```
+
+### Translation workflow
+
+**Starting a new game translation (first time only):**
+
+```bash
+# 1. Extract game assets (populates game/<game>/gen/strings/english.txt)
+bash scripts/extract.sh
+
+# 2. Initialise the translation file — writes [E]-prefixed English lines into
+#    translation/<game>/swedish.txt. Safe: refuses to overwrite existing work.
+bash scripts/init_translation.sh monkey1
+```
+
+The `[E]` prefix marks untranslated lines. A translated line looks like:
+```
+# Before:  [001:OBNA#0016][E][001:OBNA#0016]jungle
+# After:   [001:OBNA#0016]djungel
+```
+Remove the `[E]` prefix as you translate each line.
+
+**Ongoing translation (per-session with Claude):**
+
+1. Open `translation/monkey1/swedish.txt` — `[E]`-prefixed lines are untranslated.
+2. Translate in Claude, following `docs/TRANSLATION_GUIDE.md` for format rules
+   and `translation/monkey1/glossary.md` for vocabulary decisions.
+3. Replace `[E]`-prefixed lines with the Swedish translation (no prefix).
+4. Build and test: `bash scripts/build.sh`, then run the patcher on game files.
+
+**Translation reference docs:**
+- `docs/TRANSLATION_GUIDE.md` — file format, opcodes, control codes
+- `docs/TRANSLATION_PLAN.md` — multi-pass workflow and translation philosophy
+- `translation/monkey1/glossary.md` — vocabulary and naming decisions
+
+---
 
 ### Run tests
 
