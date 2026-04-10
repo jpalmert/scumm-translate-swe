@@ -48,8 +48,11 @@ var scummByteMap = map[rune]byte{
 	'é': 0x82,
 }
 
-// ScummBytes converts UTF-8 Swedish text to its SCUMM byte representation.
-// Used for building speech.info EN slot content that matches injected game strings.
+// ScummBytes converts UTF-8 text to the byte representation that scummtr
+// injects into MONKEY1.001. Swedish characters are converted to their SCUMM
+// byte codes (matching scummCharMap). Other non-ASCII characters pass through
+// as their raw UTF-8 bytes, matching scummtr's behaviour of injecting them
+// verbatim.  Used for building speech.info EN slot content.
 func ScummBytes(text string) []byte {
 	var b []byte
 	for _, r := range text {
@@ -57,8 +60,12 @@ func ScummBytes(text string) []byte {
 			b = append(b, mapped)
 		} else if r < 0x80 {
 			b = append(b, byte(r))
+		} else {
+			// Pass through UTF-8 bytes for non-mapped non-ASCII runes (e.g. ®, ê).
+			// encodeBytes does not convert these, so scummtr injects their UTF-8
+			// byte sequence verbatim.
+			b = append(b, []byte(string(r))...)
 		}
-		// unknown non-ASCII chars dropped; shouldn't appear in MI1 translations
 	}
 	return b
 }
@@ -115,6 +122,68 @@ func stripOpcode(text string) string {
 		}
 	}
 	return text
+}
+
+// ExtractLines extracts all dialog strings from the classic game files in
+// gameDir and returns a slice of (header, text) pairs in document order.
+// Both header (e.g. "[007:VERB#0075]") and text are plain strings without
+// scummtr escape decoding — text may contain \NNN decimal escape sequences.
+func ExtractLines(gameDir string) ([][2]string, error) {
+	scummtrPath, tmpDir, cleanup, err := setupScummtr()
+	if err != nil {
+		return nil, err
+	}
+	defer cleanup()
+
+	outPath := filepath.Join(tmpDir, "extract.txt")
+	if err := runScummtrExtract(scummtrPath, gameDir, outPath); err != nil {
+		return nil, fmt.Errorf("extracting lines: %w", err)
+	}
+
+	data, err := os.ReadFile(outPath)
+	if err != nil {
+		return nil, err
+	}
+
+	var lines [][2]string
+	for _, line := range strings.Split(string(data), "\n") {
+		j := strings.IndexByte(line, ']')
+		if j < 0 || !strings.HasPrefix(line, "[") {
+			continue
+		}
+		lines = append(lines, [2]string{line[:j+1], line[j+1:]})
+	}
+	return lines, nil
+}
+
+// DecodeScummtrEscapes converts scummtr escape sequences in s to raw bytes.
+// scummtr uses two formats:
+//   - \NNN (exactly three decimal digits) → the byte whose value is NNN
+//   - \\ → a literal backslash byte (0x5C, which is the SCUMM code for 'Ä')
+//
+// Non-escaped bytes are copied as-is.
+// Used to compare scummtr extract output against raw byte content (e.g. speech.info slots).
+func DecodeScummtrEscapes(s string) []byte {
+	out := make([]byte, 0, len(s))
+	for i := 0; i < len(s); {
+		if i+4 <= len(s) && s[i] == '\\' &&
+			s[i+1] >= '0' && s[i+1] <= '9' &&
+			s[i+2] >= '0' && s[i+2] <= '9' &&
+			s[i+3] >= '0' && s[i+3] <= '9' {
+			// \NNN → byte with decimal value NNN
+			n := int(s[i+1]-'0')*100 + int(s[i+2]-'0')*10 + int(s[i+3]-'0')
+			out = append(out, byte(n))
+			i += 4
+		} else if i+2 <= len(s) && s[i] == '\\' && s[i+1] == '\\' {
+			// \\ → literal backslash (byte 0x5C = SCUMM code for 'Ä')
+			out = append(out, 0x5C)
+			i += 2
+		} else {
+			out = append(out, s[i])
+			i++
+		}
+	}
+	return out
 }
 
 // BuildSpeechMapping extracts the original English text from the classic game
@@ -193,9 +262,16 @@ func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 		if svTexts, ok := svGroups[header]; ok && p < len(svTexts) {
 			svText := svTexts[p]
 			// speech.info stores individual sentences, not full multi-page strings.
-			// Split both EN and SV on \255\003 (page-break escape) so each sentence
-			// gets its own mapping entry. Single-page strings split into one part.
-			enParts := strings.Split(enText, `\255\003`)
+			// Split both EN and SV on the page-break sequence and map each pair.
+			//
+			// EN text comes from scummtr -oh output where control bytes are
+			// represented as \NNN decimal escapes. Decode these to raw bytes so
+			// the mapping keys match speech.info's raw-byte EN slots.
+			// After decoding, \255\003 becomes the two raw bytes 0xFF 0x03.
+			enDecoded := string(DecodeScummtrEscapes(enText))
+			pageBreak := "\xff\x03"
+			enParts := strings.Split(enDecoded, pageBreak)
+			// SV text in swedish.txt uses the same \255\003 literal notation.
 			svParts := strings.Split(svText, `\255\003`)
 			for i, enPart := range enParts {
 				if i >= len(svParts) {

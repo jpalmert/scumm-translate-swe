@@ -157,9 +157,10 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	// replaces the English strings in MONKEY1.001.
 	if len(speechMapping) > 0 {
 		speechInfoPath := filepath.Join(filepath.Dir(inputPAK), "audio", "speech.info")
-		fmt.Println("\n==> Patching speech.info...")
+		fmt.Printf("\n==> Patching speech.info...\n    %s\n", speechInfoPath)
 		if _, statErr := os.Stat(speechInfoPath); statErr != nil {
-			fmt.Printf("    WARNING: speech.info not found at %s — skipping audio sync\n", speechInfoPath)
+			fmt.Printf("    WARNING: speech.info not found — skipping audio sync\n")
+			fmt.Printf("    (run patcher directly in the game directory for audio to work)\n")
 		} else {
 			n, err := speech.Patch(speechInfoPath, speechMapping)
 			if err != nil {

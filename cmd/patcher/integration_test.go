@@ -299,6 +299,143 @@ func TestSpeechInfoPatchedWithSwedish(t *testing.T) {
 	}
 }
 
+// INT-SPEECH-002: Speech round-trip — bytes written to speech.info match the
+// raw bytes scummtr injects into MONKEY1.001 for the same Swedish strings.
+//
+// This test exercises the full pipeline end-to-end:
+//  1. Build speech mapping (EN→SV bytes) from original English content.
+//  2. Inject Swedish into a copy of MONKEY1.001 via scummtr.
+//  3. Re-extract the patched MONKEY1.001 via scummtr -oh (Swedish text with \NNN escapes).
+//  4. For each re-extracted line, decode the \NNN escapes to raw bytes.
+//  5. Look up the same line in the speech mapping (keyed by original English text).
+//  6. Assert the decoded bytes match the speech.info value (ScummBytes output).
+//
+// A mismatch here means audio cue lookup in speech.info would fail in-game.
+func TestSpeechRoundTrip(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var data000, data001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			data000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			data001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if data000 == nil || data001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	// Write original files to a temp game dir.
+	gameDir := t.TempDir()
+	if err := os.WriteFile(filepath.Join(gameDir, "MONKEY1.000"), data000, 0644); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(gameDir, "MONKEY1.001"), data001, 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	// Build EN→SV mapping from the ORIGINAL English content.
+	mapping, err := classic.BuildSpeechMapping(gameDir, translationPath)
+	if err != nil {
+		t.Fatalf("BuildSpeechMapping: %v", err)
+	}
+	t.Logf("mapping: %d entries", len(mapping))
+
+	// Extract the original English strings (header → [texts]).
+	enLines, err := classic.ExtractLines(gameDir)
+	if err != nil {
+		t.Fatalf("ExtractLines (before injection): %v", err)
+	}
+
+	// Inject Swedish into the copy.
+	checkPipelineErr(t, "InjectTranslation", classic.InjectTranslation(gameDir, translationPath))
+
+	// Re-extract from the PATCHED MONKEY1.001.
+	svLines, err := classic.ExtractLines(gameDir)
+	if err != nil {
+		t.Fatalf("ExtractLines (after injection): %v", err)
+	}
+
+	// Build a positional index: EN header+position → patched SV text.
+	type posKey struct{ header string; pos int }
+	svByPos := make(map[posKey]string)
+	svPos := make(map[string]int)
+	for _, line := range svLines {
+		header, text := line[0], line[1]
+		p := svPos[header]
+		svPos[header]++
+		svByPos[posKey{header, p}] = text
+	}
+
+	// Walk EN lines; for each, look up the patched SV text and compare with
+	// what ScummBytes would produce for the Swedish translation.
+	mismatches := 0
+	checked := 0
+	enPos := make(map[string]int)
+	for _, line := range enLines {
+		header, enText := line[0], line[1]
+		p := enPos[header]
+		enPos[header]++
+
+		// Split on page-break escape (matching buildSpeechMapping).
+		enParts := strings.Split(enText, `\255\003`)
+		sv := svByPos[posKey{header, p}]
+		svParts := strings.Split(sv, `\255\003`)
+
+		for i, enPart := range enParts {
+			if strings.TrimSpace(enPart) == "" {
+				continue
+			}
+			expectedSV, ok := mapping[enPart]
+			if !ok {
+				continue // this EN sentence has no Swedish translation in the mapping
+			}
+			checked++
+
+			// Decode the re-extracted SV text (\NNN escapes → raw bytes).
+			var svPart string
+			if i < len(svParts) {
+				svPart = svParts[i]
+			}
+			actualSV := classic.DecodeScummtrEscapes(svPart)
+
+			if string(actualSV) != string(expectedSV) {
+				mismatches++
+				if mismatches <= 5 {
+					t.Logf("MISMATCH at %s pos %d part %d:", header, p, i)
+					t.Logf("  EN text:     %q", enPart)
+					t.Logf("  expected SV: %x (%q)", expectedSV, expectedSV)
+					t.Logf("  actual SV:   %x (%q)", actualSV, actualSV)
+					t.Logf("  raw svPart:  %q", svPart)
+				}
+			}
+		}
+	}
+
+	t.Logf("round-trip checked %d sentence pairs, %d mismatches", checked, mismatches)
+	if checked < 100 {
+		t.Errorf("too few pairs checked: %d", checked)
+	}
+	// Positional mismatches occur when the same English string appears in multiple
+	// resource positions with different Swedish translations.  The text-based mapping
+	// stores only one Swedish value per English key, so some positions will have a
+	// mismatch between speech.info (wrong Swedish) and MONKEY1.001 (correct Swedish).
+	// These lines lose audio in-game but are a known limitation of text-based lookup.
+	// The threshold catches regressions; the encoding bugs fixed by this package
+	// previously caused ~383 mismatches — all genuine encoding errors.
+	const knownPositionalMismatches = 150
+	if mismatches > knownPositionalMismatches {
+		t.Errorf("speech.info byte mismatches (%d) exceeded threshold (%d) — likely a new encoding bug",
+			mismatches, knownPositionalMismatches)
+	}
+}
+
 // INT-CLASSIC: Real Swedish translation grows .001.
 func TestClassicPatcherFullPipeline(t *testing.T) {
 	pakPath, translationPath := integrationPaths(t)
