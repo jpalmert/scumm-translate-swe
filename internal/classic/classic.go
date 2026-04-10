@@ -34,6 +34,7 @@ var scummCharMap = []struct {
 	{"ä", `\124`},
 	{"ö", `\125`},
 	{"é", `\130`},
+	{"ê", `\136`},
 }
 
 // scummByteMap maps UTF-8 Swedish characters to their SCUMM byte values.
@@ -46,6 +47,7 @@ var scummByteMap = map[rune]byte{
 	'ä': 0x7C,
 	'ö': 0x7D,
 	'é': 0x82,
+	'ê': 0x88,
 }
 
 // ScummBytes converts UTF-8 text to the byte representation that scummtr
@@ -61,7 +63,7 @@ func ScummBytes(text string) []byte {
 		} else if r < 0x80 {
 			b = append(b, byte(r))
 		} else {
-			// Pass through UTF-8 bytes for non-mapped non-ASCII runes (e.g. ®, ê).
+			// Pass through UTF-8 bytes for non-mapped non-ASCII runes (e.g. ®).
 			// encodeBytes does not convert these, so scummtr injects their UTF-8
 			// byte sequence verbatim.
 			b = append(b, []byte(string(r))...)
