@@ -41,8 +41,8 @@
 [007:VERB#0076](D8)Det ser ut som en tom kista.
 [007:VERB#0076](D8)Det ser ut som en gammal skattkista.
 [007:OBNA#0076](__)kista
-[007:VERB#0077](D8)Den är för tung att bära någon annanstans.
-[007:VERB#0077](D8)Hej titta!  En pappersbit.
+[007:VERB#0077](D8)Den är för tung att flytta.
+[007:VERB#0077](D8)Hej, titta!  En pappersbit.
 [007:VERB#0077](D8)Och några kanelstänger.
 [007:VERB#0077](D8)Kistan är tom.
 [007:VERB#0077](D8)Det är den där tunga metallkistan jag bar hit.
@@ -71,11 +71,11 @@
 [007:SCRP#0148](D8)`Vägbeskrivningen vi köpte på Mêlée visade sig vara ett recept, inte en karta som vi trott.`
 [007:SCRP#0148](D8)`Kaptenens logg, 12 mars.`\255\003`Jag önskar att Rötbett kunde ta ett bad.`
 [007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Rötbett kunde sluta snarka.`
-[007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Rötbett börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi drabbar samman.`
+[007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Rötbett börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi ryker ihop.`
 [007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Rötbett att laga middag ikväll.`
 [007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Rötbett och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
 [007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Rötbett och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island®.`
-[007:SCRP#0148](D8)`Vi är båda upphetsade över möjligheten att bli de första civiliserade människorna som lär sig Monkey Islands® Hemlighet.`
+[007:SCRP#0148](D8)`Vi är båda ivriga över möjligheten att bli de första civiliserade människorna som lär sig Monkey Islands® Hemlighet.`
 [007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Rötbett glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
 [007:SCRP#0148](D8)Det var sista anteckningen.
 [007:SCRP#0184](14)
@@ -157,7 +157,7 @@
 [010:SCRP#0001](54)sodavatten
 [010:SCRP#0002](D8)Det är för mörkt för att se.
 [010:SCRP#0002](D8)Jag kan inte nå.
-[010:SCRP#0003](D8)Jag tror jag skulle få bättre resultat med papegojan.
+[010:SCRP#0003](D8)Jag skulle nog få bättre resultat med papegojan.
 [010:SCRP#0003](D8)Verkar inte gå att öppna.
 [010:SCRP#0003](D8)Jag kan inte flytta.
 [010:SCRP#0003](D8)Jag ser inget speciellt.
@@ -356,8 +356,8 @@
 [014:VERB#0161](D8)Nu när jag tänker på det, det är ju bara danslektioner.
 [014:VERB#0161](D8)Varför bränna perfekt bra mat?
 [014:VERB#0161](D8)Ja, som om jag verkligen vill döda mig själv.
-[014:VERB#0161](D8)Jag kanske behöver det här senare.
-[014:VERB#0161](D8)Jag bränner allt bara.
+[014:VERB#0161](D8)Det här kan jag behöva senare.
+[014:VERB#0161](D8)Jag bränner bara allt.
 [014:VERB#0161](D8)Jag tror inte det kommer brinna.
 [014:VERB#0161](D8)Aj, det är hett!
 [014:OBNA#0161](__)rödglödande eld
@@ -499,7 +499,7 @@
 [019:LSCR#0204](D8)Hej titta...
 [019:LSCR#0204](D8)...vi har kommit till Monkey Island®
 [019:LSCR#0204](14)Säg till när du har hittat Guvernören...\255\003...vi har en extra stol hon kan använda.
-[019:LSCR#0204](D8)Jag tror inte de kommer vara till mycket hjälp.
+[019:LSCR#0204](D8)Jag tror inte de kommer vara till stor hjälp.
 [019:LSCR#0204](14)Du sa det.
 [019:LSCR#0204](D8)Jag tror inte de kommer vara till någon hjälp.
 [019:LSCR#0204](14)Vad var det?
@@ -508,7 +508,7 @@
 [019:LSCR#0204](FA)Finns det något jag kan göra för att få er att hjälpa mig?
 [019:LSCR#0204](FA)Jag har hört att vädret är riktigt fint vid Monkey Island®.
 [019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island®.
-[019:LSCR#0204](FA)Jag ger er muterister fem sekunder att \254\008     komma till sans!
+[019:LSCR#0204](FA)Jag ger er myterister fem sekunder att \254\008     komma till sans!
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
 [019:LSCR#0204](14)Stick, Guybrush.
 [019:LSCR#0204](14)Fint försök, Guybrush, men ingen banan.
@@ -550,7 +550,7 @@
 [020:ENCD#0020](54)roddbåt och åror
 [020:LSCR#0200](54)roddbåt och åror
 [020:LSCR#0200](D8)Jag kan paddla den med de här årorna.
-[020:LSCR#0200](D8)Jag har inget att paddla med.
+[020:LSCR#0200](D8)Jag har inget att ro med.
 [020:LSCR#0202](13)apa
 [020:LSCR#0202](14)ook
 [020:LSCR#0202](14)ook
@@ -570,13 +570,13 @@
 [020:SCRP#0095](14)Jag blir aldrig trött på den här utsikten.
 [020:SCRP#0095](14)Även om jag HAR tittat på den i tjugo år nu.\255\003Även om det är den ENDA utsikten på ön.
 [020:SCRP#0095](14)Det här är en gammal vän till mig, den jag seglade hit med.
-[020:SCRP#0095](14)Han har gått ner i vikt.\255\003Har aldrig sett bättre ut.
+[020:SCRP#0095](14)Han har magrat.\255\003Har aldrig sett bättre ut.
 [020:SCRP#0095](14)Det där aphuvudet är verkligen något, va?
 [020:SCRP#0095](14)Otäckt fall av gula vaxavlagringar, dock.
 [020:SCRP#0095](14)Åh, hallå!\255\003Jag letade precis efter de infödda, för att få dem att återlämna min bananplockare...
 [020:SCRP#0095](14)...men jag verkar inte kunna hitta dem.
 [020:SCRP#0095](14)Titta på det där fantastiska skeppet där ute!
-[020:SCRP#0095](14)Kom du i det?
+[020:SCRP#0095](14)Kom du med det?
 [020:SCRP#0095](14)Kom du i skeppet jag såg där ute?
 [020:SCRP#0095](14)Du är modigare än du ser ut.\255\003Faktiskt så ser det väldigt likt ett skepp jag brukade äga...
 [020:SCRP#0095](14) 
@@ -584,7 +584,7 @@
 [020:SCRP#0095](FA)Jag tycker inte om den själv.
 [020:SCRP#0095](FA)Vad hände med honom?
 [020:SCRP#0095](FA)Han ser ganska illa ut...
-[020:SCRP#0095](FA)Jag såg en apa lämna här. Han måste ha gjort det.
+[020:SCRP#0095](FA)Jag såg en apa gå härifrån. Han måste ha gjort det.
 [020:SCRP#0095](FA)Öh, förlåt.
 [020:SCRP#0095](FA)Jag skulle ha knackat, men jag kunde inte hitta en dörr.
 [020:SCRP#0095](FA)Jag knackade. Du måste ha misshört.
@@ -657,7 +657,7 @@
 [020:SCRP#0095](14)Åh, det är inga problem.
 [020:SCRP#0095](14)Jag är säker på att hon är på spökskeppet, i det hemliga underjordiska gömstället.
 [020:SCRP#0095](D8)Verkligen?\255\003Hur vet du det?\255\003Hur kan jag ta mig dit?
-[020:SCRP#0095](14)Enklaste vägen in är genom den stora aphuvudsavguden.
+[020:SCRP#0095](14)Enklaste vägen in är genom den stora aphuvudsidolen.
 [020:SCRP#0095](14)Jag gick in där själv, för flera år sen.\255\003Du behöver en nyckel för att öppna den.
 [020:SCRP#0095](14)Jag fick en från några av de lokala.
 [020:SCRP#0095](D8)...men jag måste rädda guvernören först.\255\003Jag tror hon är på det där spökskeppet under marken.
@@ -666,7 +666,7 @@
 [020:SCRP#0095](14)Jag lånade ut min bananplockare till dem, och de gav aldrig tillbaka den.
 [020:SCRP#0095](14)Som säkerhet gav de mig den här enorma bomullspinnen.
 [020:SCRP#0095](14)Den öppnar Aphuvudet, fattar du?
-[020:SCRP#0095](14)Den öppnar den stora aphuvudsavguden de dyrkar.
+[020:SCRP#0095](14)Den öppnar den stora aphuvudsidolen de dyrkar.
 [020:SCRP#0095](14)Inte som att jag någonsin behöver gå in i Aphuvudet...\255\003...men om de vill ha tillbaka den, måste jag ha min plockare först.\255\003Det är en fråga om stolthet, vet du?
 [020:SCRP#0095](14)
 [020:SCRP#0095](14)Jag berättade om att de lånat min bananplockare och aldrig lämnat tillbaka den, eller hur?
@@ -697,7 +697,7 @@
 [020:SCRP#0164](D8)`...men skulle ni kunna låta bli att lämna smutsiga offer på min veranda.`\255\003`Och, var snäll GÅ INTE IN i Aphuvudet.`\255\003`--G.P. LeChuck`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island® Kannibalerna`
 [020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
-[020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare er nyckel till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
+[020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare nyckeln till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
 [020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Yammer, Hem och Haw, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
 [020:SCRP#0164](D8)`Jag tror vi har en möjlighet här.`\255\003`Vi kan troligtvis dra in stora belopp för sveda och värk och möjligen även straffskadestånd.`
 [020:SCRP#0164](14)
