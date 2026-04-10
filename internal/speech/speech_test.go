@@ -88,7 +88,7 @@ func TestPatchEmptyMapping(t *testing.T) {
 	}
 }
 
-// SPEECH-PATCH-003: writeSlot zero-pads remaining bytes.
+// SPEECH-PATCH-003: writeSlot writes text + null terminator + space-fill.
 func TestWriteSlot(t *testing.T) {
 	slot := make([]byte, 10)
 	for i := range slot {
@@ -98,9 +98,12 @@ func TestWriteSlot(t *testing.T) {
 	if slot[0] != 'H' || slot[1] != 'i' {
 		t.Errorf("expected 'Hi', got %v", slot[:2])
 	}
-	for i := 2; i < 10; i++ {
-		if slot[i] != 0 {
-			t.Errorf("slot[%d] = %d, want 0", i, slot[i])
+	if slot[2] != 0 {
+		t.Errorf("slot[2] = %d, want 0 (null terminator)", slot[2])
+	}
+	for i := 3; i < 10; i++ {
+		if slot[i] != 0x20 {
+			t.Errorf("slot[%d] = %d, want 0x20 (space fill)", i, slot[i])
 		}
 	}
 }

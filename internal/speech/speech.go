@@ -131,14 +131,19 @@ func slotString(slot []byte) string {
 	return string(slot) // no null found — treat entire slot as string
 }
 
-// writeSlot writes text into a fixed-size slot, zero-padding the remainder.
+// writeSlot writes text into a fixed-size slot.
+// The slot is formatted as the original speech.info entries: text bytes,
+// followed by a null terminator, followed by 0x20 (space) fill bytes.
+// This matches the format the SE engine expects when building its lookup key.
 func writeSlot(slot []byte, text []byte) {
+	// Space-fill first, matching the original speech.info format.
 	for i := range slot {
-		slot[i] = 0
+		slot[i] = 0x20
 	}
 	n := len(text)
 	if n > len(slot)-1 {
 		n = len(slot) - 1 // leave room for null terminator
 	}
 	copy(slot, text[:n])
+	slot[n] = 0 // null terminator after text
 }
