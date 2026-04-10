@@ -9,6 +9,8 @@ import (
 	"strings"
 
 	"scumm-patcher/internal/backup"
+	"scumm-patcher/internal/charset"
+	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
 )
@@ -20,7 +22,7 @@ import (
 //
 //  1. Read the PAK and locate the embedded classic/en/monkey1.000 and .001.
 //  2. Extract them to a temp directory as MONKEY1.000/001 (uppercase).
-//  3. Apply all classic patches (translation, CHAR blocks, verb layout).
+//  3. Inject translation + patch CHAR blocks (verb layout skipped — SE has its own verb UI).
 //  4. Patch the glyph lookup table in every .font entry in the PAK.
 //  5. Repack the PAK with the modified classic files and updated .font entries.
 //
@@ -121,8 +123,15 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return err
 	}
 
-	// --- Step 4: Apply all classic patches ---
-	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
+	// --- Step 4: Apply SE-specific classic patches ---
+	// Only inject the Swedish translation. CHAR block patching and verb layout
+	// patching are skipped for SE because:
+	//   - The SE new-graphics mode uses .font files (patched in Step 7), not CHAR blocks.
+	//   - Growing CHAR blocks changes MONKEY1.001's internal structure in ways
+	//     that can cause the SE engine to crash.
+	//   - The SE handles verb display independently; classic verb layout coordinates
+	//     are irrelevant for the SE renderer.
+	if err := patchSEClassicFiles(tmpDir, translationPath); err != nil {
 		return err
 	}
 
@@ -156,6 +165,27 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return fmt.Errorf("writing PAK: %w", err)
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
+
+	return nil
+}
+
+// patchSEClassicFiles applies translation injection and CHAR block patching to
+// MONKEY1.000/001 in tmpDir. Verb layout patching is intentionally skipped for SE:
+//   - The SE new-graphics mode has its own verb UI and does not use SCRP_0022
+//     coordinates for verb button placement.
+//   - In SE classic mode (F1), the verb layout may have different constraints
+//     than pure ScummVM, and the Swedish coordinate offsets are untested there.
+//   - CHAR blocks ARE patched so that SE classic mode (F1) renders Swedish glyphs.
+func patchSEClassicFiles(tmpDir, translationPath string) error {
+	fmt.Println("\n==> Injecting Swedish translation...")
+	if err := classic.InjectTranslation(tmpDir, translationPath); err != nil {
+		return fmt.Errorf("translation injection failed: %w", err)
+	}
+
+	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
+	if err := charset.Patch(tmpDir); err != nil {
+		return fmt.Errorf("charset patch: %w", err)
+	}
 
 	return nil
 }
