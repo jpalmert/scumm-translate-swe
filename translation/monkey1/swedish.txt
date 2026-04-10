@@ -1857,7 +1857,7 @@
 [033:VERB#0429](D8)Återvälj Guvernör Marley.\255\003`När det bara finns en kandidat finns det bara ett val.`
 [033:VERB#0429](14)
 [033:OBNA#0429](__)affisch
-[034:OBNA#0439](__)dödliga piranhapudlar
+[034:OBNA#0439](__)dödliga pirayapudlar
 [034:OBNA#0431](__)Guvernörens herrgård
 [034:VERB#0432](94)Det där är inte kyrkan.
 [034:OBNA#0432](__)gränd
@@ -2127,9 +2127,9 @@
 [036:VERB#0467](94)Jag tänker inte gå nära dom!
 [036:VERB#0467](D8)Jag vill inte väcka dom.
 [036:VERB#0467](D8)`Låt sovande hundar ligga.`
-[036:OBNA#0467](__)dödliga piranhapudlar
-[036:ENCD#0036](54)sovande piranhapudlar
-[036:LSCR#0201](54)sovande piranhapudlar
+[036:OBNA#0467](__)dödliga pirayapudlar
+[036:ENCD#0036](54)sovande pirayapudlar
+[036:LSCR#0201](54)sovande pirayapudlar
 [036:LSCR#0201](14)VIKTIGT MEDDELANDE
 [036:LSCR#0201](14)Dessa hundar är inte
 [036:LSCR#0201](14)döda, de bara
@@ -2138,10 +2138,10 @@
 [036:LSCR#0201](14)Inga djur skadades
 [036:LSCR#0201](14)under produktionen
 [036:LSCR#0201](14)av detta spel.
-[036:LSCR#0201](94)Piranjapadlar äter inte fisk.
+[036:LSCR#0201](94)Pirayapudlar äter inte fisk.
 [036:LSCR#0201](D8)Jag tror inte de här hundarna är vegetarianer.
 [036:LSCR#0201](D8)Jag tvivlar på att hundarna vill ha det här.
-[036:LSCR#0202](54)dödliga piranhapudlar
+[036:LSCR#0202](54)dödliga pirayapudlar
 [036:LSCR#0204](D8)Voff.
 [036:LSCR#0204](14)Bjäbb!
 [036:LSCR#0204](14) 
@@ -2226,9 +2226,9 @@
 [037:SCRP#0060](14)Hör här, jag sa ju...\255\003Inga besökare!
 [037:SCRP#0060](FA)Guvernören har blivit KIDNAPPAD!
 [037:SCRP#0060](FA)Jag heter Bobbin Threadbare. Är du min mamma?
-[037:SCRP#0060](FA)Jag är pirat, kanonkulleskansen. Vem är du?
+[037:SCRP#0060](FA)Jag är pirat, kanonkulan. Vem är du?
 [037:SCRP#0060](FA)Kan du visa mig den coola tatueringgrejen igen?
-[037:SCRP#0060](FA)Vad hette du igen, kanonkulleskansen?
+[037:SCRP#0060](FA)Vad hette du igen, kanonkulan?
 [037:SCRP#0060](FA)Ursäkta, men skylten sa att det fanns toaletter här inne?
 [037:SCRP#0060](FA)Hoppsan! Jag insåg precis att det här är fel hus.
 [037:SCRP#0060](14)Nej, din morsa var en anka.\255\003Stick nu.
@@ -2267,10 +2267,10 @@
 [037:SCRP#0060](14)...och jag tycker du har ett litet attitydproblem.
 [037:SCRP#0060](FA)Och du har fortfarande ett litet hårproblem.
 [037:SCRP#0060](FA)Nå, jag tycker du har ett litet hårproblem.
-[037:SCRP#0060](FA)Förlåt. Jag menade inte att kalla dig kanonkulleskansen.
-[037:SCRP#0060](14)Det är okej.\255\003Jag har hellre kanonkulleskalle än hästsvans.\255\003Ha ha ha!
+[037:SCRP#0060](FA)Förlåt. Jag menade inte att kalla dig kanonkulan.
+[037:SCRP#0060](14)Det är okej.\255\003Jag har hellre kanonkuleskalle än hästsvans.\255\003Ha ha ha!
 [037:SCRP#0060](FA)Ha ha ha.
-[037:SCRP#0060](FA)Jag menade att kalla dig blankskansen.
+[037:SCRP#0060](FA)Jag menade att kalla dig blankskallen.
 [037:SCRP#0060](14)Hörru, du har ganska bra humor.\255\003Vill du se nåt riktigt roligt?
 [037:SCRP#0060](FA)Helst inte.
 [037:SCRP#0060](FA)Som vad? Ett foto på hela din flintfamilj?
