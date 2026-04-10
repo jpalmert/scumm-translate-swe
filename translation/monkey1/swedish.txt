@@ -345,7 +345,7 @@
 [014:VERB#0158](D8)På tiden att jag blev av med den här värdelösa artefakten.
 [014:VERB#0158](D8)Jag tror jag har tillräckligt med fibrer; jag behåller den här.
 [014:VERB#0158](D8)Aldrig i livet!  Jag har jobbat för hårt för de här pengarna!
-[014:VERB#0158](D8)Den här billiga plastkompassen är för fin för att slänga.
+[014:VERB#0158](D8)Den här billiga plastkompassen är för häftig att slänga.
 [014:VERB#0158](D8)Den här sjöfartslitteraturen kan vara bra läsning; jag behåller den.
 [014:VERB#0158](D8)Det är hett nog som det är.
 [014:VERB#0158](D8)Jag vill inte ha något av den här soppan.
@@ -361,12 +361,12 @@
 [014:VERB#0161](D8)Jag tror inte det kommer brinna.
 [014:VERB#0161](D8)Aj, det är hett!
 [014:OBNA#0161](__)rödglödande eld
-[014:VERB#0164](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det krunchade mot gommen.
+[014:VERB#0164](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det slet upp gommen.
 [014:VERB#0164](14)Krunch
 [014:VERB#0164](D8)FANTASTISKT!\255\003En leksak inuti.
 [014:VERB#0164](D8)Jag är för sjuk för att äta mer.
 [014:OBNA#0164](__)flingor
-[014:VERB#0168](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det krunchade mot gommen.
+[014:VERB#0168](D8)Hmmmm...\255\003Jag älskade det här som liten.\255\003Jag gillade hur det slet upp gommen.
 [014:OBNA#0168](__)flingor
 [014:OBNA#0163](__)skåp
 [014:VERB#0165](D8)Den är ungefär lika stor som mitt huvud.
@@ -392,7 +392,7 @@
 [014:SCRP#0108](D8)Jösses!
 [014:SCRP#0108](D8)Jag tror jag blir yr!
 [014:SCRP#0108](14)Överväldigad av ångorna och stanken förlorar Guybrush snabbt medvetandet.
-[014:SCRP#0108](14)Ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
+[014:SCRP#0108](14)Några ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
 [014:SCRP#0108](14)Dagar går...\255\002
 [014:SCRP#0108](14)
 [014:SCRP#0185](54)pris
@@ -463,7 +463,7 @@
 [019:VERB#0257](D8)Déja vu!
 [019:VERB#0257](D8)Det kommer inte fungera.
 [019:VERB#0257](D8)Jag har ingen lust att spränga iväg mig själv till havs.
-[019:VERB#0257](D8)Aldrig i livet! Jag slår i huvudet när jag landar!
+[019:VERB#0257](D8)Aldrig i livet! Jag spräcker skallen när jag landar!
 [019:VERB#0257](14)Hej! Kanonen avfyrades inte!
 [019:VERB#0257](D8)Det är alldeles för farligt att klättra ut dit utan anledning.
 [019:OBNA#0257](__)kanonmynning
@@ -478,7 +478,7 @@
 [019:VERB#0259](D8)Jag tror inte våld är svaret...\255\003...även om det skulle få mig att må bättre.
 [019:VERB#0259](14)Vad var det?
 [019:VERB#0259](D8)Inget.
-[019:OBNA#0259](__)muterande besättning
+[019:OBNA#0259](__)myterisk besättning
 [019:VERB#0260](D8)Det är för långt att gå dit, och dessutom kan jag inte simma.
 [019:VERB#0260](D8)WOW!!! Det här var väl värt $59.95 + Moms
 [019:OBNA#0260](__)Monkey Island®
@@ -496,11 +496,11 @@
 [019:LSCR#0200](14)Nu när jag tänker efter, jag har varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
 [019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
 [019:LSCR#0200](14)--suck--
-[019:LSCR#0204](D8)Hej titta...
+[019:LSCR#0204](D8)Hej, titta...
 [019:LSCR#0204](D8)...vi har kommit till Monkey Island®
 [019:LSCR#0204](14)Säg till när du har hittat Guvernören...\255\003...vi har en extra stol hon kan använda.
 [019:LSCR#0204](D8)Jag tror inte de kommer vara till stor hjälp.
-[019:LSCR#0204](14)Du sa det.
+[019:LSCR#0204](14)Absolut.
 [019:LSCR#0204](D8)Jag tror inte de kommer vara till någon hjälp.
 [019:LSCR#0204](14)Vad var det?
 [019:LSCR#0204](D8)Inget.
@@ -577,8 +577,8 @@
 [020:SCRP#0095](14)...men jag verkar inte kunna hitta dem.
 [020:SCRP#0095](14)Titta på det där fantastiska skeppet där ute!
 [020:SCRP#0095](14)Kom du med det?
-[020:SCRP#0095](14)Kom du i skeppet jag såg där ute?
-[020:SCRP#0095](14)Du är modigare än du ser ut.\255\003Faktiskt så ser det väldigt likt ett skepp jag brukade äga...
+[020:SCRP#0095](14)Kom du med skeppet jag såg där ute?
+[020:SCRP#0095](14)Du är modigare än du ser ut.\255\003Faktiskt så liknar det väldigt ett skepp jag brukade äga...
 [020:SCRP#0095](14) 
 [020:SCRP#0095](FA)Ja, det ÄR en fin utsikt.
 [020:SCRP#0095](FA)Jag tycker inte om den själv.
@@ -604,7 +604,7 @@
 [020:SCRP#0095](14)Hej, kasta inte sten.
 [020:SCRP#0095](14)Det är den enda jag har.
 [020:SCRP#0095](14)Du såg honom aldrig när han fortfarande levde!
-[020:SCRP#0095](14)Du lurar inte mig, pojkvasker.
+[020:SCRP#0095](14)Du lurar inte mig, pojkspoling.
 [020:SCRP#0095](14)Åh, ingenting.
 [020:SCRP#0095](14)Glöm det.
 [020:SCRP#0095](D8)Är du någon slags strandsatt?
@@ -617,7 +617,7 @@
 [020:SCRP#0095](FA)Jag tror jag borde gå nu.
 [020:SCRP#0095](14)Tja, då trodde du fel.
 [020:SCRP#0095](14)Jag?
-[020:SCRP#0095](14)Varför, de som tittar, förstås.
+[020:SCRP#0095](14)Jo, de som tittar, förstås.
 [020:SCRP#0095](D8)Öhm... jaha.
 [020:SCRP#0095](14)Mitt namn är Rötbett. Herman Rötbett.\255\003Jag bor här.
 [020:SCRP#0095](14)Tja, inte PRECIS här.
@@ -693,7 +693,7 @@
 [020:SCRP#0164](D8)`--Kannibalerna`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste än en gång be dig dra ner på dina nattliga aktiviteter i området kring det Heliga Aphuvudet.`\255\003`Anständiga människor försöker sova!`
 [020:SCRP#0164](D8)`Var vänlig håll nere ljudnivån.`\255\003`--Monkey Island® Kannibalerna`\255\003`P.S.--`\255\003`Vi såg dig ta med den där kvinnan med halsduken dit ner!`
-[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Jag har inget emot att ni dyrkar framför Den Heliga Apavguden som också är mitt hem och hemliga operationsbas...`
+[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Jag har inget emot att ni dyrkar framför Den Heliga Apidolen som också är mitt hem och hemliga operationsbas...`
 [020:SCRP#0164](D8)`...men skulle ni kunna låta bli att lämna smutsiga offer på min veranda.`\255\003`Och, var snäll GÅ INTE IN i Aphuvudet.`\255\003`--G.P. LeChuck`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island® Kannibalerna`
 [020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
@@ -712,7 +712,7 @@
 [020:SCRP#0167](54)anmärkningsvärd sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
-[020:SCRP#0168](D8)Jag är här för att rädda Guvernören av Mêlée Island®.
+[020:SCRP#0168](D8)Jag är här för att rädda Guvernören på Mêlée Island®.
 [020:SCRP#0168](D8)Jag är en mäktig pirat.
 [020:SCRP#0168](D8)Sett några stora, fula, läskiga, genomskinliga pirater här omkring?
 [020:SCRP#0168](D8)Finns det något gott att äta på den här ön?
