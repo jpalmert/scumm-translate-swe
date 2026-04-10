@@ -199,9 +199,18 @@ def decode_object(obim_path, out_path, room_dir=None):
     if imhd_pos < 0:
         raise ValueError("IMHD block not found")
 
-    # IMHD structure (v5): obj_id(u16), num_imnn(u16), num_zpnn(u16), flags(u8), unk(u8), x(s16), y(s16), width(u16), height(u16)
-    width  = le16(obim, imhd_pos + 16)
-    height = le16(obim, imhd_pos + 18)
+    # IMHD structure (v5), all after 8-byte block header:
+    #   +0  obj_id  (u16)
+    #   +2  num_imnn (u16)
+    #   +4  num_zpnn (u16)
+    #   +6  flags   (u8)
+    #   +7  unk     (u8)
+    #   +8  x       (s16)
+    #   +10 y       (s16)
+    #   +12 width   (u16)
+    #   +14 height  (u16)
+    width  = le16(obim, imhd_pos + 20)
+    height = le16(obim, imhd_pos + 22)
     num_strips = (width + 7) // 8
 
     # Load palette from room CLUT if available
