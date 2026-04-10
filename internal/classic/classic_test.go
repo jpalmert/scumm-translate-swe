@@ -109,22 +109,43 @@ func TestEncodeForScummtrStripsOpcode(t *testing.T) {
 }
 
 // SPEECH-001: buildSpeechMapping builds EN→SCUMM_bytes from aligned files.
+// Multi-page strings are split on \255\003 so each sentence maps individually.
 func TestBuildSpeechMapping(t *testing.T) {
-	en := []byte("[001:SCRP#0001] \n[001:SCRP#0001]The END for you!\n")
+	en := []byte("[001:SCRP#0001] \n[001:SCRP#0001]The END for you!\n[001:SCRP#0002]Hello there.\\255\\003Goodbye now.\n")
 	// Swedish data includes (opcode) prefix as produced by scummtr -A extraction.
-	sv := []byte("[001:SCRP#0001](27) \n[001:SCRP#0001](27)SLUTET för dig!\n")
+	sv := []byte("[001:SCRP#0001](27) \n[001:SCRP#0001](27)SLUTET för dig!\n[001:SCRP#0002](27)Hej då.\\255\\003Adjö nu.\n")
 
 	m := buildSpeechMapping(en, sv)
 
-	// The translated entry should appear in the map.
+	// Single-page entry maps directly.
 	sv1, ok := m["The END for you!"]
 	if !ok {
 		t.Fatalf("expected 'The END for you!' in mapping, got keys: %v", mapKeys(m))
 	}
-	// ö → 0x7D, ä would be 0x7C — verify 'ö' in "för" maps correctly.
 	want := ScummBytes("SLUTET för dig!")
 	if string(sv1) != string(want) {
 		t.Errorf("SCUMM bytes: got %v, want %v", sv1, want)
+	}
+
+	// Multi-page string: each sentence is mapped individually.
+	sv2, ok := m["Hello there."]
+	if !ok {
+		t.Fatalf("expected 'Hello there.' mapped as individual sentence")
+	}
+	if string(sv2) != string(ScummBytes("Hej då.")) {
+		t.Errorf("first sentence: got %v, want %v", sv2, ScummBytes("Hej då."))
+	}
+	sv3, ok := m["Goodbye now."]
+	if !ok {
+		t.Fatalf("expected 'Goodbye now.' mapped as individual sentence")
+	}
+	if string(sv3) != string(ScummBytes("Adjö nu.")) {
+		t.Errorf("second sentence: got %v, want %v", sv3, ScummBytes("Adjö nu."))
+	}
+
+	// Full multi-page key must NOT be in the map (speech.info has individual sentences).
+	if _, bad := m[`Hello there.\255\003Goodbye now.`]; bad {
+		t.Errorf("full multi-page key should not be in mapping")
 	}
 
 	// Empty entries (just space or empty) should not appear as keys.

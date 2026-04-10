@@ -192,8 +192,19 @@ func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 
 		if svTexts, ok := svGroups[header]; ok && p < len(svTexts) {
 			svText := svTexts[p]
-			if strings.TrimSpace(svText) != "" && strings.TrimSpace(enText) != "" {
-				mapping[enText] = ScummBytes(svText)
+			// speech.info stores individual sentences, not full multi-page strings.
+			// Split both EN and SV on \255\003 (page-break escape) so each sentence
+			// gets its own mapping entry. Single-page strings split into one part.
+			enParts := strings.Split(enText, `\255\003`)
+			svParts := strings.Split(svText, `\255\003`)
+			for i, enPart := range enParts {
+				if i >= len(svParts) {
+					break
+				}
+				svPart := svParts[i]
+				if strings.TrimSpace(enPart) != "" && strings.TrimSpace(svPart) != "" {
+					mapping[enPart] = ScummBytes(svPart)
+				}
 			}
 		}
 	}
