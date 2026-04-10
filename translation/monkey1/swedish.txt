@@ -726,11 +726,11 @@
 [021:LSCR#0205](D8)Han ser fortfarande lite hungrig ut.
 [021:LSCR#0205](D8)Han ser glad ut.
 [023:SCRP#0119](14)Guvernör Elaine Marley.
-[023:SCRP#0119](14)Så jag gav dig avguden, va?
+[023:SCRP#0119](14)Så jag gav dig idolen, va?
 [023:SCRP#0119](14)Så du skulle bara låna den, va?
-[023:SCRP#0119](14)Så min avgud hör hemma i ett museum, va?
+[023:SCRP#0119](14)Så min idol hör hemma i ett museum, va?
 [023:SCRP#0119](14)Så piratledarna tvingade dig att göra det, va?
-[023:SCRP#0119](14)Skulle ta ut min avgud på en liten promenad, eller hur?
+[023:SCRP#0119](14)Skulle ta ut min idol på en liten promenad, eller hur?
 [023:SCRP#0119](FA)Öh...
 [023:SCRP#0119](FA)Oj...
 [023:SCRP#0119](FA)Ja...
@@ -764,7 +764,7 @@
 [025:OBNA#0291](__)bananer
 [025:VERB#0304](D8)Ser lite övermogen ut, förutom de där fina, saftiga bananerna!
 [025:VERB#0304](D8)Inget kvar förutom dålig frukt.
-[025:VERB#0304](D8)Allt jag vill ha är de här bananerna. Den andra frukten ser ut att ha sett sina bästa dar.
+[025:VERB#0304](D8)Allt jag vill ha är de här bananerna. Den andra frukten ser ut att ha sett sina bästa dagar.
 [025:VERB#0304](D8)Nej tack. Resten duger inte.
 [025:OBNA#0304](__)fruktkorg
 [025:VERB#0303](D8)Jag tror de väntar på att jag ska ge dem något.
@@ -807,7 +807,7 @@
 [025:OBNA#0298](__)hydda
 [025:VERB#0299](D8)Varför? Den är tom.
 [025:OBNA#0299](__)hydda
-[025:VERB#0300](D8)Jag kan inte se in därifrån.
+[025:VERB#0300](D8)Jag kan inte se in härifrån.
 [025:VERB#0300](D8)Men jag slår vad om att den är tom.
 [025:OBNA#0300](__)hydda
 [025:VERB#0284](D8)Den ser stor och tom ut.
@@ -830,7 +830,7 @@
 [025:LSCR#0202](14)Bara av hälsoskäl.\255\003Vi är fortfarande lika grymma som alltid.
 [025:LSCR#0202](14)Speciellt mot turister som försöker stjäla våra saker som souvenirer.
 [025:LSCR#0202](14)Nå, vad har du att säga till ditt försvar?
-[025:LSCR#0202](14)Ah, bantjuven återvänder till brottsplatsen.
+[025:LSCR#0202](14)Ah, banantjuven återvänder till brottsplatsen.
 [025:LSCR#0202](14)Kanske borde vi bara äta upp honom på en gång.
 [025:LSCR#0202](14)Har du någon aning om hur mycket kolesterol det är i en sådan här?
 [025:LSCR#0202](14)Nå, hur tog du dig ut ur vår hydda och varför kom du tillbaka?
@@ -863,9 +863,9 @@
 [025:LSCR#0202](14)Nå?
 [025:LSCR#0203](14)Ah, nyckeln till Den Stora Apan.\255\003Tack så mycket.
 [025:LSCR#0203](14)Varför behåller du inte den för tillfället.
-[025:LSCR#0203](14)Ah, en av de där nyfanglerade magnetiska kompasserna.
+[025:LSCR#0203](14)Ah, en av de där nymodiga magnetiska kompasserna.
 [025:LSCR#0203](14)För högteknologisk.
-[025:LSCR#0203](14)Ge mig ett gott gammaldags lösryckta huvud när som helst.
+[025:LSCR#0203](14)Ge mig ett gott gammaldags lösryckt huvud när som helst.
 [025:LSCR#0203](14) 
 [025:LSCR#0203](14)Vi kan inte ta det. Du har redan gett oss så mycket.
 [025:LSCR#0203](14)Vi uppskattar de naturliga fibrerna, men nej tack.
@@ -976,9 +976,9 @@
 [025:LSCR#0213](FA)Vad är Uvudethay av Avigatörenay?
 [025:LSCR#0213](FA)Varför pratar ni rövarspråk?
 [025:LSCR#0213](FA)Arhar ier artay enon artakay övoveror atakombernanay?
-[025:LSCR#0213](FA)Åh, kom igen. Berätta för mig. Jag gav er avguden.
+[025:LSCR#0213](FA)Åh, kom igen. Berätta för mig. Jag gav er idolen.
 [025:LSCR#0213](14)Edsenay. Ejnay.
-[025:LSCR#0213](14)Det är en mycket fin avgud.
+[025:LSCR#0213](14)Det är en mycket fin idol.
 [025:LSCR#0213](14)Jag ser att han är förbryllad av vår infödda dialekt.\255\003Bra.
 [025:LSCR#0213](14)Vi kan åtminstone berätta vad huvudet gör.
 [025:LSCR#0213](14)Jo, det är ett navigeringsverktyg--
@@ -987,8 +987,8 @@
 [025:LSCR#0213](14)Att ta sig igenom katakomberna utan det är omöjligt.
 [025:LSCR#0213](14)Men det är vårt enda, så du kan inte få det.
 [025:LSCR#0213](14)Jag antar att vi inte har något att erbjuda dig.
-[025:LSCR#0213](14)Och efter att han gav oss den där fina avguden också...
-[025:LSCR#0213](14)Du är välkommen att komma till Den Stora Apan och besöka din avgud när som helst.
+[025:LSCR#0213](14)Och efter att han gav oss den där fina idolen också...
+[025:LSCR#0213](14)Du är välkommen att komma till Den Stora Apan och besöka din idol när som helst.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](14)Men i alla fall, Lemonhead, vad var det du sa om tropiska oljor?
 [025:LSCR#0213](14)Jo...
@@ -1254,7 +1254,7 @@
 [028:LSCR#0220](14)       Har Har Har\255\002
 [028:LSCR#0220](14)       Har Har Har
 [028:LSCR#0220](14)
-[028:LSCR#0220](14)Och låt träna dig först.
+[028:LSCR#0220](14)Och se till att träna dig först.
 [028:LSCR#0220](14)Vi vill att du skaffar fram en liten grej åt oss...
 [028:LSCR#0220](14)Idolen med de Många Händerna...
 [028:LSCR#0220](14)...i Guvernörens herrgård!
@@ -1286,7 +1286,7 @@
 [028:LSCR#0220](14)scumm
 [028:LSCR#0220](14)axelfett
 [028:LSCR#0220](14)bilbatterisyra
-[028:LSCR#0220](14)och/eller pepperoni\255\003Som du säkert kan föreställa dig är det en av de mest frätande, flyktiga ämnena som mänskligheten känner till.
+[028:LSCR#0220](14)och/eller pepperoni\255\003Som du säkert kan föreställa dig är det ett av de mest frätande, flyktiga ämnena som mänskligheten känner till.
 [028:LSCR#0220](14)Grejerna äter sig igenom dessa muggar och det kostar kocken en förmögenhet att ersätta dem.
 [028:LSCR#0220](14)Har Har Har\255\002
 [028:LSCR#0220](14)       Har Har Har\255\002
