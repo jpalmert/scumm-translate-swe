@@ -133,6 +133,11 @@ The word "SCUMM" appears in:
 - "Scumm Bar" - keep as is (it's the game engine name)
 - Mentions of "scumm" as ingredient in grog - keep for consistency
 
+### The game title
+"the Secret of Monkey Island®" → **"Monkey Islands® Hemlighet"** (capital S in the phrase)
+"the secret of Monkey Island®" → **"Monkey Islands® hemlighet"** (lowercase)
+Swedish word order: possessor first. Note the possessive 's' on Island.
+
 ### Humor Preservation
 Certain names are jokes that work in English:
 - **Men of Low Moral Fiber** - translate concept, not literal words → "Män av Tveksam Vandel"

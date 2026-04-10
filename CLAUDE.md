@@ -199,6 +199,22 @@ Read these when working on translation or tooling:
 
 ---
 
+## Working conventions
+
+These apply to all work in this repo:
+
+**Tests:** Always write a test for new functionality. Always run `go test ./...` after changing existing code. Tests are part of completing a task, not a separate step.
+
+**Commits:** Commit to git whenever a unit of work is complete and working — don't let changes accumulate. Use `git add <specific files>` not `git add -A` to avoid accidentally staging game files or build artifacts.
+
+**Gitignored files:** Never use `git add -f` to force-commit files from `game/`, `dist/`, or other gitignored paths. Those directories contain game files and build outputs that must not be in the repo.
+
+**Embedded binaries:** Never create placeholder files for `//go:embed` assets. If a binary is missing, download or build the real one immediately. A placeholder compiles but fails at runtime.
+
+**File deletion:** Delete files individually (`rm file1 file2`). `rm -rf` is blocked by the sandbox; use `rmdir` for empty directories after removing their contents.
+
+---
+
 ## Reference: monkeycd_swe
 
 At `~/monkeycd_swe`:

@@ -129,3 +129,41 @@ tooling handles encoding automatically; write normal UTF-8 Swedish in the
 translation file.
 
 Supported characters: **Å Ä Ö å ä ö é**
+
+---
+
+## Swedish language rules
+
+### Use natural Swedish, not literal translations
+
+Read the translation aloud — if it sounds like translated English, rewrite it.
+Common mistakes:
+
+- Prefer compound words: ❌ "rustigt igenstängda" → ✅ "igenrostade"
+- Prefer common verbs: ❌ "svimmade av" → ✅ "tuppade av"; ❌ "fatta eld" → ✅ "brinna"
+- Adverb placement: Swedish often puts adverbs after the object — ❌ "Jag bränner bara allt" → ✅ "Jag bränner allt bara"
+- Single spaces after periods (not double)
+
+### Generic messages — avoid gender-specific pronouns
+
+Messages that apply to many different objects (room 010 fallback strings, etc.) must not
+assume a grammatical gender. Rewrite to omit the pronoun entirely:
+
+- ❌ "Jag kan inte nå **det**." → ✅ "Jag kan inte nå."
+- ❌ "Jag ser inget speciellt med **det**." → ✅ "Jag ser inget speciellt."
+- ❌ "Jag kan inte flytta **det**." → ✅ "Jag kan inte flytta."
+
+The object is implied from context. Guessing "den" or "det" will be wrong half the time.
+
+### Research ambiguous words before translating
+
+Before translating an ambiguous word (e.g. "crack", "handle", "chest"), grep the full
+translation file for other occurrences — VERB entries, dialog lines, other rooms — to
+determine the actual object and meaning. Don't translate in isolation.
+
+### Specific phrase: the game title
+
+"the Secret of Monkey Island®" → **"Monkey Islands® Hemlighet"** (capital S)
+"the secret of Monkey Island®" → **"Monkey Islands® hemlighet"** (lowercase)
+
+Swedish word order: possessor first — "Monkey Islands® Hemlighet" not "Hemligheten på Monkey Island®".
