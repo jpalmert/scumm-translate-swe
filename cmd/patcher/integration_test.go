@@ -11,7 +11,9 @@ import (
 	"testing"
 
 	"scumm-patcher/internal/charset"
+	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/pak"
+	"scumm-patcher/internal/speech"
 )
 
 // repoRoot walks up from the package directory to the repository root.
@@ -202,6 +204,99 @@ func TestSEPatcherRePatch(t *testing.T) {
 		t.Fatalf("read patched PAK: %v", err)
 	}
 	t.Logf("Monkey1.pak after re-patch: %d bytes", len(patchedOnce))
+}
+
+// INT-SPEECH-001: speech.info EN slots are updated with Swedish SCUMM bytes.
+//
+// This test bypasses the CHAR/font steps (which require scripts/build.sh) and
+// tests the speech pipeline in isolation: build the mapping from real game files
+// + swedish.txt, patch a copy of speech.info, and assert meaningful changes.
+func TestSpeechInfoPatchedWithSwedish(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	root := repoRoot(t)
+	speechInfoSrc := filepath.Join(root, "game", "monkey1", "audio", "speech.info")
+	if _, err := os.Stat(speechInfoSrc); err != nil {
+		t.Skipf("speech.info not found at %s", speechInfoSrc)
+	}
+
+	// Extract classic game files from PAK into a temp dir so BuildSpeechMapping
+	// can run scummtr against them.
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	gameDir := t.TempDir()
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			os.WriteFile(filepath.Join(gameDir, "MONKEY1.000"), e.Data, 0644)
+		case "classic/en/monkey1.001":
+			os.WriteFile(filepath.Join(gameDir, "MONKEY1.001"), e.Data, 0644)
+		}
+	}
+
+	// Build the EN→Swedish mapping from the original English game content.
+	mapping, err := classic.BuildSpeechMapping(gameDir, translationPath)
+	if err != nil {
+		t.Fatalf("BuildSpeechMapping: %v", err)
+	}
+	t.Logf("mapping size: %d entries", len(mapping))
+	if len(mapping) < 100 {
+		t.Errorf("mapping suspiciously small: got %d, expected at least 100", len(mapping))
+	}
+
+	// Patch a copy of speech.info.
+	dir := t.TempDir()
+	tmpSpeech := filepath.Join(dir, "speech.info")
+	origData, err := os.ReadFile(speechInfoSrc)
+	if err != nil {
+		t.Fatalf("read speech.info: %v", err)
+	}
+	if err := os.WriteFile(tmpSpeech, origData, 0644); err != nil {
+		t.Fatalf("write temp speech.info: %v", err)
+	}
+
+	n, err := speech.Patch(tmpSpeech, mapping)
+	if err != nil {
+		t.Fatalf("speech.Patch: %v", err)
+	}
+	t.Logf("speech.Patch updated %d entries", n)
+	if n < 100 {
+		t.Errorf("too few entries updated: got %d, expected at least 100 out of 4651", n)
+	}
+
+	// Verify patched slots actually contain Swedish SCUMM-encoded bytes.
+	patchedData, _ := os.ReadFile(tmpSpeech)
+	const (
+		entry1Base  = 0x510
+		headerSize  = 0x30
+		slotSize    = 256
+		entryStride = 0x530
+	)
+	nEntries := (len(patchedData) - entry1Base) / entryStride
+	swedishScummBytes := []byte{0x5B, 0x5C, 0x5D, 0x7B, 0x7C, 0x7D, 0x82} // Å Ä Ö å ä ö é
+	slotsWithSwedish := 0
+	for i := 0; i < nEntries; i++ {
+		enOff := entry1Base + i*entryStride + headerSize
+		slot := patchedData[enOff : enOff+slotSize]
+		for _, b := range slot {
+			if b == 0 {
+				break
+			}
+			for _, sb := range swedishScummBytes {
+				if b == sb {
+					slotsWithSwedish++
+					goto nextEntry
+				}
+			}
+		}
+	nextEntry:
+	}
+	t.Logf("%d slots contain Swedish SCUMM bytes", slotsWithSwedish)
+	if slotsWithSwedish == 0 {
+		t.Error("no slots contain Swedish SCUMM bytes — encoding may be wrong")
+	}
 }
 
 // INT-CLASSIC: Real Swedish translation grows .001.
