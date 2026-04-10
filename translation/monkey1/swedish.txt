@@ -2638,7 +2638,7 @@
 [043:SCRP#0057](14)Grabben!\255\003Du slåss som en mjölkbonde!
 [043:SCRP#0057](14)Jag brukar inte slösa min tid på ohyra som dig.\255\003Men med tanke på att det här LeChuck-tramset har satt käppar i hjulet för affärerna har jag inget val...\255\003...jag behöver pengarna.
 [043:SCRP#0057](14)Ja...\255\003...jag kan se att det här kräver speciella åtgärder.
-[043:SCRP#0057](14)Vill bara att du ska veta...\255\003...jag gör inte det här med alla.\255\003Det är bara för att jag känner den där speciella...\255\003...elev/mentor/dublon-bandet...\255\003...som jag går till de här längderna.
+[043:SCRP#0057](14)Vill bara att du ska veta...\255\003...jag gör inte det här med alla.\255\003Det är bara för att jag känner den där speciella...\255\003...elev/mentor/dublon-bandet...\255\003...som jag går så här långt.
 [043:SCRP#0057](14)Jag tänker ställa dig mot...
 [043:SCRP#0057](14)...MASKINEN.\255\002
 [043:SCRP#0057](14)
@@ -2794,12 +2794,12 @@
 [049:LSCR#0200](94)Piratspråk!\255\003Det va så alla pratade på den tiden.\255\003Kom igen Guybrush, häng me.
 [049:LSCR#0200](94)Jo! Nu när du säger det, det gör dom.\255\003Det beror nog bara på att vi är trötta.
 [049:LSCR#0200](14)...som jag kunde låna.
-[049:LSCR#0200](14)Jag behöver köpa andedroppar.
+[049:LSCR#0200](14)Jag behöver köpa mintpastiller.
 [049:LSCR#0200](94)Du menar det.
 [049:LSCR#0200](94)Försvinn, din tiggande skurk, innan ja hackar dej i bitar.
 [049:LSCR#0200](94)Ja lånar inte ut pengar till nån, speciellt inte landkrabbor som dej.
 [049:LSCR#0200](94)Tiggande klär dej inte. Du borde gå ut och stjäla det som en riktig pirat.
-[049:LSCR#0200](94)Ja gav precis min sista dublon till pirat-wannaben längre ner på vägen.\255\003Han behövde köpa andedroppar.\255\003Illa.
+[049:LSCR#0200](94)Ja gav precis min sista dublon till pirat-wannaben längre ner på vägen.\255\003Han behövde köpa mintpastiller.\255\003Illa.
 [051:OBNA#0617](__)utanför
 [051:OBNA#0618](__)utanför
 [051:OBNA#0619](__)utanför
