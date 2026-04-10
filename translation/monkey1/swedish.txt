@@ -639,7 +639,7 @@
 [020:SCRP#0095](FA)Ursäkta mig, jag har brådskande ärenden att sköta.
 [020:SCRP#0095](14)Ja, jag också.
 [020:SCRP#0095](14)-- hehe hehe --
-[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® Hemlighet.\255\003Men min vän råkade ut för en förfärlig och tragisk olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
+[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® hemlighet.\255\003Men min vän råkade ut för en förfärlig olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
 [020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle hämta hjälp och komma tillbaka...\255\003...något måste ha hänt.
 [020:SCRP#0095](D8)Varför följde du inte bara med schimpanserna?
 [020:SCRP#0095](14)VECKOR på en båt full med apor.
