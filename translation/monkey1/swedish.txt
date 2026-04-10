@@ -109,7 +109,7 @@
 [008:VERB#0102](D8)De är alla igenrostade.
 [008:VERB#0102](D8)Det är bara gamla rostiga kistor.
 [008:OBNA#0102](__)kistor
-[008:VERB#0103](D8)Den är igenrostade.
+[008:VERB#0103](D8)Den är igenrostad.
 [008:VERB#0103](D8)Det är bara en gammal rostig kista.
 [008:OBNA#0103](__)svart kista
 [008:VERB#0104](D8)Ah, fin bukett.
@@ -4376,8 +4376,8 @@
 [089:SCRP#0138](14)Kan jag bjuda dig på en rotöl?
 [089:SCRP#0138](FA)Javisst.
 [089:SCRP#0138](FA)Faktiskt är jag lite trött på rotöl.
-[089:SCRP#0138](14)Det finns mer hos Stan's--
-[089:SCRP#0138](14)När jag var i maskinen hos Stan's--
+[089:SCRP#0138](14)Det finns mer hos Stan--
+[089:SCRP#0138](14)När jag var i maskinen hos Stan--
 [089:SCRP#0138](14)Jösses, jag hoppas Stan mår bra...
 [089:SCRP#0138](14)Jag önskar att min besättning hade sett det här...
 [089:SCRP#0138](14)Du vet, jag glömde helt bort Herman Rötbett!
