@@ -2783,7 +2783,7 @@
 [049:LSCR#0200](94)Va vill du din skabbiga landlansen?
 [049:LSCR#0200](94)Att stoppa en pirat kan va farligt för din hälsa.
 [049:LSCR#0200](94)Flytta på dej, annars hugger ja mej igenom!
-[049:LSCR#0200](94)Aye, det här bättre va viktigt.
+[049:LSCR#0200](94)Aye, det är bäst att det här är viktigt.
 [049:LSCR#0200](FA)Fin kväll vi har, eller hur?
 [049:LSCR#0200](FA)Varför pratar ni så konstigt?
 [049:LSCR#0200](FA)Har ni märkt att alla de här vägarna börjar se likadana ut?
