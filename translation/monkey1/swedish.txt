@@ -639,7 +639,7 @@
 [020:SCRP#0095](FA)Ursäkta mig, jag har brådskande ärenden att sköta.
 [020:SCRP#0095](14)Ja, jag också.
 [020:SCRP#0095](14)-- hehe hehe --
-[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® hemlighet.\255\003Men min vän råkade ut för en förfärlig olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
+[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® Hemlighet.\255\003Men min vän råkade ut för en förfärlig olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
 [020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle hämta hjälp och komma tillbaka...\255\003...något måste ha hänt.
 [020:SCRP#0095](D8)Varför följde du inte bara med schimpanserna?
 [020:SCRP#0095](14)VECKOR på en båt full med apor.
@@ -3235,7 +3235,7 @@
 [059:SCRP#0056](14)Hur som helst, vi pratar riktigt värde här...
 [059:SCRP#0056](14)Kan inte sluta titta på henne, va?
 [059:SCRP#0056](14)Det här är den berömda `Havsapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island®...\255\003...och kommit tillbaka med nån ombord vid liv.
-[059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands® hemlighet.
+[059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands® Hemlighet.
 [059:SCRP#0056](14)Och, som många före dom, försvann dom för alltid.\255\003Deras öde--ett mysterium.\255\003Nästan lika mystiskt som hur det här skeppet återvände till Mêlée Island® utan en enda människa ombord.
 [059:SCRP#0056](14)Vissa påstår att det seglades tillbaka av en besättning av schimpanser.
 [059:SCRP#0056](D8)Schimpanser? Det finns inga schimpanser i Karibien!
@@ -3308,7 +3308,7 @@
 [059:SCRP#0056](14)Jag får en helt ny leverans nästa vecka, så du har mig i ett trångt läge.\255\003Jag MÅSTE sälja den här skönheten, även om det betyder att jag förlorar skjortan.
 [059:SCRP#0056](14)Berätta bara, vad krävs för att få dig att segla iväg med det här skeppet...\255\003IDAG?
 [059:SCRP#0056](14)Du inser väl att dom inte bygger dom så här längre.
-[059:SCRP#0056](14)Kompansen, du kan berätta sanningen.\255\003Det är frugan, va?\255\003Du är rädd för vad hon säger när du kommer hem med ett nytt skepp.\255\003Var inte så vek!
+[059:SCRP#0056](14)Kompisen, du kan berätta sanningen.\255\003Det är frugan, va?\255\003Du är rädd för vad hon säger när du kommer hem med ett nytt skepp.\255\003Var inte så vek!
 [059:SCRP#0056](14)Stå på dig!\255\003Hon kommer respektera dig för det.\255\003Och när hon ser det här skeppet...\255\003...kommer hon ÄLSKA dig för det.\255\003Lita på mig.
 [059:SCRP#0056](14)Jag förstår inte. Jag TRODDE du var intresserad av det här skeppet.
 [059:SCRP#0056](14)Jag skulle låta dig ta en liten sväng i hamnen, men vårt försäkringsbolag tillåter det inte.
@@ -3980,12 +3980,12 @@
 [081:SCRP#0092](FA)Hur dog han?
 [081:SCRP#0092](FA)Låter kusligt. Jag måste nog gå.
 [081:SCRP#0092](14)LeChuck var en fruktansvärd pirat.
-[081:SCRP#0092](14)Han försökte imponera på Guvernören genom att segla iväg för att hitta Monkey Islands® hemlighet.\255\003Men en mystisk storm drog in och sänkte hans skepp utan överlevande.
+[081:SCRP#0092](14)Han försökte imponera på Guvernören genom att segla iväg för att hitta Monkey Islands® Hemlighet.\255\003Men en mystisk storm drog in och sänkte hans skepp utan överlevande.
 [081:SCRP#0092](14)Vi trodde det var slutet för den fruktansvärde piraten LeChuck.
 [081:SCRP#0092](14)Vi hade fel.
 [081:SCRP#0092](14)
 [081:SCRP#0092](FA)Vad hände sen?
-[081:SCRP#0092](FA)Vad ÄR Monkey Islands® hemlighet?
+[081:SCRP#0092](FA)Vad ÄR Monkey Islands® Hemlighet?
 [081:SCRP#0092](FA)Jag älskar den historien. Vi ses.
 [081:SCRP#0092](14)Bara LeChuck vet.
 [081:SCRP#0092](14)Men det är inte slutet--
@@ -4364,7 +4364,7 @@
 [089:SCRP#0130](14)Cobb® och Seagull® medverkar genom tillstånd av LOOM®
 [089:SCRP#0130](14)Soundtracket finns ej på kassett eller LP
 [089:SCRP#0130](14)Boken finns heller inte
-[089:SCRP#0130](14)Monkey Islands® hemlighet
+[089:SCRP#0130](14)Monkey Islands® Hemlighet
 [089:SCRP#0130](14)En produktion av Lucasfilm Games
 [089:SCRP#0130](14)TM & (c) 1990 LucasArts Entertainment Company.
 [089:SCRP#0130](14)Alla rättigheter reserverade.
