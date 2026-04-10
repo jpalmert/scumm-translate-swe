@@ -1,7 +1,6 @@
 # tools/ — Developer utilities
 
-These are standalone Python 3 tools for inspecting and working with MI1SE files.
-They are not part of the main build pipeline — the Go patcher handles all end-user patching.
+Standalone Python 3 tools for inspecting MI1SE files. Not part of the main build pipeline.
 
 ## pak.py — PAK archive extractor/repacker
 
@@ -14,13 +13,10 @@ python3 tools/pak.py repack  output_dir/ output.pak original.pak [game]
 
 `game`: 1 for MI1SE, 2 for MI2SE (auto-detected from filename if omitted).
 
-## patch_verbs.py — Verb button patcher
+## patch_verbs.py — Verb button layout patcher
 
-Patches Swedish verb button labels in the SE UI. Used internally by the Go patcher
-during the SE patching pipeline; can also be run standalone for inspection.
-
-## Requirements
+Patches verb button X/Y coordinates in SCRP_0022. Can be run standalone for inspection.
 
 ```bash
-pip install Pillow
+python3 tools/patch_verbs.py <input_scrp_0022> <output_scrp_0022>
 ```

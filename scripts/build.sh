@@ -143,7 +143,7 @@ cd "$REPO_ROOT"
 build_binary() {
     local goos="$1" goarch="$2" out="$3"
     echo "  Building $out..."
-    GOOS="$goos" GOARCH="$goarch" "$GO_BIN" build -o "$DIST_DIR/$out" ./cmd/patcher
+    GOOS="$goos" GOARCH="$goarch" "$GO_BIN" build -tags buildpatcher -o "$DIST_DIR/$out" ./cmd/patcher
     echo "    -> $DIST_DIR/$out ($(du -h "$DIST_DIR/$out" | cut -f1))"
 }
 

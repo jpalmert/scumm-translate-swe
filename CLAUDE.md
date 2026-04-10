@@ -2,112 +2,155 @@
 
 ## What this project is
 
-A toolkit for creating a Swedish fan translation of LucasArts SCUMM engine games,
-with Claude doing the translation. See `docs/FRS.md` for full requirements.
+A self-contained patcher that injects a Swedish translation into LucasArts SCUMM games.
+Claude does the translation work; this repo contains the tooling and translation data.
 
-First target: **The Secret of Monkey Island Special Edition (MI1SE)**, GOG version.
-The existing Swedish translation from the `monkeycd_swe` repo will be used for
-end-to-end testing before any new translation work is needed.
+First target: **Monkey Island 1** — both the Special Edition (GOG/Steam `Monkey1.pak`) and the
+Classic CD-ROM version (`MONKEY1.000`/`MONKEY1.001` via ScummVM).
 
----
-
-## Project status (as of session handoff 2026-04-04)
-
-### What has been built
-- `tools/mise/pak.py` — PAK archive extractor/repacker for MI1SE/MI2SE
-- `tools/mise/text.py` — `.info` text extractor/injector (all SE formats)
-- `tools/mise/font.py` — `.font` glyph expander for Swedish characters
-- `scripts/classic/` — scummtr-based extract/inject/patch scripts for classic SCUMM
-- `scripts/se/` — full SE pipeline scripts (extract for translation, build)
-- `scripts/install_deps.sh` — one-time dependency installer
-- `docs/FRS.md` — Functional Requirements Spec v0.2
-- `docs/OPEN_QUESTIONS.md` — 8 open questions, 2 are P0 blockers
-
-### What has NOT been done yet
-- Dependencies not installed (`bash scripts/install_deps.sh` not run yet)
-- No actual game files have been tested against
-- OQ-1 and OQ-2 (see below) are unresolved blockers
-- The self-contained end-user patcher has not been built yet
-- The graphics directory (`games/monkey1/graphics/`) still exists but is out of scope — delete it
-
----
-
-## Immediate next steps
-
-1. **Resolve OQ-1**: Get the GOG MI1SE install path. Ask the user to run:
-   `find ~ -name "Monkey1.pak" 2>/dev/null`
-   Then inspect the file layout with `pak.py extract` to confirm structure.
-
-2. **Resolve OQ-2**: Compare string content between classic scummtr extraction
-   and SE `.info` extraction to determine if the monkeycd_swe `text.swe` can be
-   used to populate SE translations directly.
-
-3. **Delete graphics directory** (out of scope):
-   `rm -rf games/monkey1/graphics`
-
-4. **Install deps** once the user is ready:
-   `bash scripts/install_deps.sh`
-
----
-
-## Key decisions made
-
-- **Swedish only** (not a generic multi-language toolkit)
-- **SE is primary target**, classic ScummVM is secondary (low extra effort)
-- **No graphics translation** (out of scope)
-- **Self-contained patcher** for distribution — user should not need external tools
-- **GOG MI1SE is P0** test target (Steam is P1)
-- **No GUI** anywhere — Claude does the translation, all tooling is CLI/scriptable
-- **English strings replaced directly**: the patcher injects Swedish text into the English
-  classic SCUMM files embedded in the PAK. No language setting change required.
-- **monkeycd_swe text format compatibility**: translations stored in scummtr format
-  so existing Swedish test translations can be reused
-
----
-
-## P0 open questions (blockers)
-
-**OQ-1 — GOG vs Steam file layout**
-Does GOG MI1SE use the same file structure as Steam? `pak.py` was derived from
-MISETranslator which was Steam-only. Need to verify PAK layout, file locations,
-and `.info` format versions against a real GOG install before writing any patcher.
-
-**OQ-2 — scummtr format ↔ SE .info string alignment**
-The existing Swedish translation (`monkeycd_swe/src/TEXT/text.swe`) is in scummtr
-format extracted from classic MONKEY.000/001. The SE stores text in `.info` files.
-Do string IDs align? Can we convert directly, or is a mapping/reconciliation step needed?
-This determines whether we can test end-to-end without doing new translation work.
-
-See `docs/OPEN_QUESTIONS.md` for all 8 open questions.
+The Swedish translation (`translation/monkey1/swedish.txt`) is sourced from the
+[monkeycd_swe](https://github.com/dwatteau/monkeycd_swe) project and aligns 1:1 with
+the SE strings (4437 strings in the same order). Insult swordfighting strings have been
+translated (see `docs/TRANSLATION_PLAN.md` for the multi-pass translation workflow).
 
 ---
 
 ## Repo structure
+
 ```
-docs/               FRS.md, OPEN_QUESTIONS.md
-games/monkey1/
-  text/             Classic text files (scummtr format)
-  se_translations/  SE JSON files (english + translation fields)
-  references/       TRANSLATE_TABLE (Swedish char code mappings)
-  patches/          Output patch files
+go.mod                          Go module (scumm-patcher)
+cmd/
+  patcher/                      Single binary: auto-detects SE vs Classic, patches game files
+    main.go                     Entry point, auto-detection, arg parsing
+    se.go                       SE pipeline (PAK read/repack, classic inject, font remap, speech sync)
+    classic.go                  Classic pipeline (backup, scummtr inject, CHAR patch, verb layout)
+    patch.go                    Shared patchClassicFiles helper
+    translation.go              Translation file lookup
+    patcher_test.go             Unit tests (SE and Classic error paths)
+    integration_test.go         Integration tests (//go:build integration, needs Monkey1.pak)
+
+internal/
+  pak/                          PAK archive reader/writer (KAPL/LPAK)
+  backup/                       .bak safety copy helper
+  classic/                      scummtr wrapper (InjectTranslation, BuildSpeechMapping)
+    assets/                     Embedded scummtr binaries (Linux/macOS/Windows) — committed to git
+  charset/                      CHAR block patcher (Swedish glyphs) + verb layout patcher
+    assets/                     Embedded scummrp binaries — committed to git
+    bitmaps/                    Swedish glyph BMP source files — committed to git
+    gen/                        Generated .bin files — gitignored; run scripts/build.sh to populate
+  font/                         SE .font glyph lookup table patcher
+  speech/                       speech.info audio sync patcher
+
+translation/
+  monkey1/
+    swedish.txt                 Swedish translation (4437 strings, scummtr format)
+    TRANSLATE_TABLE             Swedish character code mappings
+    glossary.md                 Translation decisions reference
+    PASS1_NOTES.md              Insult swordfighting translation notes
+
+docs/
+  FRS.md                        Functional requirements
+  TEST_PLAN.md                  Test plan (unit, integration, manual)
+  TRANSLATION_PLAN.md           Multi-pass translation workflow
+  TRANSLATION_GUIDE.md          String format, opcodes, control codes, encoding
+
+tools/                          Python utilities for PAK inspection (not part of build pipeline)
+  pak.py                        PAK extractor/repacker
+  patch_verbs.py                Verb button coordinate patcher (standalone inspection)
+
 scripts/
-  install_deps.sh
-  classic/          extract_text.sh, inject_text.sh
-  se/               extract_for_translation.sh, build.sh
-tools/
-  bin/              Built tool binaries (gitignored, created by install_deps.sh)
-  mise/             pak.py, text.py, font.py + README.md
-.claude/
-  settings.json     Project permissions (allow all tools)
+  extract.sh                    Entry point: detect PAK/dir, call sub-scripts
+  extract_pak.sh                Unpack MONKEY1.000/001 from SE PAK → game/monkey1/
+  extract_assets.sh             Extract CHAR blocks, BMPs, dialog strings from game dir
+  build.sh                      Generate CHAR assets + cross-compile patcher → dist/
+  clean.sh                      Remove generated .bin files and dist/ binaries
+  clean_assets.sh               Remove all assets extracted from the game
+  install_deps.sh               Re-download tool binaries (needed only for upgrades)
+
+bin/
+  linux/                        Developer tool binaries (scummtr, scummrp, scummfont, FontXY) — committed
+  darwin/                       Same for macOS
+
+--- gitignored ---
+
+game/monkey1/                   User's game files (never commit copyrighted content)
+  Monkey1.pak                   Place SE PAK here (or pass path to extract.sh)
+  MONKEY1.000 / MONKEY1.001     Classic files (or unpacked from PAK by extract_pak.sh)
+  gen/                          All assets extracted from game (regenerate with extract.sh)
+    charset/english/            Raw CHAR blocks (templates for build.sh)
+    charset/english_bitmaps/    English glyph BMPs (visual reference)
+    strings/english.txt         English dialog strings for translation
+
+internal/charset/gen/           Generated CHAR .bin files (run scripts/build.sh to populate)
+dist/                           Built patcher binaries
 ```
 
+---
+
+## Core pipeline
+
+### Setup (once)
+
+```bash
+# Tool binaries are committed to bin/ and internal/*/assets/ — nothing to install.
+# Only needed if upgrading scummtr/scummrp or if binaries are corrupted:
+bash scripts/install_deps.sh
+```
+
+### Extract game assets
+
+```bash
+# Place game files in game/monkey1/, then:
+bash scripts/extract.sh                          # auto-detects PAK vs classic files
+bash scripts/extract.sh /path/to/Monkey1.pak    # explicit PAK path
+bash scripts/extract.sh /path/to/game/dir/      # explicit game dir
+```
+
+This populates `game/monkey1/gen/` with CHAR blocks, BMPs, and English dialog strings.
+
+### Build the patcher
+
+```bash
+# Requires Go 1.21+ and extracted game assets.
+bash scripts/build.sh
+# Output: dist/mi1-translate-linux, dist/mi1-translate-darwin, dist/mi1-translate-windows.exe, dist/swedish.txt
+```
+
+### Run tests
+
+```bash
+go test ./...                            # unit tests (fast, no game files needed)
+go test -tags integration ./...         # unit + integration (needs game/monkey1/Monkey1.pak)
+```
+
+**Note:** `charset` asset tests (`-tags buildpatcher`) validate the embedded CHAR blocks and only
+apply when building the full patcher. Run them after `build.sh` Step 2 if you've edited glyphs:
+```bash
+go test -tags buildpatcher ./internal/charset/...
+```
+
+---
+
+## Key decisions
+
+- **Swedish only** — not a generic multi-language toolkit
+- **SE is primary target** — Classic ScummVM is secondary (low extra effort)
+- **No graphics translation** — all text in graphics is proper nouns that stay in English
+- **Self-contained patcher** — single binary + `swedish.txt`; user needs no other tools
+- **English strings replaced directly** — no language setting change required
+- **scummtr format** — `swedish.txt` uses scummtr format, compatible with monkeycd_swe
+
+---
+
 ## Reference: monkeycd_swe
-The reference project is at `~/monkeycd_swe`. It contains:
+
+At `~/monkeycd_swe`:
 - `src/TEXT/text.swe` — complete Swedish translation in scummtr format (~4400 lines)
 - `src/REFERENCES/TRANSLATE_TABLE` — Swedish character code mappings
 - `patches/` — working BPS patches for classic MI1 CD version
-This is our test data source.
+
+---
 
 ## Memory
+
 Full context is in `~/.claude/projects/-home-jpalmert-scumm-translation/memory/`.
-Key files: workflow_classic.md, workflow_se.md, file_formats_se.md, tools_reference.md, custom_tools.md.
