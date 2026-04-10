@@ -206,6 +206,47 @@ func TestSEPatcherRePatch(t *testing.T) {
 	t.Logf("Monkey1.pak after re-patch: %d bytes", len(patchedOnce))
 }
 
+// INT-SE-004: Patch twice without manual restore — re-patch reads from backup automatically.
+func TestSEPatcherRePatchAutomatic(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	dir := t.TempDir()
+	origData, err := os.ReadFile(pakPath)
+	if err != nil {
+		t.Fatalf("read PAK: %v", err)
+	}
+	tmpPAK := filepath.Join(dir, "Monkey1.pak")
+	if err := os.WriteFile(tmpPAK, origData, 0644); err != nil {
+		t.Fatalf("write temp PAK: %v", err)
+	}
+
+	// First patch.
+	checkPipelineErr(t, "first runSEPatch", runSEPatch(tmpPAK, "", translationPath))
+
+	firstPatchData, err := os.ReadFile(tmpPAK)
+	if err != nil {
+		t.Fatalf("read first-patched PAK: %v", err)
+	}
+
+	// Second patch directly on the already-patched PAK (no manual restore).
+	checkPipelineErr(t, "second runSEPatch", runSEPatch(tmpPAK, "", translationPath))
+
+	secondPatchData, err := os.ReadFile(tmpPAK)
+	if err != nil {
+		t.Fatalf("read second-patched PAK: %v", err)
+	}
+
+	// Both patches must produce identical output.
+	if len(firstPatchData) != len(secondPatchData) {
+		t.Errorf("re-patch size differs: first=%d, second=%d", len(firstPatchData), len(secondPatchData))
+	}
+	if string(firstPatchData) != string(secondPatchData) {
+		t.Error("re-patch produced different content — backup-based re-read may not be working")
+	}
+	t.Logf("Monkey1.pak: first=%d bytes, second=%d bytes (identical=%v)",
+		len(firstPatchData), len(secondPatchData), string(firstPatchData) == string(secondPatchData))
+}
+
 // INT-SPEECH-001: speech.info EN slots are updated with Swedish SCUMM bytes.
 //
 // This test bypasses the CHAR/font steps (which require scripts/build.sh) and

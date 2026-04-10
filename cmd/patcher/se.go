@@ -78,7 +78,28 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		bakPath, err := backup.Create(inputPAK)
 		if errors.Is(err, backup.ErrBackupExists) {
 			fmt.Printf("    WARNING: %s already exists from a previous run — using it as-is.\n", bakPath)
-			fmt.Printf("    If the game is broken, restore this backup and verify it is the original.\n")
+			// Re-patch: the PAK we just read is already patched from a previous run.
+			// Re-read from the backup to get the unmodified originals.
+			fmt.Printf("    Re-patch detected: reading originals from backup.\n")
+			hdr, indexBlob, namesBlob, entries, err = pak.Read(bakPath)
+			if err != nil {
+				return fmt.Errorf("reading backup PAK: %w", err)
+			}
+			// Re-locate classic entries in the freshly read backup.
+			entry000, entry001 = nil, nil
+			for _, e := range entries {
+				switch strings.ToLower(e.Name) {
+				case "classic/en/monkey1.000":
+					entry000 = e
+				case "classic/en/monkey1.001":
+					entry001 = e
+				}
+			}
+			if entry000 == nil || entry001 == nil {
+				return fmt.Errorf("classic files not found in backup PAK — backup may be corrupt")
+			}
+			fmt.Printf("    MONKEY1.000: %d bytes (from backup)\n", len(entry000.Data))
+			fmt.Printf("    MONKEY1.001: %d bytes (from backup)\n", len(entry001.Data))
 		} else if err != nil {
 			return fmt.Errorf("backup: %w", err)
 		} else {
