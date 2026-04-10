@@ -97,11 +97,13 @@ def decode_strip_basic(src, height, decomp_shr, decomp_mask, horizontal):
     return pixels
 
 def decode_strip_majmin(src, height, decomp_shr):
-    """Codecs 64-68, 84-88, etc.: MajMinCodec"""
-    color    = src[0]
-    bits     = src[1] | (src[2] << 8)
-    num_bits = 16
-    data_pos = 3
+    """Codecs 64-68, 84-88, 104-108, 124-128: MajMinCodec (from ScummVM gfx.cpp)"""
+    color        = src[0]
+    bits         = src[1] | (src[2] << 8)
+    num_bits     = 16
+    data_pos     = 3
+    repeat_mode  = False
+    repeat_count = 0
     pixels = [0] * (8 * height)
 
     def fill():
@@ -114,44 +116,32 @@ def decode_strip_majmin(src, height, decomp_shr):
 
     def read_bits(n):
         nonlocal bits, num_bits
+        fill()
         val = bits & ((1 << n) - 1)
         bits >>= n
         num_bits -= n
         return val
 
-    decomp_mask = 0xFF >> (8 - decomp_shr) if decomp_shr > 0 else 0xFF
-
     for row in range(height):
-        fill()
-        mode = read_bits(1)
-        if mode:
-            fill()
-            reps = read_bits(2) + 1
-            fill()
-            color = read_bits(decomp_shr)
-            for i in range(reps):
-                pixels[row * 8 + i] = color
-            col = reps
-            while col < 8:
-                fill()
-                mode2 = read_bits(1)
-                if mode2:
-                    fill()
-                    delta = read_bits(3)
-                    if delta == 0:
-                        color = (color + 1) & 0xFF
-                    elif delta <= 4:
-                        color = (color + delta) & 0xFF
+        for col in range(8):
+            nonlocal_color = color
+            pixels[row * 8 + col] = nonlocal_color
+
+            if not repeat_mode:
+                if read_bits(1):
+                    if read_bits(1):
+                        diff = read_bits(3) - 4
+                        if diff:
+                            color = (color + diff) & 0xff
+                        else:
+                            repeat_mode = True
+                            repeat_count = read_bits(8) - 1
                     else:
-                        color = (color - (8 - delta)) & 0xFF
-                else:
-                    fill()
-                    color = read_bits(decomp_shr)
-                pixels[row * 8 + col] = color
-                col += 1
-        else:
-            for col in range(8):
-                pixels[row * 8 + col] = color
+                        color = read_bits(decomp_shr)
+            else:
+                repeat_count -= 1
+                if repeat_count == 0:
+                    repeat_mode = False
 
     return pixels
 
