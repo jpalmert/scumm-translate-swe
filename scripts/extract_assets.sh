@@ -87,11 +87,11 @@ echo "Detected game variant: $GAME_ID"
 
 GEN_ROOT="$REPO_ROOT/game/monkey1/gen"
 
-# --- Dump CHAR blocks ---
+# --- Full block dump (used for CHAR, room images, and object images) ---
 echo ""
-echo "=== Dumping CHAR blocks ==="
-DUMP_DIR="$WORK/char_dump"
-"$SCUMMRP" -g "$GAME_ID" -p "$GAME_DIR" -t CHAR -od "$DUMP_DIR"
+echo "=== Dumping all game blocks ==="
+DUMP_DIR="$WORK/full_dump"
+"$SCUMMRP" -g "$GAME_ID" -p "$GAME_DIR" -od "$DUMP_DIR"
 
 # Locate the directory containing the CHAR blocks — differs between game variants
 CHAR_DIR="$(find "$DUMP_DIR" -name "CHAR_0001" -exec dirname {} \; 2>/dev/null | head -1)"
@@ -153,6 +153,57 @@ sed -i \
     "$STR_OUT/english.txt"
 
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
+
+
+# --- Decode room backgrounds (requires Pillow: pip install Pillow) ---
+echo ""
+echo "=== Decoding room backgrounds ==="
+ROOMS_OUT="$GEN_ROOT/rooms"
+mkdir -p "$ROOMS_OUT"
+LECF_DIR="$(find "$DUMP_DIR" -type d -name "LECF" | head -1)"
+if [[ -z "$LECF_DIR" ]]; then
+    echo "  SKIP: LECF directory not found in dump"
+else
+    count=0
+    for lflf_dir in "$LECF_DIR"/LFLF_*; do
+        [[ -d "$lflf_dir" ]] || continue
+        room_num="${lflf_dir##*_}"
+        out_png="$ROOMS_OUT/room_$room_num.png"
+        [[ -f "$out_png" ]] && continue  # skip if already decoded
+        if python3 "$REPO_ROOT/tools/decode_room.py" "$lflf_dir" "$out_png" 2>/dev/null; then
+            count=$((count + 1))
+        fi
+    done
+    echo "  $count room backgrounds -> $ROOMS_OUT"
+fi
+
+# --- Decode object images (requires Pillow: pip install Pillow) ---
+echo ""
+echo "=== Decoding object images ==="
+OBJECTS_OUT="$GEN_ROOT/objects"
+mkdir -p "$OBJECTS_OUT"
+if [[ -z "$LECF_DIR" ]]; then
+    echo "  SKIP: LECF directory not found in dump"
+else
+    count=0
+    for lflf_dir in "$LECF_DIR"/LFLF_*; do
+        [[ -d "$lflf_dir" ]] || continue
+        room_num="${lflf_dir##*_}"
+        room_obj_dir="$OBJECTS_OUT/room_$room_num"
+        # Find all OBIM files in this room's OI directories
+        while IFS= read -r -d '' obim_file; do
+            obj_dir="$(dirname "$obim_file")"
+            obj_num="$(basename "$obj_dir")"
+            out_png="$room_obj_dir/${obj_num}.png"
+            mkdir -p "$room_obj_dir"
+            [[ -f "$out_png" ]] && continue  # skip if already decoded
+            if python3 "$REPO_ROOT/tools/decode_object.py" "$obim_file" "$out_png" 2>/dev/null; then
+                count=$((count + 1))
+            fi
+        done < <(find "$lflf_dir" -name "OBIM" -print0 2>/dev/null)
+    done
+    echo "  $count object images -> $OBJECTS_OUT"
+fi
 
 echo ""
 echo "Done."

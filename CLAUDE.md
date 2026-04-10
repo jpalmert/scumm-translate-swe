@@ -54,15 +54,17 @@ docs/
   TRANSLATION_PLAN.md           Multi-pass translation workflow
   TRANSLATION_GUIDE.md          String format, opcodes, control codes, encoding
 
-tools/                          Python utilities for PAK inspection (not part of build pipeline)
-  pak.py                        PAK extractor/repacker
-  patch_verbs.py                Verb button coordinate patcher (standalone inspection)
+tools/                          Python utilities (see tools/README.md for usage)
+  decode_room.py                Decode SCUMM v5 room backgrounds → PNG (called by extract_assets.sh)
+  decode_object.py              Decode SCUMM v5 object images → PNG (called by extract_assets.sh)
+  pak.py                        PAK extractor/repacker (standalone)
+  patch_verbs.py                Verb button coordinate patcher (standalone)
 
 scripts/
   init_translation.sh           Init swedish.txt with [E]-prefixed English strings (first-time setup)
   extract.sh                    Entry point: detect PAK/dir, call sub-scripts
   extract_pak.sh                Unpack MONKEY1.000/001 from SE PAK → game/monkey1/
-  extract_assets.sh             Extract CHAR blocks, BMPs, dialog strings from game dir
+  extract_assets.sh             Extract CHAR blocks, BMPs, dialog strings, room/object images from game dir
   build.sh                      Generate CHAR assets + cross-compile patcher → dist/
   clean.sh                      Remove generated .bin files and dist/ binaries
   clean_assets.sh               Remove all assets extracted from the game
@@ -81,6 +83,8 @@ game/monkey1/                   User's game files (never commit copyrighted cont
     charset/english/            Raw CHAR blocks (templates for build.sh)
     charset/english_bitmaps/    English glyph BMPs (visual reference)
     strings/english.txt         English dialog strings for translation
+    rooms/                      Room background PNGs (visual reference)
+    objects/                    Object image PNGs grouped by room (visual reference)
 
 internal/charset/gen/           Generated CHAR .bin files (run scripts/build.sh to populate)
 dist/                           Built patcher binaries
@@ -175,6 +179,23 @@ go test -tags buildpatcher ./internal/charset/...
 - **Self-contained patcher** — single binary + `swedish.txt`; user needs no other tools
 - **English strings replaced directly** — no language setting change required
 - **scummtr format** — `swedish.txt` uses scummtr format, compatible with monkeycd_swe
+
+---
+
+## Documents
+
+Read these when working on translation or tooling:
+
+| File | Read when... |
+|------|-------------|
+| `docs/TRANSLATION_GUIDE.md` | Translating strings — format, opcodes, control codes, Swedish encoding |
+| `docs/TRANSLATION_PLAN.md` | Starting or continuing a translation pass — workflow, philosophy, length rules |
+| `docs/FRS.md` | Checking functional requirements or adding a new game |
+| `docs/TEST_PLAN.md` | Writing or running tests — what exists and what it covers |
+| `docs/INSULT_COMEBACK_MAPPINGS_ENGLISH.md` | Working on sword-fight insults/comebacks — the EN pairs and their logic |
+| `translation/monkey1/glossary.md` | Any translation decision — vocabulary, names, register choices |
+| `translation/monkey1/PASS1_NOTES.md` | Reviewing or continuing insult swordfighting translations |
+| `tools/README.md` | Using or modifying the Python tools |
 
 ---
 
