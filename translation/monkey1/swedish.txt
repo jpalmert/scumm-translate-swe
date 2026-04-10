@@ -1951,7 +1951,7 @@
 [035:LSCR#0211](FA)Visst, den är här i den här sodaflaskan.
 [035:LSCR#0211](FA)Öh, jag tror den måste vara i mina andra byxor.
 [035:LSCR#0211](D8)Hej då.
-[035:LSCR#0211](14)Inte så fort, kompansen!
+[035:LSCR#0211](14)Inte så fort, kompis!
 [035:LSCR#0211](14)Du ser inte särskilt spöklik ut i mina ögon.\255\003Du är väldigt rosa...
 [035:LSCR#0211](FA)Det är solbränt.
 [035:LSCR#0211](FA)Jag lider av ett sällsynt pigmenteringssyndrom.
@@ -2754,7 +2754,7 @@
 [045:LSCR#0200](14)Va?
 [045:LSCR#0200](14)Jag tröttnar på dig.
 [045:LSCR#0200](94)Du ska aldrig mer hota hederliga, gripbara pirater, din svällande säck med...\255\003...med...\255\003...med nåt som börjar på 's'!
-[045:LSCR#0200](14)Öh...\255\003...vänta lite nu, kompansen...\255\003...jag bara skojade, fattar ni?\255\003...vi kan lösa det här som gentlemän...
+[045:LSCR#0200](14)Öh...\255\003...vänta lite nu, kompis...\255\003...jag bara skojade, fattar ni?\255\003...vi kan lösa det här som gentlemän...
 [045:LSCR#0200](D8)Åh nej!\255\003Den KLÄMMER!\255\003Måste vara fickludd.
 [045:LSCR#0200](14)
 [045:LSCR#0200](D8)Öh...\255\003...hörru du...\255\003...låt oss inte vara förhastade...
@@ -3078,7 +3078,7 @@
 [057:SCRP#0055](14)Jag går inte på det!\255\003Stick härifrån, din skabbiga havssnigel!
 [057:SCRP#0055](14)Jag är inte hungrig.
 [057:SCRP#0055](14)Hah!
-[057:SCRP#0055](14)Du är ingen pirat!\255\003Stadsfylleansen kunde förolämpa dig bättre i sömnen!\255\003(...och skulle antagligen göra det.)
+[057:SCRP#0055](14)Du är ingen pirat!\255\003Stadsfyllon kunde förolämpa dig bättre i sömnen!\255\003(...och skulle antagligen göra det.)
 [057:SCRP#0055](FA)Jaså?
 [057:SCRP#0055](FA)Jag kan förolämpa vem som helst, din hjärnlösa lerdocka!
 [057:SCRP#0055](FA)Stoppa det i örat, din stora gröna pratsamma larv!
@@ -3096,7 +3096,7 @@
 [057:SCRP#0055](FA)Bråka inte med mig, troll, jag är en mäktig pirat!
 [057:SCRP#0055](FA)30 dubloner?
 [057:SCRP#0055](FA)\255\004\195\000 dubloner?
-[057:SCRP#0055](FA)En åtta?
+[057:SCRP#0055](FA)En dublon?
 [057:SCRP#0055](FA)Inget av betydelse.
 [057:SCRP#0055](FA)Strunt samma, jag måste gå nu.
 [057:SCRP#0055](14)Fint.\255\003Försvinn.
@@ -3114,7 +3114,7 @@
 [058:OBNA#0676](__)sten och växt
 [058:VERB#0677](D8)Läskigt.
 [058:OBNA#0677](__)ben
-[058:VERB#0678](D8)Oj, vilken ovanligt klarsgul färg dom har.
+[058:VERB#0678](D8)Oj, vilken ovanligt klargul färg dom har.
 [058:VERB#0678](D8)Samma gamla röda blommor överallt i skogen.
 [058:VERB#0678](D8)Jag har redan en.
 [058:VERB#0678](D8)Jag tror inte att strosa genom skogen och plocka blommor är bra träning för att bli pirat.
@@ -3266,7 +3266,7 @@
 [059:SCRP#0056](14)Om du inte redan har nån annan finansiering förstås...?
 [059:SCRP#0056](14)Inga kontanter?\255\003Inga problem!
 [059:SCRP#0056](14)Jag tror vi pratar om helt olika skepp här.\255\003Du har uppenbarligen varit borta från skeppsmarknaden ett tag.
-[059:SCRP#0056](14)Jag är glad att det här skeppet inte har öron, kompansen.\255\003För om hon hade det skulle hon smälla till dig.
+[059:SCRP#0056](14)Jag är glad att det här skeppet inte har öron, kompis.\255\003För om hon hade det skulle hon smälla till dig.
 [059:SCRP#0056](14)Hörru...\255\003Det här är ett väldigt rimligt prissatt skepp...\255\003men inte SÅ rimligt.
 [059:SCRP#0056](14)Jag tror inte du har kontanter nog för den här affären heller.\255\003Du har väl NÅN annan betalningsform...\255\003Eller?
 [059:SCRP#0056](14)Jag tvivlar på att du har nog med kontanter för den här affären.
@@ -3312,7 +3312,7 @@
 [059:SCRP#0056](14)Stå på dig!\255\003Hon kommer respektera dig för det.\255\003Och när hon ser det här skeppet...\255\003...kommer hon ÄLSKA dig för det.\255\003Lita på mig.
 [059:SCRP#0056](14)Jag förstår inte. Jag TRODDE du var intresserad av det här skeppet.
 [059:SCRP#0056](14)Jag skulle låta dig ta en liten sväng i hamnen, men vårt försäkringsbolag tillåter det inte.
-[059:SCRP#0056](14)Jag är på din sida, kompansen.\255\003Det är min chef som är den riktiga snåljåpen.
+[059:SCRP#0056](14)Jag är på din sida, kompis.\255\003Det är min chef som är den riktiga snåljåpen.
 [059:SCRP#0056](14)Du kanske inte har insett att det här är den enda skeppshandeln på ön.
 [059:SCRP#0056](14)Jag tänker bara på mina barns utbildningsfond, här.
 [059:SCRP#0056](FA)Låt oss prata tillval.
@@ -3844,7 +3844,7 @@
 [078:SCRP#0133](14)BAFF
 [078:SCRP#0133](14)Kul att se dig, grabben.\255\003Hur mår skeppet?
 [078:SCRP#0133](14)Om du är intresserad av att byta upp dig kan jag ge dig ett bra pris.
-[078:SCRP#0133](14)Tjena, kompansen.
+[078:SCRP#0133](14)Tjena, kompis.
 [078:SCRP#0133](14)Du vet, bara genom att titta på dig kan jag se att du är en världsman.
 [078:SCRP#0133](14)En man med öga för kvalitet.
 [078:SCRP#0133](14)En man som känner igen ett bra fynd när han
