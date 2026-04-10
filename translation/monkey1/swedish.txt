@@ -1590,7 +1590,7 @@
 [030:LSCR#0211](14)...EN GÅNG.
 [030:LSCR#0211](14)Är strax tillbaka.
 [030:LSCR#0211](14)OCH RÖR INGENTING!
-[030:LSCR#0211](14)Jag har ögonen på dig, vesslegransen!\255\003Försök inte med nåt!
+[030:LSCR#0211](14)Jag har ögonen på dig, vesslungen!\255\003Försök inte med nåt!
 [030:LSCR#0211](14)Och inga av dina gamla trick!
 [030:LSCR#0211](14)Jag kan inte tro att jag gör det här igen!
 [030:LSCR#0211](14)Jag räknar med att vara tillbaka om ungefär fem sekunder.
@@ -1962,13 +1962,13 @@
 [035:LSCR#0211](FA)Försök att inte ta den här rotölen personligt.
 [035:LSCR#0211](14)Hörru, du låter en hel del som min hund.
 [035:LSCR#0211](14)Nå, okej.
-[035:LSCR#0211](14)Men var är den fuktiga, unkna, bortom-graven spökdoften?
-[035:LSCR#0211](FA)Den är upptagen med att överröstas av DIN egna dödliga stank.
+[035:LSCR#0211](14)Men var är den fuktiga, unkna spökdoften från andra sidan graven?
+[035:LSCR#0211](FA)Den är upptagen med att överröstas av DIN egen dödliga stank.
 [035:LSCR#0211](FA)Åh, den! Låt mig bara ta av stövlarna...
 [035:LSCR#0211](FA)Det är en ny rotölsparfym. Kanske du vill prova?
 [035:LSCR#0211](14)Akta dig...
 [035:LSCR#0211](14)Nej, glöm det.
-[035:LSCR#0211](14)Om du verkligen är ett spöke, bevisa det.\255\003Låt se dig poppa av huvudet.
+[035:LSCR#0211](14)Om du verkligen är ett spöke, bevisa det.\255\003Låt se dig skruva av huvudet.
 [035:LSCR#0211](FA)Öh...
 [035:LSCR#0211](FA)Um...
 [035:LSCR#0211](FA)Nå...
@@ -2207,7 +2207,7 @@
 [037:SCRP#0049](14)AAAAAAIIIIIEEEEE!!!
 [037:SCRP#0049](54)mördande bevingad djävul
 [037:SCRP#0060](14)Hörru!\255\003Jag gillar inte besök!\255\003Vem är du?
-[037:SCRP#0060](14)Ahoj där, Kapen!\255\003Vad gör du här igen så snart?
+[037:SCRP#0060](14)Ahoj där, Kapten!\255\003Vad gör du här igen så snart?
 [037:SCRP#0060](14)Du trodde väl inte att jag fegade ur?
 [037:SCRP#0060](D8)Öh...\255\003Nej, klart inte.\255\003Jag ville bara berätta att...
 [037:SCRP#0060](D8)...öh...
@@ -2300,9 +2300,9 @@
 [037:SCRP#0060](14)Hej då, Roger.
 [038:OBNA#0486](__)trappa
 [038:OBNA#0487](__)stig
-[038:VERB#0488](D8)Jag har 1 åtta.
+[038:VERB#0488](D8)Jag har 1 dublon.
 [038:VERB#0488](D8)Jag har \255\004\195\000 dubloner.
-[038:VERB#0488](54)1 åtta
+[038:VERB#0488](54)1 dublon
 [038:VERB#0488](54)\255\004\195\000 dubloner
 [038:OBNA#0488](__)@@@@@ dubloner
 [038:VERB#0489](D8)Jag är inte säker, men jag tror han kanske sover.
@@ -2394,10 +2394,10 @@
 [038:SCRP#0121](14)
 [038:SCRP#0121](14)Efter att just ha återvänt från Mêlée hittar LeChuck och hans besättning sitt gamla gömställe i de underjordiska floderna under Monkey Island och kastar ankar.
 [038:SCRP#0121](14)
-[038:SCRP#0121](14)Kapen, herr'n...
+[038:SCRP#0121](14)Kapten, herr'n...
 [038:SCRP#0121](14)Jag ville bara gratulera er till kidnappningen.
-[038:SCRP#0121](14)Kapen?
-[038:SCRP#0121](14)Kapen? Mår ni bra?
+[038:SCRP#0121](14)Kapten?
+[038:SCRP#0121](14)Kapten? Mår ni bra?
 [038:SCRP#0121](14)ALDRIG MÅTT BÄTTRE!
 [038:SCRP#0121](14)Och hur mår vår fånge?
 [038:SCRP#0121](14)Ah ja, fången.\255\003Vi hade lite problem...
@@ -2627,7 +2627,7 @@
 [043:SCRP#0057](FA)Okej, kolla.
 [043:SCRP#0057](FA)Jag glömde visst köpa ett.
 [043:SCRP#0057](FA)Jag vill inte visa dig det.
-[043:SCRP#0057](FA)Jag har den här dödligt utseende kycklingen.
+[043:SCRP#0057](FA)Jag har den här dödsfarliga kycklingen.
 [043:SCRP#0057](14)Ja, det här är ett fint.
 [043:SCRP#0057](14)Då kör vi.
 [043:SCRP#0057](14)Jag föreslår att du tar din ynkliga bak\255\001till butiken och köper ett.\255\003Jag brukar inte låna ut svärd\255\001till elever.
@@ -2743,7 +2743,7 @@
 [045:LSCR#0200](FA)Jag erbjuder en muta för din brud.
 [045:LSCR#0200](FA)Jag använder mitt spjut och min magiska hjälm.
 [045:LSCR#0200](FA)Jag måste gå, jag är dubbelparkerad.
-[045:LSCR#0200](14)Hah!\255\003Byte för mitt snygge, va?
+[045:LSCR#0200](14)Hah!\255\003Skatt för min skatt, va?
 [045:LSCR#0200](14)Många har försökt och dött för sina ansträngningar.
 [045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
 [045:LSCR#0200](FA)Det vore inte snällt.
@@ -3140,7 +3140,7 @@
 [059:VERB#0697](D8)Jösses, kanske jag borde ha köpt den här...
 [059:VERB#0697](D8)Det där är ett snyggt fartyg.
 [059:OBNA#0697](__)båt
-[059:VERB#0731](D8)`Jag sålde ett skepp! Kan ni tänka er det?\255\003Jag drar på en lång semester och spenderar nån stackars idiot pengar! Arrivederci, baby!`\255\003-Stan
+[059:VERB#0731](D8)`Jag sålde ett skepp! Kan ni tänka er det?\255\003Jag drar på en lång semester och spenderar nån stackars idiots pengar! Arrivederci, baby!`\255\003-Stan
 [059:VERB#0731](D8)VÄLKOMMEN TILL STANS BEGAGNADE FARTYG!\255\003Jag är ute och söker jordklotet just nu efter de finaste begagnade marina transportmedlen.\255\003Titta runt, jag är strax tillbaka!\255\003-Stan
 [059:VERB#0731](14) 
 [059:VERB#0731](D8)Bättre att låta bli.
