@@ -34,7 +34,7 @@
 - **Mancomb Seepgood** - pirate in bar
 
 ### Secondary Characters
-- **Fettucini Brothers** → **Fettucini Bröderna** - circus performers (Alfredo and Bill)
+- **Fettucini Brothers** → **Fettucinibröderna** - circus performers (Alfredo and Bill). Swedish compound form (no space/hyphen).
 
 ### Place Names (from graphics - keep English)
 - **Mêlée Island** (with circumflex on first e) - appears in graphics
@@ -97,7 +97,7 @@
 
 ### Object Names - TRANSLATE
 
-- **Idol of Many Hands** → **Den Månghändiga Idolen** - "idol" is correct Swedish for a worshipped statue (SAOL lists this meaning); context in a pirate/cannibal game disambiguates from the celebrity meaning. "Avgud" (false god) carries theological judgment unsuitable for the comedy tone.
+- **Idol of Many Hands** → **Idolen med de Många Händerna** - "idol" is correct Swedish for a worshipped statue (SAOL lists this meaning); context in a pirate/cannibal game disambiguates from the celebrity meaning. "Avgud" (false god) carries theological judgment unsuitable for the comedy tone. Uses descriptive phrase form matching English structure.
 - **rubber chicken with a pulley in the middle** → **gummikyckling med en trissa i mitten**
 - T-shirt → T-shirt (modern item, international word)
 

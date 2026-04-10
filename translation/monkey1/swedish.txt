@@ -1615,7 +1615,7 @@
 [030:LSCR#0211](14)...och jag är drottningen av England.\255\003Kocken där borta serverar alla sina bord själv.
 [030:LSCR#0211](14)Han gillar att spotta på alla sina kunder personligen.\255\003Du är inte bara arbetslös, du ljuger dessutom!
 [030:LSCR#0211](14)
-[030:LSCR#0211](14)Du är en av Fettucini-bröderna?\255\003Var är din fåniga accent?\255\003Och var är dina fåniga tofflor?
+[030:LSCR#0211](14)Du är en av Fettucinibröderna?\255\003Var är din fåniga accent?\255\003Och var är dina fåniga tofflor?
 [030:LSCR#0211](14)Kom tillbaka när du har ett jobb i en trovärdig bransch.
 [030:LSCR#0211](14)
 [030:LSCR#0211](14)Jag har inte sett ett rent skepp där borta på åratal.\255\003Antingen ljuger du, eller så är du bara en usel arbetare.\255\003Hur som helst litar jag inte på dig.
@@ -2997,7 +2997,7 @@
 [053:LSCR#0211](54)lås
 [053:LSCR#0212](14)Men jag är inte klar med dig än!
 [053:LSCR#0212](D8)Åh nej.
-[053:LSCR#0212](14)Trodde du att du kunde smita härifrån med De Många Händernas Idol, va?
+[053:LSCR#0212](14)Trodde du att du kunde smita härifrån med Idolen med de Många Händerna, va?
 [053:LSCR#0212](D8)Titta, jag kan förklara...
 [053:LSCR#0212](14)Det kan jag med--
 [053:LSCR#0212](14)Du förgiftade Guvernörens sällskapspudlar...
