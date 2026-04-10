@@ -9,7 +9,7 @@
 // glyph already used by the corresponding Windows-1252 code. No new glyph
 // images are added — this is a pure lookup-table patch.
 //
-// .font lookup table layout (from font.py / MISETranslator):
+// .font lookup table layout (reverse-engineered from MISETranslator):
 //
 //	address of code c: (c - 0x20) * 2 + 0x5A
 //	each entry is 2 bytes; only the first byte is the glyph index.

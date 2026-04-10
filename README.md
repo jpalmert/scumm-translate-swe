@@ -83,16 +83,15 @@ internal/
     font.go
     font_test.go
 
-tools/                      Python tools for SE translation work (developer use)
+tools/                      Python utilities for PAK inspection (not part of build pipeline)
   pak.py                    PAK archive extractor/repacker
-  text.py                   .info file text extractor/injector
+  patch_verbs.py            Verb button coordinate patcher (standalone inspection)
   README.md
 
 scripts/
   extract.sh                Top-level entry point: detects PAK vs game dir, calls sub-scripts
   extract_pak.sh            Unpack MONKEY1.000/001 from an SE PAK archive → game/monkey1/
   extract_assets.sh         Extract CHAR blocks, BMPs and dialog strings from a game dir
-  extract_text.sh           Generic scummtr text extraction (any SCUMM game/game-ID)
   build.sh                  Generate Swedish charset assets and cross-compile the patcher
   clean.sh                  Remove build artifacts (gen/ .bin files and dist/ binaries)
   clean_assets.sh           Remove all assets extracted from the game (undoes extract.sh)
@@ -266,12 +265,8 @@ the classic workflow works standalone — no Special Edition required:
    ```
    bash scripts/extract.sh /path/to/game/
    ```
-3. For a generic text-only extraction to a custom output file:
-   ```
-   bash scripts/extract_text.sh <game_id> /path/to/game/ translation/<game>/text.txt
-   ```
-4. Translate `translation/<game>/text.txt`.
-5. Add a translation directory under `translation/<game>/` and a new patcher command under `cmd/` following the Monkey Island 1 pattern.
+3. Translate `game/<game>/gen/strings/english.txt` → `translation/<game>/swedish.txt`.
+4. Add a translation directory under `translation/<game>/` and a new patcher command under `cmd/` following the Monkey Island 1 pattern.
 
 The distributable end-user patcher patches game files in-place and works on Windows,
 macOS, and Linux — no external tools needed by the end user.
@@ -280,7 +275,7 @@ macOS, and Linux — no external tools needed by the end user.
 
 1. Investigate the PAK structure with `tools/pak.py extract`.
 2. Determine whether the game uses embedded classic SCUMM files (use the scummtr approach)
-   or SE-specific `.info` text files (use `tools/text.py` approach).
+   or SE-specific `.info` text files — investigate as needed).
 4. Add a new translation directory under `translation/<game>/`.
 5. Add a new command under `cmd/` following the existing pattern.
 

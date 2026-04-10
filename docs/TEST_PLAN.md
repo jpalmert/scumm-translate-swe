@@ -132,12 +132,12 @@ is larger after injection (Swedish text is longer than English).
 #### INT-EXTRACT-PAK: Extracting strings from PAK-sourced classic files
 Extract `MONKEY1.000/.001` from the real PAK, write to a temp dir with uppercase names,
 run scummtr export. Assert output is non-empty. Mirrors the PAK input mode of
-`scripts/se/extract_classic_strings.sh`.
+`scripts/extract_pak.sh + scripts/extract_assets.sh`.
 
 #### INT-EXTRACT-DIR: Extracting strings from a classic files directory (uppercase and lowercase)
 Two subtests — write classic files as UPPERCASE and as lowercase, copy to work dir
 with normalised uppercase names, run scummtr export. Assert output is non-empty.
-Mirrors the directory input mode of `scripts/se/extract_classic_strings.sh`.
+Mirrors the directory input mode of `scripts/extract_pak.sh + scripts/extract_assets.sh`.
 
 ### SE patcher (`cmd/patcher`)
 

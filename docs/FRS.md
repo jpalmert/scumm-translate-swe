@@ -138,8 +138,4 @@ MI1 is used as a test bed because an existing Swedish translation (from monkeycd
 
 ## 6. Open Issues
 
-
-Critical blockers — all resolved as of 2026-04-05:
-- OQ-1: GOG vs Steam file layout differences — RESOLVED
-- OQ-2: String ID alignment between scummtr format and SE .info format — RESOLVED
-- OQ-3: Self-contained patcher technology choice — RESOLVED (Go binary)
+None. All critical blockers resolved as of 2026-04-05.

@@ -168,7 +168,7 @@ func TestIdentityTranslation(t *testing.T) {
 
 // INT-EXTRACT-PAK: Extracting strings from files sourced from a PAK produces non-empty output.
 //
-// This mirrors the PAK input mode of scripts/se/extract_classic_strings.sh:
+// Mirrors the pipeline used by scripts/extract_pak.sh + scripts/extract_assets.sh:
 // classic files are pulled from Monkey1.pak, written to a temp directory with
 // uppercase names, then scummtr exports strings from them.
 func TestExtractStringsFromPAK(t *testing.T) {
@@ -219,7 +219,7 @@ func TestExtractStringsFromPAK(t *testing.T) {
 
 // INT-EXTRACT-DIR: Extracting strings from a directory of classic files produces non-empty output.
 //
-// This mirrors the directory input mode of scripts/se/extract_classic_strings.sh:
+// Mirrors the directory input mode of scripts/extract_assets.sh:
 // the user provides a directory containing MONKEY1.000 + MONKEY1.001 directly,
 // skipping the PAK extraction step. Tests both uppercase and lowercase filenames,
 // since the script normalises them to uppercase before invoking scummtr.
