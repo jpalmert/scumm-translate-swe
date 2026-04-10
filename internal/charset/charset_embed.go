@@ -22,13 +22,3 @@ var patchedChar0004 []byte // 18 px verb buttons
 //go:embed gen/char_0006_patched.bin
 var patchedChar0006 []byte // 13 px drop-shadow menu font
 
-// scummrp binaries for each supported platform, embedded at compile time.
-
-//go:embed assets/scummrp-linux-x64
-var scummrpLinux []byte
-
-//go:embed assets/scummrp-darwin-x64
-var scummrpDarwin []byte
-
-//go:embed assets/scummrp-windows-x64.exe
-var scummrpWindows []byte

@@ -50,12 +50,17 @@
 package charset
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"runtime"
 )
+
+// ErrCharDataNotBuilt is returned by Patch when the patched CHAR block data
+// has not been generated yet. Run scripts/build.sh to generate it.
+var ErrCharDataNotBuilt = errors.New("CHAR block data not built — run scripts/build.sh first")
 
 // Patch replaces CHAR_0001, CHAR_0002, CHAR_0003, CHAR_0004, and CHAR_0006 in the
 // MONKEY1.000/001 files in gameDir with Swedish-glyph versions.
@@ -64,6 +69,10 @@ import (
 // by scummrp's monkeycdalt game ID. Both the Classic and SE pipelines copy the
 // game files to a temp directory with uppercase names before calling Patch.
 func Patch(gameDir string) error {
+	if len(patchedChar0001) == 0 {
+		return ErrCharDataNotBuilt
+	}
+
 	var scummrpBin []byte
 	var scummrpName string
 	switch runtime.GOOS {

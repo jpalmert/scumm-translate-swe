@@ -3,12 +3,14 @@
 package main
 
 import (
+	"errors"
 	"os"
 	"path/filepath"
 	"runtime"
 	"strings"
 	"testing"
 
+	"scumm-patcher/internal/charset"
 	"scumm-patcher/internal/pak"
 )
 
@@ -60,6 +62,17 @@ func integrationPaths(t *testing.T) (pakPath, translationPath string) {
 	return
 }
 
+// checkPipelineErr skips the test if err is ErrCharDataNotBuilt, otherwise fails.
+func checkPipelineErr(t *testing.T, label string, err error) {
+	t.Helper()
+	if errors.Is(err, charset.ErrCharDataNotBuilt) {
+		t.Skipf("%s: %v", label, err)
+	}
+	if err != nil {
+		t.Fatalf("%s: %v", label, err)
+	}
+}
+
 // INT-SE-001: Full SE pipeline — patched PAK is valid, .001 grew, fonts patched.
 func TestSEPatcherFullPipeline(t *testing.T) {
 	pakPath, translationPath := integrationPaths(t)
@@ -82,9 +95,7 @@ func TestSEPatcherFullPipeline(t *testing.T) {
 	dir := t.TempDir()
 	outPath := filepath.Join(dir, "Monkey1_patched.pak")
 
-	if err := runSEPatch(pakPath, outPath, translationPath); err != nil {
-		t.Fatalf("runSEPatch: %v", err)
-	}
+	checkPipelineErr(t, "runSEPatch", runSEPatch(pakPath, outPath, translationPath))
 
 	_, _, _, patchedEntries, err := pak.Read(outPath)
 	if err != nil {
@@ -140,9 +151,7 @@ func TestSEPatcherInPlaceBackup(t *testing.T) {
 		t.Fatalf("write temp PAK: %v", err)
 	}
 
-	if err := runSEPatch(tmpPAK, "", translationPath); err != nil {
-		t.Fatalf("runSEPatch in-place: %v", err)
-	}
+	checkPipelineErr(t, "runSEPatch in-place", runSEPatch(tmpPAK, "", translationPath))
 
 	bakData, err := os.ReadFile(tmpPAK + ".bak")
 	if err != nil {
@@ -171,9 +180,7 @@ func TestSEPatcherRePatch(t *testing.T) {
 	}
 
 	// First patch.
-	if err := runSEPatch(tmpPAK, "", translationPath); err != nil {
-		t.Fatalf("first runSEPatch: %v", err)
-	}
+	checkPipelineErr(t, "first runSEPatch", runSEPatch(tmpPAK, "", translationPath))
 
 	// Restore backup.
 	bakData, err := os.ReadFile(tmpPAK + ".bak")
@@ -222,9 +229,7 @@ func TestClassicPatcherFullPipeline(t *testing.T) {
 	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), data000, 0644)
 	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), data001, 0644)
 
-	if err := runClassicPatch(dir, translationPath); err != nil {
-		t.Fatalf("runClassicPatch: %v", err)
-	}
+	checkPipelineErr(t, "runClassicPatch", runClassicPatch(dir, translationPath))
 
 	patched001, _ := os.ReadFile(filepath.Join(dir, "MONKEY1.001"))
 	if len(patched001) <= len(data001) {

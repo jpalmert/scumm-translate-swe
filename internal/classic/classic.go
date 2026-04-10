@@ -90,7 +90,7 @@ func encodeBytes(data []byte) []byte {
 	lines := strings.Split(s, "\n")
 	for i, line := range lines {
 		if j := strings.IndexByte(line, ']'); j >= 0 && strings.HasPrefix(line, "[") {
-			if strings.TrimSpace(line[j+1:]) == "" {
+			if line[j+1:] == "" {
 				lines[i] = line[:j+1] + " "
 			}
 		}

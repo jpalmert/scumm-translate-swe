@@ -71,7 +71,7 @@ func TestEncodeForScummtrPadsEmptyContentLines(t *testing.T) {
 	}
 }
 
-// ENCODE-005: Whitespace-only content is also padded to a single space.
+// ENCODE-005: Whitespace-only content is preserved as-is (only truly empty content is padded).
 func TestEncodeForScummtrPadsWhitespaceContentLines(t *testing.T) {
 	dir := t.TempDir()
 	p := filepath.Join(dir, "t.txt")
