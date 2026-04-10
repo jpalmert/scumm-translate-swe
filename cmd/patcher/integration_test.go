@@ -373,8 +373,10 @@ func TestSpeechRoundTrip(t *testing.T) {
 		svByPos[posKey{header, p}] = text
 	}
 
-	// Walk EN lines; for each, look up the patched SV text and compare with
-	// what ScummBytes would produce for the Swedish translation.
+	// Walk EN lines; for each, verify the patched SV text matches one of the
+	// Swedish variants stored in the mapping for that EN sentence.
+	// The mapping now collects ALL distinct Swedish translations per English key,
+	// so every positional variant should be accounted for.
 	mismatches := 0
 	checked := 0
 	enPos := make(map[string]int)
@@ -392,7 +394,7 @@ func TestSpeechRoundTrip(t *testing.T) {
 			if strings.TrimSpace(enPart) == "" {
 				continue
 			}
-			expectedSV, ok := mapping[enPart]
+			svVariants, ok := mapping[enPart]
 			if !ok {
 				continue // this EN sentence has no Swedish translation in the mapping
 			}
@@ -405,14 +407,25 @@ func TestSpeechRoundTrip(t *testing.T) {
 			}
 			actualSV := classic.DecodeScummtrEscapes(svPart)
 
-			if string(actualSV) != string(expectedSV) {
+			// A match against any stored variant is correct.
+			matched := false
+			for _, variant := range svVariants {
+				if string(actualSV) == string(variant) {
+					matched = true
+					break
+				}
+			}
+			if !matched {
 				mismatches++
 				if mismatches <= 5 {
 					t.Logf("MISMATCH at %s pos %d part %d:", header, p, i)
-					t.Logf("  EN text:     %q", enPart)
-					t.Logf("  expected SV: %x (%q)", expectedSV, expectedSV)
-					t.Logf("  actual SV:   %x (%q)", actualSV, actualSV)
-					t.Logf("  raw svPart:  %q", svPart)
+					t.Logf("  EN text:    %q", enPart)
+					t.Logf("  actual SV:  %x (%q)", actualSV, actualSV)
+					t.Logf("  variants:   %d stored", len(svVariants))
+					for vi, v := range svVariants {
+						t.Logf("    [%d] %x (%q)", vi, v, v)
+					}
+					t.Logf("  raw svPart: %q", svPart)
 				}
 			}
 		}
@@ -422,17 +435,9 @@ func TestSpeechRoundTrip(t *testing.T) {
 	if checked < 100 {
 		t.Errorf("too few pairs checked: %d", checked)
 	}
-	// Positional mismatches occur when the same English string appears in multiple
-	// resource positions with different Swedish translations.  The text-based mapping
-	// stores only one Swedish value per English key, so some positions will have a
-	// mismatch between speech.info (wrong Swedish) and MONKEY1.001 (correct Swedish).
-	// These lines lose audio in-game but are a known limitation of text-based lookup.
-	// The threshold catches regressions; the encoding bugs fixed by this package
-	// previously caused ~383 mismatches — all genuine encoding errors.
-	const knownPositionalMismatches = 150
-	if mismatches > knownPositionalMismatches {
-		t.Errorf("speech.info byte mismatches (%d) exceeded threshold (%d) — likely a new encoding bug",
-			mismatches, knownPositionalMismatches)
+	if mismatches > 0 {
+		t.Errorf("%d sentences have a Swedish translation not present in the mapping — encoding bug",
+			mismatches)
 	}
 }
 

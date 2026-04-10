@@ -108,7 +108,7 @@ func TestEncodeForScummtrStripsOpcode(t *testing.T) {
 	}
 }
 
-// SPEECH-001: buildSpeechMapping builds EN→SCUMM_bytes from aligned files.
+// SPEECH-001: buildSpeechMapping builds EN→[]SCUMM_bytes from aligned files.
 // Multi-page strings are split on \255\003 so each sentence maps individually.
 func TestBuildSpeechMapping(t *testing.T) {
 	en := []byte("[001:SCRP#0001] \n[001:SCRP#0001]The END for you!\n[001:SCRP#0002]Hello there.\\255\\003Goodbye now.\n")
@@ -118,29 +118,29 @@ func TestBuildSpeechMapping(t *testing.T) {
 	m := buildSpeechMapping(en, sv)
 
 	// Single-page entry maps directly.
-	sv1, ok := m["The END for you!"]
+	sv1List, ok := m["The END for you!"]
 	if !ok {
 		t.Fatalf("expected 'The END for you!' in mapping, got keys: %v", mapKeys(m))
 	}
 	want := ScummBytes("SLUTET för dig!")
-	if string(sv1) != string(want) {
-		t.Errorf("SCUMM bytes: got %v, want %v", sv1, want)
+	if len(sv1List) != 1 || string(sv1List[0]) != string(want) {
+		t.Errorf("SCUMM bytes: got %v, want [%v]", sv1List, want)
 	}
 
 	// Multi-page string: each sentence is mapped individually.
-	sv2, ok := m["Hello there."]
+	sv2List, ok := m["Hello there."]
 	if !ok {
 		t.Fatalf("expected 'Hello there.' mapped as individual sentence")
 	}
-	if string(sv2) != string(ScummBytes("Hej då.")) {
-		t.Errorf("first sentence: got %v, want %v", sv2, ScummBytes("Hej då."))
+	if len(sv2List) != 1 || string(sv2List[0]) != string(ScummBytes("Hej då.")) {
+		t.Errorf("first sentence: got %v, want [%v]", sv2List, ScummBytes("Hej då."))
 	}
-	sv3, ok := m["Goodbye now."]
+	sv3List, ok := m["Goodbye now."]
 	if !ok {
 		t.Fatalf("expected 'Goodbye now.' mapped as individual sentence")
 	}
-	if string(sv3) != string(ScummBytes("Adjö nu.")) {
-		t.Errorf("second sentence: got %v, want %v", sv3, ScummBytes("Adjö nu."))
+	if len(sv3List) != 1 || string(sv3List[0]) != string(ScummBytes("Adjö nu.")) {
+		t.Errorf("second sentence: got %v, want [%v]", sv3List, ScummBytes("Adjö nu."))
 	}
 
 	// Full multi-page key must NOT be in the map (speech.info has individual sentences).
@@ -151,6 +151,30 @@ func TestBuildSpeechMapping(t *testing.T) {
 	// Empty entries (just space or empty) should not appear as keys.
 	if _, bad := m[" "]; bad {
 		t.Errorf("empty-content entry should not be in mapping")
+	}
+}
+
+// SPEECH-001b: buildSpeechMapping collects all distinct Swedish variants per EN key.
+func TestBuildSpeechMappingMultipleVariants(t *testing.T) {
+	// "Hello there." appears twice with different Swedish translations.
+	en := []byte("[001:SCRP#0001]Hello there.\n[001:SCRP#0002]Hello there.\n[001:SCRP#0003]Hello there.\n")
+	sv := []byte("[001:SCRP#0001]Hej där.\n[001:SCRP#0002]God dag.\n[001:SCRP#0003]Hej där.\n")
+
+	m := buildSpeechMapping(en, sv)
+
+	svList, ok := m["Hello there."]
+	if !ok {
+		t.Fatalf("expected 'Hello there.' in mapping")
+	}
+	// Two distinct Swedish translations: "Hej där." and "God dag." (third is duplicate of first).
+	if len(svList) != 2 {
+		t.Errorf("expected 2 distinct translations, got %d: %v", len(svList), svList)
+	}
+	if string(svList[0]) != string(ScummBytes("Hej där.")) {
+		t.Errorf("first variant: got %v, want %v", svList[0], ScummBytes("Hej där."))
+	}
+	if string(svList[1]) != string(ScummBytes("God dag.")) {
+		t.Errorf("second variant: got %v, want %v", svList[1], ScummBytes("God dag."))
 	}
 }
 
@@ -167,12 +191,13 @@ func TestBuildSpeechMappingExcludesSwordFight(t *testing.T) {
 	if _, ok := m["How appropriate.  You fight like a cow."]; ok {
 		t.Error("comeback should be excluded from mapping")
 	}
-	if _, ok := m["Hello there."]; !ok {
+	list, ok := m["Hello there."]
+	if !ok || len(list) == 0 {
 		t.Error("non-sword-fight entry should be included in mapping")
 	}
 }
 
-func mapKeys(m map[string][]byte) []string {
+func mapKeys(m map[string][][]byte) []string {
 	keys := make([]string, 0, len(m))
 	for k := range m {
 		keys = append(keys, k)

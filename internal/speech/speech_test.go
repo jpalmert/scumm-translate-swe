@@ -38,8 +38,8 @@ func TestPatch(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	mapping := map[string][]byte{
-		"I love a circus!": []byte("Jag \x7clskar cirkus!"),
+	mapping := map[string][][]byte{
+		"I love a circus!": {[]byte("Jag \x7clskar cirkus!")},
 	}
 
 	n, err := Patch(path, mapping)
@@ -102,5 +102,58 @@ func TestWriteSlot(t *testing.T) {
 		if slot[i] != 0 {
 			t.Errorf("slot[%d] = %d, want 0", i, slot[i])
 		}
+	}
+}
+
+// SPEECH-PATCH-004: Multiple Swedish variants append extra entries with same cue header.
+func TestPatchAppendsExtraEntries(t *testing.T) {
+	dir := t.TempDir()
+	path := filepath.Join(dir, "speech.info")
+
+	cueName := "CUE_1_room_1_1"
+	data := buildTestSpeechInfo("", cueName, "Hello there.")
+	origLen := len(data)
+	if err := os.WriteFile(path, data, 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	mapping := map[string][][]byte{
+		"Hello there.": {[]byte("Hej där."), []byte("God dag.")},
+	}
+
+	n, err := Patch(path, mapping)
+	if err != nil {
+		t.Fatalf("Patch: %v", err)
+	}
+	if n != 2 {
+		t.Errorf("expected 2 (1 in-place + 1 appended), got %d", n)
+	}
+
+	updated, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	// File should have grown by one entryStride.
+	wantLen := origLen + entryStride
+	if len(updated) != wantLen {
+		t.Errorf("file size: got %d, want %d", len(updated), wantLen)
+	}
+
+	// Original entry: EN slot = first SV value.
+	en1 := slotString(updated[entry1Base+headerSize : entry1Base+headerSize+slotSize])
+	if en1 != "Hej där." {
+		t.Errorf("original entry EN slot: got %q, want %q", en1, "Hej där.")
+	}
+
+	// Appended entry: same cue header, EN slot = second SV value.
+	appended := entry1Base + entryStride
+	cue2 := string(updated[appended : appended+len(cueName)])
+	if cue2 != cueName {
+		t.Errorf("appended entry cue: got %q, want %q", cue2, cueName)
+	}
+	en2 := slotString(updated[appended+headerSize : appended+headerSize+slotSize])
+	if en2 != "God dag." {
+		t.Errorf("appended entry EN slot: got %q, want %q", en2, "God dag.")
 	}
 }

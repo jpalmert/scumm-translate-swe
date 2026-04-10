@@ -188,12 +188,14 @@ func DecodeScummtrEscapes(s string) []byte {
 
 // BuildSpeechMapping extracts the original English text from the classic game
 // files in gameDir, then parses the Swedish translation at translationPath, and
-// returns a map from each original English string to its SCUMM-encoded Swedish
-// byte representation.
+// returns a map from each original English string to all distinct SCUMM-encoded
+// Swedish byte representations that correspond to it.
 //
-// This map is used to update speech.info EN slots so that the SE engine can
-// match voiced lines to audio cues after the Swedish text has been injected.
-func BuildSpeechMapping(gameDir, translationPath string) (map[string][]byte, error) {
+// A single English string can have multiple distinct Swedish translations when
+// the same phrase appears in different contexts (e.g. "Hello" → ["Hej!", "Hallå!"]).
+// Each translation produces a separate speech.info entry so the SE engine can
+// match voiced lines to audio cues regardless of which Swedish variant appears.
+func BuildSpeechMapping(gameDir, translationPath string) (map[string][][]byte, error) {
 	scummtrPath, tmpDir, cleanup, err := setupScummtr()
 	if err != nil {
 		return nil, err
@@ -217,6 +219,16 @@ func BuildSpeechMapping(gameDir, translationPath string) (map[string][]byte, err
 	return buildSpeechMapping(enData, svData), nil
 }
 
+// appendDistinct appends sv to list if it is not already present.
+func appendDistinct(list [][]byte, sv []byte) [][]byte {
+	for _, existing := range list {
+		if string(existing) == string(sv) {
+			return list
+		}
+	}
+	return append(list, sv)
+}
+
 // swordFightResources lists the resource headers whose strings are sword-fight
 // insults and comebacks. These are intentionally excluded from the speech
 // mapping because the Swedish translation uses non-literal creative rewrites;
@@ -226,11 +238,14 @@ var swordFightResources = map[string]bool{
 	"[088:SCRP#0086]": true, // comebacks
 }
 
-// buildSpeechMapping builds the EN→SCUMM_bytes mapping from raw data slices.
+// buildSpeechMapping builds the EN→[]SCUMM_bytes mapping from raw data slices.
 // Both files use scummtr header format: "[room:TYPE#resnum]text".
 // Entries are matched positionally within each resource.
 // Sword-fight insult/comeback resources are excluded (see swordFightResources).
-func buildSpeechMapping(enData, svData []byte) map[string][]byte {
+//
+// Each English key maps to a list of all distinct Swedish byte representations
+// that correspond to it. Duplicates (same SV bytes seen again) are not added.
+func buildSpeechMapping(enData, svData []byte) map[string][][]byte {
 	// Build SV groups: resource_header -> []text in order.
 	// Strip any (opcode) prefix from text — scummtr -A extraction includes
 	// these but they are not part of the translatable string.
@@ -244,7 +259,7 @@ func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 	}
 
 	svPos := make(map[string]int)
-	mapping := make(map[string][]byte)
+	mapping := make(map[string][][]byte)
 	for _, line := range strings.Split(string(enData), "\n") {
 		j := strings.IndexByte(line, ']')
 		if j < 0 || !strings.HasPrefix(line, "[") {
@@ -279,7 +294,7 @@ func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 				}
 				svPart := svParts[i]
 				if strings.TrimSpace(enPart) != "" && strings.TrimSpace(svPart) != "" {
-					mapping[enPart] = ScummBytes(svPart)
+					mapping[enPart] = appendDistinct(mapping[enPart], ScummBytes(svPart))
 				}
 			}
 		}
