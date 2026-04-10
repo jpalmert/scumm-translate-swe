@@ -204,9 +204,9 @@
 [010:SCRP#0022](7A)Ge
 [010:SCRP#0022](7A)Öppna
 [010:SCRP#0022](7A)Stäng
-[010:SCRP#0022](7A)Plocka upp
+[010:SCRP#0022](7A)Ta
 [010:SCRP#0022](7A)Titta på
-[010:SCRP#0022](7A)Prata med
+[010:SCRP#0022](7A)Tala med
 [010:SCRP#0022](7A)Använd
 [010:SCRP#0022](7A)Tryck
 [010:SCRP#0022](7A)Dra
@@ -2412,7 +2412,7 @@
 [038:SCRP#0121](14)Får en nästan att önska att man var där och tittade på.
 [038:SCRP#0121](14)Ah...ja herr'n...\255\003--usch--\255\003...det gör det minsann.
 [038:SCRP#0121](14)Gå nu och kolla roten.\255\003Se till att den är ordentligt inlåst.
-[038:SCRP#0121](14)Aye aye, kapen.
+[038:SCRP#0121](14)Aj aj, kapten.
 [038:SCRP#0121](14) 
 [039:VERB#0497](D8)Mörkt och illavarslande.
 [039:OBNA#0497](__)grotta
@@ -2783,7 +2783,7 @@
 [049:LSCR#0200](94)Va vill du din skabbiga landlansen?
 [049:LSCR#0200](94)Att stoppa en pirat kan va farligt för din hälsa.
 [049:LSCR#0200](94)Flytta på dej, annars hugger ja mej igenom!
-[049:LSCR#0200](94)Ajja, det här bättre va viktigt.
+[049:LSCR#0200](94)Aye, det här bättre va viktigt.
 [049:LSCR#0200](FA)Fin kväll vi har, eller hur?
 [049:LSCR#0200](FA)Varför pratar ni så konstigt?
 [049:LSCR#0200](FA)Har ni märkt att alla de här vägarna börjar se likadana ut?
@@ -3993,8 +3993,8 @@
 [081:SCRP#0092](14)Det är därför vi allihop sitter här istället för att pirata.
 [081:SCRP#0092](14)
 [081:SCRP#0092](14)Just det.
-[082:SCRP#0093](14)Aja.
-[082:SCRP#0093](FA)Aja, själv.
+[082:SCRP#0093](14)Aye.
+[082:SCRP#0093](FA)Aye, själv.
 [082:SCRP#0093](FA)Fin hatt.
 [082:SCRP#0093](FA)Så, berätta om LOOM.
 [082:SCRP#0093](FA)Herregud, vilken genomskinlig säljpitch.
@@ -4007,7 +4007,7 @@
 [082:SCRP#0093](14)Loom® har inget betungande skrivande, kartritande eller föremålshantering.\255\003Och till skillnad från många äventyrsspel idag är det lätt för nybörjare att njuta av.\255\003En ledande speltidning säger att det är 'Förtrollande...komplext...fängslande.'
 [082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom® idag!
 [082:SCRP#0093](14)Förlåt, men vissa ämnen gör mig bara så upprymd.
-[082:SCRP#0093](14)Aja.
+[082:SCRP#0093](14)Aye.
 [083:VERB#0901](D8)Den heter "Hur du får ett ben upp i skattletandet."
 [083:OBNA#0901](__)broschyr
 [083:VERB#0902](D8)Den heter "Hur du får ett huvud för navigering."
