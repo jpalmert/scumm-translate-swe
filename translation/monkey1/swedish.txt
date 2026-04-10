@@ -1213,8 +1213,8 @@
 [028:LSCR#0220](14)Tja...\255\003Okej då, men man blir inte pirat bara genom att FRÅGA.
 [028:LSCR#0220](14)Du måste gå igenom...
 [028:LSCR#0220](14)De tre proven!\254\001\255\002
-[028:LSCR#0220](14)           De tre proven!\254\001\255\002
-[028:LSCR#0220](14)     De tre proven!
+[028:LSCR#0220](14)        De tre proven!\254\001\255\002
+[028:LSCR#0220](14)    De tre proven!
 [028:LSCR#0220](14)
 [028:LSCR#0220](D8)Öh...\255\003Vilka tre prov är det?
 [028:LSCR#0220](14)Det finns tre prov som varje pirat måste klara.
