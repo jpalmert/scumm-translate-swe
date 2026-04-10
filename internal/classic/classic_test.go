@@ -88,10 +88,31 @@ func TestEncodeForScummtrPadsWhitespaceContentLines(t *testing.T) {
 	}
 }
 
+// ENCODE-006: (opcode) prefixes are stripped from text before injection.
+func TestEncodeForScummtrStripsOpcode(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "t.txt")
+	// Swedish.txt format produced by scummtr -A extraction includes opcode prefixes.
+	input := "[001:OBNA#0016](__)djungel\n[001:VERB#0026](D8)Det är en flaska.\n[002:SCRP#0037](93)\n"
+	os.WriteFile(p, []byte(input), 0644)
+
+	got, err := encodeForScummtr(p)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	// Opcodes stripped; empty content padded; Swedish chars encoded.
+	want := "[001:OBNA#0016]djungel\n[001:VERB#0026]Det \x5cr en flaska.\n[002:SCRP#0037] \n"
+	want = "[001:OBNA#0016]djungel\n[001:VERB#0026]Det \\124r en flaska.\n[002:SCRP#0037] \n"
+	if string(got) != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
 // SPEECH-001: buildSpeechMapping builds EN→SCUMM_bytes from aligned files.
 func TestBuildSpeechMapping(t *testing.T) {
 	en := []byte("[001:SCRP#0001] \n[001:SCRP#0001]The END for you!\n")
-	sv := []byte("[001:SCRP#0001] \n[001:SCRP#0001]SLUTET för dig!\n")
+	// Swedish data includes (opcode) prefix as produced by scummtr -A extraction.
+	sv := []byte("[001:SCRP#0001](27) \n[001:SCRP#0001](27)SLUTET för dig!\n")
 
 	m := buildSpeechMapping(en, sv)
 
@@ -115,7 +136,7 @@ func TestBuildSpeechMapping(t *testing.T) {
 // SPEECH-002: sword-fight insults and comebacks are excluded from the mapping.
 func TestBuildSpeechMappingExcludesSwordFight(t *testing.T) {
 	en := []byte("[088:SCRP#0085]You fight like a dairy farmer.\n[088:SCRP#0086]How appropriate.  You fight like a cow.\n[001:OBNA#0001]Hello there.\n")
-	sv := []byte("[088:SCRP#0085]Du slåss som en bonde.\n[088:SCRP#0086]Lämpligt.  Du slåss som en ko.\n[001:OBNA#0001]Hej där.\n")
+	sv := []byte("[088:SCRP#0085](27)Du slåss som en bonde.\n[088:SCRP#0086](27)Lämpligt.  Du slåss som en ko.\n[001:OBNA#0001](__)Hej där.\n")
 
 	m := buildSpeechMapping(en, sv)
 

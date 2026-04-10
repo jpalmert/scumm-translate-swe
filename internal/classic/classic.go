@@ -75,8 +75,12 @@ func encodeForScummtr(translationPath string) ([]byte, error) {
 }
 
 // encodeBytes converts UTF-8 Swedish characters in scummtr-format data to
-// SCUMM escape codes, and pads empty-content header lines with a single space
+// SCUMM escape codes, strips leading (opcode) prefixes from the text portion
+// of each header line, and pads empty-content header lines with a single space
 // so scummtr does not reject them.
+//
+// The (opcode) prefix — e.g. "(D8)", "(__)" — is produced by scummtr -A
+// extraction for identification purposes but must not appear in injected text.
 func encodeBytes(data []byte) []byte {
 	s := string(data)
 	for _, m := range scummCharMap {
@@ -90,12 +94,27 @@ func encodeBytes(data []byte) []byte {
 	lines := strings.Split(s, "\n")
 	for i, line := range lines {
 		if j := strings.IndexByte(line, ']'); j >= 0 && strings.HasPrefix(line, "[") {
-			if line[j+1:] == "" {
-				lines[i] = line[:j+1] + " "
+			text := line[j+1:]
+			text = stripOpcode(text)
+			if text == "" {
+				text = " "
 			}
+			lines[i] = line[:j+1] + text
 		}
 	}
 	return []byte(strings.Join(lines, "\n"))
+}
+
+// stripOpcode removes a leading "(XX)" opcode prefix from a scummtr text field.
+// scummtr -A extraction includes these for identification, but they must not
+// appear in injected text.
+func stripOpcode(text string) string {
+	if len(text) > 0 && text[0] == '(' {
+		if end := strings.IndexByte(text, ')'); end > 0 {
+			return text[end+1:]
+		}
+	}
+	return text
 }
 
 // BuildSpeechMapping extracts the original English text from the classic game
@@ -144,13 +163,15 @@ var swordFightResources = map[string]bool{
 // Sword-fight insult/comeback resources are excluded (see swordFightResources).
 func buildSpeechMapping(enData, svData []byte) map[string][]byte {
 	// Build SV groups: resource_header -> []text in order.
+	// Strip any (opcode) prefix from text — scummtr -A extraction includes
+	// these but they are not part of the translatable string.
 	svGroups := make(map[string][]string)
 	for _, line := range strings.Split(string(svData), "\n") {
 		j := strings.IndexByte(line, ']')
 		if j < 0 || !strings.HasPrefix(line, "[") {
 			continue
 		}
-		svGroups[line[:j+1]] = append(svGroups[line[:j+1]], line[j+1:])
+		svGroups[line[:j+1]] = append(svGroups[line[:j+1]], stripOpcode(line[j+1:]))
 	}
 
 	svPos := make(map[string]int)
