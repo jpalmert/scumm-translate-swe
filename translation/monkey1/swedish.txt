@@ -1147,19 +1147,19 @@
 [028:VERB#0321](94)Jag skulle kunna laga den, men jag skulle aldrig få ut den.
 [028:VERB#0321](94)Jag vill inte bränna det där.
 [028:OBNA#0321](__)öppen spis
-[028:VERB#0362](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0362](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0362](D8)Ser ut som ett fint tennstop.
 [028:OBNA#0362](__)stop
-[028:VERB#0363](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0363](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0363](D8)Ser ut som ett fint tennstop.
 [028:OBNA#0363](__)stop
-[028:VERB#0364](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0364](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0364](D8)Ser ut som ett fint tennstop.
 [028:OBNA#0364](__)stop
-[028:VERB#0365](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0365](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0365](D8)Ser ut som ett fint tennstop.
 [028:OBNA#0365](__)stop
-[028:VERB#0366](D8)Jag tror inte den rymmer mycket nu längre.
+[028:VERB#0366](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0366](D8)Ser ut som ett fint tennstop.
 [028:OBNA#0366](__)stop
 [028:VERB#0322](14)Varför skulle vi ta MED oss DET?
@@ -1666,12 +1666,12 @@
 [031:OBNA#0405](__)fånge
 [031:OBNA#0404](__)lås
 [031:VERB#0401](D8)Låst.
-[031:VERB#0401](D8)Jag tror det är svetsad nu.
+[031:VERB#0401](D8)Jag tror den är svetsad nu.
 [031:VERB#0401](D8)Bäst att inte slita ut den innan jag fått idolen.
 [031:VERB#0401](D8)Jag tror inte det öppnar den.
 [031:OBNA#0401](__)cell
 [031:VERB#0402](D8)Låst.
-[031:VERB#0402](D8)Jag tror det är svetsad nu.
+[031:VERB#0402](D8)Jag tror den är svetsad nu.
 [031:VERB#0402](D8)Ingen anledning till det nu.
 [031:OBNA#0402](__)cell
 [031:VERB#0420](54)fil
