@@ -255,7 +255,7 @@
 [010:SCRP#0152](14) 
 [010:SCRP#0152](14) 
 [010:SCRP#0152](14) 
-[010:SCRP#0152](14)Ytterligare konst av Tami Borowick, James Dollar, Bill Eaken, Avril Harrison, Iain McCaig, Jim McLeod, Michael Stemmle, Sean Turner och särskilt tack till Brad Taylor, Peter Chan and Ron Lussier\255\002
+[010:SCRP#0152](14)Ytterligare konst av Tami Borowick, James Dollar, Bill Eaken, Avril Harrison, Iain McCaig, Jim McLeod, Michael Stemmle, Sean Turner och särskilt tack till Brad Taylor, Peter Chan och Ron Lussier\255\002
 [010:SCRP#0152](14) 
 [010:SCRP#0152](14)Originalmusik av\255\001Michael Land...\255\002
 [010:SCRP#0152](14) 
@@ -267,7 +267,7 @@
 [010:SCRP#0152](14)IBM-ljud av\255\001Michael Land, Peter McConnell\255\001och J. Anthony White\255\002
 [010:SCRP#0152](14) 
 [010:SCRP#0152](14) 
-[010:SCRP#0152](14)Testsansvariga\255\001Judith Lucero och Kirk Roulston\255\001 \255\002
+[010:SCRP#0152](14)Testansvariga\255\001Judith Lucero och Kirk Roulston\255\001 \255\002
 [010:SCRP#0152](14) 
 [010:SCRP#0152](14) 
 [010:SCRP#0152](14)CD-ROM-testansvarig\255\001Chip Hinnenberg\255\001\255\002
@@ -336,7 +336,7 @@
 [014:VERB#0158](D8)Den är full av skit. Jag hoppas jag inte behöver äta det här.
 [014:VERB#0158](D8)Det ser ut som en vanlig skeppsgryta.
 [014:VERB#0158](D8)Jag lägger inte i något mer i den grytan!
-[014:VERB#0158](D8)Jag har inget recept. Jag skulle inte veta var jag ska börja med att göra soppa.
+[014:VERB#0158](D8)Jag har inget recept. Jag skulle inte veta var jag ska börja.
 [014:VERB#0158](D8)Bara en droppe.
 [014:VERB#0158](D8)Mmm...Det här kommer bli gott.
 [014:VERB#0158](D8)Det borde räcka.
@@ -354,7 +354,7 @@
 [014:VERB#0161](D8)Skönt och varmt.
 [014:VERB#0161](D8)Aj, det är hett!
 [014:VERB#0161](D8)Nu när jag tänker på det, det är ju bara danslektioner.
-[014:VERB#0161](D8)Varför bränna perfekt bra mat?
+[014:VERB#0161](D8)Varför bränna fullgod mat?
 [014:VERB#0161](D8)Ja, som om jag verkligen vill döda mig själv.
 [014:VERB#0161](D8)Det här kan jag behöva senare.
 [014:VERB#0161](D8)Jag bränner bara allt.
@@ -377,7 +377,7 @@
 [014:VERB#0167](D8)Den brinner redan.
 [014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
 [014:OBNA#0167](__)flammande massa
-[014:VERB#0157](D8)Det här är ingen leksak!\255\003Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](D8)Det här är ingen premie!\255\003Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](D8)Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](54)liten nyckel
 [014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
@@ -395,7 +395,7 @@
 [014:SCRP#0108](14)Några ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
 [014:SCRP#0108](14)Dagar går...\255\002
 [014:SCRP#0108](14)
-[014:SCRP#0185](54)pris
+[014:SCRP#0185](54)premie
 [015:OBNA#0170](__)fotfästen
 [015:OBNA#0178](__)krut
 [015:OBNA#0177](__)damm
@@ -772,7 +772,7 @@
 [025:VERB#0292](D8)Jag tror de har en allvarlig diskussion.
 [025:OBNA#0292](__)vänliga infödda
 [025:VERB#0293](D8)Jag tror inte han skulle fungera särskilt bra om jag gjorde det.
-[025:VERB#0293](D8)Jag väljer hellre någon i min egen storlek.
+[025:VERB#0293](D8)Jag retas hellre med någon i min egen storlek.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå åt vänster.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå åt höger.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå framåt.
@@ -837,13 +837,13 @@
 [025:LSCR#0202](14)Nå, nå, nå.\255\003Du är allt en riktig flyktartist, eller hur?
 [025:LSCR#0202](14)Jag sa att vi borde äta upp honom.
 [025:LSCR#0202](14)Hur du tog dig ut är nästan lika mystiskt som varför du fortsätter komma tillbaka.
-[025:LSCR#0202](14)Det verkliga mysteriet är varför han inte putrar tillsammans med morötter just nu.
+[025:LSCR#0202](14)Det verkliga mysteriet är varför han inte puttrar tillsammans med morötter just nu.
 [025:LSCR#0202](14)Jag vet inte om det här blir tråkigt för dig, men det är det för mig.
 [025:LSCR#0202](14)Vad nu då?
 [025:LSCR#0202](14) 
 [025:LSCR#0202](FA)Ät inte upp mig! Jag är en mäktig pirat!
 [025:LSCR#0202](FA)Ät inte upp mig! Jag ger er vad som helst!
-[025:LSCR#0202](FA)Åh, varsågod och ät upp mig. Det bryr jag mig inte om.
+[025:LSCR#0202](FA)Åh, varsågod och ät upp mig. Se om jag bryr mig.
 [025:LSCR#0202](FA)Titta bakom er! En trehövdad apa!
 [025:LSCR#0202](14)Det betyder att hans hud blir läderaktig och hans kött segt och trådigt.
 [025:LSCR#0202](14)Du är inte till någon nytta för oss, näringsmässigt sett, men...
@@ -854,7 +854,7 @@
 [025:LSCR#0202](14)Ha!\255\003Vi går inte på det där gamla tricket IGEN.
 [025:LSCR#0202](14)Hallå!
 [025:LSCR#0202](14)Tror du verkligen vi är så dumma?
-[025:LSCR#0202](14)Jag skulle inte driva det längre om jag var du.
+[025:LSCR#0202](14)Jag skulle inte pressa min lycka om jag var du.
 [025:LSCR#0202](14)Jag antar att vi äter upp dig nu.\255\003Såvida inte...
 [025:LSCR#0202](14)Om du hade något slags offer till oss...\255\003...något som vi kunde ge vidare till Den Stora Apan...
 [025:LSCR#0202](14) 
@@ -955,7 +955,7 @@
 [025:LSCR#0213](14)Åh, och jag antar att stjäla bananer är bättre?
 [025:LSCR#0213](14)Den Stora Apan själv är porten till underjordens katakomber.
 [025:LSCR#0213](14)Han är på en plats under den här ön...\255\003...någonstans i ett enormt system av katakomber...
-[025:LSCR#0213](14)...en helvetesplats fylld med tjutande av torterade själar fångade för alltid i berget...\255\003...där väggarna blöder och luften är tung av den härskna stanken av ren ondska.
+[025:LSCR#0213](14)...en helvetesplats fylld av tjutande torterade själar fångade för alltid i berget...\255\003...där väggarna blöder och luften är tung av den härskna stanken av ren ondska.
 [025:LSCR#0213](14)Turister brukade stå i kö i timmar för att se det.
 [025:LSCR#0213](FA)Vad hände? Hälsomyndigheten stängde er?
 [025:LSCR#0213](FA)Kan ni inte bara gå ner dit och kasta ut honom?
@@ -1048,7 +1048,7 @@
 [025:SCRP#0106](FA)Jag är inte en sådan mes ändå.
 [025:SCRP#0106](FA)Jag skulle älska att få dig uppstoppad. Jag skulle tjäna en förmögenhet.
 [025:SCRP#0106](14)Där är den.
-[025:SCRP#0106](14)Ett sprutt av det där och ektoplasman verkligen träffar fläkten!
+[025:SCRP#0106](14)Ett sprutt av det där och ektoplasman träffar verkligen fläkten!
 [025:SCRP#0106](14)Och om du har något över är det utsökt med lite vaniljglass.
 [025:SCRP#0106](14)Lycka till.
 [025:SCRP#0106](D8)Tack.
@@ -1273,7 +1273,7 @@
 [028:LSCR#0220](14)
 [028:LSCR#0220](14)Nå, besegrat Svärdmästaren, vasa?\255\003Du är en stark karl!\255\003Du får behålla den snygga T-shirten. Vi har tillräckligt.
 [028:LSCR#0220](14)Ah, Idolen med de Många Händerna!\255\003Du är en modig grabb!\255\003Och tack för att du stal den åt oss.
-[028:LSCR#0220](14)Upptäckt den Försvunna Skatten, va?\255\003Du är en klipsk grabb!\255\003Du får behålla den chica T-shirten. Vi har massor.
+[028:LSCR#0220](14)Upptäckt den Försvunna Skatten, va?\255\003Du är en klipsk grabb!\255\003Du får behålla den stiliga T-shirten. Vi har massor.
 [028:LSCR#0220](14)För att vara pirat måste du också vara en illaluktande, groggsvällande gris.
 [028:LSCR#0220](14)Grogg är en hemlig blandning som innehåller en eller flera av följande:
 [028:LSCR#0220](14)fotogen
@@ -1370,7 +1370,7 @@
 [029:VERB#0376](D8)Det finns nog en kropp i den.
 [029:VERB#0376](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0376](__)kista
-[029:OBNA#0380](__)voodoo kärlekspärlor
+[029:OBNA#0380](__)voodookärlekspärlor
 [029:OBNA#0382](__)spåkvinna
 [029:VERB#0375](D8)Ser bekväm ut, på ett kusligt sätt.
 [029:VERB#0375](D8)Nej tack. Jag kan aldrig somna på främmande platser.
