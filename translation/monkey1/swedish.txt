@@ -4010,7 +4010,7 @@
 [082:SCRP#0093](14)Aja.
 [083:VERB#0901](D8)Den heter "Hur du får ett ben upp i skattletandet."
 [083:OBNA#0901](__)broschyr
-[083:VERB#0902](D8)Den heter "Hur du kommer framåt inom navigering."
+[083:VERB#0902](D8)Den heter "Hur du får ett huvud för navigering."
 [083:OBNA#0902](__)broschyr
 [083:VERB#0903](D8)Den heter "Hur du beväpnar dej i sjöstrid."
 [083:OBNA#0903](__)broschyr
