@@ -306,7 +306,53 @@ func TestRunClassicPatchMissingTranslation(t *testing.T) {
 	}
 }
 
-// CLASSIC-005: Lowercase filenames accepted.
+// CLASSIC-005: Backups are created for both game files.
+func TestRunClassicPatchCreatesBackups(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), []byte("data000"), 0644)
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), []byte("data001"), 0644)
+	txFile := filepath.Join(dir, "swedish.txt")
+	os.WriteFile(txFile, []byte("translation"), 0644)
+
+	runClassicPatch(dir, txFile) //nolint:errcheck — failure expected (fake data)
+
+	for _, name := range []string{"MONKEY1.000.bak", "MONKEY1.001.bak"} {
+		bakPath := filepath.Join(dir, name)
+		if _, err := os.Stat(bakPath); err != nil {
+			t.Errorf("backup not created at %s", bakPath)
+		}
+	}
+}
+
+// CLASSIC-005b: Backup content matches original files.
+func TestRunClassicPatchBackupContent(t *testing.T) {
+	dir := t.TempDir()
+	orig000 := []byte("original-monkey1-000-data")
+	orig001 := []byte("original-monkey1-001-data")
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), orig000, 0644)
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), orig001, 0644)
+	txFile := filepath.Join(dir, "swedish.txt")
+	os.WriteFile(txFile, []byte("translation"), 0644)
+
+	runClassicPatch(dir, txFile) //nolint:errcheck — failure expected (fake data)
+
+	bak000, err := os.ReadFile(filepath.Join(dir, "MONKEY1.000.bak"))
+	if err != nil {
+		t.Fatalf("read .000.bak: %v", err)
+	}
+	if !bytes.Equal(bak000, orig000) {
+		t.Error("MONKEY1.000.bak content differs from original")
+	}
+	bak001, err := os.ReadFile(filepath.Join(dir, "MONKEY1.001.bak"))
+	if err != nil {
+		t.Fatalf("read .001.bak: %v", err)
+	}
+	if !bytes.Equal(bak001, orig001) {
+		t.Error("MONKEY1.001.bak content differs from original")
+	}
+}
+
+// CLASSIC-005c: Lowercase filenames accepted.
 func TestFindGameFileLowercase(t *testing.T) {
 	dir := t.TempDir()
 	os.WriteFile(filepath.Join(dir, "monkey1.000"), []byte("lower"), 0644)
@@ -340,6 +386,20 @@ func TestFindGameFileMissing(t *testing.T) {
 	dir := t.TempDir()
 	if _, err := findGameFile(dir, "MONKEY1.000", "monkey1.000"); err == nil {
 		t.Fatal("expected error for missing file")
+	}
+}
+
+// CLASSIC-008: findGameFile accepts MONKEY.000 (alternate naming without "1").
+func TestFindGameFileAlternateNaming(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY.000"), []byte("alt"), 0644)
+
+	p, err := findGameFile(dir, "MONKEY1.000", "monkey1.000", "MONKEY.000", "monkey.000")
+	if err != nil {
+		t.Fatalf("findGameFile: %v", err)
+	}
+	if filepath.Base(p) != "MONKEY.000" {
+		t.Errorf("expected MONKEY.000, got %s", p)
 	}
 }
 

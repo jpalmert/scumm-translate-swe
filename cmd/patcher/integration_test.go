@@ -441,7 +441,7 @@ func TestSpeechRoundTrip(t *testing.T) {
 	}
 }
 
-// INT-CLASSIC: Real Swedish translation grows .001.
+// INT-CLASSIC-001: Real Swedish translation grows .001.
 func TestClassicPatcherFullPipeline(t *testing.T) {
 	pakPath, translationPath := integrationPaths(t)
 
@@ -473,4 +473,108 @@ func TestClassicPatcherFullPipeline(t *testing.T) {
 		t.Errorf("MONKEY1.001 did not grow: orig=%d, patched=%d", len(data001), len(patched001))
 	}
 	t.Logf("MONKEY1.001: %d → %d bytes (+%d)", len(data001), len(patched001), len(patched001)-len(data001))
+}
+
+// INT-CLASSIC-002: Classic in-place backup has correct content.
+func TestClassicPatcherInPlaceBackup(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var data000, data001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			data000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			data001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if data000 == nil || data001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), data000, 0644)
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), data001, 0644)
+
+	checkPipelineErr(t, "runClassicPatch", runClassicPatch(dir, translationPath))
+
+	// Verify backups exist and contain the original data.
+	bak000, err := os.ReadFile(filepath.Join(dir, "MONKEY1.000.bak"))
+	if err != nil {
+		t.Fatalf("backup .000 not created: %v", err)
+	}
+	if len(bak000) != len(data000) {
+		t.Errorf("backup .000 size mismatch: got %d, want %d", len(bak000), len(data000))
+	}
+	if string(bak000) != string(data000) {
+		t.Error("backup .000 content differs from original")
+	}
+
+	bak001, err := os.ReadFile(filepath.Join(dir, "MONKEY1.001.bak"))
+	if err != nil {
+		t.Fatalf("backup .001 not created: %v", err)
+	}
+	if len(bak001) != len(data001) {
+		t.Errorf("backup .001 size mismatch: got %d, want %d", len(bak001), len(data001))
+	}
+	if string(bak001) != string(data001) {
+		t.Error("backup .001 content differs from original")
+	}
+}
+
+// INT-CLASSIC-003: Patch → patch again succeeds (re-patch from backup originals).
+func TestClassicPatcherRePatch(t *testing.T) {
+	pakPath, translationPath := integrationPaths(t)
+
+	_, _, _, entries, err := pak.Read(pakPath)
+	if err != nil {
+		t.Fatalf("pak.Read: %v", err)
+	}
+	var data000, data001 []byte
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			data000 = append([]byte(nil), e.Data...)
+		case "classic/en/monkey1.001":
+			data001 = append([]byte(nil), e.Data...)
+		}
+	}
+	if data000 == nil || data001 == nil {
+		t.Fatal("classic files not found in PAK")
+	}
+
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), data000, 0644)
+	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), data001, 0644)
+
+	// First patch.
+	checkPipelineErr(t, "first runClassicPatch", runClassicPatch(dir, translationPath))
+
+	firstPatched001, err := os.ReadFile(filepath.Join(dir, "MONKEY1.001"))
+	if err != nil {
+		t.Fatalf("read first patched .001: %v", err)
+	}
+
+	// Second patch — no manual restore needed; patcher should use backup automatically.
+	checkPipelineErr(t, "second runClassicPatch", runClassicPatch(dir, translationPath))
+
+	secondPatched001, err := os.ReadFile(filepath.Join(dir, "MONKEY1.001"))
+	if err != nil {
+		t.Fatalf("read second patched .001: %v", err)
+	}
+
+	// Both patches should produce identical results since both start from the
+	// same original backup.
+	if len(firstPatched001) != len(secondPatched001) {
+		t.Errorf("re-patch produced different size: first=%d, second=%d",
+			len(firstPatched001), len(secondPatched001))
+	}
+	if string(firstPatched001) != string(secondPatched001) {
+		t.Error("re-patch produced different content — patching is not idempotent")
+	}
+	t.Logf("MONKEY1.001 after re-patch: %d bytes (identical to first patch)", len(secondPatched001))
 }

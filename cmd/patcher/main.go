@@ -138,8 +138,8 @@ func autoDetect() (string, error) {
 		return filepath.Join(exeDir, "Monkey1.pak"), nil
 	}
 
-	// Classic: MONKEY1.000 or monkey1.000
-	for _, name := range []string{"MONKEY1.000", "monkey1.000"} {
+	// Classic: MONKEY1.000 / monkey1.000 / MONKEY.000 / monkey.000
+	for _, name := range []string{"MONKEY1.000", "monkey1.000", "MONKEY.000", "monkey.000"} {
 		if _, err := os.Stat(filepath.Join(exeDir, name)); err == nil {
 			return exeDir, nil
 		}
@@ -148,7 +148,8 @@ func autoDetect() (string, error) {
 	return "", fmt.Errorf(
 		"no game files found next to this executable\n" +
 			"  Expected: Monkey1.pak  (Special Edition)\n" +
-			"  Or:       MONKEY1.000  (Classic CD-ROM)")
+			"  Or:       MONKEY1.000  (Classic CD-ROM)\n" +
+			"  Or:       MONKEY.000   (Classic CD-ROM alternate naming)")
 }
 
 // isSEInput returns true if the path looks like a PAK file (SE), false if a directory (Classic).

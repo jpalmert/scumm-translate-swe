@@ -43,9 +43,11 @@ func runClassicPatch(gameDir, translationArg string) error {
 
 	// --- Backup originals ---
 	fmt.Println("==> Creating backups...")
+	rePatch := false
 	bak000, err := backup.Create(path000)
 	if errors.Is(err, backup.ErrBackupExists) {
 		fmt.Printf("    WARNING: %s already exists from a previous run — using it as-is.\n", bak000)
+		rePatch = true
 	} else if err != nil {
 		return fmt.Errorf("backup %s: %w", path000, err)
 	} else {
@@ -54,10 +56,23 @@ func runClassicPatch(gameDir, translationArg string) error {
 	bak001, err := backup.Create(path001)
 	if errors.Is(err, backup.ErrBackupExists) {
 		fmt.Printf("    WARNING: %s already exists from a previous run — using it as-is.\n", bak001)
+		rePatch = true
 	} else if err != nil {
 		return fmt.Errorf("backup %s: %w", path001, err)
 	} else {
 		fmt.Printf("    %s\n", bak001)
+	}
+
+	// --- Read source files (prefer backup originals for re-patching) ---
+	// When re-patching, the game files are already Swedish-patched from a previous
+	// run. Patching them again would corrupt the translation. The backup contains
+	// the unmodified originals, so we always read from the backup when it exists.
+	src000 := path000
+	src001 := path001
+	if rePatch {
+		fmt.Printf("    Re-patch detected: reading originals from backups.\n")
+		src000 = bak000
+		src001 = bak001
 	}
 
 	// --- Copy to temp dir as MONKEY1.000/001 (scummtr/scummrp require uppercase MONKEY1) ---
@@ -67,11 +82,11 @@ func runClassicPatch(gameDir, translationArg string) error {
 	}
 	defer os.RemoveAll(tmpDir)
 
-	data000, err := os.ReadFile(path000)
+	data000, err := os.ReadFile(src000)
 	if err != nil {
 		return err
 	}
-	data001, err := os.ReadFile(path001)
+	data001, err := os.ReadFile(src001)
 	if err != nil {
 		return err
 	}
