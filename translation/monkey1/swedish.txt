@@ -116,7 +116,7 @@
 [008:VERB#0104](D8)Jag tror det behöver andas i rumstemperatur ett tag till.
 [008:VERB#0104](D8)Jag är ingen vinexpert, men att döma av den djupröda färgen...\255\003...så är det här ett riktigt fint vin.
 [008:OBNA#0104](__)fint vin
-[008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat den.
+[008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat det.
 [009:VERB#0108](D8)Jag tror jag kommer bli sjösjuk.
 [009:VERB#0108](D8)Det är ordentligt stängt.
 [009:OBNA#0108](__)fönster
@@ -334,7 +334,7 @@
 [012:LSCR#0207](D8)`Tillverkad av Sharptooth.`
 [012:LSCR#0209](13)Herman Rötbett
 [014:VERB#0158](D8)Den är full av skit. Jag hoppas jag inte behöver äta det här.
-[014:VERB#0158](D8)Det ser ut som en vanlig skeppsgryta.
+[014:VERB#0158](D8)Det ser ut som en alldeles vanlig skeppsgryta.
 [014:VERB#0158](D8)Jag lägger inte i något mer i den grytan!
 [014:VERB#0158](D8)Jag har inget recept. Jag skulle inte veta var jag ska börja.
 [014:VERB#0158](D8)Bara en droppe.
@@ -377,7 +377,7 @@
 [014:VERB#0167](D8)Den brinner redan.
 [014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
 [014:OBNA#0167](__)flammande massa
-[014:VERB#0157](D8)Det här är ingen leksak!\255\003Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](D8)Det här är ju inget vanligt pris!\255\003Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](D8)Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](54)liten nyckel
 [014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
@@ -512,7 +512,7 @@
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
 [019:LSCR#0204](14)Stick, Guybrush.
 [019:LSCR#0204](14)Fint försök, Guybrush, men ingen banan.
-[019:LSCR#0204](D8)Då blir det stryk!
+[019:LSCR#0204](D8)Då ska ni få stryk!
 [019:LSCR#0204](14)Ursäkta mig Guybrush...\255\003...säger ordet 'kölhala' dig något?
 [019:LSCR#0204](FA)Jag förstår din poäng, tack.
 [019:LSCR#0204](FA)Kölhala /kö:l-ha:la\254\001   1: att dra under kölen på ett skepp som straff\254\001       eller tortyr.
@@ -560,7 +560,7 @@
 [020:LSCR#0202](14)
 [020:LSCR#0202](14)
 [020:LSCR#0202](14)Hej!\255\003Jag är Herman Rötbett!
-[020:LSCR#0202](14)Bry dig inte om att säga hej.\255\003Jag har bara väntat i tjugo år på att få prata med någon civiliserad, jag har inget emot det.
+[020:LSCR#0202](14)Bry dig inte om att säga hej.\255\003Jag har bara väntat i tjugo år på att få prata med en civiliserad människa, jag har inget emot det.
 [020:LSCR#0202](14)Bra.
 [020:LSCR#0202](14)Förresten, du kanske vill tänka på att släcka den där elden.\255\003Någon skulle kunna bli skadad.
 [020:LSCR#0202](14) 
@@ -571,7 +571,7 @@
 [020:SCRP#0095](14)Även om jag HAR tittat på den i tjugo år nu.\255\003Även om det är den ENDA utsikten på ön.
 [020:SCRP#0095](14)Det här är en gammal vän till mig, den jag seglade hit med.
 [020:SCRP#0095](14)Han har magrat.\255\003Har aldrig sett bättre ut.
-[020:SCRP#0095](14)Det där aphuvudet är verkligen något, va?
+[020:SCRP#0095](14)Det där aphuvudet är nåt alldeles speciellt, va?
 [020:SCRP#0095](14)Otäckt fall av gula vaxavlagringar, dock.
 [020:SCRP#0095](14)Åh, hallå!\255\003Jag letade precis efter de infödda, för att få dem att återlämna min bananplockare...
 [020:SCRP#0095](14)...men jag verkar inte kunna hitta dem.
@@ -601,7 +601,7 @@
 [020:SCRP#0095](14)Nå, det är okej.\255\003Nästa gång, var mer försiktig.
 [020:SCRP#0095](14)Stan från Stans Begagnade Fartyg?\255\003På Mêlée Island®?
 [020:SCRP#0095](14)Heh heh heh heh
-[020:SCRP#0095](14)Hej, kasta inte sten.
+[020:SCRP#0095](14)Hördu, klaga inte på det.
 [020:SCRP#0095](14)Det är den enda jag har.
 [020:SCRP#0095](14)Du såg honom aldrig när han fortfarande levde!
 [020:SCRP#0095](14)Du lurar inte mig, pojkspoling.
@@ -772,7 +772,7 @@
 [025:VERB#0292](D8)Jag tror de har en allvarlig diskussion.
 [025:OBNA#0292](__)vänliga infödda
 [025:VERB#0293](D8)Jag tror inte han skulle fungera särskilt bra om jag gjorde det.
-[025:VERB#0293](D8)Jag ger mig inte på nån som är mindre än jag.
+[025:VERB#0293](D8)Jag ger mig helst bara på nån i min egen storlek.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå åt vänster.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå åt höger.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå framåt.
@@ -935,10 +935,10 @@
 [025:LSCR#0213](14)De där idioterna har tjatat på oss i månader!
 [025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...jämrar och stönar till alla tider på morgonen...
 [025:LSCR#0213](14)...skrämmer bort alla kryssningsfartyg.
-[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003brygger vi bara vår standarddryck för exorcism och är klara med det.
+[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003brygger vi bara vår vanliga exorcismdryck och är klara med det.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](FA)Så varför gör ni inte det nu?
-[025:LSCR#0213](FA)Vad finns i er standarddryck för exorcism?
+[025:LSCR#0213](FA)Vad finns i er vanliga exorcismdryck?
 [025:LSCR#0213](FA)Ge mig drycken! Jag ska använda den på LeChuck!
 [025:LSCR#0213](FA)Var gömmer sig LeChuck och hans besättning?
 [025:LSCR#0213](14)Det kan vi inte.
@@ -949,7 +949,7 @@
 [025:LSCR#0213](14) 
 [025:LSCR#0213](FA)Var gömmer han den?
 [025:LSCR#0213](FA)Hur tar jag mig till de här katakomberna?
-[025:LSCR#0213](FA)Vad finns i er standarddryck för exorcism?
+[025:LSCR#0213](FA)Vad finns i er vanliga exorcismdryck?
 [025:LSCR#0213](FA)LeChuck kom hit och stal er rot? Vilken skurk!
 [025:LSCR#0213](FA)Jag ger mig av för att hitta LeChuck och få roten!
 [025:LSCR#0213](14)Åh, och jag antar att stjäla bananer är bättre?
@@ -964,7 +964,7 @@
 [025:LSCR#0213](14)Nej, vi tappade bort nyckeln.
 [025:LSCR#0213](14)Den blev stulen!
 [025:LSCR#0213](14)Vi lånade ut den till en eremit som bor på ön.
-[025:LSCR#0213](14)Och tills den där grinige gamla byxlöse konstigheten lämnar tillbaka den, behåller vi hans bananplockare.
+[025:LSCR#0213](14)Och tills den där grinige gamla byxlöse knäppgöken lämnar tillbaka den, behåller vi hans bananplockare.
 [025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Att försöka hitta LeChuck kan vara mycket farligt.
 [025:LSCR#0213](14)Du skulle aldrig hitta genom katakomberna utan--
 [025:LSCR#0213](14)Hej!\255\003Ixnay på Uvudethay av Avigatörenay!
@@ -1206,7 +1206,7 @@
 [028:LSCR#0220](14)Varför besvära oss?
 [028:LSCR#0220](14)Hörru, glöm inte att vi har brist på folk på grund av hela den där LeChuck-grejen.
 [028:LSCR#0220](14)Och?
-[028:LSCR#0220](14)Så, inga pirater innebär inga rikedomar, och inga rikedomar innebär ingen grogg, och vi håller på att få farligt ont om grogg...
+[028:LSCR#0220](14)Så, inga pirater innebär inget byte, och inget byte innebär ingen grogg, och vi håller på att få farligt ont om grogg...
 [028:LSCR#0220](14)Hmm...
 [028:LSCR#0220](14)Har du några speciella talanger?
 [028:LSCR#0220](94)Jag kan hålla andan i tio minuter!
@@ -1223,7 +1223,7 @@
 [028:LSCR#0220](14)...och sökandet.
 [028:LSCR#0220](14)Va?
 [028:LSCR#0220](14)Skattjakt, din sjöpung!
-[028:LSCR#0220](14)Precis.\255\003Du måste bevisa dig själv inom alla dessa tre områden:
+[028:LSCR#0220](14)Precis.\255\003Du måste visa vad du går för inom alla tre områdena:
 [028:LSCR#0220](14)svärdsspel, tjuveri och, öh, skattjakteri;\255\003och sedan återvända med bevis på att du gjort det.
 [028:LSCR#0220](14)Och sen måste du dricka grogg med oss!!
 [028:LSCR#0220](14)GROGG!!!                  \255\002
@@ -1282,12 +1282,12 @@
 [028:LSCR#0220](14)svavelsyra
 [028:LSCR#0220](14)rom
 [028:LSCR#0220](14)aceton
-[028:LSCR#0220](14)röd färgämne nr.2
+[028:LSCR#0220](14)rött färgämne nr. 2
 [028:LSCR#0220](14)scumm
 [028:LSCR#0220](14)axelfett
 [028:LSCR#0220](14)bilbatterisyra
 [028:LSCR#0220](14)och/eller pepperoni\255\003Som du säkert kan föreställa dig är det ett av de mest frätande, flyktiga ämnena som mänskligheten känner till.
-[028:LSCR#0220](14)Grejerna äter sig igenom dessa muggar och det kostar kocken en förmögenhet att ersätta dem.
+[028:LSCR#0220](14)Grejerna äter sig igenom dessa stop och det kostar kocken en förmögenhet att ersätta dem.
 [028:LSCR#0220](14)Har Har Har\255\002
 [028:LSCR#0220](14)       Har Har Har\255\002
 [028:LSCR#0220](14)       Har Har Har
@@ -1442,8 +1442,8 @@
 [029:LSCR#0210](D8)Äckligt.
 [029:LSCR#0210](14)Vänta...
 [029:LSCR#0210](14)...allt blir klart.
-[029:LSCR#0210](14)Din resa kommer ha många delar.\255\003Du kommer se saker bättre lämnade osedda.\255\003Du kommer höra saker bättre lämnade ohörda.
-[029:LSCR#0210](14)Du kommer lära dig saker bättre lämnade oinlärda.
+[029:LSCR#0210](14)Din resa kommer ha många delar.\255\003Du kommer se saker som bäst förblir osedda.\255\003Du kommer höra saker som bäst förblir ohörda.
+[029:LSCR#0210](14)Du kommer lära dig saker som bäst förblir okända.
 [029:LSCR#0210](D8)Vad för slags saker?\255\003Jag hatar överraskningar.
 [029:LSCR#0210](14)NEJ!\255\003Tiden är inte rätt att veta.
 [029:LSCR#0210](14)När du vet ditt syfte, kom och hälsa på mig...\255\003...Jag kommer berätta för dig då.
@@ -1608,7 +1608,7 @@
 [030:LSCR#0211](FA)Jag är en groggslukande, illaluktande pirat.
 [030:LSCR#0211](FA)Jag serverar på Scumm Bar.
 [030:LSCR#0211](FA)Jag är akrobat i en kringresande cirkus.
-[030:LSCR#0211](FA)Jag putsar skepp borta på Stans begagnade skeppsvarv.
+[030:LSCR#0211](FA)Jag putsar skepp borta på Stans Begagnade Fartyg.
 [030:LSCR#0211](FA)Ärligt talat, herr'n, jag är mellan jobb.
 [030:LSCR#0211](14)Illaluktande, javisst...\255\003Groggslukande, kanske...\255\003Men pirat?\255\003Få mig inte att skratta.\255\003Kom tillbaka när du skaffat tatueringar eller ett träben eller åtminstone en ögonlapp, för guds skull.
 [030:LSCR#0211](14)
@@ -1793,11 +1793,11 @@
 [031:LSCR#0209](14)Du borde kanske sköta ditt eget, främling.\255\003Jag bestämmer vem som är oskyldig och vem som är skyldig här.
 [031:LSCR#0209](14)Tack så mycket.
 [031:LSCR#0209](14)Du har mage att komma till den här stan och döma lokalbefolkningen.\255\003Om det är nåt du inte gillar med hur vi luktar är du välkommen att sticka när som helst.
-[031:LSCR#0209](14)Ta inte den tonen med mig, apgransen.\255\003Annars låser jag gärna in dig med Otis...\255\003...då får ni gott om tid för privata samtal.
+[031:LSCR#0209](14)Ta inte den tonen med mig, apungen.\255\003Annars låser jag gärna in dig med Otis...\255\003...då får ni gott om tid för privata samtal.
 [031:LSCR#0209](14)Jaha.\255\003Du har tid att umgås med brottslingar, men inte med lagens väktare.
 [031:LSCR#0209](D8)Förlåt.
 [031:LSCR#0209](14)Hör här, jag vet inte vad du har för dig...\255\003...men vad det än är, det är antagligen olagligt.\255\003Så glöm det.
-[031:LSCR#0209](14)Vart du än går på Mêlée® kommer jag att vakta.\255\003Och försöker du med nåt apstreck hamnar du här inne för gott.
+[031:LSCR#0209](14)Vart du än går på Mêlée® kommer jag att vakta.\255\003Och försöker du med nåt apkonster hamnar du här inne för gott.
 [031:LSCR#0209](14)Herregud, vilken typ, eller hur?\255\003Ser du vad jag får stå ut med?
 [031:LSCR#0209](14)Du borde gå innan du ställer till det för oss båda.
 [031:SCRP#0070](D8)Den här muggen är inte till mycket nytta längre.
@@ -1808,7 +1808,7 @@
 [031:SCRP#0070](14)Oj.\255\003Och tänk att jag brukade dricka det där...
 [031:SCRP#0070](14)Jag är fri!
 [031:SCRP#0070](14)Jotack.
-[031:SCRP#0070](14)Haha, godtrogen!!
+[031:SCRP#0070](14)Haha, du lät dig luras!!
 [031:SCRP#0070](14)HA HA HA!!!
 [031:SCRP#0070](D8)Men...
 [031:SCRP#0070](D8)Gäller vår överenskommelse fortfarande?
