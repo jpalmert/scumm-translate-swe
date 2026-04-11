@@ -383,10 +383,14 @@ func InjectTranslation(gameDir, translationPath string) error {
 	//   -h              strip [room:TYPE#resnum] header prefixes from each line
 	//   -f              path to the pre-encoded translation file
 	//
-	// Note: -r (raw mode) is intentionally omitted — raw mode triggers a full
-	// script re-encode when strings change length, which fails on opcode 0x29
-	// present in some MI1SE scripts. Non-raw mode uses in-place replacement and
-	// handles variable-length strings correctly with encodeBytes pre-encoding.
+	// Note: -r (raw mode) is required — without it scummtr does in-place replacement
+	// which silently overwrites adjacent script bytecode when a Swedish string is
+	// longer than its English original. 1843 of our 4437 strings overflow in
+	// non-raw mode, corrupting MONKEY1.001 script data and causing the SE engine
+	// to crash. Raw mode re-encodes the full LFLF block and adjusts all offsets
+	// correctly when string lengths change. (An earlier note claimed raw mode fails
+	// on opcode 0x29 in "MI1SE scripts" — that failure is specific to the SE's own
+	// enhanced scripts in the PAK, not the embedded classic MONKEY1.001.)
 	// Note: -c (Windows-1252 mode) is intentionally omitted — Swedish characters
 	// have already been converted to SCUMM escape codes by encodeBytes.
 	// Note: -w (CRLF) is intentionally omitted — the file uses Unix LF line endings.
@@ -396,7 +400,7 @@ func InjectTranslation(gameDir, translationPath string) error {
 		scummtrPath,
 		"-g", "monkeycdalt",
 		"-p", gameDir,
-		"-ih",
+		"-ihr",
 		"-f", encodedPath,
 	)
 	cmd.Stdout = os.Stdout

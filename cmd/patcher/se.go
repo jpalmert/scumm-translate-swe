@@ -9,6 +9,7 @@ import (
 	"strings"
 
 	"scumm-patcher/internal/backup"
+	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
 )
@@ -167,12 +168,15 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	return nil
 }
 
-// patchSEClassicFiles is intentionally empty for crash testing.
-// Translation injection, CHAR block patching, and verb layout patching are all
-// skipped to isolate whether any modification to MONKEY1.000/001 causes SE crashes.
-// Only the font lookup table patching (Step 7) remains active.
-func patchSEClassicFiles(_, _ string) error {
-	fmt.Println("\n==> Skipping classic file patches (crash test mode).")
+// patchSEClassicFiles injects the Swedish translation into MONKEY1.000/001 in
+// tmpDir. CHAR block patching and verb layout patching are skipped for SE:
+// the SE new-graphics mode uses .font files (patched separately), and the SE's
+// verb UI does not use the classic SCRP verb layout.
+func patchSEClassicFiles(tmpDir, translationPath string) error {
+	fmt.Println("\n==> Injecting Swedish translation...")
+	if err := classic.InjectTranslation(tmpDir, translationPath); err != nil {
+		return fmt.Errorf("translation injection failed: %w", err)
+	}
 	return nil
 }
 
