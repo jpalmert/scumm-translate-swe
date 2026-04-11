@@ -1797,7 +1797,7 @@
 [031:LSCR#0209](14)Jaha.\255\003Du har tid att umgås med brottslingar, men inte med lagens väktare.
 [031:LSCR#0209](D8)Förlåt.
 [031:LSCR#0209](14)Hör här, jag vet inte vad du har för dig...\255\003...men vad det än är, det är antagligen olagligt.\255\003Så glöm det.
-[031:LSCR#0209](14)Vart du än går på Mêlée® kommer jag att vakta.\255\003Och försöker du med nåt apkonster hamnar du här inne för gott.
+[031:LSCR#0209](14)Vart du än går på Mêlée® kommer jag att vakta.\255\003Och försöker du dig på nåt fuffens hamnar du här inne för gott.
 [031:LSCR#0209](14)Herregud, vilken typ, eller hur?\255\003Ser du vad jag får stå ut med?
 [031:LSCR#0209](14)Du borde gå innan du ställer till det för oss båda.
 [031:SCRP#0070](D8)Den här muggen är inte till mycket nytta längre.
@@ -1972,9 +1972,9 @@
 [035:LSCR#0211](FA)Öh...
 [035:LSCR#0211](FA)Um...
 [035:LSCR#0211](FA)Nå...
-[035:LSCR#0211](FA)Menar du huvudet på den här rotölen?
+[035:LSCR#0211](FA)Menar du skummet på den här rotölen?
 [035:LSCR#0211](D8)Åh, strunt i det!
-[035:LSCR#0213](D8)Det här grejet är toppen!\255\003Se upp, LeChuck!\255\003Det finns en ny sheriff i stan, och han heter--\255\003--Hörru! Jag måste ta mig till kyrkan!
+[035:LSCR#0213](D8)Det här är toppen!\255\003Se upp, LeChuck!\255\003Det finns en ny sheriff i stan, och han heter--\255\003--Hörru! Jag måste ta mig till kyrkan!
 [035:LSCR#0215](14)Hörru!! Rör inte min råtta!
 [035:LSCR#0215](14)Jag sa rör inte råttan!
 [035:LSCR#0215](14)Jag tänker inte varna dig igen!!\255\003Lämna råttan ifred!!
