@@ -377,7 +377,7 @@
 [014:VERB#0167](D8)Den brinner redan.
 [014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
 [014:OBNA#0167](__)flammande massa
-[014:VERB#0157](D8)Det här är ingen premie!\255\003Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](D8)Det här är ingen leksak!\255\003Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](D8)Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](54)liten nyckel
 [014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
@@ -395,7 +395,7 @@
 [014:SCRP#0108](14)Några ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
 [014:SCRP#0108](14)Dagar går...\255\002
 [014:SCRP#0108](14)
-[014:SCRP#0185](54)premie
+[014:SCRP#0185](54)leksak
 [015:OBNA#0170](__)fotfästen
 [015:OBNA#0178](__)krut
 [015:OBNA#0177](__)damm
@@ -772,7 +772,7 @@
 [025:VERB#0292](D8)Jag tror de har en allvarlig diskussion.
 [025:OBNA#0292](__)vänliga infödda
 [025:VERB#0293](D8)Jag tror inte han skulle fungera särskilt bra om jag gjorde det.
-[025:VERB#0293](D8)Jag retas hellre med någon i min egen storlek.
+[025:VERB#0293](D8)Jag ger mig inte på nån som är mindre än jag.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå åt vänster.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå åt höger.
 [025:VERB#0293](D8)Jag tror det vill att jag ska gå framåt.
@@ -854,7 +854,7 @@
 [025:LSCR#0202](14)Ha!\255\003Vi går inte på det där gamla tricket IGEN.
 [025:LSCR#0202](14)Hallå!
 [025:LSCR#0202](14)Tror du verkligen vi är så dumma?
-[025:LSCR#0202](14)Jag skulle inte pressa min lycka om jag var du.
+[025:LSCR#0202](14)Jag skulle inte chansa om jag var du.
 [025:LSCR#0202](14)Jag antar att vi äter upp dig nu.\255\003Såvida inte...
 [025:LSCR#0202](14)Om du hade något slags offer till oss...\255\003...något som vi kunde ge vidare till Den Stora Apan...
 [025:LSCR#0202](14) 
@@ -1590,7 +1590,7 @@
 [030:LSCR#0211](14)...EN GÅNG.
 [030:LSCR#0211](14)Är strax tillbaka.
 [030:LSCR#0211](14)OCH RÖR INGENTING!
-[030:LSCR#0211](14)Jag har ögonen på dig, vesslungen!\255\003Försök inte med nåt!
+[030:LSCR#0211](14)Jag har ögonen på dig, din lilla vesselunge!\255\003Försök inte med nåt!
 [030:LSCR#0211](14)Och inga av dina gamla trick!
 [030:LSCR#0211](14)Jag kan inte tro att jag gör det här igen!
 [030:LSCR#0211](14)Jag räknar med att vara tillbaka om ungefär fem sekunder.
