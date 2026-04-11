@@ -9,7 +9,6 @@ import (
 	"strings"
 
 	"scumm-patcher/internal/backup"
-	"scumm-patcher/internal/charset"
 	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
@@ -169,24 +168,17 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	return nil
 }
 
-// patchSEClassicFiles applies translation injection and CHAR block patching to
-// MONKEY1.000/001 in tmpDir. Verb layout patching is intentionally skipped for SE:
-//   - The SE new-graphics mode has its own verb UI and does not use SCRP_0022
-//     coordinates for verb button placement.
-//   - In SE classic mode (F1), the verb layout may have different constraints
-//     than pure ScummVM, and the Swedish coordinate offsets are untested there.
-//   - CHAR blocks ARE patched so that SE classic mode (F1) renders Swedish glyphs.
+// patchSEClassicFiles applies only the translation injection to MONKEY1.000/001
+// in tmpDir. CHAR block patching and verb layout patching are intentionally skipped:
+//   - CHAR blocks are only needed for SE classic mode (F1); skipped to test whether
+//     CHAR size changes are causing SE crashes.
+//   - The SE new-graphics mode uses .font files (patched separately) for rendering.
+//   - Verb layout is irrelevant to the SE's own verb UI.
 func patchSEClassicFiles(tmpDir, translationPath string) error {
 	fmt.Println("\n==> Injecting Swedish translation...")
 	if err := classic.InjectTranslation(tmpDir, translationPath); err != nil {
 		return fmt.Errorf("translation injection failed: %w", err)
 	}
-
-	fmt.Println("\n==> Patching CHAR blocks (Swedish glyph data)...")
-	if err := charset.Patch(tmpDir); err != nil {
-		return fmt.Errorf("charset patch: %w", err)
-	}
-
 	return nil
 }
 
