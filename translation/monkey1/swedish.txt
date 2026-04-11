@@ -578,7 +578,7 @@
 [020:SCRP#0095](14)Titta på det där fantastiska skeppet där ute!
 [020:SCRP#0095](14)Kom du med det?
 [020:SCRP#0095](14)Kom du med skeppet jag såg där ute?
-[020:SCRP#0095](14)Du är modigare än du ser ut.\255\003Faktiskt så liknar det väldigt ett skepp jag brukade äga...
+[020:SCRP#0095](14)Du är modigare än du ser ut.\255\003Det påminner faktiskt väldigt mycket om ett skepp jag brukade äga...
 [020:SCRP#0095](14) 
 [020:SCRP#0095](FA)Ja, det ÄR en fin utsikt.
 [020:SCRP#0095](FA)Jag tycker inte om den själv.
