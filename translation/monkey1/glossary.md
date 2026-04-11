@@ -114,7 +114,7 @@
 
 ### Food/Drink
 - grog → grogg (keep similar)
-- root beer → root beer
+- root beer → **rotöl** (Swedish compound: rot=root, öl=beer; more accessible than leaving "root beer" in English; used consistently throughout)
 - stew → gryta
 - meat → kött
 - fish → fisk

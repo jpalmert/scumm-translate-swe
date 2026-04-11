@@ -377,7 +377,7 @@
 [014:VERB#0167](D8)Den brinner redan.
 [014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
 [014:OBNA#0167](__)flammande massa
-[014:VERB#0157](D8)Det här är ju inget vanligt pris!\255\003Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](D8)Det här är ju ingen leksak!\255\003Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](D8)Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](54)liten nyckel
 [014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
@@ -1972,7 +1972,7 @@
 [035:LSCR#0211](FA)Öh...
 [035:LSCR#0211](FA)Um...
 [035:LSCR#0211](FA)Nå...
-[035:LSCR#0211](FA)Menar du skummet på den här rotölen?
+[035:LSCR#0211](FA)Menar du huvudet på den här rotölen?
 [035:LSCR#0211](D8)Åh, strunt i det!
 [035:LSCR#0213](D8)Det här grejet är toppen!\255\003Se upp, LeChuck!\255\003Det finns en ny sheriff i stan, och han heter--\255\003--Hörru! Jag måste ta mig till kyrkan!
 [035:LSCR#0215](14)Hörru!! Rör inte min råtta!
@@ -2524,7 +2524,7 @@
 [041:LSCR#0214](D8)Aj!\255\003Har den!
 [041:LSCR#0215](D8)Oj!\255\003Den åt upp alltihop!
 [041:LSCR#0215](D4)mugg grogg
-[041:SCRP#0068](D8)Det här grejet äter sig rakt igenom muggen!
+[041:SCRP#0068](D8)Det äter sig rakt igenom muggen!
 [041:SCRP#0068](D4)smältande mugg
 [041:SCRP#0068](D4)mugg nära döden
 [041:SCRP#0068](D4)tennklump
@@ -3858,7 +3858,7 @@
 [078:SCRP#0151](D8)Det är okej.
 [079:SCRP#0091](14)Ohoj, främling.\255\003Ny i stan?
 [079:SCRP#0091](14)Hej, kul att se dig igen.
-[079:SCRP#0091](14)Oj då, det ser ut som min grogg håller på att bli platt, så du får ursäkta mig.
+[079:SCRP#0091](14)Oj då, det ser ut som min grogg håller på att bli avslagen, så du får ursäkta mig.
 [079:SCRP#0091](FA)Så vad var ditt namn egentligen?
 [079:SCRP#0091](FA)Jag heter Guybrush Threepwood. Jag är ny i stan.
 [079:SCRP#0091](FA)Är du pirat? Kan jag vara med i din besättning?
@@ -3917,7 +3917,7 @@
 [079:SCRP#0091](14)Trevligt att prata med dig.
 [079:SCRP#0091](14)Ha det kul på Mêlée Island®.
 [079:SCRP#0091](14)
-[079:SCRP#0091](14)Min grogg håller på att bli platt, så du får ursäkta mig.
+[079:SCRP#0091](14)Min grogg håller på att bli avslagen, så du får ursäkta mig.
 [080:VERB#0883](D8)Den är rostig.\255\003Jag tror inte den fungerar.
 [080:OBNA#0883](__)kanon
 [080:VERB#0885](D8)Det finns tre hål i den.
