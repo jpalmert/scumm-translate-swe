@@ -1,8 +1,11 @@
 package main
 
 import (
+	"bytes"
+	"encoding/binary"
 	"errors"
 	"fmt"
+	"math"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -125,9 +128,11 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	// CHAR blocks are needed for the SE's classic rendering mode (F1 toggle).
 	// Verb layout reordering ensures Swedish button labels fit correctly in both
 	// classic and SE rendering modes.
-	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
-		return err
-	}
+	// TODO: temporarily disabled — testing autosave crash with English text.
+	_ = translationPath
+	// if err := patchClassicFiles(tmpDir, translationPath); err != nil {
+	// 	return err
+	// }
 
 	// --- Step 6: Read patched files back into PAK entries ---
 	fmt.Println("\n==> Reading patched classic files...")
@@ -153,22 +158,91 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
-	// --- Step 8: Disable autosave via tweaks.txt ---
-	// The PAK ships with a tweaks.txt containing "SCUMM.Save game,1" — a developer
-	// debug setting that triggers an autosave at 5 minutes of game time. With a
-	// modified MONKEY1.001 (translation injected, file structure changed by raw-mode
-	// re-encoding) the SE engine crashes during that autosave. Zeroing the save
-	// value disables the autosave and prevents the crash.
-	fmt.Println("\n==> Disabling autosave (tweaks.txt)...")
-	disableAutosave(entries)
-
-	// --- Step 9: Repack PAK ---
+	// --- Step 8: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
 
+	// --- Step 9: Patch autosave timer in SE engine binary ---
+	// The SE engine (MISE.exe) has a hardcoded 5-minute (300.0 second) autosave
+	// timer stored as a 64-bit double at file offset 0xed010. Two comisd
+	// instructions compare accumulated game time against this constant; when
+	// elapsed >= 300.0 the engine enqueues an autosave event. With a modified
+	// MONKEY1.001 the autosave crashes, so we raise the threshold to effectively
+	// disable it. The engine binary is optional — patching is skipped if not found.
+	fmt.Println("\n==> Patching autosave timer in engine binary...")
+	gameDir := filepath.Dir(outputPAK)
+	enginePatched := false
+	for _, exeName := range []string{"MISE.exe", "mise.exe"} {
+		exePath := filepath.Join(gameDir, exeName)
+		if _, err := os.Stat(exePath); err != nil {
+			continue
+		}
+		if err := patchAutosaveTimer(exePath); err != nil {
+			fmt.Printf("    WARNING: %v\n", err)
+		}
+		enginePatched = true
+		break
+	}
+	if !enginePatched {
+		fmt.Println("    MISE.exe not found — skipping (engine binary not in same directory as PAK)")
+	}
+
+	return nil
+}
+
+// patchAutosaveTimer raises the 5-minute autosave timer in the SE engine binary
+// to 9,999,999 seconds, effectively disabling autosave. The timer is stored as
+// an IEEE 754 double (300.0) at a known offset; the patch is skipped with a
+// warning if the bytes don't match (different engine version).
+func patchAutosaveTimer(exePath string) error {
+	const timerOffset = 0xed010
+
+	data, err := os.ReadFile(exePath)
+	if err != nil {
+		return fmt.Errorf("reading %s: %w", filepath.Base(exePath), err)
+	}
+	if timerOffset+8 > len(data) {
+		return fmt.Errorf("%s: file too small — may be a different version", filepath.Base(exePath))
+	}
+
+	expectedBytes := make([]byte, 8)
+	binary.LittleEndian.PutUint64(expectedBytes, math.Float64bits(300.0))
+
+	// If already patched, read from backup to get original bytes for re-patching.
+	bakPath := exePath + ".bak"
+	_, bakErr := os.Stat(bakPath)
+	if bakErr == nil {
+		fmt.Printf("    %s: backup exists — re-patching from original\n", filepath.Base(exePath))
+		origData, err := os.ReadFile(bakPath)
+		if err != nil {
+			return fmt.Errorf("reading backup: %w", err)
+		}
+		data = origData
+	}
+
+	if !bytes.Equal(data[timerOffset:timerOffset+8], expectedBytes) {
+		return fmt.Errorf("%s: timer bytes don't match 300.0 at offset 0x%x — skipping (different version?)",
+			filepath.Base(exePath), timerOffset)
+	}
+
+	if bakErr != nil {
+		// No backup yet — create one.
+		if _, err := backup.Create(exePath); err != nil {
+			return fmt.Errorf("backup %s: %w", filepath.Base(exePath), err)
+		}
+		fmt.Printf("    Backed up: %s\n", bakPath)
+	}
+
+	patched := make([]byte, len(data))
+	copy(patched, data)
+	binary.LittleEndian.PutUint64(patched[timerOffset:], math.Float64bits(9999999.0))
+	if err := os.WriteFile(exePath, patched, 0644); err != nil {
+		return fmt.Errorf("writing %s: %w", filepath.Base(exePath), err)
+	}
+	fmt.Printf("    %s: autosave timer patched (300s → 9999999s)\n", filepath.Base(exePath))
 	return nil
 }
 
