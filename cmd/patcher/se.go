@@ -12,7 +12,6 @@ import (
 	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
-	"scumm-patcher/internal/speech"
 )
 
 // runSEPatch is the testable entry point for the Special Edition patching pipeline.
@@ -123,16 +122,6 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return err
 	}
 
-	// --- Step 4a: Build speech mapping from ORIGINAL English content ---
-	// This must happen before translation injection; after injection the English
-	// strings are gone and the mapping cannot be built.
-	fmt.Println("\n==> Building speech.info mapping...")
-	speechMapping, err := classic.BuildSpeechMapping(tmpDir, translationPath)
-	if err != nil {
-		return fmt.Errorf("building speech mapping: %w", err)
-	}
-	fmt.Printf("    %d EN→SV pairs\n", len(speechMapping))
-
 	// --- Step 4: Apply SE-specific classic patches ---
 	// Only inject the Swedish translation. CHAR block patching and verb layout
 	// patching are skipped for SE because:
@@ -169,32 +158,43 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
-	// --- Step 8: Repack PAK ---
+	// --- Step 8: Disable autosave via tweaks.txt ---
+	// The PAK ships with a tweaks.txt containing "SCUMM.Save game,1" — a developer
+	// debug setting that triggers an autosave at 5 minutes of game time. With a
+	// modified MONKEY1.001 (translation injected, file structure changed by raw-mode
+	// re-encoding) the SE engine crashes during that autosave. Zeroing the save
+	// value disables the autosave and prevents the crash.
+	fmt.Println("\n==> Disabling autosave (tweaks.txt)...")
+	disableAutosave(entries)
+
+	// --- Step 9: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
 
-	// --- Step 9: Patch speech.info ---
-	// speech.info lives next to the PAK in an audio/ subdirectory.
-	// The SE engine matches voiced lines by looking up the current string from
-	// MONKEY1.001 in speech.info's EN slot. After Swedish injection, the EN slots
-	// must also contain Swedish bytes so the lookup succeeds.
-	// speech.info is optional — skip silently if not present.
-	speechInfoPath := filepath.Join(filepath.Dir(outputPAK), "audio", "speech.info")
-	if _, err := os.Stat(speechInfoPath); err == nil {
-		fmt.Println("\n==> Patching speech.info...")
-		n, err := speech.Patch(speechInfoPath, speechMapping)
-		if err != nil {
-			return fmt.Errorf("speech.info patch: %w", err)
-		}
-		fmt.Printf("    Updated %d entries\n", n)
-	} else {
-		fmt.Println("\n==> speech.info not found — skipping (audio/speech.info not present next to PAK)")
-	}
-
 	return nil
+}
+
+// disableAutosave patches the "SCUMM.Save game" line in the tweaks.txt PAK entry
+// to value 0, preventing the SE engine's 5-minute autosave from firing.
+func disableAutosave(entries []*pak.Entry) {
+	for _, e := range entries {
+		if strings.ToLower(e.Name) != "tweaks.txt" {
+			continue
+		}
+		lines := strings.Split(string(e.Data), "\n")
+		for i, line := range lines {
+			if strings.HasPrefix(line, "SCUMM.Save game,") {
+				lines[i] = "SCUMM.Save game,0"
+			}
+		}
+		e.Data = []byte(strings.Join(lines, "\n"))
+		fmt.Println("    SCUMM.Save game set to 0")
+		return
+	}
+	fmt.Println("    tweaks.txt not found — skipping")
 }
 
 // patchSEClassicFiles injects the Swedish translation into MONKEY1.000/001 in
