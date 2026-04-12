@@ -114,7 +114,7 @@
 [008:OBNA#0103](__)svart kista
 [008:VERB#0104](D8)Ah, fin bukett.
 [008:VERB#0104](D8)Jag tror det behöver andas i rumstemperatur ett tag till.
-[008:VERB#0104](D8)Jag är ingen vinexpert, men att döma av den djupröda färgen...\255\003...så är det här ett riktigt fint vin.
+[008:VERB#0104](D8)Jag är ingen enolog, men att döma av den djupröda färgen...\255\003...så är det här ett riktigt fint vin.
 [008:OBNA#0104](__)fint vin
 [008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat det.
 [009:VERB#0108](D8)Jag tror jag kommer bli sjösjuk.
@@ -305,7 +305,7 @@
 [011:LSCR#0205](D8)Gummiträd!
 [011:LSCR#0206](13)Herman Rötbett
 [011:LSCR#0207](D8)Hoppsan...
-[012:VERB#0133](D8)Ja, det är det näst största aphuvudet jag nånsin sett!
+[012:VERB#0133](D8)Jösses, det är det näst största aphuvudet jag nånsin sett!
 [012:OBNA#0133](__)gigantiskt aphuvud
 [012:OBNA#0134](__)djungel
 [012:VERB#0136](D8)Jösses.
@@ -698,7 +698,7 @@
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island® Kannibalerna`
 [020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
 [020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare nyckeln till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
-[020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Yammer, Hem och Haw, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
+[020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Gnäll, Hum och Hav, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
 [020:SCRP#0164](D8)`Jag tror vi har en möjlighet här.`\255\003`Vi kan troligtvis dra in stora belopp för sveda och värk och möjligen även straffskadestånd.`
 [020:SCRP#0164](14)
 [020:SCRP#0166](54)memon
@@ -1048,7 +1048,7 @@
 [025:SCRP#0106](FA)Jag är inte en sådan mes ändå.
 [025:SCRP#0106](FA)Jag skulle älska att få dig uppstoppad. Jag skulle tjäna en förmögenhet.
 [025:SCRP#0106](14)Där är den.
-[025:SCRP#0106](14)Ett sprutt av det där och ektoplasman träffar verkligen fläkten!
+[025:SCRP#0106](14)Ett sprutt av det där och ektoplasman brakar verkligen loss!
 [025:SCRP#0106](14)Och om du har något över är det utsökt med lite vaniljglass.
 [025:SCRP#0106](14)Lycka till.
 [025:SCRP#0106](D8)Tack.
