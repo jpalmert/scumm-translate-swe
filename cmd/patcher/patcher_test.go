@@ -5,6 +5,7 @@ import (
 	"encoding/binary"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 
 	"scumm-patcher/internal/pak"
@@ -400,6 +401,46 @@ func TestFindGameFileAlternateNaming(t *testing.T) {
 	}
 	if filepath.Base(p) != "MONKEY.000" {
 		t.Errorf("expected MONKEY.000, got %s", p)
+	}
+}
+
+// SE-013: disableAutosave patches "SCUMM.Save game,1" to 0 in tweaks.txt entry.
+func TestDisableAutosave(t *testing.T) {
+	tweaks := "UI.Slide Animation,1\nSCUMM.Save game,1\nSCUMM.Jump to room,28\n"
+	entries := []*pak.Entry{
+		{Name: "tweaks.txt", Data: []byte(tweaks)},
+	}
+	disableAutosave(entries)
+	got := string(entries[0].Data)
+	if strings.Contains(got, "SCUMM.Save game,1") {
+		t.Error("autosave not disabled: SCUMM.Save game,1 still present")
+	}
+	if !strings.Contains(got, "SCUMM.Save game,0") {
+		t.Error("expected SCUMM.Save game,0 after patching")
+	}
+	// Other lines must be unchanged.
+	if !strings.Contains(got, "UI.Slide Animation,1") {
+		t.Error("unrelated tweaks.txt line was modified")
+	}
+}
+
+// SE-014: disableAutosave is a no-op when tweaks.txt is absent.
+func TestDisableAutosaveNoTweaks(t *testing.T) {
+	entries := []*pak.Entry{
+		{Name: "classic/en/monkey1.000", Data: []byte("data")},
+	}
+	disableAutosave(entries) // must not panic or error
+}
+
+// SE-015: disableAutosave is a no-op when tweaks.txt has no SCUMM.Save game line.
+func TestDisableAutosaveNoSaveLine(t *testing.T) {
+	tweaks := "UI.Slide Animation,1\nSCUMM.Jump to room,28\n"
+	entries := []*pak.Entry{
+		{Name: "tweaks.txt", Data: []byte(tweaks)},
+	}
+	disableAutosave(entries)
+	if string(entries[0].Data) != tweaks {
+		t.Error("tweaks.txt was modified despite no SCUMM.Save game line")
 	}
 }
 

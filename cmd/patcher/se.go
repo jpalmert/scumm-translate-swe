@@ -185,13 +185,19 @@ func disableAutosave(entries []*pak.Entry) {
 			continue
 		}
 		lines := strings.Split(string(e.Data), "\n")
+		patched := false
 		for i, line := range lines {
 			if strings.HasPrefix(line, "SCUMM.Save game,") {
 				lines[i] = "SCUMM.Save game,0"
+				patched = true
 			}
 		}
 		e.Data = []byte(strings.Join(lines, "\n"))
-		fmt.Println("    SCUMM.Save game set to 0")
+		if patched {
+			fmt.Println("    SCUMM.Save game set to 0")
+		} else {
+			fmt.Println("    tweaks.txt found but no SCUMM.Save game line — skipping")
+		}
 		return
 	}
 	fmt.Println("    tweaks.txt not found — skipping")
