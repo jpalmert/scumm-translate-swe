@@ -128,11 +128,9 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	// CHAR blocks are needed for the SE's classic rendering mode (F1 toggle).
 	// Verb layout reordering ensures Swedish button labels fit correctly in both
 	// classic and SE rendering modes.
-	// TODO: temporarily disabled — testing autosave crash with English text.
-	_ = translationPath
-	// if err := patchClassicFiles(tmpDir, translationPath); err != nil {
-	// 	return err
-	// }
+	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
+		return err
+	}
 
 	// --- Step 6: Read patched files back into PAK entries ---
 	fmt.Println("\n==> Reading patched classic files...")
