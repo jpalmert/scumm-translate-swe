@@ -475,7 +475,7 @@ L1961: "kemtvätten" for "the cleaners" — correct.
 L1965: "fuktiga, unkna spökdoften från andra sidan graven" for "dank, musty, beyond-the-grave ghostly smell" — "unkna" (musty) and "andra sidan graven" (other side of the grave) are excellent.
 L1968: "rotölsparfym" for "root beer cologne" — fun compound.
 L1971: "skruva av huvudet" for "pop your head off" — "skruva av" (unscrew) is a fun image.
-L1975: "Menar du skummet på den här rotölen?" for "You mean the head on this root beer?" — `[UNCERTAIN]` The English puns on "head" (ghost head to pop off / head of foam on beer). Swedish "skummet" (foam) has no "head" double meaning, so the pun is lost. This may be untranslatable — Swedish has no word for beer foam that also means "head."
+L1975: "Menar du skummet på den här rotölen?" for "You mean the head on this root beer?" — The English puns on "head" (ghost head / beer foam). Swedish "skummet" loses the double meaning, but the misunderstanding still works: the bartender naturally interprets the conversation as being about beer foam. Good enough.
 L1977: "Det här är toppen!" for "This stuff's great!" — natural.
 L1978–1983: Rat sequence — good.
 L1992: "protokollen" for "minutes" (meeting minutes) — correct Swedish term.
@@ -1035,7 +1035,7 @@ Most have been resolved; 4 remain uncertain due to untranslatable puns.
 ### Still uncertain (4 items — untranslatable puns)
 
 1. ~~L1711~~ — RESOLVED: "KONS-pirat-ION" hides "pirat" inside "konspiration"
-2. L1975: `[UNCERTAIN]` beer "head" pun — "skummet" has no overlap with "huvud"
+2. ~~L1975~~ — RESOLVED: misunderstanding works without the pun; bartender naturally hears "foam"
 3. L2174: `[UNCERTAIN]` "om du har stake" — borderline colloquial, not widely confirmed
 4. L2319: `[UNCERTAIN]` "Se upp" lookout pun — no Swedish phrase works as both warning AND job title
 
