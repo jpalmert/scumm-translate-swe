@@ -1030,3 +1030,118 @@ L2689: "Det står 'Jag besegrade Svärdmästaren'" — natural.
 L2690: "Jag tror jag behåller den i nyskick." — "nyskick" (mint condition) natural. Fourth-wall collector humor.
 L2691: "100% bomulls-T-shirt" for "100% Cotton T-shirt" — "bomulls-T-shirt" natural compound.
 
+### Room 045 — Ghost ship (final confrontation / wedding)
+
+L2692: "DU!" — emphasis preserved.
+L2693–2762: LeChuck confrontation and Elaine rescue — extensive scene. All natural. Key highlights:
+L2695, 2728: "din vidriga voodoo-vålnad" — changed from "dimmiga voodoo-ohyra." V-V-V alliteration preserved. "Vålnad" (specter/ghost) fits LeChuck.
+L2705: "Guybrush, din galna dåre!" — natural. Elaine's exasperated affection.
+L2706: "avslöja mina kort i förtid" (tip my hand early) — natural idiom.
+L2718: "spökknäckande rotölsflaska" — good compound.
+L2721: "voodoo-rotöl" — "rotöl" per glossary, consistent.
+L2724–2739: "-het" word chain (djärvhet/dumhet/lättsinnighet/rörlighet/skörhet/enormitet/grymhet/raskhet/manlighet/lycklighet/giltighet) — all correct Swedish abstract nouns ending in consonant-matching suffixes. Humor preserved.
+L2741: "Jag slår dig med en gummikyckling." — natural.
+L2743: "Jag erbjuder en muta för din brud." — "Skatt för min skatt" (booty for my beauty) at L2746 preserves the wordplay perfectly: "skatt" means both "treasure/booty" AND "darling/sweetheart."
+L2756: "svällande säck med... ...med nåt som börjar på 's'!" — adapted from English "billowing bag of... something that begins with 'b'." Swedish "svällande" starts with S, so the alliteration joke is correctly localized.
+L2758: "Den KLÄMMER! Måste vara fickludd." — "fickludd" (pocket lint) natural compound.
+
+### Room 048 — Bridge (rubber chicken zipline)
+
+L2763–2778: Bridge/cable/pole objects — standard. "Stolpe" (pole), "kabel" (cable) standard. L2775: "Pråligt, men på ett glatt sätt." for "Gaudy, but in a cheerful sort of way." — natural.
+L2777: "Sjaskigt." for "Dingy." — natural.
+L2780: "Oj! Det funkar åt båda hållen. Det där är en jäkla kyckling." — "jäkla kyckling" (hell of a chicken) natural. Humor preserved.
+
+### Room 049 — Forest paths (random pirate encounters)
+
+L2783–2802: Pirate encounter dialog — natural throughout. Pirate register: "Va vill du din skabbiga landkrabba" (What ya want ya scurvy lubber), "Flytta på dej, annars hugger ja mej igenom!" — colloquial pirate Swedish with intentional spelling/grammar. L2794: "Piratspråk! Det va så alla pratade på den tiden." — meta fourth-wall joke about pirate dialog. Natural.
+L2796–2797: "Mintpastiller" — consistent.
+L2802: "pirat-wannaben" — natural Swedish with English loanword "wannabe." Consistent.
+
+### Room 051 — Circus tent (Fettucini Brothers)
+
+L2803–2806: "utanför" (outside) × 4 — standard.
+L2808: "Ah, den funkar som hjälm!" — natural.
+L2810–2811: "EKO" / "eko" — correct Swedish.
+L2812–2813: "Fettucinibröderna" — per glossary.
+L2814–2825: Insult sequence — excellent Swedish variety: "Vessla!" (Weasel), "Mask!" (Weevil/worm), "Skurk!" (Miscreant), "Fjäsk!" (Toady), "Odåga!" (Ne'er-do-well), "Buse!" (Scofflaw), "Mullhuvud!" / "Hirsehuvud!" / "Pennhuvud!" / "Halvhuvud!" / "Osthuvud!" — head-related insults adapted to Swedish. "Harpia!" (Harpy) — standard.
+L2828: "Din mamma bär stridstofflor!" — "stridstofflor" (combat slippers) is a great compound.
+L2830–2832: "kyckling" / "död kyckling" / "död kyckling med en trissa i mitten" — escalating insult chain with rubber chicken callback. Natural.
+L2843–2846, 2853–2856: "Slöfock! Förlorare! Bråkstake! Snobb!" — varied Swedish insults. All natural.
+L2857: ". . .ehum. . ." for ". . .ahem. . ." — "ehum" is a valid Swedish throat-clearing variant.
+L2864–2877: Fettucini Brothers pitch — alternating lines of escalating/de-escalating description. All natural. "Dödsföraktande bedrift" (death-defying feat) / "inte så dödsföraktande" (not so death-defying) — humor preserved.
+L2877: "Fettucinibröderna!" — per glossary.
+L2895–2896: Format string \255\004\100\000 preserved. "Dubloner" consistent.
+L2901: "Vad tar ni mig för, en idiot?" — natural. \254\008 preserved.
+L2923: "?ammam nim ud rÄ .nibboB reteh gaJ" — reversed text of "Jag heter Bobbin. Är du min mamma?" Correct Swedish adaptation of the reversed English.
+L2928: "Hurra! Vi slipper en pinsam och ekonomiskt förödande rättegång!" — "ekonomiskt förödande" (financially debilitating) natural. Humor preserved.
+L2930: "Rättvis ersättning" for "Just recompense" — natural formal Swedish.
+
+### Room 052 — Circus exterior
+
+L2935: "Spaghettibröderna" for "Spaghetti Brothers" — Guybrush misremembering "Fettucinibröderna." Correct adaptation: different pasta name in both languages.
+L2937: "cirkustält" for "circus tent" — standard compound.
+
+### Room 053 — Governor's mansion interior
+
+L2939: "Jag borde vara försiktig så jag inte skär mig." — natural.
+L2940: "trasigt fönster" — standard.
+L2942: "En ovärderlig Ming!" for "A priceless Ming!" — "ovärderlig" (priceless) standard.
+L2943: "vas" — standard.
+L2954: "mullvadar" for "gophers" — "mullvad" is the standard Swedish word. "Mullvadsmedel" for "gopher repellent" at L2955.
+L2956–2957: "stilmanual" for "Manual of Style" — standard. "Religiös text" humor preserved.
+L2958: "jakstora och täckta med dreggel" — "jakstora" (yak-sized) natural compound. "Dreggel" (slobber) natural.
+L2960: "Inga häftklamrar att ta bort." — natural.
+L2962: "häftklammerborttagare" for "staple remover" — standard Swedish compound.
+L2963–2964: Painting descriptions — natural. "Grym hatt" (great hat) natural.
+L2966–2973: Object names — all natural Swedish: "tung stol" (heavy chair), "enorm jak" (tremendous yak), "röd knapp" (red button), "grälsjuk noshörning" (quarrelsome rhinoceros), "dokumentförstörare" (shredder), "tungt beväpnad clown" (heavily-armed clown).
+L2976: "Hypnotisera" for "Hypnotize" — verb label (7A). Correct.
+L2985: "mullvadshord" for "gopher horde" — natural compound.
+L2992: "stilfull konfetti" for "stylish confetti" — humor preserved (shredded document).
+L2994: "Kasta" for "Throw" — verb label. Correct.
+L2996: "noshörningsnaglar" for "rhinoceros toenails" — natural compound.
+L2998–3037: Sheriff/Governor confrontation and idol theft scene — extensive. All natural. Key highlights:
+L3000: "Idolen med de Många Händerna" per glossary, consistent.
+L3003: "sällskapspudlar" for "pet poodles" — "sällskapspudlar" natural compound.
+L3008: "du har fått allt om bakfoten!" for "you've got it all wrong!" — "om bakfoten" (backwards/wrong) natural Swedish idiom.
+L3014: "Den hör hemma på ett museum!" — Indiana Jones reference preserved.
+L3027: "den första hederliga personen de har vilselett" — natural.
+L3036: "Förlåt för honom. Han är ny." — natural. Elaine's diplomatic tone.
+L3042: "Det här ser ut som ett jobb för Fester Shinetop!" — natural.
+L3048: "Davey Jones skåp" for "Davey Jones' Locker" — standard reference. Death threat humor.
+L3049: "happy hour" — kept in English, understood in Swedish.
+
+### Room 057 — Bridge troll
+
+L3055: "Ser jag ut som en springpojke?" for "Do I look like a gopher?" — "springpojke" (errand boy) is a creative adaptation. The English pun links "gopher" (the animal) to "go-fer" (someone who goes and fetches things). Swedish has no such pun, so "springpojke" captures the "errand runner" meaning.
+L3058: "INGEN FÅR PASSERA!!" for "NONE SHALL PASS!!" — natural. Monty Python reference preserved.
+L3059: "en röd sill" for "a red herring" — Swedish uses the same English expression "red herring" but "röd sill" (red herring) is the literal translation and works because the item IS a fish.
+L3061–3066: Troll's payment demands — natural throughout. "Ynklig summa" (paltry amount), "avleder uppmärksamheten" (diverts attention).
+L3070: "mäktig pirat" — consistent.
+L3077: "Oj vad vekt du låter" — "vekt" (wimpy) natural.
+L3078: "skabbiga havssnigel" for "scurvy sea slug" — natural Swedish insult.
+L3081: "Stadsfyllon" for "town drunk" — "stadsfyllon" (town drunk) natural compound.
+L3083: "hjärnlösa lerdocka" for "brainless clay doppelganger" — "lerdocka" (clay doll) natural. Insult lands.
+L3084: "Stoppa det i örat, din stora gröna pratsamma larv!" — alliteration "gröna... pratsamma" partial. Natural.
+L3087: "lika hjärnlösa fåniga lilla docka" — natural escalating comeback.
+L3088: "Ta DET och stoppa det i din repertoar!" — natural.
+L3089: "Vilket öra, påkandedräkt?" — "påkandedräkt" is an unusual/creative insult. Unclear but fits the confused troll's style.
+L3093–3110: Toll payment attempts — natural throughout. "Halvunket kött" (semi-rancid meat), "grytkastrull" (stew pot). L3104: "Kalsonger av konstruktionspapper" (construction paper jockey shorts) — absurd. Natural. L3107: "mossbelupna trehandtagsfamiljekredensa" — mammoth compound preserving the absurdity of "moss-covered three-handled family credenza."
+
+### Room 058 — Forest (campsite, flowers)
+
+L3111–3135: Forest objects and paths — all natural. "Lägerplats" (campsite), "klargul" (bright yellow), "labyrintlika skogen" (mazelike forest). "Gult kronblad" for "yellow petal." L3120: "Jag tror inte att strosa genom skogen och plocka blommor är bra träning för att bli pirat." — natural. Humor preserved.
+
+### Room 059 — Stan's Previously Owned Vessels
+
+L3136: "kolsyrad vätska" (carbonated fluid) — "rotöl" at L3137 per glossary.
+L3138: "stor, ful, elak" — consistent LeChuck description.
+L3143: "Jag sålde ett skepp! Kan ni tänka er det?" — natural Stan voice. "Arrivederci, baby!" kept.
+L3144: "STANS BEGAGNADE FARTYG" — sign text, per glossary. "Finaste begagnade marina transportmedlen" — Stan's over-the-top sales language. Natural.
+L3159: "STANS BEGAGNADE FARTYG" — business card, consistent. "Jag håller inte käften förrän jag gjort en deal!" — natural Stan voice.
+L3161: "Den kanske inte ser ut som mycket, men den är min." — natural. Guybrush about his ship.
+L3165: "renoveringsobjekt" for "fixer-upper" — natural Swedish compound.
+L3167: "Grog... Dietgrog... Körsbärsgrog... Grog Classic... Koffeinfri grog... ...och Rotöl." — grog machine varieties. "Dietgrog" / "Körsbärsgrog" / "Koffeinfri grog" — natural Swedish compound adaptations of soda brand parodies. "Rotöl" per glossary.
+L3169: "Dubloner är den föredragna lokala valutan." — "föredragna" (preferred) natural.
+L3171: "grogautomat" for "grog machine" — natural compound.
+L3175: "dubloner" — consistent.
+
