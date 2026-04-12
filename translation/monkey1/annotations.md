@@ -513,7 +513,7 @@ L2158–2175: Meathook's monster buildup — atmospheric, well-paced tension.
 L2162: "bet av mina händer" for "bit off my hands" — correct.
 L2168: "kalla fötter" for "cold feet" — Swedish has the same idiom.
 L2173: "fegis" for "chicken" — good Swedish coward-epithet, used consistently (L2173, 2199, 2200).
-L2174: "om du har stake" for "if you've got the guts" — `[UNCERTAIN]` "Ha stake" (have backbone/spine) is an uncommon Swedish expression. More standard would be "om du vågar" (if you dare) or "om du har kurage." "Stake" (pole/rod) as metaphor for backbone is at best dialectal. Used again at L2179. Borderline — understandable in context but not idiomatic.
+L2174: "om du vågar" for "if you've got the guts" — Changed from "om du har stake." "Vågar" (dare) is natural Swedish. L2179 updated to match: "Du vågade göra det jag aldrig kunde."
 L2180: "skura ditt däck" for "swab your decks" — good nautical Swedish.
 L2181–2184: "Järnkrok" for "Meathook" — per glossary. The name reveal sequence works well.
 L2185: "talande tatuering" for "talking tattoo" — natural compound.
@@ -1036,6 +1036,6 @@ Most have been resolved; 4 remain uncertain due to untranslatable puns.
 
 1. ~~L1711~~ — RESOLVED: "KONS-pirat-ION" hides "pirat" inside "konspiration"
 2. ~~L1975~~ — RESOLVED: misunderstanding works without the pun; bartender naturally hears "foam"
-3. L2174: `[UNCERTAIN]` "om du har stake" — borderline colloquial, not widely confirmed
+3. ~~L2174~~ — RESOLVED: changed to "om du vågar" (natural Swedish)
 4. L2319: `[UNCERTAIN]` "Se upp" lookout pun — no Swedish phrase works as both warning AND job title
 

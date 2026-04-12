@@ -2171,12 +2171,12 @@
 [037:LSCR#0201](D8)Åh, är det allt?
 [037:LSCR#0201](14)Okej. Kör på...
 [037:LSCR#0201](14)...fegis.
-[037:LSCR#0201](14)...om du har stake.
+[037:LSCR#0201](14)...om du vågar.
 [037:LSCR#0201](14)
 [037:LSCR#0201](54)dörr
 [037:LSCR#0205](14)Braaaak!
 [037:LSCR#0205](14)Jag tror det inte.
-[037:LSCR#0205](14)Du är en modig man trots allt.\255\003Du mötte odjuret jag fruktat alla dessa år.\255\003Du hade stake att göra det jag aldrig kunde.
+[037:LSCR#0205](14)Du är en modig man trots allt.\255\003Du mötte odjuret jag fruktat alla dessa år.\255\003Du vågade göra det jag aldrig kunde.
 [037:LSCR#0205](14)Jag känner mig som en sådan fegis.\255\003Jag är inte bra nog att vara med i din besättning.\255\003Jag är inte ens bra nog att skura ditt däck.
 [037:LSCR#0205](D8)Äh, kom igen, Järnkrok.
 [037:LSCR#0205](D8)Äh, kom igen, herr...
