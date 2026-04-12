@@ -2274,7 +2274,7 @@
 [037:SCRP#0060](14)Hörru, du har ganska bra humor.\255\003Vill du se nåt riktigt roligt?
 [037:SCRP#0060](FA)Helst inte.
 [037:SCRP#0060](FA)Som vad? Ett foto på hela din flintfamilj?
-[037:SCRP#0060](FA)Ja tack, visa mig, herr Meat.
+[037:SCRP#0060](FA)Ja tack, visa mig, herr Järn.
 [037:SCRP#0060](14)Äh, kom igen.\255\003Det tar bara en sekund.
 [037:SCRP#0060](14)Herregud!\255\003Du vet helt enkelt inte när du ska sluta, va?
 [037:SCRP#0060](FA)Uppenbarligen inte din frisör heller.
@@ -2692,7 +2692,7 @@
 [045:LSCR#0200](14)DU!
 [045:LSCR#0200](FA)Jag har kommit för att stoppa dig från att gifta dig med Guvernör Marley.
 [045:LSCR#0200](FA)Snälla döda mig inte.
-[045:LSCR#0200](FA)Ta DET HÄR, din dimmiga voodoo-ohyra!
+[045:LSCR#0200](FA)Ta DET HÄR, din vidriga voodoo-vålnad!
 [045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
 [045:LSCR#0200](14)Hur tänker ni göra det?
 [045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
@@ -2725,7 +2725,7 @@
 [045:LSCR#0200](FA)Nå, jag kan inte tro din dumhet.
 [045:LSCR#0200](FA)Jag var tvungen att stoppa dig från att gifta dig med Guvernör Marley.
 [045:LSCR#0200](FA)Snälla döda mig inte.
-[045:LSCR#0200](FA)Ta DET HÄR, din dimmiga voodoo-ohyra!
+[045:LSCR#0200](FA)Ta DET HÄR, din vidriga voodoo-vålnad!
 [045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
 [045:LSCR#0200](14)Jaså?
 [045:LSCR#0200](14)Nå, jag kan inte tro din lättsinnighet.
@@ -3410,7 +3410,7 @@
 [061:SCRP#0058](FA)Hej, jag säljer dessa fina skinnjackor.
 [061:SCRP#0058](94)Jag är tillbaka, och oj vad du är i trubbel den här gången.
 [061:SCRP#0058](94)OK, jag tror jag har kläm på det nu.
-[061:SCRP#0058](94)Jag återvänder, nyss från en strid!
+[061:SCRP#0058](94)Jag återvänder, färsk från ett dråp!
 [061:SCRP#0058](94)Hej, minns du mig?
 [061:SCRP#0058](14)Det tvivlar jag på.\255\003Alla som kommer hit är beredda att slåss.
 [061:SCRP#0058](14)Låt oss vara ärliga: du är här för att bevisa dig för Piratledarna, i hopp om att en dag vara lika omoralisk som dom.
@@ -3672,7 +3672,7 @@
 [071:VERB#0785](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
 [071:OBNA#0785](__)fångcell
 [071:OBNA#0789](__)dörr
-[071:VERB#0788](D8)Åh bra, mer att bära på.
+[071:VERB#0788](D8)Åh bra, mer inventarier.
 [071:VERB#0788](D8)Det är lysande spökverktyg.
 [071:OBNA#0788](__)spökverktyg
 [071:LSCR#0202](14)
@@ -3972,7 +3972,7 @@
 [081:SCRP#0092](14)På grund av LeChuck, det är därför!
 [081:SCRP#0092](14)LeChuck?
 [081:SCRP#0092](14)Det är han som gick till Guvernören på middag och aldrig ville gå därifrån.
-[081:SCRP#0092](14)Han föll för henne rejält, men hon sa åt honom att dra åt skogen.
+[081:SCRP#0092](14)Han föll för henne rejält, men hon sa åt honom att dra åt helvete.
 [081:SCRP#0092](14)Så det gjorde han.\255\003Sen blev det verkligen otäckt.
 [081:SCRP#0092](14)
 [081:SCRP#0092](FA)Vad är det som är så läskigt med den här LeChuck?

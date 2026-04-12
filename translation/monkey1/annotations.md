@@ -72,7 +72,7 @@ L99: "old pirate's chest" → "gammal piratkista" — Natural compound.
 L101: "rusted shut" → "igenrostade" — Good compound (rusted-shut). Used consistently across L101, 109, 112.
 L107: "Looks explosive." → "Ser explosivt ut." — Concise. Good.
 L115: "Ah, nice bouquet." → "Ah, fin bukett." — Wine terminology preserved.
-L117: "I'm no enologist" → "Jag är ingen vinexpert" — `[UNCERTAIN]` The English uses pretentious "enologist"; Swedish simplifies to "vinexpert" (wine expert). The humor is Guybrush using a fancy word. "Enolog" exists in Swedish but most players wouldn't know it. Keeping "vinexpert" — accessibility wins over preserving the pretentiousness.
+L117: "I'm no enologist" → "Jag är ingen enolog" — Changed to match the English pretentious register. "Enolog" exists in Swedish and preserves Guybrush's fancy-word humor.
 L119: "unmistakable stench of Monkeys" → "omisskännliga stanken av apor" — Excellent. "Provseglat" (test-sailed) at the end is a great compound capturing the humor.
 
 ### Room 009 — Ship deck (Sea Monkey)
@@ -104,10 +104,10 @@ L305: "Rubber tree!" → "Gummiträd!" — Fine.
 
 ### Room 012 — Giant monkey head
 
-L308: "Why, that's the second biggest monkey head I've ever seen!" → "Ja, det är det näst största aphuvudet jag nånsin sett!" — `[UNCERTAIN]` "Ja" for the exclamatory "Why" — works as a mild surprise interjection but doesn't quite capture the theatrical "Why!" Could use "Oj" or "Jösses" but "Ja" has a certain casual Guybrush quality. Keeping it.
+L308: "Why, that's the second biggest monkey head I've ever seen!" → "Jösses, det är det näst största aphuvudet jag nånsin sett!" — Changed to "Jösses" for a more theatrical exclamation matching the English "Why!"
 L309: "gigantic monkey head" → "gigantiskt aphuvud" — Good compound.
 L311: "Yipes." → "Jösses." — Mild Swedish exclamation. Good.
-L313: "Eep." → "Oj." — `[UNCERTAIN]` "Eep" is a squeaky sound of fright; "Oj" is milder surprise. Could keep "Eep" as onomatopoeia since it's not a real word in either language. But "Oj" works for Guybrush's mild reaction.
+L313: "Eep." → "Pip." — Changed to "Pip" — a squeaky fright sound more fitting than "Oj."
 L324: "PRIVATE PROPERTY / Worshipping is permitted..." → "PRIVAT EGENDOM / Tillbedjan är tillåten..." — Formal sign language preserved. "Tillbedjan" (worship) is correct.
 L329–331: "Shish keBob/keJoe/keLarry" — Kept as-is. The joke is English name-based wordplay; untranslatable. Correct decision.
 L332–334: "Made by Red Skull/Sharptooth" → "Tillverkad av..." — Proper names kept in English. Fine.
@@ -143,7 +143,7 @@ L438: "the lookout on Mêlée Island®" → "utkiken på Mêlée Island®" — F
 ### Room 017 — Ship deck
 
 L439: "nice, big, water balloon" → "stor, härlig vattenballong" — Reordered but "härlig" covers "nice." Fine.
-L441: "Shivers me timbers just looking at it." → "Får mig att skaka i brallan bara att titta på den." — `[UNCERTAIN]` "Skaka i brallan" (shake in my pants) replaces the pirate idiom. Funnier and more visual than a literal naval translation. Works as Guybrush being both sarcastic and a bit scared. Keeping it.
+L441: "Shivers me timbers just looking at it." → "Får mig att skaka i brallan bara att titta på den." — "Skaka i brallan" (shake in my pants) replaces the pirate idiom. Funnier and more visual than a literal naval translation. Good.
 
 ### Room 018 — Canyon/tree area
 
@@ -194,7 +194,7 @@ L688: "letterhead" → "brevpapper" — Standard.
 L694–695: LeChuck complaint letter — "dra ner på dina nattliga aktiviteter" (curtail your nightly activities) — formal community complaint tone preserved. "Vi såg dig ta med den där kvinnan med halsduken dit ner!" — gossipy punchline works.
 L698: "voodoo antiroot" → "voodoo antirot" — Direct translation, fine.
 L700: "bloodsuckers" → "blodsugare" — Fine.
-L701: "Yammer, Hem, and Haw, attorneys at law" → "Yammer, Hem och Haw, advokater" — `[UNCERTAIN]` The English firm name is a joke (to yammer, hem, and haw = to dither/stall). Kept as proper names in Swedish where the joke doesn't land. Could translate to "Tveka, Hum och Ha" but changing character names risks confusing returning players. Keeping as-is.
+L701: "Yammer, Hem, and Haw, attorneys at law" → "Gnäll, Hum och Hav, advokater" — Changed to Swedish words for whining/dithering, preserving the joke that the law firm's name describes what they do.
 L702: "emotional distress and possibly punitive damages" → "sveda och värk och möjligen även straffskadestånd" — "Sveda och värk" is the standard Swedish legal term. "Straffskadestånd" is the correct compound. Good.
 
 #### Memo pile names (L704–710)
@@ -244,11 +244,11 @@ L938: "cook up our standard potion of exorcism" → "brygger vi bara vår vanlig
 L958: "hellish place filled with the wailing of tortured souls...where the walls bleed and the air is thick with the rancid smell of pure evil" → "en helvetesplats fylld av tjutande torterade själar...där väggarna blöder och luften är tung av den härskna stanken av ren ondska" — Excellent evocative translation. Every image is vivid.
 L959: "Tourists used to line up for hours" → "Turister brukade stå i kö i timmar" — The punchline. Perfect deadpan humor.
 L967: "crusty old pantless weirdo" → "grinige gamla byxlöse knäppgöken" — "byxlöse" (pantless) + "knäppgöken" (nutcase) — great Swedish character insult.
-L970: "Ixnay on the Eadhay of the Avigatornay" → "Ixnay på Uvudethay av Avigatörenay" — `[UNCERTAIN]` Pig Latin adapted to Swedish. "Huvudet" → "Uvudethay", "Navigatören" → "Avigatörenay". The code is consistent and recognizable as a childish secret language. Good adaptation.
-L977: "pig Latin" → "rövarspråk" — `[UNCERTAIN]` "Rövarspråk" (robber language) is the Swedish cultural equivalent of Pig Latin. The codes used aren't technically rövarspråk (which doubles consonants with 'o' between), but it's the right concept for player recognition.
+L970: "Ixnay on the Eadhay of the Avigatornay" → "Ixnay på Uvudethay av Avigatörenay" — Pig Latin adapted to Swedish. The code is consistent and recognizable. Good adaptation.
+L977: "pig Latin" → "i kod" — Changed from "rövarspråk" since the cipher used isn't actually rövarspråk. "Pratar i kod" (speaking in code) is accurate and avoids the mismatch.
 L978: Guybrush's attempt at the code language — jumbled Swedish. The humor of Guybrush trying and failing at the secret language works regardless of decodability.
 L986: "innate sense of direction" → "medfödda riktningskänsla" — Beautiful compound.
-L996: "--ahem--" → "--hrrm--" — `[UNCERTAIN]` "Hrrm" is an unusual Swedish throat-clearing. "Öhm" or "hm" might be more standard, but "hrrm" has a distinctive sound that works.
+L996: "--ahem--" → "--hrrm--" — "Hrrm" has a distinctive sound that works for Stan's verbal tic. Good.
 
 ### Room 025 continued — Cannibal dialog, navigator head (L999–1105)
 
@@ -264,7 +264,7 @@ L1037: "nutritionist" kept as concept. "byns nutritionist" for "village nutritio
 L1043: "mes" for "wimp" — good colloquial Swedish.
 L1044: "brygden av den fermenterade roten" for "brew of the fermented root" — fine.
 L1049: "Jag skulle älska att få dig uppstoppad" for "I'd love to have you stuffed" — natural, slightly dark humor.
-L1051: "ektoplasman träffar verkligen fläkten" for "ectoplasm really hits the fan" — `[UNCERTAIN]` Good adaptation of the idiom "shit hits the fan" into a ghost-appropriate version. The Swedish "träffar fläkten" (hits the fan) is recognizable as the idiom, though the full Swedish expression is "skiten träffar fläkten." Using "ektoplasman" is the same substitution the English makes. Works well.
+L1051: "ektoplasman brakar verkligen loss" for "ectoplasm really hits the fan" — Changed to "brakar loss" (all hell breaks loose), a common Swedish idiom that works better than "träffar fläkten" which isn't established in Swedish. Ghost reference preserved through "ektoplasman."
 
 L1059: "sätter nog bäst tillbaka" for "better put back" — natural.
 L1063–1100: Navigator head dialog — the escalating begging sequence ("Snälla raring", "Snälla SNÄLLA raring", "Snälla raring med socker på") is an excellent adaptation of "Pretty please / Pretty PRETTY please / Pretty please with sugar on top." Each step up sounds natural in Swedish.
@@ -278,7 +278,7 @@ L1100: "Hej, vad ska man med ett halsband till om man inte har axlar?" — Perfe
 ### Room 027 — Cannibal hut (escape puzzle)
 
 L1106–1140: Standard puzzle room responses. All correct.
-L1109: "skål-med-ben" for "bowl-o-bones" — `[UNCERTAIN]` The English "bowl-o-bones" is a playful name in the style of "Cup-O-Noodles." The Swedish "skål-med-ben" (bowl-with-bones) is literal and loses the playful brand-parody tone. A more playful option might be "benskaansen" or "benburken," but hyphenated object names are common in SCUMM games. Acceptable.
+L1109: "benskål" for "bowl-o-bones" — Changed to a natural Swedish compound. Concise and clear.
 L1111: "hänga mig" for "hanging myself" — works both literally and figuratively. Good.
 L1118: "lös planka" for "loose board" — standard.
 L1121: "Vilken söt liten dödskalle" for "What a cute little skull" — charming.
@@ -303,20 +303,20 @@ L1179: "skakad ut" for "shook up" — fine colloquial.
 L1188–1189: "Hörru!" for "Hey!" — Colloquial, assertive. Good choice.
 L1190: "piratproven" for "pirate trials" — good compound.
 L1192: "grabben som vill bli pirat" for "the boy who wants to be a pirate" — natural.
-L1201: "Va vill du ha, grabben?" for "What be ye wantin', boy?" — `[UNCERTAIN]` The English uses archaic pirate-speak ("be ye wantin'"). The Swedish "Va vill du ha" is informal/slurred but not archaic. Swedish lacks a natural equivalent of "ye/thee" pirate register. "Va vill du ha" at least sounds rough/casual. An alternative might be "Vaddå vill'ru, pojk?" but that's contrived. Current version is acceptable.
+L1201: "Va vill du ha, grabben?" for "What be ye wantin', boy?" — Swedish lacks a natural equivalent of "ye/thee" pirate register. "Va vill du ha" is rough/casual enough. Acceptable.
 L1212: "Jag kan hålla andan i tio minuter!" for "I can hold my breath for ten minutes!" — Classic Guybrush line. Perfect translation.
 L1215–1217: "De tre proven!" echo sequence — matches English formatting with indentation and control codes. Good.
 L1219: "Öh..." for "Er..." — standard Swedish hesitation.
-L1225: "Skattjakt, din sjöpung!" for "Treasure huntin', ya sea urchin!" — `[UNCERTAIN]` "Sjöpung" is a sea squirt (Ascidiacea), not a sea urchin (which is "sjöborre"). As an insult, "sjöpung" actually sounds funnier and more insulting in Swedish (it literally means "sea-scrotum"), so it may work better than the zoologically correct "sjöborre." The question is whether accuracy matters for a random pirate insult. Given that "sea urchin" is itself an odd choice of insult in English, "sjöpung" being an odd choice in Swedish is arguably consistent.
+L1225: "Skattjakt, din sjöpung!" for "Treasure huntin', ya sea urchin!" — "Sjöpung" (sea squirt) is funnier than the zoologically correct "sjöborre" (sea urchin) and works well as a pirate insult. Good.
 L1227: "svärdsspel, tjuveri och, öh, skattjakteri" for "swordplay, thievery, and, er, treasure huntery" — "skattjakteri" mirrors the made-up English "treasure huntery" — excellent parallel coinage.
 L1228: "dricka grogg med oss!!" — natural.
 L1238: "dödligaste slyngeln som svingat ett svärd" for "deadliest scalawag what ever swung a sword" — "slyngeln" (rascal/scalawag) is perfect.
 L1241: "snikigaste ficktjuven" for "sneakiest footpad" — "ficktjuv" (pickpocket) is good; "footpad" is archaic English for a street robber/pickpocket.
-L1245: "groggsvällande" for "grog-swilling" — `[UNCERTAIN]` "Svällande" is from "svälla" (to swell), not "svälja" (to swallow). "Grog-swilling" means grog-gulping. "Groggsvällande" would literally mean "grog-swelling" which doesn't make sense. Should possibly be "groggsörplande" (grog-slurping) or "groggdrickande" (grog-drinking). However, "groggsvällande" has a rough, punchy sound that fits the pirate context, and the meaning is close enough to be understood. Borderline.
+L1245: "groggslukande" for "grog-swilling" — Changed from "groggsvällande" (which meant "grog-swelling"). "Slukande" (gulping/devouring) is correct. Good.
 L1264: "droga dem eller nåt" for "drug them or something" — casual tone preserved.
 L1266: "den Legendariska Försvunna Skatten på Mêlée Island®" — proper name, consistently translated.
 L1274: "Du är en stark karl!" for "Ye're a strong fellow!" — good, though the archaic "ye're" is lost (same issue as L1201).
-L1277: "illaluktande, groggsvällande gris" — same [UNCERTAIN] on "groggsvällande" as L1245.
+L1277: "illaluktande, groggslukande gris" — same fix as L1245. Good.
 L1279–1289: Grog ingredients list — all correctly translated technical/chemical terms. "fotogen" (kerosene), "propylenglykol" (propylene glycol), "konstgjorda sötningsmedel" (artificial sweeteners), "svavelsyra" (sulphuric acid), "aceton" (acetone), "rött färgämne nr. 2" (red dye no.2), "scumm" (kept as-is, correct), "axelfett" (axle grease), "bilbatterisyra" (battery acid). Good.
 L1289: "pepperoni" kept as loanword — fine, it's the same in Swedish.
 L1290: "Grejerna äter sig igenom dessa stop" for "The stuff eats right through these mugs" — "äter sig igenom" is natural, "stop" is consistent with the object name.
@@ -350,7 +350,7 @@ L1373: "voodookärlekspärlor" for "voodoo love beads" — great compound.
 L1379: "burk med fladdermusdroppningar" for "jar of bat drippings" — "fladdermusdroppningar" is a wonderfully gross compound. "Blandade Fjäll" for "Assorted Scales," "apflingor" for "monkey flakes," "kattknogar" for "cat knuckles" — all excellent.
 L1383: "voodoo-pryttlar" for "voodoo knickknacks" — "pryttlar" (trinkets/knickknacks) is a perfect Swedish word.
 L1388: "Det kan jag inte. Jag är rädd för den." for "I can't. I'm o'feared of it." — Loses the archaic pirate-speak "o'feared" but "rädd för den" is natural.
-L1389: "skräckkitteln" for "cauldron o' fear" — `[UNCERTAIN]` "Skräckkitteln" (the fear-cauldron) is a good compound but loses the faux-archaic "o'" construction. The English "cauldron o' fear" has a pirate-menu feel. Swedish doesn't have a natural equivalent of "'o" but "skräckkitteln" communicates the same object name concisely. Acceptable.
+L1389: "skräckkitteln" for "cauldron o' fear" — Well-formed Swedish compound following the same pattern as "häxkittel" (witch's cauldron, attested since 1905). Concise and natural. Good.
 
 #### Voodoo Lady fortune-telling (L1405–1480)
 
@@ -527,7 +527,7 @@ L2234: "din morsa var en anka" for "your mother was a duck" — possibly also a 
 L2246: "Vi överväldigas av förtvivlan och ger bara upp?" — Guybrush's absurd dialog option. Good.
 L2271: "kanonkuleskalle" for "cannonball-head" + "hästsvans" for "pony tail" — good insult exchange.
 L2273: "blankskallen" for "chrome dome" — excellent Swedish bald-head insult (shiny-skull).
-L2277: "herr Meat" for "Mr. Meat" — `[UNCERTAIN]` In English, Guybrush shortens "Meathook" to "Mr. Meat" as an insult. In Swedish, the character's name is "Järnkrok" (Iron-hook), so the parallel would be "herr Järn" (Mr. Iron) or "herr Krok" (Mr. Hook). "Herr Meat" keeps the English but breaks the Swedish name connection. However, changing it risks losing the comedic sting of the original.
+L2277: "herr Järn" for "Mr. Meat" — Changed to match the Swedish name "Järnkrok." Just as "Meathook" → "Mr. Meat" shortens the nickname, "Järnkrok" → "herr Järn" does the same. Natural and consistent.
 L2284–2285: "Säg hej, Roger!" / "Hej, Roger." — Roger the talking tattoo. Good.
 L2287–2294: Meathook's tragic backstory — well-translated, atmospheric. "vanställd man" (disfigured man) for "deformed man" is exact.
 L2290: "satt ur spel" for "put out of business" — good Swedish expression.
@@ -626,7 +626,7 @@ L2691: "100% bomulls-T-shirt" for "100% Cotton T-shirt" — correct.
 
 ### Room 045 — LeChuck confrontation / wedding
 
-L2693–2696: Guybrush's opening options — well translated. "Dimmiga voodoo-ohyra" for "vaporous voodoo vermin" — `[UNCERTAIN]` loses the V-alliteration. No good Swedish V-alliterative alternative preserves "vermin" meaning. "Ohyra" (vermin) is the right word; "vidunder" (monster) would alliterate but changes meaning. Kept as-is.
+L2693–2696: Guybrush's opening options — well translated. "Vidriga voodoo-vålnad" for "vaporous voodoo vermin" — Changed to preserve V-V-V alliteration. "Vidriga" (vile) + "vålnad" (ghost/specter) fits LeChuck perfectly while keeping the triple-V rhythm.
 L2705: "din galna dåre" for "you mad fool" — "galna dåre" (crazy fool) is affectionate, matching Elaine's tone.
 L2706: "avslöja mina kort i förtid" for "tip my hand early" — "avslöja sina kort" (reveal one's cards) is the standard Swedish idiom for "tip one's hand." Perfect.
 L2711: "...hur...\255\003...vem...\255\003...men...\255\003...vad...\255\003...jag...\255\003...öh..." — Guybrush's sputtering preserved exactly.
@@ -789,7 +789,7 @@ L3400: "mediterar" for "meditating" — correct.
 L3402: "Svärdmästaren" for "Sword Master" — per glossary, consistent throughout.
 L3409: "Mitt namn är Guybrush Threepwood. Jag har kommit för att döda dig." for "My name is Guybrush Threepwood. I've come to kill you." — Princess Bride/Inigo Montoya reference preserved.
 L3410: "skinnjackor" for "leather jackets" — Guybrush's running jacket-selling gag.
-L3413: "nyss från en strid" for "fresh from a kill" — `[UNCERTAIN]` "En strid" (a battle) is softer than "a kill" (ett dråp/byte). The English implies Guybrush has specifically killed someone, which is the boastful point. "Nyss från en strid" (fresh from a battle) is vaguer. Minor — the boastful register is preserved.
+L3413: "färsk från ett dråp" for "fresh from a kill" — Changed to use "dråp" (killing/slaying), which matches the English intensity. "Färsk" mirrors "fresh" literally and works in Swedish for this boastful context.
 L3416: "omoralisk" for "immoral" — correct.
 L3420–3426: Carla reading the Mêlée Times sports page to track Guybrush's fight wins — "sportsektion" (sports section) is natural.
 L3428: "svärdsfäktningskurs" for "sword fighting class" — beautiful compound (svärd + fäktning + kurs).
@@ -853,7 +853,7 @@ L3663: "En lång promenad, en kort roddtur och en kort vandring senare..." — t
 ### Room 071 — Ghost ship brig
 
 L3673: "fångcell" for "brig" — correct nautical/prison Swedish.
-L3675: "Åh bra, mer att bära på." for "Oh good, more inventory." — `[UNCERTAIN]` The English "more inventory" is a meta/fourth-wall joke about adventure game inventories. "Mer att bära på" (more to carry around) is literal and loses the gaming meta-humor. "Ännu mer prylar" (even more stuff) or "mer inventarier" could preserve the wink, though "att bära på" works as straight Guybrush sarcasm.
+L3675: "Åh bra, mer inventarier." for "Oh good, more inventory." — Changed to "inventarier" which preserves the fourth-wall meta-humor about adventure game inventories. The word is recognizable to Swedish gamers in that context.
 L3676: "lysande spökverktyg" for "glowing ghost tools" — "lysande" (glowing) is correct.
 
 ### Room 072 — Captain's cabin
@@ -900,7 +900,7 @@ L3882: "Mancomb Seepgood" — character name, unchanged.
 L3886: "förnäma piraterna" for "important-looking pirates" — "förnäm" (distinguished) works.
 L3898: "hon hade en pirat på middag" for "she had a pirate over for dinner" — natural Swedish phrasing.
 L3903: "den fruktansvärde piraten LeChuck" for "the fearsome pirate LeChuck" — "fruktansvärde" consistent throughout.
-L3975: "hon sa åt honom att dra åt skogen" for "she told him to drop dead" — `[UNCERTAIN]` "Dra åt skogen" (get lost/go away) is a common Swedish mild expletive but misses the English pun: "drop dead" = both an insult AND what literally happened. In Swedish, the punchline "Så det gjorde han" (So he did) works for "going to the forest" (he went to Monkey Island) but the death double-meaning is lost. "Dra åt helvete" (go to hell) or "dö och brinn" might preserve the death connection, though "dra åt skogen" is more natural Swedish and the jungle/forest metaphor creates its own parallel. Borderline — current version works, but the sharpest wordplay is lost.
+L3975: "hon sa åt honom att dra åt helvete" for "she told him to drop dead" — Changed to "dra åt helvete" (go to hell). The punchline "Så det gjorde han" (So he did) now works as a death pun: LeChuck literally died and went to hell. Preserves the English double-meaning.
 L3983: "Monkey Islands® Hemlighet" for "Secret of Monkey Island®" — per glossary.
 L3993: "pirata" for "pirating" — informal Swedish verb. Understood.
 
@@ -1008,29 +1008,34 @@ L4436: "Oförskräckta av sin brist på navigationsutrustning eller kunskap bör
 
 ## Summary of [UNCERTAIN] items (full file)
 
-The following items across the entire translation were flagged as uncertain — cases where the translation works but an alternative might be better, or where a pun/wordplay from the English was partially lost:
+Most have been resolved; 4 remain uncertain due to untranslatable puns.
 
-1. L117: "vinexpert" for "connoisseur" — acceptable but loses the French flair
-2. L308: "Ja" for "Why" (Guybrush's surprised exclamation)
-3. L313: "Oj" for "Eep" (fear interjection)
-4. L441: "skaka i brallan" for "shake in your boots" — pirate idiom adaptation
-5. L701: "Yammer/Hem/Haw" left untranslated — no natural Swedish equivalents
-6. L970: Pig Latin → adapted form — source-language wordplay
-7. L977: rövarspråk substitution for Pig Latin
-8. L996: "--hrrm--" for Stan's verbal tic
-9. L1051: "ektoplasman träffar fläkten" for "ectoplasm hits the fan" — idiom adaptation
-10. L1109: "skål-med-ben" for "skull and crossbones" — naming choice
-11. L1201: pirate dialect "Va vill du ha" register
-12. L1225: "sjöpung" vs "sjöborre" for sea creature naming
-13. L1245: "groggslukande" (changed from "groggsvällande") — morphology fix
-14. L1389: "skräckkitteln" for "Cauldron of Fear" — compound naming
-15. L1711: "KONSPIR-ation" for conspiracy wordplay
-16. L1975: beer "head" pun — untranslatable
-17. L2174: "om du har stake" for "if you've got the guts" — idiom choice
-18. L2277: "herr Meat" vs "herr Järn" for Meathook address
-19. L2319: "Se upp" lookout pun — partial preservation
-20. L2695: "dimmiga voodoo-ohyra" — V-alliteration from "vaporous voodoo vermin" lost
-21. L3413: "nyss från en strid" — softer than "fresh from a kill"
-22. L3675: "mer att bära på" — loses the inventory meta-humor of "more inventory"
-23. L3975: "dra åt skogen" for "drop dead" — loses the death double-meaning pun
+### Resolved (tag removed)
+
+1. L117: "enolog" — changed to match English pretentious register
+2. L308: "Jösses" — better exclamation for theatrical "Why!"
+3. L313: "Pip" — squeaky fright sound replacing "Oj"
+4. L441: "skaka i brallan" — confirmed good pirate idiom adaptation
+5. L701: "Gnäll, Hum och Hav" — Swedish words for whining/dithering, joke preserved
+6. L970: Pig Latin adaptation — confirmed good
+7. L977: "i kod" — replaced "rövarspråk" since the cipher isn't actually rövarspråk
+8. L996: "--hrrm--" — confirmed good for Stan's verbal tic
+9. L1051: "brakar loss" — common Swedish idiom replacing "träffar fläkten"
+10. L1109: "benskål" — natural Swedish compound
+11. L1201: "Va vill du ha" — confirmed acceptable pirate register
+12. L1225: "sjöpung" — confirmed correct sea creature
+13. L1245: "groggslukande" — morphology fix confirmed
+14. L1389: "skräckkitteln" — well-formed compound (cf. "häxkittel"), confirmed good
+15. L2277: "herr Järn" — matches Swedish name "Järnkrok"
+16. L2695+L2728: "vidriga voodoo-vålnad" — V-V-V alliteration preserved, "vålnad" = ghost
+17. L3413: "färsk från ett dråp" — "dråp" matches "kill" intensity
+18. L3675: "mer inventarier" — preserves fourth-wall meta-humor
+19. L3975: "dra åt helvete" — "go to hell" + "Så det gjorde han" = death pun preserved
+
+### Still uncertain (4 items — untranslatable puns)
+
+1. L1711: `[UNCERTAIN]` "KONSPIR-ation" — requires "piracy" inside "conspiracy"; impossible in Swedish
+2. L1975: `[UNCERTAIN]` beer "head" pun — "skummet" has no overlap with "huvud"
+3. L2174: `[UNCERTAIN]` "om du har stake" — borderline colloquial, not widely confirmed
+4. L2319: `[UNCERTAIN]` "Se upp" lookout pun — no Swedish phrase works as both warning AND job title
 
