@@ -1145,3 +1145,130 @@ L3169: "Dubloner är den föredragna lokala valutan." — "föredragna" (preferr
 L3171: "grogautomat" for "grog machine" — natural compound.
 L3175: "dubloner" — consistent.
 
+### Room 059 continued — Stan's sales dialog (L3176–3392)
+
+L3177: "När du sätter segel mot bra värde blåser alla vindar mot Stans!" — natural sales slogan. Compass warning preserved with \255\001.
+L3182–3184: "Dunder" for "Rumble" — natural Swedish onomatopoeia.
+L3187–3391: Stan's entire used ship sales dialog — extremely long scene (~200 lines). All natural throughout. Stan's fast-talking salesman register is perfectly captured. Key highlights:
+L3191: "Stans Begagnade Fartyg" per glossary. "Ställa mig på huvudet" (stand on my head) natural.
+L3227–3228: "Vi pratar" repetition (we're talking) — Stan's sales pitch rhythm preserved. "Femton hytter" (fifteen staterooms), "roterande balsal" (rotating ballroom), "uppvärmt utkiksnäste" (heated crow's nest), "tvåhundra fot oceansgående dekadens" — all natural/vivid.
+L3234: "nordisk kvalitet" (Nordic quality) — Stan's flattery. Natural.
+L3237: "Havsapan" per glossary, consistent. History of the Sea Monkey preserved.
+L3238: "nånTING" for "anyTHING" — emphasis preserved. Good.
+L3240: "schimpanser" — consistent with Herman's story (L643).
+L3262: "Varken lånare eller långivare skall du vara." — Shakespeare (Hamlet) quote naturally adapted to Swedish.
+L3274: "gummikyckling med en trissa i mitten" — consistent.
+L3280: "Kroniska spelförluster" (chronic gambling mishaps) — natural.
+L3305: "Låt oss komma till saken" for "Let's get down to brass tacks" — natural idiom.
+L3308: "du har mig i ett trångt läge" for "you got me over a barrel" — natural Swedish equivalent.
+L3311: "frugan" for "the little woman" — casual/dismissive, fits Stan's register.
+L3322–3342: Extras/options scene — all correct Swedish nautical/automotive terms adapted humorously: "avimningen av ventilerna" (porthole defoggers), "ankaret med låsningsfria bromsar" (anti-lock anchor), "kuggstångsrodret" (rack-and-pinion rudder), "veloursegelskydden" (velour sail covers), "stagvändningsmätaren" (tack-o-meter), "imiterade träpanelen" (simulated wood siding).
+L3342: "Havstulpaner HATAR imiterat trä." — "havstulpaner" (barnacles) correct Swedish. Humor preserved.
+L3347–3377: Bidding scene — natural throughout. Price negotiations with "dubloner" consistent.
+L3355: "Egentligen vill jag att du ska lida lite till." — "lida" (squirm/suffer) natural.
+L3387: "samhörighet" for "bonding" — natural. Stan's insincere warmth.
+L3389: "(Godtrogen.)" for "(Sucker.)" — "Godtrogen" (gullible/credulous) is a more sophisticated Swedish equivalent. Good.
+L3392: "Havsapan" per glossary.
+
+### Room 060 — Captain Smirk's interior
+
+L3393–3398: Object names — standard. "Låda full med svärd" (box full of swords), "sandsäck" (sandbag), "boxningssäck" (punching bag) — natural.
+
+### Room 061 — Sword Master (Carla)
+
+L3400: "Det ser ut som om hon mediterar." — natural.
+L3402: "Svärdmästaren" per glossary.
+L3403–3475: Extended Sword Master dialog — all natural. Key highlights:
+L3408: "Jag ber om ursäkt" — formal register befitting approaching a master swordfighter.
+L3410: "Jag säljer dessa fina skinnjackor." — LOOM® reference. Natural.
+L3413: "Jag återvänder, färsk från ett dråp!" — changed from "nyss från en strid." "Dråp" (killing) matches "kill" intensity.
+L3416: "omoralisk" (immoral) — correct.
+L3420–3426: Mêlée Times sports page references — natural. Format string \255\004 preserved at L3425.
+L3428: "slutbetyg i Kapten Smirks svärdsfäktningskurs" — compounds natural.
+L3434: "ditt vassa intellekt" — sarcastic. Natural.
+L3437: "Ärlighet varar längst." for "Nothing like being honest." — Swedish proverb. Natural.
+L3438: "Har du en i storlek 3?" — jacket salesmen reference. Humor.
+L3440–3459: Post-victory and recruitment dialog — natural throughout.
+L3448: "Jag lät dig bara vinna" — Carla's denial. Natural.
+L3456: "Jag har en känsla av att jag kommer ångra det här" — natural. Carla's reluctant agreement.
+L3460–3462: Victory T-shirt handoff — natural.
+L3463–3474: Storekeeper/Carla scene — natural throughout. "Skabbiga gamla gubbe" (crusty old letch) L3467 — vivid. L3472: "hugga av ditt huvud och spotta ner i din hals" — vivid threat. Natural.
+L3473: "Jag älskar när du pratar så." — storekeeper's unrequited crush. Natural.
+L3475–3482: Alternate Sword Master recruitment — duplicate of L3452–3459. Consistent.
+
+### Room 063 — Docks / Sea voyage
+
+L3483: "GÖR APAN!!!" for "DO THE MONKEY!!!" — dance instruction. Natural.
+L3484–3492: Dance steps — "Bak! Två-tre-fyra!" etc. All natural Swedish dance calls. "Cha-cha-cha" kept as international dance term.
+L3493–3500: Map reveal scene — natural. L3499: "Jag tror jag blivit lurad!" — natural. L3500: "...danslektioner!" — punchline. Natural.
+
+### Room 064 — Treasure site
+
+L3501: "ett stort plustecken" for "a big plus sign" — natural. Guybrush misreading "X marks the spot."
+L3507: "omsorgsfullt reproducerade del av Mêlée Islands® historia" — formal tourist sign. Natural.
+L3508: "SÅ TA DET LUGNT MED SKATTEN" — emphasis preserved. Humor: mass-produced treasure.
+L3511: "allt jag fick var den här dumma T-shirten" — classic tourist humor. Natural.
+L3514: "Mêlée Islands® Handelskammare" (Chamber of Commerce) — natural formal compound.
+L3517–3524: Digging montage — natural. "Timmar går" / "Fler timmar går" consistent.
+
+### Room 065 — Catacombs entrance
+
+L3526: "aphuvud" for "monkey head" — consistent compound.
+L3528: "Jag hade en känsla av att det skulle finnas svampar i helvetet." — natural. Callback to Guybrush's mushroom hatred (Room 039).
+
+### Room 069 — Monkey Head exterior/idols
+
+L3530: "Det näst största örat jag nånsin sett" — running "second biggest" gag. Natural.
+L3532: "näst största aphuvudet" — consistent callback to L308.
+L3538: "Vilket billigt massproducerat turistskräp." — natural. "Tillverkad av Lemonhead" consistent.
+L3541: "pytteliten idol" for "wimpy little idol" — natural.
+L3547: "apmark" for "monkey grounds" — natural compound.
+L3549: "gudsförgätna ön" (godforsaken island) — natural.
+L3550: "människoätande huvudjägare" (man-eating headhunters) — natural compound chain.
+
+### Room 070 — Catacombs/Ghost ship underground
+
+L3552: "Det är det kusliga spökskeppet jag såg segla iväg med Guvernören!" — natural.
+L3558: "IIIP! Du skrämde mig halvt till döds!" — "IIIP" for "EEP" — Swedish adaptation. Natural.
+L3559: "Milt väder" for "Balmy weather" — natural.
+L3577: "Jag lovar inte att inte undvika att avstå från att skada dig." — Triple negative confusion joke. Perfectly adapted to Swedish grammar. Natural and confusing (as intended).
+L3581–3598: Wedding revelation and escape — natural throughout. "Bröllopet" (the wedding) consistent.
+L3593: "Mitt huvud ramlade ner i lavan" — ghost's head falling off joke. Natural.
+L3600–3664: Herman/crew reunion scene — extensive. All natural. Key highlights:
+L3606: "Inga problem! Vi kan ta min! Vi kör!" — Herman's enthusiasm. Natural.
+L3613: "seglade till Ipanema på jakt efter solbränna" — humor preserved.
+L3623–3624: "om du är strandsatt MÅSTE du bli räddad. Det står i reglerna." — Herman's absurd logic. Natural.
+L3633: "lufsiga genomskinliga spöket" for "shambling see-through shade" — "lufsiga" (shambling/slouchy) natural. "Genomskinliga" (see-through) natural.
+L3641: "besattheten med huvuden" (obsession with heads) — natural. Running joke.
+L3651: "naturligtvis är jag blek. Jag är trots allt död." — natural deadpan delivery.
+L3653: "ute på en dags plundring, spökskepp dyker upp, LeChuck dödar alla" — casual recounting of death. Natural.
+L3655: "Mêlée Island. ®." — the ® awkwardly placed as a joke (ghost can't quite say it right). Preserved.
+L3660: "det var definitivt lättare än resan TILL Monkey Island®" — natural.
+L3663: "En lång promenad, en kort roddtur och en kort vandring senare..." — natural scene transition.
+
+### Room 071 — Ghost ship (guard/brig)
+
+L3665: "Han sover." — natural.
+L3666: "anti-spökdrycken" — natural compound.
+L3668: "Det är stort. Det är låst." — concise, natural.
+L3673: "fångcell" for "brig" — correct nautical Swedish.
+L3675: "Åh bra, mer inventarier." — **FIX: Changed from "mer att bära på" which lost the fourth-wall meta-humor. "Inventarier" preserves the adventure game "inventory" joke. (Change recovered from previous session.)**
+L3676: "lysande spökverktyg" (glowing ghost tools) — natural.
+L3678–3687: "z" × escalating snoring — preserved exactly.
+
+### Room 072 — LeChuck's cabin
+
+L3688–3709: Cabin objects and creepy voice lines — all natural. "Spöklik nyckel" (ghostly key), "blåa hårstrån som rör sig" (wriggling blue hairs). L3702: "Arrr... Vad var det för oljud?" — pirate speak preserved. L3705: "Frukta för ditt liv, du som träder in!" — formal archaic register. Natural.
+
+### Room 073 — Ghost ship crew quarters
+
+L3710–3725: Crew quarters objects — natural. "Spökgrog" (ghost grog), "sovande spökbesättning" (sleeping ghost crew). L3724: "Även spökfötter luktar." — natural, dry humor.
+
+### Room 074 — Ghost ship kitchen/rats
+
+L3726–3753: Kitchen objects and rat encounter — all natural. "Matfett" (cooking grease), "rådreggel" (rat slobber), "monsterråttan" (monster rat). L3729: "mättat fett" (saturated fats) — callback to cannibal diet joke. Natural.
+
+### Room 075 — Ghost ship hold (root)
+
+L3754–3770: Ghost animals and voodoo root — all natural. "Spökgrisar" (ghost pigs), "spökkyckling" (ghost chicken), "spökfjäder" (ghost feather) — consistent "spök-" prefix. L3762: "kittlig punkt" (ticklish spot) — natural. L3766: "Jag tar bara den här gamla roten" — natural. L3768: "den stora lysande voodoo-antiroten" — consistent.
+

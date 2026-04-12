@@ -3672,7 +3672,7 @@
 [071:VERB#0785](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
 [071:OBNA#0785](__)fångcell
 [071:OBNA#0789](__)dörr
-[071:VERB#0788](D8)Åh bra, mer att bära på.
+[071:VERB#0788](D8)Åh bra, mer inventarier.
 [071:VERB#0788](D8)Det är lysande spökverktyg.
 [071:OBNA#0788](__)spökverktyg
 [071:LSCR#0202](14)
