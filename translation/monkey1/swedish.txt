@@ -3972,7 +3972,7 @@
 [081:SCRP#0092](14)På grund av LeChuck, det är därför!
 [081:SCRP#0092](14)LeChuck?
 [081:SCRP#0092](14)Det är han som gick till Guvernören på middag och aldrig ville gå därifrån.
-[081:SCRP#0092](14)Han föll för henne rejält, men hon sa åt honom att dra åt helvete.
+[081:SCRP#0092](14)Han föll för henne rejält, men hon sa åt honom att gå och dö.
 [081:SCRP#0092](14)Så det gjorde han.\255\003Sen blev det verkligen otäckt.
 [081:SCRP#0092](14)
 [081:SCRP#0092](FA)Vad är det som är så läskigt med den här LeChuck?
@@ -3993,8 +3993,8 @@
 [081:SCRP#0092](14)Det är därför vi allihop sitter här istället för att pirata.
 [081:SCRP#0092](14)
 [081:SCRP#0092](14)Just det.
-[082:SCRP#0093](14)Aye.
-[082:SCRP#0093](FA)Aye, själv.
+[082:SCRP#0093](14)Ohoy.
+[082:SCRP#0093](FA)Ohoy, själv.
 [082:SCRP#0093](FA)Fin hatt.
 [082:SCRP#0093](FA)Så, berätta om LOOM.
 [082:SCRP#0093](FA)Herregud, vilken genomskinlig säljpitch.
@@ -4008,7 +4008,7 @@
 [082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom® idag!
 [082:SCRP#0093](14)Förlåt, men vissa ämnen gör mig bara så upprymd.
 [082:SCRP#0093](14)Aye.
-[083:VERB#0901](D8)Den heter "Hur du får ett ben upp i skattletandet."
+[083:VERB#0901](D8)Den heter "Hur du får fotfäste i skattletandet."
 [083:OBNA#0901](__)broschyr
 [083:VERB#0902](D8)Den heter "Hur du får ett huvud för navigering."
 [083:OBNA#0902](__)broschyr
