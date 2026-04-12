@@ -9,7 +9,6 @@ import (
 	"strings"
 
 	"scumm-patcher/internal/backup"
-	"scumm-patcher/internal/classic"
 	"scumm-patcher/internal/font"
 	"scumm-patcher/internal/pak"
 )
@@ -122,15 +121,11 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return err
 	}
 
-	// --- Step 4: Apply SE-specific classic patches ---
-	// Only inject the Swedish translation. CHAR block patching and verb layout
-	// patching are skipped for SE because:
-	//   - The SE new-graphics mode uses .font files (patched in Step 7), not CHAR blocks.
-	//   - Growing CHAR blocks changes MONKEY1.001's internal structure in ways
-	//     that can cause the SE engine to crash.
-	//   - The SE handles verb display independently; classic verb layout coordinates
-	//     are irrelevant for the SE renderer.
-	if err := patchSEClassicFiles(tmpDir, translationPath); err != nil {
+	// --- Step 4: Patch classic files (translation, CHAR blocks, verb layout) ---
+	// CHAR blocks are needed for the SE's classic rendering mode (F1 toggle).
+	// Verb layout reordering ensures Swedish button labels fit correctly in both
+	// classic and SE rendering modes.
+	if err := patchClassicFiles(tmpDir, translationPath); err != nil {
 		return err
 	}
 
@@ -201,18 +196,6 @@ func disableAutosave(entries []*pak.Entry) {
 		return
 	}
 	fmt.Println("    tweaks.txt not found — skipping")
-}
-
-// patchSEClassicFiles injects the Swedish translation into MONKEY1.000/001 in
-// tmpDir. CHAR block patching and verb layout patching are skipped for SE:
-// the SE new-graphics mode uses .font files (patched separately), and the SE's
-// verb UI does not use the classic SCRP verb layout.
-func patchSEClassicFiles(tmpDir, translationPath string) error {
-	fmt.Println("\n==> Injecting Swedish translation...")
-	if err := classic.InjectTranslation(tmpDir, translationPath); err != nil {
-		return fmt.Errorf("translation injection failed: %w", err)
-	}
-	return nil
 }
 
 // runListPAK prints all entry names from a PAK file, one per line.
