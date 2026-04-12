@@ -856,4 +856,177 @@ L2050–2054: Rum and jam — "Rom" / "Sylt" — standard. "Rom och sylt" for "r
 L2058: "alternativa försörjningsmetoder" for "alternate means of self-support" — natural formal/ironic.
 L2065: "immateriella myndighetsrövarna" for "immaterial authority-figure-nappers" — brilliant compound. "Immateriella" (immaterial/intangible) + "myndighetsrövarna" (authority-nappers). Natural wordplay.
 L2067–2069: Guybrush's infomercial pitch — "engångspris" (one-time price), "öparadiset" (island paradise) — sales-pitch register. Natural. "På köpet" (as a bonus/while we're at it) for the Governor rescue.
+L2077–2082: Crew excuses — natural. "Hitta elefanten" (find the elephant) running gag.
+
+### Room 035 continued — Map seller (L2083–2122)
+
+L2085: "Åh, det är bara du igen." — natural.
+L2087–2122: Map seller dialog — natural throughout. "Legendariska Försvunna Skatten" consistent. "Kusin Sven" code exchange natural. L2096: "Shhhhhhh! Håll tyst" — dramatic. L2103: "Klart det är en kod, din idiot." — natural. L2106: "Finansiella handlingar om Stans Skeppsvarv? Personalakter från sheriffkontoret?" — "fil" (file) pun preserved with two meanings: documents vs metal file. L2107: "den raspiga metallsorten" — natural clarification.
+
+### Room 036 — Governor's mansion exterior (dogs)
+
+L2123–2124: "dörr" / "stig" — standard.
+L2125–2129: Piranha poodle descriptions — natural. L2129: "Låt sovande hundar ligga" — standard Swedish proverb, perfect match for "Let sleeping dogs lie."
+L2130–2132: "dödliga/sovande pirayapudlar" — "pirayapudlar" consistent compound.
+L2133–2140: Animal welfare notice — fourth-wall humor preserved. "Inga djur skadades under produktionen av detta spel." Natural.
+L2141: "Pirayapudlar äter inte fisk." — natural. Humor: the name implies fish (piranha) but they don't eat them.
+L2146: "Bjäbb!" for "Yip!" — Swedish dog sound.
+
+### Room 037 — Meathook's house
+
+L2148: "stor trädörr" for "big wooden door" — natural compound.
+L2149: "Öppna den bara." — natural.
+L2152, 2154: "Den rör sig inte." for "It won't budge." — natural. Consistent.
+L2155: "dragsnöre" for "pull cord" — standard.
+L2158–2204: Beast challenge scene — extensive. All natural. Key highlights:
+L2162: "odjuret som bet av mina händer" — natural. Meathook's backstory.
+L2164: "Jag glömde mata honom den här veckan. Dumma mig." — "Dumma mig" (silly me) natural casual.
+L2168: "Får du kalla fötter?" for "Getting cold feet?" — standard Swedish idiom.
+L2173: "fegis" for "chicken" — natural Swedish insult.
+L2174: "om du vågar" — changed from "om du har stake." Natural.
+L2179: "Du vågade göra det jag aldrig kunde." — changed from "hade stake att göra det." Consistent with L2174.
+L2181, 2183–2184: "Järnkrok" — per glossary. Consistent name introduction scene.
+L2185: "talande tatuering" (talking tattoo) natural compound.
+L2189: "Du kan skura mitt däck när som helst!" — natural, enthusiastic Guybrush.
+L2196: "tatueringsrutin" (tattoo routine) — natural compound.
+L2197: "det här låter bara bättre och bättre" — Guybrush's sarcasm. Natural.
+L2198–2204: Chicken/coward alternate path — natural. "En gång fegis, alltid fegis." — natural proverb style.
+L2208: "mördande bevingad djävul" for "murderous winged devil" — vivid. (It's actually a tiny parrot.)
+L2209–2276: Extended Meathook dialog (kidnapping revelation, tattoo, insults) — all natural. Key highlights:
+L2228: "Jag heter Bobbin Threadbare. Är du min mamma?" — LOOM® crossover reference preserved.
+L2234: "din morsa var en anka" — natural insult. Absurd humor.
+L2265: "Järnkrok" consistent.
+L2266–2267: "attitydproblem" — natural compound.
+L2271: "Jag har hellre kanonkuleskalle än hästsvans." — "kanonkuleskalle" (cannonball-head), "hästsvans" (pony tail) — natural Swedish compounds for both insults.
+L2273: "blankskallen" for "chrome dome" — natural Swedish bald head insult.
+L2277: "herr Järn" — changed from "herr Meat" to match Swedish name Järnkrok.
+
+### Room 037 continued — Meathook dialog (L2278–2300)
+
+L2278–2300: Meathook backstory, tattoo show, tourist business, departure — all natural throughout. "Blomstrande turistverksamhet" (thriving tourist business) L2287. "Vanställd man" (deformed man) L2294 — vivid. "Säg hej, Roger" / "Hej, Roger" tattoo routine L2284-2285 — natural. "Din... Säg hej då, Roger." — Meathook threatening Guybrush through the tattoo.
+
+### Room 038 — Lookout Point (Mêlée Island)
+
+L2301: "trappa" for "stairs" — standard.
+L2303–2307: Dublon display — "dublon/dubloner" per glossary, consistent. Format string \255\004 preserved.
+L2308: "Jag är inte säker, men jag tror han kanske sover." — natural. Humor about blind lookout.
+L2309–2310: "utkik" for "lookout" — per glossary.
+L2311–2371: Lookout dialog — extensive. All natural. Key highlights:
+L2315: "korvgrillning" (weenie roast) — natural Swedish equivalent.
+L2317: "Vad är grönt och hårigt och har tusen ben?" — joke setup. Natural.
+L2318: "Undrar du nånsin om vi alla bara är karaktärer i en roman?" — fourth-wall meta-humor. Natural.
+L2319: "Se upp! Ha ha. Fattar du?" — `[ACCEPTED]` English puns on "look out" = lookout's job. Swedish "se upp" doesn't connect to "utkik." No better alternative exists.
+L2337: "Gyckelbull Tredsvansen" for "Gibberish Driftwood" — hilarious Swedish name mangling. "Gyckelbull" sounds like gibberish, "Tredsvansen" sounds vaguely like Threepwood. Excellent adaptation.
+L2352: "handplockad" (hand-picked) by Sheriff Shinetop — natural.
+L2356–2357: "Skräckskägg" (Dreadbeard), "Sexfingriga Pete" (Six-fingered Pete) — natural Swedish pirate name suggestions.
+L2365: "golvinspektör" for "flooring inspector" — natural. The insult lands in Swedish.
+
+### Room 038 continued — LeChuck cutscenes (L2373–2416)
+
+L2373: "Under tiden..." for "Meanwhile..." — standard scene transition per glossary.
+L2375: "Djupt under Monkey Island ligger spökpiraten LeChucks skepp förankrat i en flod av lava." — atmospheric. Natural.
+L2378: "det heta vindarna från helvetet som blåser i ansiktet" — natural.
+L2380: "dagar som dessa som gör en glad att vara död" — dark LeChuck humor. Natural.
+L2383: "Jag känner mig så lycklig att ni råkade kapra mitt skepp, och sen mördade mig och alla ombord" — dark sarcasm from ghost crew. Natural.
+L2386: "mesiga piraterna" for "sissy pirates" — "mesiga" (wimpy/sissy) natural.
+L2387: "piratposör" for "pirate wannabe" — "posör" (poser) natural Swedish.
+L2395: "återvänt från Mêlée hittar LeChuck och hans besättning sitt gamla gömställe" — natural narrative.
+L2406: "låst in henne i cellen" — "cellen" (the brig/cell) natural.
+L2410: "sex meter under vatten... antagligen uppsvälld som en gödd gris" — "sex meter" for "twenty feet" (approximate conversion). "Uppsvälld som en gödd gris" (bloated like a fattened pig) natural.
+L2411: "Hans ögon uppätna av krabbor. Fiskar som pickar på fingrarna." — gruesome imagery. Natural Swedish.
+L2413: "--usch--" for "--yech--" — natural disgust interjection.
+L2415: "Aj aj, kapten." for "Aye aye, captain." — standard nautical Swedish.
+
+### Room 039 — Catacombs (body parts)
+
+L2417–2456: Cave and body part objects — all standard/consistent. "Mörkt och illavarslande" (dark and ominous) × 3. "Jag rör helst inte vid det" (I'd rather not touch it) × 16 — consistent refusal. Body part names all correct: "hjärna" (brain), "hjärta" (heart), "ögon" (eyes), "ansikte" (face), "ögonglob" (eyeball), "huvuden" (heads), "kluster av ögonglober" (cluster of eyeballs), "blodiga händer" (bloody hands), "stor näsa" (big nose), "svamp" (mushroom).
+L2451, 2454: "Usch. Jag hatar svamp." — natural. Guybrush's hatred of mushrooms.
+L2457–2476: Single-word/short disgust reactions — all natural Swedish equivalents: "Äckligt" (Gross), "Usch" (Yuck), "Kusligt" (Creepy), "Helvetiskt" (Hellish), "Kväljande" (Sickening), "Motbjudande" (Disgusting), "Illamående" (Nauseating), "Ojdå" (Yikes), "Konstigt" (Weird), "Blä" (Blech), "Vidrigt" (Nasty), "Avskyvärt" (Hideous), "Fruktansvärt" (Horrid), "Onödigt och morbidt" (Gratuitous and morbid). All appropriate register.
+L2468: "Det här påminner om nåt jag såg i en mardröm en gång." — natural.
+L2475: "Det här ger mig riktigt krypningar." — "krypningar" (skin crawl) natural.
+L2477–2482: Guybrush starting to enjoy the grotesque — "Frånstötande, men ändå känner jag mig attraherad." natural. Progression from disgust to "Häftigt!" / "Coolt!" / "Grymt!" — all natural Swedish slang.
+L2483: "Om jag inte tar mig härifrån snart tror jag att jag tappar förståndet." — natural.
+
+### Room 040 — Monkey Island (hanging man area)
+
+L2484: "Det verkar vara ett hopprep." — natural.
+L2485–2488: Object names — standard (rep, lapp, djungel).
+L2489: "Han ser inte bra ut." — natural understatement about a sick/dead man.
+L2490: "Usch." for "Ick." — natural Swedish disgust.
+L2491: "sjuklig man" for "unhealthy-looking man" — natural compound.
+L2492: "hängande lik" for "hanging corpse" — natural.
+L2493: "Herman Rötbett" — per glossary.
+
+### Room 041 — SCUMM Bar kitchen
+
+L2494: "det där vidriga som pirater dricker" — natural. Guybrush describing grog.
+L2497: "tunna" for "barrel" — standard.
+L2500: "nån sorts kött eller köttliknande substans" — "köttliknande substans" (meatlike substance) natural compound. Humor preserved.
+L2501: "köttbit" for "hunk of meat" — standard.
+L2502: "Nån lagade en sylta i den här." for "Someone cooked a headcheese in this." — "sylta" is the Swedish word for headcheese. Perfect.
+L2504: "Jag tror den fågeln hackar av handen på mig..." — natural.
+L2506: "Jag tror det är en sill." for "I think it's a herring." — "sill" (herring) standard.
+L2509–2511: Hot stew descriptions — natural.
+L2512: "gryta med stuvning" for "pot o' stew" — natural.
+L2514: "Det är inget lagerblad, men alla kockar gör utbyten." for "It's not a bay leaf, but every cook makes substitutions." — natural culinary humor.
+L2515–2523: Stew ingredient names — all natural Swedish (kryddad stuvning, kött/fisk i stuvning, stuvat kött/fisk).
+L2526: "mugg grogg" for "mug o' grog" — natural. "Grogg" per glossary.
+L2527: "Det äter sig rakt igenom muggen!" — natural. Consistent with L1290.
+L2528–2530: Melting mug progression — "smältande mugg" (melting mug), "mugg nära döden" (mug near death), "tennklump" (pewter wad) — all natural. "Mugg nära döden" preserves the personification humor.
+
+### Room 042 — Underwater (tied to idol)
+
+L2539: "Nedskräpare. Men vass." for "Litterbugs. Sharp, though." — natural.
+L2540: "trasig flaska" for "broken bottle" — standard.
+L2543: "bågfil" for "hacksaw" — standard Swedish tool name.
+L2545: "rostig kniv" — standard.
+L2546: "Egentligen är det mer som ett fabulöst dörrstopp." — humor about the idol's usefulness. Natural.
+L2547: "fabulös idol" for "fabulous idol" — consistent.
+L2548–2555: Sharp objects progression — all natural Swedish descriptions.
+L2556: "Jag kan inte nå den-- jag är fastbunden vid den här dumma idolen!" — natural.
+L2558: "Oj, jag vet inte hur mycket längre jag kan hålla andan." — natural. Running joke.
+L2559–2568: Crime dialog (Nick's knife) — all natural. "Grovt brott" (felony), "fingeravtryck" (prints), "dumpa" (ditch) — standard.
+
+### Room 043 — Captain Smirk's Pirate Gym
+
+L2574: "Kapten Smirks Stora Piratgym" per glossary. "Dubloner" consistent. Price list natural.
+L2577: "hemsk och okänslig" — natural. LeChuck description consistent.
+L2579: "Jag tror jag knackar. Det vore bara artigt." — natural Guybrush politeness.
+L2581: "klenmodiga lilla ryggradslösa larv" for "wimpy little spineless maggot" — vivid. "Klenmodiga" (wimpy/faint-hearted), "ryggradslösa" (spineless), "larv" (maggot) — all natural.
+L2592: "Hon skulle hugga huvudet av dig." — natural. "Svärdmästaren" consistent.
+L2595: "...i ditt ansikte!" — cigar threat. Humor preserved.
+L2602: "blodssvett" for "sweatin' blood" — standard expression.
+L2604: "ordningsvakterna" for "constabulary" — natural Swedish equivalent.
+L2606: "men jag svävar ut" for "but I digress" — natural.
+L2613: "tvinga dig att äta den här cigarrfimpen" — "cigarrfimpen" (cigar butt) natural.
+L2614: "Jag gillar din anda." — natural.
+L2624: "förbli en ryggradslös spottloska" for "stay a spineless speck of spider spit" — "spottloska" (glob of spit) is natural. Loses the S-alliteration but the insult lands. Acceptable.
+L2625: "gummikyckling med en trissa i mitten" — per glossary. Consistent.
+L2633: "din ynkliga bak" for "your sorry butt" — "ynkliga bak" natural.
+L2634: Rubber chicken with sword — humor preserved. "DET ÄR INGET SVÄRD!!!" emphasis.
+L2637: "din larv" for "ya maggot" — consistent with L2581.
+L2638: "Du slåss som en mjölkbonde!" — iconic insult. Consistent with insult swordfighting system.
+L2639: "LeChuck-tramset har satt käppar i hjulet" — "satt käppar i hjulet" (put a spoke in the wheel/crimped) is standard Swedish idiom. Natural.
+L2641: "elev/mentor/dublon-bandet" for "student/mentor/pieces-of-eight bonding" — humor preserved with Swedish compound.
+L2643: "...MASKINEN." — emphasis and \255\002 preserved.
+L2648: "Kom mot mig. Var inte rädd, du skadar mig inte." — natural.
+L2649–2652: Training montage — "Timmar senare" / "Fler timmar senare" — natural.
+L2654: "Svärdstrid är lite som att älska. Det handlar inte alltid om vad du gör, utan vad du säger." — iconic speech. "Att älska" (making love) is natural Swedish. Wisdom preserved.
+L2656: "skära ner sin motståndare med en förolämpning... ...en som tar dom på sängen" — "tar dom på sängen" (catches them off guard) natural idiom.
+L2657: "din kvickhet måste vara dubbelt så vass som ditt svärd" — natural. Key principle of insult swordfighting.
+L2660: "'Du slåss som en mjölkbonde.' Du svarar med?" — consistent insult.
+L2661–2664: Bad comeback options — "Jaså du!?", "Din morsa med.", "Jag är gummi, du är lim..." — all natural Swedish equivalents. L2664: "Jag är ingen bonde" — appropriate incorrect answer.
+L2666: "'Så passande. Du slåss som en ko.'" — iconic comeback. Natural.
+L2670: "'Snart sitter du fast på mitt svärd som en grillad råtta!'" — consistent insult #2.
+L2675: "Så passande. Du slåss som en ko." — wrong answer (right comeback for wrong insult). Scene preserved.
+L2680: "'Först måste du sluta vifta med det som en dammvippa.'" — consistent comeback #2.
+L2682: "ger dig ut och lär dig nåra förolämpningar" — natural.
+L2683: "Jag kan inte slå bort känslan av att ha blivit lurad." — Guybrush's self-awareness. Natural.
+L2684–2688: Training commands — "Framåt, stöt, tillbaka, parera, ripost" (Advance, Thrust, Recover, Parry, Riposte), "fotarbetet" (footwork), "forte" / "foiblen" (fencing terms) — all correct Swedish fencing terminology.
+
+### Room 044 — T-shirt (Sword Master victory)
+
+L2689: "Det står 'Jag besegrade Svärdmästaren'" — natural.
+L2690: "Jag tror jag behåller den i nyskick." — "nyskick" (mint condition) natural. Fourth-wall collector humor.
+L2691: "100% bomulls-T-shirt" for "100% Cotton T-shirt" — "bomulls-T-shirt" natural compound.
 
