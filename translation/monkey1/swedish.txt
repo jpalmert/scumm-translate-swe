@@ -1708,7 +1708,7 @@
 [031:LSCR#0202](FA)Hur är maten där inne?
 [031:LSCR#0202](FA)Vad sa du att du åt där inne?
 [031:LSCR#0202](14)De gula Caniche Endormi-blommorna i skogen--\255\003Det är olagligt att plocka dem.
-[031:LSCR#0202](14)Jag vet inte exakt vem...\255\003Jag tror det var en konspiration.\255\003Och om det finns en typ av sjöröveri jag inte gillar...\255\003...så är det KONSPIR-ation.
+[031:LSCR#0202](14)Jag vet inte exakt vem...\255\003Jag tror det var en konspiration.\255\003Och om det finns en typ av pirateri jag inte gillar...\255\003...så är det KONS-pirat-ION.
 [031:LSCR#0202](14)
 [031:LSCR#0202](14)Det skulle inte du heller göra om du suttit här lika länge som jag.
 [031:LSCR#0202](14)Jag gjorde ingenting.\255\003Särskilt inte mot de där dumma blommorna.
@@ -3672,7 +3672,7 @@
 [071:VERB#0785](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
 [071:OBNA#0785](__)fångcell
 [071:OBNA#0789](__)dörr
-[071:VERB#0788](D8)Åh bra, mer inventarier.
+[071:VERB#0788](D8)Åh bra, mer att bära på.
 [071:VERB#0788](D8)Det är lysande spökverktyg.
 [071:OBNA#0788](__)spökverktyg
 [071:LSCR#0202](14)

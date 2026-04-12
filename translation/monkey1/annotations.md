@@ -419,7 +419,7 @@ L1697: "håll hakan uppe" for "keep a stiff upper lip" — Swedish uses "chin up
 L1699–1700: Otis's introduction — natural, captures his desperation.
 L1704: "Jag blev ditsatt!" for "I was framed!" — "ditsatt" (set up) is natural Swedish slang.
 L1710: "Caniche Endormi" — French flower name kept. Correct.
-L1711: "KONSPIR-ation" for "CONS-piracy" — `[UNCERTAIN]` The English pun splits "conspiracy" into "cons" + "piracy" — a wordplay on piracy. Swedish "konspiration" has no phonetic link to "sjöröveri" (piracy), so the pun is lost. The emphatic split "KONSPIR-ation" preserves the dramatic delivery even if the wordplay doesn't land. No better alternative exists.
+L1711: "KONS-pirat-ION" for "CONS-piracy" — Pun now works: "pirat" (pirate) is hidden inside "konspiration," mirroring how "piracy" hides inside "conspiracy." Setup line changed from "sjöröveri" to "pirateri" so the echo is clear.
 L1716: "Minsann" for "No kidding" — good affirming expression.
 L1729: "Hämta en advokat åt mig! En billig!" — perfect.
 L1730: "Min befriare ska jag stå i evig skuld till" for "To my emancipator, I shall be eternally indebted" — Otis's mock-formal speech preserved. "befriare" (liberator) for "emancipator."
@@ -1034,7 +1034,7 @@ Most have been resolved; 4 remain uncertain due to untranslatable puns.
 
 ### Still uncertain (4 items — untranslatable puns)
 
-1. L1711: `[UNCERTAIN]` "KONSPIR-ation" — requires "piracy" inside "conspiracy"; impossible in Swedish
+1. ~~L1711~~ — RESOLVED: "KONS-pirat-ION" hides "pirat" inside "konspiration"
 2. L1975: `[UNCERTAIN]` beer "head" pun — "skummet" has no overlap with "huvud"
 3. L2174: `[UNCERTAIN]` "om du har stake" — borderline colloquial, not widely confirmed
 4. L2319: `[UNCERTAIN]` "Se upp" lookout pun — no Swedish phrase works as both warning AND job title
