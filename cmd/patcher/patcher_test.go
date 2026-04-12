@@ -468,6 +468,62 @@ func TestFindTranslationFileExplicit(t *testing.T) {
 	}
 }
 
+// SE-016: patchSaveLoadCrash applies XOR EAX,EAX; RET to FUN_0049ab60.
+func TestPatchSaveLoadCrash(t *testing.T) {
+	// Build a fake MISE.exe with 0x53 at offset 0x9ab60.
+	const funcOffset = 0x9ab60
+	data := make([]byte, funcOffset+16)
+	data[funcOffset] = 0x53 // PUSH EBX — expected original first byte
+
+	dir := t.TempDir()
+	exePath := filepath.Join(dir, "MISE.exe")
+	os.WriteFile(exePath, data, 0644)
+
+	if err := patchSaveLoadCrash(exePath); err != nil {
+		t.Fatalf("patchSaveLoadCrash: %v", err)
+	}
+
+	patched, err := os.ReadFile(exePath)
+	if err != nil {
+		t.Fatalf("read patched: %v", err)
+	}
+	got := patched[funcOffset : funcOffset+3]
+	want := []byte{0x31, 0xC0, 0xC3}
+	if !bytes.Equal(got, want) {
+		t.Errorf("bytes at 0x%x = %X, want %X", funcOffset, got, want)
+	}
+}
+
+// SE-017: patchSaveLoadCrash is idempotent (no-op if already patched).
+func TestPatchSaveLoadCrashIdempotent(t *testing.T) {
+	const funcOffset = 0x9ab60
+	data := make([]byte, funcOffset+16)
+	data[funcOffset] = 0x31 // already patched
+
+	dir := t.TempDir()
+	exePath := filepath.Join(dir, "MISE.exe")
+	os.WriteFile(exePath, data, 0644)
+
+	if err := patchSaveLoadCrash(exePath); err != nil {
+		t.Fatalf("patchSaveLoadCrash idempotent: %v", err)
+	}
+}
+
+// SE-018: patchSaveLoadCrash returns error for unexpected byte.
+func TestPatchSaveLoadCrashWrongByte(t *testing.T) {
+	const funcOffset = 0x9ab60
+	data := make([]byte, funcOffset+16)
+	data[funcOffset] = 0xFF // unexpected — different version
+
+	dir := t.TempDir()
+	exePath := filepath.Join(dir, "MISE.exe")
+	os.WriteFile(exePath, data, 0644)
+
+	if err := patchSaveLoadCrash(exePath); err == nil {
+		t.Fatal("expected error for unexpected byte")
+	}
+}
+
 // --- Auto-detection tests ---
 
 // DETECT-001: isSEInput returns true for a .pak file.

@@ -163,14 +163,26 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
 
-	// --- Step 9: Patch autosave timer in SE engine binary ---
-	// The SE engine (MISE.exe) has a hardcoded 5-minute (300.0 second) autosave
-	// timer stored as a 64-bit double at file offset 0xed010. Two comisd
-	// instructions compare accumulated game time against this constant; when
-	// elapsed >= 300.0 the engine enqueues an autosave event. With a modified
-	// MONKEY1.001 the autosave crashes, so we raise the threshold to effectively
-	// disable it. The engine binary is optional — patching is skipped if not found.
-	fmt.Println("\n==> Patching autosave timer in engine binary...")
+	// --- Step 9: Patch SE engine binary ---
+	// Two patches are applied to MISE.exe:
+	//
+	//  a) Autosave timer: raise the 5-minute threshold to 9,999,999 s to prevent
+	//     autosave from firing (autosave triggers a load which crashes with a
+	//     modified MONKEY1.001 — see note b).
+	//
+	//  b) Save/load crash fix: the SE engine's save-file resource-restore loop
+	//     (FUN_0049ab60) allocates heap space for each saved resource block. After
+	//     scummtr raw-mode injection, LFLF blocks are larger (Swedish strings), so
+	//     the combined allocation size exceeds the fixed SCUMM heap capacity while
+	//     type-0xc/2/10 resources are locked in place. The allocator returns NULL,
+	//     FUN_00499050 writes to address 4, and the engine crashes. The fix patches
+	//     FUN_0049ab60 to return 0 immediately (skip resource data restore); script
+	//     PCs are already saved by FUN_0049b3e0's variable-size state block
+	//     (DAT_005c4680 is within DAT_005c4460's range), and resources reload from
+	//     the patched MONKEY1.001 on demand — no save/load regression.
+	//
+	// The engine binary is optional — patching is skipped if not found.
+	fmt.Println("\n==> Patching engine binary (autosave timer + save/load crash fix)...")
 	gameDir := filepath.Dir(outputPAK)
 	enginePatched := false
 	for _, exeName := range []string{"MISE.exe", "mise.exe"} {
@@ -179,7 +191,10 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 			continue
 		}
 		if err := patchAutosaveTimer(exePath); err != nil {
-			fmt.Printf("    WARNING: %v\n", err)
+			fmt.Printf("    WARNING (autosave): %v\n", err)
+		}
+		if err := patchSaveLoadCrash(exePath); err != nil {
+			fmt.Printf("    WARNING (save/load): %v\n", err)
 		}
 		enginePatched = true
 		break
@@ -241,6 +256,59 @@ func patchAutosaveTimer(exePath string) error {
 		return fmt.Errorf("writing %s: %w", filepath.Base(exePath), err)
 	}
 	fmt.Printf("    %s: autosave timer patched (300s → 9999999s)\n", filepath.Base(exePath))
+	return nil
+}
+
+// patchSaveLoadCrash fixes a heap-overflow crash that occurs when loading a save
+// game after scummtr raw-mode injection has enlarged MONKEY1.001 resources.
+//
+// Root cause: the SE engine's resource-restore loop (FUN_0049ab60) allocates heap
+// memory for every saved resource block. Raw-mode injection makes LFLF blocks
+// larger (Swedish strings are longer than English). When loading, types 0xc/2/10
+// remain locked in the fixed SCUMM heap; the remaining free space is no longer
+// sufficient to load all larger resource blocks simultaneously. FUN_004990e0
+// returns 0 (allocation failure), FUN_00499050 writes to address 4, crash.
+//
+// Fix: patch the first 3 bytes of FUN_0049ab60 to "XOR EAX,EAX; RET" (31 C0 C3).
+// This makes the restore loop exit immediately — resources reload from the patched
+// MONKEY1.001 on demand instead. Script PCs are preserved by FUN_0049b3e0's
+// variable-size state block (DAT_005c4680 is within DAT_005c4460's range).
+//
+// Expected first byte at offset 0x9ab60: 0x53 (PUSH EBX, start of function).
+// If already patched (first byte 0x31), this is a no-op.
+func patchSaveLoadCrash(exePath string) error {
+	const funcOffset = 0x9ab60 // file offset of FUN_0049ab60 in MISE.exe
+
+	data, err := os.ReadFile(exePath)
+	if err != nil {
+		return fmt.Errorf("reading %s: %w", filepath.Base(exePath), err)
+	}
+	if funcOffset+3 > len(data) {
+		return fmt.Errorf("%s: file too small — may be a different version", filepath.Base(exePath))
+	}
+
+	// 31 C0 C3 = XOR EAX,EAX; RET
+	patchBytes := []byte{0x31, 0xC0, 0xC3}
+
+	switch data[funcOffset] {
+	case 0x31:
+		// Already patched — idempotent.
+		fmt.Printf("    %s: save/load crash fix already applied\n", filepath.Base(exePath))
+		return nil
+	case 0x53:
+		// Expected: PUSH EBX (function prologue). Apply patch.
+	default:
+		return fmt.Errorf("%s: unexpected byte 0x%02x at offset 0x%x — skipping (different version?)",
+			filepath.Base(exePath), data[funcOffset], funcOffset)
+	}
+
+	patched := make([]byte, len(data))
+	copy(patched, data)
+	copy(patched[funcOffset:], patchBytes)
+	if err := os.WriteFile(exePath, patched, 0644); err != nil {
+		return fmt.Errorf("writing %s: %w", filepath.Base(exePath), err)
+	}
+	fmt.Printf("    %s: save/load crash fix applied (FUN_0049ab60 → XOR EAX,EAX; RET)\n", filepath.Base(exePath))
 	return nil
 }
 
