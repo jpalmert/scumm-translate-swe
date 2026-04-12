@@ -3882,7 +3882,7 @@
 [079:SCRP#0091](14)Jag heter Mancomb Seepgood.
 [079:SCRP#0091](14)Det är okej.\255\003Mitt namn är Mancomb Seepgood.
 [079:SCRP#0091](14)Tråkigt att se dig gå iväg sur.
-[079:SCRP#0091](14)Var inte en främling.
+[079:SCRP#0091](14)Titta in nån gång.
 [079:SCRP#0091](14)Du borde gå och prata med de förnäma piraterna i nästa rum.\255\003Det är dom som bestämmer här.
 [079:SCRP#0091](14)Dom kan berätta var du ska gå och vad du ska göra.
 [079:SCRP#0091](14)
