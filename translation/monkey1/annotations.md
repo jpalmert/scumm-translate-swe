@@ -9,6 +9,11 @@ but respect the insult/comeback pairing constraints.
 
 Genuinely untranslatable puns or unresolvable issues are tagged `[ACCEPTED]`.
 
+**Literalness check:** Every line has been scanned for too-literal translation
+(English idioms translated word-for-word, calques, unnatural word order). One fix
+was made (L3885 "Var inte en främling" → "Titta in nån gång"). All remaining lines
+confirmed as natural Swedish, not translated English.
+
 ---
 
 ### Room 001 — Monkey Island beach/jungle
