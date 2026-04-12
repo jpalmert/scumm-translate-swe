@@ -68,14 +68,14 @@
 [007:OBNA#0087](__)Kaptenens säng
 [007:LSCR#0200](D8)Jag är körd.
 [007:SCRP#0148](D8)Det står:\255\003`Kaptenens logg, 10 mars.`\255\003`Styrman Rötbett och jag har letat efter Monkey Island® i över en månad utan framgång.`
-[007:SCRP#0148](D8)`Vägbeskrivningen vi köpte på Mêlée visade sig vara ett recept, inte en karta som vi trott.`
+[007:SCRP#0148](D8)`Dokumentet vi köpte på Mêlée visade sig vara ett recept, inte en karta som vi trott.`
 [007:SCRP#0148](D8)`Kaptenens logg, 12 mars.`\255\003`Jag önskar att Rötbett kunde ta ett bad.`
 [007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Rötbett kunde sluta snarka.`
 [007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Rötbett börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi ryker ihop.`
 [007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Rötbett att laga middag ikväll.`
 [007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Rötbett och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
 [007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Rötbett och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island®.`
-[007:SCRP#0148](D8)`Vi är båda ivriga över möjligheten att bli de första civiliserade människorna som lär sig Monkey Islands® Hemlighet.`
+[007:SCRP#0148](D8)`Vi ser båda fram emot möjligheten att bli de första civiliserade människorna som avslöjar Monkey Islands® Hemlighet.`
 [007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Rötbett glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
 [007:SCRP#0148](D8)Det var sista anteckningen.
 [007:SCRP#0184](14)
@@ -112,7 +112,7 @@
 [008:VERB#0103](D8)Den är igenrostad.
 [008:VERB#0103](D8)Det är bara en gammal rostig kista.
 [008:OBNA#0103](__)svart kista
-[008:VERB#0104](D8)Ah, fin bukett.
+[008:VERB#0104](D8)Ah, fin bouquet.
 [008:VERB#0104](D8)Jag tror det behöver andas i rumstemperatur ett tag till.
 [008:VERB#0104](D8)Jag är ingen enolog, men att döma av den djupröda färgen...\255\003...så är det här ett riktigt fint vin.
 [008:OBNA#0104](__)fint vin
@@ -125,7 +125,7 @@
 [009:OBNA#0107](__)dörr
 [010:SCRP#0001](27)
 [010:SCRP#0001](27)
-[010:SCRP#0001](27)The Secret of Monkey Island -- CD-ROM version 2.3b
+[010:SCRP#0001](27)Monkey Island Hemlighet -- CD-ROM version 2.3b
 [010:SCRP#0001](27)Spelet pausat.  Tryck MELLANSLAG för att fortsätta.
 [010:SCRP#0001](27)Sätt i disk %c och tryck på knappen för att fortsätta.
 [010:SCRP#0001](27)Kan inte hitta %s, (%c%d) Tryck på knappen.
@@ -228,7 +228,7 @@
 [010:SCRP#0024](14) 
 [010:SCRP#0025](D8)Hmm. Den här dörren verkar vara låst.
 [010:SCRP#0071](14)Försökte slutföra prövning \255\004\000\064 två gånger. DET HÄR ÄR DÅLIGT!
-[010:SCRP#0071](14)Försökte slutföra ogiltig prövning:\255\004\000\064.  THIS IS BAD!
+[010:SCRP#0071](14)Försökte slutföra ogiltig prövning:\255\004\000\064.  DET HÄR ÄR DÅLIGT!
 [010:SCRP#0144](27)Threepwood
 [010:SCRP#0152](14)Djupt inne i Karibien\255\002
 [010:SCRP#0152](14) 
@@ -492,7 +492,7 @@
 [019:LSCR#0200](14)'Lurade' är rätt ord.
 [019:LSCR#0200](14)Jag förstår inte vad grejen är med att rädda Guvernören.\255\003Hon kan uppenbarligen klara sig själv.
 [019:LSCR#0200](14)Som jag ser det...\255\003Vi har det här FANTASTISKA skeppet...
-[019:LSCR#0200](14)...ja...\255\003...vi har ETT skepp.\255\003Varför tar vi inte det lugnt, binder ett rep vid ratten och kryssar ett tag.\255\003Jag skulle kunna behöva jobba lite på solbrännan.
+[019:LSCR#0200](14)...ja...\255\003...vi har ETT skepp.\255\003Varför tar vi det inte bara lugnt, binder ett rep vid ratten och kryssar ett tag.\255\003Jag skulle kunna behöva bättra på solbrännan.
 [019:LSCR#0200](14)Nu när jag tänker efter, jag har varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
 [019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
 [019:LSCR#0200](14)--suck--
@@ -505,8 +505,8 @@
 [019:LSCR#0204](14)Vad var det?
 [019:LSCR#0204](D8)Inget.
 [019:LSCR#0204](FA)Hej grabbar, vad händer?
-[019:LSCR#0204](FA)Finns det något jag kan göra för att få er att hjälpa mig?
-[019:LSCR#0204](FA)Jag har hört att vädret är riktigt fint vid Monkey Island®.
+[019:LSCR#0204](FA)Kan jag göra nåt för att få er att hjälpa mig?
+[019:LSCR#0204](FA)Jag hörde att vädret är fint vid Monkey Island®.
 [019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island®.
 [019:LSCR#0204](FA)Jag ger er myterister fem sekunder att \254\008     komma till sans!
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
@@ -542,7 +542,7 @@
 [020:OBNA#0265](__)banan
 [020:VERB#0267](D8)Den är gul.
 [020:OBNA#0267](__)banan
-[020:VERB#0269](D8)Ser ut som en gigantisk bomullspinne.
+[020:VERB#0269](D8)Ser ut som en gigantisk tops.
 [020:OBNA#0269](__)aphuvudsnyckel
 [020:VERB#0266](D8)Den är gul.
 [020:OBNA#0266](__)banan
@@ -1046,7 +1046,7 @@
 [025:SCRP#0106](FA)Fin apa.
 [025:SCRP#0106](FA)Jag fick roten.
 [025:SCRP#0106](FA)Jag är inte en sådan mes ändå.
-[025:SCRP#0106](FA)Jag skulle älska att få dig uppstoppad. Jag skulle tjäna en förmögenhet.
+[025:SCRP#0106](FA)Att stoppa upp dig hade gjort mig rik.
 [025:SCRP#0106](14)Där är den.
 [025:SCRP#0106](14)Ett sprutt av det där och ektoplasman brakar verkligen loss!
 [025:SCRP#0106](14)Och om du har något över är det utsökt med lite vaniljglass.
@@ -1404,10 +1404,10 @@
 [029:OBNA#0369](__)höns
 [029:LSCR#0210](14)Vad kan jag hjälpa dig med, min gosse?
 [029:LSCR#0210](14)Ja?
-[029:LSCR#0210](FA)Mitt namn är Guybrush Threepwood och jag är en mäktig pirat.
+[029:LSCR#0210](FA)Jag heter Guybrush Threepwood och är en mäktig pirat.
 [029:LSCR#0210](FA)Hur mycket kostar den här häftiga kycklingen?
 [029:LSCR#0210](FA)Kan du spå i hand? Kommer jag bli rik?
-[029:LSCR#0210](FA)Jag har ändrat mig om att få veta framtiden... spilla bönorna.
+[029:LSCR#0210](FA)Jag har ångrat mig och vill veta min framtid i alla fall.
 [029:LSCR#0210](FA)Resa? Vad kan du berätta för mig om min resa?
 [029:LSCR#0210](FA)Häftig plats du har här. Jag antar att jag sticker nu.
 [029:LSCR#0210](14)Vänta...\255\003...säg ingenting.\255\003Jag kan känna att ditt namn är...\255\003...är...\255\003...Guybrush...\255\003...Guybrush Näshår.\255\003Nej...
@@ -1423,7 +1423,7 @@
 [029:LSCR#0210](14)Nej...\255\003...trissan knarrar.
 [029:LSCR#0210](14)Så...\255\003...mina tankeläsningsfärdigheter säger mig att det är din framtid du är intresserad av.\255\003Är du säker på att det här är något du verkligen vill veta?
 [029:LSCR#0210](FA)Ja! Berätta allt som kommer hända mig.
-[029:LSCR#0210](FA)Nej! Berätta ingenting. Livet borde vara oförutsägbart och spännande.
+[029:LSCR#0210](FA)Nej! Säg inget. Livet ska vara oförutsägbart.
 [029:LSCR#0210](14)Som du vill.
 [029:LSCR#0210](14)Jag kan se att du blir trött.\255\003Gå, snälla.
 [029:LSCR#0210](14)Ändrat dig, ser jag.
@@ -1450,7 +1450,7 @@
 [029:LSCR#0210](D8)Oj då!
 [029:LSCR#0210](D8)Jag tror inte hon kommer tillbaka igen.
 [029:LSCR#0210](FA)Hallå?
-[029:LSCR#0210](FA)Hej! Jag är tillbaka och jag är redo att få veta mer om framtiden.
+[029:LSCR#0210](FA)Hej! Jag är tillbaka och redo att höra om framtiden.
 [029:LSCR#0210](FA)Jag antar att jag bara sticker nu.
 [029:LSCR#0210](D8)Jag antar att ingen är här.
 [029:LSCR#0210](14)Oj då!
@@ -1786,10 +1786,10 @@
 [031:LSCR#0208](14)
 [031:LSCR#0209](14)Jag hoppas du inte tagit den här smutsiga luffare på allvar.\255\003Han säger vad som helst för att slippa betala sin skuld till samhället.
 [031:LSCR#0209](14)
-[031:LSCR#0209](FA)Han verkar oskyldig i mina ögon. Varför släpper du inte ut honom?
+[031:LSCR#0209](FA)Han verkar oskyldig. Varför släpper du inte ut honom?
 [031:LSCR#0209](FA)Han ÄR smutsig. Och luktar illa dessutom.
 [031:LSCR#0209](FA)Ursäkta? Vi hade ett privat samtal.
-[031:LSCR#0209](FA)Herregud! TITTA vad klockan är! Jag skulle GÄRNA stanna och prata, men...
+[031:LSCR#0209](FA)Oj! TITTA vad klockan är! Stannar GÄRNA, men...
 [031:LSCR#0209](14)Du borde kanske sköta ditt eget, främling.\255\003Jag bestämmer vem som är oskyldig och vem som är skyldig här.
 [031:LSCR#0209](14)Tack så mycket.
 [031:LSCR#0209](14)Du har mage att komma till den här stan och döma lokalbefolkningen.\255\003Om det är nåt du inte gillar med hur vi luktar är du välkommen att sticka när som helst.
@@ -1837,7 +1837,7 @@
 [032:LSCR#0200](14)Nej.
 [032:LSCR#0200](14)Så du tänker ge mig lite attityd, va?
 [032:LSCR#0200](14)Bäst att jag tar ditt namn.
-[032:LSCR#0200](FA)Jag heter Guybrush Threepwood, och jag är en mäktig pirat.
+[032:LSCR#0200](FA)Jag heter Guybrush Threepwood och är en mäktig pirat.
 [032:LSCR#0200](FA)Jag heter Guybrush Threepwood, och jag är ny i stan.
 [032:LSCR#0200](FA)Jag heter Guybrush Threepwood, och jag var just på väg.
 [032:LSCR#0200](14)Hör här Peepwood--
@@ -1963,7 +1963,7 @@
 [035:LSCR#0211](14)Hörru, du låter en hel del som min hund.
 [035:LSCR#0211](14)Nå, okej.
 [035:LSCR#0211](14)Men var är den fuktiga, unkna spökdoften från andra sidan graven?
-[035:LSCR#0211](FA)Den är upptagen med att överröstas av DIN egen dödliga stank.
+[035:LSCR#0211](FA)Den dränks av DIN egen dödliga stank.
 [035:LSCR#0211](FA)Åh, den! Låt mig bara ta av stövlarna...
 [035:LSCR#0211](FA)Det är en ny rotölsparfym. Kanske du vill prova?
 [035:LSCR#0211](14)Akta dig...
@@ -1989,7 +1989,7 @@
 [035:LSCR#0216](FA)Hur står ni ut med att vara nära det här ohyran?
 [035:LSCR#0216](FA)Känner ni den smygande karln på \254\008     andra sidan gatan?
 [035:LSCR#0216](FA)Vet ni var jag kan hitta en skattkarta här nånstans?
-[035:LSCR#0216](FA)Jag tar dom där protokollen om ni betalar mig två dubloner.
+[035:LSCR#0216](FA)Jag tar protokollen om ni ger mig två dubloner.
 [035:LSCR#0216](FA)Jag är verkligen intresserad av det här med sjöröveri.
 [035:LSCR#0216](FA)Säg, är ni pirater?
 [035:LSCR#0216](FA)Visste ni att Guvernören har kidnappats?
@@ -2029,7 +2029,7 @@
 [035:LSCR#0216](14)Det var faktiskt en grupp apor.
 [035:LSCR#0216](FA)Det är fantastiskt!
 [035:LSCR#0216](FA)Det är svårt att tro.
-[035:LSCR#0216](FA)Inte en chans att ett gäng dumma apor kan bemanna ett skepp!
+[035:LSCR#0216](FA)Omöjligt att ett gäng dumma apor kan segla ett skepp!
 [035:LSCR#0216](FA)Ursäkta, jag måste gå.
 [035:LSCR#0216](14)Men sant.
 [035:LSCR#0216](14)Ja, men det är sant.
@@ -2046,7 +2046,7 @@
 [035:LSCR#0216](FA)Förlåt att jag kränkte er råtta verbalt.
 [035:LSCR#0216](FA)Var fick ni tag på den råttan?
 [035:LSCR#0216](FA)Inget. Vi ses.
-[035:LSCR#0216](FA)Hur kommer det sig att ni hänger på det här gathörnet istället \254\008   för att vara ute på sjön och plundra, härja och bränna?
+[035:LSCR#0216](FA)Hur kommer det sig att ni hänger här i istället \254\008   för att vara ute på sjön och plundra, härja och bränna?
 [035:LSCR#0216](14)Rom.\255\002
 [035:LSCR#0216](14)    Sylt.
 [035:LSCR#0216](14)Sylt.\255\002
@@ -2063,7 +2063,7 @@
 [035:LSCR#0216](14)Nå, ja, vi visste om det.
 [035:LSCR#0216](FA)Varför står ni bara här istället för att göra nåt \254\008     åt saken?
 [035:LSCR#0216](FA)Jag tänker jaga de där immateriella myndighetsrövarna. \254\008     Är ni med?
-[035:LSCR#0216](FA)Kan jag intressera er för en drömresa till Monkey Island®?
+[035:LSCR#0216](FA)Vad sägs om en drömresa till Monkey Island®?
 [035:LSCR#0216](D8)På grund av den här plötsliga förändringen i lokalpolitiken,\255\003är jag beredd att erbjuda er ett engångspris på en kryssning till det natursköna underlandet...\255\003...Monkey Island®!
 [035:LSCR#0216](D8)Och det fantastiska med erbjudandet ÄR priset:\255\003Helt gratis!\255\003Allt ni behöver göra är att hjälpa mig bemanna skeppet, och öparadiset kan bli ert...\255\003GRATIS!!
 [035:LSCR#0216](D8)(...och vi kanske räddar Guvernören på köpet.)
@@ -2315,7 +2315,7 @@
 [038:LSCR#0202](FA)Jag hörde att det skulle bli korvgrillning här.
 [038:LSCR#0202](FA)Jag letar efter nåt kul. Sett nåt?
 [038:LSCR#0202](FA)Vad är grönt och hårigt och har tusen ben?
-[038:LSCR#0202](FA)Undrar du nånsin om vi alla bara är karaktärer i en roman?
+[038:LSCR#0202](FA)Tänker du nånsin på att vi kanske är karaktärer i en bok?
 [038:LSCR#0202](FA)Se upp! Ha ha. Fattar du?
 [038:LSCR#0202](14)Ojdå!
 [038:LSCR#0202](14)Åh, det är du igen, \255\007\038\000.
@@ -2690,7 +2690,7 @@
 [044:VERB#0596](D8)Jag tror jag behåller den i nyskick.\255\003Den kanske blir värd nåt nån dag.
 [044:OBNA#0596](__)100% bomulls-T-shirt
 [045:LSCR#0200](14)DU!
-[045:LSCR#0200](FA)Jag har kommit för att stoppa dig från att gifta dig med Guvernör Marley.
+[045:LSCR#0200](FA)Jag är här för att stoppa ditt bröllop med Guvernören.
 [045:LSCR#0200](FA)Snälla döda mig inte.
 [045:LSCR#0200](FA)Ta DET HÄR, din vidriga voodoo-vålnad!
 [045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
@@ -2723,7 +2723,7 @@
 [045:LSCR#0200](14)
 [045:LSCR#0200](14)Du vågade komma hit och konfrontera mig!\255\003Jag kan inte tro din djärvhet!
 [045:LSCR#0200](FA)Nå, jag kan inte tro din dumhet.
-[045:LSCR#0200](FA)Jag var tvungen att stoppa dig från att gifta dig med Guvernör Marley.
+[045:LSCR#0200](FA)Jag var tvungen att stoppa ditt bröllop med Guvernören.
 [045:LSCR#0200](FA)Snälla döda mig inte.
 [045:LSCR#0200](FA)Ta DET HÄR, din vidriga voodoo-vålnad!
 [045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
@@ -2786,7 +2786,7 @@
 [049:LSCR#0200](94)Aye, det är bäst att det här är viktigt.
 [049:LSCR#0200](FA)Fin kväll vi har, eller hur?
 [049:LSCR#0200](FA)Varför pratar ni så konstigt?
-[049:LSCR#0200](FA)Har ni märkt att alla de här vägarna börjar se likadana ut?
+[049:LSCR#0200](FA)Har ni märkt att alla vägarna börjar se likadana ut?
 [049:LSCR#0200](FA)Mitt namn är Guybrush Threepwood. Bered er på att dö!
 [049:LSCR#0200](FA)Ni råkar inte ha ett par dubloner...
 [049:LSCR#0200](FA)Förlåt att jag störde. Jag går vidare.
@@ -3042,7 +3042,7 @@
 [053:LSCR#0216](14)Det här ser ut som ett jobb för Fester Shinetop!
 [053:LSCR#0217](14)Vart tror du att du är på väg, \255\007\038\000?
 [053:LSCR#0217](FA)Jag ska lägga idolen i mitt bankfack.
-[053:LSCR#0217](FA)Du vet, det är inte för sent för oss att bli sams och vara vänner.
+[053:LSCR#0217](FA)Det är inte för sent att bli vänner, vet du.
 [053:LSCR#0217](FA)Ursäkta, herr Shinetop, men du blockerar dörröppningen.
 [053:LSCR#0217](FA)Stick, Fester.
 [053:LSCR#0217](14)Jaså?\255\003Jag vet ett riktigt säkert skåp du kan lägga den i...\255\003Davey Jones skåp!!!
@@ -3256,7 +3256,7 @@
 [059:SCRP#0056](FA)Egentligen har jag inga kontanter.
 [059:SCRP#0056](FA)Allt jag har är den här gummikycklingen.
 [059:SCRP#0056](FA)Jag fick kredit från handlaren. Tar du emot det?
-[059:SCRP#0056](FA)Vid närmare eftertanke kanske det här inte är skeppet för mig.
+[059:SCRP#0056](FA)Det här är nog inte skeppet för mig ändå.
 [059:SCRP#0056](14)Tja, det gör det med mig. Hur mycket har du?
 [059:SCRP#0056](14)Tyvärr, grabben.
 [059:SCRP#0056](14)Varken lånare eller långivare skall du vara.
@@ -3406,7 +3406,7 @@
 [061:SCRP#0058](14)Åh, det är du igen.
 [061:SCRP#0058](14)
 [061:SCRP#0058](FA)Jag ber om ursäkt, jag måste prata med er.
-[061:SCRP#0058](FA)Mitt namn är Guybrush Threepwood. Jag har kommit för att döda dig.
+[061:SCRP#0058](FA)Jag heter Guybrush Threepwood. Förbered dig på att dö.
 [061:SCRP#0058](FA)Hej, jag säljer dessa fina skinnjackor.
 [061:SCRP#0058](94)Jag är tillbaka, och oj vad du är i trubbel den här gången.
 [061:SCRP#0058](94)OK, jag tror jag har kläm på det nu.
@@ -3574,7 +3574,7 @@
 [070:LSCR#0204](14)Om jag berättar, lovar du att inte skada mig?
 [070:LSCR#0204](FA)OK, jag lovar.
 [070:LSCR#0204](FA)Inga löften, spöke.
-[070:LSCR#0204](FA)Jag lovar inte att inte undvika att avstå från att skada dig.
+[070:LSCR#0204](FA)Jag lovar inte att inte avstå från att inte skada dig.
 [070:LSCR#0204](14)OK.
 [070:LSCR#0204](14)Inga historier heller.
 [070:LSCR#0204](14)Va?
@@ -3610,7 +3610,7 @@
 [070:LSCR#0205](14)Vad hände med ditt skepp?
 [070:LSCR#0205](FA)Det är på verkstad.
 [070:LSCR#0205](FA)Jag har inte försäkring på det.
-[070:LSCR#0205](FA)Min besättning stal det och seglade till Ipanema på jakt efter solbränna.
+[070:LSCR#0205](FA)Besättningen stal det och stack till Ipanema.
 [070:LSCR#0205](FA)Jag sänkte det liksom med en sten för ett tag sen.
 [070:LSCR#0205](94)\255\005\100\000
 [070:LSCR#0205](14)Åh.
