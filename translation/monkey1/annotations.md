@@ -1272,3 +1272,141 @@ L3726–3753: Kitchen objects and rat encounter — all natural. "Matfett" (cook
 
 L3754–3770: Ghost animals and voodoo root — all natural. "Spökgrisar" (ghost pigs), "spökkyckling" (ghost chicken), "spökfjäder" (ghost feather) — consistent "spök-" prefix. L3762: "kittlig punkt" (ticklish spot) — natural. L3766: "Jag tar bara den här gamla roten" — natural. L3768: "den stora lysande voodoo-antiroten" — consistent.
 
+### Room 075 continued — Root crate (L3771–3797)
+
+L3771: "spikad, kedjad, bultad, knuten, limmad och svetsad ihop" — list preserved exactly. Natural.
+L3779–3783: Voodoo root descriptions — "vriden och uttorkad" (twisted and dried up), "kolsyrad vätska" (carbonated fluid) consistent with L3136. Natural.
+L3784–3788: Sound effects — "Klonk! Bam! Duns! Knak! Knäck!" — Swedish onomatopoeia adaptations. Natural.
+L3789–3795: "Kluuuck" spelling out — Swedish K-based onomatopoeia replacing English "Cluuuck."
+
+### Room 077 — Ghost ship lower decks
+
+L3799–3805: "KNARREEEK" creaking sound — Swedish onomatopoeia. Natural.
+L3807: "gnisslig dörr" for "squeaky door" — "gnisslig" (squeaky/creaky) standard.
+L3810: "söt liten spökhund" (cute little ghost dog) — natural.
+L3813: "Vilken full slusk!" for "What a drunken slob!" — "slusk" (slob/bum) natural.
+L3817: "VERKTYG OCH FÅNGCELL / OBEHÖRIGA ÄGA EJ TILLTRÄDE" — standard Swedish sign language for "TOOLS AND BRIG / KEEP OUT."
+L3824–3826: Ship deck confusion — "soldäcket" (sun deck/Lido deck) natural.
+
+### Room 078 — Church (wedding/final battle)
+
+L3830: "om det finns någon man med skäl att dessa två... personer inte borde förenas i lyckligt äktenskap... låt honom tala nu eller för evigt tiga still." — Standard Swedish wedding officiant text. "Tiga still" (hold his peace/be silent) is formal/archaic. Natural.
+L3838–3841: Fight sounds — "--urk--", "Flås! --hack--", "Aiiieeee!", "Repris" (Instant Replay) — natural.
+L3843–3850: Stan cameo during fight — natural Stan dialog. "Byta upp dig" (trading up) natural.
+L3851: "Blimkameran®" for "Blimp-Cam®" — Swedish adaptation.
+
+### Room 079 — SCUMM Bar (Mancomb Seepgood)
+
+L3859–3920: Extended Mancomb dialog — all natural. Key highlights:
+L3861: "grogg håller på att bli avslagen" (grog is going flat) — natural.
+L3876: "det dummaste namnet jag nånsin hört" — natural.
+L3882: "Mancomb Seepgood" — name kept (English proper name).
+L3886: "förnäma piraterna" per glossary, consistent.
+L3898: "hon hade en pirat på middag" for "she had a pirate over for dinner" — natural.
+L3903: "den fruktansvärde piraten LeChuck" — consistent epithet.
+
+### Room 080 — Herman's camp/fort
+
+L3921–3946: Fort objects and Herman dialog — natural. "Kikare" (spyglass) standard. L3925: "Svart och explosivt, precis som jag gillar det." — natural Guybrush humor. L3936: "Föremål i kikaren kan vara längre bort än de verkar." — mirror warning parody. Natural.
+
+### Room 081 — SCUMM Bar (Estevan/LeChuck story)
+
+L3948–3995: Extended Estevan dialog about LeChuck — all natural. Key highlights:
+L3961: "kontaktlins" (contact lens) — anachronism joke preserved.
+L3964: "Fylleri och dart hör inte ihop." — natural Swedish.
+L3974: "gick till Guvernören på middag och aldrig ville gå därifrån" — natural.
+L3975: "hon sa åt honom att dra åt helvete" — changed from "dra åt skogen." "Go to hell" + "Så det gjorde han" = death pun preserved (LeChuck literally died/went to hell).
+L3983: "Monkey Islands® Hemlighet" — per glossary.
+L3993: "det är därför vi allihop sitter här istället för att pirata" — "pirata" (pirating as verb) natural casual Swedish.
+
+### Room 082 — SCUMM Bar (LOOM® salesman)
+
+L3996–4010: LOOM® advertisement scene — all natural. L4002: "det senaste mästerverket inom fantasyberättande" — natural translation of marketing speak. L4005: "peka-och-klicka-styrning" (point and click control) — natural compound. L4007: "betungande skrivande, kartritande eller föremålshantering" — natural compounds. L4008: "Undvik rusningen!" (Beat the rush!) — natural.
+
+### Room 083 — Docks (ship purchase, crew assembly, underwater rescue)
+
+L4011–4015: Pamphlet titles — "Hur du får ett ben upp i skattletandet" (How to Get a Leg Up), "Hur du får ett huvud för navigering" (How to Get Ahead), "Hur du beväpnar dej i sjöstrid" (How to Arm Yourself) — body part puns preserved in Swedish: "ben" (leg), "huvud" (head), "beväpnar" (arm yourself). Natural.
+L4019: "grym och elak" — consistent LeChuck description.
+L4021–4023: LeChuck's note — natural formal register.
+L4026–4047: Stan's ship delivery scene — all natural. Stan's salesman register consistent. "Havstulpanstäckt" (barnacle-covered) L4032 natural compound.
+L4046: "STANS!!!" — emphasis preserved.
+L4050–4072: Crew assembly (Otis, Carla, Meathook) — all natural. L4062: "Hur passande. Du slåss som en ko." — iconic insult used out of context. L4063: "Du har aldrig vetat när man ska använda den." — Carla's dismissal. Humor preserved.
+L4073–4108: Underwater rescue / Elaine romance scene — all natural and emotionally resonant. Key:
+L4092–4095: Pet names — "Sötnos!" (Love muffin/sweetie), "Sockerbulle!" (Sugar boots/sugar bun), "Honungspansen!" (Honey pumpkin/honey tummy), "Plundringsansen!" (Plunder bunny) — creative Swedish endearments. "Plundringsansen" is a perfect adaptation of "plunder bunny."
+L4102: "min far fick mej att lova att aldrig bli kär i en pirat" — natural.
+L4108: "en plötslig lust att avsluta prövningarna" — natural.
+L4110–4135: Kidnapping revelation after rescue — natural throughout.
+L4131–4134: Guybrush's emotional monologue — natural, heartfelt.
+L4141–4150: LeChuck encounter with root beer — natural. L4148: "Illaluktande grogg att svepa?" — ghost misunderstanding root beer as grog. Natural.
+L4152–4157: Fester's cliff scene — natural. L4156: "herr Kryddkansen, eller Hängansen" for "Mr. Spicecake, or Droopface" — creative Swedish name manglings. Natural.
+
+### Room 084 — Directions recipe
+
+L4159–4170: Recipe for Monkey Island directions — all correctly translated ingredients. "Kanelstång" (cinnamon stick), "mynta" (mint), "Människoskalla (pressad)" (human skull, pressed), "Bläckfiskbläck" (squid ink), "Apblod" (monkey blood), "Levande kyckling" (live chicken), "Svavel" (brimstone) — all standard Swedish. Natural.
+L4171–4177: Additional ingredients and instructions — "pyridoxinhydroklorid", "zinkoxid" — correct Swedish chemical names. "Låt bubbla på svag låga" (let bubble over low flame) natural cooking instruction. "Räcker till en besättning på fyra" (serves crew of four) — natural.
+
+### Room 085 — Map screen
+
+L4178–4190: Map location names — all standard: "by" (village), "utkiksplats" (lookout point), "vägskäl" (fork), "glänta" (clearing), "strand" (shore), "bro" (bridge), "ö" (island), "Svärdmästarens" (Sword Master's). "Begagnade skeppshandeln" (Used Ship Emporium) consistent.
+L4191–4194: Pirate rank names on map — "Smutsig Usel Pirat" (Dirty Rotten Pirate), "Stinkande Pirat" (Stinking Pirate), "Blodtörstig Pirat" (Bloodthirsty Pirate), "Ful Pirat" (Ugly Pirate) — all natural Swedish.
+
+### Room 088 — Insult swordfighting
+
+L4196–4229: System/debug strings and fight mechanics — format strings preserved. Key dialog:
+L4198–4206: Defeat lines — "Jag ger upp! Du vinner!" consistent. "NÅÅÅD!" for "UNCLE!" — "nåd" (mercy) is the Swedish equivalent of crying uncle. Natural.
+L4203: "en trehövdad apa!" — consistent recurring gag.
+L4207–4229: Debug/system strings — all format strings and control codes preserved.
+L4231–4267: **Insults** (16 standard + Sword Master variants) — all reviewed per PASS1_NOTES.md. Translated for wit and humor while maintaining comeback pairing logic. Key translations confirmed natural:
+- L4231: "rännstenskräk" (gutter scum) for "gutter-crawling cur" — vivid.
+- L4238: "Du slåss som en mjölkbonde." — iconic, consistent throughout.
+- L4244: "Min klinga skär genom allt!" — adapted from English "insolence sitting down" to a blade-themed insult that pairs with comeback "Skär du dig fortfarande?"
+- L4260: "Det blir alltid tårar när jag drar mitt svärd!" — adapted from "pain in the backside" to tears/sword theme, pairing with "Skär du dig fortfarande?"
+L4268–4289: **Comebacks** (16 + 4 generic) — all confirmed natural and pairing correctly:
+- L4269: "Synd att bara din tunga är vass." — adapted from English TIP/POINT pun. Works differently but the sarcasm lands.
+- L4276: "Så passande. Du slåss som en ko." — iconic, consistent.
+- L4282: "Skär du dig fortfarande?" — works with adapted insults #14 and #30.
+- L4285–4288: Generic weak responses — "Jaha?" / "Jag är av gummi, du är av lim." / "Jag skakar" / "Kan du upprepa det?" — all natural.
+L4290–4297: Debug strings — kept for system purposes.
+
+### Room 089 — End credits and epilogue
+
+L4298: "Du vinner!" — standard.
+L4299: "Du fick 800 av 800 möjliga poäng." — natural.
+L4300: "Monkey Islands® Hemlighet" — per glossary.
+L4301: "Med Spiffy i rollen som hunden i baren" — natural.
+L4302–4370: End credits — all correctly translated title cards: "Extra design", "Ännu mer design" (Additional additional design — humor preserved), "Svärdsfäktningsförolämpningar" (Sword fighting insults), "Hjälp i sista minuten" (Last minute assistance), "Ansvarig för chokladtillförsel" (Chocolate supply supervision — humor preserved), "Säkerhetstestning" (Bulletproofing), all department titles correctly translated. Names kept in English.
+L4365–4366: "Soundtracket finns ej på kassett eller LP" / "Boken finns heller inte" — meta-humor preserved. Natural.
+L4371: "Stäng av datorn och gå och lägg dig!" — natural. Fourth-wall closing joke.
+L4372–4394: Epilogue (Guybrush/Elaine rooftop) — all natural. Key:
+L4372: "pervers, vidrig, hal, krypande sorts kille" — vivid LeChuck description. Natural.
+L4376: "rotöl" — per glossary.
+L4383: "Herman Rötbett" — per glossary.
+L4386–4387: "frustration, besvikelse, och irriterande cynism" — natural. \254\008 preserved in both (FA) and (7A) variants.
+L4389: "Betala aldrig mer än 200 spänn för ett datorspel." — "200 spänn" adapts "$20 bucks" to Swedish kronor equivalent. "Spänn" (bucks) colloquial. Meta fourth-wall joke.
+L4390: "Det låter som nåt min man skulle säga." — "man" (husband) — foreshadowing. Natural.
+L4395–4399: Crew stranded epilogue — natural. "Ett allvarligt snack" (a little chat) — understated threat.
+
+### Room 090 — Copy protection
+
+L4401–4428: Copy protection quiz — correctly translated. "Historietest" (history quiz), "Skriv in ditt svar" (type in your answer). Place names kept in English/original. L4428: "Spelet kräver Monkey Island-CD:n i enheten!" — natural.
+
+### Rooms 096–097 — Voyage cutscene
+
+L4435: "Genom det modiga ledarskapet hos Kapten Freep -eh- Threepwood är Havsapan äntligen på väg." — "Freep -eh- Threepwood" name fumble preserved. "Havsapan" per glossary. Natural.
+L4436: "Oförskräckta av sin brist på navigationsutrustning eller kunskap börjar besättningen planera sin resa." — "Oförskräckta" (undaunted), "navigationsutrustning" (navigational equipment) — natural compounds. \255\002 preserved.
+
+---
+
+## Summary
+
+### Changes made during this review
+
+1. **L313:** "Oj." → "Pip." (squeaky fright sound — change recovered from previous session)
+2. **L2027:** Removed junk text "I want you to" that was appended from a corrupt edit
+3. **L3675:** "mer att bära på" → "mer inventarier" (fourth-wall inventory joke — change recovered from previous session)
+
+### `[ACCEPTED]` items
+
+1. **L1975:** Beer "head" pun — Swedish "skummet" (foam) has no overlap with "huvud" (head). The misunderstanding still works in context: the bartender naturally interprets the conversation as being about beer foam.
+2. **L2319:** "Se upp" lookout pun — English puns on "look out" = the lookout's job title. Swedish "se upp" doesn't connect to "utkik." No better alternative exists. Current translation preserves the joke attempt.
+
