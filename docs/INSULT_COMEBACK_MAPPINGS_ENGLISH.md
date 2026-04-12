@@ -97,10 +97,10 @@ Each standard insult maps directly to its corresponding numbered comeback.
 
 ### #14
 **A) Insult (EN):** I'm not going to take your insolence sitting down!  
-**A) Insult (SV):** Jag tänker inte bara sitta här och tåla din oförskämdhet!
+**A) Insult (SV):** Min klinga skär genom allt!
 
 **B) Comeback (EN):** Your hemorrhoids are flaring up again, eh?  
-**B) Comeback (SV):** Så, dina hemorrojder besvärar dig nu igen?
+**B) Comeback (SV):** Skär du dig fortfarande?
 
 ### #15
 **A) Insult (EN):** There are no words for how disgusting you are.  
@@ -189,7 +189,7 @@ Each variant accepts one or more comebacks from the list above.
 
 ### #30
 **Insult (EN):** You are a pain in the backside, sir!  
-**Insult (SV):** Jag står inte ut med dig!
+**Insult (SV):** Det blir alltid tårar när jag drar mitt svärd!
 **Valid Comebacks:** #14
 
 ### #31

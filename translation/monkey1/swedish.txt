@@ -90,7 +90,7 @@
 [008:VERB#0091](D4)repbit
 [008:VERB#0091](D4)liten repbit
 [008:VERB#0091](D4)pytteliten repbit
-[008:VERB#0091](D4)miniliten repbit
+[008:VERB#0091](D4)futtig repbit
 [008:VERB#0091](D4)oändligt liten repbit
 [008:OBNA#0091](__)gigantiskt rep
 [008:VERB#0092](D8)Det finns ett RIKTIGT fint vin här.\255\003Jag tar det.
@@ -194,7 +194,7 @@
 [010:SCRP#0017](7A)Stirra
 [010:SCRP#0017](7A) 
 [010:SCRP#0017](7A)Beställ ledtrådsbok
-[010:SCRP#0017](7A)Vicka
+[010:SCRP#0017](7A)Guppa
 [010:SCRP#0017](7A)Ruttna
 [010:SCRP#0017](7A) 
 [010:SCRP#0017](7A)\001\002\254\001\005\006\254\001\007\008
@@ -357,7 +357,7 @@
 [014:VERB#0161](D8)Varför bränna fullgod mat?
 [014:VERB#0161](D8)Ja, som om jag verkligen vill döda mig själv.
 [014:VERB#0161](D8)Det här kan jag behöva senare.
-[014:VERB#0161](D8)Jag bränner bara allt.
+[014:VERB#0161](D8)Jag bränner allt bara.
 [014:VERB#0161](D8)Jag tror inte det kommer brinna.
 [014:VERB#0161](D8)Aj, det är hett!
 [014:OBNA#0161](__)rödglödande eld
@@ -744,7 +744,7 @@
 [023:SCRP#0119](14)Min utkik berättade om din ankomst.\255\003Jag har velat träffa dig ända sedan jag hörde ditt fascinerande namn.
 [023:SCRP#0119](14)Berätta för mig, Guybrush, varför vill du bli pirat?\255\003Du ser inte ut som en sådan.
 [023:SCRP#0119](14)Ditt ansikte är för...
-[023:SCRP#0119](14)...söt.
+[023:SCRP#0119](14)...sött.
 [023:SCRP#0119](FA)Blfft...
 [023:SCRP#0119](FA)Grlpyt...
 [023:SCRP#0119](FA)Hrdrl...
@@ -1242,7 +1242,7 @@
 [028:LSCR#0220](FA)Berätta mer om skattjakt.
 [028:LSCR#0220](FA)Berätta om den Försvunna Skatten igen.
 [028:LSCR#0220](FA)Jag hittade er 'legendariska Försvunna Skatt'.
-[028:LSCR#0220](FA)Ni är ett gäng illaluktande, groggsvällande grisar!
+[028:LSCR#0220](FA)Ni är ett gäng illaluktande, groggslukande grisar!
 [028:LSCR#0220](FA)Vad finns det i den där groggen egentligen?
 [028:LSCR#0220](FA)Jag ska bara sticka nu.
 [028:LSCR#0220](14)Först, skaffa dig ett svärd.
@@ -1274,7 +1274,7 @@
 [028:LSCR#0220](14)Nå, besegrat Svärdmästaren, vasa?\255\003Du är en stark karl!\255\003Du får behålla den snygga T-shirten. Vi har tillräckligt.
 [028:LSCR#0220](14)Ah, Idolen med de Många Händerna!\255\003Du är en modig grabb!\255\003Och tack för att du stal den åt oss.
 [028:LSCR#0220](14)Upptäckt den Försvunna Skatten, va?\255\003Du är en klipsk grabb!\255\003Du får behålla den stiliga T-shirten. Vi har massor.
-[028:LSCR#0220](14)För att vara pirat måste du också vara en illaluktande, groggsvällande gris.
+[028:LSCR#0220](14)För att vara pirat måste du också vara en illaluktande, groggslukande gris.
 [028:LSCR#0220](14)Grogg är en hemlig blandning som innehåller en eller flera av följande:
 [028:LSCR#0220](14)fotogen
 [028:LSCR#0220](14)propylenglykol
@@ -1342,7 +1342,7 @@
 [028:SCRP#0059](14)Jo, för kärlekens skull, min gosse!\255\003Förneka det inte, det syns tydligt i ditt ansikte.
 [028:SCRP#0059](14)KÄRLEK
 [028:SCRP#0059](14)Jo, på Leende Stans Begagnade Skeppsvarv,\255\001precis som alla andra.\255\003Säg att jag skickade dig, vi är gamla vänner.
-[028:SCRP#0059](14)Öh... tyvärr kan jag inte ge mig ut till havs.
+[028:SCRP#0059](14)Öh... ack, jag kan inte ge mig ut till havs.
 [028:SCRP#0059](14)En gammal krigsskada.
 [028:SCRP#0059](14)Jag är säker på att du förstår.
 [028:SCRP#0059](14)Lycka till!
@@ -1626,7 +1626,7 @@
 [030:LSCR#0211](14)Tack för att du berättar det.\255\003Jag respekterar din ärlighet.\255\003Men jag blev inte åttiotre år genom att vara nån dumbom.\255\003Inget jobb, ingen kredit.
 [030:LSCR#0211](14)Kom tillbaka när du skaffat ett.
 [030:LSCR#0211](14)Det kan du ge dig på!
-[030:LSCR#0211](14)Här, ta en...\255\003...snälla.\255\003Ta en hel rulle!\255\003Det blir en åtta.
+[030:LSCR#0211](14)Här, ta en...\255\003...snälla.\255\003Ta en hel rulle!\255\003Det blir en dublon.
 [030:LSCR#0211](14)
 [030:LSCR#0211](14)Jag har nåra, men dom är inte gratis.
 [030:LSCR#0211](14)Hah!\255\003Det tror jag gärna.\255\003Men jag har inga.
@@ -3866,7 +3866,7 @@
 [079:SCRP#0091](FA)Jag vill prata med piratledarna.
 [079:SCRP#0091](FA)Var kan jag hitta Guvernören?
 [079:SCRP#0091](FA)Trevligt att prata med dig.
-[079:SCRP#0091](14)Tja, jag är pirat.\255\003Men, tyvärr, jag är inte kapten.
+[079:SCRP#0091](14)Tja, jag är pirat.\255\003Men, ack, jag är inte kapten.
 [079:SCRP#0091](14)Tja, den här ön har en guvernör...\255\003...men vi pirater har våra egna ledare.
 [079:SCRP#0091](FA)Jag vill prata med piratledarna.
 [079:SCRP#0091](FA)Var hittar jag öns guvernör?
@@ -4090,7 +4090,7 @@
 [083:LSCR#0201](D8)Åh, Elaine!
 [083:LSCR#0201](14)Åh, Guybrush!
 [083:LSCR#0201](D8)Sötnos!
-[083:LSCR#0201](14)Sockerull!
+[083:LSCR#0201](14)Sockerbulle!
 [083:LSCR#0201](D8)Honungspansen!
 [083:LSCR#0201](14)Plundringsansen!
 [083:LSCR#0201](D8)Kyss mej!
@@ -4241,7 +4241,7 @@
 [088:SCRP#0085](27)Jag har hört att du är ett föraktligt kryp.
 [088:SCRP#0085](27)Du är ingen match för mitt intellekt, din dåre.
 [088:SCRP#0085](27)Du uppför dig som den uslaste tiggare.
-[088:SCRP#0085](27)Jag tänker inte bara sitta här och tåla din oförskämdhet!
+[088:SCRP#0085](27)Min klinga skär genom allt!
 [088:SCRP#0085](27)Det finns inga ord för hur äcklig du är.
 [088:SCRP#0085](27)Jag har talat med apor som är artigare än dig.
 [088:SCRP#0085](27)Jag har en lång, skarp läxa för dig idag.
@@ -4257,7 +4257,7 @@
 [088:SCRP#0085](27)Mitt svärd är känt över hela Karibien!
 [088:SCRP#0085](27)Jag har modet och skickligheten hos en fäktaremästare!
 [088:SCRP#0085](27)Du säger så mycket dumt.
-[088:SCRP#0085](27)Jag står inte ut med dig!
+[088:SCRP#0085](27)Det blir alltid tårar när jag drar mitt svärd!
 [088:SCRP#0085](27)Det finns inga smarta drag som kan hjälpa dig nu.
 [088:SCRP#0085](27)Nu vet jag vad smuts och dumhet verkligen är.
 [088:SCRP#0085](27)Jag brukar se folk som du medvetslösa på kroggolv.
@@ -4279,7 +4279,7 @@
 [088:SCRP#0086](27)Synd att ingen nånsin hört talas om DIG överhuvudtaget.
 [088:SCRP#0086](27)Då skulle jag vara i rejäla problem om du nånsin använde det.
 [088:SCRP#0086](27)Jag ville vara säker på att du skulle känna dig bekväm med mig.
-[088:SCRP#0086](27)Spelar dina hemorrojder upp igen?
+[088:SCRP#0086](27)Skär du dig fortfarande?
 [088:SCRP#0086](27)Visst finns det. Du har bara aldrig lärt dig dem.
 [088:SCRP#0086](27)Vad roligt att höra att du var på familjeträffen.
 [088:SCRP#0086](27)Jaha?
