@@ -169,6 +169,52 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
 
+	// --- Step 10: Patch standalone MONKEY1.000/001 next to the PAK ---
+	// The SE engine executes scripts from the standalone MONKEY1.000/001 files in
+	// the game directory, not the copies embedded inside the PAK. The PAK copies
+	// are likely used only as a source for initial extraction or on platforms
+	// without a writable filesystem. At autosave time the engine cross-references
+	// the running script state against whichever file it originally loaded from;
+	// if the PAK copy is patched but the standalone files are still English originals
+	// the mismatch causes a crash. Patching the standalone files keeps them in sync.
+	fmt.Println("\n==> Patching standalone MONKEY1.000/001...")
+	gameDir := filepath.Dir(outputPAK)
+	if err := patchStandaloneClassicFiles(gameDir, patched000, patched001); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+// patchStandaloneClassicFiles writes the already-patched classic file data to
+// MONKEY1.000 and MONKEY1.001 in gameDir (next to the PAK), creating .bak
+// backups first. Files are skipped if not present (not all installations have them).
+func patchStandaloneClassicFiles(gameDir string, data000, data001 []byte) error {
+	for _, f := range []struct {
+		name string
+		data []byte
+	}{
+		{"MONKEY1.000", data000},
+		{"MONKEY1.001", data001},
+	} {
+		path := filepath.Join(gameDir, f.name)
+		if _, err := os.Stat(path); err != nil {
+			fmt.Printf("    %s not found — skipping\n", f.name)
+			continue
+		}
+		bakPath, err := backup.Create(path)
+		if errors.Is(err, backup.ErrBackupExists) {
+			fmt.Printf("    %s: backup already exists, overwriting\n", f.name)
+		} else if err != nil {
+			return fmt.Errorf("backup %s: %w", f.name, err)
+		} else {
+			fmt.Printf("    Backed up: %s\n", bakPath)
+		}
+		if err := os.WriteFile(path, f.data, 0644); err != nil {
+			return fmt.Errorf("writing %s: %w", f.name, err)
+		}
+		fmt.Printf("    Written:   %s (%d bytes)\n", path, len(f.data))
+	}
 	return nil
 }
 
