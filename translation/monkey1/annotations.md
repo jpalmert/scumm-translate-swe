@@ -537,7 +537,7 @@ L2290: "satt ur spel" for "put out of business" — good Swedish expression.
 L2303–2307: "dublon/dubloner" for "piece of eight/pieces of eight" — consistent with glossary.
 L2315: "korvgrillning" for "weenie roast" — Swedish equivalent of casual cookout.
 L2318: "Undrar du nånsin om vi alla bara är karaktärer i en roman?" — meta fourth-wall. Perfect.
-L2319: "Se upp! Ha ha. Fattar du?" for "Look out! Ha ha. Get it?" — `[UNCERTAIN]` The English puns on "look out" = the lookout's title. Swedish "se upp" doesn't connect to "utkik" (lookout). The pun is lost but no better alternative exists.
+L2319: "Se upp! Ha ha. Fattar du?" for "Look out! Ha ha. Get it?" — The English puns on "look out" = the lookout's title. Swedish "se upp" doesn't connect to "utkik" but no better alternative exists. Accepted.
 L2337: "Gyckelbull Tredsvansen" for "Gibberish Driftwood" — the lookout mangling Guybrush's name. "Gyckelbull" and "Tredsvansen" are funny Swedish-sounding distortions. Good adaptation.
 L2348: "blind som en fladdermus" for "blind as a bat" — exact Swedish equivalent idiom.
 L2356: "Inget, om du vill sälja skor" for "Nothing, if you want to sell shoes" — the insult about Guybrush's unsuitable-for-piracy name. Perfect.
@@ -1037,5 +1037,5 @@ Most have been resolved; 4 remain uncertain due to untranslatable puns.
 1. ~~L1711~~ — RESOLVED: "KONS-pirat-ION" hides "pirat" inside "konspiration"
 2. ~~L1975~~ — RESOLVED: misunderstanding works without the pun; bartender naturally hears "foam"
 3. ~~L2174~~ — RESOLVED: changed to "om du vågar" (natural Swedish)
-4. L2319: `[UNCERTAIN]` "Se upp" lookout pun — no Swedish phrase works as both warning AND job title
+4. ~~L2319~~ — RESOLVED: accepted as-is; no Swedish phrase works for both meanings
 
