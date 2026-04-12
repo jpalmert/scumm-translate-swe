@@ -2011,7 +2011,7 @@
 [035:LSCR#0216](14)Okej, det är rimligt.
 [035:LSCR#0216](14)Gillar du råttor?
 [035:LSCR#0216](FA)Ja, jag älskar råttor!
-[035:LSCR#0216](FA)Nej, jag tål inte dom.
+[035:LSCR#0216](FA)Nej, jag tål dom inte.
 [035:LSCR#0216](FA)Ja, särskilt i en lätt vinsås.
 [035:LSCR#0216](FA)Jag kan inte prata om det just nu. Måste gå.
 [035:LSCR#0216](14)AIEEE!!! Försvinn!!!
@@ -2024,7 +2024,7 @@
 [035:LSCR#0216](14)Dom är väldigt intelligenta varelser!
 [035:LSCR#0216](14)Ha ha ha ha!!
 [035:LSCR#0216](14)Intelligentare än HAN.
-[035:LSCR#0216](14)Det finns en historia i dom här trakterna att ett gäng råttor faktiskt bemannade ett skepp hit från sagolika Monkey Island®.
+[035:LSCR#0216](14)Det går en historia här i trakterna att ett gäng råttor faktiskt seglade ett skepp hit från mytomspunna Monkey Island®.
 [035:LSCR#0216](14)Nej, det stämmer inte.
 [035:LSCR#0216](14)Det var faktiskt en grupp apor.
 [035:LSCR#0216](FA)Det är fantastiskt!
