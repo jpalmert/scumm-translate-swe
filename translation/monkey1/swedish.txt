@@ -2976,7 +2976,7 @@
 [053:LSCR#0210](7A)Hypnotisera
 [053:LSCR#0210](14)Nej!\255\003Inte den röda knappen!
 [053:LSCR#0210](14)Det är en stor, ful, hårig jak med vaxläppar.
-[053:LSCR#0210](54)enorm farligt utseende jak
+[053:LSCR#0210](54)mycket hotfull jak
 [053:LSCR#0210](14)Jag kan inte flytta den.
 [053:LSCR#0210](14)Jag kan inte flytta den.
 [053:LSCR#0210](14)Ack!
@@ -3037,7 +3037,7 @@
 [053:LSCR#0212](14)
 [053:LSCR#0213](D8)Jag måste vara galen!
 [053:LSCR#0213](D8)Jag har filen...
-[053:LSCR#0214](D8)Det borde hålla honom ett tag!\255\003Om jag bara hade en fil kunde jag ta idolen!
+[053:LSCR#0214](D8)Det borde uppehålla honom ett tag!\255\003Om jag bara hade en fil kunde jag ta idolen!
 [053:LSCR#0215](D8)Puh!\255\003Det var nära.\255\003I alla fall fick jag idolen.
 [053:LSCR#0216](14)Det här ser ut som ett jobb för Fester Shinetop!
 [053:LSCR#0217](14)Vart tror du att du är på väg, \255\007\038\000?
@@ -4268,7 +4268,7 @@
 [088:SCRP#0086](27) 
 [088:SCRP#0086](27)Synd att bara din tunga är vass.
 [088:SCRP#0086](27)Först måste du sluta vifta med det som en dammvippa.
-[088:SCRP#0086](27)Så du fick det där jobbet som vaktmästare till slut.
+[088:SCRP#0086](27)Så du fick det där jobbet som städare till slut.
 [088:SCRP#0086](27)Även INNAN de känner lukten av din andedräkt?
 [088:SCRP#0086](27)Han måste ha lärt dig allt du kan.
 [088:SCRP#0086](27)Du får mig att tro att nån redan har gjort det.
