@@ -3827,7 +3827,7 @@
 [077:SCRP#0078](FA)Jag tror jag springer vidare.
 [078:OBNA#0857](__)utgång
 [078:OBNA#0858](__)utgång
-[078:LSCR#0201](14)...om det finns någon man med skäl att dessa två...\255\003...öh...\255\003...personer inte borde förenas i lyckligt äktenskap...\255\003...låt honom tala nu eller för evigt tiga still.
+[078:LSCR#0201](14)...om någon vet något hinder mot att dessa två...\255\003...öh...\255\003...personer förenas...\255\003...så tala nu eller tig för alltid.
 [078:LSCR#0201](14)
 [078:LSCR#0201](FA)Brudgummen är ingen gentleman!
 [078:LSCR#0201](FA)Brudgummen är inte mänsklig!
