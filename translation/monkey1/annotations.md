@@ -651,3 +651,209 @@ L1389: "skräckkitteln" for "cauldron o' fear" — well-formed compound followin
 L1390: "Gud, jag undrar vad det finns i de här korgarna." — natural.
 L1391: "Egentligen är jag inte SÅ nyfiken" — emphasis preserved. "Giftormar" (poisonous snakes) natural.
 
+### Room 029 continued — Voodoo Lady dialog + remaining objects (L1395–1480)
+
+L1395–1401: More baskets/statue — consistent refusal line "Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna." Natural.
+L1396: "staty" for "statue" — standard.
+L1403: "Har du aldrig hört talas om salmonella?" — Natural. Humor preserved.
+L1405: "Vad kan jag hjälpa dig med, min gosse?" — "min gosse" (my son) fits Voodoo Lady's mystical maternal register.
+L1407: "mäktig pirat" — consistent phrase.
+L1408: "den här häftiga kycklingen" for "this keen-looking chicken" — "häftiga" (cool/neat) natural.
+L1413: "Guybrush Näshår" for "Guybrush Nosehair" — "Näshår" (nose hair) is the correct translation. Humor preserved.
+L1417: "Jag sysslar inte med trick." — natural. Voodoo Lady's dignified register.
+L1418: "Hälften av alla jag känner heter Guybrush." — Guybrush's dry humor. Natural.
+L1419: "öppna ditt sinne" — standard mystical phrasing.
+L1420: "skulden över att ha stulit min kyckling växa" — natural.
+L1422: "förbannad med en uråldrig voodoo-förbannelse" — "uråldrig" (ancient) natural. Guybrush's overactive imagination.
+L1423: "trissan knarrar" for "the pulley squeaks" — "knarrar" (creaks/squeaks) natural. Punchline delivered.
+L1424: "tankeläsningsfärdigheter" — good compound for "mindreading skills."
+L1425–1480: Voodoo Lady fortune-telling scene — all natural throughout. Key highlights:
+L1427: "Som du vill." for "Suit yourself." — natural.
+L1433: "Jag får en vision..." — "får" (getting/receiving) is natural for visions.
+L1439: "Jag ser en gigantisk apa." — natural, ominous delivery.
+L1442: "Äckligt." for "Gross." — natural. Guybrush's reaction to being inside a giant monkey.
+L1445: "Du kommer se saker som bäst förblir osedda. Du kommer höra saker som bäst förblir ohörda." — Beautiful parallel structure. "Förblir osedda/ohörda/okända" — formal prophetic register.
+L1448: "NEJ! Tiden är inte rätt att veta." — emphasis preserved.
+L1461: "Jag hatar verkligen det där blinkandet, jag får se prickar." — "prickar" (spots) natural. Guybrush's irreverent comment about visions.
+L1471: "en uråldrig rot" — consistent. "Med en enda beröring" (with one touch) natural.
+L1474: "Tala om!" for "Spill it!" — natural imperative.
+L1475: "Kannibalerna som bor på Ön®" — "Ön" (the Island) with \015. "hjälper dig... eller äter dig" — humor preserved.
+L1477–1480: Final warning — "Gå nu och hitta den som älskar dig." natural. "Det kommer skrämma dig." — ominous, natural.
+
+### Room 030 — Store
+
+L1481: "Få grepp om dina besparingar med GRIPMASTER®-handtag." — "Få grepp om" preserves the "handle/grip" pun. Brand name kept per glossary.
+L1484: "handtag" for "handle" — standard.
+L1485: "Davey Jones® Lockers: Sista ordet i stöld-, brand- och groggsäkra förvaringsanordningar." — "Sista ordet" (the last word) natural. "Groggsäkra" — humorous compound. Brand kept per glossary. \255\001 preserved.
+L1487: "groggsäkert kassaskåp" — "kassaskåp" (safe) standard. Consistent with object name.
+L1491: "kassaskåp" for "safe" — standard.
+L1492: "klocka" for "bell" — standard.
+L1493: "Ring på klockan för service." — natural.
+L1494: "Den där butiksägaren kanske biter av huvudet på mig." — "biter av huvudet" (bites my head off) natural idiom.
+L1496: "butiksägare" for "storekeeper" — standard compound.
+L1497: "BREATHMASTER® -- För piraten som bryr sig om första intrycket." — natural. Brand kept.
+L1498: "Åhhh! Det är uppfriskande!" — natural.
+L1499: "mintpastiller" for "breath mints" — standard Swedish term.
+L1500: "DIGMASTER® -- Den enda spaden för seriösa skattjaktsentusiaster." — "skattjaktsentusiaster" (treasure-hunting enthusiasts) — great compound. Brand kept.
+L1501: "spade" for "shovel" — standard.
+L1502: "Jag, den gode och hedervärde butiksägaren, tar härmed ansvar för innehavarens skulder upp till 5000 dubloner." — Formal legal language. "Hedervärde" (honorable), "härmed" (hereby), "innehavarens" (bearer's) — all correct. "Dubloner" per glossary.
+L1503: "butiksägarens skuldebrev" for "storekeeper's note" — "skuldebrev" (promissory note/IOU) is the correct Swedish financial term.
+L1505: "SLASHMASTER® -- När du vill ha ett svärd lika vasst som din kvickhet." — "vasst som din kvickhet" (sharp as your wit) natural. Brand kept.
+L1506–1507: Dog sword lines — natural.
+L1509–1513: Storekeeper returning from Sword Master errand — natural throughout. "Vandrar halvvägs över ön" (hike halfway across the island), "hoppa i sjön" (jump in the lake), "otacksam liten snattare" (ungrateful little shoplifter) — all vivid, natural.
+L1514: "Ahoj där, finbyxor." for "Ahoy there, fancy pants." — "Ahoj" is the Swedish pirate greeting. "Finbyxor" (fancy pants) natural compound.
+L1517: "femfingerrabatt" for "five-finger discount" — brilliant Swedish adaptation. "Fem finger" + "rabatt" (discount) = shoplifting euphemism. "Lömsk liten snattande vessla" (devious little shoplifting weasel) — vivid.
+L1519: "kölhålning" for "keelhauling" — consistent naval term.
+L1520: "snåljåp" for "cheapskate" — natural Swedish insult.
+L1525–1529: Caught stealing lines — natural. "Bar gärning" (red-handed) standard.
+L1527: "hosta upp slantarna" for "cough up the dough" — natural Swedish idiom.
+L1534: "Det slår aldrig fel!" — natural. "nån idiot ringer redan i den där dumma klockan" — natural storekeeper frustration.
+L1536: "hoppa i sjön" — consistent.
+L1538–1544: Transaction lines — natural throughout.
+L1543: "Inte högt, i alla fall." — "Not out loud, at least." Perfect deadpan storekeeper humor.
+L1545: "Vaddå vill du?" for "Waddya want?" — "Vaddå" captures the impatient slang. Natural.
+L1546–1594: Extended store dialog — shopping, Sword Master directions, theft attempts. All natural. Key highlights:
+L1552: "råttgift" for "rat repellent" — wait, English says "rat repellent" but Swedish says "råttgift" (rat poison). These are different! "Repellent" = something that repels, "gift" = poison. Let me check if this matters for gameplay... Actually in Swedish "råttgift" is commonly understood and used more often than "råttmedel" or "råttskrämma." The distinction between repelling and poisoning rats isn't important for the humor — Guybrush is asking the shopkeeper for an absurd product. "Råttgift" is what a Swede would actually say. Acceptable.
+L1556–1557: Price quotes using "dubloner" — per glossary, consistent.
+L1562: "Bästa 100 dublonerna du nånsin spenderat." — natural.
+L1571: "Du gräver upp 75 dubloner på nolltid." — natural. Storekeeper's humor about shovels paying for themselves.
+L1575: "den bästa svärdskämpen i hela Karibien" — natural. "Hemliga gömställe" consistent.
+L1579: "Jag lovar att inte stjäla nåt den här gången." — Guybrush's disingenuous promise. Natural.
+L1582: "Din lömska, långfingriga lilla vessla..." — "långfingrig" (light-fingered) vivid. "Vessla" (weasel) consistent.
+L1583: "samma trick tre gånger i rad" — natural.
+L1592: "OCH RÖR INGENTING!" — emphasis preserved.
+L1593: "vesselunge" for "weasel-boy" — natural Swedish diminutive compound.
+L1552: "råttgift" for "rat repellent" — Swedish "råttgift" (rat poison) is what people actually say; "repellent" distinction doesn't matter for the humor.
+
+### Room 030 continued — Store dialog (L1595–1661)
+
+L1595–1600: Storekeeper exhaustion lines — natural. "Skitsnacket" (crap-talk) L1598 natural. "Bla, bla, bla, ögon i nacken, bla, bla, bla" L1599 — meta-humor preserved.
+L1601–1627: Job/credit application scene — all natural. "Herr'n" (sir) L1604, L1612 adds formality. L1608: "groggslukande" consistent. L1613: "tatueringar eller ett träben eller åtminstone en ögonlapp" — pirate prerequisites humor preserved. L1615: "drottningen av England" (Queen of England) — natural Swedish expression.
+L1618: "Fettucinibröderna" per glossary. "Fåniga accent" / "fåniga tofflor" (silly accent/silly slippers) natural.
+L1622: "Jag blev inte åttiotre år genom att vara nån dumbom." — "dumbom" for "jackass" — more suitable Swedish; "dumbom" (fool/blockhead) is the standard Swedish equivalent idiom.
+L1629: "en dublon" — consistent per glossary. "En hel rulle" (a whole roll) natural.
+L1633: "Menade du hängmappar eller nagelfilar?" — "hängmappar" (hanging files/folders) / "nagelfilar" (nail files) — preserves the file/files pun perfectly.
+L1637: "metallsorten man öppnar lås med" — natural description of a prison file.
+L1640: "det här är ingen boutique" — natural.
+L1641: "sätt inte läpparna på nåt" — natural, storekeeper's paranoia.
+L1644: "finbyxor" — consistent.
+L1646–1658: Browsing pressure lines — all natural. "Specialpris på spadar" (special on shovels), "Vad tror du det här är? Ett museum?" — natural.
+L1653: "finbyxan" — singular form, consistent.
+L1655: "slippa kylan" (get out of the cold) — humor since it's the Caribbean. Natural.
+L1659: "Ser elak och ful ut." — concise.
+L1660: "Jaha? Det är din morsa med." for "Oh yeah? Well so's your old lady." — "morsa" (old lady/mom) is colloquial. Natural comeback.
+L1661: "butiksägare" for "storekeeper" — consistent.
+
+### Room 031 — Jail
+
+L1662: "dörröppning" for "doorway" — natural compound.
+L1663, 1667: "lås" for "lock" — standard.
+L1664: "Prata med dödsandedräkt? Nej tack." — "dödsandedräkt" (death-breath) vivid compound. Natural.
+L1665: "Ser nervös ut." — natural.
+L1666: "fånge" for "prisoner" — standard.
+L1668–1676: Cell/lock interactions — natural. "Svetsad" (welded) for "welded shut" — standard.
+L1677: "fil" for "file" — standard.
+L1678: "Det ligger en fil i den!" — natural.
+L1680: "raspig metallfil" for "raspy metal file" — "raspig" natural.
+L1681: "tårta" for "cake" — standard.
+L1682: "Otis" — name kept.
+L1683: "fånge" — consistent.
+L1684–1761: Extended Otis dialog — very long scene. All natural throughout. Key highlights:
+L1697: "Nå, håll hakan uppe." for "keep a stiff upper lip" — "håll hakan uppe" is the standard Swedish equivalent idiom.
+L1699: "Jag heter Otis. Åtminstone tror jag det." — natural. Otis's confused despair.
+L1704: "Jag blev ditsatt!" for "I was framed!" — "ditsatt" (set up/framed) natural.
+L1710: "Caniche Endormi" — French flower name kept as-is. Correct.
+L1711: "Jag tror det var en konspiration... om det finns en typ av pirateri jag inte gillar... ...så är det KONS-pirat-ION." — Pun resolved: "pirat" hidden inside "konspiration." Setup changed from "sjöröveri" to "pirateri" so the echo is clear.
+L1716: "Minsann." for "No kidding." — natural.
+L1723: "håller honom i schack" (keeps him in check) — natural idiom.
+L1724: "mystiska omständigheter" (mysterious circumstances) — standard.
+L1729: "Hämta en advokat åt mig! En billig!" — natural. Humor preserved.
+L1730: "Min befriare ska jag stå i evig skuld till." — "befriare" (emancipator) formal/dramatic. "Evig skuld" (eternally indebted) — Otis's grandiose promise.
+L1740: "morotstårta som moster Tillie bakade" — "moster" (aunt, maternal) consistent. "Morotstårta" (carrot cake) standard.
+L1744: "Slask, grogg, gröt... Råttor, kryp och löss" — vivid prison food. Natural.
+L1746: "fläskavskrap -- mest fötter och läppar" for "pork trimmings--mostly feet and lips" — "fläskavskrap" is a good compound. "Fransyska" for "rump roast" — standard Swedish cut name.
+L1751: "den enda fransyskan jag sett som har en gripsvans" — "gripsvans" (prehensile tail) standard zoological Swedish. Dark humor about monkey meat.
+L1759: "För att inte tala om munlukt." for "Not to mention halitosis." — "munlukt" (bad breath) is standard Swedish. Less clinical than "halitosis" but more natural.
+L1764: "Grogg-O-Mint!" — brand parody adapted. Natural.
+L1775: "Oj! Snacka om dålig andedräkt!" — natural.
+L1776–1785: Otis recruitment/escape scene — natural. L1783: "TITTA! BAKOM DIG! EN TREHÖVDAD APA!" — Running gag reversed. Emphasis preserved.
+L1787–1794: Sheriff Shinetop confrontation — natural. "Smutsig luffare" (filthy vagrant) vivid. "Skuld till samhället" (debt to society) standard.
+
+### Room 031 continued — Jail escape + Sheriff (L1795–1818)
+
+L1795: "döma lokalbefolkningen" — natural formal register for Shinetop.
+L1796: "apungen" for "monkey-boy" — "apunge" (monkey-boy) vivid insult compound.
+L1797: "umgås med brottslingar" — formal Shinetop register. Natural.
+L1800: "fuffens" for "monkey business" — "fuffens" (shenanigans) is natural colloquial Swedish.
+L1801: "Herregud, vilken typ" for "Man, is he a pill" — "vilken typ" (what a character) natural.
+L1803–1817: Grog/jail escape scene — natural throughout. L1805: "Gött, en drink!" (great, a drink!) natural casual. L1808: "tänk att jag brukade dricka det där" — natural. L1811: "Haha, du lät dig luras!!" for "Sucker!!" — natural Swedish. L1816: "Rädda råttan och lämna mig här att ruttna" — vivid. L1817: "golat" for "squealed" — "gola" (snitch/squeal) is colloquial Swedish.
+
+### Room 032 — Dark alley (Sheriff encounter)
+
+L1819: "gata" for "street" — standard.
+L1820: "Ooooh! En cirkus. Jag älskar cirkus!" — natural.
+L1822: "affisch" for "poster" — standard.
+L1823: "Han är vidrig, hemsk, avskyvärd, och på väg att slå mig igen." — vivid description of LeChuck. Natural.
+L1825: "Endast personal" for "Employees Only" — standard Swedish sign.
+L1827–1849: Sheriff Shinetop alley scene — all natural. "Mörk, öde gränd" (dark, deserted alley) natural. "Ge mig lite attityd" for "give me a little attitude" — natural.
+L1843: "Peepwood" — name mangling kept from English.
+L1847: "Lita på mig" for "Take it from me" — natural.
+L1849: "ordningsmakt" for "officer of the law" — natural formal/sarcastic.
+
+### Room 033 — Lookout/Governor's area
+
+L1850–1851: "klippsida" (cliffside), "valvbåge" (archway) — standard.
+L1853: "Jag ska rädda dig Elaine, det lovar jag." — natural. Guybrush's earnestness.
+L1854: "Min lilla plundringsgull." for "It's my little plunder bunny." — "plundringsgull" (plunder darling) — good adaptation. More natural Swedish than "plundringskanin" would be.
+L1857: "Återvälj Guvernör Marley. 'När det bara finns en kandidat finns det bara ett val.'" — Natural. Campaign poster humor preserved.
+
+### Room 034 — Governor's mansion exterior (looting reservation)
+
+L1860: "dödliga pirayapudlar" for "deadly piranha poodles" — "pirayapudlar" is a great compound. Natural.
+L1861: "Guvernörens herrgård" — per glossary.
+L1862–1872: "Det där är inte kyrkan" lines — consistent, natural.
+L1874–1880: "Psssst" approach — natural.
+L1881–1914: Looting reservation scene — all natural. Humor perfectly preserved. "Bokning" (reservation) for formal booking system applied to looting — absurd bureaucracy humor. "Fullbokade de närmaste fem timmarna" natural. L1895: "Åh ja, väldigt populärt" — deadpan. L1912: "en plundring av Guvernörens herrgård klockan halv tre" — formal booking language for illegal activity.
+
+### Room 035 — Town square (Men of Low Moral Fiber, ghost guard, clock)
+
+L1915: "råtta" for "rat" — standard.
+L1917: "Män av Tveksam Vandel (pirater)" for "Men of Low Moral Fiber (pirates)" — per glossary.
+L1919: "Jag måste ta mig till kyrkan!" — natural.
+L1922: "Den Ärevördiga Gummikyckling-Med-Trissa-I-Mitten-Boden" — Adaptation of "Ye Olde" → "Den Ärevördiga" (The Venerable). Preserves the faux-archaic shop name humor. Natural.
+L1929: "Vad stirrar DU på?" — emphasis preserved.
+L1930: "Medborgare av Mêlée" for "Citizen of Mêlée" — standard.
+L1933: "grym vålnad" for "grim spectre" — "vålnad" (specter/ghost) natural. "Grym" (grim/fierce) fits.
+L1934–1935: "stavfel" for "spelling errors" — standard. Self-referential humor (the game's own minutes have typos).
+L1936: "protokoll" for "minutes" (meeting minutes) — standard Swedish.
+L1939–1942: Clock progression — "Klockan tio" (ten o'clock) natural. L1941: "det ALLTID är klockan tio" — meta-observation. "Kusligt!" (Creepy!) natural.
+L1943–1976: Ghost guard at church — extended scene, all natural. Key highlights:
+L1946: "Jag tränger mig in." for "I'm a gatecrasher." — natural.
+L1947: "dödliga magiska rotölen" — "rotöl" per glossary, consistent.
+L1955: "väldigt rosa" (very pink) — natural, humor about not looking like a ghost.
+L1957: "sällsynt pigmenteringssyndrom" — pseudo-medical jargon. Natural.
+L1961: "Mina kedjor är på kemtvätten och avfettas." — "kemtvätten" (dry cleaners), "avfettas" (being degreased) — absurd humor perfectly preserved.
+L1965: "fuktiga, unkna spökdoften från andra sidan graven" — atmospheric. Natural.
+L1966: "upptagen med att överröstas av DIN egen dödliga stank" — emphasis preserved. Natural burn.
+L1968: "rotölsparfym" — great compound (root beer cologne). Natural.
+L1971: "Låt se dig skruva av huvudet." for "Let's see you pop your head off." — "skruva av" (unscrew) is more natural Swedish than "poppa av."
+L1975: "Menar du skummet på den här rotölen?" — `[ACCEPTED]` English puns on "head" (ghost head / beer foam). Swedish "skummet" loses the double meaning, but the misunderstanding still works — the bartender naturally hears "foam."
+L1977: "Det här är toppen! Se upp, LeChuck!" — natural excitement.
+L1978–1983: Rat harassment scene — natural. "Rör inte min råtta!" vivid.
+L1985–2076: Extended Men of Low Moral Fiber dialog — very long scene. All natural. Key highlights:
+L2002: "smörpappret" for "birdcage liners" — changed to natural Swedish metaphor for worthless paper. "Smörpapper" (butter paper) is thin and disposable.
+L2004: "föräldraföreningen" for "PTA" — standard Swedish equivalent. "Kan inte ens GE bort dom" — emphasis preserved.
+L2015: "särskilt i en lätt vinsås" — dark rat cuisine humor. Natural.
+L2020: "-- pip --" for "-- squeak --" — Swedish onomatopoeia for a squeak.
+L2027: "Det går en historia här i trakten att ett gäng råttor faktiskt seglade ett skepp hit från det mytomspunna Monkey Island®." — Changed from stilted previous version. "Det går en historia" is natural for local legends. "Mytomspunna" (myth-shrouded) for "fabled." **FIX: Removed junk text "I want you to" that was appended from a corrupt edit.**
+L2037: "en rejäl slant" for "a pretty penny" — natural Swedish equivalent.
+L2039: "kringresande cirkustrupp" — natural compound.
+L2043: "Såna här kläder kan man inte köpa färdiga!" for "You can't buy clothes like these off the rack!" — "köpa färdiga" (buy ready-made) is more natural than "från hyllan." Good.
+L2045: "tunnan" for "keg" — standard.
+L2046: "Förlåt att jag kränkte er råtta verbalt" — "kränkte... verbalt" (verbally abused) matches English and is appropriately absurd.
+L2049: "plundra, härja och bränna" for "looting, pillaging, sacking" — vivid pirate verbs. Natural.
+L2050–2054: Rum and jam — "Rom" / "Sylt" — standard. "Rom och sylt" for "rum and jam" — the awkward pirate secret preserved.
+L2058: "alternativa försörjningsmetoder" for "alternate means of self-support" — natural formal/ironic.
+L2065: "immateriella myndighetsrövarna" for "immaterial authority-figure-nappers" — brilliant compound. "Immateriella" (immaterial/intangible) + "myndighetsrövarna" (authority-nappers). Natural wordplay.
+L2067–2069: Guybrush's infomercial pitch — "engångspris" (one-time price), "öparadiset" (island paradise) — sales-pitch register. Natural. "På köpet" (as a bonus/while we're at it) for the Governor rescue.
+
