@@ -176,7 +176,7 @@ func Write(path string, hdr *Header, indexBlob, namesBlob []byte, entries []*Ent
 		writeU32(&buf, dataPositions[i])
 		writeU32(&buf, e.NamePos)
 		writeU32(&buf, sz)
-		writeU32(&buf, sz) // DataSize2 always mirrors DataSize
+		writeU32(&buf, sz)
 		writeU32(&buf, e.Compressed)
 	}
 

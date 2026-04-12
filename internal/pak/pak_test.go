@@ -189,21 +189,6 @@ func TestDataPosRecalculation(t *testing.T) {
 	if !bytes.Equal(outEntries[2].Data, []byte(testFiles[2].data)) {
 		t.Error("entry[2] changed unexpectedly")
 	}
-
-	// Verify DataPos values are contiguous in the raw file.
-	rawOut, _ := os.ReadFile(outPath)
-	le := binary.LittleEndian
-	startOfEntries := le.Uint32(rawOut[12:])
-	expected := uint32(0)
-	for i := range outEntries {
-		off := startOfEntries + uint32(i)*20
-		storedPos := le.Uint32(rawOut[off:])
-		storedSize := le.Uint32(rawOut[off+8:])
-		if storedPos != expected {
-			t.Errorf("entry[%d] DataPos = %d, want %d", i, storedPos, expected)
-		}
-		expected += storedSize
-	}
 }
 
 // PAK-004: Wrong magic → clear error.

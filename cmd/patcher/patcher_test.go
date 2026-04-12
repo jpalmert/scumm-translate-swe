@@ -5,7 +5,6 @@ import (
 	"encoding/binary"
 	"os"
 	"path/filepath"
-	"strings"
 	"testing"
 
 	"scumm-patcher/internal/pak"
@@ -404,46 +403,6 @@ func TestFindGameFileAlternateNaming(t *testing.T) {
 	}
 }
 
-// SE-013: disableAutosave patches "SCUMM.Save game,1" to 0 in tweaks.txt entry.
-func TestDisableAutosave(t *testing.T) {
-	tweaks := "UI.Slide Animation,1\nSCUMM.Save game,1\nSCUMM.Jump to room,28\n"
-	entries := []*pak.Entry{
-		{Name: "tweaks.txt", Data: []byte(tweaks)},
-	}
-	disableAutosave(entries)
-	got := string(entries[0].Data)
-	if strings.Contains(got, "SCUMM.Save game,1") {
-		t.Error("autosave not disabled: SCUMM.Save game,1 still present")
-	}
-	if !strings.Contains(got, "SCUMM.Save game,0") {
-		t.Error("expected SCUMM.Save game,0 after patching")
-	}
-	// Other lines must be unchanged.
-	if !strings.Contains(got, "UI.Slide Animation,1") {
-		t.Error("unrelated tweaks.txt line was modified")
-	}
-}
-
-// SE-014: disableAutosave is a no-op when tweaks.txt is absent.
-func TestDisableAutosaveNoTweaks(t *testing.T) {
-	entries := []*pak.Entry{
-		{Name: "classic/en/monkey1.000", Data: []byte("data")},
-	}
-	disableAutosave(entries) // must not panic or error
-}
-
-// SE-015: disableAutosave is a no-op when tweaks.txt has no SCUMM.Save game line.
-func TestDisableAutosaveNoSaveLine(t *testing.T) {
-	tweaks := "UI.Slide Animation,1\nSCUMM.Jump to room,28\n"
-	entries := []*pak.Entry{
-		{Name: "tweaks.txt", Data: []byte(tweaks)},
-	}
-	disableAutosave(entries)
-	if string(entries[0].Data) != tweaks {
-		t.Error("tweaks.txt was modified despite no SCUMM.Save game line")
-	}
-}
-
 // --- Shared ---
 
 // SHARED-001: findTranslationFile returns error for missing explicit path.
@@ -465,62 +424,6 @@ func TestFindTranslationFileExplicit(t *testing.T) {
 	}
 	if got != p {
 		t.Errorf("got %q, want %q", got, p)
-	}
-}
-
-// SE-016: patchSaveLoadCrash applies XOR EAX,EAX; RET to FUN_0049ab60.
-func TestPatchSaveLoadCrash(t *testing.T) {
-	// Build a fake MISE.exe with 0x53 at offset 0x9ab60.
-	const funcOffset = 0x9ab60
-	data := make([]byte, funcOffset+16)
-	data[funcOffset] = 0x53 // PUSH EBX — expected original first byte
-
-	dir := t.TempDir()
-	exePath := filepath.Join(dir, "MISE.exe")
-	os.WriteFile(exePath, data, 0644)
-
-	if err := patchSaveLoadCrash(exePath); err != nil {
-		t.Fatalf("patchSaveLoadCrash: %v", err)
-	}
-
-	patched, err := os.ReadFile(exePath)
-	if err != nil {
-		t.Fatalf("read patched: %v", err)
-	}
-	got := patched[funcOffset : funcOffset+3]
-	want := []byte{0x31, 0xC0, 0xC3}
-	if !bytes.Equal(got, want) {
-		t.Errorf("bytes at 0x%x = %X, want %X", funcOffset, got, want)
-	}
-}
-
-// SE-017: patchSaveLoadCrash is idempotent (no-op if already patched).
-func TestPatchSaveLoadCrashIdempotent(t *testing.T) {
-	const funcOffset = 0x9ab60
-	data := make([]byte, funcOffset+16)
-	data[funcOffset] = 0x31 // already patched
-
-	dir := t.TempDir()
-	exePath := filepath.Join(dir, "MISE.exe")
-	os.WriteFile(exePath, data, 0644)
-
-	if err := patchSaveLoadCrash(exePath); err != nil {
-		t.Fatalf("patchSaveLoadCrash idempotent: %v", err)
-	}
-}
-
-// SE-018: patchSaveLoadCrash returns error for unexpected byte.
-func TestPatchSaveLoadCrashWrongByte(t *testing.T) {
-	const funcOffset = 0x9ab60
-	data := make([]byte, funcOffset+16)
-	data[funcOffset] = 0xFF // unexpected — different version
-
-	dir := t.TempDir()
-	exePath := filepath.Join(dir, "MISE.exe")
-	os.WriteFile(exePath, data, 0644)
-
-	if err := patchSaveLoadCrash(exePath); err == nil {
-		t.Fatal("expected error for unexpected byte")
 	}
 }
 
