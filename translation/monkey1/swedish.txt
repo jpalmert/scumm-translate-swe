@@ -4016,7 +4016,7 @@
 [083:OBNA#0903](__)broschyr
 [083:OBNA#0904](__)brygga
 [083:OBNA#0905](__)brygga
-[083:VERB#0906](D8)Han är grym och elak och på väg att slå mej igen.
+[083:VERB#0906](D8)Han är grym och elak och på väg att slå mig igen.
 [083:OBNA#0906](__)LeChuck
 [083:VERB#0907](D8)Hör upp, pirater på Mêlée:\255\003Er guvernör lever och mår bra och är vid min sida, som det alltid var menat att vara.
 [083:VERB#0907](D8)Om ni försöker hitta oss kommer ni bara att möta fruktansvärd olycka.
@@ -4153,7 +4153,7 @@
 [083:SCRP#0065](14)Dina dagar som bråkstake på Mêlée Island® är över.
 [083:SCRP#0065](14)Mina planer för Guvernören är alldeles för viktiga...\255\003...och alldeles för nära fullbordan...
 [083:SCRP#0065](14)...för att riskera att en blivande pirat som du ställer till det.
-[083:SCRP#0065](14)Hej då, herr Kryddkansen, eller Hängansen, eller vad du nu heter.
+[083:SCRP#0065](14)Hej då, herr Kryddkaka, eller Hängnäsa, eller vad du nu heter.
 [083:SCRP#0065](14) 
 [083:SCRP#0065](14)Hmmm...\255\003Det här kanske faktiskt blir en riktigt bra dag.
 [084:ENCD#0084](14)VÄGBESKRIVNING TILL MONKEY ISLAND!!!
