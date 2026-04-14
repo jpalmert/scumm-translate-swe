@@ -35,6 +35,7 @@ var scummCharMap = []struct {
 	{"ö", `\125`},
 	{"é", `\130`},
 	{"ê", `\136`},
+	{"®", `\015`}, // SCUMM stores ® as byte 0x0F; without this, UTF-8 0xC2 0xAE leaks in
 }
 
 // scummByteMap maps UTF-8 Swedish characters to their SCUMM byte values.
@@ -48,6 +49,7 @@ var scummByteMap = map[rune]byte{
 	'ö': 0x7D,
 	'é': 0x82,
 	'ê': 0x88,
+	'®': 0x0F,
 }
 
 // ScummBytes converts UTF-8 text to the byte representation that scummtr
