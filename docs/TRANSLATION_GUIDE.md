@@ -115,10 +115,73 @@ A line starting with `...` continues directly from the previous page:
 
 ---
 
-## Fixed-width slots
+## The `@` character — invisible padding
 
-Some strings are internal slot labels with no visible dialog content.
-They may appear empty or contain only control codes — leave them as-is.
+`@` (0x40) is invisible in the SCUMM engine — it renders as zero-width,
+zero-pixels. Some lines in the English text contain `@` characters. These
+fall into three categories:
+
+### 1. Binary buffer allocations — MUST preserve (critical)
+
+A few `(27)` opcode lines are entirely `@` characters with no visible text:
+
+```
+[010:SCRP#0001](27)@@@@@@@@@@@@
+[010:SCRP#0001](27)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+```
+
+These are **not text** — they are `PutCodeInString` calls that allocate
+fixed-size byte buffers. The game scripts later write binary data into these
+buffers using `SetStringChar` at specific byte offsets. If the `@` characters
+are removed, the buffer is allocated too small, and the subsequent writes
+overflow into adjacent heap memory. This causes **menu color corruption in
+ScummVM** and **save file corruption / crashes in the SE**.
+
+**Rule: never translate or modify lines that are entirely `@` characters.**
+Keep them exactly as-is.
+
+### 2. Object name padding — does NOT need preserving
+
+Many `(__)` OBNA object names and `(54)`/`(D4)` replacement names have
+trailing `@` padding:
+
+```
+[008:OBNA#0091](__)giant piece of rope@@@@@@@@@@@@@@@@@@@@@@
+[029:VERB#0377](54)rubber chicken
+[077:VERB#0840](54)squeaky door@@@
+```
+
+This padding was used by the original 1990 LucasArts interpreter to reserve
+buffer space for in-place name writes. Both ScummVM and the SE use an overlay
+mechanism instead — they allocate fresh memory for replacement names. Testing
+confirmed that removing this padding causes no issues.
+
+**Rule: you may ignore trailing `@` on object/actor name lines.** Translate
+the visible text normally. The `@` padding will be stripped from the English
+file during extraction.
+
+### 3. Actor name initialization — does NOT need preserving
+
+Some `(93)` lines are pure `@`:
+
+```
+[002:SCRP#0037](93)@@@@@@@
+```
+
+These initialize actor name buffers before the actor is given a real name.
+The SE allocates fresh memory for each actor name change, so the buffer
+size doesn't matter.
+
+**Rule: you may leave these empty or ignore them.**
+
+### Summary
+
+| Line type | Example | Action |
+|-----------|---------|--------|
+| `(27)` all-`@` | `(27)@@@@@@@@@@@@` | **KEEP — do not touch** |
+| `(__)` with `@` | `(__)mug@@@@@@@@` | Strip `@`, translate text |
+| `(54)` with `@` | `(54)squeaky door@@@` | Strip `@`, translate text |
+| `(93)` all-`@` | `(93)@@@@@@@` | Leave empty or ignore |
 
 ---
 
