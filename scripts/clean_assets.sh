@@ -20,6 +20,9 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 echo "==> Removing extracted assets..."
 rm -rf "$REPO_ROOT/game/monkey1/gen"
 
+echo "==> Removing generated dynamic name mapping..."
+rm -f "$REPO_ROOT/translation/monkey1/dynamic_names.json"
+
 # Only remove the unpacked classic files if they were extracted from a PAK.
 # If no PAK is present the user placed these files directly — leave them alone.
 if [[ -f "$REPO_ROOT/game/monkey1/Monkey1.pak" ]]; then

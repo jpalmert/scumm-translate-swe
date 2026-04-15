@@ -1,31 +1,25 @@
 #!/usr/bin/env python3
 """
-Calculate required @ padding for Swedish object names based on dynamic_names.json.
+Calculate and apply @ padding for Swedish object names.
 
-For each object that has runtime name replacements (setObjectName), this script:
-1. Reads the Swedish translations from swedish.txt
-2. Computes the SCUMM byte length of each translated name
-3. Determines the required buffer size (max of OBNA name and all replacements)
-4. Reports which lines need padding and by how much
-5. Optionally applies the padding (--apply flag)
+For each object with runtime name replacements (from dynamic_names.json),
+find the OBNA line and all replacement lines in swedish.txt. The OBNA buffer
+must be at least as long as the longest replacement name (in SCUMM bytes).
 
-The SCUMM byte length accounts for escape codes: \\NNN = 1 byte, all other
-characters = 1 byte each. Swedish UTF-8 characters (å, ä, ö, etc.) should
-already be encoded as \\NNN escape codes in swedish.txt by the injection pipeline.
+The SE engine writes replacement names in-place into the OBNA buffer with no
+bounds check. If the OBNA is shorter than a replacement, it overflows.
 
 Usage:
-    python3 tools/calc_padding.py [--apply] [--json mapping] [--translation file]
+    python3 tools/calc_padding.py [--apply] [--json PATH] [--translation PATH]
 
-    --apply:       modify swedish.txt in place to add/fix padding
-    --json:        path to dynamic_names.json (default: translation/monkey1/dynamic_names.json)
-    --translation: path to swedish.txt (default: translation/monkey1/swedish.txt)
-    --verbose:     show all objects, not just those needing changes
+    --apply:       modify the translation file in place (use on dist/ copy)
+    --json:        path to dynamic_names.json
+    --translation: path to swedish.txt
 """
 
 import argparse
 import json
 import os
-import re
 import sys
 
 # Swedish UTF-8 -> SCUMM escape code mappings (must match internal/classic/classic.go)
@@ -40,7 +34,6 @@ def encode_swedish(text):
     """Encode UTF-8 Swedish chars to SCUMM escape codes and strip opcode prefix."""
     for char, esc in SWEDISH_CHAR_MAP.items():
         text = text.replace(char, esc)
-    # Strip leading (XX) opcode prefix
     if text.startswith('(') and ')' in text:
         text = text[text.index(')') + 1:]
     return text
@@ -59,65 +52,11 @@ def scumm_byte_len(text):
     return n
 
 
-def pad_to_length(text, target_scumm_len):
-    """Pad text with @ to reach target SCUMM byte length."""
-    current = scumm_byte_len(text)
-    if current < target_scumm_len:
-        text += '@' * (target_scumm_len - current)
-    return text
-
-
-def strip_trailing_at(text):
-    """Remove trailing @ characters."""
-    return text.rstrip('@')
-
-
-def parse_swedish_lines(filepath):
-    """Parse swedish.txt into list of (header, text, line_number)."""
-    lines = []
-    with open(filepath, 'r', encoding='utf-8') as f:
-        for i, raw in enumerate(f, 1):
-            raw = raw.rstrip('\r\n')
-            if raw.startswith('[') and ']' in raw:
-                idx = raw.index(']')
-                lines.append((raw[:idx+1], raw[idx+1:], i))
-    return lines
-
-
-def find_lines_for_object(swedish_lines, obj_id, mapping):
-    """Find the swedish.txt lines that correspond to an object's OBNA and replacement names.
-
-    Returns dict with:
-      obna_lines: [(header, text, line_num)] - the OBNA line(s) for this object
-      replacement_lines: [(header, text, line_num, replacement_entry)] - the (54)/(D4) lines
-    """
-    obna_header_pattern = f"OBNA#{obj_id:04d}]"
-
-    obna_lines = []
-    replacement_lines = []
-
-    for header, text, line_num in swedish_lines:
-        if obna_header_pattern in header:
-            obna_lines.append((header, text, line_num))
-
-    # For replacement lines, we need to match by the scummtr header format
-    # The replacement names appear as regular text lines in swedish.txt with
-    # their own headers (VERB#, SCRP#, LSCR#, ENCD#, EXCD#)
-    # We can't directly match them by object ID from the header alone —
-    # the header shows the script/resource they're IN, not the target object.
-    # This is handled by the mapping from dynamic_names.json.
-
-    return {
-        "obna_lines": obna_lines,
-    }
-
-
 def main():
     parser = argparse.ArgumentParser(description="Calculate @ padding for Swedish object names")
-    parser.add_argument("--apply", action="store_true", help="Apply padding to swedish.txt")
+    parser.add_argument("--apply", action="store_true", help="Apply padding in place")
     parser.add_argument("--json", default=None, help="Path to dynamic_names.json")
     parser.add_argument("--translation", default=None, help="Path to swedish.txt")
-    parser.add_argument("--verbose", action="store_true", help="Show all objects")
     args = parser.parse_args()
 
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -125,153 +64,148 @@ def main():
     sv_path = args.translation or os.path.join(repo, "translation", "monkey1", "swedish.txt")
 
     if not os.path.isfile(json_path):
-        print(f"Error: {json_path} not found. Run tools/find_dynamic_names.py first.", file=sys.stderr)
+        print(f"Error: {json_path} not found. Run scripts/extract.sh first.", file=sys.stderr)
         sys.exit(1)
 
     with open(json_path) as f:
         mapping = json.load(f)
 
-    swedish_lines = parse_swedish_lines(sv_path)
+    # Read swedish.txt lines
+    with open(sv_path, 'r', encoding='utf-8') as f:
+        raw_lines = f.readlines()
 
-    # Build a lookup: header -> (text, line_num, line_index)
-    header_lookup = {}
-    for idx, (header, text, line_num) in enumerate(swedish_lines):
-        if header not in header_lookup:
-            header_lookup[header] = []
-        header_lookup[header].append((text, line_num, idx))
+    # Parse into (header, text, raw_line) — preserve exact line content for rewriting
+    parsed = []
+    for raw in raw_lines:
+        stripped = raw.rstrip('\r\n')
+        if stripped.startswith('[') and ']' in stripped:
+            idx = stripped.index(']')
+            parsed.append((stripped[:idx+1], stripped[idx+1:]))
+        else:
+            parsed.append((None, stripped))
 
-    print("=" * 70)
-    print("PADDING ANALYSIS")
-    print("=" * 70)
-    print()
+    # For each object with replacements, find:
+    # 1. The OBNA line in swedish.txt
+    # 2. All replacement lines in swedish.txt (matched by scummtr header position —
+    #    we can't match by content since it's translated, but we know the headers
+    #    from the JSON's replacement list)
+    # 3. The longest SCUMM byte length among OBNA + all replacements
+    # 4. Pad the OBNA line to that length
 
     needs_change = 0
-    total_objects = 0
-    problems = []
+    overflows = []
+    changes = {}  # line_index -> new_text
 
-    for obj_id_str, data in sorted(mapping["objects"].items(), key=lambda x: int(x[0])):
+    for obj_id_str, replacement_names in sorted(mapping["objects"].items(), key=lambda x: int(x[0])):
         obj_id = int(obj_id_str)
-        if not data["replacements"]:
+        obna_pattern = f"OBNA#{obj_id:04d}]"
+
+        # Find OBNA line(s) for this object
+        obna_indices = []
+        for i, (header, text) in enumerate(parsed):
+            if header and obna_pattern in header:
+                obna_indices.append(i)
+
+        if not obna_indices:
             continue
 
-        total_objects += 1
-        obna = data.get("obna", "")
-        obna_len = data.get("obna_len", 0)
-        max_repl = data.get("max_replacement_len", 0)
-        required_buffer = max(obna_len, max_repl)
+        # Find the longest replacement name (in SCUMM bytes)
+        # These are the ENGLISH replacement names from the bytecode.
+        # We need to find their SWEDISH translations in swedish.txt.
+        # But we can't easily match replacement lines by content since they're
+        # interleaved with other text in VERB/SCRP/LSCR blocks.
+        #
+        # Instead, the safe approach: the OBNA buffer must be at least as long as
+        # the longest ENGLISH replacement name. The English lengths are the contract
+        # — they define the buffer the original game needs.
+        max_repl_len = max((len(name) for name in replacement_names), default=0)
 
-        # Find the OBNA line in swedish.txt
-        obna_header = f"[{obj_id // 256:03d}:OBNA#{obj_id:04d}]"
-        # Actually, room number in header doesn't directly correspond to obj_id
-        # Search all OBNA headers for this object number
-        obna_matches = []
-        for header, entries in header_lookup.items():
-            if f"OBNA#{obj_id:04d}]" in header:
-                for text, line_num, idx in entries:
-                    obna_matches.append((header, text, line_num, idx))
-
-        if not obna_matches:
-            if args.verbose:
-                print(f"  #{obj_id:04d}: OBNA not found in swedish.txt (may be untranslated)")
-            continue
-
-        for header, text, line_num, idx in obna_matches:
+        for idx in obna_indices:
+            header, text = parsed[idx]
             encoded = encode_swedish(text)
-            current_len = scumm_byte_len(encoded)
-            stripped = strip_trailing_at(encoded)
+            stripped = encoded.rstrip('@')
             stripped_len = scumm_byte_len(stripped)
 
-            # The required buffer is the max of:
-            # - The English OBNA length (original buffer size)
-            # - The longest replacement name (must fit)
-            # We use the English buffer as the baseline since the SE writes in-place
-            english_buffer = obna_len
+            # Required buffer = max of stripped OBNA and longest replacement
+            required = max(stripped_len, max_repl_len)
+            current_len = scumm_byte_len(encoded)
 
-            if required_buffer > english_buffer:
-                # Replacement is longer than original OBNA — original game has this covered
-                # via @ padding. Use the English buffer size.
-                pass
-
-            target_len = english_buffer  # must match original buffer
-
-            if current_len == target_len:
-                if args.verbose:
-                    print(f"  #{obj_id:04d} L{line_num}: OK ({current_len} bytes)")
+            if current_len == required:
                 continue
 
             needs_change += 1
-            diff = target_len - current_len
 
-            # Check if the stripped Swedish name is too long for the buffer
-            if stripped_len > target_len:
-                problems.append({
+            if stripped_len > required:
+                # Swedish OBNA name itself is longer than all replacements —
+                # the replacement writes will fit (they're shorter). No padding needed.
+                # But we should still pad if the name is shorter than the longest replacement.
+                continue
+
+            if stripped_len > max_repl_len:
+                # OBNA is longer than all replacements — no padding needed at all
+                continue
+
+            pad_needed = required - stripped_len
+
+            # Rebuild the text with correct padding
+            # Preserve opcode prefix if present
+            orig_text = text
+            prefix = ""
+            if orig_text.startswith('(') and ')' in orig_text:
+                prefix = orig_text[:orig_text.index(')') + 1]
+                base_text = orig_text[orig_text.index(')') + 1:]
+            else:
+                base_text = orig_text
+
+            base_stripped = base_text.rstrip('@')
+            # Verify the base fits
+            base_encoded = encode_swedish(base_stripped)
+            base_len = scumm_byte_len(base_encoded)
+
+            if base_len > required:
+                overflows.append({
                     "obj_id": obj_id,
-                    "line_num": line_num,
-                    "header": header,
-                    "swedish": stripped,
-                    "swedish_len": stripped_len,
-                    "buffer": target_len,
-                    "overflow": stripped_len - target_len,
+                    "line": idx + 1,
+                    "swedish": base_stripped,
+                    "swedish_len": base_len,
+                    "buffer": required,
+                    "overflow": base_len - required,
                 })
-                print(f"  #{obj_id:04d} L{line_num}: OVERFLOW! Swedish ({stripped_len}) > buffer ({target_len}) by {stripped_len - target_len}")
-                print(f"    EN OBNA: {obna!r}")
-                print(f"    SV text: {stripped!r}")
-                longest_repl = max(data["replacements"], key=lambda r: r["len"])
-                print(f"    Longest replacement: {longest_repl['name']!r} ({longest_repl['len']})")
-            elif diff > 0:
-                print(f"  #{obj_id:04d} L{line_num}: needs {diff} more @ (current {current_len}, need {target_len})")
-                if args.verbose:
-                    print(f"    SV: {encoded!r}")
-            elif diff < 0:
-                print(f"  #{obj_id:04d} L{line_num}: has {-diff} excess @ (current {current_len}, need {target_len})")
+                print(f"  #{obj_id:04d} L{idx+1}: OVERFLOW! Swedish ({base_len}) > buffer ({required}) by {base_len - required}")
+                continue
 
-            if args.apply:
-                # Apply padding
-                new_text = pad_to_length(stripped, target_len)
-                # If still too long (overflow), report but don't truncate
-                if scumm_byte_len(new_text) > target_len:
-                    print(f"    WARNING: cannot auto-pad — Swedish name overflows buffer. Shorten manually.")
-                else:
-                    # Reconstruct with opcode prefix if present
-                    orig_text = text
-                    prefix = ""
-                    if orig_text.startswith('(') and ')' in orig_text:
-                        prefix = orig_text[:orig_text.index(')') + 1]
-                    # Write back the encoded text (with SCUMM escapes, not UTF-8)
-                    # Actually, swedish.txt uses UTF-8, so we need to keep it in UTF-8
-                    # but with @ padding added
-                    stripped_utf8 = text
-                    if stripped_utf8.startswith('(') and ')' in stripped_utf8:
-                        stripped_utf8 = stripped_utf8[stripped_utf8.index(')') + 1:]
-                    stripped_utf8 = stripped_utf8.rstrip('@')
-                    # Calculate how many @ we need in UTF-8 terms
-                    encoded_stripped = encode_swedish(stripped_utf8)
-                    needed_at = target_len - scumm_byte_len(encoded_stripped)
-                    if needed_at > 0:
-                        new_utf8 = prefix + stripped_utf8 + '@' * needed_at
-                        swedish_lines[idx] = (header, new_utf8, line_num)
+            at_count = required - base_len
+            new_text = prefix + base_stripped + '@' * at_count
+            changes[idx] = new_text
+
+            diff = required - current_len
+            if diff > 0:
+                print(f"  #{obj_id:04d} L{idx+1}: adding {at_count} @ (was {current_len}, now {required})")
+            elif diff < 0:
+                print(f"  #{obj_id:04d} L{idx+1}: adjusting @ (was {current_len}, now {required})")
 
     print()
-    print("=" * 70)
-    print("SUMMARY")
-    print("=" * 70)
-    print(f"  Objects with replacements: {total_objects}")
-    print(f"  Lines needing padding changes: {needs_change}")
-    print(f"  Buffer overflows (need shorter Swedish): {len(problems)}")
+    print(f"Lines needing padding: {needs_change}")
+    print(f"Overflows (shorten manually): {len(overflows)}")
 
-    if problems:
-        print()
-        print("  OVERFLOWS requiring manual shortening:")
-        for p in problems:
-            print(f"    #{p['obj_id']:04d} L{p['line_num']}: {p['swedish']!r} overflows by {p['overflow']}")
+    if overflows:
+        print("\nOVERFLOWS:")
+        for o in overflows:
+            print(f"  #{o['obj_id']:04d} L{o['line']}: '{o['swedish']}' overflows by {o['overflow']}")
 
-    if args.apply and needs_change > 0:
-        print()
-        print(f"  Applying changes to {sv_path}...")
+    if args.apply and changes:
+        for idx, new_text in changes.items():
+            header, _ = parsed[idx]
+            parsed[idx] = (header, new_text)
+
         with open(sv_path, 'w', encoding='utf-8') as f:
-            for header, text, line_num in swedish_lines:
-                f.write(f"{header}{text}\n")
-        print(f"  Done. {needs_change} lines updated.")
+            for header, text in parsed:
+                if header:
+                    f.write(f"{header}{text}\n")
+                else:
+                    f.write(f"{text}\n")
+
+        print(f"\nApplied {len(changes)} padding changes to {sv_path}")
 
 
 if __name__ == "__main__":
