@@ -60,7 +60,7 @@ def main():
     args = parser.parse_args()
 
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    json_path = args.json or os.path.join(repo, "translation", "monkey1", "dynamic_names.json")
+    json_path = args.json or os.path.join(repo, "game", "monkey1", "gen", "dynamic_names.json")
     sv_path = args.translation or os.path.join(repo, "translation", "monkey1", "swedish.txt")
 
     if not os.path.isfile(json_path):

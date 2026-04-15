@@ -8,9 +8,6 @@ internal/charset/gen/
 # game/ is already gitignored above; game/monkey1/gen/ holds all assets extracted
 # from the game (CHAR blocks, BMPs, strings) — regenerate with scripts/extract.sh
 
-# Generated dynamic name mapping (produced by extract_assets.sh / find_dynamic_names.py)
-translation/*/dynamic_names.json
-
 # Python
 __pycache__/
 *.pyc
