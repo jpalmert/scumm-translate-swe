@@ -135,17 +135,18 @@ echo ""
 echo "=== Extracting strings ==="
 STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
-"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -hI -A aov -o -f "$STR_OUT/english.txt"
+"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -hI -o -f "$STR_OUT/english.txt"
 
 # Post-process extracted strings into clean UTF-8 for translators:
 #   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ...
 #   2. Convert SCUMM character escape codes to their UTF-8 characters:
 #        \130 = é,  \136 = ê,  \015 = ®,  \250 = non-breaking space
 #
-# Note: trailing @ padding is preserved. The @ character is invisible in SCUMM
-# rendering and serves as buffer space for runtime name changes via setObjectName.
-# See docs/DYNAMIC_NAMES.md for the full mapping and docs/TRANSLATION_PLAN.md
-# for translation rules around padded strings.
+# Note: -A aov (protect actors/objects/verbs) is intentionally omitted from the
+# extraction above. With -A, scummtr pads ALL object names to fixed-width fields
+# with @, which adds thousands of spurious @ characters. Without -A, only the 34
+# object names that genuinely use @ for runtime buffer padding retain their @
+# characters. These 34 are preserved — see docs/DYNAMIC_NAMES.md for the mapping.
 sed -i \
     -e '/^;;/d' \
     -e 's/\^/.../g' \
