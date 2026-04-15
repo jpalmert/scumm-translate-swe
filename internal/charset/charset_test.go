@@ -77,33 +77,6 @@ func TestPatchedChar0006Asset(t *testing.T) {
 	}
 }
 
-// ASSET-006: CHAR_0006 palette matches charsetColor verb values after fix.
-func TestChar0006PaletteFix(t *testing.T) {
-	if len(patchedChar0006) < charPaletteOffset+2 {
-		t.Fatalf("patchedChar0006 too short for palette check: %d bytes", len(patchedChar0006))
-	}
-
-	fixed := fixCharset6Palette(patchedChar0006)
-
-	// palette[0] must be 6 (verb foreground color index set by SCRP_0022's charsetColor).
-	if got := fixed[charPaletteOffset]; got != 6 {
-		t.Errorf("CHAR_0006 palette[0] = %d, want 6 (verb foreground)", got)
-	}
-	// palette[1] must be 2 (verb shadow color index).
-	if got := fixed[charPaletteOffset+1]; got != 2 {
-		t.Errorf("CHAR_0006 palette[1] = %d, want 2 (verb shadow)", got)
-	}
-
-	// Source data must be unchanged (fixCharset6Palette returns a copy).
-	if patchedChar0006[charPaletteOffset] == 6 && patchedChar0006[charPaletteOffset+1] == 2 {
-		// If the source already matches, the fix is a no-op — that's fine.
-		return
-	}
-	if fixed[charPaletteOffset] == patchedChar0006[charPaletteOffset] {
-		t.Error("fixCharset6Palette did not modify the copy")
-	}
-}
-
 // ASSET-007: Embedded scummrp binaries are non-empty.
 func TestScummrpBinariesEmbedded(t *testing.T) {
 	bins := map[string][]byte{

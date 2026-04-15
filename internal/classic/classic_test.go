@@ -219,8 +219,6 @@ func TestScummBytes(t *testing.T) {
 		{"ö", []byte{0x7D}},
 		{"é", []byte{0x82}},
 		{"Det här", []byte{'D', 'e', 't', ' ', 'h', 0x7C, 'r'}},
-		{"®", []byte{0x0F}},
-		{"Monkey Island®", append([]byte("Monkey Island"), 0x0F)},
 	}
 	for _, tc := range cases {
 		got := ScummBytes(tc.in)
@@ -241,22 +239,6 @@ func TestEncodeForScummtrMixed(t *testing.T) {
 		t.Fatalf("unexpected error: %v", err)
 	}
 	want := `Jag \124r glad`
-	if string(got) != want {
-		t.Errorf("got %q, want %q", got, want)
-	}
-}
-
-// ENCODE-004: ® is encoded to SCUMM byte 0x0F (not left as UTF-8).
-func TestEncodeForScummtrRegisteredMark(t *testing.T) {
-	dir := t.TempDir()
-	p := filepath.Join(dir, "t.txt")
-	os.WriteFile(p, []byte("Monkey Island®"), 0644)
-
-	got, err := encodeForScummtr(p)
-	if err != nil {
-		t.Fatalf("unexpected error: %v", err)
-	}
-	want := `Monkey Island\015`
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
 	}

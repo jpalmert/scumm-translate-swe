@@ -118,25 +118,6 @@ func Patch(gameDir string) error {
 	// Overwrite the five CHAR blocks with their Swedish-patched versions.
 	// CHAR_0005 does not exist in monkeycdalt — that slot is simply unused.
 	charDir := filepath.Join(dumpDir, "DISK_0001", "LECF", "LFLF_0010")
-
-	// Fix CHAR_0006 palette to prevent verb menu color corruption.
-	//
-	// The verb setup script (SCRP_0022) uses charsetColor to set
-	// _charsetData[6][1]=6 and [2]=2 for the verb shadow/outline colors.
-	// But ScummVM's loadCharset() overwrites those slots from the CHAR
-	// block's palette (offset 22 = palette[0] → slot [1], offset 23 =
-	// palette[1] → slot [2]). The original palette has [9, 10] there.
-	//
-	// When Swedish strings make the game data larger, ScummVM's resource
-	// cache evicts charset 6 more aggressively. On reload, loadCharset()
-	// restores [9, 10], overriding the script's [6, 2]. Since palette
-	// indices 9 and 10 map to different RGB values per room, the verb
-	// shadow colors change with each room transition.
-	//
-	// Fix: set palette[0..1] to [6, 2] so loadCharset produces the same
-	// values as charsetColor regardless of cache state.
-	char0006 := fixCharset6Palette(patchedChar0006)
-
 	for _, patch := range []struct {
 		name string
 		data []byte
@@ -145,7 +126,7 @@ func Patch(gameDir string) error {
 		{"CHAR_0002", patchedChar0002},
 		{"CHAR_0003", patchedChar0003},
 		{"CHAR_0004", patchedChar0004},
-		{"CHAR_0006", char0006},
+		{"CHAR_0006", patchedChar0006},
 	} {
 		if err := os.WriteFile(filepath.Join(charDir, patch.name), patch.data, 0644); err != nil {
 			return fmt.Errorf("write %s: %w", patch.name, err)
@@ -160,26 +141,4 @@ func Patch(gameDir string) error {
 	}
 
 	return nil
-}
-
-// charPaletteOffset is the byte offset of the 15-byte color palette inside a
-// CHAR block: 8-byte block header (tag + big-endian size) + 14 bytes of
-// per-charset metadata = 22.
-const charPaletteOffset = 22
-
-// fixCharset6Palette returns a copy of a CHAR block with palette[0] and
-// palette[1] set to the values that the verb setup script (SCRP_0022)
-// writes via its charsetColor opcode: foreground=6, shadow=2.
-//
-// ScummVM's loadCharset() copies palette[0] → _charsetData[n][1] and
-// palette[1] → _charsetData[n][2]. The verb renderer uses those slots
-// for shadow/outline colors. By making the stored palette match the
-// script values, verb colors stay stable even if the charset resource
-// is evicted from ScummVM's cache and reloaded.
-func fixCharset6Palette(src []byte) []byte {
-	dst := make([]byte, len(src))
-	copy(dst, src)
-	dst[charPaletteOffset] = 6 // palette[0] → _charsetData[6][1] (foreground)
-	dst[charPaletteOffset+1] = 2 // palette[1] → _charsetData[6][2] (shadow)
-	return dst
 }
