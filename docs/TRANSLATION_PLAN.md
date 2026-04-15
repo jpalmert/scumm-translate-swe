@@ -264,28 +264,26 @@ This extracts all script blocks with `scummrp`, decompiles them with `descumm`,
 and writes `translation/monkey1/dynamic_names.json` — a machine-readable mapping
 of every `setObjectName` and `ActorOps Name` call with target IDs and names.
 
-The JSON is committed to the repo. Re-run only if the game files change (they
-don't — we only modify text, not scripts).
+The JSON is gitignored and generated automatically by `scripts/extract_assets.sh`
+(via `scripts/extract.sh`). Re-run extraction if game files change.
 
-**Step 2 — Check and apply padding (after each translation update):**
+**Step 2 — Padding is applied automatically during build:**
+
+`scripts/build.sh` copies `swedish.txt` to `dist/` and then runs
+`calc_padding.py --apply` on the dist copy. The source `swedish.txt` is never
+modified — translators don't need to think about `@` padding.
+
+To check padding status manually (without modifying anything):
 
 ```bash
-# Check what needs padding:
 python3 tools/calc_padding.py
-
-# Apply padding automatically:
-python3 tools/calc_padding.py --apply
 ```
 
-This reads `dynamic_names.json` and `swedish.txt`, calculates the required
-buffer size for each object (= the English OBNA length), and reports:
+This reports:
 - Lines that need more `@` padding
 - Lines with excess `@` padding
 - **Overflows** where the Swedish name is longer than the buffer (must be
-  shortened manually)
-
-The `--apply` flag adds `@` padding to `swedish.txt` in place. It will not
-truncate overflows — those must be fixed by hand.
+  shortened manually in the source `swedish.txt`)
 
 ### Regenerating DYNAMIC_NAMES.md
 

@@ -158,6 +158,11 @@ sed -i \
 
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
 
+# --- Build dynamic name mapping ---
+echo ""
+echo "=== Building dynamic name mapping ==="
+DYNNAMES_OUT="$REPO_ROOT/translation/monkey1/dynamic_names.json"
+python3 "$REPO_ROOT/tools/find_dynamic_names.py" "$GAME_DIR" "$DYNNAMES_OUT"
 
 # --- Decode room backgrounds (requires Pillow: pip install Pillow) ---
 echo ""

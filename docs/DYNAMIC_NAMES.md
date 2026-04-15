@@ -4,7 +4,8 @@ Object and actor names that change at runtime via `setObjectName` (0x54/0xD4)
 and `ActorOps Name` (0x13/0x93). The SE writes object names **in-place** into
 the OBNA buffer with no bounds check — padding is required to prevent overflow.
 
-Generated from `translation/monkey1/dynamic_names.json` by `tools/find_dynamic_names.py`.
+Source: `translation/monkey1/dynamic_names.json` (gitignored, built by
+`scripts/extract_assets.sh`). Padding applied automatically by `scripts/build.sh`.
 
 ---
 
