@@ -223,10 +223,18 @@ Our `scripts/extract_assets.sh` strips trailing `@` padding (line 148:
 3. When injected via scummtr, every room containing these objects has different
    string byte counts, which shifts room offsets in the .001 file.
 
-Although ScummVM and the SE use an overlay (`_newNames[]`) instead of writing
-names in-place, the `@` padding still affects the total byte layout of each
-room's LFLF block. Restoring it would help keep the .001 file size closer to
-the original.
+**The SE engine writes names directly into the OBNA buffer — in-place, with no
+bounds checking.** This was confirmed by decompiling opcode 0x54 in MISE.exe
+(FUN_004ab930): it finds the OBNA chunk via tag search ("OBNA" = 0x414e424f),
+then copies the new name byte-by-byte into the buffer and null-terminates it.
+Unlike ScummVM (which uses a `_newNames[]` overlay with fresh allocations), the
+SE reuses the original OBNA memory. If the replacement name is longer than the
+buffer, it overflows into adjacent resource data — causing silent corruption.
+
+This means the `@` padding is **required for correctness** in the SE, not just
+for file layout. Every `@`-padded object name MUST retain enough padding for its
+longest runtime replacement, or the SE will corrupt memory when that replacement
+is written.
 
 ### Translation rules for `@`-padded strings
 
