@@ -185,121 +185,22 @@ Before committing any pass:
 
 ---
 
-## Dynamic Name Padding (`@` characters)
+## Dynamic Name Padding
 
-### What `@` padding is
+Some object names change at runtime (e.g. "mug" → "mug of grog"). The SE
+engine writes replacement names in-place into the object's name buffer with
+no bounds check, so the buffer must be large enough for the longest replacement.
 
-The SCUMM engine treats `@` (0x40) as an invisible character — zero width, zero
-pixels, never rendered. The original LucasArts developers used `@` to pad object
-name strings to a fixed buffer size. This reserved space for runtime name changes
-via the `setObjectName` opcode (0x54/0xD4). For example:
+**Translators don't need to do anything about this.** The build pipeline handles
+it automatically:
 
-```
-OBNA: mug@@@@@@@@@@@@@@     (17 bytes)
-  →  "mug o' grog"          (11 bytes, set at runtime when you fill the mug)
-  →  "melting mug"           (11 bytes, as the grog eats through)
-  →  "mug near death"        (14 bytes, almost dissolved)
-  →  "pewter wad"            (10 bytes, fully dissolved)
-```
+1. `scripts/extract.sh` generates `game/monkey1/gen/dynamic_names.json` — a
+   mapping of which lines replace which other lines at runtime.
+2. `scripts/build.sh` runs `tools/calc_padding.py` to pad object names in
+   `dist/swedish.txt` with invisible `@` characters so they're long enough.
 
-The buffer (17 bytes) is sized for the longest variant the game will ever write.
-Eight objects are **exact fits** — the padding matches the longest replacement to
-the byte.
-
-Actor names are also set dynamically via `ActorOps Name` (opcodes 0x13/0x93).
-The vulture actors in Room 002 are initialized with `@@@@@@@` padding before
-being renamed to `vulture`. The sword-fighting pirate names rotate between
-`Dirty Rotten Pirate`, `Stinking Pirate`, `Bloodthirsty Pirate`, and
-`Ugly Pirate`.
-
-### Why this matters for the translation
-
-Our `scripts/extract_assets.sh` strips trailing `@` padding (line 148:
-`sed -e 's/@\+$//'`) when generating the clean English text that
-`scripts/init_translation.sh` uses to create `swedish.txt`. This means:
-
-1. The Swedish translation has **no `@` padding** on any of the 26 padded objects.
-2. The translated `(54)` setObjectName replacement strings also have no padding.
-3. When injected via scummtr, every room containing these objects has different
-   string byte counts, which shifts room offsets in the .001 file.
-
-**The SE engine writes names directly into the OBNA buffer — in-place, with no
-bounds checking.** This was confirmed by decompiling opcode 0x54 in MISE.exe
-(FUN_004ab930): it finds the OBNA chunk via tag search ("OBNA" = 0x414e424f),
-then copies the new name byte-by-byte into the buffer and null-terminates it.
-Unlike ScummVM (which uses a `_newNames[]` overlay with fresh allocations), the
-SE reuses the original OBNA memory. If the replacement name is longer than the
-buffer, it overflows into adjacent resource data — causing silent corruption.
-
-This means the `@` padding is **required for correctness** in the SE, not just
-for file layout. Every `@`-padded object name MUST retain enough padding for its
-longest runtime replacement, or the SE will corrupt memory when that replacement
-is written.
-
-### Translation rules for `@`-padded strings
-
-When translating an `@`-padded OBNA object name or a `(54)` setObjectName line:
-
-1. **Look up the object in `docs/DYNAMIC_NAMES.md`** to see all its runtime
-   replacement names and the buffer size.
-2. **Translate all replacement names for the same object together** — they must
-   all fit within the buffer.
-3. **Don't worry about padding during translation.** The `calc_padding.py` tool
-   will add the correct `@` padding automatically after translation.
-4. **Never exceed the buffer size.** If the Swedish name is longer than the
-   buffer, shorten it. The buffer sizes are hard constraints from the original
-   game data. Run `calc_padding.py` to check for overflows.
-
-### Padding workflow
-
-The padding process is split into two tools:
-
-**Step 1 — Build the mapping (once, or when game files change):**
-
-```bash
-python3 tools/find_dynamic_names.py game/monkey1/
-```
-
-This extracts all script blocks with `scummrp`, decompiles them with `descumm`,
-and writes `translation/monkey1/dynamic_names.json` — a machine-readable mapping
-of every `setObjectName` and `ActorOps Name` call with target IDs and names.
-
-The JSON is gitignored and generated automatically by `scripts/extract_assets.sh`
-(via `scripts/extract.sh`). Re-run extraction if game files change.
-
-**Step 2 — Padding is applied automatically during build:**
-
-`scripts/build.sh` copies `swedish.txt` to `dist/` and then runs
-`calc_padding.py --apply` on the dist copy. The source `swedish.txt` is never
-modified — translators don't need to think about `@` padding.
-
-To check padding status manually (without modifying anything):
-
-```bash
-python3 tools/calc_padding.py
-```
-
-This reports:
-- Lines that need more `@` padding
-- Lines with excess `@` padding
-- **Overflows** where the Swedish name is longer than the buffer (must be
-  shortened manually in the source `swedish.txt`)
-
-### Regenerating DYNAMIC_NAMES.md
-
-The human-readable `docs/DYNAMIC_NAMES.md` is generated from the JSON. To
-regenerate it after re-running `find_dynamic_names.py`, the generation script
-is inline in the commit history (search for "Generate concise DYNAMIC_NAMES.md").
-
-### Building descumm
-
-```bash
-# descumm is committed at bin/linux/descumm
-# To rebuild from source:
-cd ~/tools/scummvm-tools
-./configure && make descumm
-cp descumm /path/to/repo/bin/linux/
-```
+The source `swedish.txt` is never modified. See `docs/DYNAMIC_NAMES.md` for
+the full mapping and `tools/calc_padding.py --help` for manual checks.
 
 ---
 
