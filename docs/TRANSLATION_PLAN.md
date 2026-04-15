@@ -244,88 +244,64 @@ When translating an `@`-padded OBNA object name or a `(54)` setObjectName line:
    replacement names and the buffer size.
 2. **Translate all replacement names for the same object together** — they must
    all fit within the buffer.
-3. **Pad the OBNA name and any replacement names with trailing `@`** to maintain
-   the original buffer size. Example:
-   ```
-   EN: mug@@@@@@@@@@@@@@           (17 bytes)
-   SV: stop@@@@@@@@@@@@@           (17 bytes)
-
-   EN: (54)mug o' grog             (11 bytes → fits in 17)
-   SV: (54)stop med gull@@@@@      (17 bytes — padded to buffer)
-   ```
+3. **Don't worry about padding during translation.** The `calc_padding.py` tool
+   will add the correct `@` padding automatically after translation.
 4. **Never exceed the buffer size.** If the Swedish name is longer than the
    buffer, shorten it. The buffer sizes are hard constraints from the original
-   game data.
+   game data. Run `calc_padding.py` to check for overflows.
 
-### Finding dynamic name mappings with `descumm`
+### Padding workflow
 
-The `descumm` tool (from scummvm-tools) decompiles SCUMM bytecode and shows
-the exact target object/actor ID for each `setObjectName` or `ActorOps Name`
-call. Use it to verify or extend the mappings in `docs/DYNAMIC_NAMES.md`.
+The padding process is split into two tools:
 
-**Setup:**
+**Step 1 — Build the mapping (once, or when game files change):**
 
 ```bash
-# descumm is built at:
-bin/linux/descumm
+python3 tools/find_dynamic_names.py game/monkey1/
+```
 
-# Or build from source:
+This extracts all script blocks with `scummrp`, decompiles them with `descumm`,
+and writes `translation/monkey1/dynamic_names.json` — a machine-readable mapping
+of every `setObjectName` and `ActorOps Name` call with target IDs and names.
+
+The JSON is committed to the repo. Re-run only if the game files change (they
+don't — we only modify text, not scripts).
+
+**Step 2 — Check and apply padding (after each translation update):**
+
+```bash
+# Check what needs padding:
+python3 tools/calc_padding.py
+
+# Apply padding automatically:
+python3 tools/calc_padding.py --apply
+```
+
+This reads `dynamic_names.json` and `swedish.txt`, calculates the required
+buffer size for each object (= the English OBNA length), and reports:
+- Lines that need more `@` padding
+- Lines with excess `@` padding
+- **Overflows** where the Swedish name is longer than the buffer (must be
+  shortened manually)
+
+The `--apply` flag adds `@` padding to `swedish.txt` in place. It will not
+truncate overflows — those must be fixed by hand.
+
+### Regenerating DYNAMIC_NAMES.md
+
+The human-readable `docs/DYNAMIC_NAMES.md` is generated from the JSON. To
+regenerate it after re-running `find_dynamic_names.py`, the generation script
+is inline in the commit history (search for "Generate concise DYNAMIC_NAMES.md").
+
+### Building descumm
+
+```bash
+# descumm is committed at bin/linux/descumm
+# To rebuild from source:
 cd ~/tools/scummvm-tools
 ./configure && make descumm
+cp descumm /path/to/repo/bin/linux/
 ```
-
-**Extract script blocks with scummrp:**
-
-```bash
-GAME_DIR=/path/to/game/files   # directory containing MONKEY1.000 + MONKEY1.001
-
-# Global scripts
-scummrp -g monkeycdalt -p "$GAME_DIR" -t SCRP -o -d /tmp/scrp_dump
-
-# Local (room) scripts
-scummrp -g monkeycdalt -p "$GAME_DIR" -t LSCR -o -d /tmp/lscr_dump
-
-# Room entry/exit scripts
-scummrp -g monkeycdalt -p "$GAME_DIR" -t ENCD -o -d /tmp/encd_dump
-
-# Object code blocks (contain VERB scripts)
-scummrp -g monkeycdalt -p "$GAME_DIR" -t OBCD -o -d /tmp/obcd_dump
-```
-
-**Decompile and search for name changes:**
-
-```bash
-# Global, local, entry scripts — descumm reads them directly:
-find /tmp/scrp_dump /tmp/lscr_dump /tmp/encd_dump -type f | \
-  xargs -I{} sh -c 'descumm -5 "$1" 2>/dev/null' _ {} | \
-  grep -i 'setObjectName\|ActorOps.*Name'
-
-# VERB scripts are inside OBCD blocks. Extract the VERB chunk first:
-# The VERB tag starts after CDHD+OBNA sub-chunks inside each OBCD file.
-# Use: python3 -c "find VERB tag, write to tmp file" then descumm -5 tmp
-```
-
-**Reading descumm output:**
-
-```
-[0054] (D4)     setObjectName(VAR_ME,"piece of rope");
-                               ^          ^
-                               |          replacement name
-                               target: VAR_ME = the object that owns this VERB script
-
-[008C] (54)     setObjectName(467,"sleeping piranha poodles");
-                               ^
-                               target: object #467 (explicit ID)
-
-[00B7] (93)   ActorOps(Local[4],[Name("Dirty Rotten Pirate")]);
-                         ^              ^
-                         actor var      new display name
-```
-
-- `(54)` = object ID is a constant (shown as a number)
-- `(D4)` = object ID is a variable (`VAR_ME`, `Local[0]`, etc.)
-- `(13)` = actor ID is a constant
-- `(93)` = actor ID is a variable
 
 ---
 
