@@ -185,6 +185,142 @@ Before committing any pass:
 
 ---
 
+## Dynamic Name Padding (`@` characters)
+
+### What `@` padding is
+
+The SCUMM engine treats `@` (0x40) as an invisible character — zero width, zero
+pixels, never rendered. The original LucasArts developers used `@` to pad object
+name strings to a fixed buffer size. This reserved space for runtime name changes
+via the `setObjectName` opcode (0x54/0xD4). For example:
+
+```
+OBNA: mug@@@@@@@@@@@@@@     (17 bytes)
+  →  "mug o' grog"          (11 bytes, set at runtime when you fill the mug)
+  →  "melting mug"           (11 bytes, as the grog eats through)
+  →  "mug near death"        (14 bytes, almost dissolved)
+  →  "pewter wad"            (10 bytes, fully dissolved)
+```
+
+The buffer (17 bytes) is sized for the longest variant the game will ever write.
+Eight objects are **exact fits** — the padding matches the longest replacement to
+the byte.
+
+Actor names are also set dynamically via `ActorOps Name` (opcodes 0x13/0x93).
+The vulture actors in Room 002 are initialized with `@@@@@@@` padding before
+being renamed to `vulture`. The sword-fighting pirate names rotate between
+`Dirty Rotten Pirate`, `Stinking Pirate`, `Bloodthirsty Pirate`, and
+`Ugly Pirate`.
+
+### Why this matters for the translation
+
+Our `scripts/extract_assets.sh` strips trailing `@` padding (line 148:
+`sed -e 's/@\+$//'`) when generating the clean English text that
+`scripts/init_translation.sh` uses to create `swedish.txt`. This means:
+
+1. The Swedish translation has **no `@` padding** on any of the 26 padded objects.
+2. The translated `(54)` setObjectName replacement strings also have no padding.
+3. When injected via scummtr, every room containing these objects has different
+   string byte counts, which shifts room offsets in the .001 file.
+
+Although ScummVM and the SE use an overlay (`_newNames[]`) instead of writing
+names in-place, the `@` padding still affects the total byte layout of each
+room's LFLF block. Restoring it would help keep the .001 file size closer to
+the original.
+
+### Translation rules for `@`-padded strings
+
+When translating an `@`-padded OBNA object name or a `(54)` setObjectName line:
+
+1. **Look up the object in `docs/DYNAMIC_NAMES.md`** to see all its runtime
+   replacement names and the buffer size.
+2. **Translate all replacement names for the same object together** — they must
+   all fit within the buffer.
+3. **Pad the OBNA name and any replacement names with trailing `@`** to maintain
+   the original buffer size. Example:
+   ```
+   EN: mug@@@@@@@@@@@@@@           (17 bytes)
+   SV: stop@@@@@@@@@@@@@           (17 bytes)
+
+   EN: (54)mug o' grog             (11 bytes → fits in 17)
+   SV: (54)stop med gull@@@@@      (17 bytes — padded to buffer)
+   ```
+4. **Never exceed the buffer size.** If the Swedish name is longer than the
+   buffer, shorten it. The buffer sizes are hard constraints from the original
+   game data.
+
+### Finding dynamic name mappings with `descumm`
+
+The `descumm` tool (from scummvm-tools) decompiles SCUMM bytecode and shows
+the exact target object/actor ID for each `setObjectName` or `ActorOps Name`
+call. Use it to verify or extend the mappings in `docs/DYNAMIC_NAMES.md`.
+
+**Setup:**
+
+```bash
+# descumm is built at:
+bin/linux/descumm
+
+# Or build from source:
+cd ~/tools/scummvm-tools
+./configure && make descumm
+```
+
+**Extract script blocks with scummrp:**
+
+```bash
+GAME_DIR=/path/to/game/files   # directory containing MONKEY1.000 + MONKEY1.001
+
+# Global scripts
+scummrp -g monkeycdalt -p "$GAME_DIR" -t SCRP -o -d /tmp/scrp_dump
+
+# Local (room) scripts
+scummrp -g monkeycdalt -p "$GAME_DIR" -t LSCR -o -d /tmp/lscr_dump
+
+# Room entry/exit scripts
+scummrp -g monkeycdalt -p "$GAME_DIR" -t ENCD -o -d /tmp/encd_dump
+
+# Object code blocks (contain VERB scripts)
+scummrp -g monkeycdalt -p "$GAME_DIR" -t OBCD -o -d /tmp/obcd_dump
+```
+
+**Decompile and search for name changes:**
+
+```bash
+# Global, local, entry scripts — descumm reads them directly:
+find /tmp/scrp_dump /tmp/lscr_dump /tmp/encd_dump -type f | \
+  xargs -I{} sh -c 'descumm -5 "$1" 2>/dev/null' _ {} | \
+  grep -i 'setObjectName\|ActorOps.*Name'
+
+# VERB scripts are inside OBCD blocks. Extract the VERB chunk first:
+# The VERB tag starts after CDHD+OBNA sub-chunks inside each OBCD file.
+# Use: python3 -c "find VERB tag, write to tmp file" then descumm -5 tmp
+```
+
+**Reading descumm output:**
+
+```
+[0054] (D4)     setObjectName(VAR_ME,"piece of rope");
+                               ^          ^
+                               |          replacement name
+                               target: VAR_ME = the object that owns this VERB script
+
+[008C] (54)     setObjectName(467,"sleeping piranha poodles");
+                               ^
+                               target: object #467 (explicit ID)
+
+[00B7] (93)   ActorOps(Local[4],[Name("Dirty Rotten Pirate")]);
+                         ^              ^
+                         actor var      new display name
+```
+
+- `(54)` = object ID is a constant (shown as a number)
+- `(D4)` = object ID is a variable (`VAR_ME`, `Local[0]`, etc.)
+- `(13)` = actor ID is a constant
+- `(93)` = actor ID is a variable
+
+---
+
 ## Notes on Specific Challenges
 
 ### "Monkey Island" — the island name

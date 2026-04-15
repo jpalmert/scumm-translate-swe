@@ -139,13 +139,16 @@ mkdir -p "$STR_OUT"
 
 # Post-process extracted strings into clean UTF-8 for translators:
 #   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ...
-#   2. Strip trailing @ padding (scummtr pads fixed-width text slots with @).
-#   3. Convert SCUMM character escape codes to their UTF-8 characters:
+#   2. Convert SCUMM character escape codes to their UTF-8 characters:
 #        \130 = é,  \136 = ê,  \015 = ®,  \250 = non-breaking space
+#
+# Note: trailing @ padding is preserved. The @ character is invisible in SCUMM
+# rendering and serves as buffer space for runtime name changes via setObjectName.
+# See docs/DYNAMIC_NAMES.md for the full mapping and docs/TRANSLATION_PLAN.md
+# for translation rules around padded strings.
 sed -i \
     -e '/^;;/d' \
     -e 's/\^/.../g' \
-    -e 's/@\+$//' \
     -e 's/\\130/é/g' \
     -e 's/\\136/ê/g' \
     -e 's/\\015/®/g' \
