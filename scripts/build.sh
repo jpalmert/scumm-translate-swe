@@ -122,16 +122,6 @@ fi
 cp "$TRANSLATION_SRC" "$DIST_DIR/swedish.txt"
 echo "  $TRANSLATION_SRC -> dist/swedish.txt"
 
-# Apply @ padding for dynamic object names (setObjectName buffer safety).
-# This modifies only the dist/ copy — the source swedish.txt is untouched.
-DYNNAMES="$REPO_ROOT/game/monkey1/gen/dynamic_names.json"
-if [ -f "$DYNNAMES" ]; then
-    echo "  Applying @ padding to dist/swedish.txt..."
-    python3 "$REPO_ROOT/tools/calc_padding.py" --apply --translation "$DIST_DIR/swedish.txt" --json "$DYNNAMES"
-else
-    echo "  WARNING: dynamic_names.json not found — skipping @ padding."
-    echo "  Run: bash scripts/extract.sh to generate it."
-fi
 
 # ---------------------------------------------------------------------------
 echo ""
