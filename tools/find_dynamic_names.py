@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 """
-Find all dynamic object/actor name replacements in MI1 SCUMM scripts.
+Find all dynamic object name replacements in MI1 SCUMM scripts.
 
 Extracts script blocks with scummrp, decompiles them with descumm, and
-parses the output to build a complete mapping of:
-  - setObjectName calls (opcodes 0x54/0xD4): object_id -> [replacement names]
-  - ActorOps Name calls (opcodes 0x13/0x93): actor_id -> [replacement names]
-  - OBNA names for all objects (extracted from OBCD blocks)
+parses the output to build a mapping of which scummtr lines replace which
+OBNA lines at runtime.
 
-Output: translation/<game>/dynamic_names.json
+Output: game/<game>/gen/dynamic_names.json
 
-This only needs to be re-run if the game files change (they don't — we only
-modify text, not scripts). The output is committed to the repo.
+The JSON maps OBNA line numbers to lists of replacement line numbers:
+
+    {
+      "95": [96, 97, 98, 99, 100],
+      "538": [544, 545],
+      ...
+    }
+
+Line numbers are 1-based (matching text editor line numbers in swedish.txt).
+At build time, calc_padding.py reads the Swedish text at these line numbers
+and pads the OBNA to fit the longest replacement.
 
 Usage:
     python3 tools/find_dynamic_names.py <game_dir> [output_json]
 
-    game_dir:    directory containing MONKEY1.000 + MONKEY1.001
-    output_json: default: translation/monkey1/dynamic_names.json
-
-Requires: scummrp and descumm in bin/linux/ (or bin/darwin/ on macOS)
+Requires: scummrp and descumm in bin/<platform>/
 """
 
 import json
@@ -34,7 +38,6 @@ import tempfile
 
 
 def find_bin(name):
-    """Find a tool binary in bin/<platform>/."""
     plat = "darwin" if platform.system() == "Darwin" else "linux"
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     path = os.path.join(repo, "bin", plat, name)
@@ -44,7 +47,6 @@ def find_bin(name):
 
 
 def extract_scripts(scummrp, game_dir, tmp_dir, block_type):
-    """Extract script blocks with scummrp. Returns the dump directory."""
     dump_dir = os.path.join(tmp_dir, block_type)
     os.makedirs(dump_dir, exist_ok=True)
     subprocess.run(
@@ -54,24 +56,7 @@ def extract_scripts(scummrp, game_dir, tmp_dir, block_type):
     return dump_dir
 
 
-def find_script_files(dump_dir, prefix):
-    """Find all extracted script files matching prefix."""
-    results = []
-    for root, dirs, files in os.walk(dump_dir):
-        for f in files:
-            if f.startswith(prefix):
-                path = os.path.join(root, f)
-                # Extract room number from path
-                room = -1
-                for part in path.split(os.sep):
-                    if part.startswith("LFLF_"):
-                        room = int(part.split("_")[1])
-                results.append((path, room, f))
-    return sorted(results)
-
-
 def decompile(descumm, script_path):
-    """Decompile a script file with descumm. Returns output text."""
     try:
         result = subprocess.run(
             [descumm, "-5", script_path],
@@ -83,108 +68,50 @@ def decompile(descumm, script_path):
 
 
 def extract_verb_from_obcd(obcd_path):
-    """Extract the VERB chunk from an OBCD file. Returns (verb_bytes, obj_id) or (None, None)."""
     with open(obcd_path, "rb") as f:
         data = f.read()
-
-    # Find CDHD to get object ID
     obj_id = None
     pos = data.find(b"CDHD")
     if pos >= 0:
         obj_id = struct.unpack("<H", data[pos + 8 : pos + 10])[0]
-
-    # Find VERB chunk
     pos = data.find(b"VERB")
     if pos < 0:
         return None, obj_id
-
     size = struct.unpack(">I", data[pos + 4 : pos + 8])[0]
     return data[pos : pos + size], obj_id
 
 
-def extract_obna_from_obcd(obcd_path):
-    """Extract the OBNA name from an OBCD file. Returns (name_str, obj_id)."""
-    with open(obcd_path, "rb") as f:
-        data = f.read()
-
-    obj_id = None
-    pos = data.find(b"CDHD")
-    if pos >= 0:
-        obj_id = struct.unpack("<H", data[pos + 8 : pos + 10])[0]
-
-    pos = data.find(b"OBNA")
-    if pos < 0:
-        return None, obj_id
-
-    # Read null-terminated string after 8-byte tag+size header
-    start = pos + 8
-    end = data.index(b"\x00", start) if b"\x00" in data[start:] else len(data)
-    name_bytes = data[start:end]
-    name = "".join(chr(b) if 0x20 <= b < 0x7F else f"\\{b:03d}" for b in name_bytes)
-    return name, obj_id
-
-
-# Regex patterns for descumm output
 RE_SET_OBJECT_NAME = re.compile(
-    r'setObjectName\((\d+|VAR_ME|Local\[\d+\]|VAR_\w+)\s*,\s*"([^"]*)"'
-)
-RE_ACTOR_OPS_NAME = re.compile(
-    r'ActorOps\((\d+|Local\[\d+\]|VAR_\w+)\s*,\s*\[.*?Name\("([^"]*)"\)'
+    r'setObjectName\((\d+|VAR_ME|Local\[\d+\]|VAR_\w+)\s*,'
 )
 
 
-def parse_decompiled(text, room, source_label, verb_obj_id=None):
-    """Parse descumm output for name-setting operations. Returns list of dicts.
-
-    verb_obj_id: if set, resolves VAR_ME to this object ID (for VERB scripts).
-    """
-    results = []
-
+def find_setobjectname_targets(text, verb_obj_id=None):
+    """Find setObjectName calls in descumm output. Returns list of (target_obj_id_or_None, line_index).
+    line_index is the 0-based position of the string within the decompiled output's string list."""
+    targets = []
+    # descumm outputs strings in order — we need to count which string each
+    # setObjectName corresponds to in the scummtr extraction order.
+    # The string index in descumm corresponds to the scummtr line index for that block.
+    #
+    # Count all inline strings (anything in quotes) to track position.
+    string_index = -1
     for line in text.split("\n"):
+        # Count quoted strings to track position
+        if '"' in line:
+            string_index += 1
+
         m = RE_SET_OBJECT_NAME.search(line)
         if m:
-            target_raw, name = m.group(1), m.group(2)
-            try:
-                target_id = int(target_raw)
-                target_type = "const"
-            except ValueError:
-                # Resolve VAR_ME in VERB scripts to the parent object ID
-                if target_raw == "VAR_ME" and verb_obj_id is not None:
-                    target_id = verb_obj_id
-                    target_type = "const"
-                else:
-                    target_id = target_raw
-                    target_type = "var"
-
-            results.append({
-                "kind": "object",
-                "target": target_id,
-                "target_type": target_type,
-                "name": name,
-                "room": room,
-                "source": source_label,
-            })
-
-        m = RE_ACTOR_OPS_NAME.search(line)
-        if m:
-            target_raw, name = m.group(1), m.group(2)
-            try:
-                target_id = int(target_raw)
-                target_type = "const"
-            except ValueError:
-                target_id = target_raw
-                target_type = "var"
-
-            results.append({
-                "kind": "actor",
-                "target": target_id,
-                "target_type": target_type,
-                "name": name,
-                "room": room,
-                "source": source_label,
-            })
-
-    return results
+            target_raw = m.group(1)
+            if target_raw == "VAR_ME" and verb_obj_id is not None:
+                targets.append((verb_obj_id, string_index))
+            else:
+                try:
+                    targets.append((int(target_raw), string_index))
+                except ValueError:
+                    pass  # variable target — can't resolve
+    return targets
 
 
 def main():
@@ -195,51 +122,98 @@ def main():
     game_dir = sys.argv[1]
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     output_path = sys.argv[2] if len(sys.argv) > 2 else os.path.join(
-        repo, "translation", "monkey1", "dynamic_names.json"
+        repo, "game", "monkey1", "gen", "dynamic_names.json"
     )
 
     scummrp = find_bin("scummrp")
     descumm_bin = find_bin("descumm")
 
-    print("=== Extracting script blocks ===")
+    # Also extract text with scummtr to get the exact headers and line ordering
+    scummtr = find_bin("scummtr")
+
+    print("=== Extracting scummtr text (for header mapping) ===")
     tmp_dir = tempfile.mkdtemp(prefix="mi1-dynnames-")
 
     try:
-        all_results = []
+        # Extract text with scummtr -hI (headers + opcodes) to get line order
+        scummtr_out = os.path.join(tmp_dir, "text_hI.txt")
+        subprocess.run(
+            [scummtr, "-g", "monkeycdalt", "-p", game_dir, "-hI", "-o", "-f", scummtr_out],
+            capture_output=True, check=True,
+        )
 
-        # Extract and decompile SCRP, LSCR, ENCD, EXCD
+        # Parse scummtr output into lines with headers, tracking:
+        # - 1-based line number (for the JSON output)
+        # - header occurrence index (to match descumm string positions)
+        with open(scummtr_out, "r", encoding="latin-1") as f:
+            all_scummtr_lines = [l.rstrip("\r\n") for l in f]
+
+        from collections import defaultdict
+        header_occurrences = defaultdict(list)  # header -> [(data_line_number_1based, text)]
+
+        # Count only data lines (starting with [) — this matches swedish.txt
+        # which has no comment lines. Line 1 = first data line.
+        data_lineno = 0
+        for line in all_scummtr_lines:
+            if not line.startswith("["):
+                continue
+            data_lineno += 1
+            idx = line.index("]")
+            header = line[:idx+1]
+            text = line[idx+1:]
+            header_occurrences[header].append((data_lineno, text))
+
+        def header_occ_to_lineno(header, occ):
+            """Convert header + occurrence index to 1-based data line number."""
+            entries = header_occurrences.get(header, [])
+            if occ < len(entries):
+                return entries[occ][0]
+            return None
+
+        print("=== Extracting and decompiling scripts ===")
+
+        # Collect all setObjectName calls with their scummtr line references
+        # Result: list of (target_obj_id, scummtr_header, occurrence_index)
+        all_replacements = []
+
         for block_type in ["SCRP", "LSCR", "ENCD", "EXCD"]:
             print(f"  {block_type}...", end=" ", flush=True)
             dump = extract_scripts(scummrp, game_dir, tmp_dir, block_type)
-            files = find_script_files(dump, block_type if block_type != "ENCD" else "ENCD")
-            if block_type in ("ENCD", "EXCD"):
-                files = find_script_files(dump, block_type.split("_")[0])
-                # ENCD/EXCD files are just named "ENCD" or "EXCD"
-                files = []
-                for root, dirs, fnames in os.walk(dump):
-                    for fn in fnames:
-                        if fn in (block_type, block_type.split("_")[0]):
-                            fp = os.path.join(root, fn)
-                            room = -1
-                            for part in fp.split(os.sep):
-                                if part.startswith("LFLF_"):
-                                    room = int(part.split("_")[1])
-                            files.append((fp, room, fn))
-                files.sort()
-
             count = 0
-            for path, room, fname in files:
-                text = decompile(descumm_bin, path)
-                results = parse_decompiled(text, room, f"{block_type}:{fname}")
-                all_results.extend(results)
-                count += len(results)
-            print(f"{len(files)} files, {count} name changes")
 
-        # Extract OBCD blocks for VERB scripts and OBNA names
-        print(f"  OBCD...", end=" ", flush=True)
+            for root, dirs, files in os.walk(dump):
+                for fname in sorted(files):
+                    fpath = os.path.join(root, fname)
+                    room = -1
+                    for part in fpath.split(os.sep):
+                        if part.startswith("LFLF_"):
+                            room = int(part.split("_")[1])
+
+                    text = decompile(descumm_bin, fpath)
+                    targets = find_setobjectname_targets(text)
+
+                    for target_obj_id, string_idx in targets:
+                        if string_idx < 0:
+                            continue
+                        # Build the scummtr header for this block
+                        if block_type == "LSCR":
+                            # LSCR filename is LSCR_NNNN
+                            script_num = int(fname.split("_")[1])
+                            scummtr_header = f"[{room:03d}:LSCR#{script_num:04d}]"
+                        elif block_type in ("ENCD", "EXCD"):
+                            scummtr_header = f"[{room:03d}:{block_type}#{room:04d}]"
+                        else:
+                            script_num = int(fname.split("_")[1])
+                            scummtr_header = f"[{room:03d}:SCRP#{script_num:04d}]"
+
+                        all_replacements.append((target_obj_id, scummtr_header, string_idx))
+                        count += 1
+
+            print(f"{count} name changes")
+
+        # VERB scripts (inside OBCD blocks)
+        print(f"  OBCD/VERB...", end=" ", flush=True)
         obcd_dump = extract_scripts(scummrp, game_dir, tmp_dir, "OBCD")
-
-        obna_names = {}  # obj_id -> name string
         verb_count = 0
 
         for root, dirs, files in os.walk(obcd_dump):
@@ -252,14 +226,8 @@ def main():
                     if part.startswith("LFLF_"):
                         room = int(part.split("_")[1])
 
-                # Extract OBNA name
-                name, obj_id = extract_obna_from_obcd(fpath)
-                if obj_id is not None and name is not None:
-                    obna_names[obj_id] = name
-
-                # Extract and decompile VERB
                 verb_data, obj_id = extract_verb_from_obcd(fpath)
-                if verb_data is None:
+                if verb_data is None or obj_id is None:
                     continue
 
                 verb_tmp = os.path.join(tmp_dir, "verb_tmp.bin")
@@ -267,68 +235,58 @@ def main():
                     f.write(verb_data)
 
                 text = decompile(descumm_bin, verb_tmp)
-                results = parse_decompiled(text, room, f"VERB:{fname}", verb_obj_id=obj_id)
-                all_results.extend(results)
-                verb_count += len(results)
+                targets = find_setobjectname_targets(text, verb_obj_id=obj_id)
 
-        obcd_files = sum(1 for _, _, f in os.walk(obcd_dump) for fn in f if fn.startswith("OBCD_"))
-        print(f"{obcd_files} files, {verb_count} name changes, {len(obna_names)} OBNA names")
+                for target_obj_id, string_idx in targets:
+                    if string_idx < 0:
+                        continue
+                    scummtr_header = f"[{room:03d}:VERB#{obj_id:04d}]"
+                    all_replacements.append((target_obj_id, scummtr_header, string_idx))
+                    verb_count += 1
 
-        # Build the output structure
+        print(f"{verb_count} name changes")
+
+        # Build the mapping: OBNA line number -> [replacement line numbers]
         print(f"\n=== Building mapping ===")
+        mapping = {}  # obna_lineno -> [repl_linenos]
 
-        # Group replacement names by target object/actor ID.
-        # Only const targets are usable — variable targets can't be resolved statically.
-        # The JSON contains ONLY replacement names, not OBNA/English data.
-        # Padding is calculated at build time from Swedish string lengths.
-        object_replacements = {}  # obj_id -> [name_str, ...]
-        actor_replacements = {}   # actor_id -> [name_str, ...]
-        variable_targets = []
+        for target_obj_id, repl_header, repl_occ in all_replacements:
+            # Find the OBNA line number for this object
+            obna_lineno = None
+            for header in header_occurrences:
+                if f"OBNA#{target_obj_id:04d}]" in header:
+                    obna_lineno = header_occ_to_lineno(header, 0)
+                    break
 
-        for r in all_results:
-            if r["target_type"] == "var":
-                variable_targets.append({
-                    "kind": r["kind"],
-                    "target": r["target"],
-                    "name": r["name"],
-                    "room": r["room"],
-                    "source": r["source"],
-                })
+            if obna_lineno is None:
                 continue
 
-            target_id = r["target"]
-            if r["kind"] == "object":
-                if target_id not in object_replacements:
-                    object_replacements[target_id] = []
-                object_replacements[target_id].append(r["name"])
-            elif r["kind"] == "actor":
-                if target_id not in actor_replacements:
-                    actor_replacements[target_id] = []
-                actor_replacements[target_id].append(r["name"])
+            repl_lineno = header_occ_to_lineno(repl_header, repl_occ)
+            if repl_lineno is None:
+                continue
 
-        # Deduplicate replacement lists (same name from multiple scripts)
-        for obj_id in object_replacements:
-            object_replacements[obj_id] = sorted(set(object_replacements[obj_id]))
-        for actor_id in actor_replacements:
-            actor_replacements[actor_id] = sorted(set(actor_replacements[actor_id]))
+            key = str(obna_lineno)
+            if key not in mapping:
+                mapping[key] = []
+            if repl_lineno not in mapping[key]:
+                mapping[key].append(repl_lineno)
+
+        # Sort replacement lists
+        for key in mapping:
+            mapping[key].sort()
 
         output = {
-            "_comment": "Dynamic name replacements for MI1. "
-                        "Generated by tools/find_dynamic_names.py — do not edit. "
-                        "Object/actor keys are string-encoded integers.",
-            "objects": {str(k): v for k, v in sorted(object_replacements.items())},
-            "actors": {str(k): v for k, v in sorted(actor_replacements.items())},
-            "variable_targets": variable_targets,
+            "_comment": "Maps OBNA line numbers to replacement line numbers (1-based). "
+                        "Generated by tools/find_dynamic_names.py — do not edit.",
+            "replacements": dict(sorted(mapping.items(), key=lambda x: int(x[0]))),
         }
 
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
 
-        # Print summary
-        print(f"  Objects with runtime replacements: {len(object_replacements)}")
-        print(f"  Actor name changes: {sum(len(v) for v in actor_replacements.values())}")
-        print(f"  Variable-target replacements (unresolvable): {len(variable_targets)}")
+        print(f"  OBNA lines with replacements: {len(mapping)}")
+        print(f"  Total replacement references: {sum(len(v) for v in mapping.values())}")
         print(f"\n  Written: {output_path}")
 
     finally:
