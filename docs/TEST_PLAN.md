@@ -2,15 +2,25 @@
 
 ## Overview
 
-Tests are organized into three levels:
+Tests are organized into several levels. The unified test script `scripts/test.sh`
+runs them all:
 
-| Level | Location | Requires | Run command |
-|-------|----------|----------|-------------|
-| Unit | `internal/*/`, `cmd/*/` | Nothing (synthetic data) | `go test ./...` |
-| Build-patcher | `internal/charset/` (build tag `buildpatcher`) | `scripts/build.sh` step 2 | `go test -tags buildpatcher ./internal/charset/...` |
-| Integration | `*_integration_test.go` (build tag `integration`) | `games/monkey1/game/Monkey1.pak` | `go test -tags integration ./...` |
-| Python | `tools/test_*.py` | Python 3 | `python -m pytest tools/` |
-| Manual / acceptance | This document | Working patcher binary + game files | Run manually |
+```bash
+bash scripts/test.sh monkey1        # unit + Python (no game files needed)
+bash scripts/test.sh monkey1 --all  # also buildpatcher + integration (needs game files)
+```
+
+Without `--all`, only tests that need no game files or build artifacts run.
+With `--all`, buildpatcher and integration tests also run — missing prerequisites
+cause a **FAIL**, not a skip.
+
+| Level | Location | Requires | `test.sh` | Individual command |
+|-------|----------|----------|-----------|--------------------|
+| Unit | `internal/*/`, `cmd/*/` | Nothing (synthetic data) | default | `go test ./...` |
+| Python | `tools/test_*.py` | Python 3 | default | `python3 -m unittest discover -s tools -p 'test_*.py'` |
+| Build-patcher | `internal/charset/` (build tag `buildpatcher`) | `scripts/build.sh` step 2 | `--all` | `go test -tags buildpatcher ./internal/charset/...` |
+| Integration | `*_integration_test.go` (build tag `integration`) | `games/monkey1/game/Monkey1.pak` | `--all` | `go test -tags integration ./...` |
+| Manual / acceptance | This document | Working patcher binary + game files | n/a | Run manually |
 
 ---
 
@@ -372,15 +382,26 @@ Assert: characters render as Swedish letters, not squares or wrong punctuation.
 ## Running all tests
 
 ```bash
-# Unit tests only (fast, no game files):
-go test ./...
+# From the game directory (no argument needed):
+cd games/monkey1 && bash ../../scripts/test.sh
 
-# Build-patcher asset tests (after scripts/build.sh step 2):
-go test -tags buildpatcher ./internal/charset/...
+# Or from the repo root with explicit game name:
+bash scripts/test.sh monkey1
 
-# Unit + integration (requires games/monkey1/game/Monkey1.pak):
-go test -tags integration -v ./...
+# Include game-file tests (buildpatcher + integration):
+bash scripts/test.sh monkey1 --all
+```
 
-# Python tool tests:
-python -m pytest tools/
+Without `--all`, runs Go unit tests and Python tests — no game files or build
+artifacts required. With `--all`, also runs buildpatcher asset tests and
+integration tests. Missing prerequisites (`.bin` files, `Monkey1.pak`) cause
+a **FAIL**, not a skip.
+
+Individual suites can also be run directly if needed:
+
+```bash
+go test ./...                                        # Go unit tests
+go test -tags buildpatcher ./internal/charset/...    # charset asset tests (after build.sh)
+go test -tags integration ./...                      # Go integration tests
+python3 -m unittest discover -s tools -p 'test_*.py' # Python tool tests
 ```

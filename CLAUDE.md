@@ -77,6 +77,7 @@ tools/                          Python utilities (see tools/README.md for usage)
 
 scripts/
   common.sh                     Shared helpers (REPO_ROOT, detect_game from pwd)
+  test.sh                       Run all tests (Go unit, buildpatcher, integration, Python)
   init_translation.sh           Init swedish.txt with [E]-prefixed English strings (first-time setup)
   extract.sh                    Entry point: detect PAK/dir, call sub-scripts
   extract_pak.sh                Unpack MONKEY1.000/001 from SE PAK → games/<game>/game/
@@ -172,15 +173,17 @@ Remove the `[E]` prefix as you translate each line.
 ### Run tests
 
 ```bash
-go test ./...                            # unit tests (fast, no game files needed)
-go test -tags integration ./...         # unit + integration (needs games/monkey1/game/Monkey1.pak)
+# All tests (unit + Python):
+cd games/monkey1 && bash ../../scripts/test.sh
+bash scripts/test.sh monkey1              # or with explicit game name
+
+# Include integration tests (needs games/monkey1/game/Monkey1.pak):
+bash scripts/test.sh monkey1 --all
 ```
 
-**Note:** `charset` asset tests (`-tags buildpatcher`) validate the embedded CHAR blocks and only
-apply when building the full patcher. Run them after `build.sh` Step 2 if you've edited glyphs:
-```bash
-go test -tags buildpatcher ./internal/charset/...
-```
+Without `--all`: runs Go unit tests and Python tests (no game files needed).
+With `--all`: also runs buildpatcher asset tests and integration tests (requires
+game files and build artifacts — missing files cause a FAIL, not a skip).
 
 ---
 
