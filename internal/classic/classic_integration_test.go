@@ -336,18 +336,43 @@ func TestInjectTranslationRoundTrip(t *testing.T) {
 	scummtrExec := filepath.Join(t.TempDir(), "scummtr")
 	os.WriteFile(scummtrExec, scummtrData, 0755)
 
+	// exportStrings mirrors the production extraction pipeline from
+	// scripts/extract_assets.sh: scummtr -oh export followed by the same
+	// post-processing (remove ;; comments, ^ → ..., decode escape codes).
 	exportStrings := func(t *testing.T, gameDir, outFile string) {
 		t.Helper()
-		// Export with -h (headers) but no -c or -w: produces Unix LF, ASCII+\NNN
-		// escapes, with [room:TYPE#resnum] prefixes — exactly the format that
-		// InjectTranslation expects on import (-ih).
 		cmd := exec.Command(scummtrExec,
-			"-g", "monkeycdalt", "-p", gameDir, "-h", "-A", "aov", "-o", "-f", outFile,
+			"-g", "monkeycdalt", "-p", gameDir, "-oh", "-f", outFile,
 		)
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		if err := cmd.Run(); err != nil {
 			t.Fatalf("scummtr export: %v", err)
+		}
+		// Apply the same post-processing as extract_assets.sh:
+		raw, err := os.ReadFile(outFile)
+		if err != nil {
+			t.Fatalf("read exported strings: %v", err)
+		}
+		s := string(raw)
+		// Remove ;; comment lines
+		lines := strings.Split(s, "\n")
+		filtered := lines[:0]
+		for _, line := range lines {
+			if !strings.HasPrefix(line, ";;") {
+				filtered = append(filtered, line)
+			}
+		}
+		s = strings.Join(filtered, "\n")
+		// ^ → ... (SCUMM ellipsis byte)
+		s = strings.ReplaceAll(s, "^", "...")
+		// Decode SCUMM escape codes to UTF-8
+		s = strings.ReplaceAll(s, `\130`, "é")
+		s = strings.ReplaceAll(s, `\136`, "ê")
+		s = strings.ReplaceAll(s, `\015`, "®")
+		s = strings.ReplaceAll(s, `\250`, "\u00a0") // non-breaking space
+		if err := os.WriteFile(outFile, []byte(s), 0644); err != nil {
+			t.Fatalf("write post-processed strings: %v", err)
 		}
 	}
 

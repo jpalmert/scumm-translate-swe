@@ -35,6 +35,8 @@ var scummCharMap = []struct {
 	{"ö", `\125`},
 	{"é", `\130`},
 	{"ê", `\136`},
+	{"®", `\015`},
+	{"\u00a0", `\250`},
 }
 
 // encodeForScummtr reads a UTF-8 encoded translation file and returns a copy
@@ -82,11 +84,13 @@ func encodeBytes(data []byte) []byte {
 // stripOpcode removes a leading "(XX)" opcode prefix from a scummtr text field.
 // scummtr -A extraction includes these for identification, but they must not
 // appear in injected text.
+//
+// A valid opcode prefix is exactly "(XX)" where XX is two hex digits or
+// underscores, e.g. "(D8)", "(__)", "(14)". The closing ")" must be at
+// position 3 — anything else is literal game text that starts with "(".
 func stripOpcode(text string) string {
-	if len(text) > 0 && text[0] == '(' {
-		if end := strings.IndexByte(text, ')'); end > 0 {
-			return text[end+1:]
-		}
+	if len(text) >= 4 && text[0] == '(' && text[3] == ')' {
+		return text[4:]
 	}
 	return text
 }
