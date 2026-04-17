@@ -2375,13 +2375,13 @@
 [038:SCRP#0120](14)Djupt under Monkey Island ligger spökpiraten LeChucks skepp förankrat i en flod av lava.\255\002
 [038:SCRP#0120](14)
 [038:SCRP#0120](14)Kapten LeChuck...herr'n...jag...
-[038:SCRP#0120](14)Ah...\255\003Det finns inget som de heta vindarna från helvetet som blåser i ansiktet.
+[038:SCRP#0120](14)Ah...\255\003Det finns inget som går upp emot helvetets heta vindarna som blåser i ansiktet.
 [038:SCRP#0120](14)Nej herr'n...\255\003Inget som det...\255\003Ah...\255\003Herr'n...\255\003Jag...
 [038:SCRP#0120](14)Det är dagar som dessa som gör en glad att vara död.
 [038:SCRP#0120](14)Åh, ja herr'n...glad att vara död...
 [038:SCRP#0120](14)Ni ÄR glada att vara döda, ELLER HUR?
 [038:SCRP#0120](14)Åh ja herr'n.\255\003Jag känner mig så lycklig att ni råkade kapra mitt skepp, och sen mördade mig och alla ombord...\255\003...ja herr'n...\255\003lycklig.
-[038:SCRP#0120](14)Glad att höra det.\255\003Nå, vad var det du störde mig för?
+[038:SCRP#0120](14)Skönt att höra det.\255\003Nå, vad var det du störde mig för?
 [038:SCRP#0120](14)Ah...ja herr'n...nå, ni förstår, vi kan ha ett problem på Mêlée Island®.
 [038:SCRP#0120](14)PROBLEM?!?\255\003Vad för problem kan det vara!?\255\003Jag har gjort de där mesiga piraterna så rädda för havet att dom inte vågar ta ett bad!
 [038:SCRP#0120](14)Nå...\255\003Det verkar finnas en ny pirat i stan.\255\003Fast han är mer en piratposör.
