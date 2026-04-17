@@ -14,6 +14,8 @@
 # is already present.
 set -euo pipefail
 
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
 GAME="${1:-}"
 if [[ -z "$GAME" ]]; then
     echo "Usage: $0 <game>"
@@ -21,8 +23,8 @@ if [[ -z "$GAME" ]]; then
     exit 1
 fi
 
-ENGLISH="game/$GAME/gen/strings/english.txt"
-SWEDISH="translation/$GAME/swedish.txt"
+ENGLISH="$REPO_ROOT/game/$GAME/gen/strings/english.txt"
+SWEDISH="$REPO_ROOT/translation/$GAME/swedish.txt"
 
 if [[ ! -f "$ENGLISH" ]]; then
     echo "ERROR: $ENGLISH not found."

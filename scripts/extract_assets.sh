@@ -146,7 +146,7 @@ mkdir -p "$STR_OUT"
 # extraction above. With -A, scummtr pads ALL object names to fixed-width fields
 # with @, which adds thousands of spurious @ characters. Without -A, only the 34
 # object names that genuinely use @ for runtime buffer padding retain their @
-# characters. These 34 are preserved — see docs/DYNAMIC_NAMES.md for the mapping.
+# characters. These 34 are preserved — see docs/TRANSLATION_GUIDE.md for details.
 sed -i \
     -e '/^;;/d' \
     -e 's/\^/.../g' \

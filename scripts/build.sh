@@ -116,12 +116,11 @@ echo ""
 echo "=== Step 3: Copy Swedish translation to dist/ ==="
 
 if [ ! -f "$TRANSLATION_SRC" ]; then
-    echo "ERROR: Translation file not found: $TRANSLATION_SRC"
+    echo "ERROR: Translation file not found: $TRANSLATION_SRC" >&2
     exit 1
 fi
 cp "$TRANSLATION_SRC" "$DIST_DIR/swedish.txt"
 echo "  $TRANSLATION_SRC -> dist/swedish.txt"
-
 
 # ---------------------------------------------------------------------------
 echo ""
@@ -129,13 +128,13 @@ echo "=== Step 4: Cross-compile patcher ==="
 
 GO_BIN=""
 for candidate in go ~/go/bin/go /usr/local/go/bin/go; do
-    if command -v "$candidate" &>/dev/null 2>&1; then
+    if [[ "$candidate" == */* ]] && [[ -x "$candidate" ]] || [[ "$candidate" != */* ]] && command -v "$candidate" &>/dev/null; then
         GO_BIN="$candidate"
         break
     fi
 done
 if [ -z "$GO_BIN" ]; then
-    echo "ERROR: Go not found. Install Go 1.21+ from https://go.dev/dl/"
+    echo "ERROR: Go not found. Install Go 1.21+ from https://go.dev/dl/" >&2
     exit 1
 fi
 echo "  Go: $("$GO_BIN" version | awk '{print $3}')"
