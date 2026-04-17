@@ -12,7 +12,7 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
-detect_game
+detect_game "${1:-}"
 
 echo "==> Removing generated charset files..."
 rm -f "$REPO_ROOT/internal/charset/gen/"char_*_patched.bin

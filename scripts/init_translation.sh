@@ -18,7 +18,7 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
-detect_game
+detect_game "${1:-}"
 
 ENGLISH="$GAME_GEN/strings/english.txt"
 SWEDISH="$GAME_TRANSLATION/swedish.txt"

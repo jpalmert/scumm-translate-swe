@@ -18,7 +18,7 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
-detect_game
+detect_game "${1:-}"
 
 echo "==> Removing extracted assets..."
 rm -rf "$GAME_GEN"

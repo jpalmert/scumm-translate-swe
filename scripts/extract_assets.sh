@@ -26,7 +26,7 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
-detect_game
+detect_game "${1:-}"
 
 SCUMMRP="$REPO_ROOT/bin/linux/scummrp"
 SCUMMFONT="$REPO_ROOT/bin/linux/scummfont"

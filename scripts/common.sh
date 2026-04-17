@@ -32,7 +32,20 @@ detect_game() {
             GAME="${rel%%/*}"
         else
             echo "ERROR: Cannot determine which game to operate on." >&2
-            echo "  Either cd into a games/<game>/ directory, or pass the game name as an argument." >&2
+            echo "" >&2
+            # List available games
+            local available
+            available="$(ls -1 "$REPO_ROOT/games/" 2>/dev/null | head -10)"
+            if [[ -n "$available" ]]; then
+                echo "  Available games:" >&2
+                echo "$available" | sed 's/^/    /' >&2
+                echo "" >&2
+            fi
+            local script_name
+            script_name="$(basename "${BASH_SOURCE[1]:-$0}")"
+            echo "  Usage:" >&2
+            echo "    cd games/<game> && bash ../../scripts/$script_name" >&2
+            echo "    bash scripts/$script_name <game>" >&2
             exit 1
         fi
     fi

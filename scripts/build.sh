@@ -31,7 +31,7 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
-detect_game
+detect_game "${1:-}"
 
 ASSETS_DIR="$REPO_ROOT/internal/classic/assets"
 DIST_DIR="$GAME_DIST"
