@@ -119,14 +119,8 @@ cp /path/to/MONKEY1.000 /path/to/MONKEY1.001 games/monkey1/game/
 Scripts detect the active game from the working directory. Run from inside `games/<game>/`:
 
 ```bash
-cd games/monkey1
-
-# Auto-detects PAK vs classic files:
-bash ../../scripts/extract.sh
-
-# Explicit paths:
-bash ../../scripts/extract.sh /path/to/Monkey1.pak
-bash ../../scripts/extract.sh /path/to/game/dir/
+# Place game files in games/monkey1/game/, then:
+bash scripts/extract.sh monkey1
 ```
 
 This populates `games/monkey1/gen/` (gitignored):
@@ -226,8 +220,7 @@ the classic workflow works standalone — no Special Edition required:
 2. Find the scummtr game ID for your game (see table below, or run `bin/linux/scummtr -L`).
 3. Place game files in `games/<game>/game/` and extract assets:
    ```
-   cd games/<game>
-   bash ../../scripts/extract.sh /path/to/game/
+   bash scripts/extract.sh <game>
    ```
 4. Translate `games/<game>/gen/strings/english.txt` → `games/<game>/translation/swedish.txt`.
 5. Add patcher code following the Monkey Island 1 pattern.

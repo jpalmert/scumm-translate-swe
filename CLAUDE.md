@@ -111,10 +111,7 @@ bash scripts/install_deps.sh
 
 ```bash
 # Place game files in games/monkey1/game/, then:
-cd games/monkey1
-bash ../../scripts/extract.sh                          # auto-detects PAK vs classic files
-bash ../../scripts/extract.sh /path/to/Monkey1.pak    # explicit PAK path
-bash ../../scripts/extract.sh /path/to/game/dir/      # explicit game dir
+bash scripts/extract.sh monkey1                        # or cd games/monkey1 && bash ../../scripts/extract.sh
 ```
 
 This populates `games/monkey1/gen/` with CHAR blocks, BMPs, English dialog strings,
