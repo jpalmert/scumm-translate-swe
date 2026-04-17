@@ -20,7 +20,7 @@ Decodes a SCUMM v5 room background (RMIM block) to PNG. Called by `extract_asset
 rooms; can also be run manually on a single LFLF directory from a scummrp dump.
 
 ```bash
-python3 tools/decode_room.py game/monkey1/gen/full_dump/DISK_0001/LECF/LFLF_0028 room_028.png
+python3 tools/decode_room.py games/monkey1/gen/full_dump/DISK_0001/LECF/LFLF_0028 room_028.png
 ```
 
 Requires: `pip install Pillow`

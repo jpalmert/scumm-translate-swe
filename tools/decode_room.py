@@ -6,7 +6,7 @@ SMAP offset formula (standard SCUMM v5, not GF_SMALL_HEADER):
 
 Usage:
     python3 tools/decode_room.py <LFLF_dir> <output.png>
-    python3 tools/decode_room.py game/monkey1/gen/full_dump/DISK_0001/LECF/LFLF_0028 room_028.png
+    python3 tools/decode_room.py games/monkey1/gen/full_dump/DISK_0001/LECF/LFLF_0028 room_028.png
 """
 
 import sys
@@ -96,7 +96,7 @@ def decode_room(lflf_dir, out_path):
 if __name__ == '__main__':
     if len(sys.argv) < 3:
         print(f"Usage: {sys.argv[0]} <LFLF_dir> <output.png>")
-        print(f"  e.g. {sys.argv[0]} game/monkey1/gen/full_dump/DISK_0001/LECF/LFLF_0028 out.png")
+        print(f"  e.g. {sys.argv[0]} games/monkey1/gen/full_dump/DISK_0001/LECF/LFLF_0028 out.png")
         sys.exit(1)
 
     decode_room(sys.argv[1], sys.argv[2])

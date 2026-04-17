@@ -38,7 +38,7 @@ func integrationPaths(t *testing.T) (pakPath, scummtrPath string) {
 	t.Helper()
 	root := repoRoot(t)
 
-	pakPath = filepath.Join(root, "game", "monkey1", "Monkey1.pak")
+	pakPath = filepath.Join(root, "games", "monkey1", "game", "Monkey1.pak")
 
 	switch runtime.GOOS {
 	case "linux":

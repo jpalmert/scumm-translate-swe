@@ -38,7 +38,7 @@
 // Build pipeline (scripts/build.sh):
 //  1. Download scummtr binaries (internal/classic/assets/)         — install_deps.sh / build.sh
 //  2. Generate patched CHAR .bin files (internal/charset/assets/)  — build_char_assets.sh
-//  3. Cross-compile for Linux, macOS, Windows (dist/)
+//  3. Cross-compile for Linux, macOS, Windows (games/<game>/dist/)
 //
 // # Simple usage
 //

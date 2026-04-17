@@ -3,7 +3,7 @@
 
 **Version:** 1.0  
 **Last updated:** 2026-04-09  
-**Scope:** `translation/monkey1/swedish.txt` — **sample translations** for demonstration and learning purposes
+**Scope:** `games/monkey1/translation/swedish.txt` — **sample translations** for demonstration and learning purposes
 
 ---
 
@@ -75,8 +75,8 @@ MI1 is a comedy game built on absurdist humor, pirate tropes, insult swordfighti
 
 ### Pass 0 — Preprocessing: Glossary and Pun Inventory
 **Goal:** Create the consistency foundation before any translation begins.  
-**Input:** `game/monkey1/gen/strings/english.txt`  
-**Output:** `translation/monkey1/glossary.md`, `translation/monkey1/pun_inventory.md`
+**Input:** `games/monkey1/gen/strings/english.txt`  
+**Output:** `translation/glossary.md`, `games/monkey1/translation/pun_inventory.md`
 
 Steps:
 1. Scan all strings and extract every proper noun (character names, place names, item names).
@@ -92,7 +92,7 @@ Steps:
 ### Pass 1 — Insult Swordfighting (standalone sub-system)
 **Goal:** Translate the insult/comeback pairs as a coherent, funny system.  
 **Input:** Insult swordfighting strings (flagged in Pass 0), `glossary.md`  
-**Output:** Translated insult/comeback pairs in `translation/monkey1/swedish.txt` (just this section)
+**Output:** Translated insult/comeback pairs in `games/monkey1/translation/swedish.txt` (just this section)
 
 Note from user: Keep in mind that in the sword fight with the Sword master different insults are used and the player needs to select from the earlier come backs. I.e. these special swoprd master insults must match one of the existing come backs. If they are too similar to the original insults it becomes too easy, but if the come back doesn't make sense then it becomes too hard. 
 The insult swordfighting system has paired strings: each insult has exactly one correct comeback. Both sides must be funny and the comeback must logically respond to the insult. This requires treating them as a creative writing task, not a translation task. Create Swedish wordplay that works, even if it diverges significantly from the English.
@@ -103,7 +103,7 @@ The insult swordfighting system has paired strings: each insult has exactly one 
 ### Pass 2 — Sample Translation (Selected Rooms)
 **Goal:** Translate selected representative rooms as samples, one room at a time.  
 **Input:** English strings for each room, `glossary.md`, `pun_inventory.md`  
-**Output:** Swedish translation samples added to `translation/monkey1/swedish.txt`
+**Output:** Swedish translation samples added to `games/monkey1/translation/swedish.txt`
 
 **Workflow:** User says "translate the next room" and Claude translates the next uncompleted room from this list.
 
@@ -117,7 +117,7 @@ This is a complete reference list for planning translation work. NOT a commitmen
 
 ### Pass 3 — Consistency Review
 **Goal:** Verify every object name, character name, and recurring phrase is used consistently throughout the entire file.  
-**Input:** Complete `translation/monkey1/swedish.txt`, `glossary.md`  
+**Input:** Complete `games/monkey1/translation/swedish.txt`, `glossary.md`  
 **Output:** Corrections applied in-place; `glossary.md` updated with any new decisions
 
 Check specifically:
@@ -130,7 +130,7 @@ Check specifically:
 
 ### Pass 4 — Pun and Wordplay Polish
 **Goal:** Review all flagged entries from `pun_inventory.md` in context, and improve any translations that feel awkward.  
-**Input:** `pun_inventory.md`, current `translation/monkey1/swedish.txt`  
+**Input:** `pun_inventory.md`, current `games/monkey1/translation/swedish.txt`  
 **Output:** Corrections applied in-place; `pun_inventory.md` annotated with resolution status
 
 For each flagged string:
@@ -142,7 +142,7 @@ For each flagged string:
 
 ### Pass 5 — Length Validation
 **Goal:** Ensure no string exceeds 256 characters (SE hard limit).  
-**Input:** `translation/monkey1/swedish.txt`  
+**Input:** `games/monkey1/translation/swedish.txt`  
 **Output:** List of violations; shortened strings applied in-place
 
 Flag any line where the text portion (after the `]`) exceeds 256 characters including SCUMM escape codes. Shorten by:
@@ -154,7 +154,7 @@ Flag any line where the text portion (after the `]`) exceeds 256 characters incl
 
 ### Pass 6 — Final Read-Through
 **Goal:** Read the whole translation as a playthrough, room by room. Catch anything that sounds robotic, inconsistent, or unfunny.  
-**Input:** Complete `translation/monkey1/swedish.txt`  
+**Input:** Complete `games/monkey1/translation/swedish.txt`  
 **Output:** Final corrections applied in-place
 
 Read room by room in order. For each room, read all its strings together as a sequence — this simulates how a player experiences them. Fix anything that reads awkwardly in sequence even if each individual line looked fine in isolation.
@@ -164,10 +164,12 @@ Read room by room in order. For each room, read all its strings together as a se
 ## File Layout
 
 ```
-translation/monkey1/
+games/monkey1/translation/
   swedish.txt          — The translation file (scummtr format, UTF-8)
-  glossary.md          — Proper nouns, recurring terms, translation decisions
   pun_inventory.md     — Language-dependent strings: English original + Swedish solution
+
+translation/
+  glossary.md          — Proper nouns, recurring terms, translation decisions (shared)
 ```
 
 The `swedish.txt` file is the only file that feeds into the build pipeline. The other two are working documents.
@@ -194,13 +196,11 @@ no bounds check, so the buffer must be large enough for the longest replacement.
 **Translators don't need to do anything about this.** The build pipeline handles
 it automatically:
 
-1. `scripts/extract.sh` generates `game/monkey1/gen/dynamic_names.json` — a
-   mapping of which lines replace which other lines at runtime.
-2. `scripts/build.sh` runs `tools/calc_padding.py` to pad object names in
-   `dist/swedish.txt` with invisible `@` characters so they're long enough.
+1. `scripts/build.sh` runs `tools/calc_padding.py` to pad object names in
+   `games/<game>/dist/swedish.txt` with invisible `@` characters so they're long enough.
 
-The source `swedish.txt` is never modified. See `docs/DYNAMIC_NAMES.md` for
-the full mapping and `tools/calc_padding.py --help` for manual checks.
+The source `swedish.txt` is never modified. See `tools/calc_padding.py --help`
+for manual checks.
 
 ---
 

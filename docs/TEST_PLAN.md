@@ -8,7 +8,7 @@ Tests are organized into three levels:
 |-------|----------|----------|-------------|
 | Unit | `internal/*/`, `cmd/*/` | Nothing (synthetic data) | `go test ./...` |
 | Build-patcher | `internal/charset/` (build tag `buildpatcher`) | `scripts/build.sh` step 2 | `go test -tags buildpatcher ./internal/charset/...` |
-| Integration | `*_integration_test.go` (build tag `integration`) | `game/monkey1/Monkey1.pak` | `go test -tags integration ./...` |
+| Integration | `*_integration_test.go` (build tag `integration`) | `games/monkey1/game/Monkey1.pak` | `go test -tags integration ./...` |
 | Python | `tools/test_*.py` | Python 3 | `python -m pytest tools/` |
 | Manual / acceptance | This document | Working patcher binary + game files | Run manually |
 
@@ -228,7 +228,7 @@ Assert that the embedded scummrp binaries for Linux, macOS, and Windows are all 
 
 ## Integration Tests (`go test -tags integration ./...`)
 
-These tests require `game/monkey1/Monkey1.pak` and skip gracefully if absent.
+These tests require `games/monkey1/game/Monkey1.pak` and skip gracefully if absent.
 
 ### Classic package (`internal/classic`)
 
@@ -378,7 +378,7 @@ go test ./...
 # Build-patcher asset tests (after scripts/build.sh step 2):
 go test -tags buildpatcher ./internal/charset/...
 
-# Unit + integration (requires game/monkey1/Monkey1.pak):
+# Unit + integration (requires games/monkey1/game/Monkey1.pak):
 go test -tags integration -v ./...
 
 # Python tool tests:

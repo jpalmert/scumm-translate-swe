@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# extract_assets.sh — Extract English charset assets and dialog strings from MI1 game files.
+# extract_assets.sh — Extract English charset assets and dialog strings from game files.
 #
 # Works from a directory containing the classic SCUMM data files.
 # Accepts both naming conventions:
@@ -7,23 +7,26 @@
 #   MONKEY.000  / MONKEY.001   — Classic CD version  (game ID: monkeycd)
 # Both upper and lowercase filenames are accepted.
 #
+# The active game is determined by pwd (must be inside games/<game>/).
+#
 # Reads:   game dir containing MONKEY1.000/001 or MONKEY.000/001
-# Writes:  game/monkey1/gen/charset/english/CHAR_NNNN  — raw CHAR font blocks
-#          game/monkey1/gen/charset/english_bitmaps/*.bmp — visual reference for editing Swedish glyphs
-#          game/monkey1/gen/strings/english.txt          — dialog strings for translation
+# Writes:  games/<game>/gen/charset/english/CHAR_NNNN   — raw CHAR font blocks
+#          games/<game>/gen/charset/english_bitmaps/*.bmp — visual reference
+#          games/<game>/gen/strings/english.txt           — dialog strings
 #
-# All outputs live under game/ which is gitignored.
+# All outputs live under games/<game>/gen/ which is gitignored.
 #
-# Usage (from repo root):
-#   bash scripts/extract_assets.sh [game_dir]
-#   Default game_dir: game/monkey1/
+# Usage:
+#   cd games/monkey1 && bash ../../scripts/extract_assets.sh [game_dir]
+#   Default game_dir: games/<game>/game/
 #
 # Prerequisites:
 #   bash scripts/install_deps.sh
 
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
+detect_game
 
 SCUMMRP="$REPO_ROOT/bin/linux/scummrp"
 SCUMMFONT="$REPO_ROOT/bin/linux/scummfont"
@@ -41,7 +44,7 @@ for bin in "$SCUMMRP" "$SCUMMFONT" "$SCUMMTR"; do
     fi
 done
 
-INPUT_DIR="${1:-$REPO_ROOT/game/monkey1}"
+INPUT_DIR="${1:-$GAME_GAME}"
 
 if [[ ! -d "$INPUT_DIR" ]]; then
     echo "ERROR: directory not found: $INPUT_DIR" >&2
@@ -51,47 +54,47 @@ fi
 # --- Detect game variant and normalise filenames into a temp work dir ---
 WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
-GAME_DIR="$WORK/game"
-mkdir -p "$GAME_DIR"
+WORK_GAME="$WORK/game"
+mkdir -p "$WORK_GAME"
 
-GAME_ID=""
+SCUMM_GAME_ID=""
 
 # SE embedded classic: MONKEY1.000 / MONKEY1.001
 for name in MONKEY1 monkey1; do
     if [[ -f "$INPUT_DIR/$name.000" && -f "$INPUT_DIR/$name.001" ]]; then
-        cp "$INPUT_DIR/$name.000" "$GAME_DIR/MONKEY1.000"
-        cp "$INPUT_DIR/$name.001" "$GAME_DIR/MONKEY1.001"
-        GAME_ID="monkeycdalt"
+        cp "$INPUT_DIR/$name.000" "$WORK_GAME/MONKEY1.000"
+        cp "$INPUT_DIR/$name.001" "$WORK_GAME/MONKEY1.001"
+        SCUMM_GAME_ID="monkeycdalt"
         break
     fi
 done
 
 # Classic CD: MONKEY.000 / MONKEY.001
-if [[ -z "$GAME_ID" ]]; then
+if [[ -z "$SCUMM_GAME_ID" ]]; then
     for name in MONKEY monkey; do
         if [[ -f "$INPUT_DIR/$name.000" && -f "$INPUT_DIR/$name.001" ]]; then
-            cp "$INPUT_DIR/$name.000" "$GAME_DIR/MONKEY.000"
-            cp "$INPUT_DIR/$name.001" "$GAME_DIR/MONKEY.001"
-            GAME_ID="monkeycd"
+            cp "$INPUT_DIR/$name.000" "$WORK_GAME/MONKEY.000"
+            cp "$INPUT_DIR/$name.001" "$WORK_GAME/MONKEY.001"
+            SCUMM_GAME_ID="monkeycd"
             break
         fi
     done
 fi
 
-if [[ -z "$GAME_ID" ]]; then
+if [[ -z "$SCUMM_GAME_ID" ]]; then
     echo "ERROR: No MONKEY1.000/001 or MONKEY.000/001 found in $INPUT_DIR" >&2
     exit 1
 fi
 
-echo "Detected game variant: $GAME_ID"
+echo "Detected game variant: $SCUMM_GAME_ID"
 
-GEN_ROOT="$REPO_ROOT/game/monkey1/gen"
+GEN_ROOT="$GAME_GEN"
 
 # --- Full block dump (used for CHAR, room images, and object images) ---
 echo ""
 echo "=== Dumping all game blocks ==="
 DUMP_DIR="$WORK/full_dump"
-"$SCUMMRP" -g "$GAME_ID" -p "$GAME_DIR" -od "$DUMP_DIR"
+"$SCUMMRP" -g "$SCUMM_GAME_ID" -p "$WORK_GAME" -od "$DUMP_DIR"
 
 # Locate the directory containing the CHAR blocks — differs between game variants
 CHAR_DIR="$(find "$DUMP_DIR" -name "CHAR_0001" -exec dirname {} \; 2>/dev/null | head -1)"
@@ -135,7 +138,7 @@ echo ""
 echo "=== Extracting strings ==="
 STR_OUT="$GEN_ROOT/strings"
 mkdir -p "$STR_OUT"
-"$SCUMMTR" -g "$GAME_ID" -p "$GAME_DIR" -hI -o -f "$STR_OUT/english.txt"
+"$SCUMMTR" -g "$SCUMM_GAME_ID" -p "$WORK_GAME" -hI -o -f "$STR_OUT/english.txt"
 
 # Post-process extracted strings into clean UTF-8 for translators:
 #   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ...

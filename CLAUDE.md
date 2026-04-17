@@ -8,7 +8,7 @@ Claude does the translation work; this repo contains the tooling and translation
 First target: **Monkey Island 1** — both the Special Edition (GOG/Steam `Monkey1.pak`) and the
 Classic CD-ROM version (`MONKEY1.000`/`MONKEY1.001` via ScummVM).
 
-The Swedish translation (`translation/monkey1/swedish.txt`) is sourced from the
+The Swedish translation (`games/monkey1/translation/swedish.txt`) is sourced from the
 [monkeycd_swe](https://github.com/dwatteau/monkeycd_swe) project and aligns 1:1 with
 the SE strings (4437 strings in the same order). Insult swordfighting strings have been
 translated (see `docs/TRANSLATION_PLAN.md` for the multi-pass translation workflow).
@@ -41,12 +41,24 @@ internal/
   font/                         SE .font glyph lookup table patcher
   speech/                       speech.info audio sync patcher
 
-translation/
+games/
   monkey1/
-    swedish.txt                 Swedish translation (4437 strings, scummtr format)
-    TRANSLATE_TABLE             Swedish character code mappings
-    glossary.md                 Translation decisions reference
-    PASS1_NOTES.md              Insult swordfighting translation notes
+    translation/                Committed — MI1 translation data
+      swedish.txt               Swedish translation (4437 strings, scummtr format)
+      TRANSLATE_TABLE           Swedish character code mappings
+      PASS1_NOTES.md            Insult swordfighting translation notes
+      annotations.md            Per-string translation annotations
+    game/                       Gitignored — user's MI1 game files
+    gen/                        Gitignored — extracted resources
+    dist/                       Gitignored — built MI1 patcher binaries
+  monkey2/
+    translation/                Committed — MI2 translation data (to be created)
+    game/                       Gitignored — user's MI2 game files
+    gen/                        Gitignored — extracted resources
+    dist/                       Gitignored — built MI2 patcher binaries
+
+translation/
+  glossary.md                   Shared translation glossary (used by all games)
 
 docs/
   FRS.md                        Functional requirements
@@ -61,13 +73,15 @@ tools/                          Python utilities (see tools/README.md for usage)
   calc_padding.py               Apply @ padding to swedish.txt for SE name buffers (called by build.sh)
   pak.py                        PAK extractor/repacker (standalone)
   patch_verbs.py                Verb button coordinate patcher (standalone)
+  scumm_gfx.py                  Shared SCUMM v5 graphics codec library
 
 scripts/
+  common.sh                     Shared helpers (REPO_ROOT, detect_game from pwd)
   init_translation.sh           Init swedish.txt with [E]-prefixed English strings (first-time setup)
   extract.sh                    Entry point: detect PAK/dir, call sub-scripts
-  extract_pak.sh                Unpack MONKEY1.000/001 from SE PAK → game/monkey1/
-  extract_assets.sh             Extract CHAR blocks, BMPs, dialog strings, room/object images from game dir
-  build.sh                      Generate CHAR assets + cross-compile patcher → dist/
+  extract_pak.sh                Unpack MONKEY1.000/001 from SE PAK → games/<game>/game/
+  extract_assets.sh             Extract CHAR blocks, BMPs, dialog strings, room/object images
+  build.sh                      Generate CHAR assets + cross-compile patcher → games/<game>/dist/
   clean.sh                      Remove generated .bin files and dist/ binaries
   clean_assets.sh               Remove all assets extracted from the game
   install_deps.sh               Re-download tool binaries (needed only for upgrades)
@@ -75,26 +89,14 @@ scripts/
 bin/
   linux/                        Developer tool binaries (scummtr, scummrp, scummfont, FontXY, descumm) — committed
   darwin/                       Developer tool binaries (scummtr, scummrp, scummfont, FontXY) — committed
-
---- gitignored ---
-
-game/monkey1/                   User's game files (never commit copyrighted content)
-  Monkey1.pak                   Place SE PAK here (or pass path to extract.sh)
-  MONKEY1.000 / MONKEY1.001     Classic files (or unpacked from PAK by extract_pak.sh)
-  gen/                          All assets extracted from game (regenerate with extract.sh)
-    charset/english/            Raw CHAR blocks (templates for build.sh)
-    charset/english_bitmaps/    English glyph BMPs (visual reference)
-    strings/english.txt         English dialog strings for translation
-    rooms/                      Room background PNGs (visual reference)
-    objects/                    Object image PNGs grouped by room (visual reference)
-
-internal/charset/gen/           Generated CHAR .bin files (run scripts/build.sh to populate)
-dist/                           Built patcher binaries
 ```
 
 ---
 
 ## Core pipeline
+
+Scripts detect the active game from the working directory. Run them from inside
+`games/<game>/` (e.g. `cd games/monkey1`).
 
 ### Setup (once)
 
@@ -107,21 +109,23 @@ bash scripts/install_deps.sh
 ### Extract game assets
 
 ```bash
-# Place game files in game/monkey1/, then:
-bash scripts/extract.sh                          # auto-detects PAK vs classic files
-bash scripts/extract.sh /path/to/Monkey1.pak    # explicit PAK path
-bash scripts/extract.sh /path/to/game/dir/      # explicit game dir
+# Place game files in games/monkey1/game/, then:
+cd games/monkey1
+bash ../../scripts/extract.sh                          # auto-detects PAK vs classic files
+bash ../../scripts/extract.sh /path/to/Monkey1.pak    # explicit PAK path
+bash ../../scripts/extract.sh /path/to/game/dir/      # explicit game dir
 ```
 
-This populates `game/monkey1/gen/` with CHAR blocks, BMPs, English dialog strings,
+This populates `games/monkey1/gen/` with CHAR blocks, BMPs, English dialog strings,
 room background PNGs, and object image PNGs.
 
 ### Build the patcher
 
 ```bash
 # Requires Go 1.21+ and extracted game assets.
-bash scripts/build.sh
-# Output: dist/mi1-translate-linux, dist/mi1-translate-darwin, dist/mi1-translate-windows.exe, dist/swedish.txt
+cd games/monkey1
+bash ../../scripts/build.sh
+# Output: games/monkey1/dist/mi1-translate-linux, .../mi1-translate-darwin, .../mi1-translate-windows.exe, .../swedish.txt
 ```
 
 The build copies `swedish.txt` to `dist/` and automatically applies `@` padding to
@@ -134,12 +138,13 @@ The source `swedish.txt` is never modified.
 **Starting a new game translation (first time only):**
 
 ```bash
-# 1. Extract game assets (populates game/<game>/gen/strings/english.txt)
-bash scripts/extract.sh
+# 1. Extract game assets (populates games/<game>/gen/strings/english.txt)
+cd games/monkey1
+bash ../../scripts/extract.sh
 
 # 2. Initialise the translation file — writes [E]-prefixed English lines into
-#    translation/<game>/swedish.txt. Safe: refuses to overwrite existing work.
-bash scripts/init_translation.sh monkey1
+#    games/<game>/translation/swedish.txt. Safe: refuses to overwrite existing work.
+bash ../../scripts/init_translation.sh
 ```
 
 The `[E]` prefix marks untranslated lines. A translated line looks like:
@@ -151,16 +156,16 @@ Remove the `[E]` prefix as you translate each line.
 
 **Ongoing translation (per-session with Claude):**
 
-1. Open `translation/monkey1/swedish.txt` — `[E]`-prefixed lines are untranslated.
+1. Open `games/monkey1/translation/swedish.txt` — `[E]`-prefixed lines are untranslated.
 2. Translate in Claude, following `docs/TRANSLATION_GUIDE.md` for format rules
-   and `translation/monkey1/glossary.md` for vocabulary decisions.
+   and `translation/glossary.md` for vocabulary decisions.
 3. Replace `[E]`-prefixed lines with the Swedish translation (no prefix).
-4. Build and test: `bash scripts/build.sh`, then run the patcher on game files.
+4. Build and test: `cd games/monkey1 && bash ../../scripts/build.sh`, then run the patcher on game files.
 
 **Translation reference docs:**
 - `docs/TRANSLATION_GUIDE.md` — file format, opcodes, control codes
 - `docs/TRANSLATION_PLAN.md` — multi-pass workflow and translation philosophy
-- `translation/monkey1/glossary.md` — vocabulary and naming decisions
+- `translation/glossary.md` — vocabulary and naming decisions
 
 ---
 
@@ -168,7 +173,7 @@ Remove the `[E]` prefix as you translate each line.
 
 ```bash
 go test ./...                            # unit tests (fast, no game files needed)
-go test -tags integration ./...         # unit + integration (needs game/monkey1/Monkey1.pak)
+go test -tags integration ./...         # unit + integration (needs games/monkey1/game/Monkey1.pak)
 ```
 
 **Note:** `charset` asset tests (`-tags buildpatcher`) validate the embedded CHAR blocks and only
@@ -187,6 +192,7 @@ go test -tags buildpatcher ./internal/charset/...
 - **Self-contained patcher** — single binary + `swedish.txt`; user needs no other tools
 - **English strings replaced directly** — no language setting change required
 - **scummtr format** — `swedish.txt` uses scummtr format, compatible with monkeycd_swe
+- **Multi-game structure** — each game has its own workspace under `games/<game>/`
 
 ---
 
@@ -201,8 +207,8 @@ Read these when working on translation or tooling:
 | `docs/FRS.md` | Checking functional requirements or adding a new game |
 | `docs/TEST_PLAN.md` | Writing or running tests — what exists and what it covers |
 | `docs/INSULT_COMEBACK_MAPPINGS_ENGLISH.md` | Working on sword-fight insults/comebacks — the EN pairs and their logic |
-| `translation/monkey1/glossary.md` | Any translation decision — vocabulary, names, register choices |
-| `translation/monkey1/PASS1_NOTES.md` | Reviewing or continuing insult swordfighting translations |
+| `translation/glossary.md` | Any translation decision — vocabulary, names, register choices |
+| `games/monkey1/translation/PASS1_NOTES.md` | Reviewing or continuing insult swordfighting translations |
 | `tools/README.md` | Using or modifying the Python tools |
 
 ---
@@ -215,7 +221,7 @@ These apply to all work in this repo:
 
 **Commits:** Commit to git whenever a unit of work is complete and working — don't let changes accumulate. Use `git add <specific files>` not `git add -A` to avoid accidentally staging game files or build artifacts.
 
-**Gitignored files:** Never use `git add -f` to force-commit files from `game/`, `dist/`, or other gitignored paths. Those directories contain game files and build outputs that must not be in the repo.
+**Gitignored files:** Never use `git add -f` to force-commit files from `games/*/game/`, `games/*/gen/`, `games/*/dist/`, or other gitignored paths. Those directories contain game files and build outputs that must not be in the repo.
 
 **Embedded binaries:** Never create placeholder files for `//go:embed` assets. If a binary is missing, download or build the real one immediately. A placeholder compiles but fails at runtime.
 

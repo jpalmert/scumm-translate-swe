@@ -1,20 +1,24 @@
 # Game files — never commit copyrighted content
+games/*/game/
+
+# Extracted assets (regenerate with scripts/extract.sh)
+games/*/gen/
+
+# Output patches and distributable binaries
+games/*/dist/
+
+# Legacy top-level dirs (kept for local installs that haven't moved yet)
 game/
+dist/
 
-# Generated charset assets (produced by scripts/build_patcher.sh)
-# Source of truth: internal/charset/bitmaps/*.bmp (Swedish BMPs) + game/monkey1/gen/ (extracted from game)
+# Generated charset assets (produced by scripts/build.sh)
+# Source of truth: internal/charset/bitmaps/*.bmp (Swedish BMPs) + extracted English CHAR blocks
 internal/charset/gen/
-
-# game/ is already gitignored above; game/monkey1/gen/ holds all assets extracted
-# from the game (CHAR blocks, BMPs, strings) — regenerate with scripts/extract.sh
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
-
-# Output patches and distributable binaries
-dist/
 
 # OS
 .DS_Store

@@ -1,41 +1,41 @@
 #!/usr/bin/env bash
-# build.sh — Build the MI1 Swedish translation patcher
+# build.sh — Build the Swedish translation patcher for the active game.
 #
-# Run from the repo root:
-#   bash scripts/build.sh
+# The active game is determined by pwd (must be inside games/<game>/).
 #
 # Steps:
 #   1. Verify tool binaries are present (scummtr, scummfont).
 #      These are committed to git. If missing, run: bash scripts/install_deps.sh
 #   2. Generate Swedish CHAR block assets (internal/charset/gen/):
-#        - Use cached English CHAR blocks from game/monkey1/gen/charset/english/
+#        - Use cached English CHAR blocks from games/<game>/gen/charset/english/
 #          (populate with: bash scripts/extract_assets.sh)
 #        - Import Swedish glyph BMPs with scummfont
-#   3. Copy Swedish translation file to dist/
-#   4. Cross-compile patcher for Linux, macOS, and Windows into dist/
+#   3. Copy Swedish translation file to games/<game>/dist/
+#   4. Cross-compile patcher for Linux, macOS, and Windows into games/<game>/dist/
+#   5. Package per-OS zip archives for distribution
 #
 # Output:
-#   dist/mi1-translate-linux
-#   dist/mi1-translate-darwin
-#   dist/mi1-translate-windows.exe
-#   dist/swedish.txt     ← ship alongside the binaries
+#   games/<game>/dist/mi1-translate-linux.zip      ← Linux release archive
+#   games/<game>/dist/mi1-translate-macos.zip      ← macOS release archive
+#   games/<game>/dist/mi1-translate-windows.zip    ← Windows release archive
 #
 # Requirements:
 #   - Go 1.21+  (go build)
 #   - Tool binaries in git (scummtr, scummrp, scummfont — run install_deps.sh if missing)
-#   - Extracted English CHAR blocks in game/monkey1/gen/charset/english/
-#     (run: bash scripts/extract.sh [Monkey1.pak | game_dir])
+#   - Extracted English CHAR blocks in games/<game>/gen/charset/english/
+#     (run: cd games/<game> && bash ../../scripts/extract.sh)
 #
-# Usage of the built patcher (for users):
-#   Place mi1-translate-linux and swedish.txt next to your game files and run it.
-#   After patching, start a new game to see Swedish text.
+# Usage:
+#   cd games/monkey1 && bash ../../scripts/build.sh
 
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
+detect_game
+
 ASSETS_DIR="$REPO_ROOT/internal/classic/assets"
-DIST_DIR="$REPO_ROOT/dist"
-TRANSLATION_SRC="$REPO_ROOT/translation/monkey1/swedish.txt"
+DIST_DIR="$GAME_DIST"
+TRANSLATION_SRC="$GAME_TRANSLATION/swedish.txt"
 
 SCUMMFONT="$REPO_ROOT/bin/linux/scummfont"
 if [[ "$(uname)" == "Darwin" ]]; then
@@ -76,7 +76,7 @@ echo "=== Step 2: Generate Swedish CHAR block assets ==="
 
 # Use committed English CHAR blocks as templates for scummfont import.
 # Populate by running: bash scripts/extract_assets.sh
-CHAR_CACHE="$REPO_ROOT/game/monkey1/gen/charset/english"
+CHAR_CACHE="$GAME_GEN/charset/english"
 missing_cache=()
 for n in CHAR_0001 CHAR_0002 CHAR_0003 CHAR_0004 CHAR_0006; do
     [[ -f "$CHAR_CACHE/$n" ]] || missing_cache+=("$n")
@@ -85,7 +85,7 @@ if [[ ${#missing_cache[@]} -gt 0 ]]; then
     echo "ERROR: English CHAR block cache is missing files:" >&2
     for n in "${missing_cache[@]}"; do echo "  $CHAR_CACHE/$n" >&2; done
     echo "" >&2
-    echo "Run: bash scripts/extract.sh [Monkey1.pak | game_dir]" >&2
+    echo "Run: cd games/$GAME && bash ../../scripts/extract.sh" >&2
     exit 1
 fi
 
@@ -120,7 +120,7 @@ if [ ! -f "$TRANSLATION_SRC" ]; then
     exit 1
 fi
 cp "$TRANSLATION_SRC" "$DIST_DIR/swedish.txt"
-echo "  $TRANSLATION_SRC -> dist/swedish.txt"
+echo "  $TRANSLATION_SRC -> $DIST_DIR/swedish.txt"
 
 # ---------------------------------------------------------------------------
 echo ""
@@ -153,10 +153,22 @@ build_binary windows amd64 mi1-translate-windows.exe
 
 # ---------------------------------------------------------------------------
 echo ""
+echo "=== Step 5: Package release archives ==="
+
+cd "$DIST_DIR"
+zip -j mi1-translate-linux.zip   mi1-translate-linux     swedish.txt
+zip -j mi1-translate-macos.zip   mi1-translate-darwin     swedish.txt
+zip -j mi1-translate-windows.zip mi1-translate-windows.exe swedish.txt
+cd "$REPO_ROOT"
+
+echo "  Created release archives."
+
+# ---------------------------------------------------------------------------
+echo ""
 echo "=== Done! ==="
 echo ""
-echo "Output in dist/:"
+echo "Output in $DIST_DIR/:"
 ls -lh "$DIST_DIR/"
 echo ""
-echo "Distribute all files in dist/ together (binaries + swedish.txt)."
-echo "After patching, start a new game to see Swedish text."
+echo "Upload the .zip files to a GitHub release:"
+echo "  gh release create v1.0.0 $DIST_DIR/*.zip --title 'v1.0.0'"

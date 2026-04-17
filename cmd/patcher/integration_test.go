@@ -38,8 +38,8 @@ func integrationPaths(t *testing.T) (pakPath, translationPath string) {
 	t.Helper()
 	root := repoRoot(t)
 
-	pakPath = filepath.Join(root, "game", "monkey1", "Monkey1.pak")
-	translationPath = filepath.Join(root, "translation", "monkey1", "swedish.txt")
+	pakPath = filepath.Join(root, "games", "monkey1", "game", "Monkey1.pak")
+	translationPath = filepath.Join(root, "games", "monkey1", "translation", "swedish.txt")
 
 	var missing []string
 	for _, p := range []string{pakPath, translationPath} {
