@@ -34,9 +34,11 @@ def scumm_byte_len(text):
     n, i = 0, 0
     while i < len(text):
         if text[i] == '\\' and i + 3 < len(text) and text[i+1:i+4].isdigit():
-            n += 1; i += 4
+            n += 1
+            i += 4
         else:
-            n += 1; i += 1
+            n += 1
+            i += 1
     return n
 
 

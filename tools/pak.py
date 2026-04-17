@@ -226,7 +226,6 @@ def repack(input_dir, output_pak, reference_pak, game=None):
         write_order = list(range(num_files))
 
     # Build updated entries: recalculate data_pos based on new sizes
-    accumulated_offset = 0
     offset_map = {}  # original data_pos -> new data_pos
     current_pos = 0
 

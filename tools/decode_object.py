@@ -4,169 +4,13 @@ Decode SCUMM v5 object images (OBIM) to PNG.
 Usage: python3 decode_object.py <obim_file> <output.png>
 """
 
+import os
 import struct
 import sys
 from PIL import Image
 
-def be32(data, pos):
-    return struct.unpack_from('>I', data, pos)[0]
+from scumm_gfx import be32, le32, le16, find_block, decode_strip
 
-def le32(data, pos):
-    return struct.unpack_from('<I', data, pos)[0]
-
-def le16(data, pos):
-    return struct.unpack_from('<H', data, pos)[0]
-
-def find_block(data, start, end, tag):
-    pos = start
-    tag_b = tag.encode('ascii')
-    while pos + 8 <= end:
-        if data[pos:pos+4] == tag_b:
-            return pos
-        size = be32(data, pos+4)
-        if size < 8:
-            break
-        pos += size
-    return -1
-
-def decode_strip_raw(src, height):
-    """Codec 1: raw uncompressed pixels"""
-    return list(src[:8 * height])
-
-def decode_strip_basic(src, height, decomp_shr, decomp_mask, horizontal):
-    """Codecs 14-18, 24-28, 34-38, 44-48: bit-delta encoding"""
-    pos   = 0
-    color = src[pos]; pos += 1
-    bits  = src[pos]; pos += 1
-    cl    = 8
-    inc   = -1
-    pixels = [0] * (8 * height)
-
-    def fill_bits():
-        nonlocal bits, cl, pos
-        if cl <= 8:
-            if pos < len(src):
-                bits |= src[pos] << cl
-                pos += 1
-            cl += 8
-
-    def read_bit():
-        nonlocal bits, cl
-        cl -= 1
-        b = bits & 1
-        bits >>= 1
-        return b
-
-    if horizontal:
-        for row in range(height):
-            for col in range(8):
-                fill_bits()
-                pixels[row * 8 + col] = color
-                if not read_bit():
-                    pass
-                elif not read_bit():
-                    fill_bits()
-                    color = bits & decomp_mask
-                    bits >>= decomp_shr
-                    cl -= decomp_shr
-                    inc = -1
-                elif not read_bit():
-                    color = (color + inc) & 0xff
-                else:
-                    inc = -inc
-                    color = (color + inc) & 0xff
-    else:
-        for col in range(8):
-            for row in range(height):
-                fill_bits()
-                pixels[row * 8 + col] = color
-                if not read_bit():
-                    pass
-                elif not read_bit():
-                    fill_bits()
-                    color = bits & decomp_mask
-                    bits >>= decomp_shr
-                    cl -= decomp_shr
-                    inc = -1
-                elif not read_bit():
-                    color = (color + inc) & 0xff
-                else:
-                    inc = -inc
-                    color = (color + inc) & 0xff
-
-    return pixels
-
-def decode_strip_majmin(src, height, decomp_shr):
-    """Codecs 64-68, 84-88, 104-108, 124-128: MajMinCodec (from ScummVM gfx.cpp)"""
-    color        = src[0]
-    bits         = src[1] | (src[2] << 8)
-    num_bits     = 16
-    data_pos     = 3
-    repeat_mode  = False
-    repeat_count = 0
-    pixels = [0] * (8 * height)
-
-    def fill():
-        nonlocal bits, num_bits, data_pos
-        if num_bits <= 8:
-            if data_pos < len(src):
-                bits |= src[data_pos] << num_bits
-                data_pos += 1
-            num_bits += 8
-
-    def read_bits(n):
-        nonlocal bits, num_bits
-        fill()
-        val = bits & ((1 << n) - 1)
-        bits >>= n
-        num_bits -= n
-        return val
-
-    for row in range(height):
-        for col in range(8):
-            nonlocal_color = color
-            pixels[row * 8 + col] = nonlocal_color
-
-            if not repeat_mode:
-                if read_bits(1):
-                    if read_bits(1):
-                        diff = read_bits(3) - 4
-                        if diff:
-                            color = (color + diff) & 0xff
-                        else:
-                            repeat_mode = True
-                            repeat_count = read_bits(8) - 1
-                    else:
-                        color = read_bits(decomp_shr)
-            else:
-                repeat_count -= 1
-                if repeat_count == 0:
-                    repeat_mode = False
-
-    return pixels
-
-def decode_strip(src, height):
-    """Decode a single strip based on codec byte"""
-    codec = src[0]
-    data  = src[1:]
-    decomp_shr  = codec % 10
-    decomp_mask = 0xFF >> (8 - decomp_shr) if decomp_shr > 0 else 0xFF
-
-    if codec == 1:
-        return decode_strip_raw(data, height)
-    elif 14 <= codec <= 18:
-        return decode_strip_basic(data, height, decomp_shr, decomp_mask, horizontal=False)
-    elif 24 <= codec <= 28:
-        return decode_strip_basic(data, height, decomp_shr, decomp_mask, horizontal=True)
-    elif 34 <= codec <= 38:
-        return decode_strip_basic(data, height, decomp_shr, decomp_mask, horizontal=False)
-    elif 44 <= codec <= 48:
-        return decode_strip_basic(data, height, decomp_shr, decomp_mask, horizontal=True)
-    elif (64 <= codec <= 68) or (84 <= codec <= 88) or \
-         (104 <= codec <= 108) or (124 <= codec <= 128):
-        return decode_strip_majmin(data, height, decomp_shr)
-    else:
-        raise ValueError(f"Unsupported codec: {codec}")
 
 def decode_object(obim_path, out_path, room_dir=None):
     """Decode OBIM file to PNG
@@ -176,13 +20,12 @@ def decode_object(obim_path, out_path, room_dir=None):
         out_path: Output PNG path
         room_dir: Optional path to room directory containing CLUT for palette
     """
-    obim = open(obim_path, 'rb').read()
+    with open(obim_path, 'rb') as f:
+        obim = f.read()
 
     # OBIM structure: OBIM tag, then IMHD (header), IMAG (image data)
     if obim[:4] != b'OBIM':
         raise ValueError("Not an OBIM file")
-
-    obim_size = be32(obim, 4)
 
     # Find IMHD (image header)
     imhd_pos = find_block(obim, 8, len(obim), 'IMHD')
@@ -206,10 +49,10 @@ def decode_object(obim_path, out_path, room_dir=None):
     # Load palette from room CLUT if available
     palette = None
     if room_dir:
-        import os
         clut_path = os.path.join(room_dir, 'CLUT')
         if os.path.exists(clut_path):
-            clut = open(clut_path, 'rb').read()
+            with open(clut_path, 'rb') as f:
+                clut = f.read()
             pal_raw = clut[8:]  # Skip CLUT tag + size
             palette = [(pal_raw[i*3], pal_raw[i*3+1], pal_raw[i*3+2]) for i in range(256)]
 

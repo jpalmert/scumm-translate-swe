@@ -35,6 +35,7 @@ import struct
 import subprocess
 import sys
 import tempfile
+from collections import defaultdict
 
 
 def find_bin(name):
@@ -148,7 +149,6 @@ def main():
         with open(scummtr_out, "r", encoding="latin-1") as f:
             all_scummtr_lines = [l.rstrip("\r\n") for l in f]
 
-        from collections import defaultdict
         header_occurrences = defaultdict(list)  # header -> [(data_line_number_1based, text)]
 
         # Count only data lines (starting with [) — this matches swedish.txt

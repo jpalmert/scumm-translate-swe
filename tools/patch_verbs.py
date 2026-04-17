@@ -99,10 +99,11 @@ def patch(input_path: str, output_path: str) -> None:
         old_x, old_y = data[x_off], data[x_off + 2]
         data[x_off] = new_x
         data[x_off + 2] = new_y
-        moved = "→" if (old_x, old_y) != (new_x, new_y) else "  (unchanged)"
+        changed = (old_x, old_y) != (new_x, new_y)
+        suffix = "" if changed else "  (unchanged)"
         print(
             f"  {description:<8} (0x{func_code:02X}): "
-            f"x=0x{old_x:02X},y=0x{old_y:02X} → x=0x{new_x:02X},y=0x{new_y:02X}{moved if isinstance(moved, str) and moved.startswith('  ') else ''}"
+            f"x=0x{old_x:02X},y=0x{old_y:02X} \u2192 x=0x{new_x:02X},y=0x{new_y:02X}{suffix}"
         )
 
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
