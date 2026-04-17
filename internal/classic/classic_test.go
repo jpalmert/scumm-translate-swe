@@ -101,8 +101,7 @@ func TestEncodeForScummtrStripsOpcode(t *testing.T) {
 		t.Fatalf("unexpected error: %v", err)
 	}
 	// Opcodes stripped; empty content padded; Swedish chars encoded.
-	want := "[001:OBNA#0016]djungel\n[001:VERB#0026]Det \x5cr en flaska.\n[002:SCRP#0037] \n"
-	want = "[001:OBNA#0016]djungel\n[001:VERB#0026]Det \\124r en flaska.\n[002:SCRP#0037] \n"
+	want := "[001:OBNA#0016]djungel\n[001:VERB#0026]Det \\124r en flaska.\n[002:SCRP#0037] \n"
 	if string(got) != want {
 		t.Errorf("got %q, want %q", got, want)
 	}

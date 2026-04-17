@@ -74,6 +74,28 @@ func buildSyntheticPAK(t *testing.T, magic [4]byte, files []struct{ name, data s
 
 var gogMagic = [4]byte{'K', 'A', 'P', 'L'}
 
+// fontAddr returns the byte offset within a .font file for the given character code.
+func fontAddr(code byte) int { return (int(code)-0x20)*2 + 0x5A }
+
+// writeSETestFixture builds a synthetic PAK with the given magic and entries,
+// writes it to a temp dir alongside a translation file, and returns the PAK
+// path and translation file path.
+func writeSETestFixture(t *testing.T, magic [4]byte, entries []struct{ name, data string }) (pakPath, txPath string) {
+	t.Helper()
+	raw := buildSyntheticPAK(t, magic, entries)
+	dir := t.TempDir()
+	pakPath = filepath.Join(dir, "Monkey1.pak")
+	os.WriteFile(pakPath, raw, 0644)
+	txPath = filepath.Join(dir, "swedish.txt")
+	os.WriteFile(txPath, []byte("translation"), 0644)
+	return pakPath, txPath
+}
+
+var defaultSEEntries = []struct{ name, data string }{
+	{"classic/en/monkey1.000", "data000"},
+	{"classic/en/monkey1.001", "data001"},
+}
+
 // --- SE tests ---
 
 // SE-001: Non-existent input PAK → clear error.
@@ -89,103 +111,63 @@ func TestRunSEPatchMissingInput(t *testing.T) {
 
 // SE-002: Invalid magic in PAK → clear error.
 func TestRunSEPatchInvalidMagic(t *testing.T) {
-	raw := buildSyntheticPAK(t, [4]byte{'X', 'P', 'A', 'K'}, []struct{ name, data string }{
-		{"classic/en/monkey1.000", "data000"},
-		{"classic/en/monkey1.001", "data001"},
-	})
-	dir := t.TempDir()
-	inPath := filepath.Join(dir, "Monkey1.pak")
-	os.WriteFile(inPath, raw, 0644)
-	txFile := filepath.Join(dir, "swedish.txt")
-	os.WriteFile(txFile, []byte("translation"), 0644)
+	pakPath, txPath := writeSETestFixture(t, [4]byte{'X', 'P', 'A', 'K'}, defaultSEEntries)
 
-	if err := runSEPatch(inPath, "", txFile); err == nil {
+	if err := runSEPatch(pakPath, "", txPath); err == nil {
 		t.Fatal("expected error for invalid PAK magic")
 	}
 }
 
 // SE-003: PAK missing classic/en/monkey1.000 → clear error.
 func TestRunSEPatchMissing000(t *testing.T) {
-	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
+	pakPath, txPath := writeSETestFixture(t, gogMagic, []struct{ name, data string }{
 		{"classic/en/monkey1.001", "data001"},
 	})
-	dir := t.TempDir()
-	inPath := filepath.Join(dir, "Monkey1.pak")
-	os.WriteFile(inPath, raw, 0644)
-	txFile := filepath.Join(dir, "swedish.txt")
-	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	if err := runSEPatch(inPath, "", txFile); err == nil {
+	if err := runSEPatch(pakPath, "", txPath); err == nil {
 		t.Fatal("expected error for missing monkey1.000 entry")
 	}
 }
 
 // SE-004: PAK missing classic/en/monkey1.001 → clear error.
 func TestRunSEPatchMissing001(t *testing.T) {
-	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
+	pakPath, txPath := writeSETestFixture(t, gogMagic, []struct{ name, data string }{
 		{"classic/en/monkey1.000", "data000"},
 	})
-	dir := t.TempDir()
-	inPath := filepath.Join(dir, "Monkey1.pak")
-	os.WriteFile(inPath, raw, 0644)
-	txFile := filepath.Join(dir, "swedish.txt")
-	os.WriteFile(txFile, []byte("translation"), 0644)
 
-	if err := runSEPatch(inPath, "", txFile); err == nil {
+	if err := runSEPatch(pakPath, "", txPath); err == nil {
 		t.Fatal("expected error for missing monkey1.001 entry")
 	}
 }
 
 // SE-005: Translation file not found → clear error.
 func TestRunSEPatchMissingTranslation(t *testing.T) {
-	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
-		{"classic/en/monkey1.000", "data000"},
-		{"classic/en/monkey1.001", "data001"},
-	})
-	dir := t.TempDir()
-	inPath := filepath.Join(dir, "Monkey1.pak")
-	os.WriteFile(inPath, raw, 0644)
+	pakPath, _ := writeSETestFixture(t, gogMagic, defaultSEEntries)
 
-	if err := runSEPatch(inPath, "", "/nonexistent/swedish.txt"); err == nil {
+	if err := runSEPatch(pakPath, "", "/nonexistent/swedish.txt"); err == nil {
 		t.Fatal("expected error for missing translation file")
 	}
 }
 
 // SE-006: In-place mode creates a .bak file before injection.
 func TestRunSEPatchInPlaceCreatesBackup(t *testing.T) {
-	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
-		{"classic/en/monkey1.000", "data000"},
-		{"classic/en/monkey1.001", "data001"},
-	})
-	dir := t.TempDir()
-	inPath := filepath.Join(dir, "Monkey1.pak")
-	os.WriteFile(inPath, raw, 0644)
-	txFile := filepath.Join(dir, "swedish.txt")
-	os.WriteFile(txFile, []byte("translation"), 0644)
+	pakPath, txPath := writeSETestFixture(t, gogMagic, defaultSEEntries)
 
-	runSEPatch(inPath, "", txFile) //nolint:errcheck — failure expected (fake data)
+	runSEPatch(pakPath, "", txPath) //nolint:errcheck — failure expected (fake data)
 
-	if _, err := os.Stat(inPath + ".bak"); err != nil {
-		t.Errorf("backup not created at %s.bak", inPath)
+	if _, err := os.Stat(pakPath + ".bak"); err != nil {
+		t.Errorf("backup not created at %s.bak", pakPath)
 	}
 }
 
 // SE-007: Explicit output path → no backup created for input.
 func TestRunSEPatchExplicitOutputNoBackup(t *testing.T) {
-	raw := buildSyntheticPAK(t, gogMagic, []struct{ name, data string }{
-		{"classic/en/monkey1.000", "data000"},
-		{"classic/en/monkey1.001", "data001"},
-	})
-	dir := t.TempDir()
-	inPath := filepath.Join(dir, "Monkey1.pak")
-	os.WriteFile(inPath, raw, 0644)
-	txFile := filepath.Join(dir, "swedish.txt")
-	os.WriteFile(txFile, []byte("translation"), 0644)
-	outPath := filepath.Join(dir, "Monkey1_patched.pak")
+	pakPath, txPath := writeSETestFixture(t, gogMagic, defaultSEEntries)
+	outPath := filepath.Join(filepath.Dir(pakPath), "Monkey1_patched.pak")
 
-	runSEPatch(inPath, outPath, txFile) //nolint:errcheck — failure expected (fake data)
+	runSEPatch(pakPath, outPath, txPath) //nolint:errcheck — failure expected (fake data)
 
-	if _, err := os.Stat(inPath + ".bak"); err == nil {
+	if _, err := os.Stat(pakPath + ".bak"); err == nil {
 		t.Error("backup should not be created when explicit output path is given")
 	}
 }
@@ -220,7 +202,6 @@ func TestRemapFontEntries(t *testing.T) {
 		t.Errorf("patched %d font files, want 1", count)
 	}
 
-	fontAddr := func(code byte) int { return (int(code)-0x20)*2 + 0x5A }
 	// Verify all 7 SCUMM codes are remapped to the correct glyph indices.
 	cases := []struct{ scumm, want byte }{
 		{91, 107},  // Å
@@ -306,25 +287,7 @@ func TestRunClassicPatchMissingTranslation(t *testing.T) {
 	}
 }
 
-// CLASSIC-005: Backups are created for both game files.
-func TestRunClassicPatchCreatesBackups(t *testing.T) {
-	dir := t.TempDir()
-	os.WriteFile(filepath.Join(dir, "MONKEY1.000"), []byte("data000"), 0644)
-	os.WriteFile(filepath.Join(dir, "MONKEY1.001"), []byte("data001"), 0644)
-	txFile := filepath.Join(dir, "swedish.txt")
-	os.WriteFile(txFile, []byte("translation"), 0644)
-
-	runClassicPatch(dir, txFile) //nolint:errcheck — failure expected (fake data)
-
-	for _, name := range []string{"MONKEY1.000.bak", "MONKEY1.001.bak"} {
-		bakPath := filepath.Join(dir, name)
-		if _, err := os.Stat(bakPath); err != nil {
-			t.Errorf("backup not created at %s", bakPath)
-		}
-	}
-}
-
-// CLASSIC-005b: Backup content matches original files.
+// CLASSIC-005: Backups are created for both game files with correct content.
 func TestRunClassicPatchBackupContent(t *testing.T) {
 	dir := t.TempDir()
 	orig000 := []byte("original-monkey1-000-data")
