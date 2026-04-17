@@ -159,6 +159,8 @@ cd "$DIST_DIR"
 zip -j mi1-translate-linux.zip   mi1-translate-linux     swedish.txt
 zip -j mi1-translate-macos.zip   mi1-translate-darwin     swedish.txt
 zip -j mi1-translate-windows.zip mi1-translate-windows.exe swedish.txt
+
+rm -f mi1-translate-linux mi1-translate-darwin mi1-translate-windows.exe swedish.txt
 cd "$REPO_ROOT"
 
 echo "  Created release archives."
