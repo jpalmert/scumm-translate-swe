@@ -134,8 +134,8 @@ A synthetic PAK with fake game data is used; scummtr will fail, but the backup m
 created before the injection step is reached.
 #### SE-007: Explicit output path → no backup created for input
 #### SE-010: `remapFontEntries` patches `.font` entries and skips others
-Synthetic font data with Swedish glyphs at Windows-1252 positions. Assert all 7 SCUMM codes
-(91=Å, 92=Ä, 93=Ö, 123=å, 124=ä, 125=ö, 130=é) map to the expected glyph indices. Assert non-font entries unchanged.
+Synthetic font data with Swedish glyphs at Windows-1252 positions. Assert all 8 SCUMM codes
+(91=Å, 92=Ä, 93=Ö, 123=å, 124=ä, 125=ö, 130=é, 136=ê) map to the expected glyph indices. Assert non-font entries unchanged.
 #### SE-011: `remapFontEntries` returns error when a font is missing a required glyph
 #### SE-012: `remapFontEntries` with no `.font` entries returns 0, nil (graceful no-op)
 

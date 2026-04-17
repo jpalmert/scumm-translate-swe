@@ -38,6 +38,7 @@ var SwedishRemapping = map[byte]byte{
 	124: 0xE4, // ä
 	125: 0xF6, // ö
 	130: 0xE9, // é
+	136: 0xEA, // ê
 }
 
 // RemapLookup updates the glyph lookup table in a .font file so that each

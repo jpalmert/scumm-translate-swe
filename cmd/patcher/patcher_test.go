@@ -179,7 +179,7 @@ func TestRemapFontEntries(t *testing.T) {
 		addr := (int(code)-0x20)*2 + 0x5A
 		data[addr] = idx
 	}
-	// Populate Windows-1252 source positions for all 7 Swedish characters.
+	// Populate Windows-1252 source positions for all 8 Swedish characters.
 	setGlyph(fontData, 0xC5, 107) // Å
 	setGlyph(fontData, 0xC4, 106) // Ä
 	setGlyph(fontData, 0xD6, 119) // Ö
@@ -187,6 +187,7 @@ func TestRemapFontEntries(t *testing.T) {
 	setGlyph(fontData, 0xE4, 127) // ä
 	setGlyph(fontData, 0xF6, 143) // ö
 	setGlyph(fontData, 0xE9, 132) // é
+	setGlyph(fontData, 0xEA, 133) // ê
 
 	other := []byte("not a font file")
 	entries := []*pak.Entry{
@@ -202,7 +203,7 @@ func TestRemapFontEntries(t *testing.T) {
 		t.Errorf("patched %d font files, want 1", count)
 	}
 
-	// Verify all 7 SCUMM codes are remapped to the correct glyph indices.
+	// Verify all 8 SCUMM codes are remapped to the correct glyph indices.
 	cases := []struct{ scumm, want byte }{
 		{91, 107},  // Å
 		{92, 106},  // Ä
@@ -211,6 +212,7 @@ func TestRemapFontEntries(t *testing.T) {
 		{124, 127}, // ä
 		{125, 143}, // ö
 		{130, 132}, // é
+		{136, 133}, // ê
 	}
 	for _, tc := range cases {
 		if got := entries[0].Data[fontAddr(tc.scumm)]; got != tc.want {

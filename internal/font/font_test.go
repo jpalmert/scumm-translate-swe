@@ -23,6 +23,7 @@ func setSwedishSourceGlyphs(data []byte) {
 	setGlyph(data, 0xE4, 127) // ä
 	setGlyph(data, 0xF6, 143) // ö
 	setGlyph(data, 0xE9, 132) // é
+	setGlyph(data, 0xEA, 133) // ê
 }
 
 // setGlyph writes a glyph index into the lookup table at the given character code.
@@ -37,9 +38,9 @@ func getGlyph(data []byte, code byte) byte {
 	return data[addr]
 }
 
-// FONT-001: All 7 Swedish characters are remapped from their SCUMM codes to
+// FONT-001: All 8 Swedish characters are remapped from their SCUMM codes to
 // their Windows-1252 glyph positions. Å/Ä/Ö/å/ä/ö use SCUMM codes 91–93 and
-// 123–125; é uses SCUMM code 130.
+// 123–125; é uses SCUMM code 130; ê uses SCUMM code 136.
 func TestRemapLookupSwedish(t *testing.T) {
 	data := minFontData()
 	setSwedishSourceGlyphs(data)
@@ -61,6 +62,7 @@ func TestRemapLookupSwedish(t *testing.T) {
 		{124, 0xE4, "ä"},
 		{125, 0xF6, "ö"},
 		{130, 0xE9, "é"},
+		{136, 0xEA, "ê"},
 	}
 	for _, tc := range cases {
 		want := getGlyph(data, tc.srcCode)
