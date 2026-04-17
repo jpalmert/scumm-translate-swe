@@ -103,24 +103,6 @@ func Patch(path string, mapping map[string][][]byte) (int, error) {
 	return count, nil
 }
 
-// patchSlot checks the EN slot at enOffset against mapping and replaces it if
-// a match is found.  Returns 1 if the slot was updated, 0 otherwise.
-func patchSlot(data []byte, enOffset int, mapping map[string][][]byte) int {
-	if enOffset+slotSize > len(data) {
-		return 0
-	}
-	enText := slotString(data[enOffset : enOffset+slotSize])
-	if enText == "" {
-		return 0
-	}
-	svList, ok := mapping[enText]
-	if !ok || len(svList) == 0 {
-		return 0
-	}
-	writeSlot(data[enOffset:enOffset+slotSize], svList[0])
-	return 1
-}
-
 // slotString reads a null-terminated string from a fixed-size slot.
 func slotString(slot []byte) string {
 	for i, b := range slot {

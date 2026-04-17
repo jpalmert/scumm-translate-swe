@@ -36,9 +36,7 @@ import (
 	"fmt"
 	"io/fs"
 	"os"
-	"os/exec"
 	"path/filepath"
-	"runtime"
 )
 
 // verbEntry describes how to reposition one verb action button.
@@ -70,49 +68,19 @@ var verbLayout = []verbEntry{
 // strings (which may already be in Swedish from a prior scummtr injection) are
 // preserved unchanged.
 func PatchVerbLayout(gameDir string) error {
-	var scummrpBin []byte
-	var scummrpName string
-	switch runtime.GOOS {
-	case "linux":
-		scummrpBin = scummrpLinux
-		scummrpName = "scummrp"
-	case "darwin":
-		scummrpBin = scummrpDarwin
-		scummrpName = "scummrp"
-	case "windows":
-		scummrpBin = scummrpWindows
-		scummrpName = "scummrp.exe"
-	default:
-		return fmt.Errorf("unsupported platform: %s", runtime.GOOS)
-	}
-
-	tmpDir, err := os.MkdirTemp("", "scummrp-verbs-*")
+	env, err := setupScummrp("scummrp-verbs-*")
 	if err != nil {
 		return err
 	}
-	defer os.RemoveAll(tmpDir)
-
-	scummrpPath := filepath.Join(tmpDir, scummrpName)
-	if err := os.WriteFile(scummrpPath, scummrpBin, 0755); err != nil {
-		return err
-	}
-
-	dumpDir := filepath.Join(tmpDir, "dump")
-
-	run := func(args ...string) error {
-		cmd := exec.Command(scummrpPath, args...)
-		cmd.Stdout = os.Stdout
-		cmd.Stderr = os.Stderr
-		return cmd.Run()
-	}
+	defer env.cleanup()
 
 	// Dump all SCRP blocks from MONKEY1.001.
-	if err := run("-g", "monkeycdalt", "-p", gameDir, "-t", "SCRP", "-od", dumpDir); err != nil {
+	if err := env.run("-g", "monkeycdalt", "-p", gameDir, "-t", "SCRP", "-od", env.dumpDir); err != nil {
 		return fmt.Errorf("scummrp export SCRP: %w", err)
 	}
 
 	// Locate SCRP_0022 in the dump — path differs between game variants.
-	scrpPath, err := findFileInTree(dumpDir, "SCRP_0022")
+	scrpPath, err := findFileInTree(env.dumpDir, "SCRP_0022")
 	if err != nil {
 		return fmt.Errorf("SCRP_0022 not found in scummrp dump: %w", err)
 	}
@@ -134,7 +102,7 @@ func PatchVerbLayout(gameDir string) error {
 	}
 
 	// Reimport the patched SCRP blocks back into MONKEY1.001.
-	if err := run("-g", "monkeycdalt", "-p", gameDir, "-t", "SCRP", "-id", dumpDir); err != nil {
+	if err := env.run("-g", "monkeycdalt", "-p", gameDir, "-t", "SCRP", "-id", env.dumpDir); err != nil {
 		return fmt.Errorf("scummrp import SCRP: %w", err)
 	}
 

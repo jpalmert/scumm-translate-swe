@@ -53,9 +53,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"os/exec"
 	"path/filepath"
-	"runtime"
 )
 
 // ErrCharDataNotBuilt is returned by Patch when the patched CHAR block data
@@ -73,51 +71,21 @@ func Patch(gameDir string) error {
 		return ErrCharDataNotBuilt
 	}
 
-	var scummrpBin []byte
-	var scummrpName string
-	switch runtime.GOOS {
-	case "linux":
-		scummrpBin = scummrpLinux
-		scummrpName = "scummrp"
-	case "darwin":
-		scummrpBin = scummrpDarwin
-		scummrpName = "scummrp"
-	case "windows":
-		scummrpBin = scummrpWindows
-		scummrpName = "scummrp.exe"
-	default:
-		return fmt.Errorf("unsupported platform: %s", runtime.GOOS)
-	}
-
-	tmpDir, err := os.MkdirTemp("", "scummrp-*")
+	env, err := setupScummrp("scummrp-*")
 	if err != nil {
 		return err
 	}
-	defer os.RemoveAll(tmpDir)
-
-	scummrpPath := filepath.Join(tmpDir, scummrpName)
-	if err := os.WriteFile(scummrpPath, scummrpBin, 0755); err != nil {
-		return err
-	}
-
-	dumpDir := filepath.Join(tmpDir, "dump")
-
-	run := func(args ...string) error {
-		cmd := exec.Command(scummrpPath, args...)
-		cmd.Stdout = os.Stdout
-		cmd.Stderr = os.Stderr
-		return cmd.Run()
-	}
+	defer env.cleanup()
 
 	// Export all CHAR blocks from MONKEY1.001 into the dump directory.
 	// scummrp decodes the XOR-encoded game file and reconstructs the block hierarchy.
-	if err := run("-g", "monkeycdalt", "-p", gameDir, "-t", "CHAR", "-od", dumpDir); err != nil {
+	if err := env.run("-g", "monkeycdalt", "-p", gameDir, "-t", "CHAR", "-od", env.dumpDir); err != nil {
 		return fmt.Errorf("scummrp export: %w", err)
 	}
 
 	// Overwrite the five CHAR blocks with their Swedish-patched versions.
 	// CHAR_0005 does not exist in monkeycdalt — that slot is simply unused.
-	charDir := filepath.Join(dumpDir, "DISK_0001", "LECF", "LFLF_0010")
+	charDir := filepath.Join(env.dumpDir, "DISK_0001", "LECF", "LFLF_0010")
 	for _, patch := range []struct {
 		name string
 		data []byte
@@ -136,7 +104,7 @@ func Patch(gameDir string) error {
 	// Re-import the patched CHAR blocks back into MONKEY1.001.
 	// scummrp re-encodes with XOR, recalculates LFLF/LECF sizes, updates the LOFF
 	// room-offset table, and rebuilds the DCHR charset directory entry.
-	if err := run("-g", "monkeycdalt", "-p", gameDir, "-t", "CHAR", "-id", dumpDir); err != nil {
+	if err := env.run("-g", "monkeycdalt", "-p", gameDir, "-t", "CHAR", "-id", env.dumpDir); err != nil {
 		return fmt.Errorf("scummrp import: %w", err)
 	}
 

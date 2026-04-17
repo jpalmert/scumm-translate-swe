@@ -200,8 +200,10 @@ func writeU32(buf *bytes.Buffer, v uint32) {
 }
 
 // padTo writes zero bytes until buf.Len() == target.
+// If buf already meets or exceeds target, it is a no-op.
 func padTo(buf *bytes.Buffer, target uint32) {
-	for uint32(buf.Len()) < target {
-		buf.WriteByte(0)
+	if uint32(buf.Len()) >= target {
+		return
 	}
+	buf.Write(make([]byte, target-uint32(buf.Len())))
 }

@@ -20,7 +20,7 @@ import (
 //
 //  1. Read the PAK and locate the embedded classic/en/monkey1.000 and .001.
 //  2. Extract them to a temp directory as MONKEY1.000/001 (uppercase).
-//  3. Inject translation + patch CHAR blocks (verb layout skipped — SE has its own verb UI).
+//  3. Inject translation + patch CHAR blocks + reorder verb layout (needed for F1 classic mode).
 //  4. Patch the glyph lookup table in every .font entry in the PAK.
 //  5. Repack the PAK with the modified classic files and updated .font entries.
 //
@@ -54,20 +54,9 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    %d files\n", len(entries))
 
-	var entry000, entry001 *pak.Entry
-	for _, e := range entries {
-		switch strings.ToLower(e.Name) {
-		case "classic/en/monkey1.000":
-			entry000 = e
-		case "classic/en/monkey1.001":
-			entry001 = e
-		}
-	}
-	if entry000 == nil {
-		return fmt.Errorf("classic/en/monkey1.000 not found — is this really Monkey1.pak?")
-	}
-	if entry001 == nil {
-		return fmt.Errorf("classic/en/monkey1.001 not found — is this really Monkey1.pak?")
+	entry000, entry001, err := findClassicEntries(entries)
+	if err != nil {
+		return err
 	}
 	fmt.Printf("    MONKEY1.000: %d bytes\n", len(entry000.Data))
 	fmt.Printf("    MONKEY1.001: %d bytes\n", len(entry001.Data))
@@ -86,17 +75,9 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 				return fmt.Errorf("reading backup PAK: %w", err)
 			}
 			// Re-locate classic entries in the freshly read backup.
-			entry000, entry001 = nil, nil
-			for _, e := range entries {
-				switch strings.ToLower(e.Name) {
-				case "classic/en/monkey1.000":
-					entry000 = e
-				case "classic/en/monkey1.001":
-					entry001 = e
-				}
-			}
-			if entry000 == nil || entry001 == nil {
-				return fmt.Errorf("classic files not found in backup PAK — backup may be corrupt")
+			entry000, entry001, err = findClassicEntries(entries)
+			if err != nil {
+				return fmt.Errorf("backup PAK: %w", err)
 			}
 			fmt.Printf("    MONKEY1.000: %d bytes (from backup)\n", len(entry000.Data))
 			fmt.Printf("    MONKEY1.001: %d bytes (from backup)\n", len(entry001.Data))
@@ -129,7 +110,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 		return err
 	}
 
-	// --- Step 6: Read patched files back into PAK entries ---
+	// --- Step 5: Read patched files back into PAK entries ---
 	fmt.Println("\n==> Reading patched classic files...")
 	patched000, err := os.ReadFile(filepath.Join(tmpDir, "MONKEY1.000"))
 	if err != nil {
@@ -145,7 +126,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	entry000.Data = patched000
 	entry001.Data = patched001
 
-	// --- Step 7: Patch font lookup tables ---
+	// --- Step 6: Patch font lookup tables ---
 	fmt.Println("\n==> Patching font lookup tables...")
 	fontCount, err := remapFontEntries(entries)
 	if err != nil {
@@ -153,7 +134,7 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
-	// --- Step 8: Repack PAK ---
+	// --- Step 7: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
@@ -175,6 +156,26 @@ func runListPAK(pakPath string) error {
 		fmt.Printf("%8d  %s\n", len(e.Data), e.Name)
 	}
 	return nil
+}
+
+// findClassicEntries locates the classic/en/monkey1.000 and .001 entries in
+// a PAK entry list. Returns an error if either is missing.
+func findClassicEntries(entries []*pak.Entry) (entry000, entry001 *pak.Entry, err error) {
+	for _, e := range entries {
+		switch strings.ToLower(e.Name) {
+		case "classic/en/monkey1.000":
+			entry000 = e
+		case "classic/en/monkey1.001":
+			entry001 = e
+		}
+	}
+	if entry000 == nil {
+		return nil, nil, fmt.Errorf("classic/en/monkey1.000 not found — is this really Monkey1.pak?")
+	}
+	if entry001 == nil {
+		return nil, nil, fmt.Errorf("classic/en/monkey1.001 not found — is this really Monkey1.pak?")
+	}
+	return entry000, entry001, nil
 }
 
 // remapFontEntries patches the glyph lookup table in every .font entry.
