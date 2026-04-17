@@ -108,6 +108,57 @@ func TestWriteSlot(t *testing.T) {
 	}
 }
 
+// SPEECH-PATCH-003b: writeSlot truncates text that exceeds slot capacity.
+func TestWriteSlotTruncation(t *testing.T) {
+	cases := []struct {
+		name     string
+		slotSize int
+		text     string
+		wantText string
+	}{
+		{"text exactly fits", 6, "Hello", "Hello"},
+		{"text exceeds slot", 4, "Hello", "Hel"},
+		{"empty text", 10, "", ""},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			slot := make([]byte, tc.slotSize)
+			writeSlot(slot, []byte(tc.text))
+			got := slotString(slot)
+			if got != tc.wantText {
+				t.Errorf("writeSlot with %d-byte slot and %q: slotString = %q, want %q",
+					tc.slotSize, tc.text, got, tc.wantText)
+			}
+			// Verify null terminator is present after text.
+			nullPos := len(tc.wantText)
+			if nullPos < tc.slotSize && slot[nullPos] != 0 {
+				t.Errorf("expected null terminator at slot[%d], got %d", nullPos, slot[nullPos])
+			}
+		})
+	}
+}
+
+// SPEECH-PATCH-003c: slotString returns entire slot when no null terminator is present.
+func TestSlotStringNoNull(t *testing.T) {
+	cases := []struct {
+		name string
+		slot []byte
+		want string
+	}{
+		{"no null in slot", []byte{'H', 'e', 'l', 'l', 'o'}, "Hello"},
+		{"null at start", []byte{0, 'a', 'b'}, ""},
+		{"normal null-terminated", []byte{'H', 'i', 0, 0x20, 0x20}, "Hi"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			got := slotString(tc.slot)
+			if got != tc.want {
+				t.Errorf("slotString(%v) = %q, want %q", tc.slot, got, tc.want)
+			}
+		})
+	}
+}
+
 // SPEECH-PATCH-004: Multiple Swedish variants append extra entries with same cue header.
 func TestPatchAppendsExtraEntries(t *testing.T) {
 	dir := t.TempDir()

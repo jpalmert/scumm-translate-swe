@@ -247,6 +247,42 @@ func TestRemapFontEntriesNoFonts(t *testing.T) {
 	}
 }
 
+// SE-013: runListPAK succeeds for a valid synthetic PAK.
+func TestRunListPAK(t *testing.T) {
+	entries := []struct{ name, data string }{
+		{"classic/en/monkey1.000", "data000"},
+		{"classic/en/monkey1.001", "data001"},
+		{"fonts/test.font", "fontdata"},
+	}
+	raw := buildSyntheticPAK(t, gogMagic, entries)
+	dir := t.TempDir()
+	pakPath := filepath.Join(dir, "test.pak")
+	os.WriteFile(pakPath, raw, 0644)
+
+	if err := runListPAK(pakPath); err != nil {
+		t.Fatalf("runListPAK on valid PAK: %v", err)
+	}
+}
+
+// SE-014: runListPAK returns error for invalid/non-existent file.
+func TestRunListPAKInvalidFile(t *testing.T) {
+	if err := runListPAK("/nonexistent/file.pak"); err == nil {
+		t.Fatal("expected error for non-existent PAK file")
+	}
+}
+
+// SE-015: runListPAK returns error for file with invalid magic.
+func TestRunListPAKBadMagic(t *testing.T) {
+	raw := buildSyntheticPAK(t, [4]byte{'B', 'A', 'D', '!'}, defaultSEEntries)
+	dir := t.TempDir()
+	pakPath := filepath.Join(dir, "bad.pak")
+	os.WriteFile(pakPath, raw, 0644)
+
+	if err := runListPAK(pakPath); err == nil {
+		t.Fatal("expected error for PAK with invalid magic")
+	}
+}
+
 // --- Classic tests ---
 
 // CLASSIC-001: Non-existent game directory → clear error.

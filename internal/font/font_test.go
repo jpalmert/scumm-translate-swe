@@ -127,6 +127,31 @@ func TestRemapLookupPreservesOtherEntries(t *testing.T) {
 	}
 }
 
+// FONT-007: Error when destination SCUMM code maps to an address beyond the font data.
+func TestRemapLookupDestAddrOutOfRange(t *testing.T) {
+	// Source code 0x30 maps to address (0x30-0x20)*2+0x5A = 0x7A = 122.
+	// Dest SCUMM code 130 maps to address (130-0x20)*2+0x5A = 0x11A = 282.
+	// A 200-byte buffer is large enough for source but too small for destination.
+	data := make([]byte, 200)
+	setGlyph(data, 0x30, 42) // source glyph in range
+
+	_, err := font.RemapLookup(data, map[byte]byte{130: 0x30})
+	if err == nil {
+		t.Fatal("expected error for destination address out of range")
+	}
+}
+
+// FONT-008: Error when source unicode code maps to an address beyond the font data.
+func TestRemapLookupSrcAddrOutOfRange(t *testing.T) {
+	// Code 0xF6 maps to address (0xF6-0x20)*2+0x5A = 518. A 100-byte buffer is too small.
+	data := make([]byte, 100)
+
+	_, err := font.RemapLookup(data, map[byte]byte{91: 0xF6})
+	if err == nil {
+		t.Fatal("expected error for source address out of range")
+	}
+}
+
 // FONT-006: Applying the same remapping twice is idempotent.
 func TestRemapLookupIdempotent(t *testing.T) {
 	data := minFontData()

@@ -227,6 +227,35 @@ func TestScummBytes(t *testing.T) {
 	}
 }
 
+// DECODE-001: DecodeScummtrEscapes converts scummtr escape sequences to raw bytes.
+func TestDecodeScummtrEscapes(t *testing.T) {
+	cases := []struct {
+		name string
+		in   string
+		want []byte
+	}{
+		{"plain ASCII", "hello", []byte("hello")},
+		{"single escape", `\091`, []byte{91}},
+		{"multiple escapes", `\091\092`, []byte{91, 92}},
+		{"mixed text and escapes", `abc\091def`, []byte{'a', 'b', 'c', 91, 'd', 'e', 'f'}},
+		{"double backslash", `\\`, []byte{0x5C}},
+		{"trailing backslash", `hello\`, []byte{'h', 'e', 'l', 'l', 'o', '\\'}},
+		{"empty string", "", []byte{}},
+		{"escape value 255", `\255`, []byte{255}},
+		{"escape value 000", `\000`, []byte{0}},
+		{"backslash then non-digit", `\abc`, []byte{'\\', 'a', 'b', 'c'}},
+		{"only two digits after backslash", `\09x`, []byte{'\\', '0', '9', 'x'}},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			got := DecodeScummtrEscapes(tc.in)
+			if string(got) != string(tc.want) {
+				t.Errorf("DecodeScummtrEscapes(%q) = %v, want %v", tc.in, got, tc.want)
+			}
+		})
+	}
+}
+
 // ENCODE-003: Mixed content — Swedish chars encoded, rest unchanged.
 func TestEncodeForScummtrMixed(t *testing.T) {
 	dir := t.TempDir()
