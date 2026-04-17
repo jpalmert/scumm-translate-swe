@@ -7,7 +7,9 @@ Tests are organized into three levels:
 | Level | Location | Requires | Run command |
 |-------|----------|----------|-------------|
 | Unit | `internal/*/`, `cmd/*/` | Nothing (synthetic data) | `go test ./...` |
+| Build-patcher | `internal/charset/` (build tag `buildpatcher`) | `scripts/build.sh` step 2 | `go test -tags buildpatcher ./internal/charset/...` |
 | Integration | `*_integration_test.go` (build tag `integration`) | `game/monkey1/Monkey1.pak` | `go test -tags integration ./...` |
+| Python | `tools/test_*.py` | Python 3 | `python -m pytest tools/` |
 | Manual / acceptance | This document | Working patcher binary + game files | Run manually |
 
 ---
@@ -47,13 +49,14 @@ Copy a file to `path.bak`. Assert backup exists with same content.
 
 #### BAK-002: Create does not overwrite existing backup
 Call `Create` twice. Assert the backup reflects the first call (original content), not the
-second (modified content).
+second (modified content). Returns `ErrBackupExists`.
 
 #### BAK-003: Missing source → error
 Call `Create` on a non-existent file. Assert error.
 
 #### BAK-004: Backup path is `<original>.bak`
-Assert the returned path equals `<original> + ".bak"`.
+Assert the returned path equals `<original> + ".bak"` for MONKEY1.000, MONKEY1.001, and
+Monkey1.pak.
 
 ### Font package (`internal/font`)
 
@@ -77,17 +80,80 @@ Assert that entries not in `SwedishRemapping` are unchanged after remap.
 #### FONT-006: Applying the same remapping twice is idempotent
 Assert the second `RemapLookup` on already-remapped data produces the same output.
 
-### Classic patcher (`cmd/patcher`)
+#### FONT-007: Error when destination SCUMM code address is out of range
+Assert error when the destination address for a remapped SCUMM code exceeds the font
+data buffer size.
 
-#### CLASSIC-001: Missing game directory → error
-#### CLASSIC-002: Directory missing `MONKEY1.000` → error
-#### CLASSIC-003: Directory missing `MONKEY1.001` → error
-#### CLASSIC-004: Translation file not found → error
-#### CLASSIC-005: Lowercase filenames accepted (`monkey1.000`)
-#### CLASSIC-006: Uppercase preferred over lowercase when both exist
-#### CLASSIC-007: `findGameFile` returns error when neither name exists
-#### CLASSIC-008: `findTranslationFile` returns error for missing explicit path
-#### CLASSIC-009: `findTranslationFile` accepts a valid explicit path
+### Speech package (`internal/speech`)
+
+#### SPEECH-PATCH-001: Patch replaces matching EN slots
+Build a minimal speech.info with two entries, provide a mapping for one. Assert `Patch`
+returns 1 update, the matched EN slot contains the Swedish text, and the unmatched
+entry is unchanged.
+
+#### SPEECH-PATCH-002: Empty mapping → no write, returns 0
+Call `Patch` with a nil mapping. Assert 0 updates and file unchanged.
+
+#### SPEECH-PATCH-003: `writeSlot` writes text + null terminator + space-fill
+Call `writeSlot` with a short string. Assert: text bytes, null terminator at end of text,
+space (0x20) fill for remaining bytes.
+
+#### SPEECH-PATCH-004: Multiple Swedish variants append extra entries
+Provide a mapping with two Swedish variants for one EN key. Assert `Patch` returns 2
+(1 in-place + 1 appended), file grew by one `entryStride`, and the appended entry has
+the same cue header with the second Swedish variant.
+
+#### SPEECH-PATCH-005: `writeSlot` truncates text that exceeds slot size
+Assert that text longer than the slot is silently truncated without overflowing.
+
+#### SPEECH-PATCH-006: `slotString` stops at null terminator
+Assert that `slotString` returns only the bytes before the first null byte.
+
+### Classic package — encoding (`internal/classic`)
+
+#### ENCODE-001: Swedish UTF-8 characters → SCUMM escape codes
+Each Swedish character (Å, Ä, Ö, å, ä, ö, é) is written as UTF-8 to a temp file and
+passed through `encodeForScummtr`. Assert the output contains the correct `\NNN` escape
+code for each character.
+
+#### ENCODE-002: ASCII bytes passed through unchanged
+Plain ASCII input (`Hello, world!\n`). Assert output is identical to input.
+
+#### ENCODE-003: Mixed content — Swedish chars encoded, rest unchanged
+Input `Jag är glad`. Assert `ä` is encoded as `\124` while ASCII characters pass through.
+
+#### ENCODE-004: Empty-content lines get a space injected
+Lines with a header but no text content (e.g. `[002:SCRP#0037]`) get a single space
+injected so scummtr accepts them while preserving sequential matching.
+
+#### ENCODE-005: Whitespace-only content preserved as-is
+Lines that already contain a single space are not double-padded.
+
+#### ENCODE-006: Opcode prefixes stripped before injection
+Lines with `(__)` or `(D8)` opcode prefixes have the prefix removed. Swedish characters
+in the remaining text are still encoded.
+
+#### ENCODE-007: `DecodeScummtrEscapes` converts `\NNN` escapes to raw bytes
+Assert that backslash-escaped decimal byte values in scummtr output are decoded back to
+their raw byte values.
+
+### Classic package — speech mapping (`internal/classic`)
+
+#### SPEECH-001: `buildSpeechMapping` builds EN→[]SCUMM_bytes from aligned files
+Multi-page strings are split on `\255\003` so each sentence maps individually. Empty
+entries and whitespace-only entries are excluded.
+
+#### SPEECH-001b: `buildSpeechMapping` collects all distinct Swedish variants per EN key
+When the same English sentence appears multiple times with different Swedish translations,
+all distinct variants are collected. Duplicates are deduplicated.
+
+#### SPEECH-002: Sword-fight insults and comebacks excluded from mapping
+Entries from room 88 SCRP resources #0085/#0086 (the sword-fight scripts) are excluded
+from the speech mapping. Non-sword-fight entries from other rooms are included.
+
+#### SCUMM-BYTES-001: `ScummBytes` encodes Swedish UTF-8 to SCUMM byte values
+Assert each Swedish character maps to its SCUMM byte: Å→0x5B, Ä→0x5C, Ö→0x5D,
+å→0x7B, ä→0x7C, ö→0x7D, é→0x82. Mixed strings are also tested.
 
 ### SE patcher (`cmd/patcher`)
 
@@ -100,13 +166,63 @@ Assert the second `RemapLookup` on already-remapped data produces the same outpu
 A synthetic PAK with fake game data is used; scummtr will fail, but the backup must be
 created before the injection step is reached.
 #### SE-007: Explicit output path → no backup created for input
-#### SE-008: `findTranslationFile` returns error for missing explicit path
-#### SE-009: `findTranslationFile` accepts a valid explicit path
 #### SE-010: `remapFontEntries` patches `.font` entries and skips others
 Synthetic font data with Swedish glyphs at Windows-1252 positions. Assert all 7 SCUMM codes
 (91=Å, 92=Ä, 93=Ö, 123=å, 124=ä, 125=ö, 130=é) map to the expected glyph indices. Assert non-font entries unchanged.
 #### SE-011: `remapFontEntries` returns error when a font is missing a required glyph
 #### SE-012: `remapFontEntries` with no `.font` entries returns 0, nil (graceful no-op)
+
+### Classic patcher (`cmd/patcher`)
+
+#### CLASSIC-001: Missing game directory → error
+#### CLASSIC-002: Directory missing `MONKEY1.000` → error
+#### CLASSIC-003: Directory missing `MONKEY1.001` → error
+#### CLASSIC-004: Translation file not found → error
+#### CLASSIC-005: Backup content matches original for both game files
+Inject into a dir with fake game data. Assert `.bak` files contain the original bytes.
+#### CLASSIC-005c: Lowercase filenames accepted (`monkey1.000`)
+#### CLASSIC-006: Uppercase preferred over lowercase when both exist
+#### CLASSIC-007: `findGameFile` returns error when neither name exists
+#### CLASSIC-008: `findGameFile` accepts alternate naming (`MONKEY.000` without "1")
+
+### Shared helpers (`cmd/patcher`)
+
+#### SHARED-001: `findTranslationFile` returns error for missing explicit path
+#### SHARED-002: `findTranslationFile` accepts a valid explicit path
+
+### Auto-detection (`cmd/patcher`)
+
+#### DETECT-001: `isSEInput` returns true for a `.pak` file
+#### DETECT-002: `isSEInput` returns false for a directory
+#### DETECT-003: `isSEInput` returns true for a non-existent `.pak` path (by extension)
+
+### List PAK (`cmd/patcher`)
+
+#### LIST-001: `runListPAK` lists PAK entries to stdout
+Run `runListPAK` on a synthetic PAK and verify it prints entry names.
+
+### Charset package — verb layout (`internal/charset`)
+
+#### VERB-001: `patchVerbCoords` patches verb button coordinates for Swedish labels
+#### VERB-002: `findVerbXOffset` finds the correct X-offset for verb buttons
+#### VERB-003: `findFileInTree` locates files in nested directory structures
+
+---
+
+## Build-Patcher Tests (`go test -tags buildpatcher ./internal/charset/...`)
+
+These tests validate the embedded CHAR assets and only apply after `scripts/build.sh`
+step 2 has generated the `.bin` files.
+
+### Charset package (`internal/charset`)
+
+#### ASSET-001..005: Embedded CHAR assets are valid CHAR blocks
+Each of the 5 patched CHAR blocks (0001, 0002, 0003, 0004, 0006) is checked: at least
+8 bytes long, starts with `CHAR` tag, and the big-endian size field matches the actual
+data length.
+
+#### ASSET-007: Embedded scummrp binaries are non-empty
+Assert that the embedded scummrp binaries for Linux, macOS, and Windows are all non-empty.
 
 ---
 
@@ -139,6 +255,12 @@ Two subtests — write classic files as UPPERCASE and as lowercase, copy to work
 with normalised uppercase names, run scummtr export. Assert output is non-empty.
 Mirrors the directory input mode of `scripts/extract_pak.sh + scripts/extract_assets.sh`.
 
+#### INT-ROUNDTRIP: InjectTranslation round-trip with English text is idempotent
+Export original English strings in InjectTranslation-compatible format, inject them
+back using the production pipeline, re-export, and compare. Assert text is identical.
+A second inject+export cycle must also match (idempotence). Catches bugs in our
+flag choices, `encodeForScummtr` pre-processing, or temp-file handling.
+
 ### SE patcher (`cmd/patcher`)
 
 #### INT-SE-001: Full SE pipeline — patched PAK is valid, `.001` grew, fonts patched
@@ -151,6 +273,56 @@ Run `runSEPatch` with the real `Monkey1.pak` and explicit output path. Assert:
 #### INT-SE-002: In-place mode creates backup with correct content
 Copy `Monkey1.pak` to a temp dir, run `runSEPatch` with no explicit output. Assert:
 - `Monkey1.pak.bak` exists with the same size and content as the original
+
+#### INT-SE-003: Re-patch after manual backup restore succeeds
+Patch a copy of `Monkey1.pak` in-place, restore from the `.bak` file, then patch again.
+Assert the second patch succeeds without errors (no "CHAR block not found" or similar).
+
+#### INT-SE-004: Automatic re-patch without manual restore
+Patch a copy twice without manual restore. Assert the second patch reads from the
+backup automatically and both patches produce byte-identical output.
+
+### Classic patcher (`cmd/patcher`)
+
+#### INT-CLASSIC-001: Real Swedish translation grows `.001`
+Extract classic files from the PAK, run `runClassicPatch` with the real `swedish.txt`.
+Assert `MONKEY1.001` is larger after patching.
+
+#### INT-CLASSIC-002: Classic in-place backup has correct content
+Run `runClassicPatch` on extracted classic files. Assert `.bak` files exist for both
+`MONKEY1.000` and `MONKEY1.001` with content identical to the originals.
+
+#### INT-CLASSIC-003: Classic re-patch succeeds and is idempotent
+Patch classic files twice without manual restore. Assert the second patch succeeds
+and produces output identical to the first patch.
+
+### Speech pipeline (`cmd/patcher`)
+
+#### INT-SPEECH-001: speech.info EN slots updated with Swedish SCUMM bytes
+Build the EN→Swedish mapping from real game files + `swedish.txt`, patch a copy of
+`speech.info`. Assert at least 100 entries updated and patched slots contain Swedish
+SCUMM bytes (0x5B, 0x5C, 0x5D, 0x7B, 0x7C, 0x7D, 0x82).
+
+#### INT-SPEECH-002: Speech round-trip — bytes match between speech.info and MONKEY1.001
+Full end-to-end test: build speech mapping, inject Swedish via scummtr, re-extract,
+decode `\NNN` escapes, and compare against mapping values. Assert all sentence pairs
+match (a mismatch means audio cue lookup would fail in-game).
+
+---
+
+## Python Tool Tests (`python -m pytest tools/`)
+
+### `test_calc_padding.py`
+Tests for `tools/calc_padding.py` — `@` padding logic for SE name buffers.
+
+### `test_scumm_gfx.py`
+Tests for `tools/decode_room.py` and `tools/decode_object.py` — SCUMM v5 graphics decoding.
+
+### `test_find_dynamic_names.py`
+Tests for `tools/find_dynamic_names.py` — runtime name-change mapping extraction.
+
+### `test_pak.py`
+Tests for `tools/pak.py` — PAK archive extraction and repacking.
 
 ---
 
@@ -203,6 +375,12 @@ Assert: characters render as Swedish letters, not squares or wrong punctuation.
 # Unit tests only (fast, no game files):
 go test ./...
 
+# Build-patcher asset tests (after scripts/build.sh step 2):
+go test -tags buildpatcher ./internal/charset/...
+
 # Unit + integration (requires game/monkey1/Monkey1.pak):
 go test -tags integration -v ./...
+
+# Python tool tests:
+python -m pytest tools/
 ```
