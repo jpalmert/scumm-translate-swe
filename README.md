@@ -21,7 +21,7 @@ One patcher works for both the Special Edition and the Classic CD-ROM version.
 ### How to patch
 
 1. Download the zip for your platform from the
-   [Releases page](https://github.com/jpalmert/scumm-translate-swe/releases).
+   [v0.1 release](https://github.com/jpalmert/scumm-translate-swe/releases/tag/v0.1).
 2. Extract the zip into the same folder as your game files.
 3. Run the patcher.
 
