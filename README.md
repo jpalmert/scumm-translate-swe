@@ -66,7 +66,6 @@ internal/
   charset/                  CHAR block patcher + verb layout
     assets/                 Embedded scummrp binaries (committed to git)
   font/                     SE font lookup table patcher
-  speech/                   speech.info audio sync patcher
 
 games/
   monkey1/                  MI1 workspace

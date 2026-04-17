@@ -37,41 +37,6 @@ var scummCharMap = []struct {
 	{"ê", `\136`},
 }
 
-// scummByteMap maps UTF-8 Swedish characters to their SCUMM byte values.
-// Used for direct byte-level encoding (e.g. speech.info patching).
-var scummByteMap = map[rune]byte{
-	'Å': 0x5B,
-	'Ä': 0x5C,
-	'Ö': 0x5D,
-	'å': 0x7B,
-	'ä': 0x7C,
-	'ö': 0x7D,
-	'é': 0x82,
-	'ê': 0x88,
-}
-
-// ScummBytes converts UTF-8 text to the byte representation that scummtr
-// injects into MONKEY1.001. Swedish characters are converted to their SCUMM
-// byte codes (matching scummCharMap). Other non-ASCII characters pass through
-// as their raw UTF-8 bytes, matching scummtr's behaviour of injecting them
-// verbatim.  Used for building speech.info EN slot content.
-func ScummBytes(text string) []byte {
-	var b []byte
-	for _, r := range text {
-		if mapped, ok := scummByteMap[r]; ok {
-			b = append(b, mapped)
-		} else if r < 0x80 {
-			b = append(b, byte(r))
-		} else {
-			// Pass through UTF-8 bytes for non-mapped non-ASCII runes (e.g. ®).
-			// encodeBytes does not convert these, so scummtr injects their UTF-8
-			// byte sequence verbatim.
-			b = append(b, []byte(string(r))...)
-		}
-	}
-	return b
-}
-
 // encodeForScummtr reads a UTF-8 encoded translation file and returns a copy
 // with Swedish characters replaced by their SCUMM escape codes, and
 // empty-content header lines padded with a single space so scummtr accepts them.
@@ -164,7 +129,6 @@ func ExtractLines(gameDir string) ([][2]string, error) {
 //   - \\ → a literal backslash byte (0x5C, which is the SCUMM code for 'Ä')
 //
 // Non-escaped bytes are copied as-is.
-// Used to compare scummtr extract output against raw byte content (e.g. speech.info slots).
 func DecodeScummtrEscapes(s string) []byte {
 	out := make([]byte, 0, len(s))
 	for i := 0; i < len(s); {
@@ -186,122 +150,6 @@ func DecodeScummtrEscapes(s string) []byte {
 		}
 	}
 	return out
-}
-
-// BuildSpeechMapping extracts the original English text from the classic game
-// files in gameDir, then parses the Swedish translation at translationPath, and
-// returns a map from each original English string to all distinct SCUMM-encoded
-// Swedish byte representations that correspond to it.
-//
-// A single English string can have multiple distinct Swedish translations when
-// the same phrase appears in different contexts (e.g. "Hello" → ["Hej!", "Hallå!"]).
-// Each translation produces a separate speech.info entry so the SE engine can
-// match voiced lines to audio cues regardless of which Swedish variant appears.
-func BuildSpeechMapping(gameDir, translationPath string) (map[string][][]byte, error) {
-	scummtrPath, tmpDir, cleanup, err := setupScummtr()
-	if err != nil {
-		return nil, err
-	}
-	defer cleanup()
-
-	enPath := filepath.Join(tmpDir, "monkey1_en.txt")
-	if err := runScummtrExtract(scummtrPath, gameDir, enPath); err != nil {
-		return nil, fmt.Errorf("extracting source text: %w", err)
-	}
-
-	enData, err := os.ReadFile(enPath)
-	if err != nil {
-		return nil, err
-	}
-	svData, err := os.ReadFile(translationPath)
-	if err != nil {
-		return nil, err
-	}
-
-	return buildSpeechMapping(enData, svData), nil
-}
-
-// appendDistinct appends sv to list if it is not already present.
-func appendDistinct(list [][]byte, sv []byte) [][]byte {
-	for _, existing := range list {
-		if string(existing) == string(sv) {
-			return list
-		}
-	}
-	return append(list, sv)
-}
-
-// swordFightResources lists the resource headers whose strings are sword-fight
-// insults and comebacks. These are intentionally excluded from the speech
-// mapping because the Swedish translation uses non-literal creative rewrites;
-// matching the old English audio to the new Swedish text would be misleading.
-var swordFightResources = map[string]bool{
-	"[088:SCRP#0085]": true, // insults
-	"[088:SCRP#0086]": true, // comebacks
-}
-
-// buildSpeechMapping builds the EN→[]SCUMM_bytes mapping from raw data slices.
-// Both files use scummtr header format: "[room:TYPE#resnum]text".
-// Entries are matched positionally within each resource.
-// Sword-fight insult/comeback resources are excluded (see swordFightResources).
-//
-// Each English key maps to a list of all distinct Swedish byte representations
-// that correspond to it. Duplicates (same SV bytes seen again) are not added.
-func buildSpeechMapping(enData, svData []byte) map[string][][]byte {
-	// Build SV groups: resource_header -> []text in order.
-	// Strip any (opcode) prefix from text — scummtr -A extraction includes
-	// these but they are not part of the translatable string.
-	svGroups := make(map[string][]string)
-	for _, line := range strings.Split(string(svData), "\n") {
-		j := strings.IndexByte(line, ']')
-		if j < 0 || !strings.HasPrefix(line, "[") {
-			continue
-		}
-		svGroups[line[:j+1]] = append(svGroups[line[:j+1]], stripOpcode(line[j+1:]))
-	}
-
-	svPos := make(map[string]int)
-	mapping := make(map[string][][]byte)
-	for _, line := range strings.Split(string(enData), "\n") {
-		j := strings.IndexByte(line, ']')
-		if j < 0 || !strings.HasPrefix(line, "[") {
-			continue
-		}
-		header := line[:j+1]
-		enText := line[j+1:]
-		p := svPos[header]
-		svPos[header]++
-
-		if swordFightResources[header] {
-			continue
-		}
-
-		if svTexts, ok := svGroups[header]; ok && p < len(svTexts) {
-			svText := svTexts[p]
-			// speech.info stores individual sentences, not full multi-page strings.
-			// Split both EN and SV on the page-break sequence and map each pair.
-			//
-			// EN text comes from scummtr -oh output where control bytes are
-			// represented as \NNN decimal escapes. Decode these to raw bytes so
-			// the mapping keys match speech.info's raw-byte EN slots.
-			// After decoding, \255\003 becomes the two raw bytes 0xFF 0x03.
-			enDecoded := string(DecodeScummtrEscapes(enText))
-			pageBreak := "\xff\x03"
-			enParts := strings.Split(enDecoded, pageBreak)
-			// SV text in swedish.txt uses the same \255\003 literal notation.
-			svParts := strings.Split(svText, `\255\003`)
-			for i, enPart := range enParts {
-				if i >= len(svParts) {
-					break
-				}
-				svPart := svParts[i]
-				if strings.TrimSpace(enPart) != "" && strings.TrimSpace(svPart) != "" {
-					mapping[enPart] = appendDistinct(mapping[enPart], ScummBytes(svPart))
-				}
-			}
-		}
-	}
-	return mapping
 }
 
 // setupScummtr extracts the scummtr binary and returns its path, temp dir path,

@@ -22,7 +22,7 @@ go.mod                          Go module (scumm-patcher)
 cmd/
   patcher/                      Single binary: auto-detects SE vs Classic, patches game files
     main.go                     Entry point, auto-detection, arg parsing
-    se.go                       SE pipeline (PAK read/repack, classic inject, font remap, speech sync)
+    se.go                       SE pipeline (PAK read/repack, classic inject, font remap)
     classic.go                  Classic pipeline (backup, scummtr inject, CHAR patch, verb layout)
     patch.go                    Shared patchClassicFiles helper
     translation.go              Translation file lookup
@@ -32,14 +32,14 @@ cmd/
 internal/
   pak/                          PAK archive reader/writer (KAPL/LPAK)
   backup/                       .bak safety copy helper
-  classic/                      scummtr wrapper (InjectTranslation, BuildSpeechMapping)
+  classic/                      scummtr wrapper (InjectTranslation)
     assets/                     Embedded scummtr binaries (Linux/macOS/Windows) — committed to git
   charset/                      CHAR block patcher (Swedish glyphs) + verb layout patcher
     assets/                     Embedded scummrp binaries — committed to git
     bitmaps/                    Swedish glyph BMP source files — committed to git
     gen/                        Generated .bin files — gitignored; run scripts/build.sh to populate
   font/                         SE .font glyph lookup table patcher
-  speech/                       speech.info audio sync patcher
+
 
 games/
   monkey1/

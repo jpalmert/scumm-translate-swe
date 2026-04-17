@@ -94,31 +94,6 @@ Assert the second `RemapLookup` on already-remapped data produces the same outpu
 Assert error when the destination address for a remapped SCUMM code exceeds the font
 data buffer size.
 
-### Speech package (`internal/speech`)
-
-#### SPEECH-PATCH-001: Patch replaces matching EN slots
-Build a minimal speech.info with two entries, provide a mapping for one. Assert `Patch`
-returns 1 update, the matched EN slot contains the Swedish text, and the unmatched
-entry is unchanged.
-
-#### SPEECH-PATCH-002: Empty mapping → no write, returns 0
-Call `Patch` with a nil mapping. Assert 0 updates and file unchanged.
-
-#### SPEECH-PATCH-003: `writeSlot` writes text + null terminator + space-fill
-Call `writeSlot` with a short string. Assert: text bytes, null terminator at end of text,
-space (0x20) fill for remaining bytes.
-
-#### SPEECH-PATCH-004: Multiple Swedish variants append extra entries
-Provide a mapping with two Swedish variants for one EN key. Assert `Patch` returns 2
-(1 in-place + 1 appended), file grew by one `entryStride`, and the appended entry has
-the same cue header with the second Swedish variant.
-
-#### SPEECH-PATCH-005: `writeSlot` truncates text that exceeds slot size
-Assert that text longer than the slot is silently truncated without overflowing.
-
-#### SPEECH-PATCH-006: `slotString` stops at null terminator
-Assert that `slotString` returns only the bytes before the first null byte.
-
 ### Classic package — encoding (`internal/classic`)
 
 #### ENCODE-001: Swedish UTF-8 characters → SCUMM escape codes
@@ -146,24 +121,6 @@ in the remaining text are still encoded.
 #### ENCODE-007: `DecodeScummtrEscapes` converts `\NNN` escapes to raw bytes
 Assert that backslash-escaped decimal byte values in scummtr output are decoded back to
 their raw byte values.
-
-### Classic package — speech mapping (`internal/classic`)
-
-#### SPEECH-001: `buildSpeechMapping` builds EN→[]SCUMM_bytes from aligned files
-Multi-page strings are split on `\255\003` so each sentence maps individually. Empty
-entries and whitespace-only entries are excluded.
-
-#### SPEECH-001b: `buildSpeechMapping` collects all distinct Swedish variants per EN key
-When the same English sentence appears multiple times with different Swedish translations,
-all distinct variants are collected. Duplicates are deduplicated.
-
-#### SPEECH-002: Sword-fight insults and comebacks excluded from mapping
-Entries from room 88 SCRP resources #0085/#0086 (the sword-fight scripts) are excluded
-from the speech mapping. Non-sword-fight entries from other rooms are included.
-
-#### SCUMM-BYTES-001: `ScummBytes` encodes Swedish UTF-8 to SCUMM byte values
-Assert each Swedish character maps to its SCUMM byte: Å→0x5B, Ä→0x5C, Ö→0x5D,
-å→0x7B, ä→0x7C, ö→0x7D, é→0x82. Mixed strings are also tested.
 
 ### SE patcher (`cmd/patcher`)
 
@@ -305,18 +262,6 @@ Run `runClassicPatch` on extracted classic files. Assert `.bak` files exist for 
 #### INT-CLASSIC-003: Classic re-patch succeeds and is idempotent
 Patch classic files twice without manual restore. Assert the second patch succeeds
 and produces output identical to the first patch.
-
-### Speech pipeline (`cmd/patcher`)
-
-#### INT-SPEECH-001: speech.info EN slots updated with Swedish SCUMM bytes
-Build the EN→Swedish mapping from real game files + `swedish.txt`, patch a copy of
-`speech.info`. Assert at least 100 entries updated and patched slots contain Swedish
-SCUMM bytes (0x5B, 0x5C, 0x5D, 0x7B, 0x7C, 0x7D, 0x82).
-
-#### INT-SPEECH-002: Speech round-trip — bytes match between speech.info and MONKEY1.001
-Full end-to-end test: build speech mapping, inject Swedish via scummtr, re-extract,
-decode `\NNN` escapes, and compare against mapping values. Assert all sentence pairs
-match (a mismatch means audio cue lookup would fail in-game).
 
 ---
 
