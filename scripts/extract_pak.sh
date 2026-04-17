@@ -17,7 +17,7 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/common.sh"
-detect_game "${1:-}"
+detect_game
 
 PAKPY="$REPO_ROOT/tools/pak.py"
 PAK="${1:-$GAME_GAME/Monkey1.pak}"
