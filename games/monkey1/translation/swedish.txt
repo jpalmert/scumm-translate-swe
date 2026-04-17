@@ -14,10 +14,10 @@
 [002:OBNA#0031](__)strand
 [002:OBNA#0035](__)spricka
 [002:SCRP#0035](93)
-[002:SCRP#0037](93)
+[002:SCRP#0037](93)@@@@@@@
 [002:SCRP#0037](93)gam
-[002:SCRP#0038](93)
-[002:SCRP#0039](93)
+[002:SCRP#0038](93)@@@@@@@
+[002:SCRP#0039](93)@@@@@@@
 [002:SCRP#0099](27)....................................................................................................
 [002:SCRP#0099](27)....................................................................................................
 [003:OBNA#0043](__)strand
@@ -92,7 +92,7 @@
 [008:VERB#0091](D4)pytteliten repbit
 [008:VERB#0091](D4)futtig repbit
 [008:VERB#0091](D4)oändligt liten repbit
-[008:OBNA#0091](__)gigantiskt rep
+[008:OBNA#0091](__)gigantiskt rep@@@@@@@@@@@@@@@@@@@@@@
 [008:VERB#0092](D8)Det finns ett RIKTIGT fint vin här.\255\003Jag tar det.
 [008:VERB#0092](D8)
 [008:VERB#0092](D8)Den är tom.
@@ -115,7 +115,7 @@
 [008:VERB#0104](D8)Ah, fin bouquet.
 [008:VERB#0104](D8)Jag tror det behöver andas i rumstemperatur ett tag till.
 [008:VERB#0104](D8)Jag är ingen enolog, men att döma av den djupröda färgen...\255\003...så är det här ett riktigt fint vin.
-[008:OBNA#0104](__)fint vin
+[008:OBNA#0104](__)fint vin@@@@@@@@
 [008:ENCD#0008](D8)Usch!!!\255\003Den omisskännliga stanken av apor!!!\255\003Hela skeppet luktar som heta, svettiga primater.\255\003Jag visste att jag borde ha provseglat det.
 [009:VERB#0108](D8)Jag tror jag kommer bli sjösjuk.
 [009:VERB#0108](D8)Det är ordentligt stängt.
@@ -123,8 +123,8 @@
 [009:OBNA#0105](__)stege
 [009:OBNA#0106](__)lucka
 [009:OBNA#0107](__)dörr
-[010:SCRP#0001](27)
-[010:SCRP#0001](27)
+[010:SCRP#0001](27)@@@@@@@@@@@@
+[010:SCRP#0001](27)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 [010:SCRP#0001](27)Monkey Island Hemlighet -- CD-ROM version 2.3b
 [010:SCRP#0001](27)Spelet pausat.  Tryck MELLANSLAG för att fortsätta.
 [010:SCRP#0001](27)Sätt i disk %c och tryck på knappen för att fortsätta.
@@ -535,7 +535,7 @@
 [020:VERB#0261](D8)Djup.\255\003Mörk.\255\003Hotfull.
 [020:OBNA#0261](__)djungel
 [020:VERB#0263](D8)Det är konstigt...\255\003Det står `Havsapan`.
-[020:OBNA#0263](__)roddbåt
+[020:OBNA#0263](__)roddbåt@@@@@@@@@
 [020:VERB#0270](D8)Några bananer föll av trädet!
 [020:OBNA#0270](__)bananer
 [020:VERB#0265](D8)Den är gul.
@@ -546,7 +546,7 @@
 [020:OBNA#0269](__)aphuvudsnyckel
 [020:VERB#0266](D8)Den är gul.
 [020:OBNA#0266](__)banan
-[020:OBNA#0272](__)memo
+[020:OBNA#0272](__)memo@@@@@@@@@@@@@@@@
 [020:ENCD#0020](54)roddbåt och åror
 [020:LSCR#0200](54)roddbåt och åror
 [020:LSCR#0200](D8)Jag kan paddla den med de här årorna.
@@ -1149,19 +1149,19 @@
 [028:OBNA#0321](__)öppen spis
 [028:VERB#0362](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0362](D8)Ser ut som ett fint tennstop.
-[028:OBNA#0362](__)stop
+[028:OBNA#0362](__)stop@@@@@@@@@@@@@@
 [028:VERB#0363](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0363](D8)Ser ut som ett fint tennstop.
-[028:OBNA#0363](__)stop
+[028:OBNA#0363](__)stop@@@@@@@@@@@@@@
 [028:VERB#0364](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0364](D8)Ser ut som ett fint tennstop.
-[028:OBNA#0364](__)stop
+[028:OBNA#0364](__)stop@@@@@@@@@@@@@@
 [028:VERB#0365](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0365](D8)Ser ut som ett fint tennstop.
-[028:OBNA#0365](__)stop
+[028:OBNA#0365](__)stop@@@@@@@@@@@@@
 [028:VERB#0366](D8)Jag tror inte det rymmer mycket nu längre.
 [028:VERB#0366](D8)Ser ut som ett fint tennstop.
-[028:OBNA#0366](__)stop
+[028:OBNA#0366](__)stop@@@@@@@@@@@@@@
 [028:VERB#0322](14)Varför skulle vi ta MED oss DET?
 [028:OBNA#0322](__)förnäma pirater
 [028:VERB#0330](D8)Jag vill inte komma emellan en pirat och hans grogg.
@@ -1360,7 +1360,7 @@
 [029:VERB#0377](14)
 [029:VERB#0377](D8)Kanske ingen kommer sakna just den här grejen...
 [029:VERB#0377](D8)Det måste säkert finnas en användning för en gummikyckling med en trissa i mitten, men det här är inte den.
-[029:OBNA#0377](__)kyckling
+[029:OBNA#0377](__)kyckling@@@@@@@@
 [029:VERB#0378](D8)Stackars lilla varelse...\255\003Vad det nu var.
 [029:VERB#0378](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
 [029:OBNA#0378](__)ben
@@ -1678,7 +1678,7 @@
 [031:VERB#0420](D8)Det ligger en fil i den!
 [031:VERB#0420](D8)Den är tung.
 [031:VERB#0420](D8)Det är en raspig metallfil.
-[031:OBNA#0420](__)tårta
+[031:OBNA#0420](__)tårta@@@@@
 [031:LSCR#0201](13)Otis
 [031:LSCR#0201](13)fånge
 [031:LSCR#0202](14)Nå, har du kommit för att släppa mig fri?
@@ -2127,7 +2127,7 @@
 [036:VERB#0467](94)Jag tänker inte gå nära dom!
 [036:VERB#0467](D8)Jag vill inte väcka dom.
 [036:VERB#0467](D8)`Låt sovande hundar ligga.`
-[036:OBNA#0467](__)dödliga pirayapudlar
+[036:OBNA#0467](__)dödliga pirayapudlar@@@@
 [036:ENCD#0036](54)sovande pirayapudlar
 [036:LSCR#0201](54)sovande pirayapudlar
 [036:LSCR#0201](14)VIKTIGT MEDDELANDE
@@ -2141,13 +2141,13 @@
 [036:LSCR#0201](94)Pirayapudlar äter inte fisk.
 [036:LSCR#0201](D8)Jag tror inte de här hundarna är vegetarianer.
 [036:LSCR#0201](D8)Jag tvivlar på att hundarna vill ha det här.
-[036:LSCR#0202](54)dödliga pirayapudlar
+[036:LSCR#0202](54)dödliga pirayapudlar@@@@
 [036:LSCR#0204](D8)Voff.
 [036:LSCR#0204](14)Bjäbb!
 [036:LSCR#0204](14) 
 [037:OBNA#0479](__)stor trädörr
 [037:VERB#0478](14)Öppna den bara.
-[037:OBNA#0478](__)dörr
+[037:OBNA#0478](__)dörr@@@@@@@@@@@@@@@@@@
 [037:OBNA#0476](__)handtag
 [037:VERB#0475](D8)Den rör sig inte.
 [037:OBNA#0475](__)spak
@@ -2304,7 +2304,7 @@
 [038:VERB#0488](D8)Jag har \255\004\195\000 dubloner.
 [038:VERB#0488](54)1 dublon
 [038:VERB#0488](54)\255\004\195\000 dubloner
-[038:OBNA#0488](__)@@@@@ dubloner
+[038:OBNA#0488](__)@@@@@ dubloner@@@@@@@
 [038:VERB#0489](D8)Jag är inte säker, men jag tror han kanske sover.
 [038:OBNA#0489](__)utkik
 [038:LSCR#0200](13)utkik
@@ -2498,18 +2498,18 @@
 [041:OBNA#0570](__)dörr
 [041:OBNA#0565](__)bord
 [041:VERB#0566](D8)Det är nån sorts kött eller köttliknande substans...
-[041:OBNA#0566](__)köttbit
+[041:OBNA#0566](__)köttbit@@@@@@@@@@
 [041:VERB#0567](D8)Nån lagade en sylta i den här.
 [041:OBNA#0567](__)gryta
 [041:VERB#0568](D8)Jag tror den fågeln hackar av handen på mig...
 [041:VERB#0568](54)fisk med krydda
 [041:VERB#0568](D8)Jag tror det är en sill.
-[041:OBNA#0568](__)fisk
+[041:OBNA#0568](__)fisk@@@@@@@@@@@@@@@
 [041:OBNA#0564](__)dörr
 [041:VERB#0574](D8)Den är kokhet.
 [041:VERB#0574](D8)Hmm. Köttgryta.
 [041:VERB#0574](D8)Hmm. Fiskgryta.
-[041:OBNA#0574](__)gryta med stuvning
+[041:OBNA#0574](__)gryta med stuvning@@@@@
 [041:LSCR#0202](D8)Plankan sitter fast.
 [041:LSCR#0213](D8)Det är inget lagerblad, men alla kockar gör utbyten.
 [041:LSCR#0213](54)kryddad stuvning
@@ -2954,7 +2954,7 @@
 [053:VERB#0640](D8)Det står att mullvadar inte kommer nära dig med det här på.
 [053:OBNA#0640](__)mullvadsmedel
 [053:VERB#0641](D8)Jag tror det är nån sorts religiös text.
-[053:OBNA#0641](__)stilmanual
+[053:OBNA#0641](__)stilmanual@@
 [053:VERB#0642](D8)Dom är jakstora och täckta med dreggel. JAG tänker i alla fall inte tugga på dom.
 [053:OBNA#0642](__)vaxläppar
 [053:VERB#0643](D8)Inga häftklamrar att ta bort.
@@ -2965,10 +2965,10 @@
 [053:OBNA#0629](__)tavla
 [053:OBNA#0644](__)tung stol
 [053:OBNA#0645](__)sheriff
-[053:OBNA#0646](__)enorm jak
+[053:OBNA#0646](__)enorm jak@@@@@@@@@@@@@@@@@@
 [053:OBNA#0647](__)röd knapp
 [053:OBNA#0648](__)grälsjuk noshörning
-[053:OBNA#0649](__)mullvad
+[053:OBNA#0649](__)mullvad@@@@@@@@@@
 [053:OBNA#0650](__)dokumentförstörare
 [053:OBNA#0651](__)tungt beväpnad clown
 [053:LSCR#0204](D8)Den här behöver jag.
@@ -2994,7 +2994,7 @@
 [053:LSCR#0211](7A)Kasta
 [053:LSCR#0211](54)eld
 [053:LSCR#0211](54)noshörningsnaglar
-[053:LSCR#0211](54)lås
+[053:LSCR#0211](54)lås@@@
 [053:LSCR#0212](14)Men jag är inte klar med dig än!
 [053:LSCR#0212](D8)Åh nej.
 [053:LSCR#0212](14)Trodde du att du kunde smita härifrån med Idolen med de Många Händerna, va?
@@ -3085,7 +3085,7 @@
 [057:SCRP#0055](FA)Jag går och tar reda på det. Adjö.
 [057:SCRP#0055](14)Jodå!\255\003Du vet, du kunde behöva en lektion eller två om det där är det bästa du kan komma med.
 [057:SCRP#0055](14)Inte mig, din lika hjärnlösa fåniga lilla docka!
-[057:SCRP#0055](14)Jag hade en gång en hund som var smartare än dig.\255\003Ta DET och stoppa det i din repertoar!
+[057:SCRP#0055](14)Jag ägde en gång en hund som var smartare än dig.\255\003Ta DET och stoppa det i din repertoar!
 [057:SCRP#0055](14)Öh...\255\003...eeeh...\255\003Vilket öra, påkandedräkt?
 [057:SCRP#0055](14)...heh...
 [057:SCRP#0055](14)Vad är det som är bra med det?
@@ -3160,7 +3160,7 @@
 [059:OBNA#0702](__)visitkort
 [059:VERB#0694](D8)Den kanske inte ser ut som mycket, men den är min.
 [059:VERB#0694](D8)Jag är förvånad att den fortfarande flyter.
-[059:OBNA#0694](__)båt
+[059:OBNA#0694](__)båt@@@@@@@@@@
 [059:VERB#0695](D8)Jösses, kanske jag borde ha köpt den här...\255\003...nä.
 [059:VERB#0695](D8)Ah, ett renoveringsobjekt.
 [059:OBNA#0695](__)båt
@@ -3502,7 +3502,7 @@
 [064:VERB#0749](14)
 [064:VERB#0749](D8)Jag är inte dum nog att göra det två gånger.
 [064:VERB#0749](D8)Jag tror en riktig spade vore bättre.
-[064:OBNA#0749](__)X
+[064:OBNA#0749](__)X@@@
 [064:OBNA#0750](__)skogsstig
 [064:VERB#0747](D8)Mêlée Islands® legendariska försvunna skatt\255\003Denna omsorgsfullt reproducerade del av Mêlée Islands® historia har glatt tusentals blivande pirater och deras familjer i generationer.
 [064:VERB#0747](D8)Kom ihåg att det finns andra pirater på den här ön,\255\003SÅ TA DET LUGNT MED SKATTEN.\255\003Lämna lite till nästa person.
@@ -3687,7 +3687,7 @@
 [071:LSCR#0202](14)zzzzzzzz
 [072:VERB#0799](D8)Den här nyckeln verkar inte passa där.
 [072:VERB#0799](D8)Det är en stor, spöklik nyckel.
-[072:OBNA#0799](__)nyckel
+[072:OBNA#0799](__)nyckel@@@@@@@
 [072:OBNA#0794](__)dörr
 [072:VERB#0795](D8)Ser ut som Monkey Island®.
 [072:OBNA#0795](__)karta
@@ -3780,7 +3780,7 @@
 [075:VERB#0823](D8)Den verkar vara fylld med nån kolsyrad vätska.
 [075:VERB#0823](D8)Jag tror inte den är särskilt användbar i sitt nuvarande skick.
 [075:VERB#0823](D8)Inte nu.
-[075:OBNA#0823](__)voodoo-rot
+[075:OBNA#0823](__)voodoo-rot@@@@@@@@@@@@@@@@
 [075:LSCR#0200](14)Klonk!
 [075:LSCR#0200](14)Bam!
 [075:LSCR#0200](14)Duns!
@@ -3804,8 +3804,8 @@
 [077:VERB#0840](14)KNARREEE
 [077:VERB#0840](14)KNARREEEK
 [077:VERB#0840](14)Vad var det???
-[077:VERB#0840](54)gnisslig dörr
-[077:OBNA#0840](__)dörr
+[077:VERB#0840](54)gnisslig dörr@@@
+[077:OBNA#0840](__)dörr@@@@@@@@@@@@@@@@@
 [077:OBNA#0841](__)lucka
 [077:VERB#0842](D8)Hej! Vilken söt liten spökhund.
 [077:VERB#0842](D8)Jag bör nog låta den vara.
@@ -4181,7 +4181,7 @@
 [085:OBNA#0912](__)glänta
 [085:OBNA#0910](__)strand
 [085:OBNA#0914](__)bro
-[085:OBNA#0915](__)ljus
+[085:OBNA#0915](__)ljus@@@@@@@@@@@@@
 [085:OBNA#0916](__)hus
 [085:OBNA#0909](__)ö
 [085:VERB#0918](14)

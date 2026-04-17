@@ -1,9 +1,11 @@
-# scumm-translation
+# scumm-translate-swe
 
-A toolkit for creating a Swedish fan translation of LucasArts SCUMM engine games,
-with AI assistance (Claude) doing the translation work.
+Swedish fan translation of LucasArts SCUMM engine games.
+The translation is done with AI assistance (Claude); this repo contains the
+tooling, translation data, and a self-contained patcher.
 
-First target: **The Secret of Monkey Island Special Edition (MI1SE)**, GOG version.
+First target: **The Secret of Monkey Island** — both the Special Edition
+(GOG/Steam) and the Classic CD-ROM version (ScummVM).
 
 ---
 
@@ -14,12 +16,14 @@ First target: **The Secret of Monkey Island Special Edition (MI1SE)**, GOG versi
 You need your own legal copy of *The Secret of Monkey Island*.
 One patcher works for both the Special Edition and the Classic CD-ROM version.
 
-> **Note:** Only tested with the GOG Special Edition. The Steam version should work but has not been verified.
+> **Note:** Tested with the GOG Special Edition and the Classic CD-ROM version in ScummVM. The Steam version should work but has not been verified.
 
 ### How to patch
 
-Download `mi1-translate-windows.exe` / `mi1-translate-darwin` / `mi1-translate-linux`
-and `swedish.txt` into the same folder as your game files, then run the patcher.
+1. Download the zip for your platform from the
+   [Releases page](https://github.com/jpalmert/scumm-translate-swe/releases).
+2. Extract the zip into the same folder as your game files.
+3. Run the patcher.
 
 The patcher detects your version automatically:
 - **Special Edition:** place next to `Monkey1.pak`
@@ -115,11 +119,12 @@ cp /path/to/MONKEY1.000 /path/to/MONKEY1.001 games/monkey1/game/
 
 ### Extract assets from the game
 
-Scripts detect the active game from the working directory. Run from inside `games/<game>/`:
-
 ```bash
 # Place game files in games/monkey1/game/, then:
 bash scripts/extract.sh monkey1
+
+# Or from inside the game directory:
+cd games/monkey1 && bash ../../scripts/extract.sh
 ```
 
 This populates `games/monkey1/gen/` (gitignored):
@@ -148,14 +153,12 @@ Translate each string in place, keeping the prefix and all `\255\NNN` control co
 Requires `games/monkey1/gen/` to be populated (run `extract.sh` first).
 
 ```bash
-cd games/monkey1
-bash ../../scripts/build.sh
+bash scripts/build.sh monkey1
 
 # Output in games/monkey1/dist/:
-#   mi1-translate-linux
-#   mi1-translate-darwin
-#   mi1-translate-windows.exe
-#   swedish.txt
+#   mi1-translate-linux.zip
+#   mi1-translate-macos.zip
+#   mi1-translate-windows.zip
 ```
 
 ### Refreshing dependencies
@@ -171,11 +174,11 @@ This re-downloads all tool binaries and updates both `bin/` and the embedded ass
 ### Running tests
 
 ```bash
-# Unit tests (fast, no game files needed):
-go test ./...
+# Unit + Python tests (no game files needed):
+bash scripts/test.sh monkey1
 
-# Integration tests (requires games/monkey1/game/Monkey1.pak):
-go test -tags integration -v ./...
+# All tests including integration (requires games/monkey1/game/Monkey1.pak):
+bash scripts/test.sh monkey1 --all
 ```
 
 ---
