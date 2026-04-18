@@ -67,15 +67,15 @@
 [007:VERB#0087](D8)Det finns tid för det senare.
 [007:OBNA#0087](__)Kaptenens säng
 [007:LSCR#0200](D8)Jag är körd.
-[007:SCRP#0148](D8)Det står:\255\003`Kaptenens logg, 10 mars.`\255\003`Styrman Rötbett och jag har letat efter Monkey Island® i över en månad utan framgång.`
+[007:SCRP#0148](D8)Det står:\255\003`Kaptenens logg, 10 mars.`\255\003`Styrman Rötbett och jag har letat efter Monkey Island™ i över en månad utan framgång.`
 [007:SCRP#0148](D8)`Dokumentet vi köpte på Mêlée visade sig vara ett recept, inte en karta som vi trott.`
 [007:SCRP#0148](D8)`Kaptenens logg, 12 mars.`\255\003`Jag önskar att Rötbett kunde ta ett bad.`
 [007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Rötbett kunde sluta snarka.`
 [007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Rötbett börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi ryker ihop.`
 [007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Rötbett att laga middag ikväll.`
-[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island®.`\255\003`Både Rötbett och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island® vid fören.`
-[007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Rötbett och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island®.`
-[007:SCRP#0148](D8)`Vi ser båda fram emot möjligheten att bli de första civiliserade människorna som avslöjar Monkey Islands® Hemlighet.`
+[007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island™.`\255\003`Både Rötbett och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island™ vid fören.`
+[007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Rötbett och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island™.`
+[007:SCRP#0148](D8)`Vi ser båda fram emot möjligheten att bli de första civiliserade människorna som avslöjar Monkey Islands™ Hemlighet.`
 [007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Rötbett glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
 [007:SCRP#0148](D8)Det var sista anteckningen.
 [007:SCRP#0184](14)
@@ -435,7 +435,7 @@
 [016:SCRP#0157](D8)Jag kan se det stora bananträdet på stranden!
 [016:SCRP#0157](D8)Wow, vilken djungel!\255\003Där är det stora bananträdet på stranden till vänster.
 [016:SCRP#0157](D8)Djungeln är ganska tät...\255\003...allt jag kan se är en massa djur som äter varandra!
-[016:SCRP#0157](D8)Hej, jag kan se utkiken på Mêlée Island®!\255\003Han tittar rakt på mig!
+[016:SCRP#0157](D8)Hej, jag kan se utkiken på Mêlée Island™!\255\003Han tittar rakt på mig!
 [017:VERB#0237](D8)Vad jag inte skulle ge för en stor, härlig vattenballong just nu.
 [017:OBNA#0237](__)skeppsdäck
 [017:VERB#0238](D8)Vilken fin flagga.\255\003Får mig att skaka i brallan bara att titta på den.
@@ -481,7 +481,7 @@
 [019:OBNA#0259](__)myterisk besättning
 [019:VERB#0260](D8)Det är för långt att gå dit, och dessutom kan jag inte simma.
 [019:VERB#0260](D8)WOW!!! Det här var väl värt $59.95 + Moms
-[019:OBNA#0260](__)Monkey Island®
+[019:OBNA#0260](__)Monkey Island™
 [019:OBNA#0252](__)stubin
 [019:LSCR#0200](14)För det första...
 [019:LSCR#0200](14)Jag vill säga att det är underbart att få jobba med en sådan härlig besättning.
@@ -497,7 +497,7 @@
 [019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
 [019:LSCR#0200](14)--suck--
 [019:LSCR#0204](D8)Hej, titta...
-[019:LSCR#0204](D8)...vi har kommit till Monkey Island®
+[019:LSCR#0204](D8)...vi har kommit till Monkey Island™
 [019:LSCR#0204](14)Säg till när du har hittat Guvernören...\255\003...vi har en extra stol hon kan använda.
 [019:LSCR#0204](D8)Jag tror inte de kommer vara till stor hjälp.
 [019:LSCR#0204](14)Absolut.
@@ -506,8 +506,8 @@
 [019:LSCR#0204](D8)Inget.
 [019:LSCR#0204](FA)Hej grabbar, vad händer?
 [019:LSCR#0204](FA)Kan jag göra nåt för att få er att hjälpa mig?
-[019:LSCR#0204](FA)Jag hörde att vädret är fint vid Monkey Island®.
-[019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island®.
+[019:LSCR#0204](FA)Jag hörde att vädret är fint vid Monkey Island™.
+[019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island™.
 [019:LSCR#0204](FA)Jag ger er myterister fem sekunder att \254\008     komma till sans!
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
 [019:LSCR#0204](14)Stick, Guybrush.
@@ -520,7 +520,7 @@
 [019:LSCR#0204](14)Öh, ursäkta Guybrush...\255\003...du skymmer solen.
 [019:LSCR#0204](14)Och?
 [019:LSCR#0204](14)Ja!\255\003Och?
-[019:LSCR#0206](D8)Heliga apblåsor!\255\003Det är Monkey Island®.
+[019:LSCR#0206](D8)Heliga apblåsor!\255\003Det är Monkey Island™.
 [019:SCRP#0107](14)] 
 [019:SCRP#0107](14)] 
 [020:VERB#0271](D8)Det är bäst att jag lämnar den här.
@@ -565,7 +565,7 @@
 [020:LSCR#0202](14)Förresten, du kanske vill tänka på att släcka den där elden.\255\003Någon skulle kunna bli skadad.
 [020:LSCR#0202](14) 
 [020:LSCR#0203](D8)`MEDDELANDE OM OFFENTLIGT MÖTE`\255\003`Det kommer hållas ett möte onsdagskväll för att diskutera den senaste ockupationen av det Heliga Aphuvudet av spökpiraten LeChuck...`
-[020:LSCR#0203](D8)`...och den efterföljande påverkan på miljön och turistnäringen.`\255\003`Alla Monkey Island®s kannibaler uppmanas att närvara.`
+[020:LSCR#0203](D8)`...och den efterföljande påverkan på miljön och turistnäringen.`\255\003`Alla Monkey Island™s kannibaler uppmanas att närvara.`
 [020:SCRP#0095](14) 
 [020:SCRP#0095](14)Jag blir aldrig trött på den här utsikten.
 [020:SCRP#0095](14)Även om jag HAR tittat på den i tjugo år nu.\255\003Även om det är den ENDA utsikten på ön.
@@ -599,7 +599,7 @@
 [020:SCRP#0095](14)Åh, otäck olycka.\255\003Han försökte sätta upp en gunga.
 [020:SCRP#0095](14)Det skulle vara en fantastisk turistattraktion, om någon någonsin kunde hitta ön.
 [020:SCRP#0095](14)Nå, det är okej.\255\003Nästa gång, var mer försiktig.
-[020:SCRP#0095](14)Stan från Stans Begagnade Fartyg?\255\003På Mêlée Island®?
+[020:SCRP#0095](14)Stan från Stans Begagnade Fartyg?\255\003På Mêlée Island™?
 [020:SCRP#0095](14)Heh heh heh heh
 [020:SCRP#0095](14)Hördu, klaga inte på det.
 [020:SCRP#0095](14)Det är den enda jag har.
@@ -639,8 +639,8 @@
 [020:SCRP#0095](FA)Ursäkta mig, jag har brådskande ärenden att sköta.
 [020:SCRP#0095](14)Ja, jag också.
 [020:SCRP#0095](14)-- hehe hehe --
-[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands® Hemlighet.\255\003Men min vän råkade ut för en förfärlig olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
-[020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island®.\255\003De skulle hämta hjälp och komma tillbaka...\255\003...något måste ha hänt.
+[020:SCRP#0095](14)Tja, jag seglade hit med en vän för tjugo år sen.\255\003Vi hoppades upptäcka Monkey Islands™ Hemlighet.\255\003Men min vän råkade ut för en förfärlig olycka...\255\003...som tog hans liv...\255\003...och jag kunde inte segla skeppet tillbaka själv.
+[020:SCRP#0095](14)Jag tränade ett gäng schimpanser att bemanna skeppet och segla tillbaka det till Mêlée Island™.\255\003De skulle hämta hjälp och komma tillbaka...\255\003...något måste ha hänt.
 [020:SCRP#0095](D8)Varför följde du inte bara med schimpanserna?
 [020:SCRP#0095](14)VECKOR på en båt full med apor.
 [020:SCRP#0095](14)Åh, härligt.
@@ -649,7 +649,7 @@
 [020:SCRP#0095](14)--men jag pratar inte med dem.\255\003De ÄR kannibaler, men de är inte farliga...\255\003...såvida du inte lånar ut något till dem.
 [020:SCRP#0095](14)
 [020:SCRP#0095](14)Nå, här är jag.\255\003Glad att du kom för att rädda mig--\255\003--fast du kunde ha kommit lite tidigare.\255\003Böterna på den där försenade biblioteksboken borde vara ganska stora vid det här laget.\255\003Vi går.
-[020:SCRP#0095](D8)Öh...\255\003Det var inte riktigt vad jag menade.\255\003Jag seglade hit i jakten på Guvernören på Mêlée Island®, som har kidnappats av ett spöke.
+[020:SCRP#0095](D8)Öh...\255\003Det var inte riktigt vad jag menade.\255\003Jag seglade hit i jakten på Guvernören på Mêlée Island™, som har kidnappats av ett spöke.
 [020:SCRP#0095](14)Åh, bra, rädda mig INTE.\255\003Jag gillar det här.
 [020:SCRP#0095](14)Regnet på mitt huvud, vinden i ryggen...\255\003...insekterna på min tallrik...
 [020:SCRP#0095](D8)Öhm...\255\003Ja, jag kanske kan ta med dig tillbaka också...
@@ -686,16 +686,16 @@
 [020:SCRP#0096](14)Nej tack, jag har egna, fast någon kastade dem i en ravin.
 [020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
 [020:SCRP#0164](D8)Det är tryckt på brevpapper!
-[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Var snäll och sluta flytta på den här.`\255\003`Den är noggrant kalibrerad.`\255\003`--Herman Rötbett--`
+[020:SCRP#0164](D8)`Till Monkey Island™ Kannibalerna:`\255\003`Var snäll och sluta flytta på den här.`\255\003`Den är noggrant kalibrerad.`\255\003`--Herman Rötbett--`
 [020:SCRP#0164](D8)`Herr Rötbett:`\255\003`Var snäll och ta bort det här farliga föremålet.`
 [020:SCRP#0164](D8)`Lemonhead sparkade en sten på den från klippan ovanför och skadade nästan någon som satte upp en gunga på bananträdet på södra stranden.`
 [020:SCRP#0164](D8)`Lemonhead sparkade en sten på den från klippan ovanför och sänkte nästan ett förbipasserande skepp.`
 [020:SCRP#0164](D8)`--Kannibalerna`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste än en gång be dig dra ner på dina nattliga aktiviteter i området kring det Heliga Aphuvudet.`\255\003`Anständiga människor försöker sova!`
-[020:SCRP#0164](D8)`Var vänlig håll nere ljudnivån.`\255\003`--Monkey Island® Kannibalerna`\255\003`P.S.--`\255\003`Vi såg dig ta med den där kvinnan med halsduken dit ner!`
-[020:SCRP#0164](D8)`Till Monkey Island® Kannibalerna:`\255\003`Jag har inget emot att ni dyrkar framför Den Heliga Apidolen som också är mitt hem och hemliga operationsbas...`
+[020:SCRP#0164](D8)`Var vänlig håll nere ljudnivån.`\255\003`--Monkey Island™ Kannibalerna`\255\003`P.S.--`\255\003`Vi såg dig ta med den där kvinnan med halsduken dit ner!`
+[020:SCRP#0164](D8)`Till Monkey Island™ Kannibalerna:`\255\003`Jag har inget emot att ni dyrkar framför Den Heliga Apidolen som också är mitt hem och hemliga operationsbas...`
 [020:SCRP#0164](D8)`...men skulle ni kunna låta bli att lämna smutsiga offer på min veranda.`\255\003`Och, var snäll GÅ INTE IN i Aphuvudet.`\255\003`--G.P. LeChuck`
-[020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island® Kannibalerna`
+[020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island™ Kannibalerna`
 [020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
 [020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare nyckeln till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
 [020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Gnäll, Hum och Hav, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
@@ -712,7 +712,7 @@
 [020:SCRP#0167](54)anmärkningsvärd sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
-[020:SCRP#0168](D8)Jag är här för att rädda Mêlée Islands® guvernör.
+[020:SCRP#0168](D8)Jag är här för att rädda Mêlée Islands™ guvernör.
 [020:SCRP#0168](D8)Jag är en mäktig pirat.
 [020:SCRP#0168](D8)Sett några stora, fula, läskiga, genomskinliga pirater här omkring?
 [020:SCRP#0168](D8)Finns det något gott att äta på den här ön?
@@ -824,7 +824,7 @@
 [025:LSCR#0200](13)infödd
 [025:LSCR#0200](13)infödd
 [025:LSCR#0202](14)Är det en banan i fickan, eller är du bara glad att se oss?
-[025:LSCR#0202](14)Du har minsann mage att stjäla från de beryktade Monkey Island®-kannibalerna!
+[025:LSCR#0202](14)Du har minsann mage att stjäla från de beryktade Monkey Island™-kannibalerna!
 [025:LSCR#0202](D8)Ni är kannibaler?!
 [025:LSCR#0202](14)Jo, visst.\255\003Men, på sistone har vi försökt att undvika rött kött.
 [025:LSCR#0202](14)Bara av hälsoskäl.\255\003Vi är fortfarande lika grymma som alltid.
@@ -890,7 +890,7 @@
 [025:LSCR#0205](14)Och det står `Tillverkad av Lemonhead`...\255\003...precis som en av mina!\255\003Vi borde ta med det här till Den Stora Apan.
 [025:LSCR#0205](14)Ja, jag håller med.
 [025:LSCR#0205](14)Vi är mycket tacksamma för denna fina gåva.
-[025:LSCR#0205](14)Om det någonsin är något du behöver på Monkey Island®, kom bara och hälsa på oss.
+[025:LSCR#0205](14)Om det någonsin är något du behöver på Monkey Island™, kom bara och hälsa på oss.
 [025:LSCR#0205](14) 
 [025:LSCR#0206](14)Du går ingenstans förrän du ger oss något.
 [025:LSCR#0211](D8)Japp. Fortfarande tom.
@@ -920,8 +920,8 @@
 [025:LSCR#0213](14)Det är inte riktigt vad vi tänkte oss.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](14)Är det något ANNAT vi kan göra för dig?
-[025:LSCR#0213](14)Här?\255\003På Monkey Island®?
-[025:LSCR#0213](14)Vi är de enda människorna som bor på Monkey Island®.
+[025:LSCR#0213](14)Här?\255\003På Monkey Island™?
+[025:LSCR#0213](14)Vi är de enda människorna som bor på Monkey Island™.
 [025:LSCR#0213](14)Alltså, de enda civiliserade människorna.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](FA)Det är okej. De jag letar efter lever inte.
@@ -1263,7 +1263,7 @@
 [028:LSCR#0220](14)Det svåra kommer vara att ta sig förbi hundarna utanför.
 [028:LSCR#0220](14)De är en särskilt elak ras...\255\003...du kanske kan droga dem eller nåt.
 [028:LSCR#0220](14)Legenden säger att det finns en skatt begravd här på ön...
-[028:LSCR#0220](14)Allt du behöver göra är att hitta den Legendariska Försvunna Skatten på Mêlée Island® och ta med dig den hit.
+[028:LSCR#0220](14)Allt du behöver göra är att hitta den Legendariska Försvunna Skatten på Mêlée Island™ och ta med dig den hit.
 [028:LSCR#0220](D8)Borde jag ha en karta eller nåt?
 [028:LSCR#0220](14)Du kan knappast förvänta dig att hitta en skatt utan en karta!
 [028:LSCR#0220](14)...och glöm inte:\255\003X markerar platsen!
@@ -1309,7 +1309,7 @@
 [028:LSCR#0222](14)Voff ARF!\255\003...arf?
 [028:LSCR#0222](14)Voff, a-voff arf!
 [028:LSCR#0222](14)GRRRRRRRRRR!!!
-[028:LSCR#0222](14)Voff-voff arf voff...\255\003...varoof, Mêlée Island®!\255\003...a-voff vuf:\255\003...LeChuck!\255\003Grrrrrrr!
+[028:LSCR#0222](14)Voff-voff arf voff...\255\003...varoof, Mêlée Island™!\255\003...a-voff vuf:\255\003...LeChuck!\255\003Grrrrrrr!
 [028:LSCR#0222](14)
 [028:LSCR#0222](FA)Vorf.
 [028:LSCR#0222](FA)A-VOFF!
@@ -1320,7 +1320,7 @@
 [028:LSCR#0222](14)Grrrrrrrr!
 [028:LSCR#0222](14)Vorf voff voff voff-voff...\255\003Vor-voff vuf?\255\003Voff arf-arf, bow-voff...\255\003...Guvernör Marley!
 [028:LSCR#0222](14)A-UUUUUU! A-UUUUUU!\255\003(voff voff voff)\255\003Bow-roo vuf rowwf--\255\003--Arrooof--
-[028:LSCR#0222](14)--LeChuck!\255\003GRRRRRRRRR!\255\003Arf, oof-oof, Monkey Island®!\255\003*sniffa*  *sniffa*
+[028:LSCR#0222](14)--LeChuck!\255\003GRRRRRRRRR!\255\003Arf, oof-oof, Monkey Island™!\255\003*sniffa*  *sniffa*
 [028:LSCR#0222](14)
 [028:SCRP#0059](FA)Vad är det för fel, din gamla fyllebult?
 [028:SCRP#0059](FA)Var är alla pirater?
@@ -1332,7 +1332,7 @@
 [028:SCRP#0059](14)Hon var så snäll mot mig...\255\003...tappade alltid så bekvämligt bort de där rapporterna från hälsovårdsnämnden...\255\003...mot en liten ersättning, förstås.
 [028:SCRP#0059](14)Vad ska det bli av min verksamhet?\255\001Åh, ve mig.
 [028:SCRP#0059](D8)Vad kan jag göra för att rädda henne?
-[028:SCRP#0059](14)Du måste skaffa ett skepp och följa efter henne!\255\003Spökpiratens lya finns på Monkey Island®, alla vet det.\255\003(Fråga mig inte hur...)
+[028:SCRP#0059](14)Du måste skaffa ett skepp och följa efter henne!\255\003Spökpiratens lya finns på Monkey Island™, alla vet det.\255\003(Fråga mig inte hur...)
 [028:SCRP#0059](14)Allt du behöver göra är att hitta ett sätt dit.
 [028:SCRP#0059](FA)Varför skulle jag göra det?
 [028:SCRP#0059](FA)Var kan jag få tag på ett skepp?
@@ -1463,26 +1463,26 @@
 [029:LSCR#0210](14)Jag får en ny vision.
 [029:LSCR#0210](14)Du måste...
 [029:LSCR#0210](D8)Måste vad?
-[029:LSCR#0210](14)Du måste åka till Monkey Island®.
+[029:LSCR#0210](14)Du måste åka till Monkey Island™.
 [029:LSCR#0210](14)När du är där kommer du söka efter Spökpiraten LeChuck.
-[029:LSCR#0210](14)Han gömmer sig djupt...\255\003...djupt under Monkey Island®.
+[029:LSCR#0210](14)Han gömmer sig djupt...\255\003...djupt under Monkey Island™.
 [029:LSCR#0210](14)Det finns bara en sak kraftfull nog att förgöra LeChuck.
 [029:LSCR#0210](14)Vad?
 [029:LSCR#0210](14)Det är en uråldrig rot.\255\003När den beretts kan roten förgöra ett spöke med en enda beröring.
 [029:LSCR#0210](D8)Ja!
 [029:LSCR#0210](14)Jag får mer...\255\003...mer vision.
 [029:LSCR#0210](D8)Tala om!
-[029:LSCR#0210](14)Jag ser Kannibalerna som bor på Ön®.\255\003De...\255\003...hjälper dig...\255\003...eller äter dig...\255\003...Jag kan inte säga, visionen kommer inte in tydligt längre.
+[029:LSCR#0210](14)Jag ser Kannibalerna som bor på Ön™.\255\003De...\255\003...hjälper dig...\255\003...eller äter dig...\255\003...Jag kan inte säga, visionen kommer inte in tydligt längre.
 [029:LSCR#0210](D8)Härligt.
 [029:LSCR#0210](14)Gå nu och hitta den som älskar dig.\255\003Men var varnad...
 [029:LSCR#0210](D8)Oroa dig inte, jag ska hålla utkik efter LeChuck.
 [029:LSCR#0210](14)Inte för LeChuck... för dig själv och det du kommer hitta.\255\003Det du kommer ta reda på om dig själv och din värld.
 [029:LSCR#0210](14)Det kommer skrämma dig.
-[030:VERB#0390](D8)`Få grepp om dina besparingar med GRIPMASTER®-handtag.`
+[030:VERB#0390](D8)`Få grepp om dina besparingar med GRIPMASTER™-handtag.`
 [030:VERB#0390](14)Hörru! Håll dig borta från det där!
 [030:VERB#0390](14)Rör inte vid det där!
 [030:OBNA#0390](__)handtag
-[030:VERB#0389](D8)`Davey Jones® Lockers:\255\001Sista ordet i stöld-, brand- och groggsäkra förvaringsanordningar.`
+[030:VERB#0389](D8)`Davey Jones™ Lockers:\255\001Sista ordet i stöld-, brand- och groggsäkra förvaringsanordningar.`
 [030:VERB#0389](14)
 [030:VERB#0389](D8)Det här är ett groggsäkert kassaskåp.\255\003Det står så på det.
 [030:VERB#0389](D8)Jag tror inte det kommer öppna det.
@@ -1494,15 +1494,15 @@
 [030:VERB#0398](94)Jag rör det nog bäst inte.\255\003Den där butiksägaren kanske biter av huvudet på mig.
 [030:OBNA#0398](__)skylt
 [030:OBNA#0394](__)butiksägare
-[030:VERB#0395](D8)BREATHMASTER® -- För piraten som bryr sig om första intrycket.
+[030:VERB#0395](D8)BREATHMASTER™ -- För piraten som bryr sig om första intrycket.
 [030:VERB#0395](94)Åhhh! Det är uppfriskande!
 [030:OBNA#0395](__)mintpastiller
-[030:VERB#0396](D8)`DIGMASTER® -- Den enda spaden för seriösa skattjaktsentusiaster.`
+[030:VERB#0396](D8)`DIGMASTER™ -- Den enda spaden för seriösa skattjaktsentusiaster.`
 [030:OBNA#0396](__)spade
 [030:VERB#0397](94)Jag, den gode och hedervärde butiksägaren, tar härmed ansvar för innehavarens skulder upp till 5000 dubloner.
 [030:OBNA#0397](__)butiksägarens skuldebrev
 [030:OBNA#0387](__)dörr
-[030:VERB#0388](94)`SLASHMASTER® -- När du vill ha ett svärd lika vasst som din kvickhet.`
+[030:VERB#0388](94)`SLASHMASTER™ -- När du vill ha ett svärd lika vasst som din kvickhet.`
 [030:VERB#0388](D8)På de där hjälplösa hundarna?
 [030:VERB#0388](D8)Det är omänskligt!
 [030:OBNA#0388](__)svärd
@@ -1545,7 +1545,7 @@
 [030:LSCR#0211](14)Vaddå vill du?
 [030:LSCR#0211](FA)Angående det här svärdet...
 [030:LSCR#0211](FA)Angående den här spaden...
-[030:LSCR#0211](FA)Jag letar efter Svärdmästaren på Mêlée Island®.
+[030:LSCR#0211](FA)Jag letar efter Svärdmästaren på Mêlée Island™.
 [030:LSCR#0211](FA)Nu när jag har det här svärdet, vem kan jag testa det på?
 [030:LSCR#0211](FA)Jag är intresserad av att skaffa ett skuldebrev.
 [030:LSCR#0211](FA)Jag skulle verkligen behöva en mintpastill.
@@ -1572,7 +1572,7 @@
 [030:LSCR#0211](14)
 [030:LSCR#0211](14)Då bör du gå och lägga tillbaka den.
 [030:LSCR#0211](14)Finns det nåt här som du kanske HAR råd med?
-[030:LSCR#0211](14)Nå, om du letar efter en bra strid...\255\003Vi har den bästa svärdskämpen i hela Karibien här på Mêlée Island®.\255\003Fast ingen vet var hennes hemliga gömställe finns...
+[030:LSCR#0211](14)Nå, om du letar efter en bra strid...\255\003Vi har den bästa svärdskämpen i hela Karibien här på Mêlée Island™.\255\003Fast ingen vet var hennes hemliga gömställe finns...
 [030:LSCR#0211](14)Hör här, jag sa ju, hon vill inte träffa dig.
 [030:LSCR#0211](94)Kanske om du frågade henne igen?
 [030:LSCR#0211](14)Ja visst, som om jag ska gå på den igen!
@@ -1582,7 +1582,7 @@
 [030:LSCR#0211](14)Din lömska, långfingriga lilla vessla...
 [030:LSCR#0211](94)Du tror väl inte jag är dum nog att pröva samma trick tre gånger i rad?
 [030:LSCR#0211](14)Du börjar verkligen reta upp mig.
-[030:LSCR#0211](14)Svärdmästaren på Mêlée Island®?\255\003Hmmm... Jag vet inte...\255\003Ingen vet var hennes hemliga gömställe finns...
+[030:LSCR#0211](14)Svärdmästaren på Mêlée Island™?\255\003Hmmm... Jag vet inte...\255\003Ingen vet var hennes hemliga gömställe finns...
 [030:LSCR#0211](14)...ingen utom jag.\255\003Jag får gå och fråga henne om det går bra att visa dig vägen.
 [030:LSCR#0211](14)Hmmm...
 [030:LSCR#0211](14)Jag antar att jag kan vandra hela vägen dit...
@@ -1720,7 +1720,7 @@
 [031:LSCR#0202](FA)Vad är så illa med honom?
 [031:LSCR#0202](FA)Du säger bara det för att han satte dig i fängelse.
 [031:LSCR#0202](FA)Jag ska tänka på det. Vi ses.
-[031:LSCR#0202](14)Fester Shinetop är den elakaste karln på Mêlée Island®.\255\003Lyckligtvis håller Guvernören honom i schack för det mesta.
+[031:LSCR#0202](14)Fester Shinetop är den elakaste karln på Mêlée Island™.\255\003Lyckligtvis håller Guvernören honom i schack för det mesta.
 [031:LSCR#0202](14)Vi brukade ha en rättvis, hygglig karl som sheriff--\255\003--men han dog nyligen under mystiska omständigheter.
 [031:LSCR#0202](14)Frågar du mig tror jag den nye sheriffen hade nåt med det att göra.
 [031:LSCR#0202](14)Jag tror du har sagt tillräckligt, Otis!
@@ -1775,11 +1775,11 @@
 [031:LSCR#0203](D8)Oj! Snacka om dålig andedräkt!
 [031:LSCR#0208](14)Jag heter Otis förresten.
 [031:LSCR#0208](14)Om det finns nåt jag nånsin kan göra för dig--
-[031:LSCR#0208](D8)Nå, faktiskt finns det en sak...\255\003Jag letar efter modiga personer att gå med i min besättning och segla till Monkey Island® med mig för att rädda Guvernören.
+[031:LSCR#0208](D8)Nå, faktiskt finns det en sak...\255\003Jag letar efter modiga personer att gå med i min besättning och segla till Monkey Island™ med mig för att rädda Guvernören.
 [031:LSCR#0208](D8)Hon har kidnappats av den fruktansvärde piraten LeChuck, och hålls fången nånstans i hans hemliga gömställe.
 [031:LSCR#0208](14)Jaha...
 [031:LSCR#0208](14)Nå, ja, hmmm...
-[031:LSCR#0208](14)LeChuck, säger du?\255\003Nå, ja. Ja, självklart. Vi måste segla till Monkey Island® och--
+[031:LSCR#0208](14)LeChuck, säger du?\255\003Nå, ja. Ja, självklart. Vi måste segla till Monkey Island™ och--
 [031:LSCR#0208](14)TITTA! BAKOM DIG! EN TREHÖVDAD APA!
 [031:LSCR#0208](D8)Jag kan inte tro att jag gick på det.
 [031:LSCR#0208](D8)Ganska bra trick dock.
@@ -1797,7 +1797,7 @@
 [031:LSCR#0209](14)Jaha.\255\003Du har tid att umgås med brottslingar, men inte med lagens väktare.
 [031:LSCR#0209](D8)Förlåt.
 [031:LSCR#0209](14)Hör här, jag vet inte vad du har för dig...\255\003...men vad det än är, det är antagligen olagligt.\255\003Så glöm det.
-[031:LSCR#0209](14)Vart du än går på Mêlée® kommer jag att vakta.\255\003Och försöker du dig på nåt fuffens hamnar du här inne för gott.
+[031:LSCR#0209](14)Vart du än går på Mêlée™ kommer jag att vakta.\255\003Och försöker du dig på nåt fuffens hamnar du här inne för gott.
 [031:LSCR#0209](14)Herregud, vilken typ, eller hur?\255\003Ser du vad jag får stå ut med?
 [031:LSCR#0209](14)Du borde gå innan du ställer till det för oss båda.
 [031:SCRP#0070](D8)Den här muggen är inte till mycket nytta längre.
@@ -1844,7 +1844,7 @@
 [032:LSCR#0200](94)Threepwood!\255\003Guybrush Threepwood!
 [032:LSCR#0200](14)Vad du nu heter, lyssna:
 [032:LSCR#0200](14)Jag är sheriffen här.\255\003Sheriff Fester Shinetop.
-[032:LSCR#0200](14)Lita på mig -- Det här är en dålig tid att besöka Mêlée Island®.\255\003En mycket DÅLIG tid.\255\003Mitt råd är att hitta nån annan plats för din semester.
+[032:LSCR#0200](14)Lita på mig -- Det här är en dålig tid att besöka Mêlée Island™.\255\003En mycket DÅLIG tid.\255\003Mitt råd är att hitta nån annan plats för din semester.
 [032:LSCR#0200](14)Nånstans säkrare.
 [032:LSCR#0200](94)Vad skönt att veta att det finns en ordningsmakt i närheten.
 [033:OBNA#0426](__)klippsida
@@ -2001,7 +2001,7 @@
 [035:LSCR#0216](14)Vill du köpa en karta, va?
 [035:LSCR#0216](14)VÅRA kartor är förstklassiga, inte som smörpappret du får av den där clownen på andra sidan gatan.
 [035:LSCR#0216](14)Nej, skojar bara.
-[035:LSCR#0216](14)Det här är faktiskt kopior av protokollet från senaste mötet i Mêlée Island® föräldraföreningen.\255\003Kan inte ens GE bort dom.
+[035:LSCR#0216](14)Det här är faktiskt kopior av protokollet från senaste mötet i Mêlée Island™ föräldraföreningen.\255\003Kan inte ens GE bort dom.
 [035:LSCR#0216](14)Vill du ha ett?
 [035:LSCR#0216](14)
 [035:LSCR#0216](FA)Nej tack.
@@ -2024,7 +2024,7 @@
 [035:LSCR#0216](14)Dom är väldigt intelligenta varelser!
 [035:LSCR#0216](14)Ha ha ha ha!!
 [035:LSCR#0216](14)Intelligentare än HAN.
-[035:LSCR#0216](14)Det går en historia här i trakten att ett gäng råttor faktiskt seglade ett skepp hit från det mytomspunna Monkey Island®.
+[035:LSCR#0216](14)Det går en historia här i trakten att ett gäng råttor faktiskt seglade ett skepp hit från det mytomspunna Monkey Island™.
 [035:LSCR#0216](14)Nej, det stämmer inte.
 [035:LSCR#0216](14)Det var faktiskt en grupp apor.
 [035:LSCR#0216](FA)Det är fantastiskt!
@@ -2054,7 +2054,7 @@
 [035:LSCR#0216](14)Öh... rom och sylt.\255\003Det är en gammal piratfavorit, alla vet det.
 [035:LSCR#0216](14)Nå, sjöröveriet har inte gått så bra för oss...
 [035:LSCR#0216](14)Det finns några ONATURLIGT begåvade pirater i området just nu...
-[035:LSCR#0216](14)...som opererar från Monkey Island®.
+[035:LSCR#0216](14)...som opererar från Monkey Island™.
 [035:LSCR#0216](14)Så vi har ägnat oss åt alternativa försörjningsmetoder.\255\003Vi försöker starta en cirkus.
 [035:LSCR#0216](14)Det gick bra, tills råttan skrämde iväg elefanten.
 [035:LSCR#0216](14)...och nu jagade nån idiot iväg råttan!
@@ -2063,8 +2063,8 @@
 [035:LSCR#0216](14)Nå, ja, vi visste om det.
 [035:LSCR#0216](FA)Varför står ni bara här istället för att göra nåt \254\008     åt saken?
 [035:LSCR#0216](FA)Jag tänker jaga de där immateriella myndighetsrövarna. \254\008     Är ni med?
-[035:LSCR#0216](FA)Vad sägs om en drömresa till Monkey Island®?
-[035:LSCR#0216](D8)På grund av den här plötsliga förändringen i lokalpolitiken,\255\003är jag beredd att erbjuda er ett engångspris på en kryssning till det natursköna underlandet...\255\003...Monkey Island®!
+[035:LSCR#0216](FA)Vad sägs om en drömresa till Monkey Island™?
+[035:LSCR#0216](D8)På grund av den här plötsliga förändringen i lokalpolitiken,\255\003är jag beredd att erbjuda er ett engångspris på en kryssning till det natursköna underlandet...\255\003...Monkey Island™!
 [035:LSCR#0216](D8)Och det fantastiska med erbjudandet ÄR priset:\255\003Helt gratis!\255\003Allt ni behöver göra är att hjälpa mig bemanna skeppet, och öparadiset kan bli ert...\255\003GRATIS!!
 [035:LSCR#0216](D8)(...och vi kanske räddar Guvernören på köpet.)
 [035:LSCR#0216](14)Öh...
@@ -2084,7 +2084,7 @@
 [035:LSCR#0217](14)\255\007\034\000
 [035:LSCR#0218](14)Ursäkta, men har--\255\003Åh, det är bara du igen.
 [035:LSCR#0218](14)Jag sa ju att det bara fanns EN.
-[035:LSCR#0218](14)Tillbaka för kartan till den Legendariska Försvunna Skatten på Mêlée Island®, va?
+[035:LSCR#0218](14)Tillbaka för kartan till den Legendariska Försvunna Skatten på Mêlée Island™, va?
 [035:LSCR#0218](14)Jag hoppas du hade med dig tillräckligt med pengar den här gången.
 [035:LSCR#0218](FA)Jag vill bara ha en karta.
 [035:LSCR#0218](FA)Min kusin Sven hälsar.
@@ -2107,7 +2107,7 @@
 [035:LSCR#0218](D8)Egentligen menade jag den raspiga metallsorten.
 [035:LSCR#0218](14)Aha.
 [035:LSCR#0218](14)Låt oss prata affärer.
-[035:LSCR#0218](14)Vill du köpa en karta till den Legendariska Försvunna\255\001Skatten på Mêlée Island®?
+[035:LSCR#0218](14)Vill du köpa en karta till den Legendariska Försvunna\255\001Skatten på Mêlée Island™?
 [035:LSCR#0218](14)Enda exemplaret.
 [035:LSCR#0218](14)Sällsynt.
 [035:LSCR#0218](14)Mycket sällsynt.
@@ -2293,7 +2293,7 @@
 [037:SCRP#0060](14)...och lämnade mig med de här krokarna istället för händer...
 [037:SCRP#0060](14)...en vanställd man.
 [037:SCRP#0060](14)Herregud, nu blev jag helt deprimerad.\255\003Tack så mycket.\255\003Kan du inte bara lämna mig ifred nu?
-[037:SCRP#0060](14)Åh, okej.\255\003Ha det bra på Mêlée Island®!
+[037:SCRP#0060](14)Åh, okej.\255\003Ha det bra på Mêlée Island™!
 [037:SCRP#0060](14)
 [037:SCRP#0060](14)Din...
 [037:SCRP#0060](14)Säg hej då, Roger.
@@ -2329,7 +2329,7 @@
 [038:LSCR#0202](FA)Vem är DU?
 [038:LSCR#0202](FA)Varför oroar sig Guvernören för oväntade besökare?
 [038:LSCR#0202](FA)Jag ger mig av för att söka min lycka nu.
-[038:LSCR#0202](94)Jag kom till Mêlée Island® för att jag vill bli pirat.
+[038:LSCR#0202](94)Jag kom till Mêlée Island™ för att jag vill bli pirat.
 [038:LSCR#0202](14)Nå, du valde rätt plats för det.\255\003Fast kanske fel tidpunkt.
 [038:LSCR#0202](14)För att inte tala om fel namn.\255\003Du har det löjligaste namnet jag hört på länge.
 [038:LSCR#0202](14)Det är det enda jag hört som var mer löjligt än `Squinky`.
@@ -2338,7 +2338,7 @@
 [038:LSCR#0202](94)GUYBRUSH THREEPwood.
 [038:LSCR#0202](14)Visst, vad du vill.
 [038:LSCR#0202](14)Va?\255\003Åh.
-[038:LSCR#0202](14)Jag är utkiken på Mêlée Island®.
+[038:LSCR#0202](14)Jag är utkiken på Mêlée Island™.
 [038:LSCR#0202](14)Jag bevakar havet efter annalkande stormar och skepp, och rapporterar direkt till Guvernören.
 [038:LSCR#0202](14)Hon gillar inte oväntade besökare...\255\003...särskilt inte nu.
 [038:LSCR#0202](14)Förresten, vem är du egentligen?
@@ -2382,7 +2382,7 @@
 [038:SCRP#0120](14)Ni ÄR glada att vara döda, ELLER HUR?
 [038:SCRP#0120](14)Åh ja herr'n.\255\003Jag känner mig så lycklig att ni råkade kapra mitt skepp, och sen mördade mig och alla ombord...\255\003...ja herr'n...\255\003lycklig.
 [038:SCRP#0120](14)Skönt att höra det.\255\003Nå, vad var det du störde mig för?
-[038:SCRP#0120](14)Ah...ja herr'n...nå, ni förstår, vi kan ha ett problem på Mêlée Island®.
+[038:SCRP#0120](14)Ah...ja herr'n...nå, ni förstår, vi kan ha ett problem på Mêlée Island™.
 [038:SCRP#0120](14)PROBLEM?!?\255\003Vad för problem kan det vara!?\255\003Jag har gjort de där mesiga piraterna så rädda för havet att dom inte vågar ta ett bad!
 [038:SCRP#0120](14)Nå...\255\003Det verkar finnas en ny pirat i stan.\255\003Fast han är mer en piratposör.
 [038:SCRP#0120](14)Ung.\255\003Oerfaren.\255\003Antagligen inget att oroa sig för.\255\003Vet inte varför jag besvärade er med det.\255\003Jag tar hand om det själv.
@@ -2582,7 +2582,7 @@
 [043:SCRP#0057](14)Vad vill du?
 [043:SCRP#0057](14)Jaha, det är du.
 [043:SCRP#0057](FA)Kan du träna mig att bli bättre än Svärdmästaren?
-[043:SCRP#0057](FA)Kan du göra mig till den bästa svärdskämpen på Mêlée®?
+[043:SCRP#0057](FA)Kan du göra mig till den bästa svärdskämpen på Mêlée™?
 [043:SCRP#0057](FA)Kan vi gå in? Det är lite kyligt här ute.
 [043:SCRP#0057](FA)Vet du var Svärdmästaren bor?
 [043:SCRP#0057](FA)Öh... Kan du snälla släcka den där cigarren?
@@ -2787,7 +2787,7 @@
 [049:LSCR#0200](FA)Fin kväll vi har, eller hur?
 [049:LSCR#0200](FA)Varför pratar ni så konstigt?
 [049:LSCR#0200](FA)Har ni märkt att alla vägarna börjar se likadana ut?
-[049:LSCR#0200](FA)Mitt namn är Guybrush Threepwood. Bered er på att dö!
+[049:LSCR#0200](FA)Mitt namn är Guybrush Threepwood. Bered dig på att dö!
 [049:LSCR#0200](FA)Ni råkar inte ha ett par dubloner...
 [049:LSCR#0200](FA)Förlåt att jag störde. Jag går vidare.
 [049:LSCR#0200](94)Ja hoppas du hade nåt viktigare att stoppa mej för?
@@ -3176,7 +3176,7 @@
 [059:OBNA#0736](__)dubloner
 [059:VERB#0732](D8)`När du sätter segel mot bra värde blåser alla vindar mot Stans!`\255\003(VARNING: Innehåller stark magnet som kan störa annan navigationsutrustning.)
 [059:VERB#0732](14) 
-[059:VERB#0732](D8)Jag är inte säker, men jag tror den pekar mot Mêlée Island®.
+[059:VERB#0732](D8)Jag är inte säker, men jag tror den pekar mot Mêlée Island™.
 [059:VERB#0732](D8)Den pekar mot Stans.
 [059:OBNA#0732](__)magnetisk kompass
 [059:LSCR#0200](14)Dunder
@@ -3234,9 +3234,9 @@
 [059:SCRP#0056](14)--hörru, du råkar inte vara därifrån?\255\003Du verkar ha en sorts nordisk kvalitet över dig...
 [059:SCRP#0056](14)Hur som helst, vi pratar riktigt värde här...
 [059:SCRP#0056](14)Kan inte sluta titta på henne, va?
-[059:SCRP#0056](14)Det här är den berömda `Havsapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island®...\255\003...och kommit tillbaka med nån ombord vid liv.
-[059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands® Hemlighet.
-[059:SCRP#0056](14)Och, som många före dom, försvann dom för alltid.\255\003Deras öde--ett mysterium.\255\003Nästan lika mystiskt som hur det här skeppet återvände till Mêlée Island® utan en enda människa ombord.
+[059:SCRP#0056](14)Det här är den berömda `Havsapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island™...\255\003...och kommit tillbaka med nån ombord vid liv.
+[059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands™ Hemlighet.
+[059:SCRP#0056](14)Och, som många före dom, försvann dom för alltid.\255\003Deras öde--ett mysterium.\255\003Nästan lika mystiskt som hur det här skeppet återvände till Mêlée Island™ utan en enda människa ombord.
 [059:SCRP#0056](14)Vissa påstår att det seglades tillbaka av en besättning av schimpanser.
 [059:SCRP#0056](D8)Schimpanser? Det finns inga schimpanser i Karibien!
 [059:SCRP#0056](14)Åh, håll käften. Det blir en bra historia.
@@ -3427,7 +3427,7 @@
 [061:SCRP#0058](14)Låt oss få det här överstökat.
 [061:SCRP#0058](14)Vad fick du för slutbetyg i Kapten Smirks svärdsfäktningskurs?
 [061:SCRP#0058](D8)Öh...\255\003Betyg?\255\003Kurs?
-[061:SCRP#0058](14)Du menar att du kom hit för att utmana Svärdmästaren på Mêlée Island®...\255\003...möjligen den största svärdsfäktaren i hela Karibien...\255\003...utan en enda lektion i fäktningskonsten?
+[061:SCRP#0058](14)Du menar att du kom hit för att utmana Svärdmästaren på Mêlée Island™...\255\003...möjligen den största svärdsfäktaren i hela Karibien...\255\003...utan en enda lektion i fäktningskonsten?
 [061:SCRP#0058](D8)Japp.
 [061:SCRP#0058](14)Hur tänkte du försvara dig?
 [061:SCRP#0058](D8)Jösses...\255\003Ingen aning.
@@ -3466,7 +3466,7 @@
 [061:SCRP#0124](14)Egentligen är jag här i affärer.\255\003Den här grabben kom in i min butik, förstår du...
 [061:SCRP#0124](14)Inse det, din skabbiga gamla gubbe...\255\003...du hittar vilken ursäkt som helst för att komma hit och besvära mig.
 [061:SCRP#0124](14)Ja, du har nog rätt.
-[061:SCRP#0124](14)Nå, sluta med det. Jag är trött på det.\255\003Ge dig iväg och kom inte hit igen.\255\003Nån kanske följer efter dig, och då blir jag ännu en turistattraktion på Mêlée Island®.
+[061:SCRP#0124](14)Nå, sluta med det. Jag är trött på det.\255\003Ge dig iväg och kom inte hit igen.\255\003Nån kanske följer efter dig, och då blir jag ännu en turistattraktion på Mêlée Island™.
 [061:SCRP#0124](14)Hej, det är din förlust, gullet.
 [061:SCRP#0124](14)Den där grabben frågar om dig hela tiden, Carla...
 [061:SCRP#0124](14)Hörru...\255\003...om du kommer hit en gång till tänker jag hugga av ditt huvud och spotta ner i din hals...\255\003...fattar du?
@@ -3504,14 +3504,14 @@
 [064:VERB#0749](D8)Jag tror en riktig spade vore bättre.
 [064:OBNA#0749](__)X@@@
 [064:OBNA#0750](__)skogsstig
-[064:VERB#0747](D8)Mêlée Islands® legendariska försvunna skatt\255\003Denna omsorgsfullt reproducerade del av Mêlée Islands® historia har glatt tusentals blivande pirater och deras familjer i generationer.
+[064:VERB#0747](D8)Mêlée Islands™ legendariska försvunna skatt\255\003Denna omsorgsfullt reproducerade del av Mêlée Islands™ historia har glatt tusentals blivande pirater och deras familjer i generationer.
 [064:VERB#0747](D8)Kom ihåg att det finns andra pirater på den här ön,\255\003SÅ TA DET LUGNT MED SKATTEN.\255\003Lämna lite till nästa person.
 [064:VERB#0747](14)
 [064:OBNA#0747](__)plakett
-[064:VERB#0752](D8)`Jag hittade Mêlée Islands® skatt och allt jag fick var den här dumma T-shirten!`
+[064:VERB#0752](D8)`Jag hittade Mêlée Islands™ skatt och allt jag fick var den här dumma T-shirten!`
 [064:VERB#0752](D8)Den passar inte.\255\003Typiskt.
 [064:OBNA#0752](__)T-shirt
-[064:VERB#0748](D8)Här vilar en skatt av sådan ofattbar rikedom...\255\003...ja, du får helt enkelt gräva upp den för att tro det.\255\003(Betald av Mêlée Islands® Handelskammare.)
+[064:VERB#0748](D8)Här vilar en skatt av sådan ofattbar rikedom...\255\003...ja, du får helt enkelt gräva upp den för att tro det.\255\003(Betald av Mêlée Islands™ Handelskammare.)
 [064:VERB#0748](14)
 [064:OBNA#0748](__)markör
 [064:LSCR#0200](D8)Det här borde inte ta så lång tid.
@@ -3584,12 +3584,12 @@
 [070:LSCR#0204](FA)Jag måste följa efter dom!
 [070:LSCR#0204](FA)Jag ger upp. Jag är trött på att jaga dom överallt.
 [070:LSCR#0204](FA)Varför är DU fortfarande här?
-[070:LSCR#0204](14)LeChuck gifter sig med Guvernören på Mêlée Island®.
+[070:LSCR#0204](14)LeChuck gifter sig med Guvernören på Mêlée Island™.
 [070:LSCR#0204](D8)VA?\255\003Men hur ska dom...
-[070:LSCR#0204](14)Det finns en vacker kyrka på Mêlée Island®.\255\003Dom är på väg dit.
+[070:LSCR#0204](14)Det finns en vacker kyrka på Mêlée Island™.\255\003Dom är på väg dit.
 [070:LSCR#0204](14)LeChuck gifter sig med Guvernören!
 [070:LSCR#0204](D8)Gifter sig med--
-[070:LSCR#0204](94)Mêlée Island®?\255\003Åh, nej!
+[070:LSCR#0204](94)Mêlée Island™?\255\003Åh, nej!
 [070:LSCR#0204](14)Mitt huvud ramlade ner i lavan där, och jag var tvungen att jaga efter det...\255\003...och när jag kom tillbaka hade dom åkt!
 [070:LSCR#0204](14)Synd också. Jag hatar att missa bröllopet.
 [070:LSCR#0204](94)Jag måste stoppa bröllopet!!
@@ -3617,7 +3617,7 @@
 [070:LSCR#0205](14)Det är okej.\255\003Vi kan ta mitt.
 [070:LSCR#0205](FA)Har du ett skepp?
 [070:LSCR#0205](FA)Om du har ett skepp, varför väntar du på att bli räddad?
-[070:LSCR#0205](FA)Tar du mig till Mêlée Island®?
+[070:LSCR#0205](FA)Tar du mig till Mêlée Island™?
 [070:LSCR#0205](FA)Hur kom du in här utan huvud?
 [070:LSCR#0205](14)Japp.
 [070:LSCR#0205](14)Tja, om du är strandsatt MÅSTE du bli räddad.
@@ -3628,7 +3628,7 @@
 [070:LSCR#0205](14)Vi kör.
 [070:LSCR#0206](14)Åh, där är du!
 [070:LSCR#0206](14)Vi har letat efter dig överallt.
-[070:LSCR#0206](FA)Vi måste ta oss tillbaka till Mêlée Island®!
+[070:LSCR#0206](FA)Vi måste ta oss tillbaka till Mêlée Island™!
 [070:LSCR#0206](FA)Hur kom du in här utan att använda huvudet?
 [070:LSCR#0206](FA)Ni känner det här lufsiga genomskinliga spöket?
 [070:LSCR#0206](14)Jo tjena.
@@ -3652,12 +3652,12 @@
 [070:LSCR#0208](14)Död?\255\003Hur hände det?
 [070:LSCR#0208](14)Åh, på vanligt sätt,\255\003ute på en dags plundring,\255\003spökskepp dyker upp,\255\003LeChuck dödar alla i besättningen,\255\003och skriver sen in oss på HANS skepp.\255\003Du vet.
 [070:LSCR#0208](14)Oj, vad tråkigt.\255\003Kanske du vill följa med oss på vår jakt efter den perfekta solbrännan?
-[070:LSCR#0208](14)Tja, det vore trevligt, men jag försöker få skjuts till ett bröllop på Mêlée Island.\255\003®.
+[070:LSCR#0208](14)Tja, det vore trevligt, men jag försöker få skjuts till ett bröllop på Mêlée Island.\255\003™.
 [070:LSCR#0208](14)Vi var ändå på väg tillbaka dit.\255\003Du kan hänga på.
 [070:LSCR#0208](14)Toppen!
 [070:SCRP#0131](14)
 [070:SCRP#0131](14)
-[070:SCRP#0131](D8)Tja, det var definitivt lättare än resan TILL Monkey Island®.
+[070:SCRP#0131](D8)Tja, det var definitivt lättare än resan TILL Monkey Island™.
 [070:SCRP#0131](D8)Jag undrar vart Rötbett har tagit vägen NU?\255\003Nu måste jag stoppa bröllopet själv!
 [070:SCRP#0131](D8)Jag önskar att dom inte hade varit så ivriga att köpa solkräm.\255\003Nu måste jag stoppa bröllopet själv!
 [070:SCRP#0170](14)En lång promenad, en kort roddtur och en kort vandring senare...
@@ -3689,7 +3689,7 @@
 [072:VERB#0799](D8)Det är en stor, spöklik nyckel.
 [072:OBNA#0799](__)nyckel@@@@@@@
 [072:OBNA#0794](__)dörr
-[072:VERB#0795](D8)Ser ut som Monkey Island®.
+[072:VERB#0795](D8)Ser ut som Monkey Island™.
 [072:OBNA#0795](__)karta
 [072:OBNA#0796](__)kista
 [072:OBNA#0797](__)kista
@@ -3848,7 +3848,7 @@
 [078:SCRP#0133](14)Du vet, bara genom att titta på dig kan jag se att du är en världsman.
 [078:SCRP#0133](14)En man med öga för kvalitet.
 [078:SCRP#0133](14)En man som känner igen ett bra fynd när han
-[078:SCRP#0137](14)Blimkameran®
+[078:SCRP#0137](14)Blimkameran™
 [078:SCRP#0137](14)
 [078:SCRP#0137](14)KABOOM
 [078:SCRP#0137](14)
@@ -3905,7 +3905,7 @@
 [079:SCRP#0091](14)Estevan där borta vid andra bordet kanske berättar om det.\255\003Han tar hela grejen på allvar.
 [079:SCRP#0091](14)VÄLDIGT allvarligt.
 [079:SCRP#0091](14)
-[079:SCRP#0091](14)Så vad får dig till Mêlée Island® egentligen?
+[079:SCRP#0091](14)Så vad får dig till Mêlée Island™ egentligen?
 [079:SCRP#0091](FA)Jag vill bli pirat!
 [079:SCRP#0091](FA)Jag har kommit för att söka min lycka.
 [079:SCRP#0091](FA)Jag vet faktiskt inte.
@@ -3915,7 +3915,7 @@
 [079:SCRP#0091](14)Det var nog inte för solskenet.\255\003Jag tror du behöver lite vägledning.
 [079:SCRP#0091](14)Nå, ursäkta herr Hemlighetsfull.
 [079:SCRP#0091](14)Trevligt att prata med dig.
-[079:SCRP#0091](14)Ha det kul på Mêlée Island®.
+[079:SCRP#0091](14)Ha det kul på Mêlée Island™.
 [079:SCRP#0091](14)
 [079:SCRP#0091](14)Min grogg håller på att bli avslagen, så du får ursäkta mig.
 [080:VERB#0883](D8)Den är rostig.\255\003Jag tror inte den fungerar.
@@ -3980,16 +3980,16 @@
 [081:SCRP#0092](FA)Hur dog han?
 [081:SCRP#0092](FA)Låter kusligt. Jag måste nog gå.
 [081:SCRP#0092](14)LeChuck var en fruktansvärd pirat.
-[081:SCRP#0092](14)Han försökte imponera på Guvernören genom att segla iväg för att hitta Monkey Islands® Hemlighet.\255\003Men en mystisk storm drog in och sänkte hans skepp utan överlevande.
+[081:SCRP#0092](14)Han försökte imponera på Guvernören genom att segla iväg för att hitta Monkey Islands™ Hemlighet.\255\003Men en mystisk storm drog in och sänkte hans skepp utan överlevande.
 [081:SCRP#0092](14)Vi trodde det var slutet för den fruktansvärde piraten LeChuck.
 [081:SCRP#0092](14)Vi hade fel.
 [081:SCRP#0092](14)
 [081:SCRP#0092](FA)Vad hände sen?
-[081:SCRP#0092](FA)Vad ÄR Monkey Islands® Hemlighet?
+[081:SCRP#0092](FA)Vad ÄR Monkey Islands™ Hemlighet?
 [081:SCRP#0092](FA)Jag älskar den historien. Vi ses.
 [081:SCRP#0092](14)Bara LeChuck vet.
 [081:SCRP#0092](14)Men det är inte slutet--
-[081:SCRP#0092](14)Han seglar fortfarande på vattnet mellan här och Monkey Island®.\255\003Hans spökskepp är en ohelig skräck på havet.
+[081:SCRP#0092](14)Han seglar fortfarande på vattnet mellan här och Monkey Island™.\255\003Hans spökskepp är en ohelig skräck på havet.
 [081:SCRP#0092](14)Det är därför vi allihop sitter här istället för att pirata.
 [081:SCRP#0092](14)
 [081:SCRP#0092](14)Just det.
@@ -3999,13 +3999,13 @@
 [082:SCRP#0093](FA)Så, berätta om LOOM.
 [082:SCRP#0093](FA)Herregud, vilken genomskinlig säljpitch.
 [082:SCRP#0093](FA)Trevligt att prata med dig.
-[082:SCRP#0093](14)Du menar det senaste mästerverket inom fantasyberättande från Lucasfilms® Brian Moriarty®?
+[082:SCRP#0093](14)Du menar det senaste mästerverket inom fantasyberättande från Lucasfilms™ Brian Moriarty™?
 [082:SCRP#0093](14)Jo det är ett extraordinärt äventyr med ett magiskt gränssnitt...
 [082:SCRP#0093](14)...fantastiska, högupplösta 3D-landskap...\255\003...sofistikerat soundtrack och musikeffekter.
 [082:SCRP#0093](14)För att inte tala om den detaljerade animationen och specialeffekterna,\255\003elegant peka-och-klicka-styrning av karaktärer, föremål och trollformler.
 [082:SCRP#0093](14)Men vänta, det finns mer!
-[082:SCRP#0093](14)Loom® har inget betungande skrivande, kartritande eller föremålshantering.\255\003Och till skillnad från många äventyrsspel idag är det lätt för nybörjare att njuta av.\255\003En ledande speltidning säger att det är 'Förtrollande...komplext...fängslande.'
-[082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom® idag!
+[082:SCRP#0093](14)Loom™ har inget betungande skrivande, kartritande eller föremålshantering.\255\003Och till skillnad från många äventyrsspel idag är det lätt för nybörjare att njuta av.\255\003En ledande speltidning säger att det är 'Förtrollande...komplext...fängslande.'
+[082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom™ idag!
 [082:SCRP#0093](14)Förlåt, men vissa ämnen gör mig bara så upprymd.
 [082:SCRP#0093](14)Aye.
 [083:VERB#0901](D8)Den heter "Hur du får fotfäste i skattletandet."
@@ -4123,7 +4123,7 @@
 [083:LSCR#0203](FA)Jag skaffar en besättning och ett skepp och räddar henne!
 [083:LSCR#0203](14)Hallå, jag är en utkik, inte en livvakt.
 [083:LSCR#0203](14)Det blir inte lätt, vet du.
-[083:LSCR#0203](14)LeChuck har tagit Guvernören tillbaka till sitt gömställe på Monkey Island®.\255\003Jag är rädd att ingen pirat på den här ön är modig nog att följa efter honom dit.
+[083:LSCR#0203](14)LeChuck har tagit Guvernören tillbaka till sitt gömställe på Monkey Island™.\255\003Jag är rädd att ingen pirat på den här ön är modig nog att följa efter honom dit.
 [083:LSCR#0203](14)Men, hallå, lycka till.
 [083:LSCR#0203](14)Åh ja, jag glömde nästan...
 [083:LSCR#0203](14)Dom lämnade den här lappen.
@@ -4131,7 +4131,7 @@
 [083:LSCR#0203](D8)Åh, Guvernören...\255\003Varför var du tvungen att riskera ditt liv för mig?
 [083:LSCR#0203](D8)Kanske brydde du dig om mig mer än jag trodde...
 [083:LSCR#0203](D8)...Precis som jag nu inser hur mycket jag bryr mig om dig.
-[083:LSCR#0203](D8)Det är mitt fel att Guvernören är i den här knipan, och jag svär att jag ska rädda henne...\255\003Även om jag måste segla till Monkey Island® själv för att hämta henne!
+[083:LSCR#0203](D8)Det är mitt fel att Guvernören är i den här knipan, och jag svär att jag ska rädda henne...\255\003Även om jag måste segla till Monkey Island™ själv för att hämta henne!
 [083:LSCR#0203](14) 
 [083:LSCR#0204](D8)Jösses!
 [083:LSCR#0204](14)Hallå!
@@ -4150,7 +4150,7 @@
 [083:LSCR#0204](D8)Coolt!
 [083:LSCR#0205](D8)Kyrkan är åt andra hållet!
 [083:SCRP#0065](14)Det här är vägens slut, min lille byxklädde kompis.
-[083:SCRP#0065](14)Dina dagar som bråkstake på Mêlée Island® är över.
+[083:SCRP#0065](14)Dina dagar som bråkstake på Mêlée Island™ är över.
 [083:SCRP#0065](14)Mina planer för Guvernören är alldeles för viktiga...\255\003...och alldeles för nära fullbordan...
 [083:SCRP#0065](14)...för att riskera att en blivande pirat som du ställer till det.
 [083:SCRP#0065](14)Hej då, herr Kryddkaka, eller Hängnäsa, eller vad du nu heter.
@@ -4185,7 +4185,7 @@
 [085:OBNA#0916](__)hus
 [085:OBNA#0909](__)ö
 [085:VERB#0918](14)
-[085:OBNA#0918](__)Svärdmästarens
+[085:OBNA#0918](__)Svärdsmästaren
 [085:ENCD#0085](54)cirkus
 [085:ENCD#0085](54)Begagnade skeppshandeln
 [085:LSCR#0202](93)Smutsig Usel Pirat
@@ -4297,7 +4297,7 @@
 [088:SCRP#0161](14)number of replies in list is \255\004\053\001
 [089:SCRP#0130](14)Du vinner!
 [089:SCRP#0130](14)Du fick 800 av 800 möjliga poäng.
-[089:SCRP#0130](14)Monkey Islands® Hemlighet
+[089:SCRP#0130](14)Monkey Islands™ Hemlighet
 [089:SCRP#0130](14)Med Spiffy i rollen som hunden i baren
 [089:SCRP#0130](14)Extra design
 [089:SCRP#0130](14)Noah Falstein
@@ -4361,10 +4361,10 @@
 [089:SCRP#0130](14)Wendy Clark, Sam Chan, Frank Toriello,
 [089:SCRP#0130](14)och John Sinclair
 [089:SCRP#0130](14)Sam och Max medverkar genom tillstånd av Steve Purcell
-[089:SCRP#0130](14)Cobb® och Seagull® medverkar genom tillstånd av LOOM®
+[089:SCRP#0130](14)Cobb™ och Seagull™ medverkar genom tillstånd av LOOM™
 [089:SCRP#0130](14)Soundtracket finns ej på kassett eller LP
 [089:SCRP#0130](14)Boken finns heller inte
-[089:SCRP#0130](14)Monkey Islands® Hemlighet
+[089:SCRP#0130](14)Monkey Islands™ Hemlighet
 [089:SCRP#0130](14)En produktion av Lucasfilm Games
 [089:SCRP#0130](14)TM & (c) 1990 LucasArts Entertainment Company.
 [089:SCRP#0130](14)Alla rättigheter reserverade.

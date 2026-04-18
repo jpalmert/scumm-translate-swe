@@ -143,7 +143,7 @@ mkdir -p "$STR_OUT"
 # Post-process extracted strings into clean UTF-8 for translators:
 #   1. Replace ^ (SCUMM ellipsis byte 0x5E) with ...
 #   2. Convert SCUMM character escape codes to their UTF-8 characters:
-#        \130 = é,  \136 = ê,  \015 = ®,  \250 = non-breaking space
+#        \130 = é,  \136 = ê,  \015 = ™,  \250 = non-breaking space
 #
 # Note: -A aov (protect actors/objects/verbs) is intentionally omitted from the
 # extraction above. With -A, scummtr pads ALL object names to fixed-width fields
@@ -155,7 +155,7 @@ sed -i \
     -e 's/\^/.../g' \
     -e 's/\\130/é/g' \
     -e 's/\\136/ê/g' \
-    -e 's/\\015/®/g' \
+    -e 's/\\015/™/g' \
     -e 's/\\250/\xc2\xa0/g' \
     "$STR_OUT/english.txt"
 
