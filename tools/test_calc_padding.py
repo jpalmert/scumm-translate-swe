@@ -56,8 +56,8 @@ class TestEncodeSwedish(unittest.TestCase):
         # Only strips if starts with (
         self.assertEqual(encode_swedish("a(2)b"), "a(2)b")
 
-    def test_registered_trademark(self):
-        self.assertEqual(encode_swedish("®"), "\\015")
+    def test_trademark(self):
+        self.assertEqual(encode_swedish("™"), "\\153")
 
     def test_e_circumflex(self):
         self.assertEqual(encode_swedish("ê"), "\\136")

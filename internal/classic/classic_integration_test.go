@@ -370,6 +370,7 @@ func TestInjectTranslationRoundTrip(t *testing.T) {
 		s = strings.ReplaceAll(s, `\130`, "é")
 		s = strings.ReplaceAll(s, `\136`, "ê")
 		s = strings.ReplaceAll(s, `\015`, "™")
+		s = strings.ReplaceAll(s, `\153`, "™")
 		s = strings.ReplaceAll(s, `\250`, "\u00a0") // non-breaking space
 		if err := os.WriteFile(outFile, []byte(s), 0644); err != nil {
 			t.Fatalf("write post-processed strings: %v", err)

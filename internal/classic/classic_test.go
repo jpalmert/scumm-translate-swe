@@ -19,6 +19,7 @@ func TestEncodeForScummtr(t *testing.T) {
 		{"ä", `\124`},
 		{"ö", `\125`},
 		{"é", `\130`},
+		{"™", `\153`},
 	}
 
 	for _, tc := range cases {

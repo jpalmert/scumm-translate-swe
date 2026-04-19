@@ -75,7 +75,7 @@ that do not need translation.
 
 | Code | Character | Notes |
 |------|-----------|-------|
-| `\015` | ® | Trademark glyph — appears after game titles ("Monkey Island`\015`") |
+| `\153` | ™ | Trademark glyph — appears after game titles ("Monkey Island™") |
 | `\250` | non-breaking space | Keeps names together in credits |
 | `\136` | ê | Part of "Mêlée" — preserve as-is |
 | `\130` | é | Accent character — preserve as-is |
