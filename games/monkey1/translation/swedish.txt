@@ -709,7 +709,7 @@
 [020:SCRP#0166](54)en massa memon
 [020:SCRP#0166](54)för många memon
 [020:SCRP#0167](54)flinta
-[020:SCRP#0167](54)anmärkningsvärd sten
+[020:SCRP#0167](54)märklig sten
 [020:SCRP#0168](D8)Hej!
 [020:SCRP#0168](D8)Jag tror jag håller på att bli tokig.\255\003Jag måste skynda mig och rädda Guvernören och komma bort från den här ön!
 [020:SCRP#0168](D8)Jag är här för att rädda Mêlée Islands™ guvernör.
@@ -1056,7 +1056,7 @@
 [025:SCRP#0106](54)magisk sodavattenflaska
 [025:SCRP#0110](D8)Jag kan inte plocka fram det här inne.
 [025:SCRP#0110](54)halsband på navigator
-[025:SCRP#0110](D8)Jag sätter nog bäst tillbaka halsbandet på samma sätt som de infödda hade det först.
+[025:SCRP#0110](D8)Det är bäst jag sätter tillbaka halsbandet på samma sätt som de infödda hade det först.
 [025:SCRP#0110](94)Hmmm...
 [025:SCRP#0110](94)Jag tror inte det plockar upp något.
 [025:SCRP#0110](94)Nä. Inget.
@@ -1407,7 +1407,7 @@
 [029:LSCR#0210](FA)Jag heter Guybrush Threepwood och är en mäktig pirat.
 [029:LSCR#0210](FA)Hur mycket kostar den här häftiga kycklingen?
 [029:LSCR#0210](FA)Kan du spå i hand? Kommer jag bli rik?
-[029:LSCR#0210](FA)Jag har ångrat mig och vill veta min framtid i alla fall.
+[029:LSCR#0210](FA)Jag har ångrat mig, berätta om min framtid ändå.
 [029:LSCR#0210](FA)Resa? Vad kan du berätta för mig om min resa?
 [029:LSCR#0210](FA)Häftig plats du har här. Jag antar att jag sticker nu.
 [029:LSCR#0210](14)Vänta...\255\003...säg ingenting.\255\003Jag kan känna att ditt namn är...\255\003...är...\255\003...Guybrush...\255\003...Guybrush Näshår.\255\003Nej...
@@ -1546,7 +1546,7 @@
 [030:LSCR#0211](FA)Angående det här svärdet...
 [030:LSCR#0211](FA)Angående den här spaden...
 [030:LSCR#0211](FA)Jag letar efter Svärdmästaren på Mêlée Island™.
-[030:LSCR#0211](FA)Nu när jag har det här svärdet, vem kan jag testa det på?
+[030:LSCR#0211](FA)Nu när jag har det här svärdet, vem kan jag testa på?
 [030:LSCR#0211](FA)Jag är intresserad av att skaffa ett skuldebrev.
 [030:LSCR#0211](FA)Jag skulle verkligen behöva en mintpastill.
 [030:LSCR#0211](FA)Jag skulle vilja ha lite råttgift, tack.
@@ -1691,7 +1691,7 @@
 [031:LSCR#0202](FA)Sheriff Shinetop är verkligen en idiot, eller hur?
 [031:LSCR#0202](FA)Vem är sheriffen här?
 [031:LSCR#0202](FA)Guvernören har blivit kidnappad!
-[031:LSCR#0202](FA)Om jag släpper ut dig, vill du gå med i min besättning?
+[031:LSCR#0202](FA)Släpper jag ut dig, går du med i min besättning?
 [031:LSCR#0202](FA)Du råkar inte ha en fil?
 [031:LSCR#0202](FA)Kan jag hämta nåt åt dig?
 [031:LSCR#0202](FA)Nå, håll modet uppe. Jag måste gå.
@@ -1885,7 +1885,7 @@
 [034:LSCR#0204](FA)Jag var just på väg till Guvernörens herrgård.
 [034:LSCR#0204](FA)Jag måste vara på fel ställe, vi ses.
 [034:LSCR#0204](14)Är ni här för plundringen?
-[034:LSCR#0204](FA)Ja. Plundring låter roligt, nu när jag är pirat och allt.
+[034:LSCR#0204](FA)Ja. Plundring låter kul, nu när jag är pirat och allt.
 [034:LSCR#0204](FA)Absolut inte!
 [034:LSCR#0204](14)Det var bra...\255\003...för vi är fullbokade de närmaste fem timmarna.
 [034:LSCR#0204](14)Och har ni bokat, herr'n?
@@ -1896,7 +1896,7 @@
 [034:LSCR#0204](14)Nå...\255\003...om ni inte har bokat får ni gå.
 [034:LSCR#0204](14)Och under vilket namn skulle bokningen stå?
 [034:LSCR#0204](FA)Threepwood, Guybrush Threepwood.
-[034:LSCR#0204](FA)Äh... Jag tror det är den första där överst på listan.
+[034:LSCR#0204](FA)Äh... Jag tror det är den första överst på listan.
 [034:LSCR#0204](FA)Det står nog under 'S', för Shinetop.
 [034:LSCR#0204](14)Jag beklagar...\255\003...jag hittar inte ert namn här.
 [034:LSCR#0204](14)Javisst...
@@ -1984,13 +1984,13 @@
 [035:LSCR#0216](14)
 [035:LSCR#0216](FA)Jag ber om ursäkt för det jag sa om råttor.
 [035:LSCR#0216](FA)Förlåt det där med råttan...
-[035:LSCR#0216](FA)Nu när det fruktansvärda odjuret är borta kan vi prata.
+[035:LSCR#0216](FA)Nu när det hemska odjuret är borta kan vi prata.
 [035:LSCR#0216](FA)Hörru, fin råtta!
 [035:LSCR#0216](FA)Hur står ni ut med att vara nära den här ohyran?
 [035:LSCR#0216](FA)Känner ni den smygande karln på \254\008     andra sidan gatan?
 [035:LSCR#0216](FA)Vet ni var jag kan hitta en skattkarta här nånstans?
 [035:LSCR#0216](FA)Jag tar protokollen om ni ger mig två dubloner.
-[035:LSCR#0216](FA)Jag är verkligen intresserad av det här med sjöröveri.
+[035:LSCR#0216](FA)Jag är väldigt intresserad av det här med sjöröveri.
 [035:LSCR#0216](FA)Säg, är ni pirater?
 [035:LSCR#0216](FA)Visste ni att Guvernören har kidnappats?
 [035:LSCR#0216](FA)Jag springer vidare nu.
@@ -2040,13 +2040,13 @@
 [035:LSCR#0216](14)Men råttan skrämde iväg elefanten.
 [035:LSCR#0216](14)Men nån idiot jagade iväg vår dresserade råtta.
 [035:LSCR#0216](14)Håll käft!!
-[035:LSCR#0216](14)Klart vi är pirater!\255\003Såna här kläder kan man inte köpa färdiga!
+[035:LSCR#0216](14)Klart vi är pirater!\255\003Såna här kläder hittar man inte i butik!
 [035:LSCR#0216](14)Vad vill du?
 [035:LSCR#0216](FA)Vad är i tunnan?
 [035:LSCR#0216](FA)Förlåt att jag kränkte er råtta verbalt.
 [035:LSCR#0216](FA)Var fick ni tag på den råttan?
 [035:LSCR#0216](FA)Inget. Vi ses.
-[035:LSCR#0216](FA)Hur kommer det sig att ni hänger här i istället \254\008   för att vara ute på sjön och plundra, härja och bränna?
+[035:LSCR#0216](FA)Hur kommer det sig att ni hänger här istället \254\008   för att vara ute och plundra, härja och bränna?
 [035:LSCR#0216](14)Rom.\255\002
 [035:LSCR#0216](14)    Sylt.
 [035:LSCR#0216](14)Sylt.\255\002
@@ -2098,7 +2098,7 @@
 [035:LSCR#0218](FA)Va?
 [035:LSCR#0218](FA)Nej, det har jag inte.
 [035:LSCR#0218](FA)Vad är det? Nån sorts kod?
-[035:LSCR#0218](FA)Nej, men jag hade en gång en frisör som hette Dominique.
+[035:LSCR#0218](FA)Nej, men jag hade en frisör som hette Dominique.
 [035:LSCR#0218](FA)Har du en fil?
 [035:LSCR#0218](14)Klart det är en kod, din idiot.
 [035:LSCR#0218](14)Nära nog.
@@ -2229,7 +2229,7 @@
 [037:SCRP#0060](FA)Jag är pirat, kanonkulan. Vem är du?
 [037:SCRP#0060](FA)Kan du visa mig den coola tatueringgrejen igen?
 [037:SCRP#0060](FA)Vad hette du igen, kanonkulan?
-[037:SCRP#0060](FA)Ursäkta, men skylten sa att det fanns toaletter här inne?
+[037:SCRP#0060](FA)Ursäkta, men skylten sa att det finns toaletter här?
 [037:SCRP#0060](FA)Hoppsan! Jag insåg precis att det här är fel hus.
 [037:SCRP#0060](14)Nej, din morsa var en anka.\255\003Stick nu.
 [037:SCRP#0060](14)Va? Det är absurt!
@@ -2315,7 +2315,7 @@
 [038:LSCR#0202](FA)Jag hörde att det skulle bli korvgrillning här.
 [038:LSCR#0202](FA)Jag letar efter nåt kul. Sett nåt?
 [038:LSCR#0202](FA)Vad är grönt och hårigt och har tusen ben?
-[038:LSCR#0202](FA)Tänker du nånsin på att vi kanske är karaktärer i en bok?
+[038:LSCR#0202](FA)Tänker du nånsin på att vi bara är karaktärer i en bok?
 [038:LSCR#0202](FA)Se upp! Ha ha. Fattar du?
 [038:LSCR#0202](14)Ojdå!
 [038:LSCR#0202](14)Åh, det är du igen, \255\007\038\000.
@@ -2582,7 +2582,7 @@
 [043:SCRP#0057](14)Vad vill du?
 [043:SCRP#0057](14)Jaha, det är du.
 [043:SCRP#0057](FA)Kan du träna mig att bli bättre än Svärdmästaren?
-[043:SCRP#0057](FA)Kan du göra mig till den bästa svärdskämpen på Mêlée™?
+[043:SCRP#0057](FA)Kan du göra mig till bästa svärdskämpen på Mêlée™?
 [043:SCRP#0057](FA)Kan vi gå in? Det är lite kyligt här ute.
 [043:SCRP#0057](FA)Vet du var Svärdmästaren bor?
 [043:SCRP#0057](FA)Öh... Kan du snälla släcka den där cigarren?
@@ -2690,7 +2690,7 @@
 [044:VERB#0596](D8)Jag tror jag behåller den i nyskick.\255\003Den kanske blir värd nåt nån dag.
 [044:OBNA#0596](__)100% bomulls-T-shirt
 [045:LSCR#0200](14)DU!
-[045:LSCR#0200](FA)Jag är här för att stoppa ditt bröllop med Guvernören.
+[045:LSCR#0200](FA)Jag är här för att stoppa bröllopet med Guvernören.
 [045:LSCR#0200](FA)Snälla döda mig inte.
 [045:LSCR#0200](FA)Ta DET HÄR, din vidriga voodoo-vålnad!
 [045:LSCR#0200](FA)Jag kom just på att jag har en tid hos tandläkaren.
@@ -2747,7 +2747,7 @@
 [045:LSCR#0200](14)Många har försökt och dött för sina ansträngningar.
 [045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
 [045:LSCR#0200](FA)Det vore inte snällt.
-[045:LSCR#0200](FA)Jag är riggad att explodera om nån försöker döda mig.
+[045:LSCR#0200](FA)Jag är riggad att sprängas om nån försöker döda mig.
 [045:LSCR#0200](FA)Jag har fru och tre barn.
 [045:LSCR#0200](FA)Vad sägs om DET HÄR som anledning, va?
 [045:LSCR#0200](14)Det hörde jag!
@@ -3043,7 +3043,7 @@
 [053:LSCR#0217](14)Vart tror du att du är på väg, \255\007\038\000?
 [053:LSCR#0217](FA)Jag ska lägga idolen i mitt bankfack.
 [053:LSCR#0217](FA)Det är inte för sent att bli vänner, vet du.
-[053:LSCR#0217](FA)Ursäkta, herr Shinetop, men du blockerar dörröppningen.
+[053:LSCR#0217](FA)Ursäkta herr Shinetop, men du blockerar dörren.
 [053:LSCR#0217](FA)Stick, Fester.
 [053:LSCR#0217](14)Jaså?\255\003Jag vet ett riktigt säkert skåp du kan lägga den i...\255\003Davey Jones skåp!!!
 [053:LSCR#0217](14)Jadå...\255\003Och det är inte heller för sent för mig att döda dig och ändå hinna till baren för happy hour.
@@ -3080,7 +3080,7 @@
 [057:SCRP#0055](14)Hah!
 [057:SCRP#0055](14)Du är ingen pirat!\255\003Stadsfyllon kunde förolämpa dig bättre i sömnen!\255\003(...och skulle antagligen göra det.)
 [057:SCRP#0055](FA)Jaså?
-[057:SCRP#0055](FA)Jag kan förolämpa vem som helst, din hjärnlösa lerdocka!
+[057:SCRP#0055](FA)Jag kan förolämpa vem som helst, din hjärnlösa lerklump!
 [057:SCRP#0055](FA)Stoppa det i örat, din stora gröna pratsamma larv!
 [057:SCRP#0055](FA)Jag går och tar reda på det. Adjö.
 [057:SCRP#0055](14)Jodå!\255\003Du vet, du kunde behöva en lektion eller två om det där är det bästa du kan komma med.
@@ -3274,7 +3274,7 @@
 [059:SCRP#0056](14)Är det en av de där gummikycklingarna med en trissa i mitten?\255\003Jag har redan en sån.
 [059:SCRP#0056](14)Gärna.\255\003Det vill jag verkligen.\255\003Det brukar jag VANLIGTVIS göra.\255\003Men inte för den summan det här skeppet kommer kosta.
 [059:SCRP#0056](14)Kanske nåt av de andra skeppen passar din prisklass bättre.
-[059:SCRP#0056](14)Absolut!\255\003Din kredit är alltid bra hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
+[059:SCRP#0056](14)Absolut!\255\003Du är alltid betrodd hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
 [059:SCRP#0056](14)Skilsmässa...
 [059:SCRP#0056](14)Konkurs...
 [059:SCRP#0056](14)Kroniska spelförluster...\255\003Jag menar, vem är jag att döma, va?
@@ -3559,7 +3559,7 @@
 [070:LSCR#0204](FA)Milt väder vi har, eller hur?
 [070:LSCR#0204](FA)Smaka på lite rotöl, din onda ande!
 [070:LSCR#0204](FA)Vad hände med skeppet?
-[070:LSCR#0204](FA)Kan du vara snäll och sluta göra så där med ditt huvud?
+[070:LSCR#0204](FA)Kan du snälla sluta göra så där med ditt huvud?
 [070:LSCR#0204](14)Det är alltid så här nere.
 [070:LSCR#0204](14)Vänta!
 [070:LSCR#0204](14)Om det är spöken du är ute efter kan jag berätta var de andra är!
@@ -3610,13 +3610,13 @@
 [070:LSCR#0205](14)Vad hände med ditt skepp?
 [070:LSCR#0205](FA)Det är på verkstad.
 [070:LSCR#0205](FA)Jag har inte försäkring på det.
-[070:LSCR#0205](FA)Besättningen tog det och stack till Ipanema för att sola.
+[070:LSCR#0205](FA)Besättningen tog det och stack till Ipanema och sola.
 [070:LSCR#0205](FA)Jag sänkte det liksom med en sten för ett tag sen.
 [070:LSCR#0205](94)\255\005\100\000
 [070:LSCR#0205](14)Åh.
 [070:LSCR#0205](14)Det är okej.\255\003Vi kan ta mitt.
 [070:LSCR#0205](FA)Har du ett skepp?
-[070:LSCR#0205](FA)Om du har ett skepp, varför väntar du på att bli räddad?
+[070:LSCR#0205](FA)Har du ett skepp, varför väntar du på att bli räddad?
 [070:LSCR#0205](FA)Tar du mig till Mêlée Island™?
 [070:LSCR#0205](FA)Hur kom du in här utan huvud?
 [070:LSCR#0205](14)Japp.
@@ -4120,7 +4120,7 @@
 [083:LSCR#0203](FA)Var var du hela tiden?  Sov du?
 [083:LSCR#0203](FA)Vart tog dom vägen?
 [083:LSCR#0203](FA)Varför tror du inte vi ser henne igen?
-[083:LSCR#0203](FA)Jag skaffar en besättning och ett skepp och räddar henne!
+[083:LSCR#0203](FA)Jag fixar besättning och skepp och räddar henne!
 [083:LSCR#0203](14)Hallå, jag är en utkik, inte en livvakt.
 [083:LSCR#0203](14)Det blir inte lätt, vet du.
 [083:LSCR#0203](14)LeChuck har tagit Guvernören tillbaka till sitt gömställe på Monkey Island™.\255\003Jag är rädd att ingen pirat på den här ön är modig nog att följa efter honom dit.
