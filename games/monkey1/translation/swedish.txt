@@ -2571,7 +2571,7 @@
 [043:OBNA#0591](__)dörr
 [043:OBNA#0592](__)stig
 [043:OBNA#0594](__)stig
-[043:VERB#0593](D8)Kapten Smirks Stora Piratgym\255\003Priser:\255\003Svärdträning 30 dubloner\255\003Kanonavfyrning 160 dubloner (kulor extra)\255\003Änterhake 130 dubloner (krok extra)
+[043:VERB#0593](D8)Kapten Smilfinks Stora Piratgym\255\003Priser:\255\003Svärdträning 30 dubloner\255\003Kanonavfyrning 160 dubloner (kulor extra)\255\003Änterhake 130 dubloner (krok extra)
 [043:VERB#0593](14)
 [043:OBNA#0593](__)skylt
 [043:VERB#0595](D8)Han är hemsk och okänslig och på väg att slå mig igen.
@@ -3417,7 +3417,7 @@
 [061:SCRP#0058](D8)Japp, mitt i prick... oj vad smart du är.
 [061:SCRP#0058](14)
 [061:SCRP#0058](14)Men, eftersom du inte har nåt svärd...\255\003...tvivlar jag på att du menar allvar.
-[061:SCRP#0058](14)Jag kan se på det sarkastiska uttrycket i ditt ansikte att du blivit fullt utbildad av Kapten Smirk.
+[061:SCRP#0058](14)Jag kan se på det sarkastiska uttrycket i ditt ansikte att du blivit fullt utbildad av Kapten Smilfink.
 [061:SCRP#0058](14)Jag kan också se i Mêlée Times sportsektion att du inte vunnit en enda strid.
 [061:SCRP#0058](14)Det här vore inget annat än slöseri med min tid.
 [061:SCRP#0058](14)Jag kan också se i Mêlée Times sportsektion att du bara vunnit en enda strid.
@@ -3425,13 +3425,13 @@
 [061:SCRP#0058](14)Jag kan också se i Mêlée Times sportsektion att du bara vunnit \255\004\026\001 strider.
 [061:SCRP#0058](14)Inte alls nog för att slösa min tid.
 [061:SCRP#0058](14)Låt oss få det här överstökat.
-[061:SCRP#0058](14)Vad fick du för slutbetyg i Kapten Smirks svärdsfäktningskurs?
+[061:SCRP#0058](14)Vad fick du för slutbetyg i Kapten Smilfinks svärdsfäktningskurs?
 [061:SCRP#0058](D8)Öh...\255\003Betyg?\255\003Kurs?
 [061:SCRP#0058](14)Du menar att du kom hit för att utmana Svärdmästaren på Mêlée Island™...\255\003...möjligen den största svärdsfäktaren i hela Karibien...\255\003...utan en enda lektion i fäktningskonsten?
 [061:SCRP#0058](D8)Japp.
 [061:SCRP#0058](14)Hur tänkte du försvara dig?
 [061:SCRP#0058](D8)Jösses...\255\003Ingen aning.
-[061:SCRP#0058](14)Jag förstår...\255\003...uppenbarligen inte med ditt vassa intellekt.\255\003Jag råder dig att söka upp Kapten Smirk och skaffa riktig träning.
+[061:SCRP#0058](14)Jag förstår...\255\003...uppenbarligen inte med ditt vassa intellekt.\255\003Jag råder dig att söka upp Kapten Smilfink och skaffa riktig träning.
 [061:SCRP#0058](14)Det vore knappast etiskt, sportsligt eller ens intressant att slåss mot nån så oskicklig som dig.\255\003Så stick.
 [061:SCRP#0058](14)Jag sa ju, jag tänker inte slåss mot dig förrän du fått träning.
 [061:SCRP#0058](14)Ärlighet varar längst.

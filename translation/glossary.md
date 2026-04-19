@@ -28,7 +28,7 @@
 - **Carla** - the Sword Master
 - **Fester Shinetop** - sheriff
 - **Stan** - used ship salesman
-- **Captain Smirk** → **Kapten Smirk** - sword fighting trainer
+- **Captain Smirk** → **Kapten Smilfink** - sword fighting trainer
 - **Otis** - prisoner
 - **Meathook** → **Järnkrok** - tough pirate with tattoo (descriptive nickname translated for impact)
 - **Mancomb Seepgood** - pirate in bar
@@ -43,7 +43,7 @@
 
 ### Business/Location Names - Translate Descriptions
 - **Stan's Previously Owned Vessels** → **Stans Begagnade Fartyg** 
-- **Captain Smirk's Big Body Pirate Gym** → **Kapten Smirks Stora Piratgym**
+- **Captain Smirk's Big Body Pirate Gym** → **Kapten Smilfinks Stora Piratgym**
 
 ### Ship Names - Translate (Descriptive)
 - **Sea Monkey** → **Havsapan**
