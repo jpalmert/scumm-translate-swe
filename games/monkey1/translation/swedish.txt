@@ -3199,11 +3199,11 @@
 [059:SCRP#0056](14)Jag vill ge dig en deal som DU är nöjd med.
 [059:SCRP#0056](14)För om DU inte är nöjd är inte JAG nöjd.
 [059:SCRP#0056](14)Men jag VET att du kommer härifrån glad idag.\255\003Hur vet jag det?
-[059:SCRP#0056](14)Titta bara på alla dessa skepp!
-[059:SCRP#0056](14)Jag har nåt för alla!
+[059:SCRP#0056](14)Kolla in alla dessa skepp!
+[059:SCRP#0056](14)Jag har nåt för alla smaker!
 [059:SCRP#0056](14) 
-[059:SCRP#0056](14)Kom och titta runt!
-[059:SCRP#0056](14)Så vad mer kan jag visa dig?
+[059:SCRP#0056](14)Kom och kolla runt!
+[059:SCRP#0056](14)Nå, vad mer kan jag visa dig?
 [059:SCRP#0056](14)Så berätta--\255\003Vad är du intresserad av att titta på idag?
 [059:SCRP#0056](FA)Låt mig se det bästa skeppet du har.
 [059:SCRP#0056](FA)Öh... kan jag se den röda igen?
@@ -3214,25 +3214,25 @@
 [059:SCRP#0056](FA)Den snygga blåa vid ditt kontor ser fin ut.
 [059:SCRP#0056](FA)Öh... hur mycket vill du ha för din?
 [059:SCRP#0056](FA)Egentligen vill jag gå och tänka på det lite till.
-[059:SCRP#0056](14)Hej, det är kul att träffa en man som uppskattar kvalitet.
-[059:SCRP#0056](14)Prisvärd kvalitet?\255\003Hej, det är mitt motto!
-[059:SCRP#0056](14)Var inte rädd!\255\003Varje skepp jag säljer är ett fynd!\255\003Men om du letar efter ett riktigt kap...
-[059:SCRP#0056](14)Jag har PRECIS rätt båt åt dig!
+[059:SCRP#0056](14)Hörru, det är kul att träffa en man som uppskattar kvalitet.
+[059:SCRP#0056](14)Prisvärd kvalitet?\255\003Det är mitt motto, det!
+[059:SCRP#0056](14)Lugn, lugn!\255\003Varje skepp jag säljer är ett kap!\255\003Men om du letar efter ett RIKTIGT fynd...
+[059:SCRP#0056](14)Jag har PRECIS den rätta båten åt dig!
 [059:SCRP#0056](14)Jag visste det! Jag visste det!\255\003Kan bara inte sluta tänka på henne, va?
-[059:SCRP#0056](14)Visst, visst.\255\003Du är uppenbarligen en bildad man som vill fatta ett genomtänkt beslut.
+[059:SCRP#0056](14)Visst, visst.\255\003Du är uppenbarligen en klok man som vill fatta ett genomtänkt beslut.
 [059:SCRP#0056](14)Visst!\255\003Inga problem!\255\003Trots allt\255\003har jag inget bättre för mig än att släpa rumpan upp och ner på den här kajen och visa killar som dig samma skepp om och om igen hela dan!
 [059:SCRP#0056](14)Varför inte? Jag har hela dan!
 [059:SCRP#0056](14)Kom med här.
 [059:SCRP#0056](14)Nu det här...
-[059:SCRP#0056](14)Det här är ett skepp värdigt en kung!\255\003Vi pratar femton hytter--en öppen spis i varje.\255\003Vi pratar två pooler--en inomhus, en utomhus.
-[059:SCRP#0056](14)Vi pratar roterande balsal.\255\003Vi pratar uppvärmt utkiksnäste.\255\003Vi pratar tvåhundra fot oceansgående dekadens.\255\003Och allt för ett lågt pris.
+[059:SCRP#0056](14)Det här är ett skepp värdigt en kung!\255\003Vi snackar femton hytter--öppen spis i varenda en.\255\003Vi snackar två pooler--en inomhus, en utomhus.
+[059:SCRP#0056](14)Vi snackar roterande balsal.\255\003Vi snackar uppvärmt utkiksnäste.\255\003Vi snackar tvåhundra fot sjögående dekadens.\255\003Och allt till ett kampanjpris.
 [059:SCRP#0056](14)Apropå pris...
 [059:SCRP#0056](14)Nu har vi ett skepp...
 [059:SCRP#0056](14)...som definitivt är värt en andra titt.
-[059:SCRP#0056](14)Jag ser att du är en man utan krusiduller.\255\003Men jag kan också se att kvalitet betyder mycket för dig.\255\003Titta bara på hur du klär dig.
+[059:SCRP#0056](14)Jag ser att du är en man utan krusiduller.\255\003Men jag kan också se att kvalitet betyder mycket för dig.\255\003Kolla bara på hur du klär dig.
 [059:SCRP#0056](14)Robust. Precis som den här skönheten.\255\003Hon kommer från ett land långt i norr...\255\003...där havet är lika obarmhärtigt som männen är tuffa och--
 [059:SCRP#0056](14)--hörru, du råkar inte vara därifrån?\255\003Du verkar ha en sorts nordisk kvalitet över dig...
-[059:SCRP#0056](14)Hur som helst, vi pratar riktigt värde här...
+[059:SCRP#0056](14)Hur som helst, vi snackar riktigt värde här...
 [059:SCRP#0056](14)Kan inte sluta titta på henne, va?
 [059:SCRP#0056](14)Det här är den berömda `Havsapan.`\255\003--Det enda skeppet som nånsin tagit sig till Monkey Island™...\255\003...och kommit tillbaka med nån ombord vid liv.
 [059:SCRP#0056](14)Eller, borde jag säga, nånTING.\255\003De förra ägarna av det här skeppet var två äventyrliga pirater.\255\003Dom gav sig av, som många före dom, för att hitta den legendariska Monkey Islands™ Hemlighet.
@@ -3257,36 +3257,36 @@
 [059:SCRP#0056](FA)Allt jag har är den här gummikycklingen.
 [059:SCRP#0056](FA)Jag fick kredit från handlaren. Tar du emot det?
 [059:SCRP#0056](FA)Det här är nog inte skeppet för mig ändå.
-[059:SCRP#0056](14)Tja, det gör det med mig. Hur mycket har du?
-[059:SCRP#0056](14)Tyvärr, grabben.
+[059:SCRP#0056](14)Det gör det visst det. Hur mycket sitter du på?
+[059:SCRP#0056](14)Tyvärr, kompis.
 [059:SCRP#0056](14)Varken lånare eller långivare skall du vara.
 [059:SCRP#0056](14)Det är gamla Stans filosofi.
 [059:SCRP#0056](14)Om du har ett jobb kanske handlaren i stan kan ge dig lite kredit.
 [059:SCRP#0056](14)Då har vi nåt att prata om.
 [059:SCRP#0056](14)Om du inte redan har nån annan finansiering förstås...?
 [059:SCRP#0056](14)Inga kontanter?\255\003Inga problem!
-[059:SCRP#0056](14)Jag tror vi pratar om helt olika skepp här.\255\003Du har uppenbarligen varit borta från skeppsmarknaden ett tag.
-[059:SCRP#0056](14)Jag är glad att det här skeppet inte har öron, kompis.\255\003För om hon hade det skulle hon smälla till dig.
-[059:SCRP#0056](14)Hörru...\255\003Det här är ett väldigt rimligt prissatt skepp...\255\003men inte SÅ rimligt.
+[059:SCRP#0056](14)Jag tror vi snackar om helt olika skepp här.\255\003Du har uppenbarligen inte hängt med i skeppsmarknaden på ett tag.
+[059:SCRP#0056](14)Tur att det här skeppet inte har öron, kompis.\255\003För om hon hade det skulle hon smälla till dig.
+[059:SCRP#0056](14)Hörru du...\255\003Det här är ett väldigt schysst prissatt skepp...\255\003men inte SÅ schysst.
 [059:SCRP#0056](14)Jag tror inte du har kontanter nog för den här affären heller.\255\003Du har väl NÅN annan betalningsform...\255\003Eller?
 [059:SCRP#0056](14)Jag tvivlar på att du har nog med kontanter för den här affären.
 [059:SCRP#0056](14)Du har inte nån ANNAN finansiering, råkar du?
 [059:SCRP#0056](14)Är det en av de där gummikycklingarna med en trissa i mitten?\255\003Jag har redan en sån.
-[059:SCRP#0056](14)Det vill jag gärna.\255\003Det vill jag verkligen.\255\003Det gör jag VANLIGTVIS.\255\003Men inte för summan det här skeppet kommer kosta.
+[059:SCRP#0056](14)Gärna.\255\003Det vill jag verkligen.\255\003Det brukar jag VANLIGTVIS göra.\255\003Men inte för den summan det här skeppet kommer kosta.
 [059:SCRP#0056](14)Kanske nåt av de andra skeppen passar din prisklass bättre.
-[059:SCRP#0056](14)Hej, klart!\255\003Din kredit är alltid bra hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
+[059:SCRP#0056](14)Absolut!\255\003Din kredit är alltid bra hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
 [059:SCRP#0056](14)Skilsmässa...
 [059:SCRP#0056](14)Konkurs...
 [059:SCRP#0056](14)Kroniska spelförluster...\255\003Jag menar, vem är jag att döma, va?
 [059:SCRP#0056](14)Om handlaren litar på dig nog att ge dig ett kreditbrev...\255\003...då måste du vara en hederlig man med stadig inkomst, va?
 [059:SCRP#0056](D8)Öh... just det.
-[059:SCRP#0056](14)Tja, jag förstår det.\255\003Det är inget fel med att vara obeslutsam.\255\003Även om det är slöseri med min tid.
-[059:SCRP#0056](14)Okej, men jag har fem andra killar som kommer för att titta på den idag.\255\003Räkna inte med att den finns kvar om du ändrar dig.
+[059:SCRP#0056](14)Visst, jag förstår det.\255\003Det är inget fel med att vara obeslutsam.\255\003Även om det är slöseri med min tid.
+[059:SCRP#0056](14)Okej, men jag har fem andra killar som ska kolla på den idag.\255\003Räkna inte med att den finns kvar om du ändrar dig.
 [059:SCRP#0056](14)Klart den inte är det!\255\003Du letar efter en mycket större båt, det kan jag se.
-[059:SCRP#0056](14)Okej, men jag säger dig, jag har en känsla...\255\003...du kommer härifrån idag med ett nytt begagnat fartyg!
+[059:SCRP#0056](14)Okej, men jag säger dig, jag har en känsla...\255\003...du åker härifrån idag i ett nytt begagnat fartyg!
 [059:SCRP#0056](14)Visst, visst. Tänk på saken.\255\003Jag vill inte att du ska känna dig pressad eller nåt.
 [059:SCRP#0056](14)Hejdå.
-[059:SCRP#0056](14)Har jag redan gett dig mitt kort?\255\003Här.\255\003Jag ger dig ett till för säkerhets skull.
+[059:SCRP#0056](14)Fick du mitt kort redan?\255\003Här.\255\003Jag ger dig ett till för säkerhets skull.
 [059:SCRP#0056](94)Nej, nej, nej. Jag har gott om dem, verkligen.
 [059:SCRP#0056](14)Som du vill.\255\003Glöm bara inte mitt namn:\255\003STAN!!!
 [059:SCRP#0056](D8)Oroa dig inte. Det gör jag inte.
@@ -3305,21 +3305,21 @@
 [059:SCRP#0056](14)Låt oss komma till saken, va?
 [059:SCRP#0056](14)Snart måste du ge mig ett seriöst bud, vet du.
 [059:SCRP#0056](14)Jag vet att du vill ha det...\255\003...du vet att du vill ha det...\255\003...och jag vet att du vet att jag vill sälja det, så...
-[059:SCRP#0056](14)Jag får en helt ny leverans nästa vecka, så du har mig i ett trångt läge.\255\003Jag MÅSTE sälja den här skönheten, även om det betyder att jag förlorar skjortan.
-[059:SCRP#0056](14)Berätta bara, vad krävs för att få dig att segla iväg med det här skeppet...\255\003IDAG?
-[059:SCRP#0056](14)Du inser väl att dom inte bygger dom så här längre.
-[059:SCRP#0056](14)Kompisen, du kan berätta sanningen.\255\003Det är frugan, va?\255\003Du är rädd för vad hon säger när du kommer hem med ett nytt skepp.\255\003Var inte så vek!
+[059:SCRP#0056](14)Jag får in en helt ny leverans nästa vecka, så du har mig i ett trångt läge.\255\003Jag MÅSTE bli av med den här skönheten, även om jag förlorar skjortan på kuppen.
+[059:SCRP#0056](14)Säg mig bara, vad ska till för att du seglar härifrån med det här skeppet...\255\003IDAG?
+[059:SCRP#0056](14)Såna här bygger dom inte längre, det fattar du väl.
+[059:SCRP#0056](14)Kompis, du kan vara ärlig.\255\003Det är frugan, va?\255\003Du är rädd för vad hon säger när du kommer hem med ett nytt skepp.\255\003Var inte så mesig!
 [059:SCRP#0056](14)Stå på dig!\255\003Hon kommer respektera dig för det.\255\003Och när hon ser det här skeppet...\255\003...kommer hon ÄLSKA dig för det.\255\003Lita på mig.
 [059:SCRP#0056](14)Jag förstår inte. Jag TRODDE du var intresserad av det här skeppet.
 [059:SCRP#0056](14)Jag skulle låta dig ta en liten sväng i hamnen, men vårt försäkringsbolag tillåter det inte.
 [059:SCRP#0056](14)Jag är på din sida, kompis.\255\003Det är min chef som är den riktiga snåljåpen.
-[059:SCRP#0056](14)Du kanske inte har insett att det här är den enda skeppshandeln på ön.
+[059:SCRP#0056](14)Du kanske inte har fattat att det här är den enda skeppshandeln på ön.
 [059:SCRP#0056](14)Jag tänker bara på mina barns utbildningsfond, här.
 [059:SCRP#0056](FA)Låt oss prata tillval.
 [059:SCRP#0056](FA)Jag vill ge dig ett bud.
 [059:SCRP#0056](FA)Nå, vad tycker du den är värd?
 [059:SCRP#0056](FA)Glöm det. Jag behöver inte den här båten ändå.
-[059:SCRP#0056](14)Tillval?\255\003Du vill prata tillval?\255\003Toppen! Den här skönheten är FULLPACKAD med tillval!\255\003Till exempel...
+[059:SCRP#0056](14)Tillval?\255\003Du vill snacka tillval?\255\003Toppen! Den här skönheten är FULLPACKAD med tillval!\255\003Till exempel...
 [059:SCRP#0056](14)Berättade jag om avimningen av ventilerna?
 [059:SCRP#0056](14)Berättade jag om ankaret med låsningsfria bromsar?
 [059:SCRP#0056](14)Berättade jag om kuggstångsrodret?
@@ -3335,8 +3335,8 @@
 [059:SCRP#0056](14)Jag visste att vi till slut skulle komma överens.
 [059:SCRP#0056](14)Okej, men klandra inte mig om du kör in i ett isberg eller nåt.
 [059:SCRP#0056](14)Visst, kasta säkerheten i sjön.
-[059:SCRP#0056](14)Tja, den flyter väl utan det...\255\003...knappt.
-[059:SCRP#0056](14)Hej, resa lätt, det förstår jag.\255\003Förstås, myteri är ett fult ord...
+[059:SCRP#0056](14)Nåja, den flyter väl utan det...\255\003...typ.
+[059:SCRP#0056](14)Resa lätt, jag förstår det.\255\003Men du vet, myteri är ett fult ord...
 [059:SCRP#0056](14)Oj, vet din fru att du är så snål?
 [059:SCRP#0056](14)Ja, det ÄR väl lite dekadent, eller hur?
 [059:SCRP#0056](14)Okej, men jag säger dig:\255\003Havstulpaner HATAR imiterat trä.
@@ -3364,7 +3364,7 @@
 [059:SCRP#0056](14)Fyra tusen dubloner!?!
 [059:SCRP#0056](14)Fem tusen dubloner?!?
 [059:SCRP#0056](14)Du kan segla iväg med den här skönheten IDAG, för bara \255\004\203\000 dubloner.\255\003Hur låter det?
-[059:SCRP#0056](14)Fint.\255\003Var så.\255\003Se om jag bryr mig.
+[059:SCRP#0056](14)Fint.\255\003Gör det då.\255\003Se om jag bryr mig.
 [059:SCRP#0056](14)Vänta lite nu!
 [059:SCRP#0056](14)Gå inte iväg sur.
 [059:SCRP#0056](14)Jag är säker på att vi kan lösa det här.
