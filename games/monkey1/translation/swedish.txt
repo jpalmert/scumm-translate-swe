@@ -1511,7 +1511,7 @@
 [030:LSCR#0200](14)Se om jag nånsin gör dig en tjänst igen, otacksam liten snattare!
 [030:LSCR#0200](14)Se om jag nånsin gör dig en tjänst igen!
 [030:LSCR#0200](14)Jag har ögonen på dig, grabben.\255\003Stjäl nåt så bryter jag benen på dig.
-[030:LSCR#0200](14)Ahoj där, finbyxor.
+[030:LSCR#0200](14)Ahoj där, finbyxan.
 [030:LSCR#0202](94)Hmmm...\255\003Det finns inget här förutom den här lappen.
 [030:LSCR#0202](94)Hmmm...\255\003Det är tomt.
 [030:LSCR#0204](14)Letar efter en Svärdmästare, va?\255\003Letar efter lite 'femfingerrabatt' ser det ut som för mig!\255\003Se om jag nånsin litar på dig igen, lömsk liten snattande vessla!
@@ -1641,7 +1641,7 @@
 [030:LSCR#0211](14)Okej, men sätt inte läpparna på nåt.
 [030:LSCR#0211](14)Javisst ja.
 [030:LSCR#0211](14)Okej.\255\003Väck mig om du behöver nåt.
-[030:LSCR#0211](14)Var så god, finbyxor.
+[030:LSCR#0211](14)Var så god, finbyxan.
 [030:LSCR#0211](14)
 [030:LSCR#0212](14)Specialpris på spadar idag...
 [030:LSCR#0212](14)Kan du skynda dig?\255\003Jag hoppades stänga tidigt idag.
@@ -1694,7 +1694,7 @@
 [031:LSCR#0202](FA)Om jag släpper ut dig, vill du gå med i min besättning?
 [031:LSCR#0202](FA)Du råkar inte ha en fil?
 [031:LSCR#0202](FA)Kan jag hämta nåt åt dig?
-[031:LSCR#0202](FA)Nå, håll hakan uppe. Jag måste gå.
+[031:LSCR#0202](FA)Nå, håll modet uppe. Jag måste gå.
 [031:LSCR#0202](54)Otis
 [031:LSCR#0202](14)Jag heter Otis.\255\003Åtminstone tror jag det.\255\003Jag har suttit här så länge att jag knappt minns.
 [031:LSCR#0202](14)Du måste få ut mig härifrån innan jag tappar förståndet helt!\255\003Ser du inte att jag är oskyldig?
@@ -1755,7 +1755,7 @@
 [031:LSCR#0202](14)Hör här, jag uppskattar att du försöker hålla mig sällskap och allt det där...\255\003Men om du inte är advokat...
 [031:LSCR#0202](14)...eller vet nåt sätt att magiskt lösa upp det här låset...
 [031:LSCR#0202](14)...så ser jag verkligen ingen mening med att fortsätta det här samtalet.
-[031:LSCR#0202](14)Du måste få ut mig härifrån!\255\003Jag är ett offer för samhället.
+[031:LSCR#0202](14)Du måste få ut mig härifrån!\255\003Jag är ett samhällets offer.
 [031:LSCR#0202](D8)För att inte tala om munlukt.
 [031:LSCR#0202](D8)Usch!
 [031:LSCR#0202](14)Hörru, det är svårt att hålla andedräkten fräsch när det inte finns nåt att äta här förutom råttor.
@@ -1986,7 +1986,7 @@
 [035:LSCR#0216](FA)Förlåt det där med råttan...
 [035:LSCR#0216](FA)Nu när det fruktansvärda odjuret är borta kan vi prata.
 [035:LSCR#0216](FA)Hörru, fin råtta!
-[035:LSCR#0216](FA)Hur står ni ut med att vara nära det här ohyran?
+[035:LSCR#0216](FA)Hur står ni ut med att vara nära den här ohyran?
 [035:LSCR#0216](FA)Känner ni den smygande karln på \254\008     andra sidan gatan?
 [035:LSCR#0216](FA)Vet ni var jag kan hitta en skattkarta här nånstans?
 [035:LSCR#0216](FA)Jag tar protokollen om ni ger mig två dubloner.
@@ -2576,7 +2576,7 @@
 [043:OBNA#0593](__)skylt
 [043:VERB#0595](D8)Han är hemsk och okänslig och på väg att slå mig igen.
 [043:OBNA#0595](__)LeChuck
-[043:SCRP#0057](D8)Jag tror jag knackar.\255\003Det vore bara artigt.
+[043:SCRP#0057](D8)Jag tror jag knackar.\255\003Det vore artigast.
 [043:SCRP#0057](D8)Inget svar.
 [043:SCRP#0057](14)Vad vill du, din klenmodiga lilla\255\001ryggradslösa larv?
 [043:SCRP#0057](14)Vad vill du?
@@ -2601,7 +2601,7 @@
 [043:SCRP#0057](14)Du?
 [043:SCRP#0057](14)Ha ha ha!\255\003Du kan aldrig bli HÄLFTEN av den svärdskämpe Carla är.\255\003Inte ens med timmars hårt arbete och blodssvett.
 [043:SCRP#0057](14)Jag minns hur Carla och jag slogs sida vid sida i Port Royal...
-[043:SCRP#0057](14)...de lokala ordningsvakterna hade oss i ett hörn!
+[043:SCRP#0057](14)...den lokala stadsvakten hade omringade oss!
 [043:SCRP#0057](14)Det såg ut som om vi var körda, men sen sa hon--
 [043:SCRP#0057](14)--men jag svävar ut...
 [043:SCRP#0057](14)Du har helt enkelt inte det som krävs.
@@ -2611,7 +2611,7 @@
 [043:SCRP#0057](FA)Du borde verkligen sluta röka, vet du.
 [043:SCRP#0057](14)Nej det har du inte!
 [043:SCRP#0057](14)Vad jag verkligen borde göra är att tvinga dig att äta den här cigarrfimpen.
-[043:SCRP#0057](14)Jag gillar din anda. Jag ska göra vad jag kan.\255\003Förstås...\255\003...kostar det.
+[043:SCRP#0057](14)Jag gillar din attityd. Jag ska göra vad jag kan.\255\003Förstås...\255\003...kostar det.
 [043:SCRP#0057](14)Såg du min skylt?\255\003Jag brukar ta 30 dubloner för ett STORT jobb som det här.
 [043:SCRP#0057](14)Vad har du?
 [043:SCRP#0057](14)Vad MER har du?
@@ -2638,7 +2638,7 @@
 [043:SCRP#0057](14)Grabben!\255\003Du slåss som en mjölkbonde!
 [043:SCRP#0057](14)Jag brukar inte slösa min tid på ohyra som dig.\255\003Men med tanke på att det här LeChuck-tramset har satt käppar i hjulet för affärerna har jag inget val...\255\003...jag behöver pengarna.
 [043:SCRP#0057](14)Ja...\255\003...jag kan se att det här kräver speciella åtgärder.
-[043:SCRP#0057](14)Vill bara att du ska veta...\255\003...jag gör inte det här med alla.\255\003Det är bara för att jag känner den där speciella...\255\003...elev/mentor/dublon-bandet...\255\003...som jag går så här långt.
+[043:SCRP#0057](14)Vill bara att du ska veta...\255\003...jag gör inte det här med alla.\255\003Det är bara för att jag känner det där speciella...\255\003...elev/mentor/dublon-bandet...\255\003...som jag går så här långt.
 [043:SCRP#0057](14)Jag tänker ställa dig mot...
 [043:SCRP#0057](14)...MASKINEN.\255\002
 [043:SCRP#0057](14)
@@ -2655,7 +2655,7 @@
 [043:SCRP#0057](14)Vilken idiotpirat som helst kan svinga en vass metallbit och hoppas träffa nåt...\255\003...men proffsen...
 [043:SCRP#0057](14)...dom vet precis när de ska skära ner sin motståndare med en förolämpning...\255\003...en som tar dom på sängen.
 [043:SCRP#0057](14)Du förstår grabben, din kvickhet måste vara dubbelt så vass som ditt svärd.
-[043:SCRP#0057](14)Låt oss testa ett par förolämpningar, ska vi?
+[043:SCRP#0057](14)Låt oss testa ett par förolämpningar.
 [043:SCRP#0057](14)Okej...\255\003...tänk dig det här:\255\003Vi slåss för fullt...\255\003...precis som Carla och jag i Port Royal.\255\003Det blir ett plötsligt uppehåll i striden och jag säger...
 [043:SCRP#0057](14)...'Du slåss som en mjölkbonde.'\255\003Du svarar med?
 [043:SCRP#0057](FA)Jaså du!?
@@ -2664,7 +2664,7 @@
 [043:SCRP#0057](FA)Du måste tänka på nån annan, jag är ingen bonde.
 [043:SCRP#0057](14)Jag ser att vi har en hel del jobb kvar.
 [043:SCRP#0057](14)Du borde ha svarat med nåt som...\255\003...'Så passande. Du slåss som en ko.'
-[043:SCRP#0057](14)Förstår du...\255\003Det är rakbladsvasst skämt som det som vinner strider.
+[043:SCRP#0057](14)Förstår du...\255\003Det är rakbladsvassa skämt som det som vinner strider.
 [043:SCRP#0057](14)Låt oss pröva en till.
 [043:SCRP#0057](14)Tänk dig det här:\255\003Du är trängd mot en vägg...\255\003...mitt svärd har precis gjort två jack i ditt ansikte.\255\003Jag säger...
 [043:SCRP#0057](14)...'Snart sitter du fast på mitt svärd som en grillad råtta!'
@@ -2747,7 +2747,7 @@
 [045:LSCR#0200](14)Många har försökt och dött för sina ansträngningar.
 [045:LSCR#0200](14)Ge mig en bra anledning till varför jag inte ska döda er.
 [045:LSCR#0200](FA)Det vore inte snällt.
-[045:LSCR#0200](FA)Jag är kopplad att explodera om nån försöker döda mig.
+[045:LSCR#0200](FA)Jag är riggad att explodera om nån försöker döda mig.
 [045:LSCR#0200](FA)Jag har fru och tre barn.
 [045:LSCR#0200](FA)Vad sägs om DET HÄR som anledning, va?
 [045:LSCR#0200](14)Det hörde jag!
@@ -2795,7 +2795,7 @@
 [049:LSCR#0200](94)Jo! Nu när du säger det, det gör dom.\255\003Det beror nog bara på att vi är trötta.
 [049:LSCR#0200](14)...som jag kunde låna.
 [049:LSCR#0200](14)Jag behöver köpa mintpastiller.
-[049:LSCR#0200](94)Du menar det.
+[049:LSCR#0200](94)Det kan man lugnt säga.
 [049:LSCR#0200](94)Försvinn, din tiggande skurk, innan ja hackar dej i bitar.
 [049:LSCR#0200](94)Ja lånar inte ut pengar till nån, speciellt inte landkrabbor som dej.
 [049:LSCR#0200](94)Tiggande klär dej inte. Du borde gå ut och stjäla det som en riktig pirat.
@@ -2822,7 +2822,7 @@
 [051:LSCR#0205](14)Pennhuvud!
 [051:LSCR#0205](14)Halvhuvud!
 [051:LSCR#0205](14)Osthuvud!
-[051:LSCR#0205](14)Harpia!
+[051:LSCR#0205](14)Harpya!
 [051:LSCR#0205](14)Va?
 [051:LSCR#0205](14)Kliv bara i kanonen!
 [051:LSCR#0205](14)Din mamma bär stridstofflor!
@@ -2947,7 +2947,7 @@
 [053:OBNA#0635](__)fabulös idol
 [053:VERB#0637](D8)Jag har fortfarande ingen fil.
 [053:VERB#0637](D8)Jag tänker inte gå tillbaka dit!
-[053:OBNA#0637](__)gapande hål
+[053:OBNA#0637](__)mörkt hål
 [053:VERB#0634](D8)Jag låste in sheriffen därinne!
 [053:OBNA#0634](__)dörr
 [053:OBNA#0632](__)dörr
@@ -2976,7 +2976,7 @@
 [053:LSCR#0210](7A)Hypnotisera
 [053:LSCR#0210](14)Nej!\255\003Inte den röda knappen!
 [053:LSCR#0210](14)Det är en stor, ful, hårig jak med vaxläppar.
-[053:LSCR#0210](54)mycket hotfull jak
+[053:LSCR#0210](54)enormt hotfull jak
 [053:LSCR#0210](14)Jag kan inte flytta den.
 [053:LSCR#0210](14)Jag kan inte flytta den.
 [053:LSCR#0210](14)Ack!
@@ -3047,7 +3047,7 @@
 [053:LSCR#0217](FA)Stick, Fester.
 [053:LSCR#0217](14)Jaså?\255\003Jag vet ett riktigt säkert skåp du kan lägga den i...\255\003Davey Jones skåp!!!
 [053:LSCR#0217](14)Jadå...\255\003Och det är inte heller för sent för mig att döda dig och ändå hinna till baren för happy hour.
-[053:LSCR#0217](14)Jag tror du behöver svalna.
+[053:LSCR#0217](14)Jag tror du behöver lugna ner dig.
 [053:LSCR#0217](14)Lämna över ditt svärd.
 [053:LSCR#0217](D8)Åh nej.
 [057:OBNA#0653](__)stig
@@ -3056,12 +3056,12 @@
 [057:OBNA#0655](__)troll
 [057:LSCR#0200](13)troll
 [057:LSCR#0203](14)INGEN FÅR PASSERA!!
-[057:LSCR#0204](14)Ah! En röd sill!
+[057:LSCR#0204](14)Ah! Lever utan att andas! Kall som döden! PERFEKT!
 [057:LSCR#0204](14)Passera.
-[057:LSCR#0204](14)Vågar du förolämpa mig med en så ynklig summa?
-[057:LSCR#0204](14)Det kommer definitivt att dra uppmärksamhet...\255\003...och det är värdelöst...\255\003...men det är inte vad jag vill ha.
-[057:LSCR#0204](14)Det där är ganska värdelöst.\255\003Men det är inte vad jag vill ha.
-[057:LSCR#0204](14)Jag vill ha nåt som avleder uppmärksamheten från saker som är VERKLIGT viktiga.
+[057:LSCR#0204](14)Hur vågar du förolämpa mig med en så ynklig summa?
+[057:LSCR#0204](14)Det där är kallt som döden, visst...\255\003...men det lever inte.\255\003Det är inte vad jag vill ha.
+[057:LSCR#0204](14)Det där varken lever eller andas.\255\003Det är inte vad jag vill ha.
+[057:LSCR#0204](14)Jag vill ha nåt som är klätt i RUSTNING men som aldrig skramlar!
 [057:LSCR#0204](14)Nåt saltare kanske?
 [057:LSCR#0204](14)Jag börjar bli hungrig av att vänta på dig.\255\003Nåt att äta kanske?
 [057:SCRP#0055](14)STOPP!!
@@ -3091,7 +3091,7 @@
 [057:SCRP#0055](14)Vad är det som är bra med det?
 [057:SCRP#0055](14)Nå, vad har du?
 [057:SCRP#0055](FA)Lite halvunket kött?
-[057:SCRP#0055](FA)En grytkastrull?
+[057:SCRP#0055](FA)En gryta?
 [057:SCRP#0055](FA)En gummikyckling med en trissa i mitten?
 [057:SCRP#0055](FA)Bråka inte med mig, troll, jag är en mäktig pirat!
 [057:SCRP#0055](FA)30 dubloner?
@@ -3100,7 +3100,7 @@
 [057:SCRP#0055](FA)Inget av betydelse.
 [057:SCRP#0055](FA)Strunt samma, jag måste gå nu.
 [057:SCRP#0055](14)Fint.\255\003Försvinn.
-[057:SCRP#0055](14)Jag vill ha nåt som drar uppmärksamhet men inte har nåt verkligt värde.
+[057:SCRP#0055](14)Jag vill ha nåt som lever utan att andas, kallt som döden.
 [057:SCRP#0055](FA)Kalsonger av konstruktionspapper?
 [057:SCRP#0055](FA)Ett apkoppel med tre halsband?
 [057:SCRP#0055](FA)En gummikyckling med en trissa i mitten?
@@ -3332,7 +3332,7 @@
 [059:SCRP#0056](FA)Nog om tillval nu.
 [059:SCRP#0056](14)Och väl värt pengarna också.
 [059:SCRP#0056](14)Därför ingår det redan i priset!
-[059:SCRP#0056](14)Jag visste att du till slut skulle se saker på mitt sätt.
+[059:SCRP#0056](14)Jag visste att vi till slut skulle komma överens.
 [059:SCRP#0056](14)Okej, men klandra inte mig om du kör in i ett isberg eller nåt.
 [059:SCRP#0056](14)Visst, kasta säkerheten i sjön.
 [059:SCRP#0056](14)Tja, den flyter väl utan det...\255\003...knappt.
@@ -3555,7 +3555,7 @@
 [070:OBNA#0771](__)spökskepp
 [070:VERB#0784](D8)Han är ganska kuslig.
 [070:OBNA#0784](__)spöke
-[070:LSCR#0204](14)IIIP!\255\003Du skrämde mig halvt till döds!
+[070:LSCR#0204](14)IIIP!\255\003Du skrämde halvt ihjäl mig!
 [070:LSCR#0204](FA)Milt väder vi har, eller hur?
 [070:LSCR#0204](FA)Smaka på lite rotöl, din onda ande!
 [070:LSCR#0204](FA)Vad hände med skeppet?
@@ -3610,7 +3610,7 @@
 [070:LSCR#0205](14)Vad hände med ditt skepp?
 [070:LSCR#0205](FA)Det är på verkstad.
 [070:LSCR#0205](FA)Jag har inte försäkring på det.
-[070:LSCR#0205](FA)Besättningen stal det och stack till Ipanema.
+[070:LSCR#0205](FA)Besättningen stal det och stack till Ipanema för att sola.
 [070:LSCR#0205](FA)Jag sänkte det liksom med en sten för ett tag sen.
 [070:LSCR#0205](94)\255\005\100\000
 [070:LSCR#0205](14)Åh.
@@ -3713,9 +3713,9 @@
 [073:OBNA#0801](__)stege
 [073:VERB#0802](D8)Den är redan öppen.
 [073:VERB#0802](D8)Det går inte att stänga den.
-[073:VERB#0802](D8)Det är en flaska spökgrog.
+[073:VERB#0802](D8)Det är en flaska spökgrogg.
 [073:VERB#0802](D8)Jag tror jag hellre sparar den.
-[073:OBNA#0802](__)kanna grog
+[073:OBNA#0802](__)kanna grogg
 [073:VERB#0805](D8)Det ser ut som en flaska full med grogg.
 [073:VERB#0805](D8)Jag kan inte ta den ifrån honom.
 [073:OBNA#0805](__)flaska
@@ -3736,7 +3736,7 @@
 [074:VERB#0815](D8)Det skulle bara kladda ner den.
 [074:OBNA#0815](__)klick fett
 [074:VERB#0807](D8)Det är en tom skål.
-[074:VERB#0807](D8)Jag tänker inte plocka upp den...\255\003...den är täckt med rådreggel.
+[074:VERB#0807](D8)Jag tänker inte plocka upp den...\255\003...den är täckt med råttdreggel.
 [074:VERB#0807](D8)Jag tror de här råttorna har fått nog.
 [074:VERB#0807](D8)Jag tror inte det är en bra idé.
 [074:OBNA#0807](__)skål
@@ -3848,7 +3848,7 @@
 [078:SCRP#0133](14)Du vet, bara genom att titta på dig kan jag se att du är en världsman.
 [078:SCRP#0133](14)En man med öga för kvalitet.
 [078:SCRP#0133](14)En man som känner igen ett bra fynd när han
-[078:SCRP#0137](14)Blimkameran™
+[078:SCRP#0137](14)Blimpkameran™
 [078:SCRP#0137](14)
 [078:SCRP#0137](14)KABOOM
 [078:SCRP#0137](14)
@@ -3941,7 +3941,7 @@
 [080:LSCR#0202](13)Herman Rötbett
 [080:LSCR#0202](14)Hej, fin kikare. Ser ut precis som --
 [080:LSCR#0202](14)Förresten, var ÄR min kikare?\255\003Åh, perfekt.
-[080:LSCR#0202](14)Jag är borta fem minuter och nån kommer in här och häller krut över hela golvet.
+[080:LSCR#0202](14)Jag är borta fem minuter och nån kommer in här och strör krut över hela golvet.
 [080:LSCR#0202](14)Naturligtvis tror jag inte att DU hade nåt med det att göra.\255\003Jag är säker på att det bara är en tillfällighet att du kom in här och nosade runt precis efter att nån MYSTISK person smutsade ner mitt fina rena golv.
 [080:LSCR#0202](14)Hej!\255\003Det stör mig inte det minsta att du bara valsade rakt in i mitt hem utan att bry dig om att knacka.
 [080:LSCR#0202](14) 
@@ -4000,7 +4000,7 @@
 [082:SCRP#0093](FA)Herregud, vilken genomskinlig säljpitch.
 [082:SCRP#0093](FA)Trevligt att prata med dig.
 [082:SCRP#0093](14)Du menar det senaste mästerverket inom fantasyberättande från Lucasfilms™ Brian Moriarty™?
-[082:SCRP#0093](14)Jo det är ett extraordinärt äventyr med ett magiskt gränssnitt...
+[082:SCRP#0093](14)Jo, det är ett extraordinärt äventyr med ett magiskt gränssnitt...
 [082:SCRP#0093](14)...fantastiska, högupplösta 3D-landskap...\255\003...sofistikerat soundtrack och musikeffekter.
 [082:SCRP#0093](14)För att inte tala om den detaljerade animationen och specialeffekterna,\255\003elegant peka-och-klicka-styrning av karaktärer, föremål och trollformler.
 [082:SCRP#0093](14)Men vänta, det finns mer!
@@ -4255,7 +4255,7 @@
 [088:SCRP#0085](27)Min senaste strid slutade med mina händer täckta i blod.
 [088:SCRP#0085](27)Jag hoppas du har en båt redo för en snabb flykt.
 [088:SCRP#0085](27)Mitt svärd är känt över hela Karibien!
-[088:SCRP#0085](27)Jag har modet och skickligheten hos en fäktaremästare!
+[088:SCRP#0085](27)Jag har modet och skickligheten hos en svärdsmästare!
 [088:SCRP#0085](27)Du säger så mycket dumt.
 [088:SCRP#0085](27)Det blir alltid tårar när jag drar mitt svärd!
 [088:SCRP#0085](27)Det finns inga smarta drag som kan hjälpa dig nu.
@@ -4277,7 +4277,7 @@
 [088:SCRP#0086](27)Jag hoppas att du nu lärt dig sluta peta näsan.
 [088:SCRP#0086](27)Hurså, ville du låna en?
 [088:SCRP#0086](27)Synd att ingen nånsin hört talas om DIG överhuvudtaget.
-[088:SCRP#0086](27)Då skulle jag vara i rejäla problem om du nånsin använde det.
+[088:SCRP#0086](27)Då skulle jag ha rejäla problem om du nångonsin använde det.
 [088:SCRP#0086](27)Jag ville vara säker på att du skulle känna dig bekväm med mig.
 [088:SCRP#0086](27)Skär du dig fortfarande?
 [088:SCRP#0086](27)Visst finns det. Du har bara aldrig lärt dig dem.
@@ -4393,7 +4393,7 @@
 [089:SCRP#0138](14)En vad?
 [089:SCRP#0138](14)Jag vet inte, jag är inte säker på varför jag sa det.
 [089:SCRP#0146](14)Du vet, jag kan inte skaka av mig känslan att Guybrush på nåt sätt var ansvarig för att den där stora klippan sänkte skeppet...
-[089:SCRP#0146](14)Japp.\255\003Så fort vi hittar ett sätt av den här ön ska vi ta ett allvarligt snack med herr Threepwood...
+[089:SCRP#0146](14)Japp.\255\003Så fort vi hittar ett sätt att ta oss av den här ön ska vi ta ett allvarligt snack med herr Threepwood...
 [089:SCRP#0146](14)Låt oss ta oss ut ur den här kojan först.
 [089:SCRP#0146](14)Nu undrar jag var min piratvän har tagit vägen.
 [089:SCRP#0146](14)Jag hoppas verkligen att han inte åkte utan mig...
