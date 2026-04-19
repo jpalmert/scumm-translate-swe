@@ -11,6 +11,10 @@
 #          (populate with: bash scripts/extract_assets.sh)
 #        - Import Swedish glyph BMPs with scummfont
 #   3. Copy Swedish translation file to games/<game>/dist/
+#   3b. Apply @ padding for dynamic object names (setObjectName overflow protection).
+#       Uses dynamic_names.json (generated from game scripts if missing) and
+#       calc_padding.py to ensure OBNA buffers are large enough for runtime replacements.
+#       Only the dist copy is modified — the source swedish.txt is untouched.
 #   4. Cross-compile patcher for Linux, macOS, and Windows into games/<game>/dist/
 #   5. Package per-OS zip archives for distribution
 #
@@ -21,6 +25,7 @@
 #
 # Requirements:
 #   - Go 1.21+  (go build)
+#   - Python 3  (calc_padding.py, find_dynamic_names.py)
 #   - Tool binaries in git (scummtr, scummrp, scummfont — run install_deps.sh if missing)
 #   - Extracted English CHAR blocks in games/<game>/gen/charset/english/
 #     (run: cd games/<game> && bash ../../scripts/extract.sh)
@@ -121,6 +126,27 @@ if [ ! -f "$TRANSLATION_SRC" ]; then
 fi
 cp "$TRANSLATION_SRC" "$DIST_DIR/swedish.txt"
 echo "  $TRANSLATION_SRC -> $DIST_DIR/swedish.txt"
+
+# ---------------------------------------------------------------------------
+echo ""
+echo "=== Step 3b: Apply @ padding for dynamic object names ==="
+
+# Some object names are replaced at runtime by setObjectName() scripts.
+# The OBNA buffer must be at least as long as the longest replacement.
+# find_dynamic_names.py extracts the mapping from game scripts; calc_padding.py
+# adds @ padding to the dist copy of swedish.txt where needed.
+
+DYNNAMES_JSON="$GAME_GEN/dynamic_names.json"
+
+if [ ! -f "$DYNNAMES_JSON" ]; then
+    echo "  Generating dynamic_names.json from game scripts..."
+    python3 "$REPO_ROOT/tools/find_dynamic_names.py" "$GAME_GAME" "$DYNNAMES_JSON"
+fi
+
+echo "  Checking @ padding..."
+python3 "$REPO_ROOT/tools/calc_padding.py" --apply \
+    --json "$DYNNAMES_JSON" \
+    --translation "$DIST_DIR/swedish.txt"
 
 # ---------------------------------------------------------------------------
 echo ""

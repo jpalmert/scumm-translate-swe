@@ -50,8 +50,8 @@ def main():
     args = parser.parse_args()
 
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    json_path = args.json or os.path.join(repo, "game", "monkey1", "gen", "dynamic_names.json")
-    sv_path = args.translation or os.path.join(repo, "translation", "monkey1", "swedish.txt")
+    json_path = args.json or os.path.join(repo, "games", "monkey1", "gen", "dynamic_names.json")
+    sv_path = args.translation or os.path.join(repo, "games", "monkey1", "translation", "swedish.txt")
 
     if not os.path.isfile(json_path):
         print(f"Error: {json_path} not found. Run scripts/extract.sh first.", file=sys.stderr)
@@ -93,29 +93,18 @@ def main():
         required = max(obna_len, max_repl_len)
         current = scumm_byte_len(obna_encoded)
 
-        if current == required:
-            continue
+        if current >= required:
+            continue  # existing padding (if any) is already sufficient
 
         pad_count += 1
-        at_needed = required - obna_len
+        extra_at = required - current
 
-        if at_needed < 0:
-            continue  # OBNA is already longer than all replacements
-
-        # Rebuild with padding
+        # Append additional @ padding without touching existing content
         raw = lines[obna_lineno - 1].rstrip('\r\n')
-        idx = raw.index(']')
-        header = raw[:idx + 1]
-        text = raw[idx + 1:]
-        prefix = ""
-        if text.startswith('(') and ')' in text:
-            prefix = text[:text.index(')') + 1]
-            text = text[text.index(')') + 1:]
-        text = text.rstrip('@')
-        new_line = header + prefix + text + '@' * at_needed + '\n'
+        new_line = raw + '@' * extra_at + '\n'
         changes[obna_lineno - 1] = new_line
 
-        print(f"  L{obna_lineno}: pad to {required} (longest repl: {max_repl_len}, obna: {obna_len})")
+        print(f"  L{obna_lineno}: pad to {required} (currently {current}, adding {extra_at} @, longest repl: {max_repl_len}, obna text: {obna_len})")
 
     print(f"\nLines needing padding: {pad_count}")
 

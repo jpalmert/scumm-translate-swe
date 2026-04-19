@@ -3274,11 +3274,11 @@
 [059:SCRP#0056](14)Är det en av de där gummikycklingarna med en trissa i mitten?\255\003Jag har redan en sån.
 [059:SCRP#0056](14)Gärna.\255\003Det vill jag verkligen.\255\003Det brukar jag VANLIGTVIS göra.\255\003Men inte för den summan det här skeppet kommer kosta.
 [059:SCRP#0056](14)Kanske nåt av de andra skeppen passar din prisklass bättre.
-[059:SCRP#0056](14)Absolut!\255\003Du är alltid betrodd hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
+[059:SCRP#0056](14)Absolut!\255\003Du kan alltid handla på kreidt hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
 [059:SCRP#0056](14)Skilsmässa...
 [059:SCRP#0056](14)Konkurs...
-[059:SCRP#0056](14)Kroniska spelförluster...\255\003Jag menar, vem är jag att döma, va?
-[059:SCRP#0056](14)Om handlaren litar på dig nog att ge dig ett kreditbrev...\255\003...då måste du vara en hederlig man med stadig inkomst, va?
+[059:SCRP#0056](14)Kroniska spelmissöden...\255\003Jag menar, vem är jag att döma, va?
+[059:SCRP#0056](14)Om handlaren litar på dig nog för att ge dig ett kreditbrev...\255\003...då måste du vara en hederlig man med stadig inkomst, va?
 [059:SCRP#0056](D8)Öh... just det.
 [059:SCRP#0056](14)Visst, jag förstår det.\255\003Det är inget fel med att vara obeslutsam.\255\003Även om det är slöseri med min tid.
 [059:SCRP#0056](14)Okej, men jag har fem andra killar som ska kolla på den idag.\255\003Räkna inte med att den finns kvar om du ändrar dig.

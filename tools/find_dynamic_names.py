@@ -123,7 +123,7 @@ def main():
     game_dir = sys.argv[1]
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     output_path = sys.argv[2] if len(sys.argv) > 2 else os.path.join(
-        repo, "game", "monkey1", "gen", "dynamic_names.json"
+        repo, "games", "monkey1", "gen", "dynamic_names.json"
     )
 
     scummrp = find_bin("scummrp")
