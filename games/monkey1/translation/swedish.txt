@@ -3610,7 +3610,7 @@
 [070:LSCR#0205](14)Vad hände med ditt skepp?
 [070:LSCR#0205](FA)Det är på verkstad.
 [070:LSCR#0205](FA)Jag har inte försäkring på det.
-[070:LSCR#0205](FA)Besättningen stal det och stack till Ipanema för att sola.
+[070:LSCR#0205](FA)Besättningen tog det och stack till Ipanema för att sola.
 [070:LSCR#0205](FA)Jag sänkte det liksom med en sten för ett tag sen.
 [070:LSCR#0205](94)\255\005\100\000
 [070:LSCR#0205](14)Åh.
