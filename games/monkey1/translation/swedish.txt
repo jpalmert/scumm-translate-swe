@@ -42,7 +42,7 @@
 [007:VERB#0076](D8)Det ser ut som en gammal skattkista.
 [007:OBNA#0076](__)kista
 [007:VERB#0077](D8)Den är för tung att flytta.
-[007:VERB#0077](D8)Hej, titta!  En pappersbit.
+[007:VERB#0077](D8)Oj, titta!  En pappersbit.
 [007:VERB#0077](D8)Och några kanelstänger.
 [007:VERB#0077](D8)Kistan är tom.
 [007:VERB#0077](D8)Det är den där tunga metallkistan jag bar hit.
@@ -428,14 +428,14 @@
 [016:SCRP#0157](D8)...det finns lite vrakdelar till höger.
 [016:SCRP#0157](D8)...och där är mitt skepp till höger.
 [016:SCRP#0157](D8)Det finns flytande vrakdelar där mitt skepp brukade vara!
-[016:SCRP#0157](D8)Hej, jag kan se mitt skepp härifrån!\255\003Vilken skrothög!
+[016:SCRP#0157](D8)Åh, jag kan se mitt skepp härifrån!\255\003Vilken skrothög!
 [016:SCRP#0157](D8)Det finns lite vrakdelar till vänster...
 [016:SCRP#0157](D8)Där är mitt skepp till vänster...
 [016:SCRP#0157](D8)...och det stora trädet på stranden till höger.
 [016:SCRP#0157](D8)Jag kan se det stora bananträdet på stranden!
 [016:SCRP#0157](D8)Wow, vilken djungel!\255\003Där är det stora bananträdet på stranden till vänster.
 [016:SCRP#0157](D8)Djungeln är ganska tät...\255\003...allt jag kan se är en massa djur som äter varandra!
-[016:SCRP#0157](D8)Hej, jag kan se utkiken på Mêlée Island™!\255\003Han tittar rakt på mig!
+[016:SCRP#0157](D8)Åh, jag kan se utkiken på Mêlée Island™!\255\003Han tittar rakt på mig!
 [017:VERB#0237](D8)Vad jag inte skulle ge för en stor, härlig vattenballong just nu.
 [017:OBNA#0237](__)skeppsdäck
 [017:VERB#0238](D8)Vilken fin flagga.\255\003Får mig att darra i byxorna bara av att titta på den.
@@ -464,7 +464,7 @@
 [019:VERB#0257](D8)Det kommer inte fungera.
 [019:VERB#0257](D8)Jag har ingen lust att spränga ut mig själv till havs.
 [019:VERB#0257](D8)Aldrig i livet! Jag spräcker skallen när jag landar!
-[019:VERB#0257](14)Hej! Kanonen avfyrades inte!
+[019:VERB#0257](14)Hallå! Kanonen avfyrades inte!
 [019:VERB#0257](D8)Det är alldeles för farligt att klättra ut dit utan anledning.
 [019:OBNA#0257](__)kanonmynning
 [019:VERB#0258](D8)Den är fastbunden.
@@ -496,7 +496,7 @@
 [019:LSCR#0200](14)Nu när jag tänker efter, jag har varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
 [019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
 [019:LSCR#0200](14)--suck--
-[019:LSCR#0204](D8)Hej, titta...
+[019:LSCR#0204](D8)Åh, titta...
 [019:LSCR#0204](D8)...vi har kommit till Monkey Island™
 [019:LSCR#0204](14)Säg till när du har hittat Guvernören...\255\003...vi har en extra stol hon kan använda.
 [019:LSCR#0204](D8)Jag tror inte de kommer vara till stor hjälp.
@@ -504,10 +504,10 @@
 [019:LSCR#0204](D8)Jag tror inte de kommer vara till någon hjälp.
 [019:LSCR#0204](14)Vad var det?
 [019:LSCR#0204](D8)Inget.
-[019:LSCR#0204](FA)Hej grabbar, vad händer?
+[019:LSCR#0204](FA)Tjena grabbar, vad händer?
 [019:LSCR#0204](FA)Kan jag göra nåt för att få er att hjälpa mig?
 [019:LSCR#0204](FA)Jag hörde att vädret är fint vid Monkey Island™.
-[019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island™.
+[019:LSCR#0204](FA)Kolla! Jag hittade en karta till Monkey Island™.
 [019:LSCR#0204](FA)Jag ger er myterister fem sekunder att \254\008     besinna er!
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
 [019:LSCR#0204](14)Stick, Guybrush.
@@ -675,11 +675,11 @@
 [020:SCRP#0095](14)
 [020:SCRP#0095](14)
 [020:SCRP#0096](14)
-[020:SCRP#0096](14)Hej, tack!\255\003Jag trodde jag aldrig skulle se den här igen!\255\003Här, du kan ta tillbaka den här nyckeln till Aphuvudet till de infödda.
+[020:SCRP#0096](14)Åh, tack!\255\003Jag trodde jag aldrig skulle se den här igen!\255\003Här, du kan ta tillbaka den här nyckeln till Aphuvudet till de infödda.
 [020:SCRP#0096](D8)Okej.\255\003Och oroa dig inte, jag använder den inte eller något.
 [020:SCRP#0096](14)Nej tack, jag har en.\255\003Fast jag önskar att jag kunde hitta den.
 [020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
-[020:SCRP#0096](14)Hej, MINTPASTILLER!
+[020:SCRP#0096](14)Åh, MINTPASTILLER!
 [020:SCRP#0096](14)Det här är vad jag saknar mest med civilisationen.
 [020:SCRP#0096](14)Pengar duger inte till mycket här.
 [020:SCRP#0096](14)Jag har redan läst memon för en hel livstid.
@@ -850,7 +850,7 @@
 [025:LSCR#0202](14)Ja, ja. Vi vet.
 [025:LSCR#0202](14)Något?\255\003Hmmm...
 [025:LSCR#0202](14)Okej...
-[025:LSCR#0202](14)Hej, som du vill!
+[025:LSCR#0202](14)Visst, som du vill!
 [025:LSCR#0202](14)Ha!\255\003Vi går inte på det där gamla tricket IGEN.
 [025:LSCR#0202](14)Hallå!
 [025:LSCR#0202](14)Tror du verkligen vi är så dumma?
@@ -882,7 +882,7 @@
 [025:LSCR#0203](14)Har du något av mer andligt värde?
 [025:LSCR#0203](14)Det är knappast en artefakt värdig Den Stora Apan.
 [025:LSCR#0204](14)Uppenbarligen har du inget till oss.
-[025:LSCR#0205](14)Hej, wow!
+[025:LSCR#0205](14)Oj, wow!
 [025:LSCR#0205](14)Det här är imponerande!
 [025:LSCR#0205](14)LEMONHEAD!!!
 [025:LSCR#0205](14)Titta på det här.
@@ -967,7 +967,7 @@
 [025:LSCR#0213](14)Och tills den där grinige gamla byxlöse knäppgöken lämnar tillbaka den, behåller vi hans bananplockare.
 [025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Att försöka hitta LeChuck kan vara mycket farligt.
 [025:LSCR#0213](14)Du skulle aldrig hitta vägen genom katakomberna utan--
-[025:LSCR#0213](14)Hej!\255\003Ixnay på Uvudethay av Avigatörenay!
+[025:LSCR#0213](14)Stopp!\255\003Ixnay på Uvudethay av Avigatörenay!
 [025:LSCR#0213](D8)Va?
 [025:LSCR#0213](14)Ingenting.
 [025:LSCR#0213](14) 
@@ -1072,7 +1072,7 @@
 [025:SCRP#0140](FA)Jo, det har varit trevligt. Jag sätter tillbaka dig nu.
 [025:SCRP#0140](14)Hallå.
 [025:SCRP#0140](14)Är det något jag kan göra för dig?
-[025:SCRP#0140](14)Hej, inga problem.\255\003När man bara har ett jobb...\255\003gör man det bra. Förstår du vad jag menar?
+[025:SCRP#0140](14)Äh, inga problem.\255\003När man bara har ett jobb...\255\003gör man det bra. Förstår du vad jag menar?
 [025:SCRP#0140](14)Jag får känslan av att du ska be mig om en tjänst.
 [025:SCRP#0140](14)Var?
 [025:SCRP#0140](D8)Inget som angår dig.
@@ -1097,7 +1097,7 @@
 [025:SCRP#0140](14)Och jag vill inte behöva få dig att ångra det.
 [025:SCRP#0140](14)Kom ihåg, du behöver mig för att ta dig ut härifrån.\255\003Om jag ville kunde jag hålla dig strandsatt här för alltid.
 [025:SCRP#0140](14)Vid närmare eftertanke...
-[025:SCRP#0140](14)Hej, vad ska man med ett halsband till om man inte har axlar?
+[025:SCRP#0140](14)Äh, vad ska man med ett halsband till om man inte har axlar?
 [025:SCRP#0141](54)halsband på Guybrush
 [025:SCRP#0141](D8)Jag tror det här bara fungerar under jord.
 [025:SCRP#0141](D8)Det här känns konstigt.
@@ -1450,7 +1450,7 @@
 [029:LSCR#0210](D8)Oj då!
 [029:LSCR#0210](D8)Jag tror inte hon kommer tillbaka igen.
 [029:LSCR#0210](FA)Hallå?
-[029:LSCR#0210](FA)Hej! Jag är tillbaka och redo att höra om framtiden.
+[029:LSCR#0210](FA)Hallå! Jag är tillbaka och redo att höra om framtiden.
 [029:LSCR#0210](FA)Jag antar att jag bara sticker nu.
 [029:LSCR#0210](D8)Jag antar att ingen är här.
 [029:LSCR#0210](14)Oj då!
@@ -3353,7 +3353,7 @@
 [059:SCRP#0056](FA)Okej! 5000! Men det är mitt sista bud!
 [059:SCRP#0056](FA)5000! Och det är mitt ABSOLUT sista bud.
 [059:SCRP#0056](FA)Egentligen vill jag att du ska lida lite till.
-[059:SCRP#0056](14)Visst. Hej!\255\003Det är mitt jobb, va?
+[059:SCRP#0056](14)Visst. Hörru!\255\003Det är mitt jobb, va?
 [059:SCRP#0056](14)Det är fortfarande inte nog med pengar.\255\003Inflationen fungerar åt andra hållet, vet du.
 [059:SCRP#0056](14)Visst, vi kan börja från botten.\255\003Jag har hela dan.
 [059:SCRP#0056](14)Det börjar likna nåt...\255\003...men inte mycket.
@@ -3467,7 +3467,7 @@
 [061:SCRP#0124](14)Inse det, din skabbiga gamla gubbe...\255\003...du hittar vilken ursäkt som helst för att komma hit och besvära mig.
 [061:SCRP#0124](14)Ja, du har nog rätt.
 [061:SCRP#0124](14)Nå, sluta med det. Jag är trött på det.\255\003Ge dig iväg och kom inte hit igen.\255\003Nån kanske följer efter dig, och då blir jag ännu en turistattraktion på Mêlée Island™.
-[061:SCRP#0124](14)Hej, det är din förlust, gullet.
+[061:SCRP#0124](14)Tja, du som förlorar på det, gullet.
 [061:SCRP#0124](14)Den där grabben frågar om dig hela tiden, Carla...
 [061:SCRP#0124](14)Hörru...\255\003...om du kommer hit en gång till tänker jag hugga av ditt huvud och spotta ner i din hals...\255\003...fattar du?
 [061:SCRP#0124](14)Jag älskar när du pratar så.
@@ -3516,7 +3516,7 @@
 [064:OBNA#0748](__)markör
 [064:LSCR#0200](D8)Det här borde inte ta så lång tid.
 [064:LSCR#0200](14)Timmar går...
-[064:LSCR#0200](D8)Hej! Jag tror jag träffade nåt!
+[064:LSCR#0200](D8)Oj! Jag tror jag träffade nåt!
 [064:LSCR#0200](D8)Åh, oj!
 [064:LSCR#0200](D8)Det är en T-shirt!
 [064:LSCR#0200](D8)Inte min storlek, men fin ändå.
@@ -3603,7 +3603,7 @@
 [070:LSCR#0205](14)Bob!
 [070:LSCR#0205](14)Vad gör du här?
 [070:LSCR#0205](14)Jag missade båten till bröllopet.
-[070:LSCR#0205](14)Hej!\255\003Inga problem!\255\003Vi kan ta min!\255\003Vi kör!
+[070:LSCR#0205](14)Visst!\255\003Inga problem!\255\003Vi kan ta min!\255\003Vi kör!
 [070:LSCR#0205](FA)...hörru...
 [070:LSCR#0205](FA)Vi behöver skaffa ett skepp först.
 [070:LSCR#0205](FA)Hur kom du in här utan huvud?
@@ -3668,7 +3668,7 @@
 [071:VERB#0786](D8)Det är stort. Det är låst.
 [071:VERB#0786](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
 [071:OBNA#0786](__)lås
-[071:VERB#0785](D8)Hej! Jag slår vad om att Guvernören är därinne!
+[071:VERB#0785](D8)Åh! Jag slår vad om att Guvernören är därinne!
 [071:VERB#0785](D8)Jag kan inte komma åt det. Det stora spöket är i vägen.
 [071:OBNA#0785](__)fångcell
 [071:OBNA#0789](__)dörr
@@ -3807,7 +3807,7 @@
 [077:VERB#0840](54)gnisslig dörr@@@
 [077:OBNA#0840](__)dörr@@@@@@@@@@@@@@@@@
 [077:OBNA#0841](__)lucka
-[077:VERB#0842](D8)Hej! Vilken söt liten spökhund.
+[077:VERB#0842](D8)Åh! Vilken söt liten spökhund.
 [077:VERB#0842](D8)Jag bör nog låta den vara.
 [077:OBNA#0842](__)spökhund
 [077:VERB#0843](D8)Vilken full slusk!
@@ -3833,7 +3833,7 @@
 [078:LSCR#0201](FA)Brudgummen är inte mänsklig!
 [078:LSCR#0201](FA)Elaine!
 [078:LSCR#0201](FA)STOPPA BRÖLLOPET!!
-[078:LSCR#0201](14)Hej!! Vem är det?
+[078:LSCR#0201](14)Hallå!! Vem är det?
 [078:SCRP#0127](14)
 [078:SCRP#0132](14)--urk--
 [078:SCRP#0132](14)Flås!\255\003--hack--
@@ -3852,12 +3852,12 @@
 [078:SCRP#0137](14)
 [078:SCRP#0137](14)KABOOM
 [078:SCRP#0137](14)
-[078:SCRP#0151](14)Hej...
+[078:SCRP#0151](14)Hallå...
 [078:SCRP#0151](D8)Oj!\255\003Smyg inte upp bakom mig så där!
 [078:SCRP#0151](14)Förlåt.
 [078:SCRP#0151](D8)Det är okej.
 [079:SCRP#0091](14)Ohoj, främling.\255\003Ny i stan?
-[079:SCRP#0091](14)Hej, kul att se dig igen.
+[079:SCRP#0091](14)Åh, kul att se dig igen.
 [079:SCRP#0091](14)Oj då, det ser ut som min grogg håller på att bli avslagen, så du får ursäkta mig.
 [079:SCRP#0091](FA)Så vad var ditt namn egentligen?
 [079:SCRP#0091](FA)Jag heter Guybrush Threepwood. Jag är ny i stan.
@@ -3939,7 +3939,7 @@
 [080:OBNA#0886](__)stig
 [080:ENCD#0080](D8)Stigen slutar här.
 [080:LSCR#0202](13)Herman Rötbett
-[080:LSCR#0202](14)Hej, fin kikare. Ser ut precis som --
+[080:LSCR#0202](14)Åh, fin kikare. Ser ut precis som --
 [080:LSCR#0202](14)Förresten, var ÄR min kikare?\255\003Åh, perfekt.
 [080:LSCR#0202](14)Jag är borta fem minuter och nån kommer in här och strör krut över hela golvet.
 [080:LSCR#0202](14)Naturligtvis tror jag inte att DU hade nåt med det att göra.\255\003Jag är säker på att det bara är en tillfällighet att du kom in här och nosade runt precis efter att nån MYSTISK person smutsade ner mitt fina rena golv.
