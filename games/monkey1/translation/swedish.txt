@@ -740,7 +740,7 @@
 [023:SCRP#0119](FA)Öhm...
 [023:SCRP#0119](FA)Ehm...
 [023:SCRP#0119](FA)Jösses...
-[023:SCRP#0119](FA)Javisst...
+[023:SCRP#0119](FA)Herre...
 [023:SCRP#0119](14)Min utkik berättade om din ankomst.\255\003Jag har velat träffa dig ända sedan jag hörde ditt fascinerande namn.
 [023:SCRP#0119](14)Berätta för mig, Guybrush, varför vill du bli pirat?\255\003Du ser inte ut som en sådan.
 [023:SCRP#0119](14)Ditt ansikte är för...
@@ -749,7 +749,7 @@
 [023:SCRP#0119](FA)Grlpyt...
 [023:SCRP#0119](FA)Hrdrl...
 [023:SCRP#0119](FA)Rldft...
-[023:SCRP#0119](14)Jag förstår...\255\003Tja, du är uppenbarligen inte på humör för småprat, eller hur?
+[023:SCRP#0119](14)Jag förstår...\255\003Tja, du är uppenbarligen inte upplagd för småprat, eller hur?
 [023:SCRP#0119](14)Jag antar att du har mycket mer spännande saker att göra.\255\003Jag tar inte mer av din tid, herr Threepwood.
 [023:SCRP#0119](94)Bgglw!
 [023:SCRP#0119](94)Mfrnkf?
@@ -781,11 +781,11 @@
 [025:OBNA#0293](__)navigatörshuvud
 [025:VERB#0294](D8)Jag tror inte det skulle fungera särskilt bra om jag gjorde det.
 [025:VERB#0294](D8)Jag vill inte röra vid det mer än jag måste.
-[025:VERB#0294](D8)Den är slemmig och kladdig och sitter runt min hals.
-[025:VERB#0294](D8)Den är slemmig och kladdig.
+[025:VERB#0294](D8)Det är slemmigt och kladdigt och sitter runt min hals.
+[025:VERB#0294](D8)Det är slemmigt och kladdigt.
 [025:VERB#0294](54)halsband på navigator
 [025:VERB#0294](D8)Det vore ingen bra idé att ta av det här.
-[025:VERB#0294](D8)Han har redan på sig det.
+[025:VERB#0294](D8)Han har det redan på sig.
 [025:VERB#0294](D8)Jag tror jag hellre behåller det.
 [025:VERB#0294](D8)Det vore ingen bra idé att ta av det här.
 [025:VERB#0294](54)halsband på navigator
@@ -834,7 +834,7 @@
 [025:LSCR#0202](14)Kanske borde vi bara äta upp honom på en gång.
 [025:LSCR#0202](14)Har du någon aning om hur mycket kolesterol det är i en sådan här?
 [025:LSCR#0202](14)Nå, hur tog du dig ut ur vår hydda och varför kom du tillbaka?
-[025:LSCR#0202](14)Nå, nå, nå.\255\003Du är allt en riktig flyktartist, eller hur?
+[025:LSCR#0202](14)Nå, nå, nå.\255\003Du är allt en riktig utbrytarkung, eller hur?
 [025:LSCR#0202](14)Jag sa att vi borde äta upp honom.
 [025:LSCR#0202](14)Hur du tog dig ut är nästan lika mystiskt som varför du fortsätter komma tillbaka.
 [025:LSCR#0202](14)Det verkliga mysteriet är varför han inte puttrar tillsammans med morötter just nu.
@@ -872,7 +872,7 @@
 [025:LSCR#0203](14)En gummikyckling med en trissa i mitten?\255\003Nej tack. Vi har redan en sådan.
 [025:LSCR#0203](14)Ledsen, vi har redan MASSOR av såna.
 [025:LSCR#0203](14)Ha!\255\003Din valuta betyder ingenting för Den Stora Apan!
-[025:LSCR#0203](14)Tror du verkligen vi vill ha det efter att du har haft dina smutsiga tassar över allt?
+[025:LSCR#0203](14)Tror du verkligen vi vill ha det efter att du har haft dina smutsiga tassar på det?
 [025:LSCR#0203](14)Tack, men vi har redan en egen.
 [025:LSCR#0203](14)Jag tror inte Den Stora Apan skulle gilla det.
 [025:LSCR#0203](14)Vi har redan en sådan.
@@ -933,7 +933,7 @@
 [025:LSCR#0213](14)Åh ja. DE killarna.
 [025:LSCR#0213](D8)Då har ni sett spökpiraten LeChuck och hans likbleka besättning?
 [025:LSCR#0213](14)De där idioterna har tjatat på oss i månader!
-[025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...jämrar och stönar till alla tider på morgonen...
+[025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...jämrar och stönar in på småtimmarna...
 [025:LSCR#0213](14)...skrämmer bort alla kryssningsfartyg.
 [025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003brygger vi bara vår vanliga exorcismdryck och är klara med det.
 [025:LSCR#0213](14) 
@@ -966,7 +966,7 @@
 [025:LSCR#0213](14)Vi lånade ut den till en eremit som bor på ön.
 [025:LSCR#0213](14)Och tills den där grinige gamla byxlöse knäppgöken lämnar tillbaka den, behåller vi hans bananplockare.
 [025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Att försöka hitta LeChuck kan vara mycket farligt.
-[025:LSCR#0213](14)Du skulle aldrig hitta genom katakomberna utan--
+[025:LSCR#0213](14)Du skulle aldrig hitta vägen genom katakomberna utan--
 [025:LSCR#0213](14)Hej!\255\003Ixnay på Uvudethay av Avigatörenay!
 [025:LSCR#0213](D8)Va?
 [025:LSCR#0213](14)Ingenting.
@@ -983,7 +983,7 @@
 [025:LSCR#0213](14)Vi kan åtminstone berätta vad huvudet gör.
 [025:LSCR#0213](14)Jo, det är ett navigeringsverktyg--
 [025:LSCR#0213](14)Det är ett huvud.\255\003Det var en gång fastsatt på en navigatör.
-[025:LSCR#0213](14)Vi har hållit det vid liv magiskt så vi kan dra nytta av dess medfödda riktningskänsla.
+[025:LSCR#0213](14)Vi har med magi hållit det vid liv så vi kan dra nytta av dess medfödda riktningskänsla.
 [025:LSCR#0213](14)Att ta sig igenom katakomberna utan det är omöjligt.
 [025:LSCR#0213](14)Men det är vårt enda, så du kan inte få det.
 [025:LSCR#0213](14)Jag antar att vi inte har något att erbjuda dig.
@@ -1083,13 +1083,13 @@
 [025:SCRP#0140](FA)Snälla raring?
 [025:SCRP#0140](FA)Snälla SNÄLLA raring?
 [025:SCRP#0140](FA)Snälla raring med socker på?
-[025:SCRP#0140](FA)Kanske bara tar jag det...
+[025:SCRP#0140](FA)Kanske tar jag bara det...
 [025:SCRP#0140](FA)Jag vill inte behöva göra dig illa...
 [025:SCRP#0140](FA)Vad ska du göra? Bita mig?
 [025:SCRP#0140](FA)Om jag ville kunde jag sparka ner dig i lavan.
 [025:SCRP#0140](FA)Bra. Jag ville inte ha det ändå.
 [025:SCRP#0140](14)Bra, för du får det inte.
-[025:SCRP#0140](14)Jag har dåliga aningar om det här stället.\255\003Jag tror att jag kan behöva det.
+[025:SCRP#0140](14)Jag har onda aningar om det här stället.\255\003Jag tror att jag kan behöva det.
 [025:SCRP#0140](14)Hör du, tjata inte, okej?
 [025:SCRP#0140](14)Du kan tigga hur mycket du vill, men du får det inte.
 [025:SCRP#0140](14)Åh, okej då, ditt stora barn.\255\003Du får ha det.
@@ -1359,7 +1359,7 @@
 [029:VERB#0377](54)gummikyckling
 [029:VERB#0377](14)
 [029:VERB#0377](D8)Kanske ingen kommer sakna just den här grejen...
-[029:VERB#0377](D8)Det måste säkert finnas en användning för en gummikyckling med en trissa i mitten, men det här är inte den.
+[029:VERB#0377](D8)Det måste väl finnas en användning för en gummikyckling med en trissa i mitten, men det här är inte rätt tillfälle.
 [029:OBNA#0377](__)kyckling@@@@@@@@
 [029:VERB#0378](D8)Stackars lilla varelse...\255\003Vad det nu var.
 [029:VERB#0378](D8)Nej tack. Jag rör helst inte vid nån av de här läskiga voodoogrejorna.
@@ -1445,7 +1445,7 @@
 [029:LSCR#0210](14)Din resa kommer ha många delar.\255\003Du kommer se saker som bäst förblir osedda.\255\003Du kommer höra saker som bäst förblir ohörda.
 [029:LSCR#0210](14)Du kommer lära dig saker som bäst förblir okända.
 [029:LSCR#0210](D8)Vad för slags saker?\255\003Jag hatar överraskningar.
-[029:LSCR#0210](14)NEJ!\255\003Tiden är inte rätt att veta.
+[029:LSCR#0210](14)NEJ!\255\003Det är inte rätt tid att veta.
 [029:LSCR#0210](14)När du vet ditt syfte, kom och hälsa på mig...\255\003...Jag kommer berätta för dig då.
 [029:LSCR#0210](D8)Oj då!
 [029:LSCR#0210](D8)Jag tror inte hon kommer tillbaka igen.
@@ -1455,7 +1455,7 @@
 [029:LSCR#0210](D8)Jag antar att ingen är här.
 [029:LSCR#0210](14)Oj då!
 [029:LSCR#0210](14)Så, du har återvänt för att lära dig om framtiden.
-[029:LSCR#0210](D8)Ja, jag måste gå efter Guvernören.\255\003Kan du berätta något som kan hjälpa?
+[029:LSCR#0210](D8)Ja, jag måste rädda Guvernören.\255\003Kan du berätta något som kan hjälpa?
 [029:LSCR#0210](14)Jag ser dig med några andra villiga att hjälpa till i din sak.
 [029:LSCR#0210](14)Du måste först hitta andra att hjälpa till i din sak.
 [029:LSCR#0210](D8)Jag hatar verkligen det där blinkandet, jag får se prickar.
@@ -1485,7 +1485,7 @@
 [030:VERB#0389](D8)`Davey Jones™ Lockers:\255\001Sista ordet i stöld-, brand- och groggsäkra förvaringsanordningar.`
 [030:VERB#0389](14)
 [030:VERB#0389](D8)Det här är ett groggsäkert kassaskåp.\255\003Det står så på det.
-[030:VERB#0389](D8)Jag tror inte det kommer öppna det.
+[030:VERB#0389](D8)Jag tror inte det kommer att öppna det.
 [030:VERB#0389](94)Det är låst.
 [030:VERB#0389](D8)Det är redan stängt.
 [030:OBNA#0389](__)kassaskåp
@@ -1546,7 +1546,7 @@
 [030:LSCR#0211](FA)Angående det här svärdet...
 [030:LSCR#0211](FA)Angående den här spaden...
 [030:LSCR#0211](FA)Jag letar efter Svärdmästaren på Mêlée Island™.
-[030:LSCR#0211](FA)Nu när jag har det här svärdet, vem kan jag testa på?
+[030:LSCR#0211](FA)Nu när jag har det här svärdet, vem kan jag testa det på?
 [030:LSCR#0211](FA)Jag är intresserad av att skaffa ett skuldebrev.
 [030:LSCR#0211](FA)Jag skulle verkligen behöva en mintpastill.
 [030:LSCR#0211](FA)Jag skulle vilja ha lite råttgift, tack.
@@ -1708,7 +1708,7 @@
 [031:LSCR#0202](FA)Hur är maten där inne?
 [031:LSCR#0202](FA)Vad sa du att du åt där inne?
 [031:LSCR#0202](14)De gula Caniche Endormi-blommorna i skogen--\255\003Det är olagligt att plocka dem.
-[031:LSCR#0202](14)Jag vet inte exakt vem...\255\003Jag tror det var en konspiration.\255\003Och om det finns en typ av pirateri jag inte gillar...\255\003...så är det KONS-pirat-ION.
+[031:LSCR#0202](14)Jag vet inte exakt vem...\255\003Jag tror det var en konspiration.\255\003Och om det finns en typ av pirateri jag inte gillar...\255\003...så är det kons-PIRAT-ion.
 [031:LSCR#0202](14)
 [031:LSCR#0202](14)Det skulle inte du heller göra om du suttit här lika länge som jag.
 [031:LSCR#0202](14)Jag gjorde ingenting.\255\003Särskilt inte mot de där dumma blommorna.
@@ -1743,12 +1743,12 @@
 [031:LSCR#0202](14)Tack så mycket.
 [031:LSCR#0202](14)Åh, du vet, det vanliga...\255\003Slask, grogg, gröt...\255\003Råttor, kryp och löss om jag lyckas fånga nåra.
 [031:LSCR#0202](14)Jag har en morotstårta som moster Tillie bakade, trots att hon vet att jag avskyr morotstårta.
-[031:LSCR#0202](14)Kocken på baren är faktiskt en gammal vän till mig, och ibland smugglar han mat till mig.\255\003Som fläskavskrap -- mest fötter och läppar -- men ibland...\255\003...tar han med sig en riktigt märklig fransyska...
+[031:LSCR#0202](14)Kocken på baren är faktiskt en gammal vän till mig, och ibland smugglar han mat till mig.\255\003Som fläskavskrap -- mest fötter och läppar -- men ibland...\255\003...tar han med sig en riktigt märklig stek...
 [031:LSCR#0202](14)
 [031:LSCR#0202](FA)Det är äckligt. Jag vill inte höra mer.
-[031:LSCR#0202](FA)Vad var det som var så märkligt med fransyskan?
+[031:LSCR#0202](FA)Vad var det som var så märkligt med steken?
 [031:LSCR#0202](14)Hörru, det var du som frågade.
-[031:LSCR#0202](14)Nå, det är den enda fransyskan jag sett som har en gripsvans.
+[031:LSCR#0202](14)Nå, det är den enda steken jag sett som har en gripsvans.
 [031:LSCR#0202](14)Hör här, jag gillar besök och allt det där,\255\003men jag har inte mycket mer att säga.\255\003Dessutom blir halsen torr av allt det här pratandet.
 [031:LSCR#0202](14)Varför hittar du inte nån annan att prata med?\255\003Det är inte som att jag är den ENDA piraten kvar på ön eller nåt.
 [031:LSCR#0202](14)Jag sa ju, jag har inte mycket mer att säga.
@@ -1968,7 +1968,7 @@
 [035:LSCR#0211](FA)Det är en ny rotölsparfym. Kanske du vill prova?
 [035:LSCR#0211](14)Akta dig...
 [035:LSCR#0211](14)Nej, glöm det.
-[035:LSCR#0211](14)Om du verkligen är ett spöke, bevisa det.\255\003Låt se dig skruva av huvudet.
+[035:LSCR#0211](14)Om du verkligen är ett spöke, bevisa det.\255\003Låt mig se dig skruva av huvudet.
 [035:LSCR#0211](FA)Öh...
 [035:LSCR#0211](FA)Um...
 [035:LSCR#0211](FA)Nå...
@@ -2159,7 +2159,7 @@
 [037:LSCR#0201](14)...nåt fruktansvärt.
 [037:LSCR#0201](14)Nåt så fruktansvärt att jag ligger vaken på nätterna bara av att tänka på det...
 [037:LSCR#0201](14)Men jag vill inte skrämma dig.
-[037:LSCR#0201](14)Jag är säker på att en stor, modig kille som du inte har nåra problem med att möta det här monstret.\255\003Trots allt är det mycket mindre än odjuret som bet av mina händer för så många år sen.
+[037:LSCR#0201](14)Jag är säker på att en stor, modig kille som du inte har nåt problem med att möta det här monstret.\255\003Trots allt är det mycket mindre än odjuret som bet av mina händer för så många år sen.
 [037:LSCR#0201](14)Vi får bara hoppas att du är snabbare än jag var.
 [037:LSCR#0201](14)Åh, jag kom just på en sak...\255\003Jag glömde mata honom den här veckan.\255\003Dumma mig.
 [037:LSCR#0201](14)Du inser förstås...\255\003...att den bara blivit hungrigare.
@@ -2243,7 +2243,7 @@
 [037:SCRP#0060](FA)Öh... jag hoppades att du skulle ha en idé.
 [037:SCRP#0060](FA)Vi kan bara vänta här tills dom kommer tillbaka.
 [037:SCRP#0060](FA)Vi kan sätta ihop en besättning och segla efter dom.
-[037:SCRP#0060](FA)Vi överväldigas av förtvivlan och ger bara upp?
+[037:SCRP#0060](FA)Vi grips av förtvivlan och ger bara upp?
 [037:SCRP#0060](14)Hmmm... Låt mig tänka.
 [037:SCRP#0060](14)Hmmm...
 [037:SCRP#0060](14)Jo, det kan vi göra.\255\003Men det kan bli ganska tråkigt här...
@@ -2405,7 +2405,7 @@
 [038:SCRP#0121](14)Inget att oroa sig för, herr'n...\255\003...allt är under kontroll.
 [038:SCRP#0121](14)Hon rymde nåra gånger...\255\003...men vi har låst in henne i cellen.\255\003Ingen tar sig in eller ut därifrån.
 [038:SCRP#0121](14)För din skull hoppas jag det.
-[038:SCRP#0121](14)Med åratal av planering nästan förstörda av min död, tänker jag inte ta nåra risker nu.
+[038:SCRP#0121](14)Med åratal av planering nästan förstörd av min död, tänker jag inte ta nåra risker nu.
 [038:SCRP#0121](14)Ni tog hand om herr Threepwood, då?
 [038:SCRP#0121](14)Guybrush Threepwood kommer inte vara nåt problem.\255\003I detta ögonblick ligger han sex meter under vatten...\255\003...antagligen uppsvälld som en gödd gris.
 [038:SCRP#0121](14)Hans ögon uppätna av krabbor.\255\003Fiskar som pickar på fingrarna.
@@ -2460,7 +2460,7 @@
 [039:LSCR#0210](D8)Helvetiskt.
 [039:LSCR#0210](D8)Kväljande.
 [039:LSCR#0210](D8)Motbjudande.
-[039:LSCR#0210](D8)Illamående.
+[039:LSCR#0210](D8)Vämjeligt.
 [039:LSCR#0210](D8)Jag tror jag blir sjuk om jag måste titta på mycket mer av det här.
 [039:LSCR#0210](D8)Ojdå.
 [039:LSCR#0210](D8)Konstigt.
@@ -2511,7 +2511,7 @@
 [041:VERB#0574](D8)Hmm. Fiskgryta.
 [041:OBNA#0574](__)gryta med stuvning@@@@@
 [041:LSCR#0202](D8)Plankan sitter fast.
-[041:LSCR#0213](D8)Det är inget lagerblad, men alla kockar gör utbyten.
+[041:LSCR#0213](D8)Det är inget lagerblad, men alla kockar improviserar.
 [041:LSCR#0213](54)kryddad stuvning
 [041:LSCR#0213](D8)Jag tror inte den behöver kött OCH fisk.
 [041:LSCR#0213](54)kött i stuvning
@@ -2601,7 +2601,7 @@
 [043:SCRP#0057](14)Du?
 [043:SCRP#0057](14)Ha ha ha!\255\003Du kan aldrig bli HÄLFTEN av den svärdskämpe Carla är.\255\003Inte ens med timmars hårt arbete och blodssvett.
 [043:SCRP#0057](14)Jag minns hur Carla och jag slogs sida vid sida i Port Royal...
-[043:SCRP#0057](14)...den lokala stadsvakten hade omringade oss!
+[043:SCRP#0057](14)...den lokala stadsvakten hade omringat oss!
 [043:SCRP#0057](14)Det såg ut som om vi var körda, men sen sa hon--
 [043:SCRP#0057](14)--men jag svävar ut...
 [043:SCRP#0057](14)Du har helt enkelt inte det som krävs.
@@ -2679,7 +2679,7 @@
 [043:SCRP#0057](14)Ett korrekt svar på...\255\003...'Snart sitter du fast på mitt svärd som en grillad råtta!'...\255\003...hade varit nåt som...
 [043:SCRP#0057](14)...'Först måste du sluta vifta med det som en dammvippa.'
 [043:SCRP#0057](14)Ser du...\255\003...rakbladsvass!
-[043:SCRP#0057](14)Nu föreslår jag att du ger dig ut och lär dig nåra förolämpningar.
+[043:SCRP#0057](14)Nu föreslår jag att du ger dig ut och lär dig några förolämpningar.
 [043:SCRP#0057](14)Jag kan inte slå bort känslan av att ha blivit lurad.\255\003Jag är säker på att du känner nåt liknande.
 [043:SCRP#0142](14)Framåt, stöt, tillbaka, parera, ripost.
 [043:SCRP#0142](14)Se upp med fotarbetet.
@@ -3037,7 +3037,7 @@
 [053:LSCR#0212](14)
 [053:LSCR#0213](D8)Jag måste vara galen!
 [053:LSCR#0213](D8)Jag har filen...
-[053:LSCR#0214](D8)Det borde uppehålla honom ett tag!\255\003Om jag bara hade en fil kunde jag ta idolen!
+[053:LSCR#0214](D8)Det borde hejda honom ett tag!\255\003Om jag bara hade en fil kunde jag ta idolen!
 [053:LSCR#0215](D8)Puh!\255\003Det var nära.\255\003I alla fall fick jag idolen.
 [053:LSCR#0216](14)Det här ser ut som ett jobb för Fester Shinetop!
 [053:LSCR#0217](14)Vart tror du att du är på väg, \255\007\038\000?
@@ -3086,7 +3086,7 @@
 [057:SCRP#0055](14)Jodå!\255\003Du vet, du kunde behöva en lektion eller två om det där är det bästa du kan komma med.
 [057:SCRP#0055](14)Inte mig, din lika hjärnlösa fåniga lilla docka!
 [057:SCRP#0055](14)Jag ägde en gång en hund som var smartare än dig.\255\003Ta DET och stoppa det i din repertoar!
-[057:SCRP#0055](14)Öh...\255\003...eeeh...\255\003Vilket öra, påkandedräkt?
+[057:SCRP#0055](14)Öh...\255\003...eeeh...\255\003Vilket öra, påk-andedräkt?
 [057:SCRP#0055](14)...heh...
 [057:SCRP#0055](14)Vad är det som är bra med det?
 [057:SCRP#0055](14)Nå, vad har du?
@@ -3274,7 +3274,7 @@
 [059:SCRP#0056](14)Är det en av de där gummikycklingarna med en trissa i mitten?\255\003Jag har redan en sån.
 [059:SCRP#0056](14)Gärna.\255\003Det vill jag verkligen.\255\003Det brukar jag VANLIGTVIS göra.\255\003Men inte för den summan det här skeppet kommer kosta.
 [059:SCRP#0056](14)Kanske nåt av de andra skeppen passar din prisklass bättre.
-[059:SCRP#0056](14)Absolut!\255\003Du kan alltid handla på kreidt hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
+[059:SCRP#0056](14)Absolut!\255\003Du kan alltid handla på kredit hos Stan...\255\003Det spelar ingen roll om du haft kreditproblem förut...
 [059:SCRP#0056](14)Skilsmässa...
 [059:SCRP#0056](14)Konkurs...
 [059:SCRP#0056](14)Kroniska spelmissöden...\255\003Jag menar, vem är jag att döma, va?
@@ -3693,7 +3693,7 @@
 [072:OBNA#0795](__)karta
 [072:OBNA#0796](__)kista
 [072:OBNA#0797](__)kista
-[072:VERB#0798](D8)Det har små blåa hårstrån som rör sig i den.
+[072:VERB#0798](D8)Det har små blå hårstrån som rör sig i den.
 [072:VERB#0798](D8)Usch. Nej tack.
 [072:OBNA#0798](__)kaptenens säng
 [072:VERB#0793](D8)Det ser ut som den där kusliga killen jag såg på överdäck.
@@ -4008,7 +4008,7 @@
 [082:SCRP#0093](14)Undvik rusningen!\255\003Gå ut och köp Loom™ idag!
 [082:SCRP#0093](14)Förlåt, men vissa ämnen gör mig bara så upprymd.
 [082:SCRP#0093](14)Aye.
-[083:VERB#0901](D8)Den heter "Hur du får fotfäste i skattletandet."
+[083:VERB#0901](D8)Den heter "Hur du får fotfäste i skattjakten."
 [083:OBNA#0901](__)broschyr
 [083:VERB#0902](D8)Den heter "Hur du får ett huvud för navigering."
 [083:OBNA#0902](__)broschyr
@@ -4082,7 +4082,7 @@
 [083:LSCR#0201](D8)Jag trodde inte ens att du tyckte om mig.
 [083:LSCR#0201](14)Tja, vårt första möte var lite pinsamt...\255\003Du verkade ha problem med att bilda fullständiga meningar.\255\003Men å andra sidan, det har dom flesta av mina medborgare också.
 [083:LSCR#0201](D8)Men jag är inte en av dina medborgare...
-[083:LSCR#0201](D8)...jag är bara en dagdrivare, en ingen, en blivande pirat.
+[083:LSCR#0201](D8)...jag är bara en dagdrivare, en nolla, en wannabe pirat.
 [083:LSCR#0201](D8)Vem hade vetat, eller ens brytt sig, om du låtit mig drunkna?
 [083:LSCR#0201](14)Det hade jag, Guybrush.
 [083:LSCR#0201](D8)Åh, Guvernören...
@@ -4202,7 +4202,7 @@
 [088:SCRP#0074](94)Vart tog mitt svärd vägen?
 [088:SCRP#0074](94)Titta bakom dig... en trehövdad apa!
 [088:SCRP#0074](94)OK, du vinner.
-[088:SCRP#0074](94)Oj! Du är bra nog att slåss mot Svärdmästaren.
+[088:SCRP#0074](94)Oj! Du är bra nog att slåss mot Svärdsmästaren.
 [088:SCRP#0074](94)Jag ger upp! Du vinner!
 [088:SCRP#0079](94)Jag sa: `\255\007\032\000`
 [088:SCRP#0079](14)Spelaren svarar: \255\007\033\000
@@ -4214,8 +4214,8 @@
 [088:SCRP#0082](94)HA! Är det det bästa du kan komma med?
 [088:SCRP#0082](94)Vad är det för fel?\255\003Precis klar med svärdsfäktningslektionen?
 [088:SCRP#0082](94)Jag är förolämpad att du ens försöker använda den förolämpningen på mig!
-[088:SCRP#0082](14)Använde svärdmästarens förolämpning
-[088:SCRP#0082](27)Det är inte rättvist, du använder Svärdmästarens förolämpningar, ser jag.
+[088:SCRP#0082](14)Använde svärdsmästarens förolämpning
+[088:SCRP#0082](27)Det är inte rättvist, du använder Svärdsmästarens förolämpningar, ser jag.
 [088:SCRP#0082](14)slumptal är \255\004\100\000
 [088:SCRP#0082](14)Fick ett svar
 [088:SCRP#0082](14)Använder standardsvar
@@ -4432,6 +4432,6 @@
 [097:SCRP#0122](14)
 [097:SCRP#0122](14)
 [097:SCRP#0122](14)
-[097:SCRP#0122](14)Genom det modiga ledarskapet hos Kapten Freep -eh- Threepwood är Havsapan äntligen på väg.
+[097:SCRP#0122](14)Genom det modiga ledarskapet hos Kapten Freep -öh- Threepwood är Havsapan äntligen på väg.
 [097:SCRP#0122](14)Oförskräckta av sin brist på navigationsutrustning eller kunskap börjar besättningen planera sin resa.\255\002
 [097:SCRP#0122](14)
