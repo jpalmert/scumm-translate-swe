@@ -321,7 +321,7 @@
 [012:OBNA#0152](__)lik
 [012:OBNA#0153](__)lik
 [012:OBNA#0154](__)lik
-[012:VERB#0156](D8)`PRIVAT EGENDOM`\255\003`Tillbedjan är tillåten, men var god GÅ INTE IN i Aphuvudet.`\255\003`-- G.P. LeChuck`
+[012:VERB#0156](D8)`PRIVAT EGENDOM`\255\003`Tillbedjan är tillåten, men var god GÅ INTE IN i Aphuvudet.`\255\003`-- S.P. LeChuck`
 [012:OBNA#0156](__)skylt
 [012:VERB#0132](D8)Oj, han måste vara trött.
 [012:VERB#0132](14)Ook\255\003Ook\255\003Eep
@@ -697,7 +697,7 @@
 [020:SCRP#0164](D8)`...men skulle ni kunna låta bli att lämna smutsiga offer på min veranda.`\255\003`Och, var snäll GÅ INTE IN i Aphuvudet.`\255\003`--G.P. LeChuck`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island™ Kannibalerna`
 [020:SCRP#0164](D8)`Herman--`\255\003`Var vänlig lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
-[020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare nyckeln till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
+[020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare nyckeln till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.R.`
 [020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Gnäll, Hum och Hav, advokater`\255\003`Ang. Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
 [020:SCRP#0164](D8)`Jag tror vi har ett case här.`\255\003`Vi kan troligtvis mjölka dem på sveda och värk och möjligen även straffskadestånd.`
 [020:SCRP#0164](14)
