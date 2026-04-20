@@ -12,8 +12,8 @@ import (
 	"unicode/utf8"
 )
 
-// repoRoot returns the repository root by walking up from the test file location.
-func repoRoot(t *testing.T) string {
+// translationRepoRoot returns the repository root by walking up from the test file location.
+func translationRepoRoot(t *testing.T) string {
 	t.Helper()
 	_, f, _, ok := runtime.Caller(0)
 	if !ok {
@@ -33,7 +33,7 @@ var tagRe = regexp.MustCompile(`^\[.*?\]\((.{2})\)(.*)`)
 // across multiple rows in the selection box. Each visual segment is measured
 // independently.
 func TestFADialogChoiceLength(t *testing.T) {
-	root := repoRoot(t)
+	root := translationRepoRoot(t)
 	txPath := filepath.Join(root, "games", "monkey1", "translation", "swedish.txt")
 
 	f, err := os.Open(txPath)
