@@ -59,7 +59,7 @@
 [007:VERB#0083](D8)Det ser ut som Kaptenens låda.
 [007:OBNA#0083](__)låda
 [007:OBNA#0084](__)dörr
-[007:VERB#0086](D8)Det är toppen på en flingförpackning, använd som bokmärke.
+[007:VERB#0086](D8)Det är toppen av en flingförpackning, använd som bokmärke.
 [007:OBNA#0086](__)bokmärke
 [007:OBNA#0085](__)pappersbit
 [007:OBNA#0088](__)kanelstänger
@@ -72,14 +72,14 @@
 [007:SCRP#0148](D8)`Kaptenens logg, 12 mars.`\255\003`Jag önskar att Rötbett kunde ta ett bad.`
 [007:SCRP#0148](D8)`Kaptenens logg, 17 mars.`\255\003`Jag önskar att Rötbett kunde sluta snarka.`
 [007:SCRP#0148](D8)`Kaptenens logg, 23 mars.`\255\003`Rötbett börjar verkligen gå mig på nerverna. Jag räknar med att det bara är en tidsfråga innan vi ryker ihop.`
-[007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`Som en gest för att återställa vår vänskap erbjöd sig Rötbett att laga middag ikväll.`
+[007:SCRP#0148](D8)`Kaptenens logg, 2 april.`\255\003`I ett försök att lappa ihop vår vänskap erbjöd sig Rötbett att laga middag ikväll.`
 [007:SCRP#0148](D8)`Kaptenens logg, 3 april.`\255\003`Jag vet inte hur vi gjorde det, men vi har anlänt till Monkey Island™.`\255\003`Både Rötbett och jag svimmade av soppan han lagade igår kväll, när vi vaknade låg Monkey Island™ vid fören.`
 [007:SCRP#0148](D8)`Kaptenens logg, 4 april.`\255\003`Rötbett och jag har fyllt roddbåten med förnödenheter och är redo att ge oss av till Monkey Island™.`
 [007:SCRP#0148](D8)`Vi ser båda fram emot möjligheten att bli de första civiliserade människorna som avslöjar Monkey Islands™ Hemlighet.`
 [007:SCRP#0148](D8)`Kaptenens logg, 5 april.`\255\003`Vi var tvungna att vända om och återvända till skeppet.  Rötbett glömde gå på toaletten innan vi gav oss av.`\255\003`Vi ger oss av igen imorgon.`
 [007:SCRP#0148](D8)Det var sista anteckningen.
 [007:SCRP#0184](14)
-[007:SCRP#0184](D8)Oj, den är tung.  Fylld, utan tvekan, med guld och juveler.
+[007:SCRP#0184](D8)Oj, vad tung.  Fylld, utan tvekan, med guld och juveler.
 [008:OBNA#0089](__)stege
 [008:VERB#0090](D8)WOW! Krut!\255\003Jag tar lite.
 [008:VERB#0090](D8)Jag tar lite till.
@@ -93,7 +93,7 @@
 [008:VERB#0091](D4)futtig repbit
 [008:VERB#0091](D4)oändligt liten repbit
 [008:OBNA#0091](__)gigantiskt rep@@@@@@@@@@@@@@@@@@@@@@
-[008:VERB#0092](D8)Det finns ett RIKTIGT fint vin här.\255\003Jag tar det.
+[008:VERB#0092](D8)Det finns ett RIKTIGT fint vin här.\255\003Jag tar det!
 [008:VERB#0092](D8)
 [008:VERB#0092](D8)Den är tom.
 [008:VERB#0092](D8)Det ser ut som en gammal piratkista.
@@ -125,7 +125,7 @@
 [009:OBNA#0107](__)dörr
 [010:SCRP#0001](27)@@@@@@@@@@@@
 [010:SCRP#0001](27)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-[010:SCRP#0001](27)Monkey Island Hemlighet -- CD-ROM version 2.3b
+[010:SCRP#0001](27)Monkey Islands Hemlighet -- CD-ROM version 2.3b
 [010:SCRP#0001](27)Spelet pausat.  Tryck MELLANSLAG för att fortsätta.
 [010:SCRP#0001](27)Sätt i disk %c och tryck på knappen för att fortsätta.
 [010:SCRP#0001](27)Kan inte hitta %s, (%c%d) Tryck på knappen.
@@ -214,7 +214,7 @@
 [010:SCRP#0022](7A)Peta
 [010:SCRP#0022](7A)Känn
 [010:SCRP#0022](7A)Kittla
-[010:SCRP#0022](7A)Stryka
+[010:SCRP#0022](7A)Smek
 [010:SCRP#0022](7A)Störa
 [010:SCRP#0022](7A)Stöt
 [010:SCRP#0022](7A)Puffa
@@ -297,15 +297,15 @@
 [011:VERB#0116](D8)Jag tror inte jag vill ha den.
 [011:OBNA#0116](__)sten
 [011:OBNA#0120](__)stenhög
-[011:LSCR#0200](D8)Wow!\255\003Det såg ut som det träffade det stora bananträdet på stranden!\255\003Oddsen måste vara otroliga!
-[011:LSCR#0200](D8)Det var nära, men jag tror inte det träffar igen.\255\003Det skottet var ett på miljonen!
+[011:LSCR#0200](D8)Wow!\255\003Det såg ut som det träffade det stora bananträdet på stranden!\255\003Chansen måste vara otroligt liten!
+[011:LSCR#0200](D8)Det var nära, men jag tror inte det träffar igen.\255\003Det var en träff på miljonen!
 [011:LSCR#0203](D8)Jag lägger den här.
 [011:LSCR#0203](D8)Det finns redan en där.
 [011:LSCR#0203](D8)Vad skulle jag vilja med en stor sten?
 [011:LSCR#0205](D8)Gummiträd!
 [011:LSCR#0206](13)Herman Rötbett
 [011:LSCR#0207](D8)Hoppsan...
-[012:VERB#0133](D8)Jösses, det är det näst största aphuvudet jag nånsin sett!
+[012:VERB#0133](D8)Jösses, det är det näst största aphuvudet jag någonsin sett!
 [012:OBNA#0133](__)gigantiskt aphuvud
 [012:OBNA#0134](__)djungel
 [012:VERB#0136](D8)Jösses.
@@ -333,19 +333,19 @@
 [012:LSCR#0207](D8)`Tillverkad av Red Skull.`
 [012:LSCR#0207](D8)`Tillverkad av Sharptooth.`
 [012:LSCR#0209](13)Herman Rötbett
-[014:VERB#0158](D8)Den är full av skit. Jag hoppas jag inte behöver äta det här.
+[014:VERB#0158](D8)Den är full med skit. Jag hoppas att jag inte behöver äta det här.
 [014:VERB#0158](D8)Det ser ut som en alldeles vanlig skeppsgryta.
 [014:VERB#0158](D8)Jag lägger inte i något mer i den grytan!
-[014:VERB#0158](D8)Jag har inget recept. Jag skulle inte veta var jag ska börja.
+[014:VERB#0158](D8)Jag har inget recept. Jag skulle inte veta var jag ska börja med soppan.
 [014:VERB#0158](D8)Bara en droppe.
 [014:VERB#0158](D8)Mmm...Det här kommer bli gott.
 [014:VERB#0158](D8)Det borde räcka.
 [014:VERB#0158](D8)Tur att jag har en miljon av dessa.
 [014:VERB#0158](D8)Jag älskar kanel.
-[014:VERB#0158](D8)På tiden att jag blev av med den här värdelösa artefakten.
+[014:VERB#0158](D8)Det var på tiden att jag blev av med den här värdelösa artefakten.
 [014:VERB#0158](D8)Jag tror jag har tillräckligt med fibrer; jag behåller den här.
 [014:VERB#0158](D8)Aldrig i livet!  Jag har jobbat för hårt för de här pengarna!
-[014:VERB#0158](D8)Den här billiga plastkompassen är för häftig att slänga.
+[014:VERB#0158](D8)Den här billiga plastkompassen är för häftig för att slänga.
 [014:VERB#0158](D8)Den här sjöfartslitteraturen kan vara bra läsning; jag behåller den.
 [014:VERB#0158](D8)Det är hett nog som det är.
 [014:VERB#0158](D8)Jag vill inte ha något av den här soppan.
@@ -377,7 +377,7 @@
 [014:VERB#0167](D8)Den brinner redan.
 [014:VERB#0167](D8)Jag skulle inte vilja sätta eld på det.
 [014:OBNA#0167](__)flammande massa
-[014:VERB#0157](D8)Det här är ju ingen leksak!\255\003Det är en liten nyckel med en fint graverad apa på.
+[014:VERB#0157](D8)Det här är ju ingen leksak!\255\003Det är en liten nyckel med en fint ingraverad apa på.
 [014:VERB#0157](D8)Det är en liten nyckel med en fint graverad apa på.
 [014:VERB#0157](54)liten nyckel
 [014:VERB#0157](D8)Den här nyckeln verkar inte passa där.
@@ -392,7 +392,7 @@
 [014:SCRP#0108](D8)Jösses!
 [014:SCRP#0108](D8)Jag tror jag blir yr!
 [014:SCRP#0108](14)Överväldigad av ångorna och stanken förlorar Guybrush snabbt medvetandet.
-[014:SCRP#0108](14)Några ögonblick senare slår voodoobesvärjelsen till, vänder skeppet mot okänd kurs och ut på sin mystiska färd.
+[014:SCRP#0108](14)Några ögonblick senare slår voodoobesvärjelsen till och vänder skeppet mot okänd kurs, ut på sin mystiska färd.
 [014:SCRP#0108](14)Dagar går...\255\002
 [014:SCRP#0108](14)
 [014:SCRP#0185](54)leksak
@@ -438,7 +438,7 @@
 [016:SCRP#0157](D8)Hej, jag kan se utkiken på Mêlée Island™!\255\003Han tittar rakt på mig!
 [017:VERB#0237](D8)Vad jag inte skulle ge för en stor, härlig vattenballong just nu.
 [017:OBNA#0237](__)skeppsdäck
-[017:VERB#0238](D8)Vilken fin flagga.\255\003Får mig att skaka i brallan bara att titta på den.
+[017:VERB#0238](D8)Vilken fin flagga.\255\003Får mig att darra i byxorna bara av att titta på den.
 [017:OBNA#0238](__)Jolly Roger
 [018:VERB#0249](D8)Ser stabil ut.
 [018:OBNA#0249](__)stabil stubbe
@@ -462,7 +462,7 @@
 [019:OBNA#0256](__)kanon
 [019:VERB#0257](D8)Déja vu!
 [019:VERB#0257](D8)Det kommer inte fungera.
-[019:VERB#0257](D8)Jag har ingen lust att spränga iväg mig själv till havs.
+[019:VERB#0257](D8)Jag har ingen lust att spränga ut mig själv till havs.
 [019:VERB#0257](D8)Aldrig i livet! Jag spräcker skallen när jag landar!
 [019:VERB#0257](14)Hej! Kanonen avfyrades inte!
 [019:VERB#0257](D8)Det är alldeles för farligt att klättra ut dit utan anledning.
@@ -472,7 +472,7 @@
 [019:VERB#0259](D8)Vilket gäng lata grisar.
 [019:VERB#0259](14)Vad var det?
 [019:VERB#0259](D8)Inget.
-[019:VERB#0259](D8)Ja, vad jag inte skulle ge för att kunna hänga dem.
+[019:VERB#0259](D8)Ja, vad jag inte skulle ge för att få hänga dem.
 [019:VERB#0259](D8)Jag tror inte det här kommer hjälpa situationen.
 [019:VERB#0259](D8)Jag har på känn att det inte är de som blir utnyttjade här.
 [019:VERB#0259](D8)Jag tror inte våld är svaret...\255\003...även om det skulle få mig att må bättre.
@@ -486,13 +486,13 @@
 [019:LSCR#0200](14)För det första...
 [019:LSCR#0200](14)Jag vill säga att det är underbart att få jobba med en sådan härlig besättning.
 [019:LSCR#0200](14)Resan framför oss kommer inte bli lätt.\255\003Det kommer kräva skicklighet, uthållighet, och framför allt...\255\003LAGARBETE.
-[019:LSCR#0200](14)Först tänkte jag att vi skulle fördela några uppgifter.
+[019:LSCR#0200](14)Först tänkte jag att vi kunde fördela några uppgifter.
 [019:LSCR#0200](14)Vad var det vi blev lurade att göra igen?
 [019:LSCR#0200](14)Jag har gjort en lista.
 [019:LSCR#0200](14)'Lurade' är rätt ord.
 [019:LSCR#0200](14)Jag förstår inte vad grejen är med att rädda Guvernören.\255\003Hon kan uppenbarligen klara sig själv.
 [019:LSCR#0200](14)Som jag ser det...\255\003Vi har det här FANTASTISKA skeppet...
-[019:LSCR#0200](14)...ja...\255\003...vi har ETT skepp.\255\003Varför tar vi det inte bara lugnt, binder ett rep vid ratten och kryssar ett tag.\255\003Jag skulle kunna behöva bättra på solbrännan.
+[019:LSCR#0200](14)...ja...\255\003...vi har ETT skepp.\255\003Varför tar vi det inte lugnt bara, binder ett rep vid ratten och kryssar ett tag?\255\003Jag behöver jobba på solbrännan.
 [019:LSCR#0200](14)Nu när jag tänker efter, jag har varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
 [019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
 [019:LSCR#0200](14)--suck--
@@ -508,14 +508,14 @@
 [019:LSCR#0204](FA)Kan jag göra nåt för att få er att hjälpa mig?
 [019:LSCR#0204](FA)Jag hörde att vädret är fint vid Monkey Island™.
 [019:LSCR#0204](FA)Hej! Jag hittade en karta till Monkey Island™.
-[019:LSCR#0204](FA)Jag ger er myterister fem sekunder att \254\008     komma till sans!
+[019:LSCR#0204](FA)Jag ger er myterister fem sekunder att \254\008     besinna er!
 [019:LSCR#0204](FA)Jag tror jag går tillbaka och sköter skeppet.
 [019:LSCR#0204](14)Stick, Guybrush.
 [019:LSCR#0204](14)Fint försök, Guybrush, men ingen banan.
 [019:LSCR#0204](D8)Då ska ni få stryk!
 [019:LSCR#0204](14)Ursäkta mig Guybrush...\255\003...säger ordet 'kölhala' dig något?
 [019:LSCR#0204](FA)Jag förstår din poäng, tack.
-[019:LSCR#0204](FA)Kölhala /kö:l-ha:la\254\001   1: att dra under kölen på ett skepp som straff\254\001       eller tortyr.
+[019:LSCR#0204](FA)Kölhala /kö:l-ha:la\254\001   1: att dra någon under kölen på ett skepp\254\001       som straff eller tortyr.
 [019:LSCR#0204](14)Jag förstår din poäng, tack.
 [019:LSCR#0204](14)Öh, ursäkta Guybrush...\255\003...du skymmer solen.
 [019:LSCR#0204](14)Och?
@@ -549,7 +549,7 @@
 [020:OBNA#0272](__)memo@@@@@@@@@@@@@@@@
 [020:ENCD#0020](54)roddbåt och åror
 [020:LSCR#0200](54)roddbåt och åror
-[020:LSCR#0200](D8)Jag kan paddla den med de här årorna.
+[020:LSCR#0200](D8)Jag kan ro den med de här årorna.
 [020:LSCR#0200](D8)Jag har inget att ro med.
 [020:LSCR#0202](13)apa
 [020:LSCR#0202](14)ook
@@ -587,7 +587,7 @@
 [020:SCRP#0095](FA)Jag såg en apa gå härifrån. Han måste ha gjort det.
 [020:SCRP#0095](FA)Öh, förlåt.
 [020:SCRP#0095](FA)Jag skulle ha knackat, men jag kunde inte hitta en dörr.
-[020:SCRP#0095](FA)Jag knackade. Du måste ha misshört.
+[020:SCRP#0095](FA)Jag knackade. Du hörde nog inte.
 [020:SCRP#0095](FA)Ja, det är riktigt imponerande.
 [020:SCRP#0095](FA)Vad?
 [020:SCRP#0095](FA)Jag blev lurad av en kille som heter Stan...
@@ -595,10 +595,10 @@
 [020:SCRP#0095](FA)Lämna mig ifred, tack.
 [020:SCRP#0095](14)Öhm...\255\003Jag är rädd att jag måste sticka nu.\255\003Brådskande affärer, du vet.
 [020:SCRP#0095](14)-- hih hih --
-[020:SCRP#0095](14)Var inte en idiot.
+[020:SCRP#0095](14)Var inte en drummel.
 [020:SCRP#0095](14)Åh, otäck olycka.\255\003Han försökte sätta upp en gunga.
 [020:SCRP#0095](14)Det skulle vara en fantastisk turistattraktion, om någon någonsin kunde hitta ön.
-[020:SCRP#0095](14)Nå, det är okej.\255\003Nästa gång, var mer försiktig.
+[020:SCRP#0095](14)Nå, det är okej.\255\003Var försiktigare nästa gång.
 [020:SCRP#0095](14)Stan från Stans Begagnade Fartyg?\255\003På Mêlée Island™?
 [020:SCRP#0095](14)Heh heh heh heh
 [020:SCRP#0095](14)Hördu, klaga inte på det.
@@ -614,7 +614,7 @@
 [020:SCRP#0095](FA)Jag trodde den här ön var obebodd.
 [020:SCRP#0095](FA)Vem är du?
 [020:SCRP#0095](FA)Vem pratar du med?
-[020:SCRP#0095](FA)Jag tror jag borde gå nu.
+[020:SCRP#0095](FA)Jag tror det är bäst att jag går nu.
 [020:SCRP#0095](14)Tja, då trodde du fel.
 [020:SCRP#0095](14)Jag?
 [020:SCRP#0095](14)Jo, de som tittar, förstås.
@@ -667,7 +667,7 @@
 [020:SCRP#0095](14)Som säkerhet gav de mig den här enorma bomullspinnen.
 [020:SCRP#0095](14)Den öppnar Aphuvudet, fattar du?
 [020:SCRP#0095](14)Den öppnar den stora aphuvudsidolen de dyrkar.
-[020:SCRP#0095](14)Inte som att jag någonsin behöver gå in i Aphuvudet...\255\003...men om de vill ha tillbaka den, måste jag ha min plockare först.\255\003Det är en fråga om stolthet, vet du?
+[020:SCRP#0095](14)Inte som att jag någonsin behöver gå in i Aphuvudet...\255\003...men om de vill ha tillbaka den, måste jag ha min plockare först.\255\003Det är en hederssak, förstår du?
 [020:SCRP#0095](14)
 [020:SCRP#0095](14)Jag berättade om att de lånat min bananplockare och aldrig lämnat tillbaka den, eller hur?
 [020:SCRP#0095](14)Vilka byxor?
@@ -677,29 +677,29 @@
 [020:SCRP#0096](14)
 [020:SCRP#0096](14)Hej, tack!\255\003Jag trodde jag aldrig skulle se den här igen!\255\003Här, du kan ta tillbaka den här nyckeln till Aphuvudet till de infödda.
 [020:SCRP#0096](D8)Okej.\255\003Och oroa dig inte, jag använder den inte eller något.
-[020:SCRP#0096](14)Nej tack, jag har en.\255\003Önskar verkligen jag kunde hitta den, dock.
+[020:SCRP#0096](14)Nej tack, jag har en.\255\003Fast jag önskar att jag kunde hitta den.
 [020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
 [020:SCRP#0096](14)Hej, MINTPASTILLER!
 [020:SCRP#0096](14)Det här är vad jag saknar mest med civilisationen.
 [020:SCRP#0096](14)Pengar duger inte till mycket här.
-[020:SCRP#0096](14)Jag har redan läst tillräckligt med memon för att räcka en livstid.
+[020:SCRP#0096](14)Jag har redan läst memon för en hel livstid.
 [020:SCRP#0096](14)Nej tack, jag har egna, fast någon kastade dem i en ravin.
 [020:SCRP#0096](14)Vad i hela friden ska jag göra med det?
 [020:SCRP#0164](D8)Det är tryckt på brevpapper!
-[020:SCRP#0164](D8)`Till Monkey Island™ Kannibalerna:`\255\003`Var snäll och sluta flytta på den här.`\255\003`Den är noggrant kalibrerad.`\255\003`--Herman Rötbett--`
+[020:SCRP#0164](D8)`Till Monkey Island™ Kannibalerna:`\255\003`Var god sluta flytta på den här.`\255\003`Den är noggrant kalibrerad.`\255\003`--Herman Rötbett--`
 [020:SCRP#0164](D8)`Herr Rötbett:`\255\003`Var snäll och ta bort det här farliga föremålet.`
 [020:SCRP#0164](D8)`Lemonhead sparkade en sten på den från klippan ovanför och skadade nästan någon som satte upp en gunga på bananträdet på södra stranden.`
 [020:SCRP#0164](D8)`Lemonhead sparkade en sten på den från klippan ovanför och sänkte nästan ett förbipasserande skepp.`
 [020:SCRP#0164](D8)`--Kannibalerna`
-[020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste än en gång be dig dra ner på dina nattliga aktiviteter i området kring det Heliga Aphuvudet.`\255\003`Anständiga människor försöker sova!`
+[020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste än en gång be dig begränsa dina nattliga aktiviteter i området kring det Heliga Aphuvudet.`\255\003`Anständiga människor försöker sova!`
 [020:SCRP#0164](D8)`Var vänlig håll nere ljudnivån.`\255\003`--Monkey Island™ Kannibalerna`\255\003`P.S.--`\255\003`Vi såg dig ta med den där kvinnan med halsduken dit ner!`
 [020:SCRP#0164](D8)`Till Monkey Island™ Kannibalerna:`\255\003`Jag har inget emot att ni dyrkar framför Den Heliga Apidolen som också är mitt hem och hemliga operationsbas...`
 [020:SCRP#0164](D8)`...men skulle ni kunna låta bli att lämna smutsiga offer på min veranda.`\255\003`Och, var snäll GÅ INTE IN i Aphuvudet.`\255\003`--G.P. LeChuck`
 [020:SCRP#0164](D8)`Till spökpiraten LeChuck:`\255\003`Vi måste protestera mot ditt 'förvärv' av vår voodoo antirot.`\255\003`Vi inser att den utgör en fara för dig och din besättning, men det här är stöld!`\255\003`--Monkey Island™ Kannibalerna`
-[020:SCRP#0164](D8)`Herman--`\255\003`Var snäll lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
+[020:SCRP#0164](D8)`Herman--`\255\003`Var vänlig lämna tillbaka vår nyckel till Aphuvudet.`\255\003`--Kannibalerna`
 [020:SCRP#0164](D8)`Kannibaler--`\255\003`Jag ger inte er blodsugare nyckeln till Aphuvudet förrän ni lämnar tillbaka min bananplockare.`\255\003`--H.T.`
-[020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Gnäll, Hum och Hav, advokater`\255\003`Ang Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
-[020:SCRP#0164](D8)`Jag tror vi har en möjlighet här.`\255\003`Vi kan troligtvis dra in stora belopp för sveda och värk och möjligen även straffskadestånd.`
+[020:SCRP#0164](D8)`Till Herman Rötbett`\255\003`Från Gnäll, Hum och Hav, advokater`\255\003`Ang. Stämning mot kannibalstammen för illvilligt kastande av dina åror i en ravin.`
+[020:SCRP#0164](D8)`Jag tror vi har ett case här.`\255\003`Vi kan troligtvis mjölka dem på sveda och värk och möjligen även straffskadestånd.`
 [020:SCRP#0164](14)
 [020:SCRP#0166](54)memon
 [020:SCRP#0166](54)ett par memon
