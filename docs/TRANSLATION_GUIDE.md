@@ -170,6 +170,45 @@ assume a grammatical gender. Rewrite to omit the pronoun entirely:
 
 The object is implied from context. Guessing "den" or "det" will be wrong half the time.
 
+### Beware of false friends and calques
+
+Swedish and English have many words that look similar but mean different things.
+Always translate based on the **Swedish meaning**, not visual similarity to the English.
+
+**False friends** (words that look alike but differ):
+
+| English | Looks like Swedish | Actually means in Swedish | Correct Swedish |
+|---------|--------------------|--------------------------|-----------------|
+| hey (exclamation) | hej | hello (greeting) | oj, åh, hallå, kolla |
+| gift | gift | married / poison | gåva, present |
+| chef | chef | boss/manager | kock |
+| eventually | eventuellt | possibly/perhaps | till slut, så småningom |
+| actual | aktuell | current/relevant | faktisk, verklig |
+
+Note: "obekväm" works for both physical and social discomfort in Swedish — it is NOT a false friend.
+
+**"Hey" vs "Hej"** is the most common error. "Hey" in English is an exclamation
+to get attention or express surprise — it is NOT a greeting. Translate based on context:
+- Surprise/discovery: "Oj!", "Åh!", "Kolla!"
+- Getting attention: "Hallå!", "Hördu!"
+- Casual/dismissive: "Äh", "Tja", "Visst"
+- Only use "Hej" when the English is actually "Hi"/"Hello" (a greeting)
+
+**Common calque patterns** to avoid:
+
+| English pattern | Calque (wrong) | Natural Swedish |
+|-----------------|----------------|-----------------|
+| not in the mood for | inte på humör för | inte upplagd för |
+| a matter of pride | en fråga om stolthet | en hederssak |
+| bad feeling | dålig känsla/aning | onda aningar |
+| come to your senses | komma till sans (= regain consciousness) | besinna sig, ta sitt förnuft till fånga |
+| it's your loss | det är din förlust | du som förlorar på det |
+| until all hours | till alla tider | in på småtimmarna |
+| escape artist | flyktartist | utbrytarkonstnär |
+
+When in doubt, read the Swedish aloud — if it sounds like something a Swede
+would only say because they're thinking in English, rewrite it.
+
 ### Research ambiguous words before translating
 
 Before translating an ambiguous word (e.g. "crack", "handle", "chest"), grep the full

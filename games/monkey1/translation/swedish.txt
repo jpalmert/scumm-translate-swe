@@ -353,7 +353,7 @@
 [014:OBNA#0158](__)gryta
 [014:VERB#0161](D8)Skönt och varmt.
 [014:VERB#0161](D8)Aj, det är hett!
-[014:VERB#0161](D8)Nu när jag tänker på det, det är ju bara danslektioner.
+[014:VERB#0161](D8)Nu när jag tänker på det, är det ju bara danslektioner.
 [014:VERB#0161](D8)Varför bränna fullgod mat?
 [014:VERB#0161](D8)Ja, som om jag verkligen vill döda mig själv.
 [014:VERB#0161](D8)Det här kan jag behöva senare.
@@ -493,7 +493,7 @@
 [019:LSCR#0200](14)Jag förstår inte vad grejen är med att rädda Guvernören.\255\003Hon kan uppenbarligen klara sig själv.
 [019:LSCR#0200](14)Som jag ser det...\255\003Vi har det här FANTASTISKA skeppet...
 [019:LSCR#0200](14)...ja...\255\003...vi har ETT skepp.\255\003Varför tar vi det inte lugnt bara, binder ett rep vid ratten och kryssar ett tag?\255\003Jag behöver jobba på solbrännan.
-[019:LSCR#0200](14)Nu när jag tänker efter, jag har varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
+[019:LSCR#0200](14)Nu när jag tänker efter, har jag varit lite stressad på sistone.\255\003Jag skulle kunna behöva vila.
 [019:LSCR#0200](14)Då är det bestämt...\255\003...vi kryssar runt Karibien.
 [019:LSCR#0200](14)--suck--
 [019:LSCR#0204](D8)Åh, titta...
@@ -1525,8 +1525,8 @@
 [030:LSCR#0204](14)Tog dig på bar gärning, din lilla tjuv!
 [030:LSCR#0204](14)Tog dig igen, din lilla råtta!\255\003Lär du dig aldrig?
 [030:LSCR#0204](14)Okej, hosta upp slantarna.
-[030:LSCR#0204](14)Kanske du vill betala för det där?
-[030:LSCR#0204](14)Kanske du vill betala för de där?
+[030:LSCR#0204](14)Du kanske vill betala för det där?
+[030:LSCR#0204](14)Du kanske vill betala för de där?
 [030:LSCR#0206](14)Vad är det med den?
 [030:LSCR#0206](FA)Jag vill ha den.
 [030:LSCR#0206](FA)Hur mycket kostar den?
@@ -1965,7 +1965,7 @@
 [035:LSCR#0211](14)Men var är den fuktiga, unkna spökdoften från andra sidan graven?
 [035:LSCR#0211](FA)Den dränks av DIN egen dödliga stank.
 [035:LSCR#0211](FA)Åh, den! Låt mig bara ta av stövlarna...
-[035:LSCR#0211](FA)Det är en ny rotölsparfym. Kanske du vill prova?
+[035:LSCR#0211](FA)Det är en ny rotölsparfym. Kanske vill du prova?
 [035:LSCR#0211](14)Akta dig...
 [035:LSCR#0211](14)Nej, glöm det.
 [035:LSCR#0211](14)Om du verkligen är ett spöke, bevisa det.\255\003Låt mig se dig skruva av huvudet.
@@ -2792,7 +2792,7 @@
 [049:LSCR#0200](FA)Förlåt att jag störde. Jag går vidare.
 [049:LSCR#0200](94)Ja hoppas du hade nåt viktigare att stoppa mej för?
 [049:LSCR#0200](94)Piratspråk!\255\003Det va så alla pratade på den tiden.\255\003Kom igen Guybrush, häng me.
-[049:LSCR#0200](94)Jo! Nu när du säger det, det gör dom.\255\003Det beror nog bara på att vi är trötta.
+[049:LSCR#0200](94)Jo! Nu när du säger det, gör dom det.\255\003Det beror nog bara på att vi är trötta.
 [049:LSCR#0200](14)...som jag kunde låna.
 [049:LSCR#0200](14)Jag behöver köpa mintpastiller.
 [049:LSCR#0200](94)Det kan man lugnt säga.
@@ -3296,7 +3296,7 @@
 [059:SCRP#0056](D8)En kompass?
 [059:SCRP#0056](14)En extra stark magnetisk kompass--
 [059:SCRP#0056](D8)Med din bild på den...
-[059:SCRP#0056](14)Just det!\255\003Den pekar alltid rakt tillbaka hit, så om du letar efter en bra deal vet du var du ska gå!
+[059:SCRP#0056](14)Just det!\255\003Den pekar alltid rakt tillbaka hit, så om du letar efter ett bra fynd vet du var du ska gå!
 [059:SCRP#0056](14)Jag kommer vara här när du kommer tillbaka,\255\003Men jag kan inte garantera att nåt av dessa skepp kommer vara det!
 [059:SCRP#0056](D8)Just det.
 [059:SCRP#0056](14)Dom säljer snabbt idag!
@@ -3381,7 +3381,7 @@
 [059:SCRP#0056](D8)En kompass?
 [059:SCRP#0056](14)En extra stark magnetisk kompass--
 [059:SCRP#0056](D8)Med din bild på den...
-[059:SCRP#0056](14)Just det!\255\003Den pekar alltid rakt tillbaka hit, så om du letar efter en bra deal vet du var du ska gå!
+[059:SCRP#0056](14)Just det!\255\003Den pekar alltid rakt tillbaka hit, så om du letar efter ett riktigt fynd vet du var du ska gå!
 [059:SCRP#0056](14)Jag måste stämma av siffrorna med min chef... ...han tror jag är galen, men jag övertygar honom.
 [059:SCRP#0056](14)Vi ses vid kajen med din besättning.\255\003Jag tar med skeppet och papperna.
 [059:SCRP#0056](14)Jag vill bara säga att jag verkligen känner att vi lärde känna varandra idag.\255\003Jag menar, jag kände verkligen en samhörighet.\255\003Och det säger jag inte till alla!
@@ -3651,7 +3651,7 @@
 [070:LSCR#0208](14)Tja, naturligtvis är jag blek.\255\003Jag är trots allt död.
 [070:LSCR#0208](14)Död?\255\003Hur hände det?
 [070:LSCR#0208](14)Åh, på vanligt sätt,\255\003ute på en dags plundring,\255\003spökskepp dyker upp,\255\003LeChuck dödar alla i besättningen,\255\003och skriver sen in oss på HANS skepp.\255\003Du vet.
-[070:LSCR#0208](14)Oj, vad tråkigt.\255\003Kanske du vill följa med oss på vår jakt efter den perfekta solbrännan?
+[070:LSCR#0208](14)Oj, vad tråkigt.\255\003Kanske vill du följa med oss på vår jakt efter den perfekta solbrännan?
 [070:LSCR#0208](14)Tja, det vore trevligt, men jag försöker få skjuts till ett bröllop på Mêlée Island.\255\003™.
 [070:LSCR#0208](14)Vi var ändå på väg tillbaka dit.\255\003Du kan hänga på.
 [070:LSCR#0208](14)Toppen!
@@ -4140,14 +4140,14 @@
 [083:LSCR#0204](14) 
 [083:LSCR#0204](FA)Kan jag intressera er för lite rotöl, herrn?
 [083:LSCR#0204](FA)Jag säljer det här fina munvattnet.
-[083:LSCR#0204](FA)Vill du se ett coolt trick?
+[083:LSCR#0204](FA)Vill du se ett häftigt trick?
 [083:LSCR#0204](FA)Svälj DET HÄR, kryp!
 [083:LSCR#0204](14)Rotöl?\255\003Åh, gosse!\255\003Jag ÄLSKAR rotöl!
 [083:LSCR#0204](14)Är det mintsmak?\255\003Jag gillar bara det mintiga.
 [083:LSCR#0204](14)Oj, ja!\255\003Jag ÄLSKAR trolleritrick!\255\003Är det med en duva?
 [083:LSCR#0204](14)Illaluktande grogg att svepa?\255\003Toppen!
 [083:LSCR#0204](14) 
-[083:LSCR#0204](D8)Coolt!
+[083:LSCR#0204](D8)Häftigt!
 [083:LSCR#0205](D8)Kyrkan är åt andra hållet!
 [083:SCRP#0065](14)Det här är vägens slut, min lille byxklädde kompis.
 [083:SCRP#0065](14)Dina dagar som bråkstake på Mêlée Island™ är över.
