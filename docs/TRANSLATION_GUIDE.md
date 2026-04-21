@@ -149,7 +149,13 @@ Supported characters: **Å Ä Ö å ä ö é**
 
 ## Swedish language rules
 
-### Use natural Swedish, not literal translations
+These rules are distilled from the complete MI1 translation, where hundreds of
+fixes were needed after the initial pass. Each section addresses a specific
+category of error that appeared repeatedly.
+
+---
+
+### Rule 1: Use natural Swedish, not literal translations
 
 Read the translation aloud — if it sounds like translated English, rewrite it.
 Common mistakes:
@@ -158,8 +164,23 @@ Common mistakes:
 - Prefer common verbs: ❌ "svimmade av" → ✅ "tuppade av"; ❌ "fatta eld" → ✅ "brinna"
 - Adverb placement: Swedish often puts adverbs after the object — ❌ "Jag bränner bara allt" → ✅ "Jag bränner allt bara"
 - Single spaces after periods (not double)
+- Don't calque English sentence structure — Swedish has V2 word order (verb second in main clauses)
 
-### Generic messages — avoid gender-specific pronouns
+**Examples from MI1 fixes:**
+
+| Initial (calque) | Fixed (natural Swedish) |
+|-------------------|------------------------|
+| Jag har en känsla av att... | Jag tror... / Jag har på känn att... |
+| Det var nära, men jag tror inte det träffar igen. Det skottet var ett på miljonen! | Det var nära, men jag tror inte det träffar igen. Det var en träff på miljonen! |
+| Som en gest för att återställa vår vänskap | I ett försök att lappa ihop vår vänskap |
+| Du har mycket fräckheter som kommer till den här stan | Du har mage att komma till den här stan |
+| Oddsen måste vara otroliga! | Chansen måste vara otroligt liten! |
+| Jag skulle älska att få dig uppstoppad | Att stoppa upp dig hade gjort mig rik |
+| Vid närmare eftertanke kanske det här inte är skeppet för mig | Det här är nog inte skeppet för mig ändå |
+
+---
+
+### Rule 2: Generic messages — avoid gender-specific pronouns
 
 Messages that apply to many different objects (room 010 fallback strings, etc.) must not
 assume a grammatical gender. Rewrite to omit the pronoun entirely:
@@ -170,7 +191,9 @@ assume a grammatical gender. Rewrite to omit the pronoun entirely:
 
 The object is implied from context. Guessing "den" or "det" will be wrong half the time.
 
-### Beware of false friends and calques
+---
+
+### Rule 3: Beware of false friends and calques
 
 Swedish and English have many words that look similar but mean different things.
 Always translate based on the **Swedish meaning**, not visual similarity to the English.
@@ -187,8 +210,9 @@ Always translate based on the **Swedish meaning**, not visual similarity to the 
 
 Note: "obekväm" works for both physical and social discomfort in Swedish — it is NOT a false friend.
 
-**"Hey" vs "Hej"** is the most common error. "Hey" in English is an exclamation
-to get attention or express surprise — it is NOT a greeting. Translate based on context:
+**"Hey" vs "Hej"** was the single most frequent error in the MI1 translation
+(30+ instances fixed). "Hey" in English is an exclamation to get attention or
+express surprise — it is NOT a greeting. Translate based on context:
 - Surprise/discovery: "Oj!", "Åh!", "Kolla!"
 - Getting attention: "Hallå!", "Hördu!"
 - Casual/dismissive: "Äh", "Tja", "Visst"
@@ -204,20 +228,153 @@ to get attention or express surprise — it is NOT a greeting. Translate based o
 | come to your senses | komma till sans (= regain consciousness) | besinna sig, ta sitt förnuft till fånga |
 | it's your loss | det är din förlust | du som förlorar på det |
 | until all hours | till alla tider | in på småtimmarna |
-| escape artist | flyktartist | utbrytarkonstnär |
+| escape artist | flyktartist | utbrytarkung/utbrytarkonstnär |
+| don't be a stranger | var inte en främling | titta in nån gång |
+| to carry (move sth) | att bära | att flytta |
+| don't push it | driva det längre | chansa |
+| that's sweet | det är söt (adj. for person) | det är sött (neuter: about the situation) |
+| standard potion | standarddryck för exorcism | vanliga exorcismdryck |
+| I'm lost | jag är förlorad | jag är körd / jag har gått vilse |
 
 When in doubt, read the Swedish aloud — if it sounds like something a Swede
 would only say because they're thinking in English, rewrite it.
 
-### Research ambiguous words before translating
+---
+
+### Rule 4: Grammatical gender consistency
+
+Swedish nouns are either en-words (common) or ett-words (neuter). Getting this wrong
+is immediately noticeable. The initial MI1 translation had dozens of gender errors.
+
+**Common errors:**
+- "den är svetsad" on an ett-word → "**det** är svetsat" / "**den** är svetsad" (match the noun)
+- "Jag tror inte **den** rymmer" (about a stop/seat) → "Jag tror inte **det** rymmer" (stop is ett-word)
+- "ett fabulös dörrstopp" → "ett fabulöst dörrstopp" (neuter adjective)
+
+**Before translating:** check whether the object's Swedish noun is en or ett.
+When referring to previously mentioned objects, use the correct pronoun.
+
+---
+
+### Rule 5: Don't invent words or compound expressions
+
+The initial translation created several non-existent Swedish words:
+
+| Invented | Problem | Correct |
+|----------|---------|---------|
+| kompansen | -ansen is not a Swedish suffix | kompis |
+| kanonkulleskansen | non-word compound | kanonkulan |
+| landlansen | non-word | landkrabba |
+| piranjapadel | not the right pun | pirayapudel (piranha + poodle) |
+| muterande besättning | "mutating crew" | myterisk besättning |
+| syltingtallrik | not a real compound | sylta |
+| fransyska (as food) | means "French woman" | stek |
+
+**Rule:** If a Swedish compound word doesn't appear in SAOL or common usage,
+don't use it. Find a real word instead.
+
+---
+
+### Rule 6: Character voice consistency
+
+Each character has a distinct voice. The initial translation often flattened
+characters to the same neutral register.
+
+**Stan (used ship salesman)** — energetic, pushy, over-the-top:
+- Uses "vi snackar" not "vi pratar" (punchier)
+- Uses "kompis" not formal address
+- "Kolla in" not "Titta på", "schysst" not "rimligt"
+- Every sentence should feel like sales pressure
+
+**Guybrush** — modern, sarcastic, slightly naive:
+- Uses "Oj" or "Åh" for surprise (never "Hej" unless greeting someone)
+- Self-deprecating humor: "Jag är körd" not "Jag är förlorad"
+- Casual but grammatically correct: jag/mig/dig, not ja/mej/dej
+
+**Pirates** — rough, colorful:
+- Pirate greeting: "Ohoy", "Ahoj" (never "Aja" which sounds like resigned sighing)
+- Curses: "förbaskat", "tusan", "dödskallar"
+
+**Fester Shinetop** — threatening, menacing:
+- Short declarative sentences
+- "apungen" not "apgransen" for insults
+
+---
+
+### Rule 7: Translate character names per glossary
+
+Character names with descriptive meanings must be translated. The initial MI1
+translation left several in English or used wrong translations:
+
+| English | Initial (wrong) | Correct |
+|---------|-----------------|---------|
+| Herman Toothrot | Herman Toothrot | **Herman Rötbett** |
+| Meathook | Meathook | **Järnkrok** |
+| Captain Smirk | Kapten Smirk | **Kapten Smilfink** |
+| Herman Tandröta | (inconsistent variant) | **Herman Rötbett** |
+
+**Every occurrence** of the name must use the Swedish version — in dialog, in
+`(13)` name displays, in `OBNA` entries, in signed notes (initials too: H.T. → H.R.).
+
+---
+
+### Rule 8: Trademark symbols
+
+Use ™ (`\153` in SCUMM) for all in-game brand references. Never ®.
+See `glossary.md` → "Brand References / Trademark Symbols" for the full list.
+
+---
+
+### Rule 9: Pronoun formality (ja/mej/dej vs jag/mig/dig)
+
+Sloppy pronoun forms (ja, mej, dej) should **only** be used when the English
+character is speaking in notably bad grammar. Standard dialog — even for pirates
+— uses jag/mig/dig.
+
+The initial MI1 translation used ja/mej/dej throughout room 083 (Stan's dock
+scene). Every instance was corrected to jag/mig/dig because Stan speaks fast
+but grammatically.
+
+---
+
+### Rule 10: Research ambiguous words before translating
 
 Before translating an ambiguous word (e.g. "crack", "handle", "chest"), grep the full
 translation file for other occurrences — VERB entries, dialog lines, other rooms — to
 determine the actual object and meaning. Don't translate in isolation.
 
+**Example from MI1:** "stool" appeared as bar furniture — initial translation used
+"mugg" (mug/cup) in some places instead of "stop" (bar stool).
+
+---
+
+### Rule 11: Preserve puns and jokes, don't translate literally
+
+When the English contains a pun, the Swedish must also contain a pun — even if
+it's a completely different joke. Literal translation of puns almost never works.
+
+**Examples from MI1 fixes:**
+
+| English (pun) | Initial (literal, broken) | Fixed (Swedish pun) |
+|---------------|---------------------------|---------------------|
+| piracy / conspiracy | sjöröveri / KONSPIR-ation | pirateri / kons-PIRAT-ion |
+| "Booty for my beauty" | "Byte för mitt snygge" | "Skatt för min skatt" |
+| "I'm double-parked" | "dubbelförbjuden" | "dubbelparkerad" (works in Swedish too) |
+| "How you get ahead in navigation" | "Hur du kommer framåt" | "Hur du får ett huvud för navigering" (huvud=head) |
+| "How to get a leg up in treasure hunting" | "Hur du får ett ben upp" | "Hur du får fotfäste i skattjakten" |
+
+---
+
+### Rule 12: FA dialog lines have a character limit
+
+Lines with opcode `(FA)` are player dialog choices shown in a selection box.
+The box is approximately **57 characters wide**. Lines exceeding this get
+truncated in-game. Always check FA line length and shorten if needed.
+
+---
+
 ### Specific phrase: the game title
 
-"the Secret of Monkey Island®" → **"Monkey Islands® Hemlighet"** (capital S)
-"the secret of Monkey Island®" → **"Monkey Islands® hemlighet"** (lowercase)
+"the Secret of Monkey Island™" → **"Monkey Islands™ Hemlighet"** (capital H)
 
-Swedish word order: possessor first — "Monkey Islands® Hemlighet" not "Hemligheten på Monkey Island®".
+Swedish word order: possessor first — "Monkey Islands™ Hemlighet" not "Hemligheten på Monkey Island™".
