@@ -285,6 +285,102 @@ func TestRunListPAKBadMagic(t *testing.T) {
 	}
 }
 
+// --- SE hint/uitext tests ---
+
+// SE-020: loadUITextTranslation parses tab-separated key-value pairs,
+// skipping comments and [E]-prefixed (untranslated) lines.
+func TestLoadUITextTranslation(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "uitext_swedish.txt")
+	content := "# comment\nMENU_BACK\tTillbaka\nMENU_YES\t[E]Yes\n\nMENU_NO\tNej\n"
+	os.WriteFile(p, []byte(content), 0644)
+
+	m, err := loadUITextTranslation(p)
+	if err != nil {
+		t.Fatalf("loadUITextTranslation: %v", err)
+	}
+	if len(m) != 2 {
+		t.Fatalf("got %d entries, want 2", len(m))
+	}
+	if m["MENU_BACK"] != "Tillbaka" {
+		t.Errorf("MENU_BACK = %q, want Tillbaka", m["MENU_BACK"])
+	}
+	if m["MENU_NO"] != "Nej" {
+		t.Errorf("MENU_NO = %q, want Nej", m["MENU_NO"])
+	}
+	if _, ok := m["MENU_YES"]; ok {
+		t.Error("[E]-prefixed line should be skipped")
+	}
+}
+
+// SE-021: loadHintsTranslation parses addr-based hint translations.
+func TestLoadHintsTranslation(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "hints_swedish.txt")
+	content := "# comment\n49744\tDu måste använda ölet!\n50192\t[E]Not translated\n50688\tStoppa bröllopet!\n"
+	os.WriteFile(p, []byte(content), 0644)
+
+	m, err := loadHintsTranslation(p)
+	if err != nil {
+		t.Fatalf("loadHintsTranslation: %v", err)
+	}
+	if len(m) != 2 {
+		t.Fatalf("got %d entries, want 2", len(m))
+	}
+	if m[49744] != "Du måste använda ölet!" {
+		t.Errorf("addr 49744 = %q", m[49744])
+	}
+	if m[50688] != "Stoppa bröllopet!" {
+		t.Errorf("addr 50688 = %q", m[50688])
+	}
+	if _, ok := m[50192]; ok {
+		t.Error("[E]-prefixed line should be skipped")
+	}
+}
+
+// SE-022: patchHintEntries with no .hints.csv entry in PAK → skip gracefully.
+func TestPatchHintEntriesNoHintsEntry(t *testing.T) {
+	dir := t.TempDir()
+	hintsPath := filepath.Join(dir, "hints_swedish.txt")
+	os.WriteFile(hintsPath, []byte("0\t79\tTest\n"), 0644)
+
+	entries := []*pak.Entry{
+		{Name: "classic/en/monkey1.000", Data: []byte("data")},
+	}
+
+	n, err := patchHintEntries(entries, hintsPath)
+	if err != nil {
+		t.Fatalf("patchHintEntries: %v", err)
+	}
+	if n != 0 {
+		t.Errorf("expected 0 strings replaced, got %d", n)
+	}
+}
+
+// SE-023: findOptionalSEFile returns empty when file doesn't exist.
+func TestFindOptionalSEFileMissing(t *testing.T) {
+	dir := t.TempDir()
+	base := filepath.Join(dir, "swedish.txt")
+	os.WriteFile(base, []byte("x"), 0644)
+
+	if got := findOptionalSEFile(base, "uitext_swedish.txt"); got != "" {
+		t.Errorf("expected empty, got %q", got)
+	}
+}
+
+// SE-024: findOptionalSEFile returns path when file exists.
+func TestFindOptionalSEFilePresent(t *testing.T) {
+	dir := t.TempDir()
+	base := filepath.Join(dir, "swedish.txt")
+	os.WriteFile(base, []byte("x"), 0644)
+	target := filepath.Join(dir, "uitext_swedish.txt")
+	os.WriteFile(target, []byte("y"), 0644)
+
+	if got := findOptionalSEFile(base, "uitext_swedish.txt"); got != target {
+		t.Errorf("got %q, want %q", got, target)
+	}
+}
+
 // --- Classic tests ---
 
 // CLASSIC-001: Non-existent game directory → clear error.

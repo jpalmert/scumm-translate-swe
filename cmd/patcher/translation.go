@@ -30,3 +30,14 @@ func findTranslationFile(explicit string) (string, error) {
 			"  Or pass the path explicitly as an argument",
 		p)
 }
+
+// findOptionalSEFile looks for an SE translation file (e.g. "uitext_swedish.txt"
+// or "hints_swedish.txt") in the same directory as the base translation file.
+// Returns the path if found, or empty string if not.
+func findOptionalSEFile(baseTranslation, filename string) string {
+	p := filepath.Join(filepath.Dir(baseTranslation), filename)
+	if _, err := os.Stat(p); err == nil {
+		return p
+	}
+	return ""
+}

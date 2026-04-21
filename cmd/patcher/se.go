@@ -1,16 +1,20 @@
 package main
 
 import (
+	"bufio"
 	"errors"
 	"fmt"
 	"os"
 	"path/filepath"
 	"runtime"
+	"strconv"
 	"strings"
 
 	"scumm-patcher/internal/backup"
 	"scumm-patcher/internal/font"
+	"scumm-patcher/internal/hints"
 	"scumm-patcher/internal/pak"
+	"scumm-patcher/internal/uitext"
 )
 
 // runSEPatch is the testable entry point for the Special Edition patching pipeline.
@@ -134,12 +138,42 @@ func runSEPatch(inputPAK, outputPAK, translationArg string) error {
 	}
 	fmt.Printf("    Patched %d font files\n", fontCount)
 
+	// --- Step 6b: Patch SE hint text ---
+	hintsPath := findOptionalSEFile(translationPath, "hints_swedish.txt")
+	if hintsPath != "" {
+		fmt.Println("\n==> Patching SE hint text...")
+		n, err := patchHintEntries(entries, hintsPath)
+		if err != nil {
+			return fmt.Errorf("hint patching failed: %w", err)
+		}
+		fmt.Printf("    Replaced %d hint strings\n", n)
+	} else {
+		fmt.Println("\n    hints_swedish.txt not found — skipping hint patching")
+	}
+
 	// --- Step 7: Repack PAK ---
 	fmt.Println("\n==> Repacking PAK...")
 	if err := pak.Write(outputPAK, hdr, indexBlob, namesBlob, entries); err != nil {
 		return fmt.Errorf("writing PAK: %w", err)
 	}
 	fmt.Printf("    Written: %s\n", outputPAK)
+
+	// --- Step 8: Patch uiText.info ---
+	uitextTransPath := findOptionalSEFile(translationPath, "uitext_swedish.txt")
+	if uitextTransPath != "" {
+		pakDir := filepath.Dir(inputPAK)
+		uiTextPath := filepath.Join(pakDir, "localization", "uiText.info")
+		if _, err := os.Stat(uiTextPath); err == nil {
+			fmt.Println("\n==> Patching SE UI text...")
+			if err := patchUIText(uiTextPath, uitextTransPath); err != nil {
+				return fmt.Errorf("UI text patching failed: %w", err)
+			}
+		} else {
+			fmt.Println("\n    localization/uiText.info not found — skipping UI text patching")
+		}
+	} else {
+		fmt.Println("\n    uitext_swedish.txt not found — skipping UI text patching")
+	}
 
 	return nil
 }
@@ -176,6 +210,162 @@ func findClassicEntries(entries []*pak.Entry) (entry000, entry001 *pak.Entry, er
 		return nil, nil, fmt.Errorf("classic/en/monkey1.001 not found — is this really Monkey1.pak?")
 	}
 	return entry000, entry001, nil
+}
+
+// patchHintEntries finds the hints/monkey1.hints.csv entry in the PAK,
+// replaces English strings with Swedish translations, and updates the
+// entry data in-place. Returns the number of strings replaced.
+func patchHintEntries(entries []*pak.Entry, hintsTransPath string) (int, error) {
+	// Find the hints entry.
+	var hintsEntry *pak.Entry
+	for _, e := range entries {
+		if strings.HasSuffix(strings.ToLower(e.Name), ".hints.csv") {
+			hintsEntry = e
+			break
+		}
+	}
+	if hintsEntry == nil {
+		fmt.Println("    No .hints.csv entry in PAK — nothing to patch")
+		return 0, nil
+	}
+
+	// Parse the hints binary.
+	h, err := hints.Parse(hintsEntry.Data)
+	if err != nil {
+		return 0, fmt.Errorf("parsing %s: %w", hintsEntry.Name, err)
+	}
+
+	// Load translations.
+	replacements, err := loadHintsTranslation(hintsTransPath)
+	if err != nil {
+		return 0, err
+	}
+	if len(replacements) == 0 {
+		return 0, nil
+	}
+
+	// Apply replacements.
+	if err := h.ReplaceStrings(replacements); err != nil {
+		return 0, err
+	}
+
+	hintsEntry.Data = h.Serialize()
+	return len(replacements), nil
+}
+
+// patchUIText reads a uiText.info file, replaces English strings with
+// Swedish translations from uitextTransPath, creates a backup, and writes
+// the patched file back.
+func patchUIText(uiTextPath, uitextTransPath string) error {
+	// Create backup.
+	bakPath, err := backup.Create(uiTextPath)
+	if errors.Is(err, backup.ErrBackupExists) {
+		fmt.Printf("    WARNING: %s already exists — re-patching from backup.\n", bakPath)
+		// Re-read from backup to get unmodified originals.
+		uiTextPath = bakPath
+	} else if err != nil {
+		return fmt.Errorf("backup uiText.info: %w", err)
+	} else {
+		fmt.Printf("    Backup: %s\n", bakPath)
+	}
+
+	data, err := os.ReadFile(uiTextPath)
+	if err != nil {
+		return err
+	}
+
+	translations, err := loadUITextTranslation(uitextTransPath)
+	if err != nil {
+		return err
+	}
+	if len(translations) == 0 {
+		fmt.Println("    No translations found — skipping")
+		return nil
+	}
+
+	patched, err := uitext.PatchEnglish(data, translations)
+	if err != nil {
+		return err
+	}
+
+	// Write to original path (not backup path).
+	outPath := strings.TrimSuffix(bakPath, ".bak")
+	if err := os.WriteFile(outPath, patched, 0644); err != nil {
+		return err
+	}
+	fmt.Printf("    Patched %d strings in %s\n", len(translations), outPath)
+	return nil
+}
+
+// loadHintsTranslation reads a hints_swedish.txt file and returns a map of
+// address → Swedish text. Only lines with actual translations (not starting
+// with [E]) are included.
+//
+// Format: ADDR<TAB>Swedish text
+// Lines starting with # are comments.
+func loadHintsTranslation(path string) (map[uint32]string, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return nil, err
+	}
+	defer f.Close()
+
+	result := make(map[uint32]string)
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		line := scanner.Text()
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		parts := strings.SplitN(line, "\t", 3)
+		if len(parts) < 2 {
+			continue
+		}
+		// Last field is the Swedish text (supports both 2-field and 3-field formats).
+		swe := parts[len(parts)-1]
+		if strings.HasPrefix(swe, "[E]") {
+			continue // untranslated
+		}
+		addr, err := strconv.ParseUint(parts[0], 10, 32)
+		if err != nil {
+			continue
+		}
+		result[uint32(addr)] = swe
+	}
+	return result, scanner.Err()
+}
+
+// loadUITextTranslation reads a uitext_swedish.txt file and returns a map of
+// key → Swedish text. Only lines with actual translations (not starting with
+// [E]) are included.
+//
+// Format: KEY<TAB>Swedish text
+// Lines starting with # are comments.
+func loadUITextTranslation(path string) (map[string]string, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return nil, err
+	}
+	defer f.Close()
+
+	result := make(map[string]string)
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		line := scanner.Text()
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		parts := strings.SplitN(line, "\t", 2)
+		if len(parts) < 2 {
+			continue
+		}
+		key, swe := parts[0], parts[1]
+		if strings.HasPrefix(swe, "[E]") {
+			continue // untranslated
+		}
+		result[key] = swe
+	}
+	return result, scanner.Err()
 }
 
 // remapFontEntries patches the glyph lookup table in every .font entry.

@@ -127,6 +127,15 @@ fi
 cp "$TRANSLATION_SRC" "$DIST_DIR/swedish.txt"
 echo "  $TRANSLATION_SRC -> $DIST_DIR/swedish.txt"
 
+# Copy SE translation files if they exist.
+for se_file in uitext_swedish.txt hints_swedish.txt; do
+    src="$GAME_TRANSLATION/$se_file"
+    if [ -f "$src" ]; then
+        cp "$src" "$DIST_DIR/$se_file"
+        echo "  $src -> $DIST_DIR/$se_file"
+    fi
+done
+
 # ---------------------------------------------------------------------------
 echo ""
 echo "=== Step 3b: Apply @ padding for dynamic object names ==="
@@ -182,11 +191,18 @@ echo ""
 echo "=== Step 5: Package release archives ==="
 
 cd "$DIST_DIR"
-zip -j mi1-translate-linux.zip   mi1-translate-linux     swedish.txt
-zip -j mi1-translate-macos.zip   mi1-translate-darwin     swedish.txt
-zip -j mi1-translate-windows.zip mi1-translate-windows.exe swedish.txt
 
-rm -f mi1-translate-linux mi1-translate-darwin mi1-translate-windows.exe swedish.txt
+# Collect all translation files present in dist/
+TRANS_FILES=(swedish.txt)
+for se_file in uitext_swedish.txt hints_swedish.txt; do
+    [ -f "$se_file" ] && TRANS_FILES+=("$se_file")
+done
+
+zip -j mi1-translate-linux.zip   mi1-translate-linux     "${TRANS_FILES[@]}"
+zip -j mi1-translate-macos.zip   mi1-translate-darwin     "${TRANS_FILES[@]}"
+zip -j mi1-translate-windows.zip mi1-translate-windows.exe "${TRANS_FILES[@]}"
+
+rm -f mi1-translate-linux mi1-translate-darwin mi1-translate-windows.exe "${TRANS_FILES[@]}"
 cd "$REPO_ROOT"
 
 echo "  Created release archives."

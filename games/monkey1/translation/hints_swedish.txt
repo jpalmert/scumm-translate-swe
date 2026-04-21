@@ -1,0 +1,520 @@
+# SE Hint Text Swedish Translation
+# Format: ADDR<TAB>Swedish text (or [E]English text if untranslated)
+#
+49744	[E]You need to use the root beer on LeChuck before he punches you again!
+50192	[E]You need more ghost dissolving root beer!
+50240	[E]Pick up the root beer at Stan's.
+50688	[E]You need to stop the wedding!
+50720	[E]Go to the church and stop the wedding!
+51104	[E]You should follow the storekeeper to the Sword Master's house.
+51488	[E]You should go to the SCUMM Bar.
+51520	[E]The SCUMM Bar is through the door, below the sign that says SCUMM Bar.
+51600	[E]Click Open on the Door and then click on the opening to walk through.
+52480	[E]You should ask some of these pirates about how to become a pirate.
+52560	[E]Talk to the important looking pirates in the right-hand room about becoming a pirate.
+53392	[E]You should try to get into the kitchen to see if you can find something to feed the piranha poodles.
+53504	[E]You should wait for the Cook to leave to sneak into the kitchen.
+53584	[E]You should wait for the Cook to leave off the left side of the room and then sneak in.
+54864	[E]You should feed this meat to the poodles.
+54912	[E]You should feed this meat to the poodles at the Govener's Mansion.
+55520	[E]You should try to scare off that seagull.
+55568	[E]If You walk near that seagull he might leave and You could get that fish
+55648	[E]If You walk to the end of that dock the plank will flip the bird away
+55728	[E]Walk to the loose plank at the end of the dock and flip the bird away so you can quickly grab the fish.  You may need to try a few times.
+57472	[E]You should try to get that fish.
+57520	[E]Open the door and pick up the fish. 
+57568	[E]Open the door between the kitchen and the dock.
+58192	[E]You should pick up that neat looking pot. 
+58240	[E]I bet that cool looking pot would make a good helmet.
+58800	[E]Maybe you could feed some of this food to the Governor's pirahhna poodles.
+58880	[E]You should pick up that hunk of meat for the poodles.
+59600	[E]You should get back in there and get the idol.
+59648	[E]Walk to that big hole in the wall.
+60080	[E]You should see if the idol is in one of these rooms.
+60144	[E]Try the room on the main floor with the double doors to find the idol.
+60832	[E]Do you have something that will help you slide on that cable?
+60896	[E]You should use the rubber-chicken-a-pulley-in-the-middle with the cable to slide across.
+61648	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
+62208	[E]You probably have enough insults to beat the swordmaster. 
+62608	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
+63168	[E]You probably have enough insults to beat the swordmaster. 
+63232	[E]You need someone to show you where the Sword Master lives.
+63296	[E]Ask the storekeeper in the village where the Sword Master lives.
+64288	[E]You should fight some pirates to learn new insults.
+64352	[E]Once you know enough insults and retorts you should fight the swordmaster.
+65168	[E]Do you have something to drug the dogs?
+65216	[E]You should feed the drugged meat to the dogs
+65712	[E]Now that the dogs are asleep, you can open the door and sneak in.
+66112	[E]Use the grog on the lock before the mug melts!
+66416	[E]You should talk to the prisoner.
+66656	[E]You should give the prisoner a breath mint. 
+66960	[E]You should keep an eye out for something to scare off Otis's rats.
+67360	[E]You should ask Otis to join your crew.
+67408	[E]You need to tell Otis about the Governor and ask him to help.
+68000	[E]You should figure out a way to break Otis out of jail
+68064	[E]Maybe you can find something to destroy the lock.
+68128	[E]You need to get some Grog from the SCUMM Bar kitchen to burn the lock.
+69104	[E]There might be something here that could be useful.
+69168	[E]You should take that swell chicken-with-a-pulley-in-the-middle. 
+69744	[E]You should see if someone here can sell you a treasure map.
+69808	[E]That shifty citizen with the parrot looks like he could have a map.
+69888	[E]You need to buy a treasure map from the shity citizen with the parrot.
+70976	[E]See if you can buy something to freshen the prisoner's breath.
+71040	[E]Maybe you should buy some breath mints
+71088	[E]You can buy some breath mints from the storekeeper.
+71952	[E]You should buy that sword from the storekeeper.
+72000	[E]Go pick up the sword and talk to the storekeeper.
+72496	[E]You should see if the storekeeper can help you find the Sword Master
+72576	[E]Ask the storekeeper about the Swordmaster, and then follow him when he goes to talk to her.
+73456	[E]You should buy that shovel from the storekeeper. 
+73520	[E]Go pick up the shovel and talk to the storekeeper.
+74016	[E]You should ask the storekeeper about getting a line of credit
+74080	[E]You should watch him carefully as he opens the safe and learn the combination.
+74160	[E]You should learn the combination to the safe and then ask him to talk to the swordmaster so he leaves and you can open the safe.
+75600	[E]You should check inside the circus tent on the left side of the clearing.
+75680	[E]Someone in the circus tent can give you a job.
+76352	[E]You should check inside the circus tent on the left side of the clearing.
+76432	[E]Someone in the circus tent can give you a job.
+77104	[E]That pot would make a good helmet.
+77152	[E]You should give the pot to the Fettucini Brothers.
+77648	[E]You should find a helmet.
+77680	[E]There might be something you can use as a helmet in town.
+77744	[E]You should check the SCUMM Bar kitchen for a helmet.
+78544	[E]Now hunt around in the forest for the yellow flowers.
+78608	[E]Go to the path at the top of the screen.
+79104	[E]You should pick those yellow flowers!
+79344	[E]Use the map to look for the treasure.
+79392	[E]Follow the directions listed on the map to find the treasure.
+79920	[E]You should go find a treasure map. 
+79968	[E]Go to town and find a map.  
+80400	[E]You need a shovel to dig up the treasure.  
+80448	[E]You can probably buy a shovel in town. 
+80496	[E]Go to the store and buy a shovel.
+81216	[E]You need to dig up the treasure.
+81264	[E]Use the shovel with that big X on the ground.
+81696	[E]You need a sword before you can challenge the Sword Master.
+81760	[E]You need to go back to the store and buy a sword.
+82352	[E]You should show the note to the Sword Master to see if she'll join your crew.
+82832	[E]You should show the note to the Sword Master to see if she'll join your crew.
+83312	[E]You should try to convince Captain Smirk to train you to sword fight. 
+83392	[E]You have to covince him you have what it takes.
+83440	[E]Tell him over and over that you have what it takes.
+84288	[E]You need to get out of the water quick. 
+84336	[E]Can you pick up something to let you escape? 
+84384	[E]You should try picking up the fabulous idol.
+85120	[E]You need to find something to give to the troll. 
+85184	[E]You should ask the troll what kind of things he wants.
+85712	[E]You have something that the troll would accept.
+85760	[E]You should give the troll the red herring.
+86208	[E]You should see if Meathook wants to be in your crew.
+86272	[E]Touch his fearsome beast and he will join your crew.
+86880	[E]Can you unlock that cabinet?
+86912	[E]You have a key that you could use to unlock the cabinet.
+86976	[E]Use the small key in the cabinet.
+87664	[E]You should open that metal chest.
+87712	[E]Open the metal chest in the cabinet and look at it.
+87776	[E]Open the metal chest, then Look at the metal chest.
+88528	[E]You should take that feather and ink. 
+88768	[E]You should check out some of these chests.
+88816	[E]The chest in the bottom right corner has an ingredient.
+88880	[E]Open the chest in the bottom right corner and then Look at it to get the ingredient.
+89792	[E]You should check those kegs.
+89824	[E]The kegs are full of gunpowder.
+89856	[E]You're going to need some of that gunpowder.
+90464	[E]Cannons need gunpowder to fire.
+90496	[E]Take more of that gunpowder.
+90912	[E]You need a fuse for the cannon.
+90944	[E]Pick up that rope to use as a fuse.
+91392	[E]The next thing on the list is a Human Skull (pressed).
+91456	[E]You should take that pirate flag.
+91968	[E]You should check in some of those cupboards.
+92016	[E]Click open on the cupboard.
+92048	[E]Take some of that cereal in the cupboard.
+92672	[E]You should grab that pot. 
+92704	[E]You'll need that pot to use as a helmet.
+93120	[E]You should burn some of the paper you have in the fire under the pot.
+93536	[E]You need a helmet if you're going to shoot yourself out of a cannon. 
+93616	[E]Pick up that small pot on the counter.  
+94160	[E]You need to put the gunpowder in the cannon.
+94208	[E]You need to put the gunpower in the cannon nozzle, the front part of the cannon.
+94304	[E]Use the gunpowder with the cannon nozzle.
+95088	[E]You can use that rope as a fuse in the cannon.
+95136	[E]Use the rope with the back of the cannon
+95632	[E]You are ready to fire the cannon. 
+95680	[E]Stand by the cannon and Use the Pot.  
+96128	[E]That rope looks strong.
+96160	[E]You will probably need that rope.
+96208	[E]Pick up the rope.
+96656	[E]That cannon looks interesting.  
+96704	[E]You should pull that cannon to see if it still works.
+96768	[E]Pull the cannon.
+97312	[E]That gunpowder on the ground looks like it could come in handy.
+97376	[E]Pick up that gunpowder.
+97760	[E]I bet that cannonball will come in handy.
+97808	[E]Pick up the cannonball.
+98192	[E]You need to figure out a way to destroy that dam to divert the river. 
+98272	[E]You should put that gunpowder on the dam.
+98320	[E]Put the gunpowder on the dam and figure out a way to ignite it.
+99264	[E]You need to figure out a way to light the gunpowder.
+99328	[E]Maybe there is something back in Herman's fort on the volcano that can help.
+99408	[E]Go to the fort on the volcano and pick up all the items.
+100288	[E]You should pick up that interesting looking rock.
+100352	[E]You should pick up that rock on top of the note. 
+100880	[E]Do you have anything that you can use to create a spark?
+100944	[E]The noteworthy rock you have can be used with the cannonball to make a spark.
+101712	[E]You might be able to use that lens to light the gunpowder.
+101776	[E]You should be able to focus the sunlight with the lens to light the gunpowder.
+101856	[E]Use the sun with the lens to light the gunpowder.
+102832	[E]That spyglass might be able to help you light the gunpowder.
+102896	[E]You'll have to get the spyglass lens out first.
+102944	[E]Open the spyglass to get the lens. 
+103712	[E]Now that the pond is full, you can reach that rope.
+103776	[E]You should pick up that rope.
+104224	[E]The primitive art is set perfectly, go up the footholds and push the rock.
+104688	[E]You should experiment with different facings to see where the rock lands.
+104768	[E]Pull or push the primitive art so that it is pointing mostly at Guybrush.
+105536	[E]You should experiment with different facings to see where the rock lands.
+105616	[E]Pull or push the primitive art so that it is pointing mostly at Guybrush.
+106384	[E]You don't have the primitive art aimed correctly yet. 
+106448	[E]Go down and pull/push the primitive art to aim it.
+107056	[E]You don't have the primitive art aimed correctly yet. 
+107120	[E]Go down and pull/push the primitive art to aim it.
+107728	[E]You need to get another big rock.
+107776	[E]Get another big rock from the heap o' rocks.
+107824	[E]Pickup the heap o' rocks.
+108400	[E]You have the primitive art set correctly, you should push that rock.
+108816	[E]You should figure out a way to get down to those oars.
+108880	[E]Maybe look around for a rope.
+109360	[E]I wonder if there is a way to get down to those oars.
+109424	[E]You should tie the rope to that strong branch.
+109472	[E]Use the rope with the strong branch.
+110224	[E]You need to tie the next rope to something to reach the oars.
+110288	[E]You should tie the rope to that sturdy stump.
+110336	[E]Use the rope with the sturdy stump.
+111104	[E]Can you attach the ropes to something sturdy to lower yourself down to the oars?
+111536	[E]You should be able to climb down and reach the oars now. 
+111600	[E]Pick up the oars.
+112032	[E]I bet that banana will be useful later.
+112080	[E]You should pick up that banana.
+112512	[E]You should use these oars with the rowboat.
+112768	[E]You should get back to the ghost ship!
+113024	[E]You should get some of that fruit.
+113072	[E]Pick up those bananas in the bowl of fruit. 
+113488	[E]Do you have something that would tell the cannibals how to get a new head?
+113568	[E]You have some leaflets that might help.
+113616	[E]Give the cannibals the leaflet about "Getting Ahead in Navigating"
+114576	[E]You should try moving things around in here to see if you can find an exit.
+114656	[E]You should pick up that skull.
+115184	[E]Picking up the skull revealed a loose board.
+115232	[E]Pick up the loose board and escape through the hole.
+115792	[E]Picking up that loose board revealed a hole.
+115840	[E]Walk to the hole to escape the hut.
+116352	[E]If you give that monkey something, he might follow you.
+116416	[E]Give the monkey some bananas.  Monkeys like bananas.
+116480	[E]You need to give the monkey a total of 5 bananas.
+117280	[E]Pull the nose to show the monkey how to open the gate.
+117648	[E]Now that you have the Monkey Head key, you can open the monkey head!
+117728	[E]Use the Monkey Head key with the giant monkey's ear.
+117792	[E]Use the monkey head key (cotton swab) with the Giant Monkey Ear.
+118848	[E]I bet the cannibals would like one of these idols.
+118912	[E]You should pick up the wimpy little idol.
+119456	[E]The head of the navigator can help you find your way through the maze.
+119536	[E]Use the head of the navigator.
+120032	[E]The head of the navigator can help you find your way through the maze.
+120112	[E]Stop walking and see which direction the head is facing, then walk that way.
+120944	[E]You are going to need something to help you find your way around.
+121024	[E]Go to the village and ask the cannibals if they can help you.
+121568	[E]You might be able to use the necklace to hide yourself from the ghosts.
+121648	[E]You should ask the head of the navigator for the necklace.
+121712	[E]You might need to beg the head of the navigator for the necklace.
+122704	[E]You can put on the necklace now.
+122752	[E]Use the necklace and then walk onto the ghost ship..
+123232	[E]You have the root, now take it back to the village!
+123520	[E]You have the root, now take it back to the village!
+123808	[E]Those tools look useful.
+123840	[E]You should take the ghost tools.
+123888	[E]Pick up the ghost tools.
+124448	[E]You have the root, now take it back to the village!
+124736	[E]You need to get that ghost key away from the captain.
+124800	[E]The key is probably made of metal.
+124848	[E]You can use the compass as a magnet to attract the key.
+124912	[E]Use the compass with the ghost key.
+125872	[E]You have the root, now take it back to the village!
+126160	[E]You should be able to get that jug now.
+126208	[E]Pick up the jug of grog.
+126608	[E]You should see if you can get that jug away from the sleeping ghost. 
+126688	[E]I bet you could use that feather to tickle his feet.
+126752	[E]Use the feather with the sleeping ghost's feet.
+126800	[E]Make sure you're using the feather with his feet and not his body.
+128048	[E]You should see if you can get that jug away from the sleeping ghost. 
+128128	[E]I bet if you had something to tickle him with, he would drop the jug without waking up.
+128992	[E]You have the root, now take it back to the village!
+129280	[E]You should see if you can pick up that chicken.
+129328	[E]Maybe you should try to get a feather from that chicken.
+129392	[E]Pick up the ghost chicken to get a feather.
+130176	[E]You can unlock that hatch.
+130208	[E]Use the ghost key on the hatch to unlock it.
+130672	[E]You have the root, now take it back to the village!
+130960	[E]That ghost rat looks hungry, you have something that it might like.
+131040	[E]Pour some grog into the rat's dish.
+131616	[E]You should *yuck* take some of that grease.
+131664	[E]Pick up the grease.
+132064	[E]You have the root, now take it back to the village!
+132352	[E]You need to move the grog from one mug to another before it melts.  
+132432	[E]Take the grog to the jail, but don't let the mug melt before you move the grog to a new mug.
+133328	[E]Do you have something Otis can use to scare off rats?
+133392	[E]You should see if the Gopher Repellent works for Otis. 
+133456	[E]Give the Gopher repellent to Otis.
+134192	[E]You should explore the ship.
+134224	[E]Check out the ship's galley for some useful items.
+134720	[E]You should check inside that cereal box.
+134768	[E]Open the cereal box.
+135200	[E]You should open that prize to see what it is.
+135248	[E]Open the prize.
+135616	[E]You should find a place to use that key.
+135664	[E]You should use that key in the cabinet in the Captain's quarters.
+136256	[E]The first thing on the recipe is cinnamon sticks.  
+136320	[E]You should put the cinnamon sticks into the cooking pot.
+136384	[E]Use the cinnamon sticks with the cooking pot.
+137136	[E]The second thing in the recipe is Leaves of Mint.
+137200	[E]You should put the breath mints in the cooking pot.
+137264	[E]Use the breath mints with the cooking pot.
+137984	[E]The next thing on the list is a Human Skull (pressed).
+138048	[E]You should go check the Crow's Nest.
+138560	[E]Do you have something like Human Skull (pressed)?
+138624	[E]You should put the pirate flag in the cooking pot.
+138688	[E]Use the pirate flag with the cooking pot. 
+139440	[E]The next thing on the list is a squirt of Squid Ink.
+139504	[E]Go search the ship for something like squid ink.
+139568	[E]Go the captain's quarters and pick up the ink from the desk.
+140480	[E]Do you have something like squid ink? 
+140528	[E]You have ink, which is similar to squid ink.
+140576	[E]Use the ink with the cooking pot.
+141280	[E]The next thing on the list is Monkey Blood.
+141328	[E]Go search the ship for something like monkey blood.
+141392	[E]Go to the hull of the ship and find the chest with wine in it. 
+142224	[E]Do you have something like monkey blood? 
+142272	[E]You have wine, which is red and thick like blood.
+142336	[E]Use the wine with the cooking pot.
+143024	[E]The next thing on the list is a live chicken.
+143072	[E]Do you have something like a chicken?
+143120	[E]Use the rubber-chicken-with-a-pulley-in-the-middle with the cooking pot.
+143920	[E]The next thing on the list is Brimstone.
+143968	[E]Brimstone is sulfur, and sulfur is used to make gunpowder.
+144032	[E]Go to the hull of the ship and get more gunpowder.
+144848	[E]Do you have something like brimstone?
+144896	[E]Brimstone is sulfur, and sulfur is used to make gunpowder.
+144960	[E]Use the gun powder with the cooking pot.
+145680	[E]Do you have something that contains a bunch of chemicals and food additives?
+145760	[E]Use the cereal with the cooking pot.
+146336	[E]The door to the hut is open now.
+146384	[E]The hut is open now, you should go in there and get the banana picker.
+146976	[E]I wonder if there is a way to get more bananas out of that tree?
+147056	[E]You should go check around the island and see if there is something you can do to get more bananas.
+147920	[E]I bet that banana will be useful later.
+147968	[E]You should pick up that banana.
+148400	[E]I bet that banana will be useful later.
+148448	[E]You should pick up that banana.
+148880	[E]You should take these bananas to that monkey in the jungle.  
+149216	[E]Now that the door is open, you can take out the banana picker.
+149280	[E]You should pick up that banana picker and find Herman Toothrot.
+149952	[E]You should go find look around for a way to get more bananas. 
+150016	[E]Maybe getting a view of the island from that hilltop will help.
+150080	[E]Go to the fork and climb to the top of that hill.
+151024	[E]You need to find a way to get down to retrieve the rowboat's oars.
+151104	[E]Maybe you can find a rope to lower yourself down.
+151168	[E]Head to the fort on the volcano to see if you can find a rope.
+152096	[E]You should take this rope to the crack and use it to reach the oars.
+152176	[E]Take the rope to the crack.
+152672	[E]You need to find another rope. 
+152704	[E]Maybe you can find a rope at the pond.
+153104	[E]You need to find a way to blow the dam to fill the river and reach that rope.
+153184	[E]You need to find a way to blow the dam.  Look for supplies at Herman's fort.
+154064	[E]That gunpowder that fell out of the cannon at the fort would be perfect.
+154144	[E]Pick up that gunpowder in Herman's fort.
+154688	[E]You need to find something to make a spark. 
+154736	[E]You should grab that cannonball from the fort.
+155232	[E]This dam looks like it could be destroyed if you had the right tools.
+155312	[E]You should try to find some more gunpowder to destroy this dam.
+155376	[E]Look in the fort on the volcano for gunpowder and a way to blow it up.
+156480	[E]You need to figure out a way to destroy that dam to divert the river. 
+156560	[E]You should put that gunpowder on the dam.
+156608	[E]Put the gunpowder on the dam and figure out a way to ignite it.
+157552	[E]You need to figure out a way to light the gunpowder.
+157616	[E]Maybe there is something back in Herman's fort on the volcano that can help.
+157696	[E]Go to the fort on the volcano and pick up all the items.
+158576	[E]You need to go to the river fork and blow the dam.
+158928	[E]Now that the pond is full, you can reach that rope.
+158992	[E]You should head to the pond and pick up that rope.
+159568	[E]You should take this rope to the crack and use it to reach the oars.
+159648	[E]Take the rope to the crack.
+160144	[E]The primitive art is set perfectly, go up the footholds and push the rock.
+160608	[E]You hit that banana tree on the beach.  You go down there and collect the bananas!
+161056	[E]You should be able to climb down and reach the oars now. 
+161120	[E]Pick up the oars.
+161552	[E]You should take these oars back to the rowboat on the beach.
+161616	[E]Take the oars back to the rowboat on the beach.
+162128	[E]You might have something to offer to the cannibals now.
+162192	[E]You should give the cannibals the wimpy little idol.
+162768	[E]You should find Herman Toothrot and return his banana picker. 
+163168	[E]Row the boat to the north end of the island and look for a beach to land.
+163248	[E]Use the rowboat to travel to the beach on the north side of the island and look for the village.
+164080	[E]You should use the boat to explore the other side of the island.
+164160	[E]Use the rowboat to travel to a beach on the north end of the island.
+164816	[E]You should go inside the giant monkey!
+165056	[E]You need to go to the cannibals and see if they can help you navigate through hell.
+165536	[E]If you give that monkey something, he might follow you.
+165600	[E]Give the monkey some bananas.  Monkeys like bananas.
+165664	[E]You need to give the monkey a total of 5 bananas.
+166464	[E]The monkey is following you now, you should see if he can help you.
+166544	[E]Take the monkey to the clearing on the east side of the island.
+167136	[E]Now that you have the Monkey Head key, you can open the monkey head!
+167216	[E]Use the Monkey Head key with the giant monkey's ear.
+167280	[E]Use the monkey head key (cotton swab) with the Giant Monkey Ear.
+168336	[E]You should look around for something to give the cannibals.
+168672	[E]The head of the navigator can help you find your way through the maze.
+168752	[E]Head back inside the giant monkey head and use the head of the navigator.
+169488	[E]You might be able to use the necklace to hide yourself from the ghosts.
+169568	[E]You should ask the head of the navigator for the necklace.
+169632	[E]You might need to beg the head of the navigator for the necklace.
+170624	[E]You can put on the necklace now.
+170672	[E]Use the necklace and then walk onto the ghost ship..
+171152	[E]The monkey is following you now, you should see if he can help you.
+171232	[E]Go to the clearing on the east side of the island.
+171760	[E]You need a way to unlock that hatch.
+171808	[E]You should look around the ship for a key to open that hatch.
+172416	[E]You need to find a way to open that crate.
+172464	[E]Look around for some tools or something to open that crate.
+172992	[E]Do you have something to make that door stop squeaking?
+173056	[E]How about trying the grease on the door?
+173104	[E]Use the grease on the door to stop it from squeaking.
+173920	[E]You need something to make that door stop squeaking.  
+173984	[E]Look around the ship for something that will make the door stop squeaking.
+174672	[E]Now that you're wearing the necklace, you can get onto the ghost ship.
+175040	[E]You can have the captain's key, try to find something it unlocks!
+175456	[E]Is there something you can do with that feather?
+175520	[E]You should take that feather back to the crew's quarters.
+176080	[E]You can use the tools to open the crate.
+176352	[E]Check in the crate for the root.
+176400	[E]Look at the crate to get the root.
+176832	[E]That ghost rat looks hungry and thirsty.  Maybe you can find something to feed it.
+176928	[E]If you had something to feed the rat, maybe it would leave you alone.
+177760	[E]You should go check to make sure everyone is all right.
+177824	[E]You should head up to the deck to make sure everyone is all right.
+178480	[E]You might be able to use that cannon to shoot yourself to the beach.
+178560	[E]Cannons need gunpowder to fire.
+178592	[E]You need to get some more gunpowder from the hull of the ship.
+179456	[E]You need a fuse for the cannon.
+179488	[E]You can get a rope you can use as a fuse. 
+179536	[E]Look in the hull of the ship for a rope.
+180192	[E]You need a way to light the fuse.
+180240	[E]Maybe you can find something in the galley to light the fuse.
+180304	[E]Go into the galley (the ship's kitchen) and light papers on fire.
+181200	[E]You need a helmet if you're going to shoot yourself out of a cannon. 
+181280	[E]Check the ship for something you can use as a helmet.
+181344	[E]Go into the galley (the ship's kitchen) and get the pot to use as a helmet.
+182384	[E]You have everything you need to fire the cannon.  
+182448	[E]Go to the deck and use the cannon.
+182928	[E]You should get back to the SCUMM Bar and talk to the pirate leaders!
+183312	[E]You have your crew and a ship, go meet Stan at the dock.
+183664	[E]You need to find people for your crew.
+183712	[E]You should see if Carla the Sword Master will join your crew.  
+183776	[E]Go to the Sword Master's and ask her to join the crew.
+184656	[E]You need something to help you slide on that cable to the small island..
+184736	[E]Maybe a Rubber-Chicken-With-A-Pulley-In-The-Middle would do the trick.
+184816	[E]You can get a Rubber-Chicken-With-A-Pulley-In-The-Middle from the Voodoo Lady in town.
+186016	[E]You need to find more people for your crew.
+186064	[E]There is a big strong pirate living on the tiny island in the northeast corner of the island, you should try to recruit him.
+186864	[E]You need to find one more person for your crew.
+186912	[E]Maybe Otis, the prisoner, would make a good addition to your crew. 
+186992	[E]You can try to recruit Otis, but you need to get him out of jail first.
+187936	[E]You need to break Otis out of jail.
+187984	[E]Maybe you can find something to melt through Otis's lock.
+188048	[E]Get mugs and grog from the SCUMM Bar and use the grog to melt the lock.
+188992	[E]You need to try to buy the inexpensive ship. 
+189040	[E]Trying to talk Stan's price down by telling him you don't want the extras.
+189120	[E]After declining all of the extras, Stan will lower the price more each time you tell him you're leaving (3 times). 
+190368	[E]You can get a line of credit from the storekeeper in town.
+190720	[E]You have your crew, now you need a ship.
+190768	[E]Go to Stan's Used Ships and buy a ship.
+190816	[E]You should see how much Stan wants for a ship.
+191600	[E]You should find some pirates to ask about becoming a pirate.
+191664	[E]You should go to the SCUMM bar and ask pirates about being a pirate.
+192384	[E]You should take that pot back to the circus and show it to the Fettucini brothers.
+192832	[E]You should find a helmet.
+192864	[E]There might be something you can use as a helmet in town.
+192928	[E]You should check the SCUMM Bar kitchen for a helmet.
+193728	[E]Maybe you can get a job from someone. 
+193776	[E]Go check out that clearing on the island for possible work.
+193840	[E]Go check out that clearing on the island for possible work.
+194624	[E]Maybe you can get a job from someone. 
+194672	[E]Go check out that clearing on the island for possible work.
+195200	[E]You should see if there is something the Piranha Poodles would like to eat.
+195280	[E]Check in the SCUMM Bar kitchen for something to feed the piranha poodles.
+196080	[E]You should see if there is something the Piranha Poodles would like to eat.
+196160	[E]Check in the SCUMM Bar kitchen for something to feed the piranha poodles.
+196960	[E]You need to drug this meat with something.
+197008	[E]The rare, yellow, Caniche Endormi flower in the forest can make the poodles sleep.
+197104	[E]Go to the Fork, and hunt in the forest for the yellow flowers.
+198048	[E]You should poison that meat with something in your inventory.
+198112	[E]You should use those yellow flowers with the meat.
+198176	[E]Use the yellow flowers with the meat to make poisoned meat.
+199040	[E]You have everything you need to drug the Governor's pirahna poodles.
+199120	[E]Head to the Governor's mansion. 
+199712	[E]You should hunt around the ship for ingredients listed in the recipe.
+200112	[E]You should open the door and go into the mansion.
+200176	[E]Go into the mansion and find the idol.
+200656	[E]You've got the file, you should get back to the Governor's Mansion.
+201024	[E]That cake seems very heavy.
+201056	[E]Maybe you should check inside it.
+201104	[E]You should try to open the cake.
+201696	[E]Do you have something Otis can use to scare off rats?
+201760	[E]You should see if the Gopher Repellent works for Otis. 
+201824	[E]Go to the jail and give the Gopher repellent to Otis.
+202656	[E]You should find something to freshen the prisoner's breath.
+202720	[E]Maybe you can buy some breath mints from someone.
+202784	[E]You can buy some breath mints at the store in the village.
+203712	[E]You should take those breath mints to the prisoner and see if he can help you.
+203792	[E]Take those breath mints back to the prisoner in the jail in the village.
+204544	[E]You need to find a file.
+204576	[E]Maybe someone has a file in the village.
+204624	[E]Go to the prison and ask the prisoner if he has a file.
+205312	[E]You should get a sword.
+205344	[E]You might be able to get a sword in the village.
+205760	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
+206320	[E]You probably have enough insults to beat the swordmaster. 
+206720	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
+207280	[E]You probably have enough insults to beat the swordmaster. 
+207344	[E]You need someone to show you where the Sword Master lives.
+207408	[E]Ask the storekeeper in the village where the Sword Master lives.
+208400	[E]You should fight some pirates to learn new insults.
+208464	[E]Once you know enough insults and retorts you should fight the swordmaster.
+209280	[E]You need to find something to give to the troll. 
+209344	[E]He wants something that will attract attention, but have no real importance like a "red herring".
+209456	[E]You should get that red herring from the SCUMM Bar kitchen.
+210448	[E]You have something that the troll would accept.
+210496	[E]You should give the troll the red herring.
+210544	[E]Go to the bridge and give the troll the red herring.
+211232	[E]You need to find someone to train you to sword fight.
+211296	[E]You should get Captain Smirk to train you in the house on the east side of the island.  
+212048	[E]You need to find someone to train you to sword fight.
+212112	[E]You should get Captain Smirk to train you in the house on the east side of the island.  
+212864	[E]You should try to find a treasure map.
+212912	[E]Maybe you can buy a map in town
+212944	[E]You can buy a map from the Shifty Citizen in the village.
+213696	[E]You should use the map to find the treasure
+213744	[E]Start looking for the treasure at the fork
+214192	[E]You should get a shovel
+214224	[E]You might be able to get a shovel at the store.
+214640	[E]You need more money to complete the trials.
+214688	[E]You need to find a job to get money.
+214736	[E]Go to the clearing from the map to get a job.
+215504	[E]You need more money to complete the trials.
+215552	[E]You need to find a job to get money.
+215600	[E]Go to the clearing from the map to get a job.
+216368	[E]You should get a sword or a shovel.
+216416	[E]You might be able to get supplies at the store in the village.
+216976	[E]Follow the directions on the map to find the treasure.  
+217040	[E]Start at the fork and go the direction listed on the map.  
+217696	[E]Take the credit note to Stan.
+217888	[E]You need to go to the storekeeper and get a credit note.

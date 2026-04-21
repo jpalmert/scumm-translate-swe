@@ -39,12 +39,16 @@ internal/
     bitmaps/                    Swedish glyph BMP source files — committed to git
     gen/                        Generated .bin files — gitignored; run scripts/build.sh to populate
   font/                         SE .font glyph lookup table patcher
+  uitext/                       SE uiText.info reader/writer/patcher (menu/overlay strings)
+  hints/                        SE hints binary reader/writer/patcher (hint system strings)
 
 
 games/
   monkey1/
     translation/                Committed — MI1 translation data
       swedish.txt               Swedish translation (4437 strings, scummtr format)
+      uitext_swedish.txt        SE UI/menu text Swedish translation (tab-separated)
+      hints_swedish.txt         SE hint text Swedish translation (tab-separated)
       TRANSLATE_TABLE           Swedish character code mappings
       PASS1_NOTES.md            Insult swordfighting translation notes
       annotations.md            Per-string translation annotations
@@ -71,6 +75,8 @@ tools/                          Python utilities (see tools/README.md for usage)
   decode_object.py              Decode SCUMM v5 object images → PNG (called by extract_assets.sh)
   find_dynamic_names.py         Extract runtime name-change mapping from SCUMM scripts (standalone)
   calc_padding.py               Apply @ padding to swedish.txt for SE name buffers (called by build.sh)
+  extract_uitext.py             Extract SE UI text from uiText.info (called by extract_assets.sh)
+  extract_hints.py              Extract SE hint text from PAK (called by extract_pak.sh)
   pak.py                        PAK extractor/repacker (standalone)
   patch_verbs.py                Verb button coordinate patcher (standalone)
   scumm_gfx.py                  Shared SCUMM v5 graphics codec library
@@ -115,7 +121,8 @@ bash scripts/extract.sh monkey1                        # or cd games/monkey1 && 
 ```
 
 This populates `games/monkey1/gen/` with CHAR blocks, BMPs, English dialog strings,
-room background PNGs, and object image PNGs.
+room background PNGs, and object image PNGs. For SE PAK input, it also extracts
+SE hint text and UI menu text to `gen/strings/`.
 
 ### Build the patcher
 

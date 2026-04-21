@@ -3,6 +3,24 @@
 Standalone Python 3 tools for inspecting MI1SE files. `decode_room.py` and `decode_object.py`
 are called automatically by `scripts/extract_assets.sh`; the others are standalone.
 
+## extract_uitext.py — SE UI text extractor
+
+Extracts English menu/overlay strings from a `uiText.info` file (SE-specific
+UI text outside the PAK). Called by `scripts/extract_assets.sh`.
+
+```bash
+python3 tools/extract_uitext.py localization/uiText.info output.txt
+```
+
+## extract_hints.py — SE hint text extractor
+
+Extracts English hint strings from the `hints/monkey1.hints.csv` entry inside
+the PAK archive. Called by `scripts/extract_pak.sh`.
+
+```bash
+python3 tools/extract_hints.py Monkey1.pak output.txt
+```
+
 ## pak.py — PAK archive extractor/repacker
 
 Inspect and unpack the MI1SE PAK archive, or repack a modified directory back into a PAK.

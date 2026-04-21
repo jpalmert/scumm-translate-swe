@@ -40,4 +40,13 @@ cp "$WORK/pak/classic/en/monkey1.001" "$GAME_GAME/MONKEY1.001"
 
 echo "  -> $GAME_GAME/MONKEY1.000"
 echo "  -> $GAME_GAME/MONKEY1.001"
+
+# --- Extract SE hint text ---
+echo ""
+echo "=== Extracting SE hint text ==="
+HINTS_OUT="$GAME_GEN/strings"
+mkdir -p "$HINTS_OUT"
+python3 "$REPO_ROOT/tools/extract_hints.py" "$PAK" "$HINTS_OUT/hints_english.txt"
+
+echo ""
 echo "Done."

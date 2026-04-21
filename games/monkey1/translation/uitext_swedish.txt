@@ -1,0 +1,128 @@
+# SE UI Text Swedish Translation
+# Format: KEY<TAB>Swedish text (or [E]English text if untranslated)
+#
+MENU_ACHIEVEMENTS	[E]Achievements
+MENU_SAVESLOT_LOAD_CONFIRM	[E]Are you sure you want to load from this save slot?
+MENU_SAVESLOT_OVERWRITE	[E]Are you sure you want to overwrite this save slot?  All progress in this save slot will be lost.
+MENU_QUIT_TO_MAIN	[E]Are you sure you want to quit to the main menu?
+MENU_BACK	[E]Back
+MENU_CLASSIC_EDITION_CREDITS	[E]Classic Edition Credits
+MENU_CONTINUE_WITHOUT_SAVE	[E]Continue Without Saving
+MENU_CONTROLS	[E]Controls
+MENU_CREATE_NEW_SAVE_DATA	[E]Create New Save Data
+MENU_WARNING_DO_NOT_TURN_OFF_XBOX	[E]Do not turn off the Xbox 360 Console or remove the Storage Device whenever you see the icon above on screen.
+MENU_EXIT_GAME	[E]Exit Game
+MENU_FAILED_TO_SAVE	[E]Failed to Save
+MENU_HELP_AND_OPTIONS	[E]Help & Options
+MENU_HOW_TO_PLAY	[E]How To Play
+MENU_LEADERBOARDS	[E]Leaderboards
+MENU_LOAD_GAME	[E]Load Game
+MENU_WARNING_LOADING_GAME	[E]Loading game. Please don't turn off your Xbox 360 console.
+MENU_MONKEY_ISLAND_TITLE_NAME	[E]Monkey Island
+MENU_MUSIC_VOLUME	[E]Music Volume
+MENU_WARNING_NO_STORAGE_SELECTED	[E]No Storage device has been selected.  Please select a Storage device or choose to continue without saving.
+MENU_OK	[E]OK
+MENU_WARNING_CHOOSE_STORAGE_SPACE_NEEDED	[E]Please choose a Storage device with at least %iKB free or you will be unable to save.
+MENU_WARNING_QUIT_WITHOUT_SAVE	[E]Quitting without saving will result in the loss of unsaved progress.
+MENU_RETRY_LOAD	[E]Retry Load
+MENU_RETURN_TO_GAME	[E]Resume Game
+MENU_WARNING_SAVE_DATA_NOT_FOUND	[E]Save Data was not found on the Storage device.  Would you like to create new save data or continue without saving?
+MENU_SAVE_GAME	[E]Save Game
+MENU_SAVE_GAME_DAMAGED	[E]Saved game appears to be damaged and cannot be used.
+MENU_WARNING_SAVING_CONTENT	[E]Saving content. Please don't turn off your console
+MENU_SELECT	[E]Select
+MENU_SELECT_STORAGE	[E]Select A Storage device
+MENU_SETTINGS	[E]Settings
+MENU_SFX_VOLUME	[E]SFX Volume
+MENU_SPECIAL_EDITION_CREDITS	[E]Special Edition Credits
+MENU_SUBTITLES	[E]Subtitles
+MENU_VOICE_VOLUME	[E]Voice Volume
+MENU_YES	[E]Yes
+MENU_WARNING_360_NOTSIGNEDIN	[E]You are not signed into Xbox LIVE and can not access the Leaderboards.
+MENU_WARNING_INVALID_STORAGE_SELECTED	[E]You do not have a valid Storage device selected. If you choose to proceed, you will be unable to save your progress in the game.
+MENU_WARNING_NO_ACTIVE_GAMER_PROFILE	[E]You do not have an active gamer profile. Saving and achievements will be disabled. To create or load a gamer profile now, press the Xbox Guide button. Do you want to continue without saving and achievements?
+MENU_CANCEL	[E]Cancel
+MENU_EXIT	[E]Exit
+MENU_CHOOSE_LANGUAGE	[E]Choose your language
+MENU_AUTOSAVE_AND_QUIT	[E]Autosave and Quit
+MENU_QUIT_WITHOUT_SAVE	[E]Quit Without Saving
+MENU_NO	[E]No
+MENU_LEADERBOARD	[E]Leaderboard
+MENU_ON_UPPERCASE	[E]ON
+MENU_OFF_UPPERCASE	[E]OFF
+MENU_PLAY_NEW_GAME	[E]Play New Game
+MENU_CONTINUE_SLASH_LOAD	[E]Continue/Load
+MENU_RETURN_TO_GAME_LIBRARY	[E]Return To Game Library
+MENU_UNLOCK_FULL_GAME	[E]Unlock Full Game
+MENU_PRESS_A_TO_VIEW_LEADERBOARD	[E]Press A button to view this leaderboard
+MENU_RETRIEVING_RECORDS_LEADERBOARD	[E]Please wait, now retrieving records from Xbox LIVE
+MENU_TOTAL_NUM_PLAYERS_LEADERBOARD	[E]Total number of players:
+MENU_FRIENDS	[E]Friends
+MENU_OVERALL	[E]Overall
+MENU_MY_SCORE	[E]My Score
+MENU_RANK	[E]Rank
+MENU_GAMERTAG	[E]Gamertag
+MENU_COMPLETED	[E]Completed
+MENU_VIEW	[E]View
+MENU_GAMER_CARD	[E]Gamer Card
+MENU_EMPTY	[E]Empty
+MENU_AUTOSAVE	[E]Autosave:
+MENU_SLOT	[E]Slot
+MENU_WARNING_CANNOT_OVERWRITE_AUTOSAVE	[E]Warning - Autosave cannot be overwritten
+MENU_PART_ONE	[E]Part One: The Three Trials
+MENU_PART_TWO	[E]Part Two: The Journey
+MENU_PART_THREE	[E]Part Three: Under Monkey Island
+MENU_PART_FOUR	[E]The Last Part: Guybrush Kicks Butt
+MENU_PLAY_TIME	[E]Play Time:
+MENU_PERCENT_COMPLETE	[E]Percent Complete:
+MENU_DISCONNECTED_FROM_XBOX_LIVE	[E]Disconnected from Xbox LIVE
+MENU_PRESS_START	[E]Press START
+MENU_HOLD_TO_SKIP	[E]Hold [Y] To Skip
+MENU_HOLD_FOR_HINT	[E]Hold [X] For Hint
+MENU_NOT_RANKED	[E]You are not yet ranked on the leaderboard for this game.
+MENU_FRIENDS_NOT_RANKED	[E]Your friends are not yet ranked on the leaderboard for this game.
+MENU_NO_ENTRIES	[E]There are no entries on this leaderboard.
+MENU_ENTRIES	[E]entries
+MENU_ENTRY	[E]entry
+MENU_COULD_NOT_SAVE	[E]The data could not be saved on the selected storage device.
+LOADING	[E]Loading
+CREDITS_Deep In The Caribbean	[E]Deep In The Caribbean
+CREDITS_The Island of Mêlée	[E]The Island of Mêlée
+MENU_OVERWRITE	[E]Would you like to overwrite previous Monkey Island data?
+MENU_NO_CLASSIC_TRANSLATION	[E]Classic Edition is only available in English.
+MENU_FRONTEND_OPTIONS_AUDIO	[E]Audio Options
+MENU_FRONTEND_OPTIONS_VIDEO	[E]Video Options
+MENU_INGAME_SAVE_GAMESAVINGSHORT	[E]Saving
+OVERLAY_CURSOR	[E]Cursor
+OVERLAY_PRIMARY_SELECT	[E]Primary Select
+OVERLAY_DEFAULT_SELECT	[E]Default Select
+OVERLAY_HINT	[E]Hint
+OVERLAY_SKIP_CUTSCENE	[E]Skip Cutscene
+OVERLAY_VERBS	[E]Verbs
+OVERLAY_INVENTORY	[E]Inventory
+OVERLAY_MENU	[E]Menu
+OVERLAY_DIALOGUE_SELECTION	[E]Dialogue selection
+OVERLAY_OPEN	[E]Open
+OVERLAY_USE	[E]Use
+OVERLAY_PICK_UP	[E]Pick Up
+OVERLAY_PUSH	[E]Push
+OVERLAY_PULL	[E]Pull
+OVERLAY_CLOSE	[E]Close
+OVERLAY_LOOK_AT	[E]Look At
+OVERLAY_TALK_TO	[E]Talk To
+OVERLAY_SUBTITLE_SPEED	[E]Subtitle Speed(Classic)
+OVERLAY_OR	[E]Or
+OVERLAY_VERB_SHORTCUTS	[E]Verb Shortcuts
+OVERLAY_CLASSIC	[E](Classic)
+OVERLAY_VERSION_HOTSWAP	[E]Version Hotswap
+OVERLAY_GIVE	[E]Give
+MENU_RESOLUTION	[E]Resolution
+MENU_FULL_SCREEN	[E]Full Screen
+MENU_APPLY	[E]Apply
+MENU_SPECIAL_EFFECTS	[E]Special Effects
+MENU_AUDIO_INIT_FAIL	[E]Sound device failed to initialize or not found.
+MENU_FAIL_MIN_REQ	[E]Your machine failed to meet the minimum specification requirements.
+MENU_VIDEO_INIT_FAIL	[E]Graphics card does not meet the requirements.
+MENU_PROCESOR_FAIL_REQ	[E]Processor does not meet the requirements.
+MENU_APP_EXIT_NOW	[E]Application will now exit.
+MENU_ERR_CODE	[E]Code:

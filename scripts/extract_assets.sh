@@ -162,6 +162,14 @@ sed -i \
 
 echo "  -> $STR_OUT/english.txt ($(wc -l < "$STR_OUT/english.txt") lines)"
 
+# --- Extract SE UI text (uiText.info) ---
+UITEXT_SRC="$INPUT_DIR/localization/uiText.info"
+if [[ -f "$UITEXT_SRC" ]]; then
+    echo ""
+    echo "=== Extracting SE UI text ==="
+    python3 "$REPO_ROOT/tools/extract_uitext.py" "$UITEXT_SRC" "$STR_OUT/uitext_english.txt"
+fi
+
 # --- Decode room backgrounds (requires Pillow: pip install Pillow) ---
 echo ""
 echo "=== Decoding room backgrounds ==="
