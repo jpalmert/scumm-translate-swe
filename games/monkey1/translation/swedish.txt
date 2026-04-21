@@ -848,7 +848,7 @@
 [025:LSCR#0202](14)Det betyder att hans hud blir läderaktig och hans kött segt och trådigt.
 [025:LSCR#0202](14)Du är inte till någon nytta för oss, näringsmässigt sett, men...
 [025:LSCR#0202](14)Ja, ja. Vi vet.
-[025:LSCR#0202](14)Något?\255\003Hmmm...
+[025:LSCR#0202](14)Vad som helst?\255\003Hmmm...
 [025:LSCR#0202](14)Okej...
 [025:LSCR#0202](14)Visst, som du vill!
 [025:LSCR#0202](14)Ha!\255\003Vi går inte på det där gamla tricket IGEN.
@@ -867,7 +867,7 @@
 [025:LSCR#0203](14)För högteknologisk.
 [025:LSCR#0203](14)Ge mig ett gott gammaldags lösryckt huvud när som helst.
 [025:LSCR#0203](14) 
-[025:LSCR#0203](14)Vi kan inte ta det. Du har redan gett oss så mycket.
+[025:LSCR#0203](14)Vi kan inte ta emot det. Du har redan gett oss så mycket.
 [025:LSCR#0203](14)Vi uppskattar de naturliga fibrerna, men nej tack.
 [025:LSCR#0203](14)En gummikyckling med en trissa i mitten?\255\003Nej tack. Vi har redan en sådan.
 [025:LSCR#0203](14)Ledsen, vi har redan MASSOR av såna.
@@ -935,7 +935,7 @@
 [025:LSCR#0213](14)De där idioterna har tjatat på oss i månader!
 [025:LSCR#0213](14)Susar runt här i det där kusliga spökskeppet...\255\003...jämrar och stönar in på småtimmarna...
 [025:LSCR#0213](14)...skrämmer bort alla kryssningsfartyg.
-[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003brygger vi bara vår vanliga exorcismdryck och är klara med det.
+[025:LSCR#0213](14)Normalt, när vi har problem med de odöda,\255\003brygger vi bara vår vanliga exorcismdryck så fixar det sig.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](FA)Så varför gör ni inte det nu?
 [025:LSCR#0213](FA)Vad finns i er vanliga exorcismdryck?
@@ -3768,7 +3768,7 @@
 [075:VERB#0821](D8)Jag ser inget speciellt med den.\255\003Förutom den stora lysande voodoo-antiroten inuti.
 [075:VERB#0821](D8)Det här borde fungera...
 [075:VERB#0821](14)
-[075:VERB#0821](D8)Jag kan inte komma in i den.\255\003Den är spikad, kedjad, bultad, knuten, limmad och svetsad ihop.
+[075:VERB#0821](D8)Jag kan inte komma in i den.\255\003Den är spikad, kedjad, bultad, knuten, limmad och ihop svetsad.
 [075:VERB#0821](D8)Den är redan öppen.
 [075:OBNA#0821](__)lysande låda
 [075:OBNA#0822](__)passage
