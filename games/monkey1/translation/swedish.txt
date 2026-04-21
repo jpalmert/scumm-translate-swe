@@ -1069,7 +1069,7 @@
 [025:SCRP#0140](FA)Får jag snälla ha det halsbandet?
 [025:SCRP#0140](FA)Tack för att du ledde mig till spökskeppet.
 [025:SCRP#0140](FA)Tack igen för att du ledde mig till spökskeppet.
-[025:SCRP#0140](FA)Jo, det har varit trevligt. Jag sätter tillbaka dig nu.
+[025:SCRP#0140](FA)Det har varit trevligt, sätter tillbaka dig nu.
 [025:SCRP#0140](14)Hallå.
 [025:SCRP#0140](14)Är det något jag kan göra för dig?
 [025:SCRP#0140](14)Äh, inga problem.\255\003När man bara har ett jobb...\255\003gör man det bra. Förstår du vad jag menar?
