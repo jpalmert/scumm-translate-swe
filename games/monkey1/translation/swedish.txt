@@ -967,17 +967,17 @@
 [025:LSCR#0213](14)Och tills den där grinige gamla byxlöse knäppgöken lämnar tillbaka den, behåller vi hans bananplockare.
 [025:LSCR#0213](14)Ledsen, men det är inte så enkelt.\255\003Att försöka hitta LeChuck kan vara mycket farligt.
 [025:LSCR#0213](14)Du skulle aldrig hitta vägen genom katakomberna utan--
-[025:LSCR#0213](14)Stopp!\255\003Ixnay på Uvudethay av Avigatörenay!
+[025:LSCR#0213](14)Stopp!\255\003Nonejoj inontote Hohuvovudodetot!
 [025:LSCR#0213](D8)Va?
 [025:LSCR#0213](14)Ingenting.
 [025:LSCR#0213](14) 
 [025:LSCR#0213](14)Ingenting.
 [025:LSCR#0213](14) 
-[025:LSCR#0213](FA)Vad är Uvudethay av Avigatörenay?
-[025:LSCR#0213](FA)Varför pratar ni i kod?
-[025:LSCR#0213](FA)Arhar ier artay enon artakay övoveror atakombernanay?
+[025:LSCR#0213](FA)Vad är Hohuvovudodetot?
+[025:LSCR#0213](FA)Varför pratar ni rövarspråk?
+[025:LSCR#0213](FA)Hoharor noni enon kokarortota?
 [025:LSCR#0213](FA)Åh, kom igen. Berätta för mig. Jag gav er idolen.
-[025:LSCR#0213](14)Edsenay. Ejnay.
+[025:LSCR#0213](14)Nonejoj.
 [025:LSCR#0213](14)Det är en mycket fin idol.
 [025:LSCR#0213](14)Jag ser att han är förbryllad av vår infödda dialekt.\255\003Bra.
 [025:LSCR#0213](14)Vi kan åtminstone berätta vad huvudet gör.
@@ -2753,9 +2753,9 @@
 [045:LSCR#0200](14)Det hörde jag!
 [045:LSCR#0200](14)Va?
 [045:LSCR#0200](14)Jag tröttnar på dig.
-[045:LSCR#0200](94)Du ska aldrig mer hota hederliga, gripbara pirater, din svällande säck med...\255\003...med...\255\003...med nåt som börjar på 's'!
+[045:LSCR#0200](94)Du ska aldrig mer hota hederliga, levande pirater, din svällande säck med...\255\003...med...\255\003...med nåt som börjar på 's'!
 [045:LSCR#0200](14)Öh...\255\003...vänta lite nu, kompis...\255\003...jag bara skojade, fattar ni?\255\003...vi kan lösa det här som gentlemän...
-[045:LSCR#0200](D8)Åh nej!\255\003Den KLÄMMER!\255\003Måste vara fickludd.
+[045:LSCR#0200](D8)Åh nej!\255\003Den är IGENSATT!\255\003Måste vara fickludd.
 [045:LSCR#0200](14)
 [045:LSCR#0200](D8)Öh...\255\003...hörru du...\255\003...låt oss inte vara förhastade...
 [045:LSCR#0200](14)
@@ -3650,7 +3650,7 @@
 [070:LSCR#0208](14)Säg, Bob, du ser lite blek ut...
 [070:LSCR#0208](14)Tja, naturligtvis är jag blek.\255\003Jag är trots allt död.
 [070:LSCR#0208](14)Död?\255\003Hur hände det?
-[070:LSCR#0208](14)Åh, på vanligt sätt,\255\003ute på en dags plundring,\255\003spökskepp dyker upp,\255\003LeChuck dödar alla i besättningen,\255\003och skriver sen in oss på HANS skepp.\255\003Du vet.
+[070:LSCR#0208](14)Åh, det vanliga,\255\003ute på plundring,\255\003spökskepp dyker upp,\255\003LeChuck dödar alla i besättningen,\255\003och mönstrar på oss på HANS skepp.\255\003Du vet.
 [070:LSCR#0208](14)Oj, vad tråkigt.\255\003Kanske vill du följa med oss på vår jakt efter den perfekta solbrännan?
 [070:LSCR#0208](14)Tja, det vore trevligt, men jag försöker få skjuts till ett bröllop på Mêlée Island.\255\003™.
 [070:LSCR#0208](14)Vi var ändå på väg tillbaka dit.\255\003Du kan hänga på.
@@ -4369,7 +4369,7 @@
 [089:SCRP#0130](14)TM & (c) 1990 LucasArts Entertainment Company.
 [089:SCRP#0130](14)Alla rättigheter reserverade.
 [089:SCRP#0130](14)Stäng av datorn och gå och lägg dig!
-[089:SCRP#0138](14)Du vet, LeChuck var en pervers, vidrig, hal, krypande sorts kille, men en sak måste jag säga om honom...
+[089:SCRP#0138](14)Du vet, LeChuck var en motbjudande, jobbig, hal, obehaglig typ, men en sak måste jag säga om honom...
 [089:SCRP#0138](14)Vad då?
 [089:SCRP#0138](14)Han ser verkligen fin ut när han exploderar mot natthimlen.
 [089:SCRP#0138](14)Ja, det är väldigt romantiskt.

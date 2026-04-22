@@ -6,7 +6,7 @@ MENU_SAVESLOT_LOAD_CONFIRM	Vill du verkligen ladda från denna sparplats?
 MENU_SAVESLOT_OVERWRITE	Vill du verkligen skriva över denna sparplats? Alla framsteg i denna sparplats kommer att gå förlorade.
 MENU_QUIT_TO_MAIN	Vill du verkligen avsluta till huvudmenyn?
 MENU_BACK	Tillbaka
-MENU_CLASSIC_EDITION_CREDITS	Klassiska Utgåvans Upphovspersoner
+MENU_CLASSIC_EDITION_CREDITS	Klassiska Utgåvans Skapare
 MENU_CONTINUE_WITHOUT_SAVE	Fortsätt Utan Att Spara
 MENU_CONTROLS	Kontroller
 MENU_CREATE_NEW_SAVE_DATA	Skapa Ny Spardata
@@ -34,7 +34,7 @@ MENU_SELECT	Välj
 MENU_SELECT_STORAGE	Välj En Lagringsenhet
 MENU_SETTINGS	Inställningar
 MENU_SFX_VOLUME	Effektvolym
-MENU_SPECIAL_EDITION_CREDITS	Specialutgåvans Upphovspersoner
+MENU_SPECIAL_EDITION_CREDITS	Specialutgåvans Skapare
 MENU_SUBTITLES	Undertexter
 MENU_VOICE_VOLUME	Röstvolym
 MENU_YES	Ja
