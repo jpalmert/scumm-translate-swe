@@ -1,520 +1,520 @@
 # SE Hint Text Swedish Translation
 # Format: ADDR<TAB>Swedish text (or [E]English text if untranslated)
 #
-49744	[E]You need to use the root beer on LeChuck before he punches you again!
-50192	[E]You need more ghost dissolving root beer!
-50240	[E]Pick up the root beer at Stan's.
-50688	[E]You need to stop the wedding!
-50720	[E]Go to the church and stop the wedding!
-51104	[E]You should follow the storekeeper to the Sword Master's house.
-51488	[E]You should go to the SCUMM Bar.
-51520	[E]The SCUMM Bar is through the door, below the sign that says SCUMM Bar.
-51600	[E]Click Open on the Door and then click on the opening to walk through.
-52480	[E]You should ask some of these pirates about how to become a pirate.
-52560	[E]Talk to the important looking pirates in the right-hand room about becoming a pirate.
-53392	[E]You should try to get into the kitchen to see if you can find something to feed the piranha poodles.
-53504	[E]You should wait for the Cook to leave to sneak into the kitchen.
-53584	[E]You should wait for the Cook to leave off the left side of the room and then sneak in.
-54864	[E]You should feed this meat to the poodles.
-54912	[E]You should feed this meat to the poodles at the Govener's Mansion.
-55520	[E]You should try to scare off that seagull.
-55568	[E]If You walk near that seagull he might leave and You could get that fish
-55648	[E]If You walk to the end of that dock the plank will flip the bird away
-55728	[E]Walk to the loose plank at the end of the dock and flip the bird away so you can quickly grab the fish.  You may need to try a few times.
-57472	[E]You should try to get that fish.
-57520	[E]Open the door and pick up the fish. 
-57568	[E]Open the door between the kitchen and the dock.
-58192	[E]You should pick up that neat looking pot. 
-58240	[E]I bet that cool looking pot would make a good helmet.
-58800	[E]Maybe you could feed some of this food to the Governor's pirahhna poodles.
-58880	[E]You should pick up that hunk of meat for the poodles.
-59600	[E]You should get back in there and get the idol.
-59648	[E]Walk to that big hole in the wall.
-60080	[E]You should see if the idol is in one of these rooms.
-60144	[E]Try the room on the main floor with the double doors to find the idol.
-60832	[E]Do you have something that will help you slide on that cable?
-60896	[E]You should use the rubber-chicken-a-pulley-in-the-middle with the cable to slide across.
-61648	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
-62208	[E]You probably have enough insults to beat the swordmaster. 
-62608	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
-63168	[E]You probably have enough insults to beat the swordmaster. 
-63232	[E]You need someone to show you where the Sword Master lives.
-63296	[E]Ask the storekeeper in the village where the Sword Master lives.
-64288	[E]You should fight some pirates to learn new insults.
-64352	[E]Once you know enough insults and retorts you should fight the swordmaster.
-65168	[E]Do you have something to drug the dogs?
-65216	[E]You should feed the drugged meat to the dogs
-65712	[E]Now that the dogs are asleep, you can open the door and sneak in.
-66112	[E]Use the grog on the lock before the mug melts!
-66416	[E]You should talk to the prisoner.
-66656	[E]You should give the prisoner a breath mint. 
-66960	[E]You should keep an eye out for something to scare off Otis's rats.
-67360	[E]You should ask Otis to join your crew.
-67408	[E]You need to tell Otis about the Governor and ask him to help.
-68000	[E]You should figure out a way to break Otis out of jail
-68064	[E]Maybe you can find something to destroy the lock.
-68128	[E]You need to get some Grog from the SCUMM Bar kitchen to burn the lock.
-69104	[E]There might be something here that could be useful.
-69168	[E]You should take that swell chicken-with-a-pulley-in-the-middle. 
-69744	[E]You should see if someone here can sell you a treasure map.
-69808	[E]That shifty citizen with the parrot looks like he could have a map.
-69888	[E]You need to buy a treasure map from the shity citizen with the parrot.
-70976	[E]See if you can buy something to freshen the prisoner's breath.
-71040	[E]Maybe you should buy some breath mints
-71088	[E]You can buy some breath mints from the storekeeper.
-71952	[E]You should buy that sword from the storekeeper.
-72000	[E]Go pick up the sword and talk to the storekeeper.
-72496	[E]You should see if the storekeeper can help you find the Sword Master
-72576	[E]Ask the storekeeper about the Swordmaster, and then follow him when he goes to talk to her.
-73456	[E]You should buy that shovel from the storekeeper. 
-73520	[E]Go pick up the shovel and talk to the storekeeper.
-74016	[E]You should ask the storekeeper about getting a line of credit
-74080	[E]You should watch him carefully as he opens the safe and learn the combination.
-74160	[E]You should learn the combination to the safe and then ask him to talk to the swordmaster so he leaves and you can open the safe.
-75600	[E]You should check inside the circus tent on the left side of the clearing.
-75680	[E]Someone in the circus tent can give you a job.
-76352	[E]You should check inside the circus tent on the left side of the clearing.
-76432	[E]Someone in the circus tent can give you a job.
-77104	[E]That pot would make a good helmet.
-77152	[E]You should give the pot to the Fettucini Brothers.
-77648	[E]You should find a helmet.
-77680	[E]There might be something you can use as a helmet in town.
-77744	[E]You should check the SCUMM Bar kitchen for a helmet.
-78544	[E]Now hunt around in the forest for the yellow flowers.
-78608	[E]Go to the path at the top of the screen.
-79104	[E]You should pick those yellow flowers!
-79344	[E]Use the map to look for the treasure.
-79392	[E]Follow the directions listed on the map to find the treasure.
-79920	[E]You should go find a treasure map. 
-79968	[E]Go to town and find a map.  
-80400	[E]You need a shovel to dig up the treasure.  
-80448	[E]You can probably buy a shovel in town. 
-80496	[E]Go to the store and buy a shovel.
-81216	[E]You need to dig up the treasure.
-81264	[E]Use the shovel with that big X on the ground.
-81696	[E]You need a sword before you can challenge the Sword Master.
-81760	[E]You need to go back to the store and buy a sword.
-82352	[E]You should show the note to the Sword Master to see if she'll join your crew.
-82832	[E]You should show the note to the Sword Master to see if she'll join your crew.
-83312	[E]You should try to convince Captain Smirk to train you to sword fight. 
-83392	[E]You have to covince him you have what it takes.
-83440	[E]Tell him over and over that you have what it takes.
-84288	[E]You need to get out of the water quick. 
-84336	[E]Can you pick up something to let you escape? 
-84384	[E]You should try picking up the fabulous idol.
-85120	[E]You need to find something to give to the troll. 
-85184	[E]You should ask the troll what kind of things he wants.
-85712	[E]You have something that the troll would accept.
-85760	[E]You should give the troll the red herring.
-86208	[E]You should see if Meathook wants to be in your crew.
-86272	[E]Touch his fearsome beast and he will join your crew.
-86880	[E]Can you unlock that cabinet?
-86912	[E]You have a key that you could use to unlock the cabinet.
-86976	[E]Use the small key in the cabinet.
-87664	[E]You should open that metal chest.
-87712	[E]Open the metal chest in the cabinet and look at it.
-87776	[E]Open the metal chest, then Look at the metal chest.
-88528	[E]You should take that feather and ink. 
-88768	[E]You should check out some of these chests.
-88816	[E]The chest in the bottom right corner has an ingredient.
-88880	[E]Open the chest in the bottom right corner and then Look at it to get the ingredient.
-89792	[E]You should check those kegs.
-89824	[E]The kegs are full of gunpowder.
-89856	[E]You're going to need some of that gunpowder.
-90464	[E]Cannons need gunpowder to fire.
-90496	[E]Take more of that gunpowder.
-90912	[E]You need a fuse for the cannon.
-90944	[E]Pick up that rope to use as a fuse.
-91392	[E]The next thing on the list is a Human Skull (pressed).
-91456	[E]You should take that pirate flag.
-91968	[E]You should check in some of those cupboards.
-92016	[E]Click open on the cupboard.
-92048	[E]Take some of that cereal in the cupboard.
-92672	[E]You should grab that pot. 
-92704	[E]You'll need that pot to use as a helmet.
-93120	[E]You should burn some of the paper you have in the fire under the pot.
-93536	[E]You need a helmet if you're going to shoot yourself out of a cannon. 
-93616	[E]Pick up that small pot on the counter.  
-94160	[E]You need to put the gunpowder in the cannon.
-94208	[E]You need to put the gunpower in the cannon nozzle, the front part of the cannon.
-94304	[E]Use the gunpowder with the cannon nozzle.
-95088	[E]You can use that rope as a fuse in the cannon.
-95136	[E]Use the rope with the back of the cannon
-95632	[E]You are ready to fire the cannon. 
-95680	[E]Stand by the cannon and Use the Pot.  
-96128	[E]That rope looks strong.
-96160	[E]You will probably need that rope.
-96208	[E]Pick up the rope.
-96656	[E]That cannon looks interesting.  
-96704	[E]You should pull that cannon to see if it still works.
-96768	[E]Pull the cannon.
-97312	[E]That gunpowder on the ground looks like it could come in handy.
-97376	[E]Pick up that gunpowder.
-97760	[E]I bet that cannonball will come in handy.
-97808	[E]Pick up the cannonball.
-98192	[E]You need to figure out a way to destroy that dam to divert the river. 
-98272	[E]You should put that gunpowder on the dam.
-98320	[E]Put the gunpowder on the dam and figure out a way to ignite it.
-99264	[E]You need to figure out a way to light the gunpowder.
-99328	[E]Maybe there is something back in Herman's fort on the volcano that can help.
-99408	[E]Go to the fort on the volcano and pick up all the items.
-100288	[E]You should pick up that interesting looking rock.
-100352	[E]You should pick up that rock on top of the note. 
-100880	[E]Do you have anything that you can use to create a spark?
-100944	[E]The noteworthy rock you have can be used with the cannonball to make a spark.
-101712	[E]You might be able to use that lens to light the gunpowder.
-101776	[E]You should be able to focus the sunlight with the lens to light the gunpowder.
-101856	[E]Use the sun with the lens to light the gunpowder.
-102832	[E]That spyglass might be able to help you light the gunpowder.
-102896	[E]You'll have to get the spyglass lens out first.
-102944	[E]Open the spyglass to get the lens. 
-103712	[E]Now that the pond is full, you can reach that rope.
-103776	[E]You should pick up that rope.
-104224	[E]The primitive art is set perfectly, go up the footholds and push the rock.
-104688	[E]You should experiment with different facings to see where the rock lands.
-104768	[E]Pull or push the primitive art so that it is pointing mostly at Guybrush.
-105536	[E]You should experiment with different facings to see where the rock lands.
-105616	[E]Pull or push the primitive art so that it is pointing mostly at Guybrush.
-106384	[E]You don't have the primitive art aimed correctly yet. 
-106448	[E]Go down and pull/push the primitive art to aim it.
-107056	[E]You don't have the primitive art aimed correctly yet. 
-107120	[E]Go down and pull/push the primitive art to aim it.
-107728	[E]You need to get another big rock.
-107776	[E]Get another big rock from the heap o' rocks.
-107824	[E]Pickup the heap o' rocks.
-108400	[E]You have the primitive art set correctly, you should push that rock.
-108816	[E]You should figure out a way to get down to those oars.
-108880	[E]Maybe look around for a rope.
-109360	[E]I wonder if there is a way to get down to those oars.
-109424	[E]You should tie the rope to that strong branch.
-109472	[E]Use the rope with the strong branch.
-110224	[E]You need to tie the next rope to something to reach the oars.
-110288	[E]You should tie the rope to that sturdy stump.
-110336	[E]Use the rope with the sturdy stump.
-111104	[E]Can you attach the ropes to something sturdy to lower yourself down to the oars?
-111536	[E]You should be able to climb down and reach the oars now. 
-111600	[E]Pick up the oars.
-112032	[E]I bet that banana will be useful later.
-112080	[E]You should pick up that banana.
-112512	[E]You should use these oars with the rowboat.
-112768	[E]You should get back to the ghost ship!
-113024	[E]You should get some of that fruit.
-113072	[E]Pick up those bananas in the bowl of fruit. 
-113488	[E]Do you have something that would tell the cannibals how to get a new head?
-113568	[E]You have some leaflets that might help.
-113616	[E]Give the cannibals the leaflet about "Getting Ahead in Navigating"
-114576	[E]You should try moving things around in here to see if you can find an exit.
-114656	[E]You should pick up that skull.
-115184	[E]Picking up the skull revealed a loose board.
-115232	[E]Pick up the loose board and escape through the hole.
-115792	[E]Picking up that loose board revealed a hole.
-115840	[E]Walk to the hole to escape the hut.
-116352	[E]If you give that monkey something, he might follow you.
-116416	[E]Give the monkey some bananas.  Monkeys like bananas.
-116480	[E]You need to give the monkey a total of 5 bananas.
-117280	[E]Pull the nose to show the monkey how to open the gate.
-117648	[E]Now that you have the Monkey Head key, you can open the monkey head!
-117728	[E]Use the Monkey Head key with the giant monkey's ear.
-117792	[E]Use the monkey head key (cotton swab) with the Giant Monkey Ear.
-118848	[E]I bet the cannibals would like one of these idols.
-118912	[E]You should pick up the wimpy little idol.
-119456	[E]The head of the navigator can help you find your way through the maze.
-119536	[E]Use the head of the navigator.
-120032	[E]The head of the navigator can help you find your way through the maze.
-120112	[E]Stop walking and see which direction the head is facing, then walk that way.
-120944	[E]You are going to need something to help you find your way around.
-121024	[E]Go to the village and ask the cannibals if they can help you.
-121568	[E]You might be able to use the necklace to hide yourself from the ghosts.
-121648	[E]You should ask the head of the navigator for the necklace.
-121712	[E]You might need to beg the head of the navigator for the necklace.
-122704	[E]You can put on the necklace now.
-122752	[E]Use the necklace and then walk onto the ghost ship..
-123232	[E]You have the root, now take it back to the village!
-123520	[E]You have the root, now take it back to the village!
-123808	[E]Those tools look useful.
-123840	[E]You should take the ghost tools.
-123888	[E]Pick up the ghost tools.
-124448	[E]You have the root, now take it back to the village!
-124736	[E]You need to get that ghost key away from the captain.
-124800	[E]The key is probably made of metal.
-124848	[E]You can use the compass as a magnet to attract the key.
-124912	[E]Use the compass with the ghost key.
-125872	[E]You have the root, now take it back to the village!
-126160	[E]You should be able to get that jug now.
-126208	[E]Pick up the jug of grog.
-126608	[E]You should see if you can get that jug away from the sleeping ghost. 
-126688	[E]I bet you could use that feather to tickle his feet.
-126752	[E]Use the feather with the sleeping ghost's feet.
-126800	[E]Make sure you're using the feather with his feet and not his body.
-128048	[E]You should see if you can get that jug away from the sleeping ghost. 
-128128	[E]I bet if you had something to tickle him with, he would drop the jug without waking up.
-128992	[E]You have the root, now take it back to the village!
-129280	[E]You should see if you can pick up that chicken.
-129328	[E]Maybe you should try to get a feather from that chicken.
-129392	[E]Pick up the ghost chicken to get a feather.
-130176	[E]You can unlock that hatch.
-130208	[E]Use the ghost key on the hatch to unlock it.
-130672	[E]You have the root, now take it back to the village!
-130960	[E]That ghost rat looks hungry, you have something that it might like.
-131040	[E]Pour some grog into the rat's dish.
-131616	[E]You should *yuck* take some of that grease.
-131664	[E]Pick up the grease.
-132064	[E]You have the root, now take it back to the village!
-132352	[E]You need to move the grog from one mug to another before it melts.  
-132432	[E]Take the grog to the jail, but don't let the mug melt before you move the grog to a new mug.
-133328	[E]Do you have something Otis can use to scare off rats?
-133392	[E]You should see if the Gopher Repellent works for Otis. 
-133456	[E]Give the Gopher repellent to Otis.
-134192	[E]You should explore the ship.
-134224	[E]Check out the ship's galley for some useful items.
-134720	[E]You should check inside that cereal box.
-134768	[E]Open the cereal box.
-135200	[E]You should open that prize to see what it is.
-135248	[E]Open the prize.
-135616	[E]You should find a place to use that key.
-135664	[E]You should use that key in the cabinet in the Captain's quarters.
-136256	[E]The first thing on the recipe is cinnamon sticks.  
-136320	[E]You should put the cinnamon sticks into the cooking pot.
-136384	[E]Use the cinnamon sticks with the cooking pot.
-137136	[E]The second thing in the recipe is Leaves of Mint.
-137200	[E]You should put the breath mints in the cooking pot.
-137264	[E]Use the breath mints with the cooking pot.
-137984	[E]The next thing on the list is a Human Skull (pressed).
-138048	[E]You should go check the Crow's Nest.
-138560	[E]Do you have something like Human Skull (pressed)?
-138624	[E]You should put the pirate flag in the cooking pot.
-138688	[E]Use the pirate flag with the cooking pot. 
-139440	[E]The next thing on the list is a squirt of Squid Ink.
-139504	[E]Go search the ship for something like squid ink.
-139568	[E]Go the captain's quarters and pick up the ink from the desk.
-140480	[E]Do you have something like squid ink? 
-140528	[E]You have ink, which is similar to squid ink.
-140576	[E]Use the ink with the cooking pot.
-141280	[E]The next thing on the list is Monkey Blood.
-141328	[E]Go search the ship for something like monkey blood.
-141392	[E]Go to the hull of the ship and find the chest with wine in it. 
-142224	[E]Do you have something like monkey blood? 
-142272	[E]You have wine, which is red and thick like blood.
-142336	[E]Use the wine with the cooking pot.
-143024	[E]The next thing on the list is a live chicken.
-143072	[E]Do you have something like a chicken?
-143120	[E]Use the rubber-chicken-with-a-pulley-in-the-middle with the cooking pot.
-143920	[E]The next thing on the list is Brimstone.
-143968	[E]Brimstone is sulfur, and sulfur is used to make gunpowder.
-144032	[E]Go to the hull of the ship and get more gunpowder.
-144848	[E]Do you have something like brimstone?
-144896	[E]Brimstone is sulfur, and sulfur is used to make gunpowder.
-144960	[E]Use the gun powder with the cooking pot.
-145680	[E]Do you have something that contains a bunch of chemicals and food additives?
-145760	[E]Use the cereal with the cooking pot.
-146336	[E]The door to the hut is open now.
-146384	[E]The hut is open now, you should go in there and get the banana picker.
-146976	[E]I wonder if there is a way to get more bananas out of that tree?
-147056	[E]You should go check around the island and see if there is something you can do to get more bananas.
-147920	[E]I bet that banana will be useful later.
-147968	[E]You should pick up that banana.
-148400	[E]I bet that banana will be useful later.
-148448	[E]You should pick up that banana.
-148880	[E]You should take these bananas to that monkey in the jungle.  
-149216	[E]Now that the door is open, you can take out the banana picker.
-149280	[E]You should pick up that banana picker and find Herman Toothrot.
-149952	[E]You should go find look around for a way to get more bananas. 
-150016	[E]Maybe getting a view of the island from that hilltop will help.
-150080	[E]Go to the fork and climb to the top of that hill.
-151024	[E]You need to find a way to get down to retrieve the rowboat's oars.
-151104	[E]Maybe you can find a rope to lower yourself down.
-151168	[E]Head to the fort on the volcano to see if you can find a rope.
-152096	[E]You should take this rope to the crack and use it to reach the oars.
-152176	[E]Take the rope to the crack.
-152672	[E]You need to find another rope. 
-152704	[E]Maybe you can find a rope at the pond.
-153104	[E]You need to find a way to blow the dam to fill the river and reach that rope.
-153184	[E]You need to find a way to blow the dam.  Look for supplies at Herman's fort.
-154064	[E]That gunpowder that fell out of the cannon at the fort would be perfect.
-154144	[E]Pick up that gunpowder in Herman's fort.
-154688	[E]You need to find something to make a spark. 
-154736	[E]You should grab that cannonball from the fort.
-155232	[E]This dam looks like it could be destroyed if you had the right tools.
-155312	[E]You should try to find some more gunpowder to destroy this dam.
-155376	[E]Look in the fort on the volcano for gunpowder and a way to blow it up.
-156480	[E]You need to figure out a way to destroy that dam to divert the river. 
-156560	[E]You should put that gunpowder on the dam.
-156608	[E]Put the gunpowder on the dam and figure out a way to ignite it.
-157552	[E]You need to figure out a way to light the gunpowder.
-157616	[E]Maybe there is something back in Herman's fort on the volcano that can help.
-157696	[E]Go to the fort on the volcano and pick up all the items.
-158576	[E]You need to go to the river fork and blow the dam.
-158928	[E]Now that the pond is full, you can reach that rope.
-158992	[E]You should head to the pond and pick up that rope.
-159568	[E]You should take this rope to the crack and use it to reach the oars.
-159648	[E]Take the rope to the crack.
-160144	[E]The primitive art is set perfectly, go up the footholds and push the rock.
-160608	[E]You hit that banana tree on the beach.  You go down there and collect the bananas!
-161056	[E]You should be able to climb down and reach the oars now. 
-161120	[E]Pick up the oars.
-161552	[E]You should take these oars back to the rowboat on the beach.
-161616	[E]Take the oars back to the rowboat on the beach.
-162128	[E]You might have something to offer to the cannibals now.
-162192	[E]You should give the cannibals the wimpy little idol.
-162768	[E]You should find Herman Toothrot and return his banana picker. 
-163168	[E]Row the boat to the north end of the island and look for a beach to land.
-163248	[E]Use the rowboat to travel to the beach on the north side of the island and look for the village.
-164080	[E]You should use the boat to explore the other side of the island.
-164160	[E]Use the rowboat to travel to a beach on the north end of the island.
-164816	[E]You should go inside the giant monkey!
-165056	[E]You need to go to the cannibals and see if they can help you navigate through hell.
-165536	[E]If you give that monkey something, he might follow you.
-165600	[E]Give the monkey some bananas.  Monkeys like bananas.
-165664	[E]You need to give the monkey a total of 5 bananas.
-166464	[E]The monkey is following you now, you should see if he can help you.
-166544	[E]Take the monkey to the clearing on the east side of the island.
-167136	[E]Now that you have the Monkey Head key, you can open the monkey head!
-167216	[E]Use the Monkey Head key with the giant monkey's ear.
-167280	[E]Use the monkey head key (cotton swab) with the Giant Monkey Ear.
-168336	[E]You should look around for something to give the cannibals.
-168672	[E]The head of the navigator can help you find your way through the maze.
-168752	[E]Head back inside the giant monkey head and use the head of the navigator.
-169488	[E]You might be able to use the necklace to hide yourself from the ghosts.
-169568	[E]You should ask the head of the navigator for the necklace.
-169632	[E]You might need to beg the head of the navigator for the necklace.
-170624	[E]You can put on the necklace now.
-170672	[E]Use the necklace and then walk onto the ghost ship..
-171152	[E]The monkey is following you now, you should see if he can help you.
-171232	[E]Go to the clearing on the east side of the island.
-171760	[E]You need a way to unlock that hatch.
-171808	[E]You should look around the ship for a key to open that hatch.
-172416	[E]You need to find a way to open that crate.
-172464	[E]Look around for some tools or something to open that crate.
-172992	[E]Do you have something to make that door stop squeaking?
-173056	[E]How about trying the grease on the door?
-173104	[E]Use the grease on the door to stop it from squeaking.
-173920	[E]You need something to make that door stop squeaking.  
-173984	[E]Look around the ship for something that will make the door stop squeaking.
-174672	[E]Now that you're wearing the necklace, you can get onto the ghost ship.
-175040	[E]You can have the captain's key, try to find something it unlocks!
-175456	[E]Is there something you can do with that feather?
-175520	[E]You should take that feather back to the crew's quarters.
-176080	[E]You can use the tools to open the crate.
-176352	[E]Check in the crate for the root.
-176400	[E]Look at the crate to get the root.
-176832	[E]That ghost rat looks hungry and thirsty.  Maybe you can find something to feed it.
-176928	[E]If you had something to feed the rat, maybe it would leave you alone.
-177760	[E]You should go check to make sure everyone is all right.
-177824	[E]You should head up to the deck to make sure everyone is all right.
-178480	[E]You might be able to use that cannon to shoot yourself to the beach.
-178560	[E]Cannons need gunpowder to fire.
-178592	[E]You need to get some more gunpowder from the hull of the ship.
-179456	[E]You need a fuse for the cannon.
-179488	[E]You can get a rope you can use as a fuse. 
-179536	[E]Look in the hull of the ship for a rope.
-180192	[E]You need a way to light the fuse.
-180240	[E]Maybe you can find something in the galley to light the fuse.
-180304	[E]Go into the galley (the ship's kitchen) and light papers on fire.
-181200	[E]You need a helmet if you're going to shoot yourself out of a cannon. 
-181280	[E]Check the ship for something you can use as a helmet.
-181344	[E]Go into the galley (the ship's kitchen) and get the pot to use as a helmet.
-182384	[E]You have everything you need to fire the cannon.  
-182448	[E]Go to the deck and use the cannon.
-182928	[E]You should get back to the SCUMM Bar and talk to the pirate leaders!
-183312	[E]You have your crew and a ship, go meet Stan at the dock.
-183664	[E]You need to find people for your crew.
-183712	[E]You should see if Carla the Sword Master will join your crew.  
-183776	[E]Go to the Sword Master's and ask her to join the crew.
-184656	[E]You need something to help you slide on that cable to the small island..
-184736	[E]Maybe a Rubber-Chicken-With-A-Pulley-In-The-Middle would do the trick.
-184816	[E]You can get a Rubber-Chicken-With-A-Pulley-In-The-Middle from the Voodoo Lady in town.
-186016	[E]You need to find more people for your crew.
-186064	[E]There is a big strong pirate living on the tiny island in the northeast corner of the island, you should try to recruit him.
-186864	[E]You need to find one more person for your crew.
-186912	[E]Maybe Otis, the prisoner, would make a good addition to your crew. 
-186992	[E]You can try to recruit Otis, but you need to get him out of jail first.
-187936	[E]You need to break Otis out of jail.
-187984	[E]Maybe you can find something to melt through Otis's lock.
-188048	[E]Get mugs and grog from the SCUMM Bar and use the grog to melt the lock.
-188992	[E]You need to try to buy the inexpensive ship. 
-189040	[E]Trying to talk Stan's price down by telling him you don't want the extras.
-189120	[E]After declining all of the extras, Stan will lower the price more each time you tell him you're leaving (3 times). 
-190368	[E]You can get a line of credit from the storekeeper in town.
-190720	[E]You have your crew, now you need a ship.
-190768	[E]Go to Stan's Used Ships and buy a ship.
-190816	[E]You should see how much Stan wants for a ship.
-191600	[E]You should find some pirates to ask about becoming a pirate.
-191664	[E]You should go to the SCUMM bar and ask pirates about being a pirate.
-192384	[E]You should take that pot back to the circus and show it to the Fettucini brothers.
-192832	[E]You should find a helmet.
-192864	[E]There might be something you can use as a helmet in town.
-192928	[E]You should check the SCUMM Bar kitchen for a helmet.
-193728	[E]Maybe you can get a job from someone. 
-193776	[E]Go check out that clearing on the island for possible work.
-193840	[E]Go check out that clearing on the island for possible work.
-194624	[E]Maybe you can get a job from someone. 
-194672	[E]Go check out that clearing on the island for possible work.
-195200	[E]You should see if there is something the Piranha Poodles would like to eat.
-195280	[E]Check in the SCUMM Bar kitchen for something to feed the piranha poodles.
-196080	[E]You should see if there is something the Piranha Poodles would like to eat.
-196160	[E]Check in the SCUMM Bar kitchen for something to feed the piranha poodles.
-196960	[E]You need to drug this meat with something.
-197008	[E]The rare, yellow, Caniche Endormi flower in the forest can make the poodles sleep.
-197104	[E]Go to the Fork, and hunt in the forest for the yellow flowers.
-198048	[E]You should poison that meat with something in your inventory.
-198112	[E]You should use those yellow flowers with the meat.
-198176	[E]Use the yellow flowers with the meat to make poisoned meat.
-199040	[E]You have everything you need to drug the Governor's pirahna poodles.
-199120	[E]Head to the Governor's mansion. 
-199712	[E]You should hunt around the ship for ingredients listed in the recipe.
-200112	[E]You should open the door and go into the mansion.
-200176	[E]Go into the mansion and find the idol.
-200656	[E]You've got the file, you should get back to the Governor's Mansion.
-201024	[E]That cake seems very heavy.
-201056	[E]Maybe you should check inside it.
-201104	[E]You should try to open the cake.
-201696	[E]Do you have something Otis can use to scare off rats?
-201760	[E]You should see if the Gopher Repellent works for Otis. 
-201824	[E]Go to the jail and give the Gopher repellent to Otis.
-202656	[E]You should find something to freshen the prisoner's breath.
-202720	[E]Maybe you can buy some breath mints from someone.
-202784	[E]You can buy some breath mints at the store in the village.
-203712	[E]You should take those breath mints to the prisoner and see if he can help you.
-203792	[E]Take those breath mints back to the prisoner in the jail in the village.
-204544	[E]You need to find a file.
-204576	[E]Maybe someone has a file in the village.
-204624	[E]Go to the prison and ask the prisoner if he has a file.
-205312	[E]You should get a sword.
-205344	[E]You might be able to get a sword in the village.
-205760	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
-206320	[E]You probably have enough insults to beat the swordmaster. 
-206720	[E]You probably have enough insults to beat the swordmaster, but you need to win more fights.
-207280	[E]You probably have enough insults to beat the swordmaster. 
-207344	[E]You need someone to show you where the Sword Master lives.
-207408	[E]Ask the storekeeper in the village where the Sword Master lives.
-208400	[E]You should fight some pirates to learn new insults.
-208464	[E]Once you know enough insults and retorts you should fight the swordmaster.
-209280	[E]You need to find something to give to the troll. 
-209344	[E]He wants something that will attract attention, but have no real importance like a "red herring".
-209456	[E]You should get that red herring from the SCUMM Bar kitchen.
-210448	[E]You have something that the troll would accept.
-210496	[E]You should give the troll the red herring.
-210544	[E]Go to the bridge and give the troll the red herring.
-211232	[E]You need to find someone to train you to sword fight.
-211296	[E]You should get Captain Smirk to train you in the house on the east side of the island.  
-212048	[E]You need to find someone to train you to sword fight.
-212112	[E]You should get Captain Smirk to train you in the house on the east side of the island.  
-212864	[E]You should try to find a treasure map.
-212912	[E]Maybe you can buy a map in town
-212944	[E]You can buy a map from the Shifty Citizen in the village.
-213696	[E]You should use the map to find the treasure
-213744	[E]Start looking for the treasure at the fork
-214192	[E]You should get a shovel
-214224	[E]You might be able to get a shovel at the store.
-214640	[E]You need more money to complete the trials.
-214688	[E]You need to find a job to get money.
-214736	[E]Go to the clearing from the map to get a job.
-215504	[E]You need more money to complete the trials.
-215552	[E]You need to find a job to get money.
-215600	[E]Go to the clearing from the map to get a job.
-216368	[E]You should get a sword or a shovel.
-216416	[E]You might be able to get supplies at the store in the village.
-216976	[E]Follow the directions on the map to find the treasure.  
-217040	[E]Start at the fork and go the direction listed on the map.  
-217696	[E]Take the credit note to Stan.
-217888	[E]You need to go to the storekeeper and get a credit note.
+49744	Använd rotölet på LeChuck innan han slår dig igen!
+50192	Du behöver mer spöklösande rotöl!
+50240	Hämta rotölet hos Stan.
+50688	Du måste stoppa bröllopet!
+50720	Gå till kyrkan och stoppa bröllopet!
+51104	Följ efter butiksägaren till Svärdsmästarens hus.
+51488	Du borde gå till SCUMM Bar.
+51520	SCUMM Bar ligger genom dörren, under skylten där det står SCUMM Bar.
+51600	Klicka Öppna på dörren och klicka sedan på öppningen för att gå igenom.
+52480	Fråga några av piraterna här om hur man blir pirat.
+52560	Tala med de förnäma piraterna i rummet till höger om att bli pirat.
+53392	Försök ta dig in i köket och se om du kan hitta något att mata pirayapudlarna med.
+53504	Vänta tills kocken går därifrån och smyg sedan in i köket.
+53584	Vänta tills kocken försvinner åt vänster och smyg sedan in.
+54864	Mata pudlarna med den här köttbiten.
+54912	Mata pudlarna vid Guvernörens herrgård med den här köttbiten.
+55520	Försök skrämma bort den där måsen.
+55568	Om du går nära måsen kanske den flyger iväg och du kan ta fisken.
+55648	Om du går till änden av bryggan kommer plankan att vippa bort fågeln.
+55728	Gå till den lösa plankan i änden av bryggan och vippa bort fågeln så att du snabbt kan ta fisken. Du kan behöva försöka några gånger.
+57472	Försök få tag på den där fisken.
+57520	Öppna dörren och ta fisken.
+57568	Öppna dörren mellan köket och bryggan.
+58192	Ta den där fina grytan.
+58240	Den där snygga grytan skulle säkert fungera bra som hjälm.
+58800	Kanske kan du mata Guvernörens pirayapudlar med lite av den här maten.
+58880	Ta den där köttbiten till pudlarna.
+59600	Gå tillbaka in och hämta idolen.
+59648	Gå till det stora hålet i väggen.
+60080	Se om idolen finns i något av de här rummen.
+60144	Prova rummet på bottenvåningen med dubbeldörrarna för att hitta idolen.
+60832	Har du något som hjälper dig glida på den där kabeln?
+60896	Använd gummikycklingen med en trissa i mitten på kabeln för att glida över.
+61648	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren, men du behöver vinna fler strider.
+62208	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren.
+62608	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren, men du behöver vinna fler strider.
+63168	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren.
+63232	Du behöver någon som visar dig var Svärdsmästaren bor.
+63296	Fråga butiksägaren i stan var Svärdsmästaren bor.
+64288	Slåss mot pirater för att lära dig nya förolämpningar.
+64352	När du kan tillräckligt många förolämpningar och svar borde du utmana Svärdsmästaren.
+65168	Har du något att söva hundarna med?
+65216	Mata hundarna med den drogade köttbiten.
+65712	Nu när hundarna sover kan du öppna dörren och smyga in.
+66112	Använd groggen på låset innan muggen smälter!
+66416	Tala med fången.
+66656	Ge fången en mintpastill.
+66960	Håll utkik efter något som kan skrämma bort Otis' råttor.
+67360	Fråga Otis om han vill gå med i din besättning.
+67408	Berätta för Otis om Guvernören och be om hans hjälp.
+68000	Hitta ett sätt att befria Otis ur fängelset.
+68064	Kanske kan du hitta något som förstör låset.
+68128	Hämta grogg från SCUMM Bar-köket för att bränna sönder låset.
+69104	Det kanske finns något användbart här.
+69168	Ta den där fina gummikycklingen med en trissa i mitten.
+69744	Se om någon här kan sälja dig en skattkarta.
+69808	Den där lömska typen med papegojan ser ut att kunna ha en karta.
+69888	Köp en skattkarta av den lömska typen med papegojan.
+70976	Se om du kan köpa något som fräschar upp fångens andedräkt.
+71040	Kanske borde du köpa lite mintpastiller.
+71088	Du kan köpa mintpastiller av butiksägaren.
+71952	Köp det där svärdet av butiksägaren.
+72000	Gå och ta svärdet och tala med butiksägaren.
+72496	Se om butiksägaren kan hjälpa dig hitta Svärdsmästaren.
+72576	Fråga butiksägaren om Svärdsmästaren och följ sedan efter honom när han går för att prata med henne.
+73456	Köp den där spaden av butiksägaren.
+73520	Gå och ta spaden och tala med butiksägaren.
+74016	Fråga butiksägaren om att skaffa ett skuldebrev.
+74080	Titta noga när butiksägaren öppnar kassaskåpet och lär dig kombinationen.
+74160	Lär dig kombinationen till kassaskåpet och be sedan butiksägaren prata med Svärdsmästaren så att han går iväg och du kan öppna kassaskåpet.
+75600	Kolla inuti cirkustältet till vänster i gläntan.
+75680	Någon i cirkustältet kan ge dig ett jobb.
+76352	Kolla inuti cirkustältet till vänster i gläntan.
+76432	Någon i cirkustältet kan ge dig ett jobb.
+77104	Den där grytan skulle fungera bra som hjälm.
+77152	Ge grytan till Fettucinibröderna.
+77648	Du behöver skaffa en hjälm.
+77680	Det kanske finns något i stan som du kan använda som hjälm.
+77744	Kolla i SCUMM Bar-köket efter en hjälm.
+78544	Leta nu runt i skogen efter de gula blommorna.
+78608	Gå till stigen längst upp på skärmen.
+79104	Plocka de gula blommorna!
+79344	Använd kartan för att leta efter skatten.
+79392	Följ anvisningarna på kartan för att hitta skatten.
+79920	Du borde skaffa en skattkarta.
+79968	Gå till stan och hitta en karta.
+80400	Du behöver en spade för att gräva upp skatten.
+80448	Du kan förmodligen köpa en spade i stan.
+80496	Gå till butiken och köp en spade.
+81216	Du behöver gräva upp skatten.
+81264	Använd spaden med det stora X:et på marken.
+81696	Du behöver ett svärd innan du kan utmana Svärdsmästaren.
+81760	Du behöver gå tillbaka till butiken och köpa ett svärd.
+82352	Visa lappen för Svärdsmästaren och se om hon vill gå med i din besättning.
+82832	Visa lappen för Svärdsmästaren och se om hon vill gå med i din besättning.
+83312	Försök övertala Kapten Smilfink att träna dig i svärdsfäktning.
+83392	Du måste övertyga honom om att du har vad som krävs.
+83440	Säg om och om igen att du har vad som krävs.
+84288	Du måste ta dig upp ur vattnet snabbt.
+84336	Kan du ta upp något som hjälper dig fly?
+84384	Försök ta den fabulösa idolen.
+85120	Du behöver hitta något att ge till trollet.
+85184	Fråga trollet vad för saker det vill ha.
+85712	Du har något som trollet skulle acceptera.
+85760	Ge trollet den röda sillen.
+86208	Se om Järnkrok vill gå med i din besättning.
+86272	Rör vid hans skrämmande odjur så går han med i din besättning.
+86880	Kan du låsa upp det där skåpet?
+86912	Du har en nyckel som du kan använda för att låsa upp skåpet.
+86976	Använd den lilla nyckeln i skåpet.
+87664	Du borde öppna den där metallkistan.
+87712	Öppna metallkistan i skåpet och titta på den.
+87776	Öppna metallkistan, klicka sedan Titta på metallkistan.
+88528	Ta den där fjäderpennan och bläcket.
+88768	Kolla igenom några av de här kistorna.
+88816	Kistan i nedre högra hörnet innehåller en ingrediens.
+88880	Öppna kistan i nedre högra hörnet och klicka sedan Titta på den för att få ingrediensen.
+89792	Kolla de där faten.
+89824	Faten är fulla med krut.
+89856	Du kommer behöva lite av det krutet.
+90464	Kanoner behöver krut för att avfyras.
+90496	Ta mer av krutet.
+90912	Du behöver en stubin till kanonen.
+90944	Ta det där repet för att använda som stubin.
+91392	Nästa sak på listan är en pressad mänsklig dödskalle.
+91456	Ta den där Jolly Roger-flaggan.
+91968	Kolla i några av de där skåpen.
+92016	Klicka Öppna på skåpet.
+92048	Ta lite av flingorna i skåpet.
+92672	Ta den där grytan.
+92704	Du behöver den grytan för att använda som hjälm.
+93120	Bränn lite av papperet du har i elden under grytan.
+93536	Du behöver en hjälm om du ska skjuta dig själv ur en kanon.
+93616	Ta den lilla grytan på bänken.
+94160	Du behöver lägga krutet i kanonen.
+94208	Du behöver lägga krutet i kanonmynningen, den främre delen av kanonen.
+94304	Använd krutet med kanonmynningen.
+95088	Du kan använda repet som stubin i kanonen.
+95136	Använd repet med baksidan av kanonen.
+95632	Du är redo att avfyra kanonen.
+95680	Ställ dig vid kanonen och Använd grytan.
+96128	Det där repet ser starkt ut.
+96160	Du kommer förmodligen behöva det repet.
+96208	Ta repet.
+96656	Den där kanonen ser intressant ut.
+96704	Dra i den där kanonen för att se om den fortfarande fungerar.
+96768	Dra i kanonen.
+97312	Det där krutet på marken ser ut att kunna komma till nytta.
+97376	Ta det där krutet.
+97760	Den där kanonkulan kommer säkert till nytta.
+97808	Ta kanonkulan.
+98192	Du behöver hitta ett sätt att förstöra den där dammen för att avleda floden.
+98272	Lägg krutet på dammen.
+98320	Lägg krutet på dammen och hitta ett sätt att antända det.
+99264	Du behöver hitta ett sätt att tända krutet.
+99328	Kanske finns det något i Hermans fort på vulkanen som kan hjälpa.
+99408	Gå till fortet på vulkanen och plocka upp alla föremål.
+100288	Ta den där intressanta stenen.
+100352	Ta stenen som ligger ovanpå lappen.
+100880	Har du något du kan använda för att skapa en gnista?
+100944	Den anmärkningsvärda stenen du har kan användas med kanonkulan för att göra en gnista.
+101712	Du kanske kan använda den där linsen för att tända krutet.
+101776	Du borde kunna fokusera solljuset med linsen för att tända krutet.
+101856	Använd solen med linsen för att tända krutet.
+102832	Den där kikaren kanske kan hjälpa dig tända krutet.
+102896	Du måste få ut linsen ur kikaren först.
+102944	Öppna kikaren för att få ut linsen.
+103712	Nu när dammen är full kan du nå det där repet.
+103776	Ta det där repet.
+104224	Den primitiva konsten är perfekt inställd. Gå upp via fotfästena och knuffa stenen.
+104688	Prova olika inriktningar för att se var stenen landar.
+104768	Dra eller knuffa den primitiva konsten så att den pekar ungefär mot Guybrush.
+105536	Prova olika inriktningar för att se var stenen landar.
+105616	Dra eller knuffa den primitiva konsten så att den pekar ungefär mot Guybrush.
+106384	Den primitiva konsten är inte rätt riktad ännu.
+106448	Gå ner och dra/knuffa den primitiva konsten för att rikta den.
+107056	Den primitiva konsten är inte rätt riktad ännu.
+107120	Gå ner och dra/knuffa den primitiva konsten för att rikta den.
+107728	Du behöver hämta en stor sten till.
+107776	Hämta en stor sten till från stenhögen.
+107824	Ta stenhögen.
+108400	Den primitiva konsten är rätt inställd. Knuffa stenen.
+108816	Hitta ett sätt att ta dig ner till de där årorna.
+108880	Kanske kan du leta runt efter ett rep.
+109360	Undrar om det finns ett sätt att ta sig ner till de där årorna.
+109424	Knyt repet i den starka grenen.
+109472	Använd repet med den starka grenen.
+110224	Du behöver knyta nästa rep i något för att nå årorna.
+110288	Knyt repet i den stabila stubben.
+110336	Använd repet med den stabila stubben.
+111104	Kan du fästa repen i något stadigt för att ta dig ner till årorna?
+111536	Du borde kunna klättra ner och nå årorna nu.
+111600	Ta årorna.
+112032	Den där bananen kommer säkert till nytta senare.
+112080	Ta den där bananen.
+112512	Använd årorna med roddbåten.
+112768	Ta dig tillbaka till spökskeppet!
+113024	Ta lite av den där frukten.
+113072	Ta bananerna i fruktskålen.
+113488	Har du något som kan berätta för kannibalerna hur man skaffar ett nytt huvud?
+113568	Du har broschyrer som kanske kan hjälpa.
+113616	Ge kannibalerna broschyren "Hur du får ett huvud för navigering".
+114576	Försök flytta runt saker här inne för att se om du hittar en utgång.
+114656	Ta den där dödskallen.
+115184	Att ta dödskallen avslöjade en lös planka.
+115232	Ta den lösa plankan och fly genom hålet.
+115792	Att ta den lösa plankan avslöjade ett hål.
+115840	Gå till hålet för att fly från hyddan.
+116352	Om du ger den där apan något kanske den följer efter dig.
+116416	Ge apan bananer. Apor gillar bananer.
+116480	Du behöver ge apan totalt 5 bananer.
+117280	Dra i näsan för att visa apan hur man öppnar grinden.
+117648	Nu när du har aphuvudsnyckeln kan du öppna Aphuvudet!
+117728	Använd aphuvudsnyckeln med det gigantiska apörat.
+117792	Använd aphuvudsnyckeln (topsen) med det gigantiska apörat.
+118848	Kannibalerna skulle säkert uppskatta en av de här idolerna.
+118912	Ta den pyttelilla idolen.
+119456	Navigatörshuvudet kan hjälpa dig hitta vägen genom labyrinten.
+119536	Använd navigatörshuvudet.
+120032	Navigatörshuvudet kan hjälpa dig hitta vägen genom labyrinten.
+120112	Stanna upp och se åt vilket håll huvudet pekar, gå sedan åt det hållet.
+120944	Du kommer behöva något som hjälper dig hitta vägen.
+121024	Gå till byn och fråga kannibalerna om de kan hjälpa dig.
+121568	Du kanske kan använda halsbandet för att gömma dig från spökena.
+121648	Be navigatörshuvudet om halsbandet.
+121712	Du kanske behöver tigga navigatörshuvudet om halsbandet.
+122704	Du kan ta på dig halsbandet nu.
+122752	Använd halsbandet och gå sedan ombord på spökskeppet.
+123232	Du har roten, ta den tillbaka till byn nu!
+123520	Du har roten, ta den tillbaka till byn nu!
+123808	De där verktygen ser användbara ut.
+123840	Ta spökverktygen.
+123888	Ta spökverktygen.
+124448	Du har roten, ta den tillbaka till byn nu!
+124736	Du behöver ta spöknyckeln från kaptenen.
+124800	Nyckeln är antagligen gjord av metall.
+124848	Du kan använda kompassen som magnet för att dra till dig nyckeln.
+124912	Använd kompassen med spöknyckeln.
+125872	Du har roten, ta den tillbaka till byn nu!
+126160	Du borde kunna ta den där kannan nu.
+126208	Ta kannan med grogg.
+126608	Se om du kan ta den där kannan från det sovande spöket.
+126688	Du kan säkert använda den där fjädern för att kittla hans fötter.
+126752	Använd fjädern med det sovande spökets fötter.
+126800	Se till att du använder fjädern med fötterna och inte kroppen.
+128048	Se om du kan ta den där kannan från det sovande spöket.
+128128	Om du hade något att kittla det med skulle det säkert tappa kannan utan att vakna.
+128992	Du har roten, ta den tillbaka till byn nu!
+129280	Se om du kan ta den där kycklingen.
+129328	Kanske borde du försöka få en fjäder från kycklingen.
+129392	Ta spökkycklingen för att få en fjäder.
+130176	Du kan låsa upp den där luckan.
+130208	Använd spöknyckeln på luckan för att låsa upp den.
+130672	Du har roten, ta den tillbaka till byn nu!
+130960	Den där spökråttan ser hungrig ut. Du har något den kanske gillar.
+131040	Häll lite grogg i råttans skål.
+131616	Du borde *usch* ta lite av det där fettet.
+131664	Ta fettet.
+132064	Du har roten, ta den tillbaka till byn nu!
+132352	Du behöver hälla groggen från en mugg till en annan innan den smälter.
+132432	Ta groggen till fängelset, men låt inte muggen smälta innan du häller groggen i en ny mugg.
+133328	Har du något Otis kan använda för att skrämma bort råttor?
+133392	Se om mullvadsmedlet fungerar för Otis.
+133456	Ge mullvadsmedlet till Otis.
+134192	Utforska skeppet.
+134224	Kolla skeppets kök efter användbara saker.
+134720	Kolla inuti den där flingförpackningen.
+134768	Öppna flingförpackningen.
+135200	Öppna den där premien och se vad det är.
+135248	Öppna premien.
+135616	Hitta en plats att använda den nyckeln.
+135664	Använd nyckeln i skåpet i kaptenshytten.
+136256	Det första på receptet är kanelstänger.
+136320	Lägg kanelstängerna i grytan.
+136384	Använd kanelstängerna med grytan.
+137136	Det andra på receptet är myntablad.
+137200	Lägg mintpastillerna i grytan.
+137264	Använd mintpastillerna med grytan.
+137984	Nästa sak på listan är en pressad mänsklig dödskalle.
+138048	Gå och kolla utkiken.
+138560	Har du något som liknar en pressad mänsklig dödskalle?
+138624	Lägg Jolly Roger-flaggan i grytan.
+138688	Använd Jolly Roger-flaggan med grytan.
+139440	Nästa sak på listan är en skvätt bläckfiskbläck.
+139504	Sök igenom skeppet efter något som liknar bläckfiskbläck.
+139568	Gå till kaptenshytten och ta bläcket från skrivbordet.
+140480	Har du något som liknar bläckfiskbläck?
+140528	Du har bläck, som liknar bläckfiskbläck.
+140576	Använd bläcket med grytan.
+141280	Nästa sak på listan är apblod.
+141328	Sök igenom skeppet efter något som liknar apblod.
+141392	Gå till skeppets lastrum och hitta kistan med vin.
+142224	Har du något som liknar apblod?
+142272	Du har vin, som är rött och tjockt som blod.
+142336	Använd vinet med grytan.
+143024	Nästa sak på listan är en levande kyckling.
+143072	Har du något som liknar en kyckling?
+143120	Använd gummikycklingen med en trissa i mitten med grytan.
+143920	Nästa sak på listan är svavel.
+143968	Svavel används för att tillverka krut.
+144032	Gå till skeppets lastrum och hämta mer krut.
+144848	Har du något som liknar svavel?
+144896	Svavel används för att tillverka krut.
+144960	Använd krutet med grytan.
+145680	Har du något som innehåller en massa kemikalier och livsmedelstillsatser?
+145760	Använd flingorna med grytan.
+146336	Dörren till hyddan är öppen nu.
+146384	Hyddan är öppen nu. Gå in och hämta bananplockaren.
+146976	Undrar om det finns ett sätt att få ner fler bananer från det där trädet?
+147056	Leta runt på ön och se om det finns något du kan göra för att få fler bananer.
+147920	Den där bananen kommer säkert till nytta senare.
+147968	Ta den där bananen.
+148400	Den där bananen kommer säkert till nytta senare.
+148448	Ta den där bananen.
+148880	Ta de här bananerna till apan i djungeln.
+149216	Nu när dörren är öppen kan du ta ut bananplockaren.
+149280	Ta bananplockaren och hitta Herman Rötbett.
+149952	Leta runt efter ett sätt att få fler bananer.
+150016	Kanske kan utsikten från den där kullen hjälpa.
+150080	Gå till vägskälet och klättra upp till toppen av kullen.
+151024	Du behöver hitta ett sätt att ta dig ner och hämta roddbåtens åror.
+151104	Kanske kan du hitta ett rep att ta dig ner med.
+151168	Gå till fortet på vulkanen och se om du kan hitta ett rep.
+152096	Ta det här repet till sprickan och använd det för att nå årorna.
+152176	Ta repet till sprickan.
+152672	Du behöver hitta ett till rep.
+152704	Kanske kan du hitta ett rep vid dammen.
+153104	Du behöver hitta ett sätt att spränga dammen för att fylla floden och nå det repet.
+153184	Du behöver hitta ett sätt att spränga dammen. Leta efter förnödenheter på Hermans fort.
+154064	Krutet som ramlade ur kanonen på fortet skulle vara perfekt.
+154144	Ta krutet i Hermans fort.
+154688	Du behöver hitta något att göra en gnista med.
+154736	Ta kanonkulan från fortet.
+155232	Den här dammen ser ut att kunna förstöras med rätt verktyg.
+155312	Försök hitta mer krut för att förstöra dammen.
+155376	Leta på fortet på vulkanen efter krut och ett sätt att spränga den.
+156480	Du behöver hitta ett sätt att förstöra den där dammen för att avleda floden.
+156560	Lägg krutet på dammen.
+156608	Lägg krutet på dammen och hitta ett sätt att antända det.
+157552	Du behöver hitta ett sätt att tända krutet.
+157616	Kanske finns det något i Hermans fort på vulkanen som kan hjälpa.
+157696	Gå till fortet på vulkanen och plocka upp alla föremål.
+158576	Du behöver gå till vägskälet vid floden och spränga dammen.
+158928	Nu när dammen är full kan du nå det där repet.
+158992	Gå till dammen och ta det repet.
+159568	Ta det här repet till sprickan och använd det för att nå årorna.
+159648	Ta repet till sprickan.
+160144	Den primitiva konsten är perfekt inställd. Gå upp via fotfästena och knuffa stenen.
+160608	Du träffade bananträdet på stranden. Gå dit ner och hämta bananerna!
+161056	Du borde kunna klättra ner och nå årorna nu.
+161120	Ta årorna.
+161552	Ta de här årorna tillbaka till roddbåten på stranden.
+161616	Ta årorna tillbaka till roddbåten på stranden.
+162128	Du kanske har något att erbjuda kannibalerna nu.
+162192	Ge kannibalerna den pyttelilla idolen.
+162768	Hitta Herman Rötbett och lämna tillbaka hans bananplockare.
+163168	Ro båten till norra änden av ön och leta efter en strand att landa på.
+163248	Använd roddbåten för att åka till stranden på öns norra sida och leta efter byn.
+164080	Använd båten för att utforska andra sidan av ön.
+164160	Använd roddbåten för att åka till en strand på öns norra ände.
+164816	Gå in i det gigantiska aphuvudet!
+165056	Gå till kannibalerna och se om de kan hjälpa dig navigera genom underjorden.
+165536	Om du ger den där apan något kanske den följer efter dig.
+165600	Ge apan bananer. Apor gillar bananer.
+165664	Du behöver ge apan totalt 5 bananer.
+166464	Apan följer efter dig nu. Se om den kan hjälpa dig.
+166544	Ta med apan till gläntan på öns östra sida.
+167136	Nu när du har aphuvudsnyckeln kan du öppna Aphuvudet!
+167216	Använd aphuvudsnyckeln med det gigantiska apörat.
+167280	Använd aphuvudsnyckeln (topsen) med det gigantiska apörat.
+168336	Leta runt efter något att ge kannibalerna.
+168672	Navigatörshuvudet kan hjälpa dig hitta vägen genom labyrinten.
+168752	Gå tillbaka in i det gigantiska aphuvudet och använd navigatörshuvudet.
+169488	Du kanske kan använda halsbandet för att gömma dig från spökena.
+169568	Be navigatörshuvudet om halsbandet.
+169632	Du kanske behöver tigga navigatörshuvudet om halsbandet.
+170624	Du kan ta på dig halsbandet nu.
+170672	Använd halsbandet och gå sedan ombord på spökskeppet.
+171152	Apan följer efter dig nu. Se om den kan hjälpa dig.
+171232	Gå till gläntan på öns östra sida.
+171760	Du behöver ett sätt att låsa upp den där luckan.
+171808	Leta runt på skeppet efter en nyckel som öppnar luckan.
+172416	Du behöver hitta ett sätt att öppna den där lådan.
+172464	Leta runt efter verktyg eller något att öppna lådan med.
+172992	Har du något som kan få den dörren att sluta gnissla?
+173056	Prova fettet på dörren kanske?
+173104	Använd fettet på dörren för att den ska sluta gnissla.
+173920	Du behöver något som får den dörren att sluta gnissla.
+173984	Leta runt på skeppet efter något som kan få dörren att sluta gnissla.
+174672	Nu när du bär halsbandet kan du gå ombord på spökskeppet.
+175040	Du har kaptenens nyckel. Försök hitta något den låser upp!
+175456	Finns det något du kan göra med den där fjädern?
+175520	Ta tillbaka fjädern till manskapets sovutrymme.
+176080	Du kan använda verktygen för att öppna lådan.
+176352	Kolla i lådan efter roten.
+176400	Titta på lådan för att få roten.
+176832	Den där spökråttan ser hungrig och törstig ut. Kanske kan du hitta något att mata den med.
+176928	Om du hade något att mata råttan med kanske den lämnar dig ifred.
+177760	Gå och kolla att alla mår bra.
+177824	Gå upp på däck och se till att alla mår bra.
+178480	Du kanske kan använda den där kanonen för att skjuta dig till stranden.
+178560	Kanoner behöver krut för att avfyras.
+178592	Du behöver hämta mer krut från skeppets lastrum.
+179456	Du behöver en stubin till kanonen.
+179488	Du kan skaffa ett rep att använda som stubin.
+179536	Leta i skeppets lastrum efter ett rep.
+180192	Du behöver ett sätt att tända stubinen.
+180240	Kanske kan du hitta något i köket att tända stubinen med.
+180304	Gå in i köket (skeppets matlagningsrum) och sätt eld på papper.
+181200	Du behöver en hjälm om du ska skjuta dig själv ur en kanon.
+181280	Kolla skeppet efter något du kan använda som hjälm.
+181344	Gå in i köket (skeppets matlagningsrum) och ta grytan för att använda som hjälm.
+182384	Du har allt du behöver för att avfyra kanonen.
+182448	Gå till däck och använd kanonen.
+182928	Gå tillbaka till SCUMM Bar och prata med piratledarna!
+183312	Du har din besättning och ett skepp. Gå och möt Stan vid kajen.
+183664	Du behöver hitta folk till din besättning.
+183712	Se om Carla, Svärdsmästaren, vill gå med i din besättning.
+183776	Gå till Svärdsmästarens hus och be henne gå med i besättningen.
+184656	Du behöver något som hjälper dig glida på kabeln till den lilla ön.
+184736	En gummikyckling med en trissa i mitten kanske löser problemet.
+184816	Du kan få en gummikyckling med en trissa i mitten hos spåkvinnan i stan.
+186016	Du behöver hitta fler personer till din besättning.
+186064	Det bor en stor stark pirat på den lilla ön i nordöstra hörnet. Försök rekrytera honom.
+186864	Du behöver hitta en person till i din besättning.
+186912	Kanske skulle Otis, fången, vara ett bra tillskott till din besättning.
+186992	Du kan försöka rekrytera Otis, men du behöver få ut honom ur fängelset först.
+187936	Du behöver befria Otis ur fängelset.
+187984	Kanske kan du hitta något att smälta Otis' lås med.
+188048	Hämta muggar och grogg från SCUMM Bar och använd groggen för att smälta låset.
+188992	Försök köpa det billiga skeppet.
+189040	Försök pruta ner Stans pris genom att säga att du inte vill ha tillbehören.
+189120	Efter att ha tackat nej till alla tillbehör sänker Stan priset ytterligare varje gång du säger att du tänker gå (3 gånger).
+190368	Du kan skaffa ett skuldebrev hos butiksägaren i stan.
+190720	Du har din besättning, nu behöver du ett skepp.
+190768	Gå till Stans Begagnade Fartyg och köp ett skepp.
+190816	Se hur mycket Stan vill ha för ett skepp.
+191600	Hitta pirater att fråga om att bli pirat.
+191664	Gå till SCUMM Bar och fråga pirater om att bli pirat.
+192384	Ta tillbaka grytan till cirkusen och visa den för Fettucinibröderna.
+192832	Du behöver skaffa en hjälm.
+192864	Det kanske finns något i stan som du kan använda som hjälm.
+192928	Kolla i SCUMM Bar-köket efter en hjälm.
+193728	Kanske kan du få jobb av någon.
+193776	Kolla gläntan på ön efter möjligt arbete.
+193840	Kolla gläntan på ön efter möjligt arbete.
+194624	Kanske kan du få jobb av någon.
+194672	Kolla gläntan på ön efter möjligt arbete.
+195200	Se om det finns något som pirayapudlarna skulle vilja äta.
+195280	Kolla i SCUMM Bar-köket efter något att mata pirayapudlarna med.
+196080	Se om det finns något som pirayapudlarna skulle vilja äta.
+196160	Kolla i SCUMM Bar-köket efter något att mata pirayapudlarna med.
+196960	Du behöver droga den här köttbiten med något.
+197008	Den sällsynta, gula Caniche Endormi-blomman i skogen kan söva pudlarna.
+197104	Gå till vägskälet och leta i skogen efter de gula blommorna.
+198048	Förgifta köttbiten med något i ditt förråd.
+198112	Använd de gula blommorna med köttbiten.
+198176	Använd de gula blommorna med köttbiten för att göra förgiftad köttbit.
+199040	Du har allt du behöver för att söva Guvernörens pirayapudlar.
+199120	Bege dig till Guvernörens herrgård.
+199712	Leta runt på skeppet efter ingredienser i receptet.
+200112	Öppna dörren och gå in i herrgården.
+200176	Gå in i herrgården och hitta idolen.
+200656	Du har filen. Bege dig tillbaka till Guvernörens herrgård.
+201024	Den där tårtan verkar väldigt tung.
+201056	Kanske borde du kolla inuti den.
+201104	Försök öppna tårtan.
+201696	Har du något Otis kan använda för att skrämma bort råttor?
+201760	Se om mullvadsmedlet fungerar för Otis.
+201824	Gå till fängelset och ge mullvadsmedlet till Otis.
+202656	Hitta något att fräscha upp fångens andedräkt med.
+202720	Kanske kan du köpa mintpastiller av någon.
+202784	Du kan köpa mintpastiller i butiken i stan.
+203712	Ta mintpastillerna till fången och se om han kan hjälpa dig.
+203792	Ta mintpastillerna tillbaka till fången i fängelset i stan.
+204544	Du behöver hitta en fil.
+204576	Kanske har någon en fil i stan.
+204624	Gå till fängelset och fråga fången om han har en fil.
+205312	Skaffa ett svärd.
+205344	Du kanske kan skaffa ett svärd i stan.
+205760	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren, men du behöver vinna fler strider.
+206320	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren.
+206720	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren, men du behöver vinna fler strider.
+207280	Du har förmodligen tillräckligt med förolämpningar för att besegra Svärdsmästaren.
+207344	Du behöver någon som visar dig var Svärdsmästaren bor.
+207408	Fråga butiksägaren i stan var Svärdsmästaren bor.
+208400	Slåss mot pirater för att lära dig nya förolämpningar.
+208464	När du kan tillräckligt många förolämpningar och svar borde du utmana Svärdsmästaren.
+209280	Du behöver hitta något att ge till trollet.
+209344	Det vill ha något som drar blickarna till sig men saknar verklig betydelse, som en röd sill.
+209456	Hämta den röda sillen från SCUMM Bar-köket.
+210448	Du har något som trollet skulle acceptera.
+210496	Ge trollet den röda sillen.
+210544	Gå till bron och ge trollet den röda sillen.
+211232	Du behöver hitta någon som kan träna dig i svärdsfäktning.
+211296	Be Kapten Smilfink träna dig i huset på öns östra sida.
+212048	Du behöver hitta någon som kan träna dig i svärdsfäktning.
+212112	Be Kapten Smilfink träna dig i huset på öns östra sida.
+212864	Försök hitta en skattkarta.
+212912	Kanske kan du köpa en karta i stan.
+212944	Du kan köpa en karta av den lömska typen i stan.
+213696	Använd kartan för att hitta skatten.
+213744	Börja leta efter skatten vid vägskälet.
+214192	Skaffa en spade.
+214224	Du kanske kan skaffa en spade i butiken.
+214640	Du behöver mer pengar för att klara proven.
+214688	Du behöver hitta ett jobb för att tjäna pengar.
+214736	Gå till gläntan på kartan för att få ett jobb.
+215504	Du behöver mer pengar för att klara proven.
+215552	Du behöver hitta ett jobb för att tjäna pengar.
+215600	Gå till gläntan på kartan för att få ett jobb.
+216368	Skaffa ett svärd eller en spade.
+216416	Du kanske kan skaffa utrustning i butiken i stan.
+216976	Följ anvisningarna på kartan för att hitta skatten.
+217040	Börja vid vägskälet och gå i den riktning som kartan visar.
+217696	Ta skuldebrevet till Stan.
+217888	Du behöver gå till butiksägaren och skaffa ett skuldebrev.
